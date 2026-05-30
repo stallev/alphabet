@@ -1,0 +1,3753 @@
+
+{
+  "title": "Жизнь Иосифа",
+  "language": "ru",
+  "questionsList": [
+    {
+      "id": 1,
+      "questionContent": "Кто был отцом Иосифа?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Авраам"
+        },
+        {
+          "id": 2,
+          "value": "Исаак"
+        },
+        {
+          "id": 3,
+          "value": "Иаков"
+        },
+        {
+          "id": 4,
+          "value": "Исав"
+        }
+      ],
+      "rightAnswerId": 3
+    },
+    {
+      "id": 2,
+      "questionContent": "Как звали мать Иосифа?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Лия"
+        },
+        {
+          "id": 2,
+          "value": "Рахиль"
+        },
+        {
+          "id": 3,
+          "value": "Валла"
+        },
+        {
+          "id": 4,
+          "value": "Зелфа"
+        }
+      ],
+      "rightAnswerId": 2
+    },
+    {
+      "id": 3,
+      "questionContent": "Какой подарок сделал Иаков своему любимому сыну Иосифу, что вызвало зависть братьев?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Золотое кольцо"
+        },
+        {
+          "id": 2,
+          "value": "Разноцветная (разнокрашенная) одежда"
+        },
+        {
+          "id": 3,
+          "value": "Стадо овец"
+        },
+        {
+          "id": 4,
+          "value": "Меч"
+        }
+      ],
+      "rightAnswerId": 2
+    },
+    {
+      "id": 4,
+      "questionContent": "Сколько братьев было у Иосифа всего (включая Вениамина)?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "10"
+        },
+        {
+          "id": 2,
+          "value": "11"
+        },
+        {
+          "id": 3,
+          "value": "12"
+        },
+        {
+          "id": 4,
+          "value": "7"
+        }
+      ],
+      "rightAnswerId": 2
+    },
+    {
+      "id": 5,
+      "questionContent": "Что приснилось Иосифу в первом сне, который он рассказал братьям (о снопах)?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Его сноп стоял прямо, а снопы братьев поклонились ему"
+        },
+        {
+          "id": 2,
+          "value": "Снопы братьев сгорели"
+        },
+        {
+          "id": 3,
+          "value": "Его сноп упал"
+        },
+        {
+          "id": 4,
+          "value": "Снопы превратились в золото"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 6,
+      "questionContent": "Что приснилось Иосифу во втором сне (о небесных светилах)?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Солнце, луна и одиннадцать звезд поклонились ему"
+        },
+        {
+          "id": 2,
+          "value": "Звезды упали на землю"
+        },
+        {
+          "id": 3,
+          "value": "Солнце померкло"
+        },
+        {
+          "id": 4,
+          "value": "Луна превратилась в кровь"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 7,
+      "questionContent": "В какой город Иаков послал Иосифа навестить братьев, пасущих скот?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Сихем"
+        },
+        {
+          "id": 2,
+          "value": "Вифлеем"
+        },
+        {
+          "id": 3,
+          "value": "Хеврон"
+        },
+        {
+          "id": 4,
+          "value": "Беэр-Шева"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 8,
+      "questionContent": "Кто из братьев предложил не убивать Иосифа, а бросить его в ров (надеясь позже спасти его)?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Рувим"
+        },
+        {
+          "id": 2,
+          "value": "Иуда"
+        },
+        {
+          "id": 3,
+          "value": "Симеон"
+        },
+        {
+          "id": 4,
+          "value": "Левий"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 9,
+      "questionContent": "Кому братья продали Иосифа, когда те проезжали мимо на верблюдах?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Измаильтянам (мадианитянам)"
+        },
+        {
+          "id": 2,
+          "value": "Филистимлянам"
+        },
+        {
+          "id": 3,
+          "value": "Хеттеям"
+        },
+        {
+          "id": 4,
+          "value": "Вавилонянам"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 10,
+      "questionContent": "За сколько сребреников братья продали Иосифа?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "10"
+        },
+        {
+          "id": 2,
+          "value": "20"
+        },
+        {
+          "id": 3,
+          "value": "30"
+        },
+        {
+          "id": 4,
+          "value": "50"
+        }
+      ],
+      "rightAnswerId": 2
+    },
+    {
+      "id": 11,
+      "questionContent": "Что братья сделали с одеждой Иосифа, чтобы обмануть отца?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Измазали ее кровью козленка"
+        },
+        {
+          "id": 2,
+          "value": "Разорвали ее в клочья"
+        },
+        {
+          "id": 3,
+          "value": "Спрятали ее в поле"
+        },
+        {
+          "id": 4,
+          "value": "Сожгли ее"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 12,
+      "questionContent": "Как звали египтянина, царедворца фараонова, который купил Иосифа у измаильтян?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Потифар"
+        },
+        {
+          "id": 2,
+          "value": "Рамзес"
+        },
+        {
+          "id": 3,
+          "value": "Нехо"
+        },
+        {
+          "id": 4,
+          "value": "Шишак"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 13,
+      "questionContent": "Почему Иосиф попал в темницу в Египте?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Его ложно обвинила жена Потифара"
+        },
+        {
+          "id": 2,
+          "value": "Он украл золото"
+        },
+        {
+          "id": 3,
+          "value": "Он пытался сбежать"
+        },
+        {
+          "id": 4,
+          "value": "Он убил слугу"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 14,
+      "questionContent": "Каким двум слугам фараона Иосиф истолковал сны в темнице?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Виночерпию и хлебодару"
+        },
+        {
+          "id": 2,
+          "value": "Военачальнику и писцу"
+        },
+        {
+          "id": 3,
+          "value": "Пастуху и повару"
+        },
+        {
+          "id": 4,
+          "value": "Стражнику и судье"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 15,
+      "questionContent": "Чей сон означал, что через три дня он будет восстановлен в своей должности?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Виночерпия"
+        },
+        {
+          "id": 2,
+          "value": "Хлебодара"
+        },
+        {
+          "id": 3,
+          "value": "Фараона"
+        },
+        {
+          "id": 4,
+          "value": "Потифара"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 16,
+      "questionContent": "Что приснилось фараону в его первом сне (о коровах)?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Семь тощих коров съели семь жирных коров"
+        },
+        {
+          "id": 2,
+          "value": "Семь коров утонули в реке"
+        },
+        {
+          "id": 3,
+          "value": "Коровы превратились в коз"
+        },
+        {
+          "id": 4,
+          "value": "Коровы заговорили"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 17,
+      "questionContent": "Что приснилось фараону во втором сне (о колосьях)?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Семь тощих колосьев поглотили семь полных колосьев"
+        },
+        {
+          "id": 2,
+          "value": "Колосья сгорели на солнце"
+        },
+        {
+          "id": 3,
+          "value": "Колосья превратились в сорняки"
+        },
+        {
+          "id": 4,
+          "value": "Зерно рассыпалось по земле"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 18,
+      "questionContent": "Какое значение имели сны фараона согласно толкованию Иосифа?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Будет семь лет изобилия и семь лет голода"
+        },
+        {
+          "id": 2,
+          "value": "Будет война с соседями"
+        },
+        {
+          "id": 3,
+          "value": "Фараон скоро умрет"
+        },
+        {
+          "id": 4,
+          "value": "Река Нил высохнет навсегда"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 19,
+      "questionContent": "Какое имя фараон дал Иосифу, когда поставил его над всей землей Египетской?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Цафнаф-панеах"
+        },
+        {
+          "id": 2,
+          "value": "Потифар"
+        },
+        {
+          "id": 3,
+          "value": "Осирис"
+        },
+        {
+          "id": 4,
+          "value": "Имхотеп"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 20,
+      "questionContent": "Из-за чего братья Иосифа пришли в Египет в первый раз?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "В их земле настал сильный голод"
+        },
+        {
+          "id": 2,
+          "value": "Они искали Иосифа"
+        },
+        {
+          "id": 3,
+          "value": "Они хотели воевать"
+        },
+        {
+          "id": 4,
+          "value": "Они привезли товары на продажу"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 21,
+      "questionContent": "Кого Иосиф задержал в Египте как заложника, пока остальные братья не приведут Вениамина?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Симеона"
+        },
+        {
+          "id": 2,
+          "value": "Рувима"
+        },
+        {
+          "id": 3,
+          "value": "Иуду"
+        },
+        {
+          "id": 4,
+          "value": "Ефрема"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 22,
+      "questionContent": "Что Иосиф приказал положить в мешок Вениамина, чтобы испытать братьев во второй раз?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Свою серебряную чашу"
+        },
+        {
+          "id": 2,
+          "value": "Золотой слиток"
+        },
+        {
+          "id": 3,
+          "value": "Мешок денег"
+        },
+        {
+          "id": 4,
+          "value": "Разноцветную одежду"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 23,
+      "questionContent": "Кто из братьев вызвался остаться рабом вместо Вениамина, умоляя Иосифа отпустить юношу к отцу?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Иуда"
+        },
+        {
+          "id": 2,
+          "value": "Симеон"
+        },
+        {
+          "id": 3,
+          "value": "Рувим"
+        },
+        {
+          "id": 4,
+          "value": "Левий"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 24,
+      "questionContent": "В какой области Египта фараон разрешил поселиться отцу и братьям Иосифа?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Гесем"
+        },
+        {
+          "id": 2,
+          "value": "Фивы"
+        },
+        {
+          "id": 3,
+          "value": "Мемфис"
+        },
+        {
+          "id": 4,
+          "value": "Александрия"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 25,
+      "questionContent": "Как звали двух сыновей Иосифа, родившихся в Египте?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Манассия и Ефрем"
+        },
+        {
+          "id": 2,
+          "value": "Каин и Авель"
+        },
+        {
+          "id": 3,
+          "value": "Исаак и Исав"
+        },
+        {
+          "id": 4,
+          "value": "Моисей и Аарон"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 26,
+      "questionContent": "Сколько лет было Иосифу, когда братья продали его в рабство?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "17 лет"
+        },
+        {
+          "id": 2,
+          "value": "12 лет"
+        },
+        {
+          "id": 3,
+          "value": "30 лет"
+        },
+        {
+          "id": 4,
+          "value": "20 лет"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 27,
+      "questionContent": "Сколько лет было Иосифу, когда он предстал перед фараоном и стал правителем Египта?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "30 лет"
+        },
+        {
+          "id": 2,
+          "value": "20 лет"
+        },
+        {
+          "id": 3,
+          "value": "40 лет"
+        },
+        {
+          "id": 4,
+          "value": "17 лет"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 28,
+      "questionContent": "Кем была жена Иосифа, Асенефа?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Дочерью Потифера, жреца Илиопольского"
+        },
+        {
+          "id": 2,
+          "value": "Дочерью фараона"
+        },
+        {
+          "id": 3,
+          "value": "Служанкой в доме Потифара"
+        },
+        {
+          "id": 4,
+          "value": "Иудейкой из Ханаана"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 29,
+      "questionContent": "Что Иосиф сделал, когда братья во второй раз пришли к нему и поклонились до земли?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Устроил для них обед"
+        },
+        {
+          "id": 2,
+          "value": "Приказал их арестовать"
+        },
+        {
+          "id": 3,
+          "value": "Отказался с ними говорить"
+        },
+        {
+          "id": 4,
+          "value": "Выгнал их из дворца"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 30,
+      "questionContent": "Как Иосиф отреагировал на признание братьев в их грехе перед ним (когда он открылся им)?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Он заплакал и простил их"
+        },
+        {
+          "id": 2,
+          "value": "Он приказал их казнить"
+        },
+        {
+          "id": 3,
+          "value": "Он потребовал двойную цену за хлеб"
+        },
+        {
+          "id": 4,
+          "value": "Он прогнал их навсегда"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 31,
+      "questionContent": "Где Иосиф завещал похоронить свои кости после исхода из Египта?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "В земле Ханаанской"
+        },
+        {
+          "id": 2,
+          "value": "В пирамиде в Египте"
+        },
+        {
+          "id": 3,
+          "value": "На горе Синай"
+        },
+        {
+          "id": 4,
+          "value": "В Иордане"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 32,
+      "questionContent": "Кто из сыновей Иосифа получил большее благословение от Иакова, несмотря на то, что был младшим?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Ефрем"
+        },
+        {
+          "id": 2,
+          "value": "Манассия"
+        },
+        {
+          "id": 3,
+          "value": "Вениамин"
+        },
+        {
+          "id": 4,
+          "value": "Симеон"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 33,
+      "questionContent": "Как братья Иосифа поступили с ним, прежде чем продать его (сначала)?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Сняли с него одежду и бросили в пустой ров"
+        },
+        {
+          "id": 2,
+          "value": "Связали его и оставили на солнце"
+        },
+        {
+          "id": 3,
+          "value": "Привели его к отцу"
+        },
+        {
+          "id": 4,
+          "value": "Заставили его работать"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 34,
+      "questionContent": "Какое преимущество получил Иосиф от Потифара в его доме?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Стал управляющим всем домом"
+        },
+        {
+          "id": 2,
+          "value": "Стал личным поваром"
+        },
+        {
+          "id": 3,
+          "value": "Стал главным стражником"
+        },
+        {
+          "id": 4,
+          "value": "Стал учителем детей Потифара"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 35,
+      "questionContent": "Как фараон почтил Иосифа, возведя его в сан правителя?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Снял свой перстень и надел на руку Иосифа"
+        },
+        {
+          "id": 2,
+          "value": "Дал ему меч"
+        },
+        {
+          "id": 3,
+          "value": "Построил ему пирамиду"
+        },
+        {
+          "id": 4,
+          "value": "Дал ему корону"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 36,
+      "questionContent": "Через какое время после снов фараона и их истолкования наступил голод?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Через семь лет"
+        },
+        {
+          "id": 2,
+          "value": "Сразу на следующий год"
+        },
+        {
+          "id": 3,
+          "value": "Через три года"
+        },
+        {
+          "id": 4,
+          "value": "Через десять лет"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 37,
+      "questionContent": "Как братья Иосифа объяснили Иакову исчезновение сына?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Сказали, что его съел хищный зверь"
+        },
+        {
+          "id": 2,
+          "value": "Сказали, что он заблудился"
+        },
+        {
+          "id": 3,
+          "value": "Сказали, что он ушел в другую страну"
+        },
+        {
+          "id": 4,
+          "value": "Сказали, что он утонул"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 38,
+      "questionContent": "Какое обещание дал Иосиф братьям в конце своей жизни?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Что Бог посетит их и выведет из Египта"
+        },
+        {
+          "id": 2,
+          "value": "Что они навсегда останутся в Египте"
+        },
+        {
+          "id": 3,
+          "value": "Что он вернется к ним как царь"
+        },
+        {
+          "id": 4,
+          "value": "Что они получат много золота"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 39,
+      "questionContent": "Сколько лет Иосиф прожил всего?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "110 лет"
+        },
+        {
+          "id": 2,
+          "value": "120 лет"
+        },
+        {
+          "id": 3,
+          "value": "100 лет"
+        },
+        {
+          "id": 4,
+          "value": "147 лет"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 40,
+      "questionContent": "Что Иосиф сделал с телом своего отца Иакова после его смерти?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Велел врачам набальзамировать его"
+        },
+        {
+          "id": 2,
+          "value": "Похоронил его в Ниле"
+        },
+        {
+          "id": 3,
+          "value": "Сожег его на костре"
+        },
+        {
+          "id": 4,
+          "value": "Оставил его в пустыне"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 41,
+      "questionContent": "Кем были мадианитяне в контексте продажи Иосифа?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Купцами"
+        },
+        {
+          "id": 2,
+          "value": "Воинами"
+        },
+        {
+          "id": 3,
+          "value": "Пастухами"
+        },
+        {
+          "id": 4,
+          "value": "Жрецами"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 42,
+      "questionContent": "Что произошло с хлебодаром в темнице согласно предсказанию Иосифа?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Его повесили"
+        },
+        {
+          "id": 2,
+          "value": "Его отпустили домой"
+        },
+        {
+          "id": 3,
+          "value": "Он умер от болезни"
+        },
+        {
+          "id": 4,
+          "value": "Его сделали рабом"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 43,
+      "questionContent": "С каким чувством братья Иосифа смотрели на него, когда он приходил к ним?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "С ненавистью и завистью"
+        },
+        {
+          "id": 2,
+          "value": "С радостью"
+        },
+        {
+          "id": 3,
+          "value": "Со страхом"
+        },
+        {
+          "id": 4,
+          "value": "С безразличием"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 44,
+      "questionContent": "Как Иосиф вел себя в темнице в Египте?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Бог был с ним, и начальник тюрьмы доверил ему всех узников"
+        },
+        {
+          "id": 2,
+          "value": "Он постоянно жаловался"
+        },
+        {
+          "id": 3,
+          "value": "Он пытался подкупить стражу"
+        },
+        {
+          "id": 4,
+          "value": "Он хранил молчание"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 45,
+      "questionContent": "Чем занимались братья Иосифа в Ханаане?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Пасли скот"
+        },
+        {
+          "id": 2,
+          "value": "Строили города"
+        },
+        {
+          "id": 3,
+          "value": "Торговали золотом"
+        },
+        {
+          "id": 4,
+          "value": "Ловили рыбу"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 46,
+      "questionContent": "Кто был младшим братом Иосифа, сыном той же матери?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Вениамин"
+        },
+        {
+          "id": 2,
+          "value": "Симеон"
+        },
+        {
+          "id": 3,
+          "value": "Левий"
+        },
+        {
+          "id": 4,
+          "value": "Дан"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 47,
+      "questionContent": "Как Иосиф узнал своих братьев, когда они пришли в Египет?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Сразу узнал их, но они его не узнали"
+        },
+        {
+          "id": 2,
+          "value": "Они сами назвали свои имена"
+        },
+        {
+          "id": 3,
+          "value": "Бог открыл ему их лица"
+        },
+        {
+          "id": 4,
+          "value": "Он не узнал их до самого конца"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 48,
+      "questionContent": "Что Иосиф дал Вениамину в пять раз больше, чем остальным братьям, за обедом?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Еды (кушаний)"
+        },
+        {
+          "id": 2,
+          "value": "Золота"
+        },
+        {
+          "id": 3,
+          "value": "Одежды"
+        },
+        {
+          "id": 4,
+          "value": "Серебра"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 49,
+      "questionContent": "Как называлась страна, где Иосиф стал правителем?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Египет"
+        },
+        {
+          "id": 2,
+          "value": "Ассирия"
+        },
+        {
+          "id": 3,
+          "value": "Вавилон"
+        },
+        {
+          "id": 4,
+          "value": "Филистия"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 50,
+      "questionContent": "Какое животное было принесено в жертву, чтобы обмакнуть одежду Иосифа в кровь?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Козленок"
+        },
+        {
+          "id": 2,
+          "value": "Овечка"
+        },
+        {
+          "id": 3,
+          "value": "Теленок"
+        },
+        {
+          "id": 4,
+          "value": "Голубь"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 51,
+      "questionContent": "К какому источнику в Дофане братья бросили Иосифа (как он назывался в тексте)?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Ров (пустой, без воды)"
+        },
+        {
+          "id": 2,
+          "value": "Колодец Иакова"
+        },
+        {
+          "id": 3,
+          "value": "Источник Сихемский"
+        },
+        {
+          "id": 4,
+          "value": "Река Нил"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 52,
+      "questionContent": "Кто именно из братьев предложил продать Иосифа измаильтянам, сказав: 'что пользы, если мы убьем брата нашего'?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Иуда"
+        },
+        {
+          "id": 2,
+          "value": "Рувим"
+        },
+        {
+          "id": 3,
+          "value": "Симеон"
+        },
+        {
+          "id": 4,
+          "value": "Левий"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 53,
+      "questionContent": "За сколько сребреников был продан Иосиф?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Двадцать"
+        },
+        {
+          "id": 2,
+          "value": "Тридцать"
+        },
+        {
+          "id": 3,
+          "value": "Пятьдесят"
+        },
+        {
+          "id": 4,
+          "value": "Сто"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 54,
+      "questionContent": "Как звали богатого египтянина, в доме которого Иосиф служил до темницы?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Потифар"
+        },
+        {
+          "id": 2,
+          "value": "Потифер"
+        },
+        {
+          "id": 3,
+          "value": "Рамзес"
+        },
+        {
+          "id": 4,
+          "value": "Нехо"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 55,
+      "questionContent": "Назовите имя тестя Иосифа, который был жрецом Илиопольским (Она)?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Потифер"
+        },
+        {
+          "id": 2,
+          "value": "Потифар"
+        },
+        {
+          "id": 3,
+          "value": "Мельхиседек"
+        },
+        {
+          "id": 4,
+          "value": "Иофор"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 56,
+      "questionContent": "Сколько лет было Иосифу, когда он стал правителем Египта?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Тридцать"
+        },
+        {
+          "id": 2,
+          "value": "Двадцать пять"
+        },
+        {
+          "id": 3,
+          "value": "Сорок"
+        },
+        {
+          "id": 4,
+          "value": "Семнадцать"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 57,
+      "questionContent": "Как звали старшего сына Иосифа, имя которого означало 'Бог дал мне забыть все несчастья мои'?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Манассия"
+        },
+        {
+          "id": 2,
+          "value": "Ефрем"
+        },
+        {
+          "id": 3,
+          "value": "Вениамин"
+        },
+        {
+          "id": 4,
+          "value": "Гаий"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 58,
+      "questionContent": "Чей сон истолковал Иосиф как 'три дня и фараон снимет с тебя голову твою'?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Главного хлебодара"
+        },
+        {
+          "id": 2,
+          "value": "Главного виночерпия"
+        },
+        {
+          "id": 3,
+          "value": "Военачальника"
+        },
+        {
+          "id": 4,
+          "value": "Потифара"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 59,
+      "questionContent": "В какой области Египта поселились братья Иосифа?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Земля Гесем"
+        },
+        {
+          "id": 2,
+          "value": "Земля Раамсес"
+        },
+        {
+          "id": 3,
+          "value": "Земля Мемфисская"
+        },
+        {
+          "id": 4,
+          "value": "Земля Нубийская"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 60,
+      "questionContent": "Кто был матерью Вениамина и Иосифа?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Рахиль"
+        },
+        {
+          "id": 2,
+          "value": "Лия"
+        },
+        {
+          "id": 3,
+          "value": "Валла"
+        },
+        {
+          "id": 4,
+          "value": "Зелфа"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 61,
+      "questionContent": "В каком возрасте умер Иосиф в Египте?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Сто десять лет"
+        },
+        {
+          "id": 2,
+          "value": "Сто сорок семь лет"
+        },
+        {
+          "id": 3,
+          "value": "Сто тридцать лет"
+        },
+        {
+          "id": 4,
+          "value": "Девяносто лет"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 62,
+      "questionContent": "Что именно фараон снял со своей руки и надел на руку Иосифа в знак власти?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Свой перстень (печатку)"
+        },
+        {
+          "id": 2,
+          "value": "Золотой браслет"
+        },
+        {
+          "id": 3,
+          "value": "Часы"
+        },
+        {
+          "id": 4,
+          "value": "Меч"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 63,
+      "questionContent": "Какое повеление дал Иосиф своим братьям перед своей смертью относительно своих останков?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Чтобы они вынесли его кости из Египта при исходе"
+        },
+        {
+          "id": 2,
+          "value": "Чтобы его похоронили в пирамиде"
+        },
+        {
+          "id": 3,
+          "value": "Чтобы его прах развеяли над Нилом"
+        },
+        {
+          "id": 4,
+          "value": "Чтобы его похоронили в Гесеме"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 64,
+      "questionContent": "Кто предложил Иосифу 'переночевать' в доме Потифара, что привело к его заключению?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Жена Потифара"
+        },
+        {
+          "id": 2,
+          "value": "Дочь Потифара"
+        },
+        {
+          "id": 3,
+          "value": "Сам Потифар"
+        },
+        {
+          "id": 4,
+          "value": "Другой слуга"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 65,
+      "questionContent": "Как назывался город, где поклонялись богу Солнца и где жил тесть Иосифа?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Оро или Илиополь"
+        },
+        {
+          "id": 2,
+          "value": "Мемфис"
+        },
+        {
+          "id": 3,
+          "value": "Фивы"
+        },
+        {
+          "id": 4,
+          "value": "Рамзес"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 66,
+      "questionContent": "Сколько лет голода предсказал Иосиф фараону?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Семь"
+        },
+        {
+          "id": 2,
+          "value": "Три"
+        },
+        {
+          "id": 3,
+          "value": "Двенадцать"
+        },
+        {
+          "id": 4,
+          "value": "Пять"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 67,
+      "questionContent": "Кому принадлежали верблюды купцов, купивших Иосифа?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Измаильтянам из Галаада"
+        },
+        {
+          "id": 2,
+          "value": "Египтянам"
+        },
+        {
+          "id": 3,
+          "value": "Филистимлянам"
+        },
+        {
+          "id": 4,
+          "value": "Хананеям"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 68,
+      "questionContent": "Как звали брата Иосифа, которого он оставил под стражей до прихода Вениамина?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Симеон"
+        },
+        {
+          "id": 2,
+          "value": "Рувим"
+        },
+        {
+          "id": 3,
+          "value": "Иуда"
+        },
+        {
+          "id": 4,
+          "value": "Левий"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 69,
+      "questionContent": "Что Иосиф сделал, когда переполнился чувствами перед братьями и Вениамином в первый раз (но еще не открылся)?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Вышел в другую комнату и плакал"
+        },
+        {
+          "id": 2,
+          "value": "Рассмеялся"
+        },
+        {
+          "id": 3,
+          "value": "Обнял их всех"
+        },
+        {
+          "id": 4,
+          "value": "Подарил им золото"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 70,
+      "questionContent": "Что Иосиф приказал положить в мешки всех братьев, когда они уезжали в первый раз?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Их серебро (плату за хлеб)"
+        },
+        {
+          "id": 2,
+          "value": "Золотые монеты"
+        },
+        {
+          "id": 3,
+          "value": "Письмо отцу"
+        },
+        {
+          "id": 4,
+          "value": "Серебряную чашу"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 71,
+      "questionContent": "Как называлась серебряная чаша Иосифа, которую нашли в мешке Вениамина?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Чаша для гадания (как он сказал)"
+        },
+        {
+          "id": 2,
+          "value": "Чаша фараона"
+        },
+        {
+          "id": 3,
+          "value": "Чаша Потифара"
+        },
+        {
+          "id": 4,
+          "value": "Священный кубок"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 72,
+      "questionContent": "Сколько душ из дома Иакова пришло в Египет (согласно тексту Бытия)?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Семьдесят"
+        },
+        {
+          "id": 2,
+          "value": "Семьдесят пять"
+        },
+        {
+          "id": 3,
+          "value": "Двенадцать"
+        },
+        {
+          "id": 4,
+          "value": "Сто"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 73,
+      "questionContent": "Как звали египетского бога, в честь которого, по мнению некоторых, названо имя Цафнаф-панеах?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Это египетское имя означает 'открыватель тайн'"
+        },
+        {
+          "id": 2,
+          "value": "Птах"
+        },
+        {
+          "id": 3,
+          "value": "Ра"
+        },
+        {
+          "id": 4,
+          "value": "Амон"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 74,
+      "questionContent": "Кто из сыновей Иосифа был старшим по рождению?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Манассия"
+        },
+        {
+          "id": 2,
+          "value": "Ефрем"
+        },
+        {
+          "id": 3,
+          "value": "Симеон"
+        },
+        {
+          "id": 4,
+          "value": "Дан"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 75,
+      "questionContent": "Сколько лет Иосиф служил в доме Потифара и находился в темнице до воцарения (судя по возрастам 17 и 30)?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Тринадцать лет"
+        },
+        {
+          "id": 2,
+          "value": "Двадцать лет"
+        },
+        {
+          "id": 3,
+          "value": "Семь лет"
+        },
+        {
+          "id": 4,
+          "value": "Десять лет"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 76,
+      "questionContent": "О чем свидетельствовал сон хлебодара о корзинах на голове?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "О его смерти через три дня"
+        },
+        {
+          "id": 2,
+          "value": "О его помиловании"
+        },
+        {
+          "id": 3,
+          "value": "О новом изобилии хлеба"
+        },
+        {
+          "id": 4,
+          "value": "О его побеге"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 77,
+      "questionContent": "О чем свидетельствовал сон виночерпия о виноградной лозе с тремя ветвями?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "О его восстановлении в должности через три дня"
+        },
+        {
+          "id": 2,
+          "value": "О его казни"
+        },
+        {
+          "id": 3,
+          "value": "О рождении у него сына"
+        },
+        {
+          "id": 4,
+          "value": "Об урожае винограда"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 78,
+      "questionContent": "Кому Иаков доверил Вениамина после долгих уговоров, чтобы тот гарантировал его возвращение (второй раз)?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Иуде"
+        },
+        {
+          "id": 2,
+          "value": "Рувиму"
+        },
+        {
+          "id": 3,
+          "value": "Симеону"
+        },
+        {
+          "id": 4,
+          "value": "Левию"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 79,
+      "questionContent": "Какое преимущество Иосиф получил от Иакова (долю сверх братьев) перед его смертью?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Сихем, который Иаков взял у аморреев мечом"
+        },
+        {
+          "id": 2,
+          "value": "Вифлеем"
+        },
+        {
+          "id": 3,
+          "value": "Хеврон"
+        },
+        {
+          "id": 4,
+          "value": "Вефиль"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 80,
+      "questionContent": "Назовите имя жены Иосифа.",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Асенефа"
+        },
+        {
+          "id": 2,
+          "value": "Рахиль"
+        },
+        {
+          "id": 3,
+          "value": "Лия"
+        },
+        {
+          "id": 4,
+          "value": "Кетура"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 81,
+      "questionContent": "Сколько дней бальзамировали Иакова в Египте (согласно тексту)?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Сорок"
+        },
+        {
+          "id": 2,
+          "value": "Семьдесят"
+        },
+        {
+          "id": 3,
+          "value": "Тридцать"
+        },
+        {
+          "id": 4,
+          "value": "Двенадцать"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 82,
+      "questionContent": "В какой реке во сне фараона стояли коровы?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Нил"
+        },
+        {
+          "id": 2,
+          "value": "Евфрат"
+        },
+        {
+          "id": 3,
+          "value": "Иордан"
+        },
+        {
+          "id": 4,
+          "value": "Тигр"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 83,
+      "questionContent": "Что Иосиф сделал для братьев, когда они боялись его мести после смерти отца?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Успокоил их и сказал, что это Бог обратил их зло в добро"
+        },
+        {
+          "id": 2,
+          "value": "Забрал у них все имущество"
+        },
+        {
+          "id": 3,
+          "value": "Заставил их каяться публично"
+        },
+        {
+          "id": 4,
+          "value": "Проигнорировал их страхи"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 84,
+      "questionContent": "Как долго продолжался плач египтян по Иакову?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Семьдесят дней"
+        },
+        {
+          "id": 2,
+          "value": "Сорок дней"
+        },
+        {
+          "id": 3,
+          "value": "Семь дней"
+        },
+        {
+          "id": 4,
+          "value": "Тридцать дней"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 85,
+      "questionContent": "Что именно (какой товар) везли измаильтяне в Египет, когда купили Иосифа?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Стираксу, бальзам и ладан"
+        },
+        {
+          "id": 2,
+          "value": "Золото и серебро"
+        },
+        {
+          "id": 3,
+          "value": "Зерно и масло"
+        },
+        {
+          "id": 4,
+          "value": "Шелка и ткани"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 86,
+      "questionContent": "Как называлось место, где Рувим хотел спасти Иосифа, но не успел?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Дофан"
+        },
+        {
+          "id": 2,
+          "value": "Сихем"
+        },
+        {
+          "id": 3,
+          "value": "Вефиль"
+        },
+        {
+          "id": 4,
+          "value": "Хеврон"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 87,
+      "questionContent": "Сколько лет было Иакову, когда он предстал перед фараоном (и сказал, что дни его малы и злы)?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Сто тридцать лет"
+        },
+        {
+          "id": 2,
+          "value": "Сто десять лет"
+        },
+        {
+          "id": 3,
+          "value": "Сто сорок семь лет"
+        },
+        {
+          "id": 4,
+          "value": "Девяносто лет"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 88,
+      "questionContent": "Кто из братьев Иосифа был самым старшим?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Рувим"
+        },
+        {
+          "id": 2,
+          "value": "Иуда"
+        },
+        {
+          "id": 3,
+          "value": "Симеон"
+        },
+        {
+          "id": 4,
+          "value": "Левий"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 89,
+      "questionContent": "Какое число лет Иаков прожил в Египте до своей смерти?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Семнадцать"
+        },
+        {
+          "id": 2,
+          "value": "Двенадцать"
+        },
+        {
+          "id": 3,
+          "value": "Двадцать"
+        },
+        {
+          "id": 4,
+          "value": "Тридцать"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 90,
+      "questionContent": "Что Иосиф сделал, когда во время голода у египтян кончилось серебро?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Стал принимать скот в обмен на хлеб"
+        },
+        {
+          "id": 2,
+          "value": "Раздавал хлеб бесплатно"
+        },
+        {
+          "id": 3,
+          "value": "Заставил их работать на стройках"
+        },
+        {
+          "id": 4,
+          "value": "Изгнал их из городов"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 91,
+      "questionContent": "Чьих именно предков (или чей род) представлял Потифар?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Египтянин, царедворец фараона"
+        },
+        {
+          "id": 2,
+          "value": "Гиксос"
+        },
+        {
+          "id": 3,
+          "value": "Аморрей"
+        },
+        {
+          "id": 4,
+          "value": "Хеттей"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 92,
+      "questionContent": "Кто сообщил Иосифу, что его отец Иаков заболел в последний раз?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Вестник (имя не указано)"
+        },
+        {
+          "id": 2,
+          "value": "Его сыновья"
+        },
+        {
+          "id": 3,
+          "value": "Фараон"
+        },
+        {
+          "id": 4,
+          "value": "Врачи"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 93,
+      "questionContent": "Как называлась крепость (дом стражи), где сидел Иосиф?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Темница (буквально 'яма' или тюрьма Потифара)"
+        },
+        {
+          "id": 2,
+          "value": "Башня Давида"
+        },
+        {
+          "id": 3,
+          "value": "Цитадель"
+        },
+        {
+          "id": 4,
+          "value": "Каземат"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 94,
+      "questionContent": "Кем была Асенефа, жена Иосифа?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Дочь Потифера, священника Она"
+        },
+        {
+          "id": 2,
+          "value": "Дочь фараона"
+        },
+        {
+          "id": 3,
+          "value": "Племянница Потифара"
+        },
+        {
+          "id": 4,
+          "value": "Родственница Иакова"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 95,
+      "questionContent": "Что Иосиф сделал для братьев в конце Бытия (50 глава)?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Клялся им, что не причинит зла"
+        },
+        {
+          "id": 2,
+          "value": "Сделал их правителями областей"
+        },
+        {
+          "id": 3,
+          "value": "Поселил их в дворце"
+        },
+        {
+          "id": 4,
+          "value": "Дал им новые имена"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 96,
+      "questionContent": "Назовите имя второго сына Иосифа.",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Ефрем"
+        },
+        {
+          "id": 2,
+          "value": "Манассия"
+        },
+        {
+          "id": 3,
+          "value": "Иаков"
+        },
+        {
+          "id": 4,
+          "value": "Вениамин"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 97,
+      "questionContent": "Где именно похоронен Иаков после того, как его вывезли из Египта?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "В пещере Махпела"
+        },
+        {
+          "id": 2,
+          "value": "В Вифлееме"
+        },
+        {
+          "id": 3,
+          "value": "В Сихеме"
+        },
+        {
+          "id": 4,
+          "value": "В Иерусалиме"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 98,
+      "questionContent": "Сколько лет было Вениамину, когда он пришел к Иосифу в Египет (приблизительно или по контексту)?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Он был уже взрослым молодым человеком (у него были свои дети)"
+        },
+        {
+          "id": 2,
+          "value": "Младенцем"
+        },
+        {
+          "id": 3,
+          "value": "Подростком 12 лет"
+        },
+        {
+          "id": 4,
+          "value": "Стариком"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 99,
+      "questionContent": "Что случилось с хлебодаром через три дня после толкования сна?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Он был казнен (повешен)"
+        },
+        {
+          "id": 2,
+          "value": "Он был прощен"
+        },
+        {
+          "id": 3,
+          "value": "Он сбежал"
+        },
+        {
+          "id": 4,
+          "value": "Его продали в рабство"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 100,
+      "questionContent": "Кем Иосиф приказал набальзамировать своего отца?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Врачами"
+        },
+        {
+          "id": 2,
+          "value": "Жрецами"
+        },
+        {
+          "id": 3,
+          "value": "Слугами"
+        },
+        {
+          "id": 4,
+          "value": "Сам сделал это"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 101,
+      "questionContent": "Как звали человека, в чьем доме находилась темница, где сидел Иосиф?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Начальник телохранителей Потифар"
+        },
+        {
+          "id": 2,
+          "value": "Рамзес"
+        },
+        {
+          "id": 3,
+          "value": "Главный виночерпий"
+        },
+        {
+          "id": 4,
+          "value": "Фараон"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 102,
+      "questionContent": "Назовите имя отца Асенефы, жены Иосифа.",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Потифер, жрец Она"
+        },
+        {
+          "id": 2,
+          "value": "Потифар"
+        },
+        {
+          "id": 4,
+          "value": "Нехо"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 103,
+      "questionContent": "Сколько лет голода прошло, когда Иосиф открылся братьям?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Два года"
+        },
+        {
+          "id": 2,
+          "value": "Семь лет"
+        },
+        {
+          "id": 3,
+          "value": "Пять лет"
+        },
+        {
+          "id": 4,
+          "value": "Один год"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 104,
+      "questionContent": "Что именно фараон дал Иосифу в знак его нового статуса правителя (кроме перстня)?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Золотую цепь на шею и виссонные одежды"
+        },
+        {
+          "id": 2,
+          "value": "Колесницу и меч"
+        },
+        {
+          "id": 3,
+          "value": "Корону Египта"
+        },
+        {
+          "id": 4,
+          "value": "Скипетр и жезл"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 105,
+      "questionContent": "Как называлось место, где Рувим предложил бросить Иосифа в ров?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Дофан"
+        },
+        {
+          "id": 2,
+          "value": "Сихем"
+        },
+        {
+          "id": 3,
+          "value": "Хеврон"
+        },
+        {
+          "id": 4,
+          "value": "Вефиль"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 106,
+      "questionContent": "Кто из братьев Иосифа поручился перед Иаковом за Вениамина во второй раз?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Иуда"
+        },
+        {
+          "id": 2,
+          "value": "Рувим"
+        },
+        {
+          "id": 3,
+          "value": "Симеон"
+        },
+        {
+          "id": 4,
+          "value": "Левий"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 107,
+      "questionContent": "Какое число (в годах) прошло от воцарения Иосифа до его смерти?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Восемьдесят лет"
+        },
+        {
+          "id": 2,
+          "value": "Тридцать лет"
+        },
+        {
+          "id": 3,
+          "value": "Пятьдесят пять лет"
+        },
+        {
+          "id": 4,
+          "value": "Девяносто лет"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 108,
+      "questionContent": "Где именно находилась пещера Махпела, в которой похоронили Иакова?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "В Хевроне (земля Ханаанская)"
+        },
+        {
+          "id": 2,
+          "value": "В Вифлееме"
+        },
+        {
+          "id": 3,
+          "value": "В Сихеме"
+        },
+        {
+          "id": 4,
+          "value": "В Беэр-Шеве"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 109,
+      "questionContent": "Как звали вестника, который сообщил Иосифу о болезни его отца (если имя указано)?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "В тексте имя вестника не названо"
+        },
+        {
+          "id": 2,
+          "value": "Елиезер"
+        },
+        {
+          "id": 3,
+          "value": "Симеон"
+        },
+        {
+          "id": 4,
+          "value": "Манассия"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 110,
+      "questionContent": "Назовите число серебра, которое Иосиф приказал вернуть в мешки братьев в первый раз.",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Всю сумму, которую они заплатили"
+        },
+        {
+          "id": 2,
+          "value": "По десять сиклей"
+        },
+        {
+          "id": 3,
+          "value": "Сто сребреников"
+        },
+        {
+          "id": 4,
+          "value": "Половину цены"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 111,
+      "questionContent": "Как назывался город в Египте, в котором жил жрец Она (Потифер)?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Он или Илиополь"
+        },
+        {
+          "id": 2,
+          "value": "Мемфис"
+        },
+        {
+          "id": 3,
+          "value": "Рамзес"
+        },
+        {
+          "id": 4,
+          "value": "Питом"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 112,
+      "questionContent": "Что именно (какой предмет) Иосиф положил в мешок Вениамина?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Серебряную чашу"
+        },
+        {
+          "id": 2,
+          "value": "Золотой слиток"
+        },
+        {
+          "id": 3,
+          "value": "Кинжал"
+        },
+        {
+          "id": 4,
+          "value": "Ключи от хранилища"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 113,
+      "questionContent": "Какое преимущество в благословении получил Ефрем перед Манассией?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Иаков положил правую руку на его голову, хотя он был младшим"
+        },
+        {
+          "id": 2,
+          "value": "Он получил двойную порцию золота"
+        },
+        {
+          "id": 3,
+          "value": "Ему была отдана вся земля Египетская"
+        },
+        {
+          "id": 4,
+          "value": "Он стал наследником фараона"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 114,
+      "questionContent": "Сколько лет жили израильтяне в Египте до смерти Иосифа (от момента прихода Иакова)?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Семьдесят один год (Иосифу было 39 при приходе, умер в 110)"
+        },
+        {
+          "id": 2,
+          "value": "Сто лет"
+        },
+        {
+          "id": 3,
+          "value": "Семнадцать лет"
+        },
+        {
+          "id": 4,
+          "value": "Двести лет"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 115,
+      "questionContent": "Как звали человека, который первым выкупил Иосифа у мадианитян (если есть различие)?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Измаильтяне/мадианитяне — это одни и те же купцы в тексте"
+        },
+        {
+          "id": 2,
+          "value": "Потифар"
+        },
+        {
+          "id": 3,
+          "value": "Фараон"
+        },
+        {
+          "id": 4,
+          "value": "Начальник темницы"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 116,
+      "questionContent": "Какое число коров фараон видел во сне?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Четырнадцать (семь жирных и семь тощих)"
+        },
+        {
+          "id": 2,
+          "value": "Семь"
+        },
+        {
+          "id": 3,
+          "value": "Двенадцать"
+        },
+        {
+          "id": 4,
+          "value": "Двадцать одну"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 117,
+      "questionContent": "Что произошло с виночерпием через три дня после истолкования его сна?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Он был прощен и вернулся ко двору фараона"
+        },
+        {
+          "id": 2,
+          "value": "Он был казнен"
+        },
+        {
+          "id": 3,
+          "value": "Он остался в тюрьме навсегда"
+        },
+        {
+          "id": 4,
+          "value": "Он сбежал в Ханаан"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 118,
+      "questionContent": "Какую стратегию предложил Иосиф фараону для спасения страны от голода?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Собирать пятую часть урожая в течение семи лет изобилия"
+        },
+        {
+          "id": 2,
+          "value": "Продавать зерно соседям"
+        },
+        {
+          "id": 3,
+          "value": "Построить новую плотину"
+        },
+        {
+          "id": 4,
+          "value": "Запретить экспорт продуктов"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 119,
+      "questionContent": "Как звали вениамитянина (Иосиф), какое имя фараон дал ему?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Цафнаф-панеах"
+        },
+        {
+          "id": 2,
+          "value": "Осирис"
+        },
+        {
+          "id": 3,
+          "value": "Ахнатон"
+        },
+        {
+          "id": 4,
+          "value": "Менес"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 120,
+      "questionContent": "Назовите число братьев, которые пришли в Египет в самый ПЕРВЫЙ раз.",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Десять"
+        },
+        {
+          "id": 2,
+          "value": "Одиннадцать"
+        },
+        {
+          "id": 3,
+          "value": "Двенадцать"
+        },
+        {
+          "id": 4,
+          "value": "Девять"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 121,
+      "questionContent": "Кто не пошел с братьями в Египет в первый раз по желанию Иакова?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Вениамин"
+        },
+        {
+          "id": 2,
+          "value": "Симеон"
+        },
+        {
+          "id": 3,
+          "value": "Левий"
+        },
+        {
+          "id": 4,
+          "value": "Рувим"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 122,
+      "questionContent": "О чем свидетельствовали сны Иосифа его братьям в детстве (какое было их толкование)?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Что они будут поклоняться ему как правителю"
+        },
+        {
+          "id": 2,
+          "value": "Что он погибнет в пустыне"
+        },
+        {
+          "id": 3,
+          "value": "Что он станет жрецом"
+        },
+        {
+          "id": 4,
+          "value": "Что он найдет клад"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 123,
+      "questionContent": "На сколько частей Иосиф разделил землю Египетскую (в плане налогообложения) во время голода?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Пятая часть фараону (20%)"
+        },
+        {
+          "id": 2,
+          "value": "Половина урожая (50%)"
+        },
+        {
+          "id": 3,
+          "value": "Десятина (10%)"
+        },
+        {
+          "id": 4,
+          "value": "Вся земля стала принадлежать жрецам"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 124,
+      "questionContent": "Кем приходился Манассия Ефрему?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Старшим братом"
+        },
+        {
+          "id": 2,
+          "value": "Младшим братом"
+        },
+        {
+          "id": 3,
+          "value": "Отцом"
+        },
+        {
+          "id": 4,
+          "value": "Племянником"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 125,
+      "questionContent": "Как называлась область Египта, которую Иаков попросил для своего народа?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Гесем"
+        },
+        {
+          "id": 2,
+          "value": "Мемфис"
+        },
+        {
+          "id": 3,
+          "value": "Синай"
+        },
+        {
+          "id": 4,
+          "value": "Гелиополь"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 126,
+      "questionContent": "Назовите число сребреников, которые Иосиф дал Вениамину во второй раз.",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Триста"
+        },
+        {
+          "id": 2,
+          "value": "Пятьсот"
+        },
+        {
+          "id": 3,
+          "value": "Сто"
+        },
+        {
+          "id": 4,
+          "value": "Двести"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 127,
+      "questionContent": "Сколько перемен одежд Иосиф дал Вениамину?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Пять"
+        },
+        {
+          "id": 2,
+          "value": "Три"
+        },
+        {
+          "id": 3,
+          "value": "Десять"
+        },
+        {
+          "id": 4,
+          "value": "Одну"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 128,
+      "questionContent": "В каком возрасте умер Иаков, отец Иосифа?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Сто сорок семь лет"
+        },
+        {
+          "id": 2,
+          "value": "Сто десять лет"
+        },
+        {
+          "id": 3,
+          "value": "Сто тридцать лет"
+        },
+        {
+          "id": 4,
+          "value": "Сто восемьдесят лет"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 129,
+      "questionContent": "Какое название носило место, где братья Иакова оплакивали его семь дней после выхода из Египта?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Горен-Гаатад (Гумно Атада)"
+        },
+        {
+          "id": 2,
+          "value": "Вифлеем"
+        },
+        {
+          "id": 3,
+          "value": "Махпела"
+        },
+        {
+          "id": 4,
+          "value": "Суккот"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 130,
+      "questionContent": "Кому принадлежало поле и пещера Махпела?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Ефрону Хеттеянину (куплено Авраамом)"
+        },
+        {
+          "id": 2,
+          "value": "Иакову"
+        },
+        {
+          "id": 3,
+          "value": "Фараону"
+        },
+        {
+          "id": 4,
+          "value": "Потифару"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 131,
+      "questionContent": "Назовите число дней, которые египтяне плакали об Иакове.",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Семьдесят"
+        },
+        {
+          "id": 2,
+          "value": "Сорок"
+        },
+        {
+          "id": 3,
+          "value": "Тридцать"
+        },
+        {
+          "id": 4,
+          "value": "Семь"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 132,
+      "questionContent": "Как звали человека, которого братья Иакова боялись как мстителя после его смерти?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Иосиф"
+        },
+        {
+          "id": 2,
+          "value": "Исав"
+        },
+        {
+          "id": 3,
+          "value": "Потифар"
+        },
+        {
+          "id": 4,
+          "value": "Навуходоносор"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 133,
+      "questionContent": "Что именно (фраза) сказал Иосиф братьям: 'вы умышляли против меня зло; но Бог обратил его в...'?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "В добро"
+        },
+        {
+          "id": 2,
+          "value": "В ничто"
+        },
+        {
+          "id": 3,
+          "value": "В спасение многих"
+        },
+        {
+          "id": 4,
+          "value": "В испытание"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 134,
+      "questionContent": "Сколько лет жил Иосиф в Египте (всего)?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Девяносто три года (с 17 до 110)"
+        },
+        {
+          "id": 2,
+          "value": "Сто десять лет"
+        },
+        {
+          "id": 3,
+          "value": "Семьдесят лет"
+        },
+        {
+          "id": 4,
+          "value": "Восемьдесят лет"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 135,
+      "questionContent": "У какого именно источника (в каком месте) братья бросили Иосифа в ров?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "В Дофане"
+        },
+        {
+          "id": 2,
+          "value": "В Сихеме"
+        },
+        {
+          "id": 3,
+          "value": "В Хевроне"
+        },
+        {
+          "id": 4,
+          "value": "В Вефиле"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 136,
+      "questionContent": "Кто из братьев Иосифа уговорил Иакова отпустить Вениамина в Египет первым?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Никто (Иаков долго не соглашался, пока голод не усилился)"
+        },
+        {
+          "id": 2,
+          "value": "Рувим"
+        },
+        {
+          "id": 3,
+          "value": "Иуда"
+        },
+        {
+          "id": 4,
+          "value": "Левий"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 137,
+      "questionContent": "Как звали вениамитянина (Иосиф), из какого колена он был?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Колено Иосифово (Манассия и Ефрем)"
+        },
+        {
+          "id": 2,
+          "value": "Колено Иудино"
+        },
+        {
+          "id": 3,
+          "value": "Колено Вениаминово"
+        },
+        {
+          "id": 4,
+          "value": "Колено Левиино"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 138,
+      "questionContent": "Назовите число лет изобилия в Египте.",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Семь"
+        },
+        {
+          "id": 2,
+          "value": "Пять"
+        },
+        {
+          "id": 3,
+          "value": "Двенадцать"
+        },
+        {
+          "id": 4,
+          "value": "Три"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 139,
+      "questionContent": "Что именно фараон сделал, когда услышал, что пришли братья Иосифа?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Ему это было приятно, и он пригласил весь дом Иакова"
+        },
+        {
+          "id": 2,
+          "value": "Он разгневался"
+        },
+        {
+          "id": 3,
+          "value": "Он приказал им уйти"
+        },
+        {
+          "id": 4,
+          "value": "Он проигнорировал их"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 140,
+      "questionContent": "Как называлась одежда, которую носил Иосиф в детстве?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Разноцветная (длиннополая) одежда"
+        },
+        {
+          "id": 2,
+          "value": "Виссон"
+        },
+        {
+          "id": 3,
+          "value": "Плащ"
+        },
+        {
+          "id": 4,
+          "value": "Туника"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 141,
+      "questionContent": "Кто из братьев Иосифа предложил не проливать кровь, а бросить его в ров?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Рувим"
+        },
+        {
+          "id": 2,
+          "value": "Иуда"
+        },
+        {
+          "id": 3,
+          "value": "Симеон"
+        },
+        {
+          "id": 4,
+          "value": "Левий"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 142,
+      "questionContent": "Какое число лет Исаак прожил после того, как Иосиф был продан (если он умер в 180)?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Около двенадцати лет"
+        },
+        {
+          "id": 2,
+          "value": "Он умер до этого"
+        },
+        {
+          "id": 3,
+          "value": "Тридцать лет"
+        },
+        {
+          "id": 4,
+          "value": "Двадцать лет"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 143,
+      "questionContent": "Где именно находился Потифар, когда его жена обвинила Иосифа?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Вне дома (на работе или по делам)"
+        },
+        {
+          "id": 2,
+          "value": "В соседней комнате"
+        },
+        {
+          "id": 3,
+          "value": "В саду"
+        },
+        {
+          "id": 4,
+          "value": "В гостях"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 144,
+      "questionContent": "Кому Иосиф сказал фразу: 'разве я вместо Бога?'",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Братьям"
+        },
+        {
+          "id": 2,
+          "value": "Фараону"
+        },
+        {
+          "id": 3,
+          "value": "Потифару"
+        },
+        {
+          "id": 4,
+          "value": "Жене Потифара"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 145,
+      "questionContent": "Назовите число сыновей у Иакова.",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Двенадцать"
+        },
+        {
+          "id": 2,
+          "value": "Десять"
+        },
+        {
+          "id": 3,
+          "value": "Семь"
+        },
+        {
+          "id": 4,
+          "value": "Тринадцать"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 146,
+      "questionContent": "Как звали вениамитянина (Иосиф), какой по счету он был сын у Иакова?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Одиннадцатый"
+        },
+        {
+          "id": 2,
+          "value": "Первенец"
+        },
+        {
+          "id": 3,
+          "value": "Последний"
+        },
+        {
+          "id": 4,
+          "value": "Десятый"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 147,
+      "questionContent": "Что именно Иосиф дал каждому из братьев при их отъезде из Египта?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Перемену одежд"
+        },
+        {
+          "id": 2,
+          "value": "Мешок золота"
+        },
+        {
+          "id": 3,
+          "value": "Меч"
+        },
+        {
+          "id": 4,
+          "value": "Кольцо"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 148,
+      "questionContent": "Сколько лет было Иосифу, когда он умер?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Сто десять"
+        },
+        {
+          "id": 2,
+          "value": "Сто сорок семь"
+        },
+        {
+          "id": 3,
+          "value": "Сто двадцать"
+        },
+        {
+          "id": 4,
+          "value": "Сто"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 149,
+      "questionContent": "Как называлась чаша Иосифа?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Серебряная чаша"
+        },
+        {
+          "id": 2,
+          "value": "Золотой кубок"
+        },
+        {
+          "id": 3,
+          "value": "Чаша Потифара"
+        },
+        {
+          "id": 4,
+          "value": "Чаша фараона"
+        }
+      ],
+      "rightAnswerId": 1
+    },
+    {
+      "id": 150,
+      "questionContent": "Где положили тело Иосифа после смерти в Египте?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "В ковчеге (гробе)"
+        },
+        {
+          "id": 2,
+          "value": "В пирамиде"
+        },
+        {
+          "id": 3,
+          "value": "В Ниле"
+        },
+        {
+          "id": 4,
+          "value": "В пещере"
+        }
+      ],
+      "rightAnswerId": 1
+    }
+  ]
+}

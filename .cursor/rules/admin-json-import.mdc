@@ -1,0 +1,133 @@
+---
+description: Admin панель — JSON импорт наборов вопросов, формат, валидация
+globs:
+  - "app/admin/**"
+  - "src/actions/admin/**"
+  - "src/data/suites/**"
+  - "lib/validators/**"
+alwaysApply: false
+---
+
+# Admin JSON Import — наборы вопросов
+
+**ADR:** [`docs/architecture/ADR-001-migration-to-nextjs.md`](../../docs/architecture/ADR-001-migration-to-nextjs.md)  
+**Validator:** [`lib/validators/suite-import.ts`](../../lib/validators/suite-import.ts)
+
+## Канонический JSON формат набора
+
+```json
+{
+  "title": "Название набора (string, обязательно)",
+  "language": "ru",
+  "questionsList": [
+    {
+      "id": 1,
+      "questionContent": "Текст вопроса?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Вариант А" },
+        { "id": 2, "value": "Вариант Б" },
+        { "id": 3, "value": "Вариант В" },
+        { "id": 4, "value": "Вариант Г" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 2,
+      "questionContent": "Назовите имя пророка?",
+      "complexityLevel": "medium",
+      "answerType": "String",
+      "answersList": null,
+      "rightAnswerId": null,
+      "rightAnswerString": "Исайя"
+    }
+  ]
+}
+```
+
+## Правила валидации
+
+| Поле | Тип | Правило |
+|------|-----|---------|
+| `title` | string | required, min 1, max 255 |
+| `language` | string | optional, 2 chars, default "ru" |
+| `questionsList` | array | min 1, max 500 вопросов |
+| `id` | number | positive integer (legacyId при импорте) |
+| `questionContent` | string | min 1, max 1000 |
+| `complexityLevel` | enum | "easy" \| "medium" \| "hard" |
+| `answerType` | enum | "ID" \| "String" |
+| `answersList` | array\|null | если answerType="ID" — обязательно, min 2, max 10 |
+| `rightAnswerId` | number\|null | обязательно если answerType="ID" |
+| `rightAnswerString` | string\|null | обязательно если answerType="String" |
+
+## Cross-field валидация
+
+```typescript
+// В Zod схеме добавить .refine():
+export const questionSchema = z.object({ /* ... */ }).refine(
+  (data) => {
+    if (data.answerType === 'ID') {
+      return data.answersList != null && data.rightAnswerId != null;
+    }
+    if (data.answerType === 'String') {
+      return data.rightAnswerString != null && data.rightAnswerString.length > 0;
+    }
+    return false;
+  },
+  { message: 'answersList/rightAnswerId required for ID type; rightAnswerString for String type' }
+);
+```
+
+## Import Flow
+
+```
+Admin UI (SuiteImportForm)
+  → JSON.parse (клиент)
+  → importSuiteAction() (Server Action)
+    → auth() check (admin only)
+    → suiteImportSchema.safeParse()
+    → importSuiteFromJson() (DAL)
+      → prisma.questionSuite.create() + prisma.question.createMany()
+    → revalidateTag('suites')
+  → Toast (успех/ошибка)
+```
+
+## Error Handling
+
+```typescript
+// Возвращаемый тип Server Action
+type ImportResult =
+  | { success: true; data: { id: string; title: string; questionsCount: number } }
+  | { success: false; error: string | ZodFormattedError };
+```
+
+## Поддерживаемые форматы файлов
+
+- `.json` — основной формат
+- Drag & Drop загрузка файла ИЛИ вставка текста в textarea
+- Максимальный размер: 5 MB
+
+## UX Admin Import страницы
+
+```
+/admin/suites/import
+├── Заголовок + описание формата
+├── Две вкладки:
+│   ├── "Вставить JSON" — <Textarea> с JSON
+│   └── "Загрузить файл" — <Input type="file" accept=".json">
+├── Кнопка "Валидировать" (preview перед импортом)
+├── Preview: заголовок, кол-во вопросов, языковая версия
+├── Кнопка "Импортировать"
+└── Результат: Success toast / Error details
+```
+
+## Примеры существующих JSON файлов
+
+Эталонные файлы для тестирования импорта:
+- [`data/christmas.json`](../../data/christmas.json)
+- [`data/acts.json`](../../data/acts.json)
+- [`data/kings_ru.json`](../../data/kings_ru.json)
+
+Эти файлы уже соответствуют каноническому формату.

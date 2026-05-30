@@ -1,0 +1,2566 @@
+{
+  "title": "Рождество: библейская история и традиции",
+  "language": "en",
+  "questionsList": [
+    {
+      "id": 1,
+      "questionContent": "In which city was Jesus born, as prophesied by Micah?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Jerusalem" },
+        { "id": 2, "value": "Bethlehem" },
+        { "id": 3, "value": "Nazareth" },
+        { "id": 4, "value": "Hebron" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 2,
+      "questionContent": "Who was the Roman Emperor when Jesus was born?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Augustus" },
+        { "id": 2, "value": "Tiberius" },
+        { "id": 3, "value": "Nero" },
+        { "id": 4, "value": "Claudius" }
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 3,
+      "questionContent": "Which prophet wrote: 'For to us a child is born, to us a son is given'?",
+      "complexityLevel": "easy",
+      "answerType": "String",
+      "answersList": null,
+      "rightAnswerId": null,
+      "rightAnswerString": "Isaiah"
+    },
+    {
+      "id": 4,
+      "questionContent": "Which Gospel mentions the Magi (Wise Men) visiting Jesus?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Mark" },
+        { "id": 2, "value": "Luke" },
+        { "id": 3, "value": "Matthew" },
+        { "id": 4, "value": "John" }
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 5,
+      "questionContent": "What gift did the Magi bring that was often used for burial?",
+      "complexityLevel": "hard",
+      "answerType": "String",
+      "answersList": null,
+      "rightAnswerId": null,
+      "rightAnswerString": "Myrrh"
+    },
+    {
+      "id": 6,
+      "questionContent": "Where did the tradition of the Christmas tree originate?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "France" },
+        { "id": 2, "value": "Germany" },
+        { "id": 3, "value": "England" },
+        { "id": 4, "value": "Norway" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 7,
+      "questionContent": "Who was the governor of Syria during the census when Jesus was born?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Pilate" },
+        { "id": 2, "value": "Felix" },
+        { "id": 3, "value": "Quirinius" },
+        { "id": 4, "value": "Gallio" }
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 8,
+      "questionContent": "In which country is it a tradition to eat KFC for Christmas dinner?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "USA" },
+        { "id": 2, "value": "Japan" },
+        { "id": 3, "value": "China" },
+        { "id": 4, "value": "Korea" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 9,
+      "questionContent": "Who was the husband of Elizabeth, the mother of John the Baptist?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Joseph" },
+        { "id": 2, "value": "Simeon" },
+        { "id": 3, "value": "Zechariah" },
+        { "id": 4, "value": "Malachi" }
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 10,
+      "questionContent": "What city did Mary and Joseph live in before traveling to Bethlehem?",
+      "complexityLevel": "easy",
+      "answerType": "String",
+      "answersList": null,
+      "rightAnswerId": null,
+      "rightAnswerString": "Nazareth"
+    },
+    {
+      "id": 11,
+      "questionContent": "In the Gospel of Luke, who were the first to be told of Jesus' birth?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "The Magi" },
+        { "id": 2, "value": "King Herod" },
+        { "id": 3, "value": "Shepherds" },
+        { "id": 4, "value": "Scribes" }
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 12,
+      "questionContent": "How many months was Elizabeth pregnant when Mary visited her?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "3 months" },
+        { "id": 2, "value": "5 months" },
+        { "id": 3, "value": "6 months" },
+        { "id": 4, "value": "9 months" }
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 13,
+      "questionContent": "What king ordered the 'Massacre of the Innocents' in Bethlehem?",
+      "complexityLevel": "easy",
+      "answerType": "String",
+      "answersList": null,
+      "rightAnswerId": null,
+      "rightAnswerString": "Herod"
+    },
+    {
+      "id": 14,
+      "questionContent": "To which country did Joseph flee with Mary and Jesus to escape Herod?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Syria" },
+        { "id": 2, "value": "Egypt" },
+        { "id": 3, "value": "Greece" },
+        { "id": 4, "value": "Rome" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 15,
+      "questionContent": "Which prophet said: 'The virgin will conceive and give birth to a son'?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Micah" },
+        { "id": 2, "value": "Hosea" },
+        { "id": 3, "value": "Isaiah" },
+        { "id": 4, "value": "Ezekiel" }
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 16,
+      "questionContent": "In Mexico, what are the nine days of processions called?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Fiestas" },
+        { "id": 2, "value": "Posadas" },
+        { "id": 3, "value": "Navidad" },
+        { "id": 4, "value": "Pinatas" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 17,
+      "questionContent": "Who was the elderly man who met Jesus in the temple and had been promised he wouldn't die until he saw the Messiah?",
+      "complexityLevel": "medium",
+      "answerType": "String",
+      "answersList": null,
+      "rightAnswerId": null,
+      "rightAnswerString": "Simeon"
+    },
+    {
+      "id": 18,
+      "questionContent": "Which angel appeared to Mary to announce she would have a son?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Michael" },
+        { "id": 2, "value": "Gabriel" },
+        { "id": 3, "value": "Raphael" },
+        { "id": 4, "value": "Uriel" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 19,
+      "questionContent": "What does the name 'Immanuel' mean?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "God is Great" },
+        { "id": 2, "value": "God with us" },
+        { "id": 3, "value": "Prince of Peace" },
+        { "id": 4, "value": "Holy Savior" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 20,
+      "questionContent": "What did the angels sing when announcing Jesus' birth to the shepherds?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Holy, Holy, Holy" },
+        { "id": 2, "value": "Glory to God" },
+        { "id": 3, "value": "Alleluia" },
+        { "id": 4, "value": "Amen" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 21,
+      "questionContent": "What was Jesus wrapped in after He was born?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Silk robes" },
+        { "id": 2, "value": "Woolen blankets" },
+        { "id": 3, "value": "Swaddling" },
+        { "id": 4, "value": "Linen sheets" }
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 22,
+      "questionContent": "In which city did Jesus grow up?",
+      "complexityLevel": "easy",
+      "answerType": "String",
+      "answersList": null,
+      "rightAnswerId": null,
+      "rightAnswerString": "Nazareth"
+    },
+    {
+      "id": 23,
+      "questionContent": "How many generations were from Abraham to David according to Matthew 1?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "12" },
+        { "id": 2, "value": "14" },
+        { "id": 3, "value": "40" },
+        { "id": 4, "value": "7" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 24,
+      "questionContent": "Which prophetess was in the temple when Jesus was presented as a baby?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Miriam" },
+        { "id": 2, "value": "Deborah" },
+        { "id": 3, "value": "Anna" },
+        { "id": 4, "value": "Huldah" }
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 25,
+      "questionContent": "What gift of the Magi represented Jesus' kingship?",
+      "complexityLevel": "medium",
+      "answerType": "String",
+      "answersList": null,
+      "rightAnswerId": null,
+      "rightAnswerString": "Gold"
+    },
+    {
+      "id": 26,
+      "questionContent": "In Sweden, which saint is celebrated on December 13th with a crown of candles?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "St. Maria" },
+        { "id": 2, "value": "St. Lucia" },
+        { "id": 3, "value": "St. Agnes" },
+        { "id": 4, "value": "St. Bridget" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 27,
+      "questionContent": "Which king of Israel was Jesus a direct descendant of?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Saul" },
+        { "id": 2, "value": "Solomon" },
+        { "id": 3, "value": "David" },
+        { "id": 4, "value": "Hezekiah" }
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 28,
+      "questionContent": "What was Joseph's occupation?",
+      "complexityLevel": "easy",
+      "answerType": "String",
+      "answersList": null,
+      "rightAnswerId": null,
+      "rightAnswerString": "Carpenter"
+    },
+    {
+      "id": 29,
+      "questionContent": "Which Gospel records the song of Mary (The Magnificat)?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Matthew" },
+        { "id": 2, "value": "Luke" },
+        { "id": 3, "value": "John" },
+        { "id": 4, "value": "Acts" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 30,
+      "questionContent": "What did Zechariah lose until his son was born?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Hearing" },
+        { "id": 2, "value": "Sight" },
+        { "id": 3, "value": "Speech" },
+        { "id": 4, "value": "Memory" }
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 31,
+      "questionContent": "In which country is it common to hide a pickle in the Christmas tree?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "USA" },
+        { "id": 2, "value": "Germany" },
+        { "id": 3, "value": "Italy" },
+        { "id": 4, "value": "Ireland" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 32,
+      "questionContent": "What animal did Mary likely ride to Bethlehem (though not explicitly in the Bible)?",
+      "complexityLevel": "easy",
+      "answerType": "String",
+      "answersList": null,
+      "rightAnswerId": null,
+      "rightAnswerString": "Donkey"
+    },
+    {
+      "id": 33,
+      "questionContent": "What did the Magi follow to find Jesus?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "A cloud" },
+        { "id": 2, "value": "A star" },
+        { "id": 3, "value": "A map" },
+        { "id": 4, "value": "An angel" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 34,
+      "questionContent": "The name of the town Bethlehem means 'House of' what?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Water" },
+        { "id": 2, "value": "Bread" },
+        { "id": 3, "value": "Kings" },
+        { "id": 4, "value": "Peace" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 35,
+      "questionContent": "What was the name of John the Baptist's mother?",
+      "complexityLevel": "easy",
+      "answerType": "String",
+      "answersList": null,
+      "rightAnswerId": null,
+      "rightAnswerString": "Elizabeth"
+    },
+    {
+      "id": 36,
+      "questionContent": "How many wise men are specifically numbered in the Bible text?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Three" },
+        { "id": 2, "value": "Two" },
+        { "id": 3, "value": "Twelve" },
+        { "id": 4, "value": "None" }
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 37,
+      "questionContent": "Which country celebrates Christmas with a 'Giant Lantern Festival'?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Thailand" },
+        { "id": 2, "value": "Philippines" },
+        { "id": 3, "value": "Vietnam" },
+        { "id": 4, "value": "Japan" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 38,
+      "questionContent": "The shepherds found Jesus lying in a what?",
+      "complexityLevel": "easy",
+      "answerType": "String",
+      "answersList": null,
+      "rightAnswerId": null,
+      "rightAnswerString": "Manger"
+    },
+    {
+      "id": 39,
+      "questionContent": "What did the angel tell Joseph in a dream to prevent him from divorcing Mary?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Leave her" },
+        { "id": 2, "value": "Fear not" },
+        { "id": 3, "value": "Run away" },
+        { "id": 4, "value": "Go home" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 40,
+      "questionContent": "In what season of the year is Christmas in Australia?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Winter" },
+        { "id": 2, "value": "Spring" },
+        { "id": 3, "value": "Summer" },
+        { "id": 4, "value": "Autumn" }
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 41,
+      "questionContent": "Which of these is NOT a traditional gift of the Magi?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Gold" },
+        { "id": 2, "value": "Silver" },
+        { "id": 3, "value": "Myrrh" },
+        { "id": 4, "value": "Frankincense" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 42,
+      "questionContent": "What was the name of the decree that required the census?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Roman Law" },
+        { "id": 2, "value": "Augustan Law" },
+        { "id": 3, "value": "A Decree" },
+        { "id": 4, "value": "Mandate" }
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 43,
+      "questionContent": "Who is the legendary figure in Italy who delivers gifts on Epiphany?",
+      "complexityLevel": "hard",
+      "answerType": "String",
+      "answersList": null,
+      "rightAnswerId": null,
+      "rightAnswerString": "Befana"
+    },
+    {
+      "id": 44,
+      "questionContent": "According to the Bible, how many angels appeared to the shepherds?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "One" },
+        { "id": 2, "value": "A multitude" },
+        { "id": 3, "value": "Twelve" },
+        { "id": 4, "value": "Two" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 45,
+      "questionContent": "Which old testament book contains the prophecy: 'Out of Egypt I called my son'?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Isaiah" },
+        { "id": 2, "value": "Hosea" },
+        { "id": 3, "value": "Micah" },
+        { "id": 4, "value": "Malachi" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 46,
+      "questionContent": "In Greece, what is often decorated instead of a Christmas tree?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Cars" },
+        { "id": 2, "value": "Boats" },
+        { "id": 3, "value": "Bicycles" },
+        { "id": 4, "value": "Windows" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 47,
+      "questionContent": "What was the star's purpose for the Magi?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Light" },
+        { "id": 2, "value": "Guidance" },
+        { "id": 3, "value": "Decoration" },
+        { "id": 4, "value": "Warning" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 48,
+      "questionContent": "What day is 'Boxing Day' celebrated?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Dec 24" },
+        { "id": 2, "value": "Dec 25" },
+        { "id": 3, "value": "Dec 26" },
+        { "id": 4, "value": "Jan 1" }
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 49,
+      "questionContent": "What did Mary do with all the things she heard about Jesus?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Told everyone" },
+        { "id": 2, "value": "Pondered" },
+        { "id": 3, "value": "Forgot them" },
+        { "id": 4, "value": "Wrote them" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 50,
+      "questionContent": "What is the four-week period leading up to Christmas called?",
+      "complexityLevel": "easy",
+      "answerType": "String",
+      "answersList": null,
+      "rightAnswerId": null,
+      "rightAnswerString": "Advent"
+    },
+    {
+      "id": 51,
+      "questionContent": "Which prophet spoke of a 'Star out of Jacob'?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Balaam" },
+        { "id": 2, "value": "Moses" },
+        { "id": 3, "value": "Jeremiah" },
+        { "id": 4, "value": "Joel" }
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 52,
+      "questionContent": "How many years did the prophetess Anna wait in the temple?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "84 years" },
+        { "id": 2, "value": "50 years" },
+        { "id": 3, "value": "40 years" },
+        { "id": 4, "value": "12 years" }
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 53,
+      "questionContent": "What is the traditional Christmas flower that originated in Mexico?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Lily" },
+        { "id": 2, "value": "Rose" },
+        { "id": 3, "value": "Poinsettia" },
+        { "id": 4, "value": "Tulip" }
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 54,
+      "questionContent": "Which person 'lept in the womb' when Mary visited Elizabeth?",
+      "complexityLevel": "medium",
+      "answerType": "String",
+      "answersList": null,
+      "rightAnswerId": null,
+      "rightAnswerString": "John"
+    },
+    {
+      "id": 55,
+      "questionContent": "In which city did the Magi find Jesus (He was in a house by then)?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Nazareth" },
+        { "id": 2, "value": "Bethlehem" },
+        { "id": 3, "value": "Jerusalem" },
+        { "id": 4, "value": "Joppa" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 56,
+      "questionContent": "Who was the priest who doubted the angel's message about his son?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Eli" },
+        { "id": 2, "value": "Zechariah" },
+        { "id": 3, "value": "Caiaphas" },
+        { "id": 4, "value": "Annas" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 57,
+      "questionContent": "What color of clothing does Santa Claus traditionally wear?",
+      "complexityLevel": "easy",
+      "answerType": "String",
+      "answersList": null,
+      "rightAnswerId": null,
+      "rightAnswerString": "Red"
+    },
+    {
+      "id": 58,
+      "questionContent": "Which Gospel contains the detailed genealogy starting with Abraham?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Matthew" },
+        { "id": 2, "value": "Mark" },
+        { "id": 3, "value": "Luke" },
+        { "id": 4, "value": "John" }
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 59,
+      "questionContent": "What is the traditional main dish for Christmas in the UK?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Ham" },
+        { "id": 2, "value": "Turkey" },
+        { "id": 3, "value": "Beef" },
+        { "id": 4, "value": "Fish" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 60,
+      "questionContent": "In what book of the Bible is Jesus called the 'Word made flesh'?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Genesis" },
+        { "id": 2, "value": "Hebrews" },
+        { "id": 3, "value": "John" },
+        { "id": 4, "value": "Revelation" }
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 61,
+      "questionContent": "What was the name of the angel who appeared to Joseph in a dream?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Gabriel" },
+        { "id": 2, "value": "Michael" },
+        { "id": 3, "value": "Unnamed" },
+        { "id": 4, "value": "Raphael" }
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 62,
+      "questionContent": "Where do children leave their shoes by the fireplace to be filled by St. Nicholas?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "France" },
+        { "id": 2, "value": "Italy" },
+        { "id": 3, "value": "USA" },
+        { "id": 4, "value": "Spain" }
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 63,
+      "questionContent": "What did the Magi do when they saw the star had stopped?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "They wept" },
+        { "id": 2, "value": "Rejoiced" },
+        { "id": 3, "value": "Were afraid" },
+        { "id": 4, "value": "They slept" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 64,
+      "questionContent": "What is the name of the wood log traditionally burned at Christmas?",
+      "complexityLevel": "easy",
+      "answerType": "String",
+      "answersList": null,
+      "rightAnswerId": null,
+      "rightAnswerString": "Yule"
+    },
+    {
+      "id": 65,
+      "questionContent": "What was the reason Joseph and Mary went to Bethlehem?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Vacation" },
+        { "id": 2, "value": "Census" },
+        { "id": 3, "value": "Business" },
+        { "id": 4, "value": "Wedding" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 66,
+      "questionContent": "Which prophet predicted a child would be called 'Mighty God'?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Jeremiah" },
+        { "id": 2, "value": "Daniel" },
+        { "id": 3, "value": "Isaiah" },
+        { "id": 4, "value": "Amos" }
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 67,
+      "questionContent": "In Ethiopia, Christmas is called Ganna. On what date is it celebrated?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Dec 25" },
+        { "id": 2, "value": "Jan 1" },
+        { "id": 3, "value": "Jan 7" },
+        { "id": 4, "value": "Jan 19" }
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 68,
+      "questionContent": "What did Herod ask the Magi to do?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Kill the baby" },
+        { "id": 2, "value": "Report back" },
+        { "id": 3, "value": "Stay away" },
+        { "id": 4, "value": "Bring gold" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 69,
+      "questionContent": "What is the name of the 12-day festival ending on Jan 6?",
+      "complexityLevel": "medium",
+      "answerType": "String",
+      "answersList": null,
+      "rightAnswerId": null,
+      "rightAnswerString": "Epiphany"
+    },
+    {
+      "id": 70,
+      "questionContent": "Which Gospel gives the lineage of Jesus through Joseph?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Matthew" },
+        { "id": 2, "value": "Mark" },
+        { "id": 3, "value": "Luke" },
+        { "id": 4, "value": "John" }
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 71,
+      "questionContent": "Where was the baby Jesus first placed?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "In a crib" },
+        { "id": 2, "value": "In a manger" },
+        { "id": 3, "value": "On a rug" },
+        { "id": 4, "value": "In a bed" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 72,
+      "questionContent": "Which town did the Magi visit first to ask for the King?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Bethlehem" },
+        { "id": 2, "value": "Nazareth" },
+        { "id": 3, "value": "Jerusalem" },
+        { "id": 4, "value": "Jericho" }
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 73,
+      "questionContent": "In what country is it tradition to roller skate to church on Christmas Eve?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Venezuela" },
+        { "id": 2, "value": "Brazil" },
+        { "id": 3, "value": "Portugal" },
+        { "id": 4, "value": "Spain" }
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 74,
+      "questionContent": "Who was the first person to see the baby Jesus in the Gospel of Luke?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Magi" },
+        { "id": 2, "value": "Herod" },
+        { "id": 3, "value": "Mary" },
+        { "id": 4, "value": "Shepherds" }
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 75,
+      "questionContent": "What gift of the Magi was an incense used in worship?",
+      "complexityLevel": "medium",
+      "answerType": "String",
+      "answersList": null,
+      "rightAnswerId": null,
+      "rightAnswerString": "Incense"
+    },
+    {
+      "id": 76,
+      "questionContent": "How old was Jesus when He was circumcised?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "1 day" },
+        { "id": 2, "value": "7 days" },
+        { "id": 3, "value": "8 days" },
+        { "id": 4, "value": "30 days" }
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 77,
+      "questionContent": "In Norway, what is it traditional to hide on Christmas Eve?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Brooms" },
+        { "id": 2, "value": "Shoes" },
+        { "id": 3, "value": "Keys" },
+        { "id": 4, "value": "Gifts" }
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 78,
+      "questionContent": "What did the angel tell the shepherds not to be?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Afraid" },
+        { "id": 2, "value": "Lazy" },
+        { "id": 3, "value": "Silent" },
+        { "id": 4, "value": "Late" }
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 79,
+      "questionContent": "What city is called the 'City of David'?",
+      "complexityLevel": "easy",
+      "answerType": "String",
+      "answersList": null,
+      "rightAnswerId": null,
+      "rightAnswerString": "Bethlehem"
+    },
+    {
+      "id": 80,
+      "questionContent": "Which prophet said the Messiah would be a 'light to the nations'?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Malachi" },
+        { "id": 2, "value": "Isaiah" },
+        { "id": 3, "value": "Hosea" },
+        { "id": 4, "value": "Zechariah" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 81,
+      "questionContent": "In the Philippines, what star-shaped lantern is displayed?",
+      "complexityLevel": "medium",
+      "answerType": "String",
+      "answersList": null,
+      "rightAnswerId": null,
+      "rightAnswerString": "Parol"
+    },
+    {
+      "id": 82,
+      "questionContent": "What was the specific command given to the Magi in a dream after seeing Jesus?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Go to Egypt" },
+        { "id": 2, "value": "Go home direct" },
+        { "id": 3, "value": "Avoid Herod" },
+        { "id": 4, "value": "Stay with Mary" }
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 83,
+      "questionContent": "Which country is the home of St. Nicholas?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Turkey" },
+        { "id": 2, "value": "Germany" },
+        { "id": 3, "value": "Russia" },
+        { "id": 4, "value": "Norway" }
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 84,
+      "questionContent": "How many wise men does the Bible specifically mention by name?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Three" },
+        { "id": 2, "value": "Zero" },
+        { "id": 3, "value": "Five" },
+        { "id": 4, "value": "One" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 85,
+      "questionContent": "What fruit is commonly found in a Christmas stocking?",
+      "complexityLevel": "easy",
+      "answerType": "String",
+      "answersList": null,
+      "rightAnswerId": null,
+      "rightAnswerString": "Orange"
+    },
+    {
+      "id": 86,
+      "questionContent": "According to Luke, where did the holy family go after the presentation at the temple?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Egypt" },
+        { "id": 2, "value": "Nazareth" },
+        { "id": 3, "value": "Bethlehem" },
+        { "id": 4, "value": "Jerusalem" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 87,
+      "questionContent": "In Ukraine, what animal's web is a symbol of good luck at Christmas?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Bird" },
+        { "id": 2, "value": "Spider" },
+        { "id": 3, "value": "Butterfly" },
+        { "id": 4, "value": "Cat" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 88,
+      "questionContent": "Which Herod was the king during Jesus' birth?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Antipas" },
+        { "id": 2, "value": "Agrippa" },
+        { "id": 3, "value": "The Great" },
+        { "id": 4, "value": "Philip" }
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 89,
+      "questionContent": "What are the first three words of the Gospel of John?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "In the beginning" },
+        { "id": 2, "value": "Jesus was born" },
+        { "id": 3, "value": "God is love" },
+        { "id": 4, "value": "Look at him" }
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 90,
+      "questionContent": "Which country is credited with the first edible gingerbread houses?",
+      "complexityLevel": "medium",
+      "answerType": "String",
+      "answersList": null,
+      "rightAnswerId": null,
+      "rightAnswerString": "Germany"
+    },
+    {
+      "id": 91,
+      "questionContent": "What did the Wise Men see in the east?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "A rainbow" },
+        { "id": 2, "value": "A mountain" },
+        { "id": 3, "value": "A star" },
+        { "id": 4, "value": "A city" }
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 92,
+      "questionContent": "Which O.T. book prophecies: 'A ruler will come from Bethlehem'?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Joel" },
+        { "id": 2, "value": "Micah" },
+        { "id": 3, "value": "Obadiah" },
+        { "id": 4, "value": "Nahum" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 93,
+      "questionContent": "In what language was the first Christmas carol likely written?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "English" },
+        { "id": 2, "value": "Latin" },
+        { "id": 3, "value": "Hebrew" },
+        { "id": 4, "value": "Greek" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 94,
+      "questionContent": "What was the name of the child born to Zechariah and Elizabeth?",
+      "complexityLevel": "easy",
+      "answerType": "String",
+      "answersList": null,
+      "rightAnswerId": null,
+      "rightAnswerString": "John"
+    },
+    {
+      "id": 95,
+      "questionContent": "Where did the holy family stay in Bethlehem because there was no room?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "A stable" },
+        { "id": 2, "value": "A hotel" },
+        { "id": 3, "value": "A house" },
+        { "id": 4, "value": "A tent" }
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 96,
+      "questionContent": "What is the common name for the song Mary sang in Luke 1?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Gloria" },
+        { "id": 2, "value": "Magnificat" },
+        { "id": 3, "value": "Ave Maria" },
+        { "id": 4, "value": "Benedictus" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 97,
+      "questionContent": "What day is the feast of St. Stephen?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Dec 25" },
+        { "id": 2, "value": "Dec 26" },
+        { "id": 3, "value": "Jan 1" },
+        { "id": 4, "value": "Jan 6" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 98,
+      "questionContent": "Who told Joseph to take the baby to Egypt?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Mary" },
+        { "id": 2, "value": "An angel" },
+        { "id": 3, "value": "Magi" },
+        { "id": 4, "value": "Elizabeth" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 99,
+      "questionContent": "In what country is it common to eat carp for Christmas dinner?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Poland" },
+        { "id": 2, "value": "Brazil" },
+        { "id": 3, "value": "Japan" },
+        { "id": 4, "value": "India" }
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 100,
+      "questionContent": "Who was the Roman governor mentioned in Luke 2 census?",
+      "complexityLevel": "hard",
+      "answerType": "String",
+      "answersList": null,
+      "rightAnswerId": null,
+      "rightAnswerString": "Quirinius"
+    },
+    {
+      "id": 101,
+      "questionContent": "In which Gospel do we find the song of Zechariah?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Matthew" },
+        { "id": 2, "value": "Mark" },
+        { "id": 3, "value": "Luke" },
+        { "id": 4, "value": "John" }
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 102,
+      "questionContent": "What did the shepherds do after seeing Jesus?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Slept" },
+        { "id": 2, "value": "Spread word" },
+        { "id": 3, "value": "Returned home" },
+        { "id": 4, "value": "Gave gold" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 103,
+      "questionContent": "What is the name of the 'Christ-Child' in German tradition?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Nikolaus" },
+        { "id": 2, "value": "Krampus" },
+        { "id": 3, "value": "Christkind" },
+        { "id": 4, "value": "Befana" }
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 104,
+      "questionContent": "What O.T. person is a type of Jesus, born in Bethlehem?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Moses" },
+        { "id": 2, "value": "David" },
+        { "id": 3, "value": "Samuel" },
+        { "id": 4, "value": "Joshua" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 105,
+      "questionContent": "What is the traditional Japanese Christmas food?",
+      "complexityLevel": "medium",
+      "answerType": "String",
+      "answersList": null,
+      "rightAnswerId": null,
+      "rightAnswerString": "Chicken"
+    },
+    {
+      "id": 106,
+      "questionContent": "In which town did Joseph and Mary find no room in the inn?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Nazareth" },
+        { "id": 2, "value": "Jerusalem" },
+        { "id": 3, "value": "Bethlehem" },
+        { "id": 4, "value": "Hebron" }
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 107,
+      "questionContent": "What are the traditional colors of Christmas?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Blue/Gold" },
+        { "id": 2, "value": "Red/Green" },
+        { "id": 3, "value": "White/Silver" },
+        { "id": 4, "value": "Purple/Gold" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 108,
+      "questionContent": "How did the Magi know the King of the Jews was born?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "A dream" },
+        { "id": 2, "value": "The star" },
+        { "id": 3, "value": "Herod told" },
+        { "id": 4, "value": "Mary wrote" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 109,
+      "questionContent": "Which prophet spoke of a voice crying in the wilderness?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Isaiah" },
+        { "id": 2, "value": "Elijah" },
+        { "id": 3, "value": "Malachi" },
+        { "id": 4, "value": "Micah" }
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 110,
+      "questionContent": "What is the main ingredient in eggnog?",
+      "complexityLevel": "easy",
+      "answerType": "String",
+      "answersList": null,
+      "rightAnswerId": null,
+      "rightAnswerString": "Eggs"
+    },
+    {
+      "id": 111,
+      "questionContent": "What did the angel tell Mary to name her son?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "John" },
+        { "id": 2, "value": "Jesus" },
+        { "id": 3, "value": "Joseph" },
+        { "id": 4, "value": "Emmanuel" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 112,
+      "questionContent": "Who was King of Judea at the time of Jesus' birth?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Cyrus" },
+        { "id": 2, "value": "Herod" },
+        { "id": 3, "value": "Darius" },
+        { "id": 4, "value": "Philip" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 113,
+      "questionContent": "What is the most popular Christmas song ever recorded?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Silent Night" },
+        { "id": 2, "value": "White X-mas" },
+        { "id": 3, "value": "Jingle Bells" },
+        { "id": 4, "value": "Holy Night" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 114,
+      "questionContent": "In what book do we see the 'sign of the virgin'?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Psalm" },
+        { "id": 2, "value": "Isaiah" },
+        { "id": 3, "value": "Hosea" },
+        { "id": 4, "value": "Micah" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 115,
+      "questionContent": "What is the name of the shepherd's field town near Bethlehem?",
+      "complexityLevel": "hard",
+      "answerType": "String",
+      "answersList": null,
+      "rightAnswerId": null,
+      "rightAnswerString": "Beit Sahur"
+    },
+    {
+      "id": 116,
+      "questionContent": "What was the name of Joseph’s father in Matthew?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Jacob" },
+        { "id": 2, "value": "Heli" },
+        { "id": 3, "value": "Levi" },
+        { "id": 4, "value": "Matthan" }
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 117,
+      "questionContent": "Which country invented the advent calendar?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "France" },
+        { "id": 2, "value": "USA" },
+        { "id": 3, "value": "Germany" },
+        { "id": 4, "value": "Austria" }
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 118,
+      "questionContent": "How many wise men came from the East?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "3" },
+        { "id": 2, "value": "Unstated" },
+        { "id": 3, "value": "12" },
+        { "id": 4, "value": "7" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 119,
+      "questionContent": "Which book of the Bible contains the Magi narrative?",
+      "complexityLevel": "easy",
+      "answerType": "String",
+      "answersList": null,
+      "rightAnswerId": null,
+      "rightAnswerString": "Matthew"
+    },
+    {
+      "id": 120,
+      "questionContent": "Who was the mother of Jesus?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Martha" },
+        { "id": 2, "value": "Mary" },
+        { "id": 3, "value": "Ruth" },
+        { "id": 4, "value": "Esther" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 121,
+      "questionContent": "In what country is it a tradition to have a 'Caganer' in the nativity?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Italy" },
+        { "id": 2, "value": "Spain" },
+        { "id": 3, "value": "Mexico" },
+        { "id": 4, "value": "France" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 122,
+      "questionContent": "To which town did Mary go to visit Elizabeth?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Bethlehem" },
+        { "id": 2, "value": "Jericho" },
+        { "id": 3, "value": "Judean hill" },
+        { "id": 4, "value": "Nazareth" }
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 123,
+      "questionContent": "What animal did the shepherds have?",
+      "complexityLevel": "easy",
+      "answerType": "String",
+      "answersList": null,
+      "rightAnswerId": null,
+      "rightAnswerString": "Sheep"
+    },
+    {
+      "id": 124,
+      "questionContent": "Which direction did the Magi come from?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "North" },
+        { "id": 2, "value": "South" },
+        { "id": 3, "value": "East" },
+        { "id": 4, "value": "West" }
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 125,
+      "questionContent": "Who are the 'holy innocents'?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "The Magi" },
+        { "id": 2, "value": "The babies" },
+        { "id": 3, "value": "The angels" },
+        { "id": 4, "value": "The sheep" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 126,
+      "questionContent": "In which country do they celebrate Christmas with a beach BBQ?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Iceland" },
+        { "id": 2, "value": "Australia" },
+        { "id": 3, "value": "Canada" },
+        { "id": 4, "value": "Norway" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 127,
+      "questionContent": "What did the shepherds see in the sky?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "A comet" },
+        { "id": 2, "value": "Angels" },
+        { "id": 3, "value": "The moon" },
+        { "id": 4, "value": "A storm" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 128,
+      "questionContent": "What is the name of the angel who appeared to Mary?",
+      "complexityLevel": "easy",
+      "answerType": "String",
+      "answersList": null,
+      "rightAnswerId": null,
+      "rightAnswerString": "Gabriel"
+    },
+    {
+      "id": 129,
+      "questionContent": "What did Mary use as a bed for Jesus?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "A basket" },
+        { "id": 2, "value": "A manger" },
+        { "id": 3, "value": "Her lap" },
+        { "id": 4, "value": "A bed" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 130,
+      "questionContent": "Which prophet mention the virgin birth sign?",
+      "complexityLevel": "easy",
+      "answerType": "String",
+      "answersList": null,
+      "rightAnswerId": null,
+      "rightAnswerString": "Isaiah"
+    },
+    {
+      "id": 131,
+      "questionContent": "What is the English name for 'Noël'?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Easter" },
+        { "id": 2, "value": "Christmas" },
+        { "id": 3, "value": "Birthday" },
+        { "id": 4, "value": "Holiday" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 132,
+      "questionContent": "In Luke, how many days after birth was Jesus presented in the Temple?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "8" },
+        { "id": 2, "value": "30" },
+        { "id": 3, "value": "40" },
+        { "id": 4, "value": "50" }
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 133,
+      "questionContent": "In what country is it common to serve 12 dishes for Christmas Eve?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "USA" },
+        { "id": 2, "value": "Poland" },
+        { "id": 3, "value": "Mexico" },
+        { "id": 4, "value": "Spain" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 134,
+      "questionContent": "What was the name of the city of David?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Jerusalem" },
+        { "id": 2, "value": "Bethlehem" },
+        { "id": 3, "value": "Hebron" },
+        { "id": 4, "value": "Gath" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 135,
+      "questionContent": "What did Simeon say he could now do in peace?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Live" },
+        { "id": 2, "value": "Depart" },
+        { "id": 3, "value": "Reign" },
+        { "id": 4, "value": "Sleep" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 136,
+      "questionContent": "What kind of star did the Wise Men follow?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "His star" },
+        { "id": 2, "value": "Morning star" },
+        { "id": 3, "value": "Bright star" },
+        { "id": 4, "value": "Shooting star" }
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 137,
+      "questionContent": "In what country is it common to have 'The Feast of the Seven Fishes'?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Italy" },
+        { "id": 2, "value": "Greece" },
+        { "id": 3, "value": "Spain" },
+        { "id": 4, "value": "Portugal" }
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 138,
+      "questionContent": "What was the name of the place where John the Baptist was born?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Judea" },
+        { "id": 2, "value": "Samaria" },
+        { "id": 3, "value": "Galilee" },
+        { "id": 4, "value": "Perea" }
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 139,
+      "questionContent": "Who was the father of John the Baptist?",
+      "complexityLevel": "easy",
+      "answerType": "String",
+      "answersList": null,
+      "rightAnswerId": null,
+      "rightAnswerString": "Zechariah"
+    },
+    {
+      "id": 140,
+      "questionContent": "What did the angel tell Zechariah his son would drink?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "No wine" },
+        { "id": 2, "value": "Water" },
+        { "id": 3, "value": "Milk" },
+        { "id": 4, "value": "Grape juice" }
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 141,
+      "questionContent": "What color are the candles on an Advent wreath?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Red/Green" },
+        { "id": 2, "value": "Purple/Pink" },
+        { "id": 3, "value": "White/Blue" },
+        { "id": 4, "value": "Gold/Silver" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 142,
+      "questionContent": "What was the name of the angel who talked to Mary?",
+      "complexityLevel": "easy",
+      "answerType": "String",
+      "answersList": null,
+      "rightAnswerId": null,
+      "rightAnswerString": "Gabriel"
+    },
+    {
+      "id": 143,
+      "questionContent": "How many wise men were mentioned by name?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "3" },
+        { "id": 2, "value": "0" },
+        { "id": 3, "value": "12" },
+        { "id": 4, "value": "7" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 144,
+      "questionContent": "In what country is it common to light a candle in the window on Christmas Eve?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Ireland" },
+        { "id": 2, "value": "Germany" },
+        { "id": 3, "value": "USA" },
+        { "id": 4, "value": "Italy" }
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 145,
+      "questionContent": "What does the word 'advent' mean?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Birth" },
+        { "id": 2, "value": "Coming" },
+        { "id": 3, "value": "Going" },
+        { "id": 4, "value": "Staying" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 146,
+      "questionContent": "Who was Jesus' most famous ancestor?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Moses" },
+        { "id": 2, "value": "David" },
+        { "id": 3, "value": "Solomon" },
+        { "id": 4, "value": "Aaron" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 147,
+      "questionContent": "What city was the home of Mary?",
+      "complexityLevel": "easy",
+      "answerType": "String",
+      "answersList": null,
+      "rightAnswerId": null,
+      "rightAnswerString": "Nazareth"
+    },
+    {
+      "id": 148,
+      "questionContent": "What did the angel say would happen to the kingdom of David?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "It would end" },
+        { "id": 2, "value": "Last forever" },
+        { "id": 3, "value": "Be small" },
+        { "id": 4, "value": "Be hidden" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 149,
+      "questionContent": "Which country has the tradition of 'Jolabokaflod' (Christmas Book Flood)?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Norway" },
+        { "id": 2, "value": "Iceland" },
+        { "id": 3, "value": "Denmark" },
+        { "id": 4, "value": "Finland" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 150,
+      "questionContent": "Which prophet said: 'The people walking in darkness have seen a great light'?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Isaiah" },
+        { "id": 2, "value": "Jeremiah" },
+        { "id": 3, "value": "Ezekiel" },
+        { "id": 4, "value": "Daniel" }
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 151,
+      "questionContent": "Where did the Magi come from?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "North" },
+        { "id": 2, "value": "South" },
+        { "id": 3, "value": "East" },
+        { "id": 4, "value": "West" }
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 152,
+      "questionContent": "In which city did Herod live?",
+      "complexityLevel": "easy",
+      "answerType": "String",
+      "answersList": null,
+      "rightAnswerId": null,
+      "rightAnswerString": "Jerusalem"
+    },
+    {
+      "id": 153,
+      "questionContent": "Who was the priest who blessed baby Jesus?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Simeon" },
+        { "id": 2, "value": "Eli" },
+        { "id": 3, "value": "Zechariah" },
+        { "id": 4, "value": "Annas" }
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 154,
+      "questionContent": "What did the angel call Mary?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Blessed" },
+        { "id": 2, "value": "Favored" },
+        { "id": 3, "value": "Holy" },
+        { "id": 4, "value": "Chosen" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 155,
+      "questionContent": "In what country is it common to eat 'Panettone' at Christmas?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Italy" },
+        { "id": 2, "value": "Spain" },
+        { "id": 3, "value": "France" },
+        { "id": 4, "value": "Mexico" }
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 156,
+      "questionContent": "What was the name of the place where Jesus was laid?",
+      "complexityLevel": "easy",
+      "answerType": "String",
+      "answersList": null,
+      "rightAnswerId": null,
+      "rightAnswerString": "Manger"
+    },
+    {
+      "id": 157,
+      "questionContent": "In what city was Jesus' birth announced to Joseph?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Bethlehem" },
+        { "id": 2, "value": "Nazareth" },
+        { "id": 3, "value": "Jerusalem" },
+        { "id": 4, "value": "Joppa" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 158,
+      "questionContent": "Who said: 'Behold, I am the servant of the Lord'?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Elizabeth" },
+        { "id": 2, "value": "Mary" },
+        { "id": 3, "value": "Ruth" },
+        { "id": 4, "value": "Anna" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 159,
+      "questionContent": "What is the flower of Christmas in most of Europe?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Lily" },
+        { "id": 2, "value": "Holly" },
+        { "id": 3, "value": "Rose" },
+        { "id": 4, "value": "Tulip" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 160,
+      "questionContent": "How did the shepherds know where to find Jesus?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "A map" },
+        { "id": 2, "value": "Angelic sign" },
+        { "id": 3, "value": "The star" },
+        { "id": 4, "value": "Magi told" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 161,
+      "questionContent": "In what country is it common to have a Christmas 'Yule Goat'?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Sweden" },
+        { "id": 2, "value": "Germany" },
+        { "id": 3, "value": "Denmark" },
+        { "id": 4, "value": "Norway" }
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 162,
+      "questionContent": "What was the name of the decree for the census?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Taxation" },
+        { "id": 2, "value": "Registration" },
+        { "id": 3, "value": "Census" },
+        { "id": 4, "value": "Edict" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 163,
+      "questionContent": "What was the first gift mentioned in Matthew 2?",
+      "complexityLevel": "easy",
+      "answerType": "String",
+      "answersList": null,
+      "rightAnswerId": null,
+      "rightAnswerString": "Gold"
+    },
+    {
+      "id": 164,
+      "questionContent": "How many years did Mary stay with Elizabeth?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "3 months" },
+        { "id": 2, "value": "1 year" },
+        { "id": 3, "value": "6 months" },
+        { "id": 4, "value": "9 months" }
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 165,
+      "questionContent": "In France, what do children put by the fire?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Shoes" },
+        { "id": 2, "value": "Socks" },
+        { "id": 3, "value": "Hats" },
+        { "id": 4, "value": "Plates" }
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 166,
+      "questionContent": "Which book says: 'Out of Bethlehem shall come a ruler'?",
+      "complexityLevel": "easy",
+      "answerType": "String",
+      "answersList": null,
+      "rightAnswerId": null,
+      "rightAnswerString": "Micah"
+    },
+    {
+      "id": 167,
+      "questionContent": "What did the angel tell Joseph about the child?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Save people" },
+        { "id": 2, "value": "Be a king" },
+        { "id": 3, "value": "Be a priest" },
+        { "id": 4, "value": "Rule Rome" }
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 168,
+      "questionContent": "In what country is it common to have 'Sinterklaas'?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Germany" },
+        { "id": 2, "value": "Netherlands" },
+        { "id": 3, "value": "France" },
+        { "id": 4, "value": "Italy" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 169,
+      "questionContent": "What happened to Zechariah when he didn't believe?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Blindness" },
+        { "id": 2, "value": "Muteness" },
+        { "id": 3, "value": "Deafness" },
+        { "id": 4, "value": "Sickness" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 170,
+      "questionContent": "What is the traditional cake eaten in France at Christmas?",
+      "complexityLevel": "medium",
+      "answerType": "String",
+      "answersList": null,
+      "rightAnswerId": null,
+      "rightAnswerString": "Bouche"
+    },
+    {
+      "id": 171,
+      "questionContent": "Who was the Roman ruler of Syria at the birth of Jesus?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Augustus" },
+        { "id": 2, "value": "Quirinius" },
+        { "id": 3, "value": "Herod" },
+        { "id": 4, "value": "Pilate" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 172,
+      "questionContent": "What kind of clothing did the shepherds find on Jesus?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Rags" },
+        { "id": 2, "value": "Swaddling" },
+        { "id": 3, "value": "Linen" },
+        { "id": 4, "value": "Wool" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 173,
+      "questionContent": "Which country is famous for the 'Christstollen' fruit cake?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Austria" },
+        { "id": 2, "value": "Germany" },
+        { "id": 3, "value": "Poland" },
+        { "id": 4, "value": "Switzerland" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 174,
+      "questionContent": "Who said: 'My soul magnifies the Lord'?",
+      "complexityLevel": "easy",
+      "answerType": "String",
+      "answersList": null,
+      "rightAnswerId": null,
+      "rightAnswerString": "Mary"
+    },
+    {
+      "id": 175,
+      "questionContent": "Which Gospel mentions the star of Bethlehem?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Matthew" },
+        { "id": 2, "value": "Mark" },
+        { "id": 3, "value": "Luke" },
+        { "id": 4, "value": "John" }
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 176,
+      "questionContent": "What did the angels promise to people on earth?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Wealth" },
+        { "id": 2, "value": "Peace" },
+        { "id": 3, "value": "Power" },
+        { "id": 4, "value": "Health" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 177,
+      "questionContent": "In what country is it common to celebrate 'Little Christmas' on Jan 6?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "USA" },
+        { "id": 2, "value": "Ireland" },
+        { "id": 3, "value": "Spain" },
+        { "id": 4, "value": "Italy" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 178,
+      "questionContent": "What did Joseph do when he woke up from his first dream?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Took Mary" },
+        { "id": 2, "value": "Left Mary" },
+        { "id": 3, "value": "Slept more" },
+        { "id": 4, "value": "Called Herod" }
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 179,
+      "questionContent": "What city was Jesus born in?",
+      "complexityLevel": "easy",
+      "answerType": "String",
+      "answersList": null,
+      "rightAnswerId": null,
+      "rightAnswerString": "Bethlehem"
+    },
+    {
+      "id": 180,
+      "questionContent": "In what book is the name 'Prince of Peace' used?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Psalm" },
+        { "id": 2, "value": "Isaiah" },
+        { "id": 3, "value": "Matthew" },
+        { "id": 4, "value": "Luke" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 181,
+      "questionContent": "Who was the father of Jesus legally?",
+      "complexityLevel": "easy",
+      "answerType": "String",
+      "answersList": null,
+      "rightAnswerId": null,
+      "rightAnswerString": "Joseph"
+    },
+    {
+      "id": 182,
+      "questionContent": "What happened to the star over the house?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Fell" },
+        { "id": 2, "value": "Stopped" },
+        { "id": 3, "value": "Exploded" },
+        { "id": 4, "value": "Vanished" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 183,
+      "questionContent": "Which country puts a gold spider on their tree?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Russia" },
+        { "id": 2, "value": "Ukraine" },
+        { "id": 3, "value": "Poland" },
+        { "id": 4, "value": "Belarus" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 184,
+      "questionContent": "In Luke, who was the governor of Judea? (Trick: Not Augustus)",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Pilate" },
+        { "id": 2, "value": "Herod" },
+        { "id": 3, "value": "Festus" },
+        { "id": 4, "value": "Felix" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 185,
+      "questionContent": "What was the name of the star in the east?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Bethlehem" },
+        { "id": 2, "value": "David's Star" },
+        { "id": 3, "value": "His Star" },
+        { "id": 4, "value": "King's Star" }
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 186,
+      "questionContent": "How many months was Mary with Elizabeth?",
+      "complexityLevel": "medium",
+      "answerType": "String",
+      "answersList": null,
+      "rightAnswerId": null,
+      "rightAnswerString": "Three"
+    },
+    {
+      "id": 187,
+      "questionContent": "What does 'Beth' mean in Hebrew (Bethlehem)?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Food" },
+        { "id": 2, "value": "House" },
+        { "id": 3, "value": "Town" },
+        { "id": 4, "value": "Way" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 188,
+      "questionContent": "Which Gospel includes the presentation in the Temple?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Matthew" },
+        { "id": 2, "value": "Mark" },
+        { "id": 3, "value": "Luke" },
+        { "id": 4, "value": "John" }
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 189,
+      "questionContent": "In what country is it common to burn the 'Devil' for Christmas?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Mexico" },
+        { "id": 2, "value": "Guatemala" },
+        { "id": 3, "value": "Spain" },
+        { "id": 4, "value": "Italy" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 190,
+      "questionContent": "What was the name of the king of the Jews according to the Magi?",
+      "complexityLevel": "easy",
+      "answerType": "String",
+      "answersList": null,
+      "rightAnswerId": null,
+      "rightAnswerString": "Jesus"
+    },
+    {
+      "id": 191,
+      "questionContent": "What did the Magi do when they entered the house?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Talked" },
+        { "id": 2, "value": "Bowed" },
+        { "id": 3, "value": "Slept" },
+        { "id": 4, "value": "Left" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 192,
+      "questionContent": "In what country is 'Boxing Day' most popular?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "USA" },
+        { "id": 2, "value": "UK" },
+        { "id": 3, "value": "Japan" },
+        { "id": 4, "value": "Brazil" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 193,
+      "questionContent": "Which prophetess was widowed for 84 years?",
+      "complexityLevel": "hard",
+      "answerType": "String",
+      "answersList": null,
+      "rightAnswerId": null,
+      "rightAnswerString": "Anna"
+    },
+    {
+      "id": 194,
+      "questionContent": "What did Herod do when he felt threatened by the new king?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Sent gifts" },
+        { "id": 2, "value": "Killed boys" },
+        { "id": 3, "value": "Left Judea" },
+        { "id": 4, "value": "Resigned" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 195,
+      "questionContent": "In what month do Orthodox Christians celebrate Christmas?",
+      "complexityLevel": "medium",
+      "answerType": "String",
+      "answersList": null,
+      "rightAnswerId": null,
+      "rightAnswerString": "January"
+    },
+    {
+      "id": 196,
+      "questionContent": "Who was the Roman Emperor who ordered the decree?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Nero" },
+        { "id": 2, "value": "Augustus" },
+        { "id": 3, "value": "Tiberius" },
+        { "id": 4, "value": "Caesar" }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 197,
+      "questionContent": "In what country is it common to have '13 Yule Lads'?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "Iceland" },
+        { "id": 2, "value": "Norway" },
+        { "id": 3, "value": "Sweden" },
+        { "id": 4, "value": "Finland" }
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 198,
+      "questionContent": "Where did Joseph take Mary and the child for safety?",
+      "complexityLevel": "easy",
+      "answerType": "String",
+      "answersList": null,
+      "rightAnswerId": null,
+      "rightAnswerString": "Egypt"
+    },
+    {
+      "id": 199,
+      "questionContent": "What does the star represent on a Christmas tree?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        { "id": 1, "value": "The Magi" },
+        { "id": 2, "value": "The Sky" },
+        { "id": 3, "value": "Magi Star" },
+        { "id": 4, "value": "An Angel" }
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 200,
+      "questionContent": "Which prophet said the Messiah would come from the line of Jesse?",
+      "complexityLevel": "hard",
+      "answerType": "String",
+      "answersList": null,
+      "rightAnswerId": null,
+      "rightAnswerString": "Isaiah"
+    }
+  ]
+}

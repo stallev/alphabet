@@ -1,0 +1,101 @@
+---
+description: Контекст проекта "Алфавит" — источники истины, стек, инварианты
+globs:
+  - "**/*.ts"
+  - "**/*.tsx"
+alwaysApply: true
+---
+
+# Проект «Алфавит» — контекст для AI-агентов
+
+**Документ входа:** [`AGENTS.md`](../../AGENTS.md)  
+**Документация волнами:** [`docs/meta/documentation_creation_guide.md`](../../docs/meta/documentation_creation_guide.md)  
+**Schema (canonical):** [`prisma/schema.prisma`](../../prisma/schema.prisma)  
+**ADR миграция:** [`docs/architecture/ADR-001-migration-to-nextjs.md`](../../docs/architecture/ADR-001-migration-to-nextjs.md)
+
+## Что такое «Алфавит»
+
+Интерактивная командная библейская игра:
+1. **Механика Memory** — игроки открывают пары карточек с буквами алфавита
+2. **Викторина** — при совпадении пары команда выбирает уровень сложности и отвечает на вопрос
+3. **Наборы вопросов (QuestionSuite)** — тематические пакеты (библейские темы, история)
+4. **AI-генерация** — создание вопросов через Google Gemini / OpenRouter
+
+## Стек (не меняй без ADR)
+
+- **Next.js 16.2.6** App Router (не Pages Router, не Vite)
+- **Prisma 6.x** + **Neon PostgreSQL v17**
+- **Auth.js v5** (`next-auth@beta`) — JWT, Credentials, split config
+- **TailwindCSS v4** (npm, не CDN)
+- **Zustand 5** — только клиентский игровой стейт
+- **Framer Motion 12** — анимации
+- **shadcn/ui** — UI-компоненты для Admin панели
+- **Zod** — валидация данных
+
+## Ключевые модели БД
+
+```
+User           — id, email, passwordHash, role (admin|editor|subscriber), createdAt
+QuestionSuite  — id, title, language, isSystem, sourceType (json|manual|ai), createdAt
+Question       — id, suiteId, questionContent, complexityLevel, answersList, answerType
+```
+
+## Иерархия источников истины
+
+**Cursor Rules → AGENTS.md → ADR → docs/architecture → docs/meta → код**
+
+## Архитектурные инварианты (нарушать запрещено)
+
+| Инвариант | Правило |
+|-----------|---------|
+| Prisma Client | Только singleton из `lib/db.ts` — нигде больше `new PrismaClient()` |
+| auth.config.ts | Без Prisma — используется в `middleware.ts` (Edge-compatible) |
+| auth.ts | `import "server-only"` — только в Server Actions и Route Handlers |
+| components/ | Всегда `'use client'` (React hooks, browser APIs) |
+| proxy.ts | Используй `proxy()` (не `middleware()`). Только `auth.config.ts` — без Prisma |
+| admin routes | Только `role === 'admin'`, проверка в proxy.ts И в handler |
+| JSON import | Обязательная Zod-валидация до записи в БД |
+| Мутации | Проверка `auth()` в каждом Server Action и Route Handler |
+
+## Структура папок
+
+```
+alphabet/
+├── app/                    Next.js App Router
+│   ├── (game)/             Публичные игровые страницы
+│   ├── admin/              Admin панель (protected)
+│   ├── api/auth/[...nextauth]/  Auth.js handlers
+│   └── api/admin/          Admin API (suites, users)
+├── components/             'use client' React компоненты
+├── lib/                    Server-only утилиты
+│   ├── auth.ts             Auth.js (server-only)
+│   ├── auth.config.ts      Auth.js config (Edge-safe)
+│   ├── db.ts               Prisma singleton
+│   └── validators/         Zod schemas
+├── src/
+│   ├── actions/            Server Actions (тонкие)
+│   └── data/               DAL — server-only data functions
+├── prisma/                 schema.prisma, migrations
+└── docs/                   Документация
+```
+
+## Правила для агента
+
+1. Перед изменением архитектуры — создай или обнови ADR в `docs/architecture/`
+2. Новые компоненты в `components/` — всегда `'use client'`, один компонент в файл
+3. Новые Server Actions — тонкие, только вызов DAL + revalidate/redirect
+4. Новые API маршруты для Admin — проверка `auth()` + роль `admin`
+5. Изменение Prisma schema — документируй в `docs/architecture/database_schema.md`
+6. JSON import endpoint — Zod-схема обязательна
+
+## Референсный проект
+
+Архитектурные паттерны наследуются из **fitapp (Pulse)**:
+- Код: [`docs/examples/fitapp/`](../../docs/examples/fitapp/)
+- AGENTS: [`docs/examples/fitapp/AGENTS.md`](../../docs/examples/fitapp/AGENTS.md)
+
+Отличия от fitapp:
+- Одно приложение (не monorepo)
+- Нет `packages/` (domain, db, policy — всё в корне)
+- Auth split: `lib/auth.config.ts` + `lib/auth.ts` (не `src/auth.config.ts`)
+- proxy.ts отсутствует — используется стандартный `middleware.ts` (Next.js 15)

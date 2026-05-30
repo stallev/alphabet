@@ -1,0 +1,2507 @@
+
+{
+    "title": "Жизнь Павла",
+    "language": "ru",
+    "questionsList": [
+        {
+            "id": 1,
+            "questionContent": "У ног кого был воспитан Савл (Павел) в Иерусалиме?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Гиллеля"
+                },
+                {
+                    "id": 2,
+                    "value": "Шаммая"
+                },
+                {
+                    "id": 3,
+                    "value": "Гамалиила"
+                },
+                {
+                    "id": 4,
+                    "value": "Каиафы"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 2,
+            "questionContent": "От какого колена происходил Павел?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Вениаминова"
+                },
+                {
+                    "id": 2,
+                    "value": "Ефремова"
+                },
+                {
+                    "id": 3,
+                    "value": "Левиина"
+                },
+                {
+                    "id": 4,
+                    "value": "Иудина"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 3,
+            "questionContent": "В каком городе Павел воскресил юношу Евтиха?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "В Троаде"
+                },
+                {
+                    "id": 2,
+                    "value": "В Милиции"
+                },
+                {
+                    "id": 3,
+                    "value": "В Филиппах"
+                },
+                {
+                    "id": 4,
+                    "value": "В Ефесе"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 4,
+            "questionContent": "Как звали проконсула Кипра, который уверовал после ослепления волхва?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Публий"
+                },
+                {
+                    "id": 2,
+                    "value": "Галлион"
+                },
+                {
+                    "id": 3,
+                    "value": "Феликс"
+                },
+                {
+                    "id": 4,
+                    "value": "Сергий Павел"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 5,
+            "questionContent": "В каком городе язычники назвали Павла 'Ермием' (Гермесом), а Варнаву 'Зевсом'?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "В Иконии"
+                },
+                {
+                    "id": 2,
+                    "value": "В Дервии"
+                },
+                {
+                    "id": 3,
+                    "value": "В Листре"
+                },
+                {
+                    "id": 4,
+                    "value": "В Афинах"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 6,
+            "questionContent": "Кто был первым крещенным в Европе уверовавшим через проповедь Павла?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Лидия (торговка багряницею)"
+                },
+                {
+                    "id": 2,
+                    "value": "Прискилла"
+                },
+                {
+                    "id": 3,
+                    "value": "Дионисий Ареопагит"
+                },
+                {
+                    "id": 4,
+                    "value": "Темничный страж"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 7,
+            "questionContent": "Что означало римское гражданство Павла для его наказания?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Его должны были кормить за счет государства"
+                },
+                {
+                    "id": 2,
+                    "value": "Его нельзя было сажать в тюрьму"
+                },
+                {
+                    "id": 3,
+                    "value": "Его должны были отпустить"
+                },
+                {
+                    "id": 4,
+                    "value": "Его нельзя было бить без суда"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 8,
+            "questionContent": "Кого Павел взял с собой во второе миссионерское путешествие вместо Варнавы?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Тимофея"
+                },
+                {
+                    "id": 2,
+                    "value": "Марка"
+                },
+                {
+                    "id": 3,
+                    "value": "Луку"
+                },
+                {
+                    "id": 4,
+                    "value": "Силу"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 9,
+            "questionContent": "О каком 'жале в плоть' писал Павел?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Слепота"
+                },
+                {
+                    "id": 2,
+                    "value": "Гонения"
+                },
+                {
+                    "id": 3,
+                    "value": "Хромота"
+                },
+                {
+                    "id": 4,
+                    "value": "Ангел сатаны (неизвестная болезнь или искушение)"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 10,
+            "questionContent": "Сколько раз Павла били палками?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Один раз"
+                },
+                {
+                    "id": 2,
+                    "value": "Три раза"
+                },
+                {
+                    "id": 3,
+                    "value": "Пять раз"
+                },
+                {
+                    "id": 4,
+                    "value": "Ни разу"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 11,
+            "questionContent": "Сколько раз Павел получал от иудеев 'по сорока ударов без одного'?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Один раз"
+                },
+                {
+                    "id": 2,
+                    "value": "Семь раз"
+                },
+                {
+                    "id": 3,
+                    "value": "Три раза"
+                },
+                {
+                    "id": 4,
+                    "value": "Пять раз"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 12,
+            "questionContent": "Кто был учителем в Антиохийской церкви вместе с Варнавой и Павлом?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Луций Киринеянин"
+                },
+                {
+                    "id": 2,
+                    "value": "Манаил"
+                },
+                {
+                    "id": 3,
+                    "value": "Агав"
+                },
+                {
+                    "id": 4,
+                    "value": "Симеон, называемый Нигер"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 13,
+            "questionContent": "В каком городе Павел увидел жертвенник 'Неведомому Богу'?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Ефес"
+                },
+                {
+                    "id": 2,
+                    "value": "Коринф"
+                },
+                {
+                    "id": 3,
+                    "value": "Афины"
+                },
+                {
+                    "id": 4,
+                    "value": "Рим"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 14,
+            "questionContent": "Какой поэт (стоик) был процитирован Павлом в Афинах: 'Мы его и род'?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Платон"
+                },
+                {
+                    "id": 2,
+                    "value": "Эпименид"
+                },
+                {
+                    "id": 3,
+                    "value": "Гомер"
+                },
+                {
+                    "id": 4,
+                    "value": "Арат (или Клеанф)"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 15,
+            "questionContent": "Кто был проконсулом Ахаии, когда иудеи напали на Павла в Коринфе?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Галлион"
+                },
+                {
+                    "id": 2,
+                    "value": "Фест"
+                },
+                {
+                    "id": 3,
+                    "value": "Феликс"
+                },
+                {
+                    "id": 4,
+                    "value": "Квириний"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 16,
+            "questionContent": "Сколько времени Павел учил в Ефесе в училище Тиранна?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Один месяц"
+                },
+                {
+                    "id": 2,
+                    "value": "Полгода"
+                },
+                {
+                    "id": 3,
+                    "value": "Два года (всего в Ефесе три)"
+                },
+                {
+                    "id": 4,
+                    "value": "Пять лет"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 17,
+            "questionContent": "Каким ремеслом занимался Павел?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Рыболовством"
+                },
+                {
+                    "id": 2,
+                    "value": "Кожевенным делом"
+                },
+                {
+                    "id": 3,
+                    "value": "Плотничеством"
+                },
+                {
+                    "id": 4,
+                    "value": "Деланием палаток"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 18,
+            "questionContent": "Кто такие Акила и Прискилла?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Супруги, сотрудники Павла, делатели палаток"
+                },
+                {
+                    "id": 2,
+                    "value": "Противники Павла"
+                },
+                {
+                    "id": 3,
+                    "value": "Рабы"
+                },
+                {
+                    "id": 4,
+                    "value": "Римские правители"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 19,
+            "questionContent": "Откуда Павел написал Послание к Римлянам?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Из Рима"
+                },
+                {
+                    "id": 2,
+                    "value": "Из Ефеса"
+                },
+                {
+                    "id": 3,
+                    "value": "Из Иерусалима"
+                },
+                {
+                    "id": 4,
+                    "value": "Из Коринфа (Кенхреи)"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 20,
+            "questionContent": "Кто доставил Послание к Римлянам в Рим?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Тит"
+                },
+                {
+                    "id": 2,
+                    "value": "Фива, диаконисса"
+                },
+                {
+                    "id": 3,
+                    "value": "Сила"
+                },
+                {
+                    "id": 4,
+                    "value": "Тимофей"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 21,
+            "questionContent": "В каком городе Серебряник Димитрий поднял бунт против Павла?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Ефес"
+                },
+                {
+                    "id": 2,
+                    "value": "Филиппы"
+                },
+                {
+                    "id": 3,
+                    "value": "Афины"
+                },
+                {
+                    "id": 4,
+                    "value": "Коринф"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 22,
+            "questionContent": "Кто предупредил тысяченачальника о заговоре убить Павла?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Сотник"
+                },
+                {
+                    "id": 2,
+                    "value": "Тимофей"
+                },
+                {
+                    "id": 3,
+                    "value": "Лука"
+                },
+                {
+                    "id": 4,
+                    "value": "Племянник Павла (сын сестры)"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 23,
+            "questionContent": "Сколько воинов охраняли Павла при переводе из Иерусалима в Кесарию?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "50"
+                },
+                {
+                    "id": 2,
+                    "value": "10"
+                },
+                {
+                    "id": 3,
+                    "value": "470 (200 воинов, 70 конных, 200 стрелков)"
+                },
+                {
+                    "id": 4,
+                    "value": "100"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 24,
+            "questionContent": "Как звали правителя (прокуратора), который сменил Феликса?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Понтий Пилат"
+                },
+                {
+                    "id": 2,
+                    "value": "Порций Фест"
+                },
+                {
+                    "id": 3,
+                    "value": "Ирод Агриппа"
+                },
+                {
+                    "id": 4,
+                    "value": "Лисий"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 25,
+            "questionContent": "На каком острове Павел спася от кораблекрушения?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Крит"
+                },
+                {
+                    "id": 2,
+                    "value": "Сицилия"
+                },
+                {
+                    "id": 3,
+                    "value": "Кипр"
+                },
+                {
+                    "id": 4,
+                    "value": "Мальта (Мелит)"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 26,
+            "questionContent": "Что случилось с Павлом на Мальте, когда он собирал хворост?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Он нашел клад"
+                },
+                {
+                    "id": 2,
+                    "value": "На него напали разбойники"
+                },
+                {
+                    "id": 3,
+                    "value": "Он обжегся"
+                },
+                {
+                    "id": 4,
+                    "value": "Повисла ехидна (змея) на руке"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 27,
+            "questionContent": "Какое звание имел Публий на Мальте?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Царь"
+                },
+                {
+                    "id": 2,
+                    "value": "Начальник острова"
+                },
+                {
+                    "id": 3,
+                    "value": "Сотник"
+                },
+                {
+                    "id": 4,
+                    "value": "Жрец"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 28,
+            "questionContent": "В каком послании Павел пишет о 'всеоружии Божием'?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "К Ефесянам (6 глава)"
+                },
+                {
+                    "id": 2,
+                    "value": "К Филиппийцам"
+                },
+                {
+                    "id": 3,
+                    "value": "К Колоссянам"
+                },
+                {
+                    "id": 4,
+                    "value": "К Римлянам"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 29,
+            "questionContent": "Кто был секретарем (писцом), записавшим послание к Римлянам?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Лука"
+                },
+                {
+                    "id": 2,
+                    "value": "Тимофей"
+                },
+                {
+                    "id": 3,
+                    "value": "Тертий"
+                },
+                {
+                    "id": 4,
+                    "value": "Сила"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 30,
+            "questionContent": "Кого Павел называл 'мой сын в вере'?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Тимофея (и Тита)"
+                },
+                {
+                    "id": 2,
+                    "value": "Марка"
+                },
+                {
+                    "id": 3,
+                    "value": "Аполлоса"
+                },
+                {
+                    "id": 4,
+                    "value": "Варнаву"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 31,
+            "questionContent": "С кем поссорился Павел перед вторым путешествием из-за Марка?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "С Петром"
+                },
+                {
+                    "id": 2,
+                    "value": "С Варнавой"
+                },
+                {
+                    "id": 3,
+                    "value": "С Иаковом"
+                },
+                {
+                    "id": 4,
+                    "value": "С Силой"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 32,
+            "questionContent": "Какой город Павел покинул ночью, спущенный в корзине со стены?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Тарс"
+                },
+                {
+                    "id": 2,
+                    "value": "Иерусалим"
+                },
+                {
+                    "id": 3,
+                    "value": "Антиохия"
+                },
+                {
+                    "id": 4,
+                    "value": "Дамаск"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 33,
+            "questionContent": "Сколько раз Павел был в кораблекрушении?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Много раз"
+                },
+                {
+                    "id": 2,
+                    "value": "Три раза (до написания послания)"
+                },
+                {
+                    "id": 3,
+                    "value": "Один раз"
+                },
+                {
+                    "id": 4,
+                    "value": "Пять раз"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 34,
+            "questionContent": "Кто сказал Павлу: 'Безумствуешь ты, Павел! Большая ученость доводит тебя до сумасшествия'?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Пилат"
+                },
+                {
+                    "id": 2,
+                    "value": "Фест"
+                },
+                {
+                    "id": 3,
+                    "value": "Агриппа"
+                },
+                {
+                    "id": 4,
+                    "value": "Феликс"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 35,
+            "questionContent": "Что Павел называл 'корнем всех зол'?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Гордость"
+                },
+                {
+                    "id": 2,
+                    "value": "Зависть"
+                },
+                {
+                    "id": 3,
+                    "value": "Сребролюбие"
+                },
+                {
+                    "id": 4,
+                    "value": "Блуд"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 36,
+            "questionContent": "Кем был Епафродит для Павла?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Соузником в Риме"
+                },
+                {
+                    "id": 2,
+                    "value": "Рабом"
+                },
+                {
+                    "id": 3,
+                    "value": "Посланником от Филиппийцев, служившим ему"
+                },
+                {
+                    "id": 4,
+                    "value": "Врачом"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 37,
+            "questionContent": "О каком рабе Павел писал Филимону?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Тихик"
+                },
+                {
+                    "id": 2,
+                    "value": "Епафрас"
+                },
+                {
+                    "id": 3,
+                    "value": "Онисим"
+                },
+                {
+                    "id": 4,
+                    "value": "Тимофей"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 38,
+            "questionContent": "В каком послании Павел пишет о плодах духа?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "К Римлянам"
+                },
+                {
+                    "id": 2,
+                    "value": "К Коринфянам"
+                },
+                {
+                    "id": 3,
+                    "value": "К Галатам (5 глава)"
+                },
+                {
+                    "id": 4,
+                    "value": "К Ефесянам"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 39,
+            "questionContent": "Какое послание считается последним написанным Павлом?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "2 Тимофею"
+                },
+                {
+                    "id": 2,
+                    "value": "Римлянам"
+                },
+                {
+                    "id": 3,
+                    "value": "Титу"
+                },
+                {
+                    "id": 4,
+                    "value": "Филимону"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 40,
+            "questionContent": "Кто покинул Павла, 'возлюбив нынешний век'?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Марк"
+                },
+                {
+                    "id": 2,
+                    "value": "Димас"
+                },
+                {
+                    "id": 3,
+                    "value": "Лука"
+                },
+                {
+                    "id": 4,
+                    "value": "Тихик"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 41,
+            "questionContent": "Где Павел оставил Тита для устроения церкви?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "В Ефесе"
+                },
+                {
+                    "id": 2,
+                    "value": "В Коринфе"
+                },
+                {
+                    "id": 3,
+                    "value": "В Антиохии"
+                },
+                {
+                    "id": 4,
+                    "value": "На Крите"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 42,
+            "questionContent": "Где Павел оставил Тимофея?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "В Коринфе"
+                },
+                {
+                    "id": 2,
+                    "value": "В Фессалониках"
+                },
+                {
+                    "id": 3,
+                    "value": "В Троаде"
+                },
+                {
+                    "id": 4,
+                    "value": "В Ефесе"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 43,
+            "questionContent": "Кто был городским казначеем в Коринфе?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Ераст"
+                },
+                {
+                    "id": 2,
+                    "value": "Крисп"
+                },
+                {
+                    "id": 3,
+                    "value": "Сосфен"
+                },
+                {
+                    "id": 4,
+                    "value": "Гаий"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 44,
+            "questionContent": "Кого Павел называл 'брат и сотрудник' и 'поспешник в труде'?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Петра"
+                },
+                {
+                    "id": 2,
+                    "value": "Многих (Тимофея, Тита, Епафродита...), но часто Тимофея"
+                },
+                {
+                    "id": 3,
+                    "value": "Иакова"
+                },
+                {
+                    "id": 4,
+                    "value": "Апполоса"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 45,
+            "questionContent": "Какой язык Павел использовал, обращаясь к народу с лестницы крепости?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Сирийский"
+                },
+                {
+                    "id": 2,
+                    "value": "Еврейский (арамейский)"
+                },
+                {
+                    "id": 3,
+                    "value": "Латинский"
+                },
+                {
+                    "id": 4,
+                    "value": "Греческий"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 46,
+            "questionContent": "Что сделал Павел на острове, чтобы помочь отцу Публия?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Дал лекарство"
+                },
+                {
+                    "id": 2,
+                    "value": "Помолился и возложил руки, исцелил от горячки"
+                },
+                {
+                    "id": 3,
+                    "value": "Ничего"
+                },
+                {
+                    "id": 4,
+                    "value": "Проповедовал"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 47,
+            "questionContent": "В каком городе Павел остриг голову по обету?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "В Коринфе"
+                },
+                {
+                    "id": 2,
+                    "value": "В Иерусалиме"
+                },
+                {
+                    "id": 3,
+                    "value": "В Кенхреях"
+                },
+                {
+                    "id": 4,
+                    "value": "В Антиохии"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 48,
+            "questionContent": "О каких двух женщинах в Филиппах Павел просил, чтобы они 'мыслили то же'?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Еводия и Синтихия"
+                },
+                {
+                    "id": 2,
+                    "value": "Фива и Хлоя"
+                },
+                {
+                    "id": 3,
+                    "value": "Лидия и Прискилла"
+                },
+                {
+                    "id": 4,
+                    "value": "Мария и Марфа"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 49,
+            "questionContent": "Что Павел забыл (оставил) в Троаде у Карпа?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Сандалии"
+                },
+                {
+                    "id": 2,
+                    "value": "Деньги"
+                },
+                {
+                    "id": 3,
+                    "value": "Меч"
+                },
+                {
+                    "id": 4,
+                    "value": "Фелонь (плащ) и книги, особенно кожаные"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 50,
+            "questionContent": "Как Павел определял 'веру' в Евреям 11?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Осуществление ожидаемого и уверенность в невидимом"
+                },
+                {
+                    "id": 2,
+                    "value": "Слепое доверие"
+                },
+                {
+                    "id": 3,
+                    "value": "Сила духа"
+                },
+                {
+                    "id": 4,
+                    "value": "Знание Бога"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 51,
+            "questionContent": "Кто был 'врач возлюбленный', сопровождавший Павла?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Марк"
+                },
+                {
+                    "id": 2,
+                    "value": "Демас"
+                },
+                {
+                    "id": 3,
+                    "value": "Лука"
+                },
+                {
+                    "id": 4,
+                    "value": "Тит"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 52,
+            "questionContent": "Кого Павел предал сатане, 'чтобы они научились не богохульствовать'?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Именея и Александра"
+                },
+                {
+                    "id": 2,
+                    "value": "Димитрия"
+                },
+                {
+                    "id": 3,
+                    "value": "Симона волхва"
+                },
+                {
+                    "id": 4,
+                    "value": "Ананию и Сапфиру"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 53,
+            "questionContent": "Какая церковь прислала Павлу помощь в Фессалонику 'и раз и два'?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Римская"
+                },
+                {
+                    "id": 2,
+                    "value": "Филиппийская"
+                },
+                {
+                    "id": 3,
+                    "value": "Коринфская"
+                },
+                {
+                    "id": 4,
+                    "value": "Ефесская"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 54,
+            "questionContent": "Как звали первосвященника, который приказал бить Павла по устам?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Анания"
+                },
+                {
+                    "id": 2,
+                    "value": "Анна"
+                },
+                {
+                    "id": 3,
+                    "value": "Каиафа"
+                },
+                {
+                    "id": 4,
+                    "value": "Александр"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 55,
+            "questionContent": "Что Павел ответил, когда понял, что оскорбил первосвященника?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "'Я не знал, братия, что он первосвященник; ибо написано: начальствующего в народе твоем не злословь'"
+                },
+                {
+                    "id": 2,
+                    "value": "Замолчал"
+                },
+                {
+                    "id": 3,
+                    "value": "Продолжил обвинять"
+                },
+                {
+                    "id": 4,
+                    "value": "Извинился без цитаты"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 56,
+            "questionContent": "Кто упал мертвым, когда Петр (в контексте Деяний, связанных с ранней церковью) обличил его во лжи?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Ирод Агриппа"
+                },
+                {
+                    "id": 2,
+                    "value": "Елима"
+                },
+                {
+                    "id": 3,
+                    "value": "Анания и Сапфира"
+                },
+                {
+                    "id": 4,
+                    "value": "Симон волхв"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 57,
+            "questionContent": "Где Павел проповедовал 'до полуночи', что привело к сну Евтиха?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "В Коринфе"
+                },
+                {
+                    "id": 2,
+                    "value": "В Афинах"
+                },
+                {
+                    "id": 3,
+                    "value": "В Троаде"
+                },
+                {
+                    "id": 4,
+                    "value": "В Милите"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 58,
+            "questionContent": "Какой город был родиной Варнавы?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Кипр (был левит, родом Кипрянин)"
+                },
+                {
+                    "id": 2,
+                    "value": "Тарс"
+                },
+                {
+                    "id": 3,
+                    "value": "Иерусалим"
+                },
+                {
+                    "id": 4,
+                    "value": "Антиохия"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 59,
+            "questionContent": "Кто такие 'иудействующие' в послании к Галатам?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Те, кто требовал обрезания и соблюдения закона от язычников"
+                },
+                {
+                    "id": 2,
+                    "value": "Прозелиты"
+                },
+                {
+                    "id": 3,
+                    "value": "Римские солдаты"
+                },
+                {
+                    "id": 4,
+                    "value": "Фарисеи"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 60,
+            "questionContent": "Кого Павел назвал 'истинным сыном по общей вере'?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Филимона"
+                },
+                {
+                    "id": 2,
+                    "value": "Тимофея"
+                },
+                {
+                    "id": 3,
+                    "value": "Марка"
+                },
+                {
+                    "id": 4,
+                    "value": "Тита"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 61,
+            "questionContent": "Какой титул употреблял Фест, обращаясь к Агриппе о Павле?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Друг"
+                },
+                {
+                    "id": 2,
+                    "value": "Господин"
+                },
+                {
+                    "id": 3,
+                    "value": "Царь"
+                },
+                {
+                    "id": 4,
+                    "value": "Брат"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 62,
+            "questionContent": "Что ответили афиняне Павлу после проповеди о воскресении?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Прогнали"
+                },
+                {
+                    "id": 2,
+                    "value": "Все уверовали"
+                },
+                {
+                    "id": 3,
+                    "value": "Побили камнями"
+                },
+                {
+                    "id": 4,
+                    "value": "Одни насмехались, другие говорили: 'послушаем тебя в другое время'"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 63,
+            "questionContent": "Как звали члена Ареопага, уверовавшего в Афинах?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Мнасон"
+                },
+                {
+                    "id": 2,
+                    "value": "Дионисий Ареопагит"
+                },
+                {
+                    "id": 3,
+                    "value": "Иасон"
+                },
+                {
+                    "id": 4,
+                    "value": "Дамарь"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 64,
+            "questionContent": "Где Павел встретил Тимофея впервые?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "В Антиохии"
+                },
+                {
+                    "id": 2,
+                    "value": "В Листре (или Дервии/Листре)"
+                },
+                {
+                    "id": 3,
+                    "value": "В Иерусалиме"
+                },
+                {
+                    "id": 4,
+                    "value": "В Троаде"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 65,
+            "questionContent": "Кто была бабушка Тимофея?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Анна"
+                },
+                {
+                    "id": 2,
+                    "value": "Лоида"
+                },
+                {
+                    "id": 3,
+                    "value": "Евника"
+                },
+                {
+                    "id": 4,
+                    "value": "Елисавета"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 66,
+            "questionContent": "Кто была мать Тимофея?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Евника"
+                },
+                {
+                    "id": 2,
+                    "value": "Лоида"
+                },
+                {
+                    "id": 3,
+                    "value": "Мария"
+                },
+                {
+                    "id": 4,
+                    "value": "Прискилла"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 67,
+            "questionContent": "Какого вероисповедания был отец Тимофея?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Еллин (грек)"
+                },
+                {
+                    "id": 2,
+                    "value": "Иудей"
+                },
+                {
+                    "id": 3,
+                    "value": "Римлянин"
+                },
+                {
+                    "id": 4,
+                    "value": "Сириец"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 68,
+            "questionContent": "Какое послание не содержит приветствий конкретным людям и темы церковного устройства, а говорит о тайне Христа и Церкви?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "К Римлянам"
+                },
+                {
+                    "id": 2,
+                    "value": "К Тимофею"
+                },
+                {
+                    "id": 3,
+                    "value": "К Филимону"
+                },
+                {
+                    "id": 4,
+                    "value": "К Ефесянам"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 69,
+            "questionContent": "О скольких стадиях (небесах) восхищения говорит Павел в 2 Кор 12?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "До седьмого неба"
+                },
+                {
+                    "id": 2,
+                    "value": "До пятого неба"
+                },
+                {
+                    "id": 3,
+                    "value": "До первого неба"
+                },
+                {
+                    "id": 4,
+                    "value": "До третьего неба"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 70,
+            "questionContent": "Кто такой Гаий Дервянин?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Фарисей"
+                },
+                {
+                    "id": 2,
+                    "value": "Спутник Павла"
+                },
+                {
+                    "id": 3,
+                    "value": "Разбойник"
+                },
+                {
+                    "id": 4,
+                    "value": "Правитель"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 71,
+            "questionContent": "Какую тему Павел раскрывает в 1 Кор 15?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Брак"
+                },
+                {
+                    "id": 2,
+                    "value": "Воскресение мертвых"
+                },
+                {
+                    "id": 3,
+                    "value": "Дары Духа"
+                },
+                {
+                    "id": 4,
+                    "value": "Идоложертвенное"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 72,
+            "questionContent": "Что Павел советовал относительно брака в 1 Кор 7?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Никому не жениться"
+                },
+                {
+                    "id": 2,
+                    "value": "Разводиться"
+                },
+                {
+                    "id": 3,
+                    "value": "Всем жениться"
+                },
+                {
+                    "id": 4,
+                    "value": "Лучше оставаться как он (безбрачным), но если не могут воздержаться, пусть вступают в брак"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 73,
+            "questionContent": "Как звали диакониссу церкви в Кенхреях?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Трифена"
+                },
+                {
+                    "id": 2,
+                    "value": "Фива"
+                },
+                {
+                    "id": 3,
+                    "value": "Хлоя"
+                },
+                {
+                    "id": 4,
+                    "value": "Персида"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 74,
+            "questionContent": "Где Павел был побит камнями и брошен замертво?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "В Иконии"
+                },
+                {
+                    "id": 2,
+                    "value": "В Дамаске"
+                },
+                {
+                    "id": 3,
+                    "value": "В Филиппах"
+                },
+                {
+                    "id": 4,
+                    "value": "В Листре"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 75,
+            "questionContent": "Кто такие 'лжебратия'?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Римляне"
+                },
+                {
+                    "id": 2,
+                    "value": "Язычники"
+                },
+                {
+                    "id": 3,
+                    "value": "Люди, притворяющиеся верующими, чтобы навредить"
+                },
+                {
+                    "id": 4,
+                    "value": "Фарисеи"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 76,
+            "questionContent": "С каким животным боролся Павел в Ефесе?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Со змеями"
+                },
+                {
+                    "id": 2,
+                    "value": "С волками"
+                },
+                {
+                    "id": 3,
+                    "value": "Боролся со зверями"
+                },
+                {
+                    "id": 4,
+                    "value": "С львами"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 77,
+            "questionContent": "Что Павел называл 'печатью своего апостольства'?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Коринфян (верующих, которых он обратил)"
+                },
+                {
+                    "id": 2,
+                    "value": "Видения"
+                },
+                {
+                    "id": 3,
+                    "value": "Чудеса"
+                },
+                {
+                    "id": 4,
+                    "value": "Стигматы"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 78,
+            "questionContent": "Сколько лет Павел провел в Аравии после обращения?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Нисколько"
+                },
+                {
+                    "id": 2,
+                    "value": "Десять лет"
+                },
+                {
+                    "id": 3,
+                    "value": "Библия говорит: 'прошло три года' до визита в Иерусалим, часть из которых в Аравии"
+                },
+                {
+                    "id": 4,
+                    "value": "Полгода"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 79,
+            "questionContent": "В каком городе находилась улица 'Прямая'?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "В Риме"
+                },
+                {
+                    "id": 2,
+                    "value": "В Иерусалиме"
+                },
+                {
+                    "id": 3,
+                    "value": "В Антиохии"
+                },
+                {
+                    "id": 4,
+                    "value": "В Дамаске"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 80,
+            "questionContent": "Кто исцелил Павла от слепоты?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Анания"
+                },
+                {
+                    "id": 2,
+                    "value": "Филипп"
+                },
+                {
+                    "id": 3,
+                    "value": "Петр"
+                },
+                {
+                    "id": 4,
+                    "value": "Варнава"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 81,
+            "questionContent": "Какое имя означает 'Сын утешения'?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Варнава"
+                },
+                {
+                    "id": 2,
+                    "value": "Тимофей"
+                },
+                {
+                    "id": 3,
+                    "value": "Марк"
+                },
+                {
+                    "id": 4,
+                    "value": "Сила"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 82,
+            "questionContent": "Кого звали 'Иоанн, называемый Марк'?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Евангелиста Марка, племянника Варнавы"
+                },
+                {
+                    "id": 2,
+                    "value": "Другого ученика"
+                },
+                {
+                    "id": 3,
+                    "value": "Иоанна Крестителя"
+                },
+                {
+                    "id": 4,
+                    "value": "Апостола Иоанна"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 83,
+            "questionContent": "Где произошло первое тюремное заключение Павла, описанное в Деяниях?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "В Кесарии"
+                },
+                {
+                    "id": 2,
+                    "value": "В Риме"
+                },
+                {
+                    "id": 3,
+                    "value": "В Иерусалиме"
+                },
+                {
+                    "id": 4,
+                    "value": "В Филиппах"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 84,
+            "questionContent": "Кто такие эпикурейцы и стоики?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Торговцы"
+                },
+                {
+                    "id": 2,
+                    "value": "Иудейские секты"
+                },
+                {
+                    "id": 3,
+                    "value": "Греческие философы"
+                },
+                {
+                    "id": 4,
+                    "value": "Римские солдаты"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 85,
+            "questionContent": "В каком городе Павел провел 18 месяцев?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "В Ефесе"
+                },
+                {
+                    "id": 2,
+                    "value": "В Антиохии"
+                },
+                {
+                    "id": 3,
+                    "value": "В Коринфе"
+                },
+                {
+                    "id": 4,
+                    "value": "В Афинах"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 86,
+            "questionContent": "Что такое Ареопаг?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Рыночная площадь"
+                },
+                {
+                    "id": 2,
+                    "value": "Храм Зевса"
+                },
+                {
+                    "id": 3,
+                    "value": "Театр"
+                },
+                {
+                    "id": 4,
+                    "value": "Холм Ареса (Марса) и высший суд в Афинах"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 87,
+            "questionContent": "Как звали прорицательницу в Филиппах, из которой Павел изгнал духа?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Мириам"
+                },
+                {
+                    "id": 2,
+                    "value": "Имя не названо, только 'служанка'"
+                },
+                {
+                    "id": 3,
+                    "value": "Пифия"
+                },
+                {
+                    "id": 4,
+                    "value": "Сивилла"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 88,
+            "questionContent": "За что хозяева служанки потащили Павла и Силу на площадь?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "За то, что исчезла надежда их дохода"
+                },
+                {
+                    "id": 2,
+                    "value": "За мятеж"
+                },
+                {
+                    "id": 3,
+                    "value": "За кражу"
+                },
+                {
+                    "id": 4,
+                    "value": "За богохульство"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 89,
+            "questionContent": "Что случилось с узами Павла и Силы при землетрясении?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Остались целы"
+                },
+                {
+                    "id": 2,
+                    "value": "Ослабели (развязались) у всех узников"
+                },
+                {
+                    "id": 3,
+                    "value": "Врезались в тело"
+                },
+                {
+                    "id": 4,
+                    "value": "Превратились в цветы"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 90,
+            "questionContent": "Где находится Милит?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Южнее Ефеса (портовый город)"
+                },
+                {
+                    "id": 2,
+                    "value": "В Македонии"
+                },
+                {
+                    "id": 3,
+                    "value": "В Ахаии"
+                },
+                {
+                    "id": 4,
+                    "value": "На Кипре"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 91,
+            "questionContent": "Какое напутствие Павел дал пресвитерам в Милите относительно 'лютых волков'?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Сражаться с ними мечом"
+                },
+                {
+                    "id": 2,
+                    "value": "Бежать от них"
+                },
+                {
+                    "id": 3,
+                    "value": "Договориться с ними"
+                },
+                {
+                    "id": 4,
+                    "value": "Бодрствовать, ибо они войдут и не будут щадить стада"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 92,
+            "questionContent": "Что сделал пророк Агав с поясом Павла?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Порвал его"
+                },
+                {
+                    "id": 2,
+                    "value": "Бросил в огонь"
+                },
+                {
+                    "id": 3,
+                    "value": "Связал себе руки и ноги"
+                },
+                {
+                    "id": 4,
+                    "value": "Повесил на шею"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 93,
+            "questionContent": "В каком городе ученики умоляли Павла не ходить в Иерусалим?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "В Ефесе"
+                },
+                {
+                    "id": 2,
+                    "value": "В Тире"
+                },
+                {
+                    "id": 3,
+                    "value": "В Кесарии (в доме Филиппа)"
+                },
+                {
+                    "id": 4,
+                    "value": "В Птолемаиде"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 94,
+            "questionContent": "Где Павел родился?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "В Иерусалиме"
+                },
+                {
+                    "id": 2,
+                    "value": "В Риме"
+                },
+                {
+                    "id": 3,
+                    "value": "В Антиохии"
+                },
+                {
+                    "id": 4,
+                    "value": "В Тарсе Киликийском"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 95,
+            "questionContent": "На каком языке разговаривали родители Павла дома?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Коптский"
+                },
+                {
+                    "id": 2,
+                    "value": "Арамейский"
+                },
+                {
+                    "id": 3,
+                    "value": "Только греческий"
+                },
+                {
+                    "id": 4,
+                    "value": "Латынь"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 96,
+            "questionContent": "Как звали еврейское имя Павла?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Симон"
+                },
+                {
+                    "id": 2,
+                    "value": "Савл (Шауль)"
+                },
+                {
+                    "id": 3,
+                    "value": "Вениамин"
+                },
+                {
+                    "id": 4,
+                    "value": "Иуда"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 97,
+            "questionContent": "Какой город был центром миссионерских путешествий Павла?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Иерусалим"
+                },
+                {
+                    "id": 2,
+                    "value": "Рим"
+                },
+                {
+                    "id": 3,
+                    "value": "Александрия"
+                },
+                {
+                    "id": 4,
+                    "value": "Антиохия Сирийская"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 98,
+            "questionContent": "Что символизировало отрясание праха с ног?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Приветствие"
+                },
+                {
+                    "id": 2,
+                    "value": "Очищение перед молитвой"
+                },
+                {
+                    "id": 3,
+                    "value": "Свидетельство против них (отказ от ответственности)"
+                },
+                {
+                    "id": 4,
+                    "value": "Усталость"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 99,
+            "questionContent": "Какие греческие игры Павел использовал как метафору в 1 Кор 9?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Скачки"
+                },
+                {
+                    "id": 2,
+                    "value": "Плавание"
+                },
+                {
+                    "id": 3,
+                    "value": "Бег на ристалище и кулачный бой"
+                },
+                {
+                    "id": 4,
+                    "value": "Метание копья"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 100,
+            "questionContent": "Кто должен был принести Павлу плащ в Рим?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Лука"
+                },
+                {
+                    "id": 2,
+                    "value": "Марк"
+                },
+                {
+                    "id": 3,
+                    "value": "Тит"
+                },
+                {
+                    "id": 4,
+                    "value": "Тимофей"
+                }
+            ],
+            "rightAnswerId": 4
+        }
+    ]
+}

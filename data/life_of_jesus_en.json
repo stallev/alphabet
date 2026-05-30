@@ -1,0 +1,2463 @@
+{
+    "title": "Life of Jesus Christ",
+    "language": "en",
+    "questionsList": [
+        {
+            "id": 1,
+            "questionContent": "In which city did Jesus grow up after returning from Egypt?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Bethlehem"
+                },
+                {
+                    "id": 2,
+                    "value": "Capernaum"
+                },
+                {
+                    "id": 3,
+                    "value": "Jerusalem"
+                },
+                {
+                    "id": 4,
+                    "value": "Nazareth"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 2,
+            "questionContent": "How many days was Jesus in the wilderness being tempted by the devil?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "50 days"
+                },
+                {
+                    "id": 2,
+                    "value": "12 days"
+                },
+                {
+                    "id": 3,
+                    "value": "40 days"
+                },
+                {
+                    "id": 4,
+                    "value": "7 days"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 3,
+            "questionContent": "Which disciple was a tax collector before following Jesus?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Peter"
+                },
+                {
+                    "id": 2,
+                    "value": "Andrew"
+                },
+                {
+                    "id": 3,
+                    "value": "Thomas"
+                },
+                {
+                    "id": 4,
+                    "value": "Matthew"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 4,
+            "questionContent": "What was the name of the Pharisee who came to Jesus at night?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Zacchaeus"
+                },
+                {
+                    "id": 2,
+                    "value": "Nicodemus"
+                },
+                {
+                    "id": 3,
+                    "value": "Caiaphas"
+                },
+                {
+                    "id": 4,
+                    "value": "Gamaliel"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 5,
+            "questionContent": "Where did Jesus perform his first miracle, turning water into wine?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Jericho"
+                },
+                {
+                    "id": 2,
+                    "value": "Bethany"
+                },
+                {
+                    "id": 3,
+                    "value": "Nain"
+                },
+                {
+                    "id": 4,
+                    "value": "Cana"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 6,
+            "questionContent": "Which well-known sermon did Jesus deliver sitting on a mountainside?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Sermon on the Mount"
+                },
+                {
+                    "id": 2,
+                    "value": "Bread of Life Discourse"
+                },
+                {
+                    "id": 3,
+                    "value": "Olivet Discourse"
+                },
+                {
+                    "id": 4,
+                    "value": "High Priestly Prayer"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 7,
+            "questionContent": "Who was the Roman governor who sentenced Jesus to be crucified?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Pontius Pilate"
+                },
+                {
+                    "id": 2,
+                    "value": "Festus"
+                },
+                {
+                    "id": 3,
+                    "value": "Herod Antipas"
+                },
+                {
+                    "id": 4,
+                    "value": "Felix"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 8,
+            "questionContent": "How many loaves of bread did Jesus use to feed the 5,000?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Twelve"
+                },
+                {
+                    "id": 2,
+                    "value": "Two"
+                },
+                {
+                    "id": 3,
+                    "value": "Five"
+                },
+                {
+                    "id": 4,
+                    "value": "Seven"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 9,
+            "questionContent": "Who was the father of John the Baptist?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Joseph"
+                },
+                {
+                    "id": 2,
+                    "value": "Zacharias"
+                },
+                {
+                    "id": 3,
+                    "value": "Eli"
+                },
+                {
+                    "id": 4,
+                    "value": "Simeon"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 10,
+            "questionContent": "Which prophet did Jesus quote in the synagogue at Nazareth to announce His ministry?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Ezekiel"
+                },
+                {
+                    "id": 2,
+                    "value": "Isaiah"
+                },
+                {
+                    "id": 3,
+                    "value": "Jeremiah"
+                },
+                {
+                    "id": 4,
+                    "value": "Daniel"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 11,
+            "questionContent": "What was the name of the high priest who presided over Jesus' trial?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Caiaphas"
+                },
+                {
+                    "id": 2,
+                    "value": "Annas"
+                },
+                {
+                    "id": 3,
+                    "value": "Nicodemus"
+                },
+                {
+                    "id": 4,
+                    "value": "Gamaliel"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 12,
+            "questionContent": "Where was Jesus when He was transfigured before Peter, James, and John?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "A high mountain (unnamed, often Tabor)"
+                },
+                {
+                    "id": 2,
+                    "value": "Mount Tabor"
+                },
+                {
+                    "id": 3,
+                    "value": "Mount Sinai"
+                },
+                {
+                    "id": 4,
+                    "value": "Mount Carmel"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 13,
+            "questionContent": "Which of Jesus' parables was prompted by the question 'Who is my neighbor?'",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Good Samaritan"
+                },
+                {
+                    "id": 2,
+                    "value": "Lost Sheep"
+                },
+                {
+                    "id": 3,
+                    "value": "Prodigal Son"
+                },
+                {
+                    "id": 4,
+                    "value": "Ten Virgins"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 14,
+            "questionContent": "How many days had Lazarus been in the tomb before Jesus raised him?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Three"
+                },
+                {
+                    "id": 2,
+                    "value": "Two"
+                },
+                {
+                    "id": 3,
+                    "value": "Seven"
+                },
+                {
+                    "id": 4,
+                    "value": "Four"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 15,
+            "questionContent": "Which disciple denied Jesus three times before the rooster crowed?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Judas"
+                },
+                {
+                    "id": 2,
+                    "value": "John"
+                },
+                {
+                    "id": 3,
+                    "value": "Thomas"
+                },
+                {
+                    "id": 4,
+                    "value": "Peter"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 16,
+            "questionContent": "What was the crime written on the sign above Jesus on the cross?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "King of the Jews"
+                },
+                {
+                    "id": 2,
+                    "value": "Blasphemy"
+                },
+                {
+                    "id": 3,
+                    "value": "Rebel"
+                },
+                {
+                    "id": 4,
+                    "value": "False Prophet"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 17,
+            "questionContent": "To whom did Jesus first appear after His resurrection?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Peter"
+                },
+                {
+                    "id": 2,
+                    "value": "The Eleven"
+                },
+                {
+                    "id": 3,
+                    "value": "John"
+                },
+                {
+                    "id": 4,
+                    "value": "Mary Magdalene"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 18,
+            "questionContent": "In which pool did Jesus heal a man who had been paralyzed for 38 years?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Jordan River"
+                },
+                {
+                    "id": 2,
+                    "value": "Pool of Siloam"
+                },
+                {
+                    "id": 3,
+                    "value": "Pool of Gihon"
+                },
+                {
+                    "id": 4,
+                    "value": "Pool of Bethesda"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 19,
+            "questionContent": "What were the names of the two disciples on the road to Emmaus?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Stephen"
+                },
+                {
+                    "id": 2,
+                    "value": "Nicodemus"
+                },
+                {
+                    "id": 3,
+                    "value": "Cleopas"
+                },
+                {
+                    "id": 4,
+                    "value": "Philip"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 20,
+            "questionContent": "Which Gospel mentions the wise men (Magi) visiting the infant Jesus?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "John"
+                },
+                {
+                    "id": 2,
+                    "value": "Matthew"
+                },
+                {
+                    "id": 3,
+                    "value": "Mark"
+                },
+                {
+                    "id": 4,
+                    "value": "Luke"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 21,
+            "questionContent": "What did Jesus say was the 'greatest commandment'?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Love the Lord your God with all your heart, soul, and mind"
+                },
+                {
+                    "id": 2,
+                    "value": "Honour thy father and mother"
+                },
+                {
+                    "id": 3,
+                    "value": "Do not kill"
+                },
+                {
+                    "id": 4,
+                    "value": "Love your neighbor as yourself"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 22,
+            "questionContent": "In which city did Jesus heal a centurion's servant without entering his house?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Bethsaida"
+                },
+                {
+                    "id": 2,
+                    "value": "Capernaum"
+                },
+                {
+                    "id": 3,
+                    "value": "Nain"
+                },
+                {
+                    "id": 4,
+                    "value": "Jericho"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 23,
+            "questionContent": "Which prophet predicted that the Messiah would be born in Bethlehem?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Micah"
+                },
+                {
+                    "id": 2,
+                    "value": "Zechariah"
+                },
+                {
+                    "id": 3,
+                    "value": "Isaiah"
+                },
+                {
+                    "id": 4,
+                    "value": "Malachi"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 24,
+            "questionContent": "What was the name of the garden where Jesus was arrested?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Gethsemane"
+                },
+                {
+                    "id": 2,
+                    "value": "Golgotha"
+                },
+                {
+                    "id": 3,
+                    "value": "Olivet"
+                },
+                {
+                    "id": 4,
+                    "value": "Eden"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 25,
+            "questionContent": "Who helped Jesus carry His cross?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Joseph of Arimathea"
+                },
+                {
+                    "id": 2,
+                    "value": "Nicodemus"
+                },
+                {
+                    "id": 3,
+                    "value": "Andrew"
+                },
+                {
+                    "id": 4,
+                    "value": "Simon of Cyrene"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 26,
+            "questionContent": "How many tribes of Israel are symbolically represented by the twelve apostles?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Ten"
+                },
+                {
+                    "id": 2,
+                    "value": "Seven"
+                },
+                {
+                    "id": 3,
+                    "value": "Forty"
+                },
+                {
+                    "id": 4,
+                    "value": "Twelve"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 27,
+            "questionContent": "What was Jesus' last name, according to the Roman register?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Christ is a title (Messiah), not a last name"
+                },
+                {
+                    "id": 2,
+                    "value": "Emmanuel"
+                },
+                {
+                    "id": 3,
+                    "value": "Bar-Joseph"
+                },
+                {
+                    "id": 4,
+                    "value": "Nazarean"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 28,
+            "questionContent": "In John 15, what does Jesus call Himself and His disciples?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "The Shepherd and the Sheep"
+                },
+                {
+                    "id": 2,
+                    "value": "The Vine and the Branches"
+                },
+                {
+                    "id": 3,
+                    "value": "The Light and the World"
+                },
+                {
+                    "id": 4,
+                    "value": "The Bread and the Eaters"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 29,
+            "questionContent": "Where was Jesus when He was tempted to throw Himself down from the pinnacle of the Temple?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Jerusalem"
+                },
+                {
+                    "id": 2,
+                    "value": "Jericho"
+                },
+                {
+                    "id": 3,
+                    "value": "Capernaum"
+                },
+                {
+                    "id": 4,
+                    "value": "Nazareth"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 30,
+            "questionContent": "Who was the 'voice of one crying in the wilderness' prepare the way for Jesus?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "John the Baptist"
+                },
+                {
+                    "id": 2,
+                    "value": "Isaiah"
+                },
+                {
+                    "id": 3,
+                    "value": "Malachi"
+                },
+                {
+                    "id": 4,
+                    "value": "Elijah"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 31,
+            "questionContent": "In which Gospel is Jeus' genealogy traced back to Adam?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Luke"
+                },
+                {
+                    "id": 2,
+                    "value": "Mark" },
+                {
+                    "id": 3,
+                    "value": "John"
+                },
+                {
+                    "id": 4,
+                    "value": "Matthew"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 32,
+            "questionContent": "What was the name of the man who gave his own tomb for Jesus' burial?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Joseph of Arimathea"
+                },
+                {
+                    "id": 2,
+                    "value": "Lazarus"
+                },
+                {
+                    "id": 3,
+                    "value": "Nicodemus"
+                },
+                {
+                    "id": 4,
+                    "value": "Zebedee"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 33,
+            "questionContent": "In what language was the sign on the cross written?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Hebrew, Latin, Greek"
+                },
+                {
+                    "id": 2,
+                    "value": "Greek, Latin, Aramaic"
+                },
+                {
+                    "id": 3,
+                    "value": "Hebrew, Greek, Egyptian"
+                },
+                {
+                    "id": 4,
+                    "value": "Hebrew, Aramaic, Latin"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 34,
+            "questionContent": "How many baskets of fragments were left over after feeding the 4,000?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Five"
+                },
+                {
+                    "id": 2,
+                    "value": "Seven"
+                },
+                {
+                    "id": 3,
+                    "value": "Twelve"
+                },
+                {
+                    "id": 4,
+                    "value": "Three"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 35,
+            "questionContent": "Which disciple was a 'terrorist' or 'zealot' before following Jesus?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Bartholomew"
+                },
+                {
+                    "id": 2,
+                    "value": "Simon the Canaanite (Zealot)"
+                },
+                {
+                    "id": 3,
+                    "value": "James son of Alphaeus"
+                },
+                {
+                    "id": 4,
+                    "value": "Jude"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 36,
+            "questionContent": "Which prophet did Jesus say John the Baptist represented?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Malachi"
+                },
+                {
+                    "id": 2,
+                    "value": "Isaiah"
+                },
+                {
+                    "id": 3,
+                    "value": "Moses"
+                },
+                {
+                    "id": 4,
+                    "value": "Elijah"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 37,
+            "questionContent": "What was the occupation of Jairus, whose daughter Jesus raised from the dead?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Synagogue leader"
+                },
+                {
+                    "id": 2,
+                    "value": "Priest"
+                },
+                {
+                    "id": 3,
+                    "value": "Publican"
+                },
+                {
+                    "id": 4,
+                    "value": "Centurion"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 38,
+            "questionContent": "In the Transfiguration, who appeared alongside Jesus?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "David and Solomon"
+                },
+                {
+                    "id": 2,
+                    "value": "Moses and Elijah"
+                },
+                {
+                    "id": 3,
+                    "value": "Abraham and Isaac"
+                },
+                {
+                    "id": 4,
+                    "value": "Peter and Paul"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 39,
+            "questionContent": "What did Jesus say was the sign of His return and the end of the age?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "The Abomination of Desolation"
+                },
+                {
+                    "id": 2,
+                    "value": "Wars and rumors of wars"
+                },
+                {
+                    "id": 3,
+                    "value": "Sun being darkened"
+                },
+                {
+                    "id": 4,
+                    "value": "All of the above (part of the discourse)"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 40,
+            "questionContent": "Which of Jesus' brothers wrote a book of the New Testament?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Simon"
+                },
+                {
+                    "id": 2,
+                    "value": "James and Jude"
+                },
+                {
+                    "id": 3,
+                    "value": "Andrew"
+                },
+                {
+                    "id": 4,
+                    "value": "None"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 41,
+            "questionContent": "In which town did Jesus heal the woman with the issue of blood and Jairus' daughter?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Capernaum"
+                },
+                {
+                    "id": 2,
+                    "value": "Bethsaida"
+                },
+                {
+                    "id": 3,
+                    "value": "Nain"
+                },
+                {
+                    "id": 4,
+                    "value": "Gadara"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 42,
+            "questionContent": "What was the name of the man whose ear Peter cut off in Gethsemane?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Marcus"
+                },
+                {
+                    "id": 2,
+                    "value": "Malchus"
+                },
+                {
+                    "id": 3,
+                    "value": "Tertius"
+                },
+                {
+                    "id": 4,
+                    "value": "Lucius"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 43,
+            "questionContent": "To which OT passage was Jesus referring when He said 'My God, my God...'?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Isaiah 53"
+                },
+                {
+                    "id": 2,
+                    "value": "Psalm 22:1"
+                },
+                {
+                    "id": 3,
+                    "value": "Zechariah 12"
+                },
+                {
+                    "id": 4,
+                    "value": "Psalm 69:1"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 44,
+            "questionContent": "Which miracle is recorded in all four Gospels?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Turning water into wine"
+                },
+                {
+                    "id": 2,
+                    "value": "Healing the blind man"
+                },
+                {
+                    "id": 3,
+                    "value": "Feeding of the 5,000"
+                },
+                {
+                    "id": 4,
+                    "value": "Raising Lazarus"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 45,
+            "questionContent": "Who was the 'disciple whom Jesus loved'?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Mary"
+                },
+                {
+                    "id": 2,
+                    "value": "John"
+                },
+                {
+                    "id": 3,
+                    "value": "Peter"
+                },
+                {
+                    "id": 4,
+                    "value": "Lazarus"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 46,
+            "questionContent": "What was the name of the father of James and John?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Alphaeus"
+                },
+                {
+                    "id": 2,
+                    "value": "Zebedee"
+                },
+                {
+                    "id": 3,
+                    "value": "Eli"
+                },
+                {
+                    "id": 4,
+                    "value": "Jonas"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 47,
+            "questionContent": "In which city was the pool where the blind man was told to wash?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Capernaum"
+                },
+                {
+                    "id": 2,
+                    "value": "Bethsaida"
+                },
+                {
+                    "id": 3,
+                    "value": "Jerusalem (Pool of Siloam)"
+                },
+                {
+                    "id": 4,
+                    "value": "Jericho"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 48,
+            "questionContent": "Into which animal did Jesus send the demons named 'Legion'?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Goats"
+                },
+                {
+                    "id": 2,
+                    "value": "Sheep"
+                },
+                {
+                    "id": 3,
+                    "value": "Pigs (Swine)"
+                },
+                {
+                    "id": 4,
+                    "value": "Dogs"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 49,
+            "questionContent": "What was the name of the town where Jesus raised a widow's son?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Bethany"
+                },
+                {
+                    "id": 2,
+                    "value": "Nazareth"
+                },
+                {
+                    "id": 3,
+                    "value": "Bethsaida"
+                },
+                {
+                    "id": 4,
+                    "value": "Nain"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 50,
+            "questionContent": "Which prophet did Jesus quote when He cleansed the Temple?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Zechariah"
+                },
+                {
+                    "id": 2,
+                    "value": "Daniel"
+                },
+                {
+                    "id": 3,
+                    "value": "Malachi"
+                },
+                {
+                    "id": 4,
+                    "value": "Isaiah and Jeremiah"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 51,
+            "questionContent": "How many apostles were present at the Last Supper?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Seventy"
+                },
+                {
+                    "id": 2,
+                    "value": "Twelve"
+                },
+                {
+                    "id": 3,
+                    "value": "Thirteen"
+                },
+                {
+                    "id": 4,
+                    "value": "Eleven"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 52,
+            "questionContent": "What was the name of the man released instead of Jesus?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Dismas"
+                },
+                {
+                    "id": 2,
+                    "value": "Barnabas"
+                },
+                {
+                    "id": 3,
+                    "value": "Silas"
+                },
+                {
+                    "id": 4,
+                    "value": "Barabbas"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 53,
+            "questionContent": "What was the name of the place where Jesus was crucified?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Golgotha"
+                },
+                {
+                    "id": 2,
+                    "value": "Calvary"
+                },
+                {
+                    "id": 3,
+                    "value": "Zion"
+                },
+                {
+                    "id": 4,
+                    "value": "Moriah"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 54,
+            "questionContent": "How many days did Jesus remain on earth after His resurrection before ascending?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Thirty"
+                },
+                {
+                    "id": 2,
+                    "value": "Forty"
+                },
+                {
+                    "id": 3,
+                    "value": "Fifty"
+                },
+                {
+                    "id": 4,
+                    "value": "Seven"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 55,
+            "questionContent": "Which of Jesus' disciples was called 'The Twin'?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "John"
+                },
+                {
+                    "id": 2,
+                    "value": "Philip"
+                },
+                {
+                    "id": 3,
+                    "value": "Peter"
+                },
+                {
+                    "id": 4,
+                    "value": "Thomas (Didymus)"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 56,
+            "questionContent": "Where was Jesus when he asked Peter three times, 'Do you love approach me?'",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "By the Sea of Galilee (Tiberias)"
+                },
+                {
+                    "id": 2,
+                    "value": "In the Temple"
+                },
+                {
+                    "id": 3,
+                    "value": "In the Upper Room"
+                },
+                {
+                    "id": 4,
+                    "value": "On the Mount of Olives"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 57,
+            "questionContent": "What was the name of the tax collector who climbed a tree to see Jesus?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Matthew"
+                },
+                {
+                    "id": 2,
+                    "value": "Zacchaeus"
+                },
+                {
+                    "id": 3,
+                    "value": "Lazarus"
+                },
+                {
+                    "id": 4,
+                    "value": "Zebedee"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 58,
+            "questionContent": "Which of the four Gospels is known for its focus on Jesus as the 'Word'?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Matthew"
+                },
+                {
+                    "id": 2,
+                    "value": "Luke"
+                },
+                {
+                    "id": 3,
+                    "value": "John"
+                },
+                {
+                    "id": 4,
+                    "value": "Mark"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 59,
+            "questionContent": "In which city did Jesus encounter the Samaritan woman at the well?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Jericho"
+                },
+                {
+                    "id": 2,
+                    "value": "Nazareth"
+                },
+                {
+                    "id": 3,
+                    "value": "Sychar"
+                },
+                {
+                    "id": 4,
+                    "value": "Samaria city"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 60,
+            "questionContent": "Who was the father of the disciple James 'the Less'?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Zebedee"
+                },
+                {
+                    "id": 2,
+                    "value": "Alphaeus"
+                },
+                {
+                    "id": 3,
+                    "value": "Eli"
+                },
+                {
+                    "id": 4,
+                    "value": "Jonas" }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 61,
+            "questionContent": "What was the name of the girl who danced for Herod Antipas, leading to John the Baptist's execution?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Bernice"
+                },
+                {
+                    "id": 2,
+                    "value": "Salome (unnamed in scripture, but known from history)"
+                },
+                {
+                    "id": 3,
+                    "value": "Herodias"
+                },
+                {
+                    "id": 4,
+                    "value": "Mary" }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 62,
+            "questionContent": "How many people did Jesus raise from the dead according to the Gospels?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Three (Jairus' daughter, widow's son, Lazarus)"
+                },
+                {
+                    "id": 2,
+                    "value": "Many (as a general reference)"
+                },
+                {
+                    "id": 3,
+                    "value": "One"
+                },
+                {
+                    "id": 4,
+                    "value": "Seven" }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 63,
+            "questionContent": "Which Old Testament book does Jesus quote mostly extensively regarding His identity in Mark?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Exodus"
+                },
+                {
+                    "id": 2,
+                    "value": "Isaiah"
+                },
+                {
+                    "id": 3,
+                    "value": "Psalms" },
+                {
+                    "id": 4,
+                    "value": "Deuteronomy" }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 64,
+            "questionContent": "What was the name of the woman from whom Jesus cast out seven demons?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Susanna"
+                },
+                {
+                    "id": 2,
+                    "value": "Mary Magdalene"
+                },
+                {
+                    "id": 3,
+                    "value": "Mary of Bethany"
+                },
+                {
+                    "id": 4,
+                    "value": "Joanna" }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 65,
+            "questionContent": "Which Herod was ruling Judah at the time of Jesus' birth?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Herod Antipas"
+                },
+                {
+                    "id": 2,
+                    "value": "Herod Archelaus"
+                },
+                {
+                    "id": 3,
+                    "value": "Herod Agrippa"
+                },
+                {
+                    "id": 4,
+                    "value": "Herod the Great" }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 66,
+            "questionContent": "How many generations are in each group of Jesus' genealogy in Matthew?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Forty"
+                },
+                {
+                    "id": 2,
+                    "value": "Seven"
+                },
+                {
+                    "id": 3,
+                    "value": "Fourteen"
+                },
+                {
+                    "id": 4,
+                    "value": "Twelve" }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 67,
+            "questionContent": "In which city did Jesus perform the miracle of the 'Great Catch of Fish'?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Dead Sea"
+                },
+                {
+                    "id": 2,
+                    "value": "Lake Gennesaret (Sea of Galilee)"
+                },
+                {
+                    "id": 3,
+                    "value": "Mediterranean"
+                },
+                {
+                    "id": 4,
+                    "value": "Sea of Tiberias" }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 68,
+            "questionContent": "What was the name of the man who helped remove Jesus from the cross?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Peter and John"
+                },
+                {
+                    "id": 2,
+                    "value": "Simon of Cyrene"
+                },
+                {
+                    "id": 3,
+                    "value": "Longinus"
+                },
+                {
+                    "id": 4,
+                    "value": "Joseph of Arimathea and Nicodemus" }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 69,
+            "questionContent": "Which disciple was from Bethsaida, along with Peter and Andrew?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Matthew"
+                },
+                {
+                    "id": 2,
+                    "value": "Nathaniel"
+                },
+                {
+                    "id": 3,
+                    "value": "Thomas"
+                },
+                {
+                    "id": 4,
+                    "value": "Philip" }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 70,
+            "questionContent": "What was the 'sign' Jesus gave that he would be in the heart of the earth for three days?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "The sign of Jonah"
+                },
+                {
+                    "id": 2,
+                    "value": "The sign of Noah"
+                },
+                {
+                    "id": 3,
+                    "value": "The sign of Moses"
+                },
+                {
+                    "id": 4,
+                    "value": "The sign of Solomon" }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 71,
+            "questionContent": "Jesus’ first followers were mostly ___.",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Farmers"
+                },
+                {
+                    "id": 2,
+                    "value": "Carpenters"
+                },
+                {
+                    "id": 3,
+                    "value": "Shepherds"
+                },
+                {
+                    "id": 4,
+                    "value": "Fishermen" }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 72,
+            "questionContent": "What was the Aramaic word for 'Be opened' that Jesus used to heal a deaf man?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Talitha koum"
+                },
+                {
+                    "id": 2,
+                    "value": "Ephphatha"
+                },
+                {
+                    "id": 3,
+                    "value": "Eloi, Eloi"
+                },
+                {
+                    "id": 4,
+                    "value": "Corban" }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 73,
+            "questionContent": "In which city did Jesus heal a man born blind by spitting on the ground and making mud?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Bethany"
+                },
+                {
+                    "id": 2,
+                    "value": "Capernaum"
+                },
+                {
+                    "id": 3,
+                    "value": "Jericho"
+                },
+                {
+                    "id": 4,
+                    "value": "Jerusalem" }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 74,
+            "questionContent": "What was the name of the man who asked Jesus 'Are you the King of the Jews?'",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Herod"
+                },
+                {
+                    "id": 2,
+                    "value": "Annas"
+                },
+                {
+                    "id": 3,
+                    "value": "Pontius Pilate"
+                },
+                {
+                    "id": 4,
+                    "value": "Caiaphas" }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 75,
+            "questionContent": "Jesus told the rich young ruler to sell all he had and follow Him. What was the ruler's reaction?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "He laughed"
+                },
+                {
+                    "id": 2,
+                    "value": "He went away sad because he had great wealth"
+                },
+                {
+                    "id": 3,
+                    "value": "He became an apostle"
+                },
+                {
+                    "id": 4,
+                    "value": "He sold everything" }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 76,
+            "questionContent": "Which feast was being celebrated during the Last Supper?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Hanukkah"
+                },
+                {
+                    "id": 2,
+                    "value": "Passover (Pesach)"
+                },
+                {
+                    "id": 3,
+                    "value": "Pentecost"
+                },
+                {
+                    "id": 4,
+                    "value": "Tabernacles" }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 77,
+            "questionContent": "What was the name of the disciple who doubted Jesus' resurrection until he saw the wounds?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Thomas"
+                },
+                {
+                    "id": 2,
+                    "value": "Peter"
+                },
+                {
+                    "id": 3,
+                    "value": "Nathaniel"
+                },
+                {
+                    "id": 4,
+                    "value": "Philip" }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 78,
+            "questionContent": "How many times did Jesus predict His death and resurrection in Mark?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Five"
+                },
+                {
+                    "id": 2,
+                    "value": "Seven"
+                },
+                {
+                    "id": 3,
+                    "value": "One"
+                },
+                {
+                    "id": 4,
+                    "value": "Three" }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 79,
+            "questionContent": "Which prophet did Jesus say was the greatest 'born of women'?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "John the Baptist"
+                },
+                {
+                    "id": 2,
+                    "value": "Isaiah"
+                },
+                {
+                    "id": 3,
+                    "value": "Elijah"
+                },
+                {
+                    "id": 4,
+                    "value": "Moses" }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 80,
+            "questionContent": "What was the title Jesus used most frequently for Himself?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Good Shepherd"
+                },
+                {
+                    "id": 2,
+                    "value": "Son of God"
+                },
+                {
+                    "id": 3,
+                    "value": "Son of Man"
+                },
+                {
+                    "id": 4,
+                    "value": "Messiah" }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 81,
+            "questionContent": "How many days was Jesus on the cross?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "12 hours"
+                },
+                {
+                    "id": 2,
+                    "value": "24 hours"
+                },
+                {
+                    "id": 3,
+                    "value": "3 days"
+                },
+                {
+                    "id": 4,
+                    "value": "About 6 hours (from 9am to 3pm)" }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 82,
+            "questionContent": "Where was Jesus when He was baptized?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Jordan River"
+                },
+                {
+                    "id": 2,
+                    "value": "Dead Sea"
+                },
+                {
+                    "id": 3,
+                    "value": "Sea of Galilee"
+                },
+                {
+                    "id": 4,
+                    "value": "Pool of Siloam" }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 83,
+            "questionContent": "Who were the first four disciples called by Jesus?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Bartholomew, Thaddaeus, Peter, John"
+                },
+                {
+                    "id": 2,
+                    "value": "Peter, Andrew, James, John"
+                },
+                {
+                    "id": 3,
+                    "value": "Philip, Thomas, Jude, Simon"
+                },
+                {
+                    "id": 4,
+                    "value": "Matthew, Mark, Luke, John" }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 84,
+            "questionContent": "In which city did Jesus encounter the demon-possessed man among the tombs?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Capernaum"
+                },
+                {
+                    "id": 2,
+                    "value": "Gerasa (region of Gerasenes/Gadarenes)"
+                },
+                {
+                    "id": 3,
+                    "value": "Bethsaida"
+                },
+                {
+                    "id": 4,
+                    "value": "Nazareth" }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 85,
+            "questionContent": "What was the name of the man who asked Jesus, 'Can anything good come from Nazareth?'",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Peter"
+                },
+                {
+                    "id": 2,
+                    "value": "Nathaniel"
+                },
+                {
+                    "id": 3,
+                    "value": "Thomas"
+                },
+                {
+                    "id": 4,
+                    "value": "Philip" }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 86,
+            "questionContent": "What was the cost of the perfume Mary used to anoint Jesus' feet?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "50 talents"
+                },
+                {
+                    "id": 2,
+                    "value": "30 silver coins"
+                },
+                {
+                    "id": 3,
+                    "value": "100 drachmas"
+                },
+                {
+                    "id": 4,
+                    "value": "300 denarii" }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 87,
+            "questionContent": "Which mountain is traditionally associated with the Olivet Discourse?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Mount Hermon"
+                },
+                {
+                    "id": 2,
+                    "value": "Mount Moriah"
+                },
+                {
+                    "id": 3,
+                    "value": "Mount of Olives"
+                },
+                {
+                    "id": 4,
+                    "value": "Mount Sinai" }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 88,
+            "questionContent": "To whom did Jesus say, 'Truly I tell you, today you will be with me in paradise'?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Peter"
+                },
+                {
+                    "id": 2,
+                    "value": "Mary"
+                },
+                {
+                    "id": 3,
+                    "value": "The repentant thief"
+                },
+                {
+                    "id": 4,
+                    "value": "John" }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 89,
+            "questionContent": "What was the name of the officer who said truly Jesus was the Son of God?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Cornelius"
+                },
+                {
+                    "id": 2,
+                    "value": "The Centurion"
+                },
+                {
+                    "id": 3,
+                    "value": "Pilate"
+                },
+                {
+                    "id": 4,
+                    "value": "Herod" }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 90,
+            "questionContent": "In which pool did Jesus heal the blind man in John 9?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Siloam"
+                },
+                {
+                    "id": 2,
+                    "value": "Gihon"
+                },
+                {
+                    "id": 3,
+                    "value": "Bethesda"
+                },
+                {
+                    "id": 4,
+                    "value": "Sabbath" }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 91,
+            "questionContent": "What was the meaning of 'Golgotha'?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Place of the Sacrifice"
+                },
+                {
+                    "id": 2,
+                    "value": "Place of the Skull"
+                },
+                {
+                    "id": 3,
+                    "value": "The Hill"
+                },
+                {
+                    "id": 4,
+                    "value": "Place of the Ashes" }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 92,
+            "questionContent": "Jesus stayed in the home of ___ in Bethany.",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Mary, Martha, and Lazarus"
+                },
+                {
+                    "id": 2,
+                    "value": "Peter"
+                },
+                {
+                    "id": 3,
+                    "value": "Simon the Leper (both mentioned)"
+                },
+                {
+                    "id": 4,
+                    "value": "Nicodemus" }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 93,
+            "questionContent": "Which disciple was a relative of John the Baptist?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "James"
+                },
+                {
+                    "id": 2,
+                    "value": "Andrew"
+                },
+                {
+                    "id": 3,
+                    "value": "Jesus Himself (cousins)"
+                },
+                {
+                    "id": 4,
+                    "value": "None" }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 94,
+            "questionContent": "How many baskets of fragments remained after the feeding of the 5,000?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Five"
+                },
+                {
+                    "id": 2,
+                    "value": "Twelve large ones"
+                },
+                {
+                    "id": 3,
+                    "value": "Seven"
+                },
+                {
+                    "id": 4,
+                    "value": "Twelve" }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 95,
+            "questionContent": "What was Jesus' age when he started His ministry?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Twenty-five"
+                },
+                {
+                    "id": 2,
+                    "value": "Forty"
+                },
+                {
+                    "id": 3,
+                    "value": "About thirty years old"
+                },
+                {
+                    "id": 4,
+                    "value": "Twelve" }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 96,
+            "questionContent": "What was the first sign recorded in John's Gospel?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Water into wine"
+                },
+                {
+                    "id": 2,
+                    "value": "Healing the nobleman's son"
+                },
+                {
+                    "id": 3,
+                    "value": "Feeding the 5,000"
+                },
+                {
+                    "id": 4,
+                    "value": "Healing the paralytic" }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 97,
+            "questionContent": "How many times did Satan tempt Jesus in the wilderness?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "One"
+                },
+                {
+                    "id": 2,
+                    "value": "Seven"
+                },
+                {
+                    "id": 3,
+                    "value": "Three"
+                },
+                {
+                    "id": 4,
+                    "value": "Ten" }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 98,
+            "questionContent": "Which town was nicknamed 'His own city' by Jesus?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Jerusalem"
+                },
+                {
+                    "id": 2,
+                    "value": "Nazareth"
+                },
+                {
+                    "id": 3,
+                    "value": "Bethlehem"
+                },
+                {
+                    "id": 4,
+                    "value": "Capernaum" }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 99,
+            "questionContent": "Which Gospel ends with the promise 'I am with you always, even to the end of the age'?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Mark"
+                },
+                {
+                    "id": 2,
+                    "value": "John"
+                },
+                {
+                    "id": 3,
+                    "value": "Luke"
+                },
+                {
+                    "id": 4,
+                    "value": "Matthew" }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 100,
+            "questionContent": "Who were the first to find the empty tomb?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "The women (Mary Magdalene and others)"
+                },
+                {
+                    "id": 2,
+                    "value": "Roman soldiers"
+                },
+                {
+                    "id": 3,
+                    "value": "The gardener"
+                },
+                {
+                    "id": 4,
+                    "value": "Peter and John" }
+            ],
+            "rightAnswerId": 1
+        }
+    ]
+}

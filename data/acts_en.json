@@ -1,0 +1,2453 @@
+{
+    "title": "Book of Acts",
+    "language": "en",
+    "questionsList": [
+        {
+            "id": 1,
+            "questionContent": "Who was the author of the Book of Acts?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "John"
+                },
+                {
+                    "id": 2,
+                    "value": "Peter"
+                },
+                {
+                    "id": 3,
+                    "value": "Luke"
+                },
+                {
+                    "id": 4,
+                    "value": "Paul"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 2,
+            "questionContent": "To whom was the Book of Acts addressed?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Theophilus"
+                },
+                {
+                    "id": 2,
+                    "value": "Timothy"
+                },
+                {
+                    "id": 3,
+                    "value": "Titus"
+                },
+                {
+                    "id": 4,
+                    "value": "The church at Rome"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 3,
+            "questionContent": "Who was chosen to replace Judas Iscariot as an apostle?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Stephen"
+                },
+                {
+                    "id": 2,
+                    "value": "Barnabas"
+                },
+                {
+                    "id": 3,
+                    "value": "Barsabbas"
+                },
+                {
+                    "id": 4,
+                    "value": "Matthias"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 4,
+            "questionContent": "On which Jewish festival did the Holy Spirit descend upon the disciples in Jerusalem?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Pentecost"
+                },
+                {
+                    "id": 2,
+                    "value": "Hanukkah"
+                },
+                {
+                    "id": 3,
+                    "value": "Tabernacles"
+                },
+                {
+                    "id": 4,
+                    "value": "Passover"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 5,
+            "questionContent": "Which prophet did Peter quote in his sermon on the Day of Pentecost?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Isaiah"
+                },
+                {
+                    "id": 2,
+                    "value": "Joel"
+                },
+                {
+                    "id": 3,
+                    "value": "Daniel"
+                },
+                {
+                    "id": 4,
+                    "value": "Jeremiah"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 6,
+            "questionContent": "What was the name of the gate where Peter and John healed a man lame from birth?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Damascus Gate"
+                },
+                {
+                    "id": 2,
+                    "value": "Beautiful Gate"
+                },
+                {
+                    "id": 3,
+                    "value": "Golden Gate"
+                },
+                {
+                    "id": 4,
+                    "value": "Sheep Gate"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 7,
+            "questionContent": "Who were the husband and wife who died after lying to the Holy Spirit about their property sale?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Ananias and Sapphira"
+                },
+                {
+                    "id": 2,
+                    "value": "Priscilla and Aquila"
+                },
+                {
+                    "id": 3,
+                    "value": "Andronicus and Junia"
+                },
+                {
+                    "id": 4,
+                    "value": "Felix and Drusilla"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 8,
+            "questionContent": "Who was the first martyr of the early church described in Acts?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Stephen"
+                },
+                {
+                    "id": 2,
+                    "value": "James son of Zebedee"
+                },
+                {
+                    "id": 3,
+                    "value": "Peter"
+                },
+                {
+                    "id": 4,
+                    "value": "Philip"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 9,
+            "questionContent": "Who preached to the Ethiopian eunuch on the road to Gaza?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Barnabas"
+                },
+                {
+                    "id": 2,
+                    "value": "Philip the Evangelist"
+                },
+                {
+                    "id": 3,
+                    "value": "Peter"
+                },
+                {
+                    "id": 4,
+                    "value": "Stephen"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 10,
+            "questionContent": "In which city was Saul blinded by a light from heaven?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Tarsus"
+                },
+                {
+                    "id": 2,
+                    "value": "Jerusalem"
+                },
+                {
+                    "id": 3,
+                    "value": "Near Damascus"
+                },
+                {
+                    "id": 4,
+                    "value": "Antioch"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 11,
+            "questionContent": "Who was the Roman centurion in Caesarea to whom Peter was sent by a vision?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Gallio"
+                },
+                {
+                    "id": 2,
+                    "value": "Longinus"
+                },
+                {
+                    "id": 3,
+                    "value": "Julius"
+                },
+                {
+                    "id": 4,
+                    "value": "Cornelius"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 12,
+            "questionContent": "In which city were the disciples first called 'Christians'?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Jerusalem"
+                },
+                {
+                    "id": 2,
+                    "value": "Rome"
+                },
+                {
+                    "id": 3,
+                    "value": "Antioch"
+                },
+                {
+                    "id": 4,
+                    "value": "Ephesus"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 13,
+            "questionContent": "Which apostle was executed by Herod Agrippa I?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Peter"
+                },
+                {
+                    "id": 2,
+                    "value": "James the brother of John"
+                },
+                {
+                    "id": 3,
+                    "value": "Thomas"
+                },
+                {
+                    "id": 4,
+                    "value": "Andrew" }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 14,
+            "questionContent": "Who accompanied Paul on his first missionary journey?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Timothy"
+                },
+                {
+                    "id": 2,
+                    "value": "Luke"
+                },
+                {
+                    "id": 3,
+                    "value": "Silas"
+                },
+                {
+                    "id": 4,
+                    "value": "Barnabas and John Mark"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 15,
+            "questionContent": "Who was the woman at Joppa whom Peter raised from the dead?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Lydia"
+                },
+                {
+                    "id": 2,
+                    "value": "Rhoda"
+                },
+                {
+                    "id": 3,
+                    "value": "Tabitha (Dorcas)"
+                },
+                {
+                    "id": 4,
+                    "value": "Priscilla"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 16,
+            "questionContent": "Who was the sorcerer Paul blinded in Cyprus?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Theodotus"
+                },
+                {
+                    "id": 2,
+                    "value": "Simon Magus"
+                },
+                {
+                    "id": 3,
+                    "value": "Alexander"
+                },
+                {
+                    "id": 4,
+                    "value": "Elymas (Bar-Jesus)"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 17,
+            "questionContent": "At the Council of Jerusalem, who presided and gave the final decree concerning Gentile converts?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "John"
+                },
+                {
+                    "id": 2,
+                    "value": "James (the Lord's brother)"
+                },
+                {
+                    "id": 3,
+                    "value": "Peter"
+                },
+                {
+                    "id": 4,
+                    "value": "Paul"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 18,
+            "questionContent": "In which city did Paul and Silas singing in prison cause an earthquake?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Athens"
+                },
+                {
+                    "id": 2,
+                    "value": "Corinth"
+                },
+                {
+                    "id": 3,
+                    "value": "Thessalonica"
+                },
+                {
+                    "id": 4,
+                    "value": "Philippi"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 19,
+            "questionContent": "Who was the woman in Philippi who sold purple cloth and became a believer?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Lydia"
+                },
+                {
+                    "id": 2,
+                    "value": "Priscilla"
+                },
+                {
+                    "id": 3,
+                    "value": "Phoebe"
+                },
+                {
+                    "id": 4,
+                    "value": "Chloe"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 20,
+            "questionContent": "In which city did Paul preach to the philosophers on the Areopagus?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Ephesus"
+                },
+                {
+                    "id": 2,
+                    "value": "Rome"
+                },
+                {
+                    "id": 3,
+                    "value": "Athens"
+                },
+                {
+                    "id": 4,
+                    "value": "Corinth"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 21,
+            "questionContent": "Which couple worked as tent-makers with Paul in Corinth?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Jason and Lydia"
+                },
+                {
+                    "id": 2,
+                    "value": "Aquila and Priscilla"
+                },
+                {
+                    "id": 3,
+                    "value": "Andronicus and Junia"
+                },
+                {
+                    "id": 4,
+                    "value": "Ananias and Sapphira"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 22,
+            "questionContent": "Who was the eloquent Jew from Alexandria who was corrected by Aquila and Priscilla?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Silas"
+                },
+                {
+                    "id": 2,
+                    "value": "Apollos"
+                },
+                {
+                    "id": 3,
+                    "value": "Titus"
+                },
+                {
+                    "id": 4,
+                    "value": "Barnabas"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 23,
+            "questionContent": "In which city was there a riot caused by the silversmith Demetrius?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Corinth"
+                },
+                {
+                    "id": 2,
+                    "value": "Athens"
+                },
+                {
+                    "id": 3,
+                    "value": "Ephesus"
+                },
+                {
+                    "id": 4,
+                    "value": "Philippi"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 24,
+            "questionContent": "Who was the young man who fell asleep and died during Paul's long sermon in Troas?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Timothy"
+                },
+                {
+                    "id": 2,
+                    "value": "Eutychus"
+                },
+                {
+                    "id": 3,
+                    "value": "Titus"
+                },
+                {
+                    "id": 4,
+                    "value": "Epaphroditus"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 25,
+            "questionContent": "Who was the prophet who predicted the famine and later that Paul would be bound in Jerusalem?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Silas"
+                },
+                {
+                    "id": 2,
+                    "value": "John"
+                },
+                {
+                    "id": 3,
+                    "value": "Manaen"
+                },
+                {
+                    "id": 4,
+                    "value": "Agabus"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 26,
+            "questionContent": "Who was the Roman governor of Judea who kept Paul in prison at Caesarea for two years?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Festus"
+                },
+                {
+                    "id": 2,
+                    "value": "Lysias"
+                },
+                {
+                    "id": 3,
+                    "value": "Felix"
+                },
+                {
+                    "id": 4,
+                    "value": "Gallio" }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 27,
+            "questionContent": "Before which King did Paul make his defense in Caesarea, leading the King to say 'Almost thou persuadest me'?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Herod Agrippa I"
+                },
+                {
+                    "id": 2,
+                    "value": "Herod Antipas"
+                },
+                {
+                    "id": 3,
+                    "value": "Herod Agrippa II"
+                },
+                {
+                    "id": 4,
+                    "value": "Herod the Great"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 28,
+            "questionContent": "On which island was Paul shipwrecked while being taken to Rome?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Malta"
+                },
+                {
+                    "id": 2,
+                    "value": "Melita (same as Malta)"
+                },
+                {
+                    "id": 3,
+                    "value": "Cyprus"
+                },
+                {
+                    "id": 4,
+                    "value": "Crete"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 29,
+            "questionContent": "Who was the chief man of the island of Malta whose father Paul healed?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Julius"
+                },
+                {
+                    "id": 2,
+                    "value": "Publius"
+                },
+                {
+                    "id": 3,
+                    "value": "Sergius Paulus"
+                },
+                {
+                    "id": 4,
+                    "value": "Theophilus"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 30,
+            "questionContent": "How many days did Paul spend in the house of Judas in Damascus before Ananias arrived?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Forty"
+                },
+                {
+                    "id": 2,
+                    "value": "Three"
+                },
+                {
+                    "id": 3,
+                    "value": "One"
+                },
+                {
+                    "id": 4,
+                    "value": "Seven"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 31,
+            "questionContent": "What was the name of the man who sold a field and brought the money to the apostles' feet?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Barnabas"
+                },
+                {
+                    "id": 2,
+                    "value": "Ananias"
+                },
+                {
+                    "id": 3,
+                    "value": "Judas"
+                },
+                {
+                    "id": 4,
+                    "value": "Stephen"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 32,
+            "questionContent": "What was the name of the woman servant who came to the door when Peter was released from prison?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Rhoda"
+                },
+                {
+                    "id": 2,
+                    "value": "Phoebe"
+                },
+                {
+                    "id": 3,
+                    "value": "Tabitha"
+                },
+                {
+                    "id": 4,
+                    "value": "Lydia"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 33,
+            "questionContent": "Who was the 'proconsul' of Cyprus who became a believer after seeing Elymas blinded?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Gallio"
+                },
+                {
+                    "id": 2,
+                    "value": "Felix"
+                },
+                {
+                    "id": 3,
+                    "value": "Festus"
+                },
+                {
+                    "id": 4,
+                    "value": "Sergius Paulus"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 34,
+            "questionContent": "In which city were Paul and Barnabas worshiped as Zeus and Hermes?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Derbe"
+                },
+                {
+                    "id": 2,
+                    "value": "Lystra"
+                },
+                {
+                    "id": 3,
+                    "value": "Paphos"
+                },
+                {
+                    "id": 4,
+                    "value": "Iconium"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 35,
+            "questionContent": "Who was the 'disciple' Paul found in Lystra, whose mother was a Jewess and father a Greek?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Silas"
+                },
+                {
+                    "id": 2,
+                    "value": "Luke"
+                },
+                {
+                    "id": 3,
+                    "value": "Timothy"
+                },
+                {
+                    "id": 4,
+                    "value": "Titus"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 36,
+            "questionContent": "What was the name of the Roman commander who wrote a letter to Felix about Paul?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Sergius"
+                },
+                {
+                    "id": 2,
+                    "value": "Tartan"
+                },
+                {
+                    "id": 3,
+                    "value": "Julius"
+                },
+                {
+                    "id": 4,
+                    "value": "Claudius Lysias"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 37,
+            "questionContent": "How many men joined Saul in Damascus before his conversion? (Wait: Acts 22:9 mentions they saw light but heard no voice). How many men accompanied Paul to Rome?),.",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "276"
+                },
+                {
+                    "id": 2,
+                    "value": "120"
+                },
+                {
+                    "id": 3,
+                    "value": "500"
+                },
+                {
+                    "id": 4,
+                    "value": "300"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 38,
+            "questionContent": "Who was the silversmith of Ephesus who made silver shrines for the goddess Artemis?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Sosthenes"
+                },
+                {
+                    "id": 2,
+                    "value": "Alexander"
+                },
+                {
+                    "id": 3,
+                    "value": "Gallio"
+                },
+                {
+                    "id": 4,
+                    "value": "Demetrius"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 39,
+            "questionContent": "Which daughter of the King became a believer?) (Wait: no king's daughter named). Which of the four daughters of Philip the evangelist were prophetesses?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Three"
+                },
+                {
+                    "id": 2,
+                    "value": "One"
+                },
+                {
+                    "id": 3,
+                    "value": "All four of them"
+                },
+                {
+                    "id": 4,
+                    "value": "None" }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 40,
+            "questionContent": "How many days was Paul at sea before the shipwreck began to look certain?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Seven days"
+                },
+                {
+                    "id": 2,
+                    "value": "Forty days"
+                },
+                {
+                    "id": 3,
+                    "value": "Three days"
+                },
+                {
+                    "id": 4,
+                    "value": "Fourteen nights"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 41,
+            "questionContent": "What happened to King Herod Agrippa I after he accepted the worship of the people of Tyre and Sidon?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "He became a leper"
+                },
+                {
+                    "id": 2,
+                    "value": "He repented"
+                },
+                {
+                    "id": 3,
+                    "value": "He was struck by an angel and eaten by worms"
+                },
+                {
+                    "id": 4,
+                    "value": "He was assassinated"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 42,
+            "questionContent": "Who was the high priest who came down to Caesarea to accuse Paul before Felix?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Ananias"
+                },
+                {
+                    "id": 2,
+                    "value": "Ishmael"
+                },
+                {
+                    "id": 3,
+                    "value": "Caiaphas"
+                },
+                {
+                    "id": 4,
+                    "value": "Annas"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 43,
+            "questionContent": "What did Paul use to escape from Damascus?),.",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "His Roman citizenship"
+                },
+                {
+                    "id": 2,
+                    "value": "A basket"
+                },
+                {
+                    "id": 3,
+                    "value": "A horse"
+                },
+                {
+                    "id": 4,
+                    "value": "A boat"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 44,
+            "questionContent": "In which city was Peter when he saw the vision of the great sheet descending from heaven?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Joppa (at the home of Simon the Tanner)"
+                },
+                {
+                    "id": 2,
+                    "value": "Caesarea"
+                },
+                {
+                    "id": 3,
+                    "value": "Jerusalem"
+                },
+                {
+                    "id": 4,
+                    "value": "Lydda"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 45,
+            "questionContent": "Who was the lawyer (orator) who informed the governor against Paul in Caesarea?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Gallio"
+                },
+                {
+                    "id": 2,
+                    "value": "Tertullus"
+                },
+                {
+                    "id": 3,
+                    "value": "Gamaliel"
+                },
+                {
+                    "id": 4,
+                    "value": "Alexander"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 46,
+            "questionContent": "How many believers were gathered in the upper room after Jesus' ascension?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Seventy"
+                },
+                {
+                    "id": 2,
+                    "value": "500"
+                },
+                {
+                    "id": 3,
+                    "value": "About 120"
+                },
+                {
+                    "id": 4,
+                    "value": "Twelve"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 47,
+            "questionContent": "Who was the 'crippled man' at the gate named 'Beautiful'?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "He is unnamed"
+                },
+                {
+                    "id": 2,
+                    "value": "Mephibosheth"
+                },
+                {
+                    "id": 3,
+                    "value": "Bartimaeus"
+                },
+                {
+                    "id": 4,
+                    "value": "Aeneas"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 48,
+            "questionContent": "Who was the man who offered the apostles money to receive the power of the Holy Spirit?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Simon the Sorcerer"
+                },
+                {
+                    "id": 2,
+                    "value": "Alexander"
+                },
+                {
+                    "id": 3,
+                    "value": "Elymas"
+                },
+                {
+                    "id": 4,
+                    "value": "Ananias"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 49,
+            "questionContent": "In which book of the OT was the Ethiopian eunuch reading?),.",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Psalms"
+                },
+                {
+                    "id": 2,
+                    "value": "Isaiah"
+                },
+                {
+                    "id": 3,
+                    "value": "Jeremiah"
+                },
+                {
+                    "id": 4,
+                    "value": "Genesis"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 50,
+            "questionContent": "What did Paul and Barnabas call each other in Lystra?.",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Jupiter and Mercury (Zeus and Hermes)"
+                },
+                {
+                    "id": 2,
+                    "value": "The Sons of Thunder"
+                },
+                {
+                    "id": 3,
+                    "value": "Mars and Apollo"
+                },
+                {
+                    "id": 4,
+                    "value": "Moses and Elijah"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 51,
+            "questionContent": "Who was the 'beloved' person who was the first convert in Asia?), (Epaenetus, Rom 16, but Acts mentions...?). Let's ask about the Bereans.",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "They rejected the word"
+                },
+                {
+                    "id": 2,
+                    "value": "They were mostly philosophers"
+                },
+                {
+                    "id": 3,
+                    "value": "They were more noble than those in Thessalonica"
+                },
+                {
+                    "id": 4,
+                    "value": "They stoned Paul"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 52,
+            "questionContent": "Which city did Paul say was 'full of idols'?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Athens"
+                },
+                {
+                    "id": 2,
+                    "value": "Rome"
+                },
+                {
+                    "id": 3,
+                    "value": "Ephesus"
+                },
+                {
+                    "id": 4,
+                    "value": "Corinth" }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 53,
+            "questionContent": "Which governor said 'Paul, you are out of your mind! Your great learning is driving you mad'?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Felix"
+                },
+                {
+                    "id": 2,
+                    "value": "Festus"
+                },
+                {
+                    "id": 3,
+                    "value": "Gallio"
+                },
+                {
+                    "id": 4,
+                    "value": "Pilate" }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 54,
+            "questionContent": "How many years did Paul spend in Corinth during his second journey?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "One year and six months"
+                },
+                {
+                    "id": 2,
+                    "value": "Three years"
+                },
+                {
+                    "id": 3,
+                    "value": "Two years"
+                },
+                {
+                    "id": 4,
+                    "value": "Forty days" }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 55,
+            "questionContent": "Who was the person that brought Paul to the apostles in Jerusalem for the first time?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "John Mark"
+                },
+                {
+                    "id": 2,
+                    "value": "Ananias"
+                },
+                {
+                    "id": 3,
+                    "value": "Barnabas"
+                },
+                {
+                    "id": 4,
+                    "value": "Peter" }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 56,
+            "questionContent": "Which island's governor was Publius?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Cyprus"
+                },
+                {
+                    "id": 2,
+                    "value": "Malta"
+                },
+                {
+                    "id": 3,
+                    "value": "Crete"
+                },
+                {
+                    "id": 4,
+                    "value": "Rhodes" }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 57,
+            "questionContent": "To whom did Paul say 'Sirs, what must I do to be saved'?).",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "The Philippian Jailer"
+                },
+                {
+                    "id": 2,
+                    "value": "The Eunuch"
+                },
+                {
+                    "id": 3,
+                    "value": "Lydia"
+                },
+                {
+                    "id": 4,
+                    "value": "Cornelius" }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 58,
+            "questionContent": "In which city did Paul have a vision of a man from Macedonia?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Ephesus"
+                },
+                {
+                    "id": 2,
+                    "value": "Antioch"
+                },
+                {
+                    "id": 3,
+                    "value": "Philippi"
+                },
+                {
+                    "id": 4,
+                    "value": "Troas" }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 59,
+            "questionContent": "Who was the High Priest that ordered Paul to be struck on the mouth?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Caiaphas"
+                },
+                {
+                    "id": 2,
+                    "value": "Annas"
+                },
+                {
+                    "id": 3,
+                    "value": "Ishmael"
+                },
+                {
+                    "id": 4,
+                    "value": "Ananias" }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 60,
+            "questionContent": "Who was the son of Paul's sister who informed the commander of a plot to kill Paul?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "He is unnamed (Paul's nephew)"
+                },
+                {
+                    "id": 2,
+                    "value": "Eutychus"
+                },
+                {
+                    "id": 3,
+                    "value": "Timothy"
+                },
+                {
+                    "id": 4,
+                    "value": "Titus" }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 61,
+            "questionContent": "How many thousand people were baptized on the Day of Pentecost?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Twelve thousand"
+                },
+                {
+                    "id": 2,
+                    "value": "Five thousand"
+                },
+                {
+                    "id": 3,
+                    "value": "Three thousand"
+                },
+                {
+                    "id": 4,
+                    "value": "Fifty" }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 62,
+            "questionContent": "In which city did Paul spend two whole years in his own hired house?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Rome"
+                },
+                {
+                    "id": 2,
+                    "value": "Corinth"
+                },
+                {
+                    "id": 3,
+                    "value": "Ephesus"
+                },
+                {
+                    "id": 4,
+                    "value": "Caesarea" }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 63,
+            "questionContent": "Which prophet did Paul quote at the very end of Acts to the Jews in Rome?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Joel"
+                },
+                {
+                    "id": 2,
+                    "value": "Isaiah"
+                },
+                {
+                    "id": 3,
+                    "value": "Daniel"
+                },
+                {
+                    "id": 4,
+                    "value": "Jeremiah" }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 64,
+            "questionContent": "How many days did Paul's shipwreck voyage take before they struck land?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Forty days"
+                },
+                {
+                    "id": 2,
+                    "value": "Three days"
+                },
+                {
+                    "id": 3,
+                    "value": "Seven days"
+                },
+                {
+                    "id": 4,
+                    "value": "Fourteen days" }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 65,
+            "questionContent": "Which group in the Sanhedrin did not believe in the resurrection, leading to a dispute between Paul and them?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Essenes"
+                },
+                {
+                    "id": 2,
+                    "value": "Pharisees"
+                },
+                {
+                    "id": 3,
+                    "value": "Sadducees"
+                },
+                {
+                    "id": 4,
+                    "value": "Scribes" }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 66,
+            "questionContent": "Who was the 'chosen vessel' according to the Lord's word to Ananias?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Barnabas"
+                },
+                {
+                    "id": 2,
+                    "value": "Saul (Paul)"
+                },
+                {
+                    "id": 3,
+                    "value": "Peter"
+                },
+                {
+                    "id": 4,
+                    "value": "Stephen" }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 67,
+            "questionContent": "How many deacons were originally chosen to serve tables?),.",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Seventy"
+                },
+                {
+                    "id": 2,
+                    "value": "Twelve"
+                },
+                {
+                    "id": 3,
+                    "value": "Three"
+                },
+                {
+                    "id": 4,
+                    "value": "Seven" }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 68,
+            "questionContent": "Which city did Paul say was 'full of superstition'?),.",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Corinth"
+                },
+                {
+                    "id": 2,
+                    "value": "Rome"
+                },
+                {
+                    "id": 3,
+                    "value": "Ephesus"
+                },
+                {
+                    "id": 4,
+                    "value": "Athens" }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 69,
+            "questionContent": "Who was the centurion who protected Paul on the ship during the storm?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Lysias"
+                },
+                {
+                    "id": 2,
+                    "value": "Publius"
+                },
+                {
+                    "id": 3,
+                    "value": "Cornelius"
+                },
+                {
+                    "id": 4,
+                    "value": "Julius" }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 70,
+            "questionContent": "What was the name of the place where Paul was bitten by a viper but suffered no harm?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Crete"
+                },
+                {
+                    "id": 2,
+                    "value": "Cyprus"
+                },
+                {
+                    "id": 3,
+                    "value": "Rhodes"
+                },
+                {
+                    "id": 4,
+                    "value": "Malta (Melita)" }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 71,
+            "questionContent": "How many thousand people were added after Peter's first sermon?), (Repeated?). Let's ask: How many thousand were added after the healing of the lame man?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Ten thousand"
+                },
+                {
+                    "id": 2,
+                    "value": "About five thousand (total count)"
+                },
+                {
+                    "id": 3,
+                    "value": "Twelve thousand"
+                },
+                {
+                    "id": 4,
+                    "value": "Three thousand" }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 72,
+            "questionContent": "Who was the daughter of the King?), (Still no). Who was the wife of Felix the governor?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Bernice"
+                },
+                {
+                    "id": 2,
+                    "value": "Drusilla"
+                },
+                {
+                    "id": 3,
+                    "value": "Priscilla"
+                },
+                {
+                    "id": 4,
+                    "value": "Lydia" }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 73,
+            "questionContent": "Who was the 'chosen men' sent to Antioch with Paul and Barnabas after the Council?),.",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Timothy and Titus"
+                },
+                {
+                    "id": 2,
+                    "value": "Judas (Barsabbas) and Silas"
+                },
+                {
+                    "id": 3,
+                    "value": "Luke and John"
+                },
+                {
+                    "id": 4,
+                    "value": "Mark and Barnabas" }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 74,
+            "questionContent": "What was the name of the goddess whose 'image fell down from heaven' according to the city clerk of Ephesus?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Jupiter"
+                },
+                {
+                    "id": 2,
+                    "value": "Artemis (Diana)"
+                },
+                {
+                    "id": 3,
+                    "value": "Venus"
+                },
+                {
+                    "id": 4,
+                    "value": "Athena" }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 75,
+            "questionContent": "Who was the proconsul of Achaia who refused to judge Paul in Corinth?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Gallio"
+                },
+                {
+                    "id": 2,
+                    "value": "Felix"
+                },
+                {
+                    "id": 3,
+                    "value": "Agrippa"
+                },
+                {
+                    "id": 4,
+                    "value": "Festus" }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 76,
+            "questionContent": "What was the name of the girl who had a spirit of divination in Philippi?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Tabitha"
+                },
+                {
+                    "id": 2,
+                    "value": "Rhoda"
+                },
+                {
+                    "id": 3,
+                    "value": "Lydia"
+                },
+                {
+                    "id": 4,
+                    "value": "She is unnamed" }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 77,
+            "questionContent": "In which city did Paul say he had 'fought according to the custom of the people'?), (No). In which city did the residents believe Paul and Barnabas were gods?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Antioch"
+                },
+                {
+                    "id": 2,
+                    "value": "Paphos"
+                },
+                {
+                    "id": 3,
+                    "value": "Iconium"
+                },
+                {
+                    "id": 4,
+                    "value": "Lystra" }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 78,
+            "questionContent": "How many times did Peter see the vision of the sheet?),.",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Three"
+                },
+                {
+                    "id": 2,
+                    "value": "Twelve"
+                },
+                {
+                    "id": 3,
+                    "value": "Seven"
+                },
+                {
+                    "id": 4,
+                    "value": "One" }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 79,
+            "questionContent": "What was Paul's Roman name?), (Still Saul/Paul mentioned, but...). What were the citizens of Rome called?), (Wait: citizenship). What did Paul use to prevent himself from being flogged in Jerusalem?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "His status as a Pharisee"
+                },
+                {
+                    "id": 2,
+                    "value": "His Roman citizenship"
+                },
+                {
+                    "id": 3,
+                    "value": "His appeal to Caesar"
+                },
+                {
+                    "id": 4,
+                    "value": "His relationship with the centurion" }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 80,
+            "questionContent": "Who was the 'orator' or 'lawyer' who accused Paul?).",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Agrippa"
+                },
+                {
+                    "id": 2,
+                    "value": "Tertullus"
+                },
+                {
+                    "id": 3,
+                    "value": "Lysias"
+                },
+                {
+                    "id": 4,
+                    "value": "Felix" }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 81,
+            "questionContent": "What was the name of the man who Paul said was 'my son in the faith'?),.",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Timothy"
+                },
+                {
+                    "id": 2,
+                    "value": "Luke"
+                },
+                {
+                    "id": 3,
+                    "value": "Mark"
+                },
+                {
+                    "id": 4,
+                    "value": "Titus" }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 82,
+            "questionContent": "In which city did Paul find an 'altar to an unknown god'?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Ephesus"
+                },
+                {
+                    "id": 2,
+                    "value": "Rome"
+                },
+                {
+                    "id": 3,
+                    "value": "Corinth"
+                },
+                {
+                    "id": 4,
+                    "value": "Athens" }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 83,
+            "questionContent": "How long was Paul's longest stay recorded in Acts?),.",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "One year and six months (Corinth)"
+                },
+                {
+                    "id": 2,
+                    "value": "Three years (Ephesus)"
+                },
+                {
+                    "id": 3,
+                    "value": "Two years (Rome)"
+                },
+                {
+                    "id": 4,
+                    "value": "Two years (Caesarea)" }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 84,
+            "questionContent": "Who did Paul say was 'not many wise, not many mighty'?), (Repeated?). Let's ask: Who was the 'beloved physician' traveler?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Timothy"
+                },
+                {
+                    "id": 2,
+                    "value": "Luke"
+                },
+                {
+                    "id": 3,
+                    "value": "Aquila"
+                },
+                {
+                    "id": 4,
+                    "value": "Silas" }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 85,
+            "questionContent": "How many days did Paul wait in Troas before preaching and the accident happened?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Seven days"
+                },
+                {
+                    "id": 2,
+                    "value": "One day"
+                },
+                {
+                    "id": 3,
+                    "value": "Fourteen days"
+                },
+                {
+                    "id": 4,
+                    "value": "Three days" }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 86,
+            "questionContent": "Which book of the NT is the only 'History' book?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Matthew"
+                },
+                {
+                    "id": 2,
+                    "value": "Acts"
+                },
+                {
+                    "id": 3,
+                    "value": "Romans"
+                },
+                {
+                    "id": 4,
+                    "value": "Revelation" }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 87,
+            "questionContent": "Who was the 'chosen man' who accompanied Paul on his second journey after the split with Barnabas?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Luke"
+                },
+                {
+                    "id": 2,
+                    "value": "Timothy"
+                },
+                {
+                    "id": 3,
+                    "value": "John Mark"
+                },
+                {
+                    "id": 4,
+                    "value": "Silas" }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 88,
+            "questionContent": "Who did Paul say was 'my helper in Christ'?),.",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Silas"
+                },
+                {
+                    "id": 2,
+                    "value": "Barnabas"
+                },
+                {
+                    "id": 3,
+                    "value": "Priscilla and Aquila"
+                },
+                {
+                    "id": 4,
+                    "value": "Timothy" }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 89,
+            "questionContent": "On which journey did Paul visit Athens?),.",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Second"
+                },
+                {
+                    "id": 2,
+                    "value": "First"
+                },
+                {
+                    "id": 3,
+                    "value": "Voyage to Rome"
+                },
+                {
+                    "id": 4,
+                    "value": "Third" }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 90,
+            "questionContent": "What was the name of the 'great wind' that caused the shipwreck?),.",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Euroclydon (Northeaster)"
+                },
+                {
+                    "id": 2,
+                    "value": "Sirocco"
+                },
+                {
+                    "id": 3,
+                    "value": "Typhoon"
+                },
+                {
+                    "id": 4,
+                    "value": "Harmattan" }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 91,
+            "questionContent": "How many days did the Holy Spirit tell them to wait in Jerusalem?),.",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Three"
+                },
+                {
+                    "id": 2,
+                    "value": "Seven"
+                },
+                {
+                    "id": 3,
+                    "value": "Forty"
+                },
+                {
+                    "id": 4,
+                    "value": "Not specified (until Pentecost happened)" }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 92,
+            "questionContent": "Which book of the OT was the 'last' quoted by Paul in Acts?),.",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Jeremiah"
+                },
+                {
+                    "id": 2,
+                    "value": "Psalms"
+                },
+                {
+                    "id": 3,
+                    "value": "Joel"
+                },
+                {
+                    "id": 4,
+                    "value": "Isaiah" }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 93,
+            "questionContent": "Who was the 'first' person Paul baptized in Europe?),.",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Dionysius"
+                },
+                {
+                    "id": 2,
+                    "value": "Lydia"
+                },
+                {
+                    "id": 3,
+                    "value": "The Jailer"
+                },
+                {
+                    "id": 4,
+                    "value": "Damaris" }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 94,
+            "questionContent": "In which city did Paul and Barnabas shake off the dust from their feet?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Lystra"
+                },
+                {
+                    "id": 2,
+                    "value": "Antioch in Pisidia"
+                },
+                {
+                    "id": 3,
+                    "value": "Iconium"
+                },
+                {
+                    "id": 4, "value": "Derbe" }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 95,
+            "questionContent": "Who was the 'head' of the church in Jerusalem according to Paul's visit in Acts 21?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "John"
+                },
+                {
+                    "id": 2,
+                    "value": "Stephen"
+                },
+                {
+                    "id": 3,
+                    "value": "James"
+                },
+                {
+                    "id": 4,
+                    "value": "Peter" }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 96,
+            "questionContent": "How many thousand Jews believed according to James?),.",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Many thousands (tens of thousands / myriad)"
+                },
+                {
+                    "id": 2,
+                    "value": "Five thousand"
+                },
+                {
+                    "id": 3,
+                    "value": "Twelve thousand"
+                },
+                {
+                    "id": 4,
+                    "value": "Three thousand" }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 97,
+            "questionContent": "Who was the 'Egyptian' mentioned by the commander who led 4,000 assassins into the wilderness?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "The Egyptian (unnamed rebel)"
+                },
+                {
+                    "id": 2,
+                    "value": "Elymas"
+                },
+                {
+                    "id": 3,
+                    "value": "Simon Magus"
+                },
+                {
+                    "id": 4,
+                    "value": "Barabbas" }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 98,
+            "questionContent": "Who was the 'young man' at whose feet the witnesses laid their cloaks during Stephen's stoning?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Saul"
+                },
+                {
+                    "id": 2,
+                    "value": "John Mark"
+                },
+                {
+                    "id": 3,
+                    "value": "Luke"
+                },
+                {
+                    "id": 4,
+                    "value": "Timothy" }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 99,
+            "questionContent": "Which city was the home of Timothy?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Iconium"
+                },
+                {
+                    "id": 2,
+                    "value": "Antioch"
+                },
+                {
+                    "id": 3,
+                    "value": "Lystra"
+                },
+                {
+                    "id": 4,
+                    "value": "Derbe" }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 100,
+            "questionContent": "Who wrote the Book of Acts?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Paul"
+                },
+                {
+                    "id": 2,
+                    "value": "John"
+                },
+                {
+                    "id": 3,
+                    "value": "Peter"
+                },
+                {
+                    "id": 4,
+                    "value": "Luke" }
+            ],
+            "rightAnswerId": 4
+        }
+    ]
+}

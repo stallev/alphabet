@@ -1,0 +1,194 @@
+---
+description: Next.js 16.2.6 App Router паттерны — RSC, Server Actions, proxy.ts, кэш
+globs:
+  - "app/**"
+  - "src/**"
+  - "lib/**"
+  - "proxy.ts"
+alwaysApply: false
+---
+
+# Next.js 16.2.6 App Router — паттерны для проекта «Алфавит»
+
+**Stack:** Next.js **16.2.6**, React 19.2.4, TypeScript 5, TailwindCSS v4  
+**Version pin (hard):** `"next": "16.2.6"` — не менять без ADR  
+**Reference:** [`docs/examples/fitapp/.cursor/rules/nextjs-vercel-app-router.mdc`](../../docs/examples/fitapp/.cursor/rules/nextjs-vercel-app-router.mdc)
+
+## Обязательные практики
+
+### Async Request APIs (Next.js 15)
+
+```typescript
+// ВСЕГДА awaitable в Server Components / Route Handlers
+const cookieStore = await cookies();
+const headersList = await headers();
+const { id } = await params;
+const { q } = await searchParams;
+```
+
+### Server Components по умолчанию
+
+- **Server Component** (default): нет хуков, нет `window`, нет `onClick`
+- **Client Component**: добавь `'use client'` только при использовании `useState`, `useEffect`, `useRef`, `framer-motion`, Zustand, browser API
+
+```typescript
+// components/GameBoard.tsx — обязательно
+'use client';
+
+import { useGameStore } from '@/store';
+```
+
+### Thin BFF (тонкие слои)
+
+```
+Route Handler / Server Action
+  ↓ (только вызов)
+src/data/**  (DAL — server-only, Prisma)
+```
+
+Server Actions и Route Handlers НЕ содержат бизнес-логику — только:
+1. Проверка `auth()` + роль
+2. Zod-валидация входных данных
+3. Вызов DAL-функции
+4. `revalidateTag` / `revalidatePath` / `redirect`
+
+### Кэш (Next.js 15)
+
+```typescript
+// Предпочтительно: use cache + cacheTag
+import { unstable_cache as cache } from 'next/cache';
+
+// ИЛИ через fetch с тегами:
+const data = await fetch('/api/...', { next: { tags: ['suites'] } });
+
+// Инвалидация в Server Action:
+import { revalidateTag } from 'next/cache';
+revalidateTag('suites');
+```
+
+**Не используй** `unstable_cache` — только `'use cache'` directive или `revalidateTag`.
+
+## Структура маршрутов (canonical)
+
+```
+app/
+├── layout.tsx              Root layout (html, body, providers)
+├── page.tsx                Главная страница (редирект на игру)
+├── not-found.tsx
+├── globals.css
+│
+├── (game)/                 Route group — публичные игровые страницы
+│   └── page.tsx            Основная игровая страница
+│
+├── admin/                  Admin-only (middleware проверяет role)
+│   ├── layout.tsx          Admin layout (sidebar, header)
+│   ├── page.tsx            Admin dashboard
+│   └── suites/
+│       ├── page.tsx        Список наборов
+│       ├── new/page.tsx    Создать набор вручную
+│       └── import/page.tsx Импорт JSON
+│
+└── api/
+    ├── auth/[...nextauth]/route.ts  Auth.js handlers
+    └── admin/
+        └── suites/
+            ├── route.ts    GET (список), POST (создать/импортировать)
+            └── [id]/route.ts  GET, PUT, DELETE
+```
+
+## Server Actions
+
+```typescript
+// src/actions/admin/import-suite.ts
+'use server';
+import 'server-only';
+import { auth } from '@/lib/auth';
+import { importSuiteFromJson } from '@/data/suites/import-suite.server';
+import { revalidateTag } from 'next/cache';
+
+export async function importSuiteAction(json: unknown) {
+  const session = await auth();
+  if (session?.user?.role !== 'admin') throw new Error('Forbidden');
+
+  const result = await importSuiteFromJson(json);
+  revalidateTag('suites');
+  return result;
+}
+```
+
+## Route Handlers
+
+```typescript
+// app/api/admin/suites/route.ts
+import { NextRequest, NextResponse } from 'next/server';
+import { auth } from '@/lib/auth';
+
+export async function POST(request: NextRequest) {
+  const session = await auth();
+  if (session?.user?.role !== 'admin') {
+    return NextResponse.json({ error: 'Forbidden' }, { status: 403 });
+  }
+  // ...
+}
+```
+
+## Metadata
+
+```typescript
+// app/layout.tsx
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Алфавит: Библейская Викторина',
+  description: 'Интерактивная командная игра...',
+};
+```
+
+## proxy.ts — Request Interception (Next.js 16)
+
+Next.js 16 заменил `middleware.ts` → `proxy.ts`:
+
+```typescript
+// proxy.ts (НЕ middleware.ts!)
+import { NextResponse } from 'next/server';
+import type { NextRequest } from 'next/server';
+import NextAuth from 'next-auth';
+import authConfig from '@/lib/auth.config';  // БЕЗ Prisma — Edge-safe
+
+const { auth } = NextAuth(authConfig);
+
+export async function proxy(request: NextRequest) {
+  // ... route protection logic
+  return NextResponse.next();
+}
+
+export const config = { matcher: [...] };
+```
+
+**Правила proxy.ts:**
+- Только `auth.config.ts` (без Prisma)
+- Runtime = `nodejs` (не Edge)
+- Функция называется `proxy` (не `middleware`)
+
+## next.config.ts (Next.js 16.2.6)
+
+```typescript
+import type { NextConfig } from 'next';
+
+const nextConfig: NextConfig = {
+  reactCompiler: true,   // React Compiler включён по умолчанию в 16
+  cacheComponents: true, // PPR cache components
+};
+
+export default nextConfig;
+```
+
+## Запрещено
+
+- `middleware.ts` с `export function middleware()` — используй `proxy.ts` с `proxy()`
+- `import { useRouter } from 'next/router'` → использовать `next/navigation`
+- `getServerSideProps`, `getStaticProps` → только в Pages Router
+- `new PrismaClient()` вне `lib/db.ts`
+- `import { auth } from '@/lib/auth'` в `proxy.ts` → только `auth.config.ts`
+- Прямой доступ к `process.env` в client компонентах (только `NEXT_PUBLIC_*`)
+- `unstable_cache` → использовать `'use cache'` directive или `revalidateTag`

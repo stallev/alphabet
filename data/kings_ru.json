@@ -1,0 +1,2505 @@
+{
+    "title": "Книги Царств",
+    "language": "ru",
+    "questionsList": [
+        {
+            "id": 1,
+            "questionContent": "Кто был матерью Соломона?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Вирсавия"
+                },
+                {
+                    "id": 2,
+                    "value": "Авигея"
+                },
+                {
+                    "id": 3,
+                    "value": "Аггифа"
+                },
+                {
+                    "id": 4,
+                    "value": "Михаль"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 2,
+            "questionContent": "Сколько лет строился храм Соломона?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "13 лет"
+                },
+                {
+                    "id": 2,
+                    "value": "40 лет"
+                },
+                {
+                    "id": 3,
+                    "value": "3 года"
+                },
+                {
+                    "id": 4,
+                    "value": "7 лет"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 3,
+            "questionContent": "Сколько лет Соломон строил свой дом?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "5 лет"
+                },
+                {
+                    "id": 2,
+                    "value": "20 лет"
+                },
+                {
+                    "id": 3,
+                    "value": "13 лет"
+                },
+                {
+                    "id": 4,
+                    "value": "7 лет"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 4,
+            "questionContent": "Кто пытался воцариться вместо Соломона, когда Давид состарился?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Адония"
+                },
+                {
+                    "id": 2,
+                    "value": "Шимей"
+                },
+                {
+                    "id": 3,
+                    "value": "Амнон"
+                },
+                {
+                    "id": 4,
+                    "value": "Авессалом"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 5,
+            "questionContent": "Кого Соломон приказал Ванее убить у жертвенника?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Иоава"
+                },
+                {
+                    "id": 2,
+                    "value": "Адонию"
+                },
+                {
+                    "id": 3,
+                    "value": "Авиафара"
+                },
+                {
+                    "id": 4,
+                    "value": "Семея"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 6,
+            "questionContent": "В каком городе Бог явился Соломону во сне и предложил просить мудрости?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "В Гаваоне"
+                },
+                {
+                    "id": 2,
+                    "value": "В Вефиле"
+                },
+                {
+                    "id": 3,
+                    "value": "В Иерусалиме"
+                },
+                {
+                    "id": 4,
+                    "value": "В Хевроне"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 7,
+            "questionContent": "Сколько притч изрек Соломон?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Три тысячи"
+                },
+                {
+                    "id": 2,
+                    "value": "Тысяча и пять"
+                },
+                {
+                    "id": 3,
+                    "value": "Сто"
+                },
+                {
+                    "id": 4,
+                    "value": "Пятьсот"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 8,
+            "questionContent": "Как звали царицу, пришедшую испытать Соломона загадками?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Царица Савская"
+                },
+                {
+                    "id": 2,
+                    "value": "Царица Кандакия"
+                },
+                {
+                    "id": 3,
+                    "value": "Царица Есфирь"
+                },
+                {
+                    "id": 4,
+                    "value": "Царица Иезавель"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 9,
+            "questionContent": "Кто разорвал свою новую одежду на 12 частей перед Иеровоамом?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Самуил"
+                },
+                {
+                    "id": 2,
+                    "value": "Нафан"
+                },
+                {
+                    "id": 3,
+                    "value": "Садок"
+                },
+                {
+                    "id": 4,
+                    "value": "Ахия Силомлянин"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 10,
+            "questionContent": "Сколько частей царства было обещано Иеровоаму?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Одна"
+                },
+                {
+                    "id": 2,
+                    "value": "Две"
+                },
+                {
+                    "id": 3,
+                    "value": "Десять"
+                },
+                {
+                    "id": 4,
+                    "value": "Пять"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 11,
+            "questionContent": "Где Иеровоам поставил золотых тельцов?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "В Силоме и Галгале"
+                },
+                {
+                    "id": 2,
+                    "value": "В Хевроне и Вирсавии"
+                },
+                {
+                    "id": 3,
+                    "value": "В Вефиле и Дане"
+                },
+                {
+                    "id": 4,
+                    "value": "В Иерусалиме и Самарии"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 12,
+            "questionContent": "Что случилось с рукой царя Иеровоама, когда он простер ее к человеку Божию?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Стала черной"
+                },
+                {
+                    "id": 2,
+                    "value": "Покрылась проказой"
+                },
+                {
+                    "id": 3,
+                    "value": "Отпала"
+                },
+                {
+                    "id": 4,
+                    "value": "Она одеревенела (сохла) и не мог он повернуть ее к себе"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 13,
+            "questionContent": "Кто обманул человека Божия из Иудеи, что привело к его смерти от льва?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Сыновья пророческие"
+                },
+                {
+                    "id": 2,
+                    "value": "Лжепророк Ваала"
+                },
+                {
+                    "id": 3,
+                    "value": "Пророк-старец из Вефиля"
+                },
+                {
+                    "id": 4,
+                    "value": "Иеровоам"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 14,
+            "questionContent": "Какое имя Бог предсказал (через человека Божия), что родится царь из дома Давидова и сожжет кости на жертвеннике в Вефиле?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Езекия"
+                },
+                {
+                    "id": 2,
+                    "value": "Иосия"
+                },
+                {
+                    "id": 3,
+                    "value": "Ииуй"
+                },
+                {
+                    "id": 4,
+                    "value": "Зоровавель"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 15,
+            "questionContent": "Кто был сыном и преемником Соломона?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Иеровоам"
+                },
+                {
+                    "id": 2,
+                    "value": "Аса"
+                },
+                {
+                    "id": 3,
+                    "value": "Авия"
+                },
+                {
+                    "id": 4,
+                    "value": "Ровоам"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 16,
+            "questionContent": "Какой совет молодых людей принял Ровоам?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Отпустить рабов"
+                },
+                {
+                    "id": 2,
+                    "value": "Отменить налоги"
+                },
+                {
+                    "id": 3,
+                    "value": "Облегчить иго"
+                },
+                {
+                    "id": 4,
+                    "value": "Утяжелить иго народа: 'отец наказывал бичами, а я буду скорпионами'"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 17,
+            "questionContent": "Кто был царем Египетским, который напал на Иерусалим при Ровоаме и забрал сокровища?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Мернептах"
+                },
+                {
+                    "id": 2,
+                    "value": "Сусаким (Шешонк)"
+                },
+                {
+                    "id": 3,
+                    "value": "Рамзес"
+                },
+                {
+                    "id": 4,
+                    "value": "Нехо"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 18,
+            "questionContent": "Как звали жену Ахава?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Гофолия"
+                },
+                {
+                    "id": 2,
+                    "value": "Мааха"
+                },
+                {
+                    "id": 3,
+                    "value": "Есфирь"
+                },
+                {
+                    "id": 4,
+                    "value": "Иезавель"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 19,
+            "questionContent": "Откуда была родом Иезавель?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Филистимская"
+                },
+                {
+                    "id": 2,
+                    "value": "Тирская"
+                },
+                {
+                    "id": 3,
+                    "value": "Сидонская царевна (дочь Ефваала)"
+                },
+                {
+                    "id": 4,
+                    "value": "Моавитянка"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 20,
+            "questionContent": "Где Илия скрывался от Ахава в начале засухи?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "На горе Кармил"
+                },
+                {
+                    "id": 2,
+                    "value": "В Сарепте Сидонской"
+                },
+                {
+                    "id": 3,
+                    "value": "В пустыне"
+                },
+                {
+                    "id": 4,
+                    "value": "У потока Хораф"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 21,
+            "questionContent": "Кто кормил Илию у потока Хораф?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Вороны"
+                },
+                {
+                    "id": 2,
+                    "value": "Львы"
+                },
+                {
+                    "id": 3,
+                    "value": "Вдова"
+                },
+                {
+                    "id": 4,
+                    "value": "Ангелы"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 22,
+            "questionContent": "Какое чудо совершил Илия в Сарепте Сидонской?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Исцеление прокаженного"
+                },
+                {
+                    "id": 2,
+                    "value": "Низведение огня"
+                },
+                {
+                    "id": 3,
+                    "value": "Умножение муки и масла и воскрешение сына вдовы"
+                },
+                {
+                    "id": 4,
+                    "value": "Разделение вод"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 23,
+            "questionContent": "Сколько пророк Ваала собрал Ахав на гору Кармил?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "100"
+                },
+                {
+                    "id": 2,
+                    "value": "500"
+                },
+                {
+                    "id": 3,
+                    "value": "450 пророков Ваала (и 400 дубравных)"
+                },
+                {
+                    "id": 4,
+                    "value": "1000"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 24,
+            "questionContent": "Сколько ведер воды вылили на жертвенник Илии?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "12 ведер (4 ведра 3 раза)"
+                },
+                {
+                    "id": 2,
+                    "value": "3 ведра"
+                },
+                {
+                    "id": 3,
+                    "value": "10 ведер"
+                },
+                {
+                    "id": 4,
+                    "value": "7 ведер"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 25,
+            "questionContent": "Куда убежал Илия от угроз Иезавели?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "К горе Божией Хорив"
+                },
+                {
+                    "id": 2,
+                    "value": "В Дамаск"
+                },
+                {
+                    "id": 3,
+                    "value": "В Самарию"
+                },
+                {
+                    "id": 4,
+                    "value": "В Египет"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 26,
+            "questionContent": "В чем был Господь, когда явился Илии на Хориве?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "В веянии тихого ветра"
+                },
+                {
+                    "id": 2,
+                    "value": "В буре"
+                },
+                {
+                    "id": 3,
+                    "value": "В землетрясении"
+                },
+                {
+                    "id": 4,
+                    "value": "В огне"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 27,
+            "questionContent": "Кого Бог повелел Илии помазать в цари над Сириею?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Венадада"
+                },
+                {
+                    "id": 2,
+                    "value": "Азаила"
+                },
+                {
+                    "id": 3,
+                    "value": "Ииуя"
+                },
+                {
+                    "id": 4,
+                    "value": "Наемана"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 28,
+            "questionContent": "Кого Бог повелел Илии помазать в цари над Израилем?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Ииуя, сына Намессиева"
+                },
+                {
+                    "id": 2,
+                    "value": "Ахава"
+                },
+                {
+                    "id": 3,
+                    "value": "Иоахаза"
+                },
+                {
+                    "id": 4,
+                    "value": "Иорама"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 29,
+            "questionContent": "Чей виноградник пожелал Ахав?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Михея"
+                },
+                {
+                    "id": 2,
+                    "value": "Навуфея Изреелитянина"
+                },
+                {
+                    "id": 3,
+                    "value": "Симона"
+                },
+                {
+                    "id": 4,
+                    "value": "Иорамов"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 30,
+            "questionContent": "Как погибла Иезавель?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Ее убили мечом"
+                },
+                {
+                    "id": 2,
+                    "value": "Она отравилась"
+                },
+                {
+                    "id": 3,
+                    "value": "Она сгорела в пожаре"
+                },
+                {
+                    "id": 4,
+                    "value": "Ее выбросили из окна, и псы съели ее тело"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 31,
+            "questionContent": "Кто предсказал Ахаву смерть в битве, когда другие пророки лгали?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Седекия"
+                },
+                {
+                    "id": 2,
+                    "value": "Илия"
+                },
+                {
+                    "id": 3,
+                    "value": "Елисей"
+                },
+                {
+                    "id": 4,
+                    "value": "Михей, сын Иемвлая"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 32,
+            "questionContent": "Как Ахав пытался избежать смерти в битве при Рамоф-Галааде?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Спрятался в пещере"
+                },
+                {
+                    "id": 2,
+                    "value": "Переоделся в простую одежду"
+                },
+                {
+                    "id": 3,
+                    "value": "Надел двойную броню"
+                },
+                {
+                    "id": 4,
+                    "value": "Остался дома"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 33,
+            "questionContent": "Как ранили Ахава?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Мечом в ближнем бою"
+                },
+                {
+                    "id": 2,
+                    "value": "Копьем в сердце"
+                },
+                {
+                    "id": 3,
+                    "value": "Случайно пущенной стрелой, сквозь швы лат"
+                },
+                {
+                    "id": 4,
+                    "value": "Камнем из пращи"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 34,
+            "questionContent": "Что попросил Елисей у Илии перед его вознесением?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Победу над врагами"
+                },
+                {
+                    "id": 2,
+                    "value": "Его милоть"
+                },
+                {
+                    "id": 3,
+                    "value": "Долгую жизнь"
+                },
+                {
+                    "id": 4,
+                    "value": "Духа, который на тебе, пусть будет на мне вдвойне"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 35,
+            "questionContent": "Как Илия вознесся на небо?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Ангелы унесли его"
+                },
+                {
+                    "id": 2,
+                    "value": "В вихре, на огненной колеснице"
+                },
+                {
+                    "id": 3,
+                    "value": "Исчез в облаке"
+                },
+                {
+                    "id": 4,
+                    "value": "Умер и воскрес"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 36,
+            "questionContent": "Какое первое чудо совершил Елисей после вознесения Илии?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Разделил воды Иордана милотью Илии"
+                },
+                {
+                    "id": 2,
+                    "value": "Воскресил мертвого"
+                },
+                {
+                    "id": 3,
+                    "value": "Умножил масло"
+                },
+                {
+                    "id": 4,
+                    "value": "Исцелил воду в Иерихоне"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 37,
+            "questionContent": "Что случилось с детьми, которые насмехались над Елисеем?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Они ослепли"
+                },
+                {
+                    "id": 2,
+                    "value": "Земля поглотила их"
+                },
+                {
+                    "id": 3,
+                    "value": "Они заболели проказой"
+                },
+                {
+                    "id": 4,
+                    "value": "Вышли две медведицы и растерзали 42 из них"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 38,
+            "questionContent": "Кого Елисей исцелил от проказы?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Иораам"
+                },
+                {
+                    "id": 2,
+                    "value": "Бен-Адада"
+                },
+                {
+                    "id": 3,
+                    "value": "Гиезия"
+                },
+                {
+                    "id": 4,
+                    "value": "Неемана Сириянина"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 39,
+            "questionContent": "Сколько раз Нееман должен был окунуться в Иордане?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Три раза"
+                },
+                {
+                    "id": 2,
+                    "value": "Семь раз"
+                },
+                {
+                    "id": 3,
+                    "value": "Двенадцать раз"
+                },
+                {
+                    "id": 4,
+                    "value": "Один раз"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 40,
+            "questionContent": "Кто заболел проказой из-за жадности после исцеления Неемана?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Жена Неемана"
+                },
+                {
+                    "id": 2,
+                    "value": "Сам Елисей"
+                },
+                {
+                    "id": 3,
+                    "value": "Гиезий, слуга Елисея"
+                },
+                {
+                    "id": 4,
+                    "value": "Царь Израильский"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 41,
+            "questionContent": "Что Елисей сделал с топором, упавшим в воду?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Бросил кусок дерева, и топор всплыл"
+                },
+                {
+                    "id": 2,
+                    "value": "Купил новый"
+                },
+                {
+                    "id": 3,
+                    "value": "Помолился, и вода ушла"
+                },
+                {
+                    "id": 4,
+                    "value": "Нырнул и достал"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 42,
+            "questionContent": "Что увидел слуга Елисея, когда пророк помолился об открытии его глаз?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Стену огня"
+                },
+                {
+                    "id": 2,
+                    "value": "Гора полна коней и колесниц огненных вокруг Елисея"
+                },
+                {
+                    "id": 3,
+                    "value": "Облако славы"
+                },
+                {
+                    "id": 4,
+                    "value": "Ангелов с мечами"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 43,
+            "questionContent": "Что произошло, когда мертвого бросили в гробницу Елисея?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Ничего не произошло"
+                },
+                {
+                    "id": 2,
+                    "value": "Он ожил и встал на ноги при прикосновении к костям"
+                },
+                {
+                    "id": 3,
+                    "value": "Могила засияла"
+                },
+                {
+                    "id": 4,
+                    "value": "Кости Елисея рассыпались"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 44,
+            "questionContent": "Какой царь велел выбросить Иезавель из окна?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Ииуй"
+                },
+                {
+                    "id": 2,
+                    "value": "Иосия"
+                },
+                {
+                    "id": 3,
+                    "value": "Иорам"
+                },
+                {
+                    "id": 4,
+                    "value": "Ахав"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 45,
+            "questionContent": "С кем Ииуй встретился и взял в колесницу, чтобы показать свою ревность?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Иорам"
+                },
+                {
+                    "id": 2,
+                    "value": "Елисей"
+                },
+                {
+                    "id": 3,
+                    "value": "Гиезий"
+                },
+                {
+                    "id": 4,
+                    "value": "Ионадав, сын Рихава"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 46,
+            "questionContent": "Как звали дочь Ахава и Иезавели, которая захватила власть в Иудее?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Иосавеф"
+                },
+                {
+                    "id": 2,
+                    "value": "Мерова"
+                },
+                {
+                    "id": 3,
+                    "value": "Гофолия"
+                },
+                {
+                    "id": 4,
+                    "value": "Аталия"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 47,
+            "questionContent": "Кого спасла Иосавеф, дочь царя Иорама, от истребления Гофолией?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Иоаса"
+                },
+                {
+                    "id": 2,
+                    "value": "Иосию"
+                },
+                {
+                    "id": 3,
+                    "value": "Езекию"
+                },
+                {
+                    "id": 4,
+                    "value": "Манассию"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 48,
+            "questionContent": "Где прятали Иоаса шесть лет?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "В доме Господнем (в храме)"
+                },
+                {
+                    "id": 2,
+                    "value": "У родственников в Самарии"
+                },
+                {
+                    "id": 3,
+                    "value": "В Египте"
+                },
+                {
+                    "id": 4,
+                    "value": "В пещере"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 49,
+            "questionContent": "Как звали священника, который воцарил Иоаса и убил Гофолию?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Азария"
+                },
+                {
+                    "id": 2,
+                    "value": "Иодай"
+                },
+                {
+                    "id": 3,
+                    "value": "Хелкия"
+                },
+                {
+                    "id": 4,
+                    "value": "Урия"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 50,
+            "questionContent": "Какой царь заболел смертельно, но вымолил у Бога еще 15 лет жизни?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Манассия"
+                },
+                {
+                    "id": 2,
+                    "value": "Езекия"
+                },
+                {
+                    "id": 3,
+                    "value": "Иосия"
+                },
+                {
+                    "id": 4,
+                    "value": "Иоафам"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 51,
+            "questionContent": "Какое знамение дал Исайя Езекии о выздоровлении?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Зацвел жезл"
+                },
+                {
+                    "id": 2,
+                    "value": "Солнце остановилось"
+                },
+                {
+                    "id": 3,
+                    "value": "Тень возвратилась назад на 10 ступеней"
+                },
+                {
+                    "id": 4,
+                    "value": "Гром среди ясного неба"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 52,
+            "questionContent": "Какой царь показал посланникам Вавилонским все свои сокровища?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Седекия"
+                },
+                {
+                    "id": 2,
+                    "value": "Езекия"
+                },
+                {
+                    "id": 3,
+                    "value": "Манассия"
+                },
+                {
+                    "id": 4,
+                    "value": "Иоаким"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 53,
+            "questionContent": "Кто был самым нечестивым царем Иудеи, правившим дольше всех?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Манассия"
+                },
+                {
+                    "id": 2,
+                    "value": "Амон"
+                },
+                {
+                    "id": 3,
+                    "value": "Ровоам"
+                },
+                {
+                    "id": 4,
+                    "value": "Ахаз"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 54,
+            "questionContent": "Какой царь начал царствовать в 8 лет и провел великую реформу?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Иосия"
+                },
+                {
+                    "id": 2,
+                    "value": "Езекия"
+                },
+                {
+                    "id": 3,
+                    "value": "Озия"
+                },
+                {
+                    "id": 4,
+                    "value": "Иоас"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 55,
+            "questionContent": "Что нашел священник Хелкия в храме при Иосии?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Ковчег Завета"
+                },
+                {
+                    "id": 2,
+                    "value": "Книгу Закона"
+                },
+                {
+                    "id": 3,
+                    "value": "Жезл Аарона"
+                },
+                {
+                    "id": 4,
+                    "value": "Золотого тельца"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 56,
+            "questionContent": "Как звали пророчицу, к которой послал Иосия узнать о найденной книге?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Анна"
+                },
+                {
+                    "id": 2,
+                    "value": "Девора"
+                },
+                {
+                    "id": 3,
+                    "value": "Ноадия"
+                },
+                {
+                    "id": 4,
+                    "value": "Олдама"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 57,
+            "questionContent": "Где погиб царь Иосия?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "В Самарии"
+                },
+                {
+                    "id": 2,
+                    "value": "В долине Мегиддо (в битве с Нехо)"
+                },
+                {
+                    "id": 3,
+                    "value": "В Иерусалиме"
+                },
+                {
+                    "id": 4,
+                    "value": "В Вавилоне"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 58,
+            "questionContent": "Кто был последним царем Иудеи?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Иоаким"
+                },
+                {
+                    "id": 2,
+                    "value": "Иоахаз"
+                },
+                {
+                    "id": 3,
+                    "value": "Седекия"
+                },
+                {
+                    "id": 4,
+                    "value": "Иехония"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 59,
+            "questionContent": "Что сделали вавилоняне с Седекией?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Закололи сыновей на его глазах, выкололи глаза и увели в Вавилон"
+                },
+                {
+                    "id": 2,
+                    "value": "Убили мечом"
+                },
+                {
+                    "id": 3,
+                    "value": "Сделали наместником"
+                },
+                {
+                    "id": 4,
+                    "value": "Отпустили"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 60,
+            "questionContent": "В каком году пал Иерусалим?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "722 г. до н.э."
+                },
+                {
+                    "id": 2,
+                    "value": "539 г. до н.э."
+                },
+                {
+                    "id": 3,
+                    "value": "586 г. до н.э."
+                },
+                {
+                    "id": 4,
+                    "value": "605 г. до н.э."
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 61,
+            "questionContent": "Кто разрушил Иерусалим и сжег храм?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Кир"
+                },
+                {
+                    "id": 2,
+                    "value": "Сеннахирим"
+                },
+                {
+                    "id": 3,
+                    "value": "Навуходоносор (и Навузардан)"
+                },
+                {
+                    "id": 4,
+                    "value": "Салманассар"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 62,
+            "questionContent": "Кто был царем Израиля (Северного царства) во время его падения?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Иеровоам II"
+                },
+                {
+                    "id": 2,
+                    "value": "Менаим"
+                },
+                {
+                    "id": 3,
+                    "value": "Осия"
+                },
+                {
+                    "id": 4,
+                    "value": "Факей"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 63,
+            "questionContent": "В каком году пало Северное царство?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "612 г. до н.э."
+                },
+                {
+                    "id": 2,
+                    "value": "722 г. до н.э."
+                },
+                {
+                    "id": 3,
+                    "value": "930 г. до н.э."
+                },
+                {
+                    "id": 4,
+                    "value": "586 г. до н.э."
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 64,
+            "questionContent": "Сколько тысяч ангел Господень поразил в стане ассирийском при Езекии?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "100 тысяч"
+                },
+                {
+                    "id": 2,
+                    "value": "10 тысяч"
+                },
+                {
+                    "id": 3,
+                    "value": "50 тысяч"
+                },
+                {
+                    "id": 4,
+                    "value": "185 тысяч"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 65,
+            "questionContent": "Какой ассирийский царь осаждал Иерусалим при Езекии?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Сеннахирим"
+                },
+                {
+                    "id": 2,
+                    "value": "Саргон"
+                },
+                {
+                    "id": 3,
+                    "value": "Салманассар"
+                },
+                {
+                    "id": 4,
+                    "value": "Тиглатпаласар"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 66,
+            "questionContent": "Кто из царей Иудеи сделал 'медного змея' предметом культа, который Езекия разбил?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Это был Моисеев змей, но Езекия разбил его, назвав Нехуштан"
+                },
+                {
+                    "id": 2,
+                    "value": "Ахаз"
+                },
+                {
+                    "id": 3,
+                    "value": "Соломон"
+                },
+                {
+                    "id": 4,
+                    "value": "Манассия"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 67,
+            "questionContent": "Как звали наместника, оставленного вавилонянами в Иудее, которого убили?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Иоханан"
+                },
+                {
+                    "id": 2,
+                    "value": "Серамя"
+                },
+                {
+                    "id": 3,
+                    "value": "Годолия"
+                },
+                {
+                    "id": 4,
+                    "value": "Исмаил"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 68,
+            "questionContent": "Какого царя 'постигла проказа' за то, что он вошел в храм кадить?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Иорама"
+                },
+                {
+                    "id": 2,
+                    "value": "Амасия"
+                },
+                {
+                    "id": 3,
+                    "value": "Озия (Азария)"
+                },
+                {
+                    "id": 4,
+                    "value": "Иоафам"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 69,
+            "questionContent": "Какой пророк помазал Ииуя?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Иона"
+                },
+                {
+                    "id": 2,
+                    "value": "Илия"
+                },
+                {
+                    "id": 3,
+                    "value": "Михей"
+                },
+                {
+                    "id": 4,
+                    "value": "Елисей"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 70,
+            "questionContent": "Какое животное съело пророка, ослушавшегося Бога?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Собака"
+                },
+                {
+                    "id": 2,
+                    "value": "Медведь"
+                },
+                {
+                    "id": 3,
+                    "value": "Лев"
+                },
+                {
+                    "id": 4,
+                    "value": "Волк"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 71,
+            "questionContent": "Что означало имя 'Ихавод', данное внуку Илия?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Отошла слава от Израиля"
+                },
+                {
+                    "id": 2,
+                    "value": "Бог судья"
+                },
+                {
+                    "id": 3,
+                    "value": "Господь славен"
+                },
+                {
+                    "id": 4,
+                    "value": "Сын скорби"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 72,
+            "questionContent": "Сколько жен было у Соломона?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "300 жен и 700 наложниц"
+                },
+                {
+                    "id": 2,
+                    "value": "100 жен"
+                },
+                {
+                    "id": 3,
+                    "value": "1000 жен"
+                },
+                {
+                    "id": 4,
+                    "value": "700 жен и 300 наложниц"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 73,
+            "questionContent": "Почему Бог разделил царство после Соломона?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Из-за жестокости Ровоама"
+                },
+                {
+                    "id": 2,
+                    "value": "Из-за идолопоклонства Соломона (жены склонили сердце)"
+                },
+                {
+                    "id": 3,
+                    "value": "Из-за войны с Египтом"
+                },
+                {
+                    "id": 4,
+                    "value": "Из-за греха Давида"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 74,
+            "questionContent": "Какое единственное колено осталось верным дому Давида?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Левино"
+                },
+                {
+                    "id": 2,
+                    "value": "Ефремово"
+                },
+                {
+                    "id": 3,
+                    "value": "Симеоново"
+                },
+                {
+                    "id": 4,
+                    "value": "Иудино"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 75,
+            "questionContent": "Как звали начальника войска у Иорама, которого Елисей помазал в цари?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Азаил"
+                },
+                {
+                    "id": 2,
+                    "value": "Омри"
+                },
+                {
+                    "id": 3,
+                    "value": "Ииуй"
+                },
+                {
+                    "id": 4,
+                    "value": "Зимри"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 76,
+            "questionContent": "Какой город построил Амрий (Омри) и сделал столицей?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Изреель"
+                },
+                {
+                    "id": 2,
+                    "value": "Терца"
+                },
+                {
+                    "id": 3,
+                    "value": "Самария"
+                },
+                {
+                    "id": 4,
+                    "value": "Сихем"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 77,
+            "questionContent": "Сколько времени длилась засуха при Илии?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Ровно три года"
+                },
+                {
+                    "id": 2,
+                    "value": "Три года и шесть месяцев"
+                },
+                {
+                    "id": 3,
+                    "value": "Семь лет"
+                },
+                {
+                    "id": 4,
+                    "value": "Один год"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 78,
+            "questionContent": "Кто кормил 100 пророков в пещере хлебом и водой во время гонений Иезавели?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Илия"
+                },
+                {
+                    "id": 2,
+                    "value": "Михей"
+                },
+                {
+                    "id": 3,
+                    "value": "Авдий (начальник дворца)"
+                },
+                {
+                    "id": 4,
+                    "value": "Елисей"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 79,
+            "questionContent": "Что Елисей бросил в источник воды в Иерихоне для исцеления?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Соль"
+                },
+                {
+                    "id": 2,
+                    "value": "Муку"
+                },
+                {
+                    "id": 3,
+                    "value": "Дерево"
+                },
+                {
+                    "id": 4,
+                    "value": "Елей"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 80,
+            "questionContent": "Что Елисей бросил в котел с ядовитой похлебкой?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Мед"
+                },
+                {
+                    "id": 2,
+                    "value": "Соль"
+                },
+                {
+                    "id": 3,
+                    "value": "Ветку"
+                },
+                {
+                    "id": 4,
+                    "value": "Муку"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 81,
+            "questionContent": "Кто из царей сжег свой дом над собой, когда город был взят?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Факей"
+                },
+                {
+                    "id": 2,
+                    "value": "Зимри (Замврий)"
+                },
+                {
+                    "id": 3,
+                    "value": "Амрий"
+                },
+                {
+                    "id": 4,
+                    "value": "Ахав"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 82,
+            "questionContent": "Отчего умер сын сонамитянки?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Заболела голова (солнечный удар на поле)"
+                },
+                {
+                    "id": 2,
+                    "value": "Упал с крыши"
+                },
+                {
+                    "id": 3,
+                    "value": "От голода"
+                },
+                {
+                    "id": 4,
+                    "value": "Укусила змея"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 83,
+            "questionContent": "Кто такие 'сыны пророков'?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Священники"
+                },
+                {
+                    "id": 2,
+                    "value": "Ученики пророческих школ при Илии и Елисее"
+                },
+                {
+                    "id": 3,
+                    "value": "Лжепророки"
+                },
+                {
+                    "id": 4,
+                    "value": "Дети Самуила"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 84,
+            "questionContent": "Что случилось с войском сирийским, пришедшим захватить Елисея?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Они были поражены слепотой и отведены в Самарию"
+                },
+                {
+                    "id": 2,
+                    "value": "Они умерли"
+                },
+                {
+                    "id": 3,
+                    "value": "Они убежали"
+                },
+                {
+                    "id": 4,
+                    "value": "Огонь пожрал их"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 85,
+            "questionContent": "Какая женщина съела своего сына во время осады Самарии?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Жена Ахава"
+                },
+                {
+                    "id": 2,
+                    "value": "Мария"
+                },
+                {
+                    "id": 3,
+                    "value": "Одна из женщин Самарии (имя не названо), договорившись с другой"
+                },
+                {
+                    "id": 4,
+                    "value": "Вдова из Сарепты"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 86,
+            "questionContent": "Кто предсказал внезапное падение цен на хлеб в осажденной Самарии?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Осия"
+                },
+                {
+                    "id": 2,
+                    "value": "Илия"
+                },
+                {
+                    "id": 3,
+                    "value": "Елисей"
+                },
+                {
+                    "id": 4,
+                    "value": "Иона"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 87,
+            "questionContent": "Кто принес весть о том, что сирийский стан пуст?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Четверо прокаженных"
+                },
+                {
+                    "id": 2,
+                    "value": "Разведчики"
+                },
+                {
+                    "id": 3,
+                    "value": "Ангел"
+                },
+                {
+                    "id": 4,
+                    "value": "Царь" }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 88,
+            "questionContent": "Что случилось с сановником, который не поверил пророчеству Елисея о хлебе?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Его казнили"
+                },
+                {
+                    "id": 2,
+                    "value": "Он ослеп"
+                },
+                {
+                    "id": 3,
+                    "value": "Он умер от голода"
+                },
+                {
+                    "id": 4,
+                    "value": "Народ затоптал его в воротах насмерть"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 89,
+            "questionContent": "Кто был царем Иудеи, которого пленили в Вавилоне, но потом возвысили и кормили с царского стола?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Иоаким"
+                },
+                {
+                    "id": 2,
+                    "value": "Манассия"
+                },
+                {
+                    "id": 3,
+                    "value": "Седекия"
+                },
+                {
+                    "id": 4,
+                    "value": "Иехония"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 90,
+            "questionContent": "Какой пророк упоминается в истории Езекии?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Софония"
+                },
+                {
+                    "id": 2,
+                    "value": "Михей Морасфитин (цитируется в Иеремии про Езекию)"
+                },
+                {
+                    "id": 3,
+                    "value": "Аввакум"
+                },
+                {
+                    "id": 4,
+                    "value": "Наум"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 91,
+            "questionContent": "Что сделал Манассия, что Бог 'не захотел простить' Иуде?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Убил Исайю"
+                },
+                {
+                    "id": 2,
+                    "value": "Женился на язычнице"
+                },
+                {
+                    "id": 3,
+                    "value": "Пролил весьма много невинной крови в Иерусалиме"
+                },
+                {
+                    "id": 4,
+                    "value": "Разрушил храм"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 92,
+            "questionContent": "Где находился 'золотой телец', кроме Вефиля?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "В Галгале"
+                },
+                {
+                    "id": 2,
+                    "value": "В Дане"
+                },
+                {
+                    "id": 3,
+                    "value": "В Самарии"
+                },
+                {
+                    "id": 4,
+                    "value": "В Силоме"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 93,
+            "questionContent": "Сколько талантов золота ежегодно приходило Соломону?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "100 талантов"
+                },
+                {
+                    "id": 2,
+                    "value": "500 талантов"
+                },
+                {
+                    "id": 3,
+                    "value": "666 талантов"
+                },
+                {
+                    "id": 4,
+                    "value": "120 талантов"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 94,
+            "questionContent": "Из какого дерева были сделаны херувимы в храме Соломона?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Из кедра"
+                },
+                {
+                    "id": 2,
+                    "value": "Из дуба"
+                },
+                {
+                    "id": 3,
+                    "value": "Из кипариса"
+                },
+                {
+                    "id": 4,
+                    "value": "Из масличного дерева"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 95,
+            "questionContent": "Что находилось в Святом Святых храма Соломона?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Медный змей"
+                },
+                {
+                    "id": 2,
+                    "value": "Два больших херувима"
+                },
+                {
+                    "id": 3,
+                    "value": "Семисвечник"
+                },
+                {
+                    "id": 4,
+                    "value": "Стол хлебов"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 96,
+            "questionContent": "Как назывались два медных столба при входе в храм?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Давид и Соломон"
+                },
+                {
+                    "id": 2,
+                    "value": "Иахин и Воаз"
+                },
+                {
+                    "id": 3,
+                    "value": "Петр и Павел"
+                },
+                {
+                    "id": 4,
+                    "value": "Урим и Туммим"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 97,
+            "questionContent": "Кто сделал медные предметы для храма Соломона?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Веселеил"
+                },
+                {
+                    "id": 2,
+                    "value": "Ароиав"
+                },
+                {
+                    "id": 3,
+                    "value": "Давид"
+                },
+                {
+                    "id": 4,
+                    "value": "Хирам (мастер из Тира, тезка царя)"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 98,
+            "questionContent": "Какое море (резервуар) стояло во дворе храма?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Бассейн Шилоам"
+                },
+                {
+                    "id": 2,
+                    "value": "Мертвое море"
+                },
+                {
+                    "id": 3,
+                    "value": "Медное море на 12 волах"
+                },
+                {
+                    "id": 4,
+                    "value": "Стеклянное море"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 99,
+            "questionContent": "Кто был пророком, разоблачившим жертвоприношения Иеровоама?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Ииуй"
+                },
+                {
+                    "id": 2,
+                    "value": "Шемаия"
+                },
+                {
+                    "id": 3,
+                    "value": "Человек Божий из Иудеи (имя не названо)"
+                },
+                {
+                    "id": 4,
+                    "value": "Иддо"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 100,
+            "questionContent": "Какое единственное писание цитируется в книгах Царств как источник?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Книга летописей царей Израильских/Иудейских (и Книга Праведного)"
+                },
+                {
+                    "id": 2,
+                    "value": "Тора"
+                },
+                {
+                    "id": 3,
+                    "value": "Книга войн Господних"
+                },
+                {
+                    "id": 4,
+                    "value": "Книга Еноха"
+                }
+            ],
+            "rightAnswerId": 1
+        }
+    ]
+}

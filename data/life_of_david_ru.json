@@ -1,0 +1,2507 @@
+
+{
+    "title": "Жизнь Давида",
+    "language": "ru",
+    "questionsList": [
+        {
+            "id": 1,
+            "questionContent": "Какой псалом Давид написал, находясь в пещере, спасаясь от Саула?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Псалом 1"
+                },
+                {
+                    "id": 2,
+                    "value": "Псалом 22"
+                },
+                {
+                    "id": 3,
+                    "value": "Псалом 100"
+                },
+                {
+                    "id": 4,
+                    "value": "Псалом 56 (или 141)"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 2,
+            "questionContent": "Как звали прадеда Давида?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Аминадав"
+                },
+                {
+                    "id": 2,
+                    "value": "Овид"
+                },
+                {
+                    "id": 3,
+                    "value": "Вооз"
+                },
+                {
+                    "id": 4,
+                    "value": "Наассон"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 3,
+            "questionContent": "Как звали старшего брата Давида, который рассердился на него перед битвой с Голиафом?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Нафанаил"
+                },
+                {
+                    "id": 2,
+                    "value": "Шамма"
+                },
+                {
+                    "id": 3,
+                    "value": "Елиав"
+                },
+                {
+                    "id": 4,
+                    "value": "Аминадав"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 4,
+            "questionContent": "Сколько краеобрезаний филистимских принес Давид Саулу, чтобы стать зятем царя?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "200"
+                },
+                {
+                    "id": 2,
+                    "value": "300"
+                },
+                {
+                    "id": 3,
+                    "value": "100"
+                },
+                {
+                    "id": 4,
+                    "value": "500"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 5,
+            "questionContent": "В каком городе священников Давид солгал Ахимелеху, что привело к гибели 85 священников?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Номва"
+                },
+                {
+                    "id": 2,
+                    "value": "Рама"
+                },
+                {
+                    "id": 3,
+                    "value": "Гаваон"
+                },
+                {
+                    "id": 4,
+                    "value": "Силом"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 6,
+            "questionContent": "Кто был тем единственным священником, который спасся после резни в Номве?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Ионафан"
+                },
+                {
+                    "id": 2,
+                    "value": "Ахимаас"
+                },
+                {
+                    "id": 3,
+                    "value": "Садок"
+                },
+                {
+                    "id": 4,
+                    "value": "Авиафар"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 7,
+            "questionContent": "Как звали царя Моавитского, которому Давид доверил своих родителей?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Меша"
+                },
+                {
+                    "id": 2,
+                    "value": "Эглон"
+                },
+                {
+                    "id": 3,
+                    "value": "Имя не названо в Библии (просто царь Моавитский)"
+                },
+                {
+                    "id": 4,
+                    "value": "Балак"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 8,
+            "questionContent": "Какое имя носил сын Ионафана, которого Давид принял за свой стол?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Арам"
+                },
+                {
+                    "id": 2,
+                    "value": "Мемфивосфей"
+                },
+                {
+                    "id": 3,
+                    "value": "Ахитофел"
+                },
+                {
+                    "id": 4,
+                    "value": "Миха"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 9,
+            "questionContent": "Из какого города была Вирсавия?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Иерусалим"
+                },
+                {
+                    "id": 2,
+                    "value": "Гило"
+                },
+                {
+                    "id": 3,
+                    "value": "Хеврон"
+                },
+                {
+                    "id": 4,
+                    "value": "Не указано, но Елиам был сыном Ахитофела из Гило"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 10,
+            "questionContent": "Какое второе имя дал Соломону пророк Нафан?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Лемуил"
+                },
+                {
+                    "id": 2,
+                    "value": "Екклесиаст"
+                },
+                {
+                    "id": 3,
+                    "value": "Иедидиа"
+                },
+                {
+                    "id": 4,
+                    "value": "Агур"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 11,
+            "questionContent": "Сколько лет царствовал Давид в Хевроне?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Семь лет и шесть месяцев"
+                },
+                {
+                    "id": 2,
+                    "value": "Ровно семь лет"
+                },
+                {
+                    "id": 3,
+                    "value": "Три года"
+                },
+                {
+                    "id": 4,
+                    "value": "Десять лет"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 12,
+            "questionContent": "Кто убил брата Иоава, Асаила, ударом копья назад?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Голиаф"
+                },
+                {
+                    "id": 2,
+                    "value": "Саул"
+                },
+                {
+                    "id": 3,
+                    "value": "Авенир"
+                },
+                {
+                    "id": 4,
+                    "value": "Авессалом"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 13,
+            "questionContent": "Где Давид взял камень для пращи?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Из потока (ручья) в долине"
+                },
+                {
+                    "id": 2,
+                    "value": "У пастухов"
+                },
+                {
+                    "id": 3,
+                    "value": "В пещере"
+                },
+                {
+                    "id": 4,
+                    "value": "С горы Кармил"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 14,
+            "questionContent": "Какой псалом называют 'Покаянным'?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Псалом 31"
+                },
+                {
+                    "id": 2,
+                    "value": "Псалом 90"
+                },
+                {
+                    "id": 3,
+                    "value": "Псалом 102"
+                },
+                {
+                    "id": 4,
+                    "value": "Псалом 50"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 15,
+            "questionContent": "Чьим сыном был Семей, злословивший Давида?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Киса"
+                },
+                {
+                    "id": 2,
+                    "value": "Нера"
+                },
+                {
+                    "id": 3,
+                    "value": "Геры"
+                },
+                {
+                    "id": 4,
+                    "value": "Зивы"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 16,
+            "questionContent": "Кто был начальником над данью (податями) у Давида, позже побитый камнями?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Иосафат"
+                },
+                {
+                    "id": 2,
+                    "value": "Ахисар"
+                },
+                {
+                    "id": 3,
+                    "value": "Шекания"
+                },
+                {
+                    "id": 4,
+                    "value": "Адонирам"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 17,
+            "questionContent": "Как звади трех главных храбрых воинов Давида?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Авенир, Амасай, Елханан"
+                },
+                {
+                    "id": 2,
+                    "value": "Иоав, Авесса, Асаил"
+                },
+                {
+                    "id": 3,
+                    "value": "Ванея, Урия, Гад"
+                },
+                {
+                    "id": 4,
+                    "value": "Исбосеф (Иошев-Башев), Елеазар, Шамма"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 18,
+            "questionContent": "Кто убил льва в снежный день в рове?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Самсон"
+                },
+                {
+                    "id": 2,
+                    "value": "Ванея, сын Иодая"
+                },
+                {
+                    "id": 3,
+                    "value": "Иоав"
+                },
+                {
+                    "id": 4,
+                    "value": "Давид"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 19,
+            "questionContent": "В каком городе был помазан Авессалом во время восстания?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "В Сихеме"
+                },
+                {
+                    "id": 2,
+                    "value": "В Хевроне"
+                },
+                {
+                    "id": 3,
+                    "value": "В Иерусалиме"
+                },
+                {
+                    "id": 4,
+                    "value": "В Галгале"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 20,
+            "questionContent": "Кто такой Ахитофел?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Полководец Филистимский"
+                },
+                {
+                    "id": 2,
+                    "value": "Сын Давида"
+                },
+                {
+                    "id": 3,
+                    "value": "Советник Давида, предавший его"
+                },
+                {
+                    "id": 4,
+                    "value": "Священник"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 21,
+            "questionContent": "Какой совет дал Хусий Архитянин Авессалому, чтобы спасти Давида?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Собрать все ополчение Израиля лично, не посылать малый отряд сразу"
+                },
+                {
+                    "id": 2,
+                    "value": "Напасть немедленно ночью"
+                },
+                {
+                    "id": 3,
+                    "value": "Вернуться в Иерусалим"
+                },
+                {
+                    "id": 4,
+                    "value": "Убить только царя"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 22,
+            "questionContent": "Где прятались Ионафан и Ахимаас (гонцы), когда их искали люди Авессалома?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "В доме блудницы"
+                },
+                {
+                    "id": 2,
+                    "value": "В колодце в Бахуриме"
+                },
+                {
+                    "id": 3,
+                    "value": "На крыше дома"
+                },
+                {
+                    "id": 4,
+                    "value": "В пещере Одоллам"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 23,
+            "questionContent": "Кто нес весть Давиду о победе над Авессаломом, но не сказал о его смерти?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Хусий"
+                },
+                {
+                    "id": 2,
+                    "value": "Иоав"
+                },
+                {
+                    "id": 3,
+                    "value": "Ефиоплянин"
+                },
+                {
+                    "id": 4,
+                    "value": "Ахимаас, сын Садока"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 24,
+            "questionContent": "С каким народом воевал Давид, когда положил их под пилы и молотилки?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Филистимляне"
+                },
+                {
+                    "id": 2,
+                    "value": "Аммонитяне"
+                },
+                {
+                    "id": 3,
+                    "value": "Идумеи"
+                },
+                {
+                    "id": 4,
+                    "value": "Моавитяне"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 25,
+            "questionContent": "Кто был главным музыкантом (певцом), которому Давид посвятил многие псалмы?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Самуил"
+                },
+                {
+                    "id": 2,
+                    "value": "Асаф (или Идифун, Еман)"
+                },
+                {
+                    "id": 3,
+                    "value": "Корей"
+                },
+                {
+                    "id": 4,
+                    "value": "Иорам"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 26,
+            "questionContent": "Как звали египтянина, который привел Давида к амаликитянам, сжегшим Секелаг?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Сигор"
+                },
+                {
+                    "id": 2,
+                    "value": "Ханея"
+                },
+                {
+                    "id": 3,
+                    "value": "Имя не названо, просто отрок египетский"
+                },
+                {
+                    "id": 4,
+                    "value": "Потифар"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 27,
+            "questionContent": "Что Давид сделал с золотыми венцами царей аммонитских?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Переплавил для храма"
+                },
+                {
+                    "id": 2,
+                    "value": "Отдал в сокровищницу"
+                },
+                {
+                    "id": 3,
+                    "value": "Бросил в поток Кедрон"
+                },
+                {
+                    "id": 4,
+                    "value": "Возложил на свою голову"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 28,
+            "questionContent": "Сколько дочерей было у Давида, чье имя названо в Библии?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Много"
+                },
+                {
+                    "id": 2,
+                    "value": "Две (Фамарь и кто-то еще)"
+                },
+                {
+                    "id": 3,
+                    "value": "Одна (Фамарь)"
+                },
+                {
+                    "id": 4,
+                    "value": "Три"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 29,
+            "questionContent": "Кто проклял Давида, когда он приходил его убить, словами: 'Что я собака...?'?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Навал"
+                },
+                {
+                    "id": 2,
+                    "value": "Шимей"
+                },
+                {
+                    "id": 3,
+                    "value": "Голиаф"
+                },
+                {
+                    "id": 4,
+                    "value": "Саул"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 30,
+            "questionContent": "Как звали сестер Давида?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Саруия и Авигея"
+                },
+                {
+                    "id": 2,
+                    "value": "Мерова и Мелхола"
+                },
+                {
+                    "id": 3,
+                    "value": "Рахиль и Лия"
+                },
+                {
+                    "id": 4,
+                    "value": "Мария и Марфа"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 31,
+            "questionContent": "Кто такие Херефеи и Пелефеи?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Личная гвардия Давида (наемники)"
+                },
+                {
+                    "id": 2,
+                    "value": "Священники"
+                },
+                {
+                    "id": 3,
+                    "value": "Писари"
+                },
+                {
+                    "id": 4,
+                    "value": "Музыканты"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 32,
+            "questionContent": "Что означает название места 'Перу-Уза'?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Благословение Божие"
+                },
+                {
+                    "id": 2,
+                    "value": "Скала разделения"
+                },
+                {
+                    "id": 3,
+                    "value": "Поражение Озы"
+                },
+                {
+                    "id": 4,
+                    "value": "Место клятвы"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 33,
+            "questionContent": "Сколько сыновей родилось у Давида в Хевроне?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Семь"
+                },
+                {
+                    "id": 2,
+                    "value": "Двенадцать"
+                },
+                {
+                    "id": 3,
+                    "value": "Шесть"
+                },
+                {
+                    "id": 4,
+                    "value": "Четыре"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 34,
+            "questionContent": "За какой проступок Бог поразил народ язвой во времена Давида?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "За идолопоклонство"
+                },
+                {
+                    "id": 2,
+                    "value": "За убийство Урии"
+                },
+                {
+                    "id": 3,
+                    "value": "За перепись населения"
+                },
+                {
+                    "id": 4,
+                    "value": "За женитьбу на чужеземках"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 35,
+            "questionContent": "Какое животное было принесено в жертву при освящении места будущего храма?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Овны"
+                },
+                {
+                    "id": 2,
+                    "value": "Козлы"
+                },
+                {
+                    "id": 3,
+                    "value": "Голуби"
+                },
+                {
+                    "id": 4,
+                    "value": "Волы"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 36,
+            "questionContent": "Как звали гаваонитян, которых Саул пытался истребить, за что пришел голод?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Гаваонитяне (Амореи по происхождению)"
+                },
+                {
+                    "id": 2,
+                    "value": "Ферезеи"
+                },
+                {
+                    "id": 3,
+                    "value": "Кенеи"
+                },
+                {
+                    "id": 4,
+                    "value": "Иевусеи"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 37,
+            "questionContent": "Кого выдал Давид гаваонитянам для искупления крови?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Родственников Авенира"
+                },
+                {
+                    "id": 2,
+                    "value": "Мемфивосфея"
+                },
+                {
+                    "id": 3,
+                    "value": "Самого Саула"
+                },
+                {
+                    "id": 4,
+                    "value": "Семь потомков Саула (двух сыновей Рицпы и пять внуков от Меровы)"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 38,
+            "questionContent": "Кто такая Рицпа, дочь Айя?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Мать Иоава"
+                },
+                {
+                    "id": 2,
+                    "value": "Кормилица Мелхолы"
+                },
+                {
+                    "id": 3,
+                    "value": "Жена Давида"
+                },
+                {
+                    "id": 4,
+                    "value": "Наложница Саула, охранявшая тела своих сыновей"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 39,
+            "questionContent": "Какую ошибку совершили израильтяне при первом переносе Ковчега?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Везли на новой колеснице, а не несли на плечах левитов"
+                },
+                {
+                    "id": 2,
+                    "value": "Шли ночью"
+                },
+                {
+                    "id": 3,
+                    "value": "Не принесли жертв"
+                },
+                {
+                    "id": 4,
+                    "value": "Несли его язычники"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 40,
+            "questionContent": "Кто такой Иттай (Еффей) Гефянин?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Военачальник-филистимлянин, верный Давиду при восстании Авессалома"
+                },
+                {
+                    "id": 2,
+                    "value": "Священник"
+                },
+                {
+                    "id": 3,
+                    "value": "Сын Давида"
+                },
+                {
+                    "id": 4,
+                    "value": "Предатель"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 41,
+            "questionContent": "В каком лесу произошла битва между войском Давида и Авессалома?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "В пустыне Зиф"
+                },
+                {
+                    "id": 2,
+                    "value": "В лесу Ефремовом"
+                },
+                {
+                    "id": 3,
+                    "value": "В лесу Ливанском"
+                },
+                {
+                    "id": 4,
+                    "value": "В дубраве Мамре"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 42,
+            "questionContent": "Сколько сиклей серебра заплатил Давид Орне за гумно и волов?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "50 сиклей серебра"
+                },
+                {
+                    "id": 2,
+                    "value": "600 сиклей золота (по 1 Пар)"
+                },
+                {
+                    "id": 3,
+                    "value": "30 сребреников"
+                },
+                {
+                    "id": 4,
+                    "value": "100 талантов"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 43,
+            "questionContent": "С кем Давид заключил завет дружбы?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "С Авениром"
+                },
+                {
+                    "id": 2,
+                    "value": "С Хирамом"
+                },
+                {
+                    "id": 3,
+                    "value": "С Ионафаном"
+                },
+                {
+                    "id": 4,
+                    "value": "С Самуилом"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 44,
+            "questionContent": "О чем договаривался Давид с царем Тирским Хирамом?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "О поставке кедрового дерева и плотников"
+                },
+                {
+                    "id": 2,
+                    "value": "О дани"
+                },
+                {
+                    "id": 3,
+                    "value": "О браке с его дочерью"
+                },
+                {
+                    "id": 4,
+                    "value": "О военной помощи"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 45,
+            "questionContent": "Что Давид сделал с моавитянами после победы?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Сделал их священниками"
+                },
+                {
+                    "id": 2,
+                    "value": "Отпустил с миром"
+                },
+                {
+                    "id": 3,
+                    "value": "Продал всех в рабство"
+                },
+                {
+                    "id": 4,
+                    "value": "Смерил их веревкою: две веревки на умерщвление, одну на жизнь"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 46,
+            "questionContent": "Какое имя носил сын Давида и Маахи, дочери царя Гессурского?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Адония"
+                },
+                {
+                    "id": 2,
+                    "value": "Авессалом"
+                },
+                {
+                    "id": 3,
+                    "value": "Итпреам"
+                },
+                {
+                    "id": 4,
+                    "value": "Амнон"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 47,
+            "questionContent": "Кого Давид поставил писать летописи?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Иосафата, сына Ахилуда"
+                },
+                {
+                    "id": 2,
+                    "value": "Сераю"
+                },
+                {
+                    "id": 3,
+                    "value": "Садока"
+                },
+                {
+                    "id": 4,
+                    "value": "Ванею"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 48,
+            "questionContent": "Какое физическое увечье имел Мемфивосфей?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Был слеп"
+                },
+                {
+                    "id": 2,
+                    "value": "Был хром на обе ноги"
+                },
+                {
+                    "id": 3,
+                    "value": "Был глух"
+                },
+                {
+                    "id": 4,
+                    "value": "Был нем"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 49,
+            "questionContent": "Кто нянчил Мемфивосфея и уронил его при бегстве?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Мелхола"
+                },
+                {
+                    "id": 2,
+                    "value": "Нянька (кормилица), имя не названо"
+                },
+                {
+                    "id": 3,
+                    "value": "Рицпа"
+                },
+                {
+                    "id": 4,
+                    "value": "Зива"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 50,
+            "questionContent": "С каким псалмом перекликаются последние слова Давида в 2 Царств 23?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "С псалмом 22"
+                },
+                {
+                    "id": 2,
+                    "value": "С Песнью Моисея"
+                },
+                {
+                    "id": 3,
+                    "value": "С мессианскими пророчествами (Восстанет свет...) утренний свет при восходе солнца"
+                },
+                {
+                    "id": 4,
+                    "value": "С плачем Иеремии"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 51,
+            "questionContent": "Кто убил Голиафа?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Елханан, сын Ягаре-Оргима (вероятно, другое имя Давида или брат Голиафа, текст сложный)"
+                },
+                {
+                    "id": 2,
+                    "value": "Саул"
+                },
+                {
+                    "id": 3,
+                    "value": "Иоав"
+                },
+                {
+                    "id": 4,
+                    "value": "Авесса"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 52,
+            "questionContent": "Какое условие поставил Давид тому, кто победит иевусеев первым?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Тот будет главою и военачальником"
+                },
+                {
+                    "id": 2,
+                    "value": "Получит город в награду"
+                },
+                {
+                    "id": 3,
+                    "value": "Получит талант золота"
+                },
+                {
+                    "id": 4,
+                    "value": "Получит дочь царя"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 53,
+            "questionContent": "Кто первым взошел на стену Иерусалима при штурме?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Авесса"
+                },
+                {
+                    "id": 2,
+                    "value": "Ванея"
+                },
+                {
+                    "id": 3,
+                    "value": "Иоав"
+                },
+                {
+                    "id": 4,
+                    "value": "Урия"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 54,
+            "questionContent": "Куда убежал Авессалом после убийства Амнона?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "В Гессур"
+                },
+                {
+                    "id": 2,
+                    "value": "В Дамаск"
+                },
+                {
+                    "id": 3,
+                    "value": "В Моав"
+                },
+                {
+                    "id": 4,
+                    "value": "В Египет"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 55,
+            "questionContent": "Через кого Иоав убедил Давида вернуть Авессалома?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Через священников"
+                },
+                {
+                    "id": 2,
+                    "value": "Через пророка Нафана"
+                },
+                {
+                    "id": 3,
+                    "value": "Через умную женщину из Фекои"
+                },
+                {
+                    "id": 4,
+                    "value": "Через Авессу"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 56,
+            "questionContent": "Сколько лет жил Давид?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "70"
+                },
+                {
+                    "id": 2,
+                    "value": "120"
+                },
+                {
+                    "id": 3,
+                    "value": "60"
+                },
+                {
+                    "id": 4,
+                    "value": "80"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 57,
+            "questionContent": "Как звали отца Вирсавии?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Урия"
+                },
+                {
+                    "id": 2,
+                    "value": "Елиам"
+                },
+                {
+                    "id": 3,
+                    "value": "Иоав"
+                },
+                {
+                    "id": 4,
+                    "value": "Нафан"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 58,
+            "questionContent": "Кого Давид называл 'сыны Саруины', жалуясь, что они сильнее его?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Филистимлян"
+                },
+                {
+                    "id": 2,
+                    "value": "Сыновей Саула"
+                },
+                {
+                    "id": 3,
+                    "value": "Своих сыновей"
+                },
+                {
+                    "id": 4,
+                    "value": "Иоава и Авессу"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 59,
+            "questionContent": "Какой город был переименован в 'Город Давидов'?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Хеврон"
+                },
+                {
+                    "id": 2,
+                    "value": "Крепость Сион (в Иерусалиме)"
+                },
+                {
+                    "id": 3,
+                    "value": "Вифлеем"
+                },
+                {
+                    "id": 4,
+                    "value": "Вефиль"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 60,
+            "questionContent": "Кем был Авенир для Саула?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Двоюродным братом и военачальником"
+                },
+                {
+                    "id": 2,
+                    "value": "Зятем"
+                },
+                {
+                    "id": 3,
+                    "value": "Врагом"
+                },
+                {
+                    "id": 4,
+                    "value": "Сыном"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 61,
+            "questionContent": "За что Иоав убил Авенира?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Случайно"
+                },
+                {
+                    "id": 2,
+                    "value": "По приказу Давида"
+                },
+                {
+                    "id": 3,
+                    "value": "Из ревности к власти"
+                },
+                {
+                    "id": 4,
+                    "value": "За кровь Асаила, брата своего"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 62,
+            "questionContent": "Что Давид сделал с убийцами Иевосфея (сына Саула), принесшими ему его голову?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Посадил в тюрьму"
+                },
+                {
+                    "id": 2,
+                    "value": "Изгнал их"
+                },
+                {
+                    "id": 3,
+                    "value": "Наградил их"
+                },
+                {
+                    "id": 4,
+                    "value": "Казнил их"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 63,
+            "questionContent": "Где Давид взял медь, из которой Соломон потом сделал медное море?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Нашел в земле"
+                },
+                {
+                    "id": 2,
+                    "value": "В Иерусалиме"
+                },
+                {
+                    "id": 3,
+                    "value": "Из городов Адраазара (Тивхаты и Куна)"
+                },
+                {
+                    "id": 4,
+                    "value": "Купил у финикийцев"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 64,
+            "questionContent": "Кем маскировалась женщина из Фекои, придя к Давиду?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Чужеземкой"
+                },
+                {
+                    "id": 2,
+                    "value": "Пророчицей"
+                },
+                {
+                    "id": 3,
+                    "value": "Нищей"
+                },
+                {
+                    "id": 4,
+                    "value": "Вдовой, у которой один сын убил другого"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 65,
+            "questionContent": "Какой псалом называют 'мессианским псалмом страдания'?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Псалом 2"
+                },
+                {
+                    "id": 2,
+                    "value": "Псалом 21 (22)"
+                },
+                {
+                    "id": 3,
+                    "value": "Псалом 109"
+                },
+                {
+                    "id": 4,
+                    "value": "Псалом 23"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 66,
+            "questionContent": "Кто был священником в Номве, давшим меч Голиафа Давиду?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Авиафар"
+                },
+                {
+                    "id": 2,
+                    "value": "Садок"
+                },
+                {
+                    "id": 3,
+                    "value": "Ахимелех"
+                },
+                {
+                    "id": 4,
+                    "value": "Ахитув"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 67,
+            "questionContent": "В каком городе Давид правил первые 7 лет?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Иерусалим"
+                },
+                {
+                    "id": 2,
+                    "value": "Дамаск"
+                },
+                {
+                    "id": 3,
+                    "value": "Хеврон"
+                },
+                {
+                    "id": 4,
+                    "value": "Вифлеем"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 68,
+            "questionContent": "Сколько камней Давид выбрал из ручья?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Один"
+                },
+                {
+                    "id": 2,
+                    "value": "Семь"
+                },
+                {
+                    "id": 3,
+                    "value": "Три"
+                },
+                {
+                    "id": 4,
+                    "value": "Пять"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 69,
+            "questionContent": "Кто такой Урия Хеттеянин?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Священник"
+                },
+                {
+                    "id": 2,
+                    "value": "Муж Вирсавии и один из храбрых воинов Давида"
+                },
+                {
+                    "id": 3,
+                    "value": "Враг Давида"
+                },
+                {
+                    "id": 4,
+                    "value": "Пророк"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 70,
+            "questionContent": "Как звали сына Саула, который правил Израилем (кроме Иуды) после смерти Саула?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Иевосфей (Ишбошет)"
+                },
+                {
+                    "id": 2,
+                    "value": "Ионафан"
+                },
+                {
+                    "id": 3,
+                    "value": "Малхисуа"
+                },
+                {
+                    "id": 4,
+                    "value": "Мемфивосфей"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 71,
+            "questionContent": "Кто поразил великана, у которого было по 6 пальцев на руках и ногах?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Иоав"
+                },
+                {
+                    "id": 2,
+                    "value": "Авесса"
+                },
+                {
+                    "id": 3,
+                    "value": "Давид"
+                },
+                {
+                    "id": 4,
+                    "value": "Ионафан, сын Шимы (племянник Давида)"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 72,
+            "questionContent": "Кем была Авигея до замужества с Давидом?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Вдовой Урии"
+                },
+                {
+                    "id": 2,
+                    "value": "Принцессой в Гессуре"
+                },
+                {
+                    "id": 3,
+                    "value": "Дочерью Саула"
+                },
+                {
+                    "id": 4,
+                    "value": "Женой Навала Кармилитянина"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 73,
+            "questionContent": "Сколько лет было Давиду, когда он начал царствовать?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "25"
+                },
+                {
+                    "id": 2,
+                    "value": "40"
+                },
+                {
+                    "id": 3,
+                    "value": "30"
+                },
+                {
+                    "id": 4,
+                    "value": "20"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 74,
+            "questionContent": "Кто сказал Давиду: 'Ты тот человек!'?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Гад"
+                },
+                {
+                    "id": 2,
+                    "value": "Самуил"
+                },
+                {
+                    "id": 3,
+                    "value": "Нафан"
+                },
+                {
+                    "id": 4,
+                    "value": "Иоав"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 75,
+            "questionContent": "Что Давид просил принести ему из Вифлеема, когда был в укреплении?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Воды из колодезя"
+                },
+                {
+                    "id": 2,
+                    "value": "Хлеба"
+                },
+                {
+                    "id": 3,
+                    "value": "Одежду"
+                },
+                {
+                    "id": 4,
+                    "value": "Меч отца"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 76,
+            "questionContent": "Как звали мать Давида?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Имя не упоминается в Библии (только отец Иессей)"
+                },
+                {
+                    "id": 2,
+                    "value": "Саруия"
+                },
+                {
+                    "id": 3,
+                    "value": "Азмея"
+                },
+                {
+                    "id": 4,
+                    "value": "Ницевет"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 77,
+            "questionContent": "В какой пещере Давид отрезал край одежды Саула?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Одоллам"
+                },
+                {
+                    "id": 2,
+                    "value": "Синай"
+                },
+                {
+                    "id": 3,
+                    "value": "Эн-Геди"
+                },
+                {
+                    "id": 4,
+                    "value": "Махпела"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 78,
+            "questionContent": "Где Давид купил место для жертвенника?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "В Галгале"
+                },
+                {
+                    "id": 2,
+                    "value": "В Силоме"
+                },
+                {
+                    "id": 3,
+                    "value": "В Хевроне"
+                },
+                {
+                    "id": 4,
+                    "value": "На гумне Орны Иевусеянина"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 79,
+            "questionContent": "Что символизировал 'шум как бы идущего в вершинах тутовых дерев'?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Сигнал от Бога для атаки (Бог пошел пред Давидом)"
+                },
+                {
+                    "id": 2,
+                    "value": "Приход ангелов"
+                },
+                {
+                    "id": 3,
+                    "value": "Приближение бури"
+                },
+                {
+                    "id": 4,
+                    "value": "Отступление врага"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 80,
+            "questionContent": "Что Давид делал, когда Ковчег вносили в Иерусалим?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Шел босиком"
+                },
+                {
+                    "id": 2,
+                    "value": "Скакал и плясал"
+                },
+                {
+                    "id": 3,
+                    "value": "Плакал"
+                },
+                {
+                    "id": 4,
+                    "value": "Был одет как священник"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 81,
+            "questionContent": "Кто убедил Авессалома не следовать совету Ахитофела?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Иоав"
+                },
+                {
+                    "id": 2,
+                    "value": "Ахимаас"
+                },
+                {
+                    "id": 3,
+                    "value": "Хусий Архитянин"
+                },
+                {
+                    "id": 4,
+                    "value": "Цок"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 82,
+            "questionContent": "Почему Ахитофел удавился?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "От болезни"
+                },
+                {
+                    "id": 2,
+                    "value": "Потому что его совет был отвергнут"
+                },
+                {
+                    "id": 3,
+                    "value": "Из страха перед Давидом"
+                },
+                {
+                    "id": 4,
+                    "value": "Его заставили"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 83,
+            "questionContent": "Кого Давид приказал Соломону казнить, несмотря на клятву помилования при жизни?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Адонию"
+                },
+                {
+                    "id": 2,
+                    "value": "Иоава (хотя клятвы ему не было, но приказ был)"
+                },
+                {
+                    "id": 3,
+                    "value": "Семея"
+                },
+                {
+                    "id": 4,
+                    "value": "Мемфивосфея"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 84,
+            "questionContent": "Где родился Авессалом?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "В Вифлееме"
+                },
+                {
+                    "id": 2,
+                    "value": "В Хевроне"
+                },
+                {
+                    "id": 3,
+                    "value": "В Иерусалиме"
+                },
+                {
+                    "id": 4,
+                    "value": "В Гессуре"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 85,
+            "questionContent": "Как звали последнего первосвященника, служившего при скинии в Гаваоне до постройки храма?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Садок"
+                },
+                {
+                    "id": 2,
+                    "value": "Ахимелех"
+                },
+                {
+                    "id": 3,
+                    "value": "Илий"
+                },
+                {
+                    "id": 4,
+                    "value": "Авиафар"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 86,
+            "questionContent": "Почему Давид не казнил Саула, когда имел возможность?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Боялся народа"
+                },
+                {
+                    "id": 2,
+                    "value": "Ионафан просил его"
+                },
+                {
+                    "id": 3,
+                    "value": "У него не было меча"
+                },
+                {
+                    "id": 4,
+                    "value": "Потому что он помазанник Божий"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 87,
+            "questionContent": "Как звали девушку, которая согревала Давида в старости?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Ависага Сунамитянка"
+                },
+                {
+                    "id": 2,
+                    "value": "Руфь"
+                },
+                {
+                    "id": 3,
+                    "value": "Есфирь"
+                },
+                {
+                    "id": 4,
+                    "value": "Вирсавия"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 88,
+            "questionContent": "Кто попытался похитить царство у Соломона в старости Давида?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Шима"
+                },
+                {
+                    "id": 2,
+                    "value": "Амнон"
+                },
+                {
+                    "id": 3,
+                    "value": "Адония"
+                },
+                {
+                    "id": 4,
+                    "value": "Авессалом"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 89,
+            "questionContent": "Какой псалом цитировал Иисус на кресте?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Псалом 21 (Боже мой, Боже мой...)"
+                },
+                {
+                    "id": 2,
+                    "value": "Псалом 118"
+                },
+                {
+                    "id": 3,
+                    "value": "Псалом 22"
+                },
+                {
+                    "id": 4,
+                    "value": "Псалом 1"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 90,
+            "questionContent": "Сколько лет было Давиду, когда он умер?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "100"
+                },
+                {
+                    "id": 2,
+                    "value": "80"
+                },
+                {
+                    "id": 3,
+                    "value": "70"
+                },
+                {
+                    "id": 4,
+                    "value": "90"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 91,
+            "questionContent": "В каком городе Самуил оплакивал Саула, но больше не виделся с ним?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "В Шило"
+                },
+                {
+                    "id": 2,
+                    "value": "В Галгале"
+                },
+                {
+                    "id": 3,
+                    "value": "В Мицпе"
+                },
+                {
+                    "id": 4,
+                    "value": "В Раме"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 92,
+            "questionContent": "Какое оружие дал Саул Давиду перед боем с Голиафом, но тот отказался?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Колесницу"
+                },
+                {
+                    "id": 2,
+                    "value": "Копье"
+                },
+                {
+                    "id": 3,
+                    "value": "Свои доспехи и меч"
+                },
+                {
+                    "id": 4,
+                    "value": "Лук"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 93,
+            "questionContent": "Как звали первого мужа Мелхолы до того, как Саул отдал ее Палтию?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Ионафан"
+                },
+                {
+                    "id": 2,
+                    "value": "Урия"
+                },
+                {
+                    "id": 3,
+                    "value": "Навал"
+                },
+                {
+                    "id": 4,
+                    "value": "Давид (она была женой Давида, потом отдана другому, потом возвращена)"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 94,
+            "questionContent": "Где Давид скрывал своих родителей от Саула?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "В Гефе"
+                },
+                {
+                    "id": 2,
+                    "value": "В Мицпе Моавитской"
+                },
+                {
+                    "id": 3,
+                    "value": "В Иерусалиме"
+                },
+                {
+                    "id": 4,
+                    "value": "В Египте"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 95,
+            "questionContent": "Кто поддерживал руки Моисея (прообраз будущих побед, но не про Давида, а в истории Израиля, часто путают)? Вопрос про Давида: Кто поддерживал Давида в битве с филистимлянином, когда он устал?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Ванея"
+                },
+                {
+                    "id": 2,
+                    "value": "Ионафан"
+                },
+                {
+                    "id": 3,
+                    "value": "Авесса, сын Саруии"
+                },
+                {
+                    "id": 4,
+                    "value": "Иоав"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 96,
+            "questionContent": "Что означает имя 'Давид'?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Воин"
+                },
+                {
+                    "id": 2,
+                    "value": "Пастух"
+                },
+                {
+                    "id": 3,
+                    "value": "Царь"
+                },
+                {
+                    "id": 4,
+                    "value": "Возлюбленный"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 97,
+            "questionContent": "Из какого города был Голиаф?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Ашкелон"
+                },
+                {
+                    "id": 2,
+                    "value": "Газа"
+                },
+                {
+                    "id": 3,
+                    "value": "Экрон"
+                },
+                {
+                    "id": 4,
+                    "value": "Геф"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 98,
+            "questionContent": "Сколько времени Ковчег пробыл в доме Овед-Едома?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Полгода"
+                },
+                {
+                    "id": 2,
+                    "value": "Три месяца"
+                },
+                {
+                    "id": 3,
+                    "value": "Один год"
+                },
+                {
+                    "id": 4,
+                    "value": "Семь дней"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 99,
+            "questionContent": "Кого Давид поставил над Херефеями и Пелефеями?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Ванею, сына Иодая"
+                },
+                {
+                    "id": 2,
+                    "value": "Асаила"
+                },
+                {
+                    "id": 3,
+                    "value": "Авессу"
+                },
+                {
+                    "id": 4,
+                    "value": "Иоава"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 100,
+            "questionContent": "Какое дерево упоминается в Псалме 1 как образ праведника?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Дерево, посаженное при потоках вод"
+                },
+                {
+                    "id": 2,
+                    "value": "Смоковница"
+                },
+                {
+                    "id": 3,
+                    "value": "Кедр Ливанский"
+                },
+                {
+                    "id": 4,
+                    "value": "Маслина"
+                }
+            ],
+            "rightAnswerId": 1
+        }
+    ]
+}

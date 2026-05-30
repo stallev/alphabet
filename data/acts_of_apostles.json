@@ -1,0 +1,3756 @@
+{
+    "title": "Деяния Апостолов: Путь Евангелия (для подростков)",
+    "language": "ru",
+    "questionsList": [
+        {
+            "id": 1,
+            "questionContent": "Кого избрали апостолы на место отпавшего Иуды Искариота?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Матфия"
+                },
+                {
+                    "id": 2,
+                    "value": "Варнаву"
+                },
+                {
+                    "id": 3,
+                    "value": "Иуста"
+                },
+                {
+                    "id": 4,
+                    "value": "Стефана"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 2,
+            "questionContent": "Какой праздник отмечался в Иерусалиме, когда на учеников сошел Святой Дух?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Пасха"
+                },
+                {
+                    "id": 2,
+                    "value": "Пятидесятница"
+                },
+                {
+                    "id": 3,
+                    "value": "Кущи"
+                },
+                {
+                    "id": 4,
+                    "value": "Опресноки"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 3,
+            "questionContent": "Как звали хромого человека, исцеленного Петром и Иоанном у Красных ворот храма?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "В Библии не названо его имя"
+                },
+                {
+                    "id": 2,
+                    "value": "Эней"
+                },
+                {
+                    "id": 3,
+                    "value": "Вартимей"
+                },
+                {
+                    "id": 4,
+                    "value": "Евтих"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 4,
+            "questionContent": "Кто из диаконов стал первым христианским мучеником?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Филипп"
+                },
+                {
+                    "id": 2,
+                    "value": "Прохор"
+                },
+                {
+                    "id": 3,
+                    "value": "Стефан"
+                },
+                {
+                    "id": 4,
+                    "value": "Никанор"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 5,
+            "questionContent": "Кому Филипп благовествовал на пустынной дороге, ведущей в Газу?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Эфиопскому евнуху"
+                },
+                {
+                    "id": 2,
+                    "value": "Симону волхву"
+                },
+                {
+                    "id": 3,
+                    "value": "Корнилию сотнику"
+                },
+                {
+                    "id": 4,
+                    "value": "Лидии"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 6,
+            "questionContent": "Какое имя носил Симон, пытавшийся купить дары Святого Духа за деньги?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Волхв"
+                },
+                {
+                    "id": 2,
+                    "value": "Кожевник"
+                },
+                {
+                    "id": 3,
+                    "value": "Зилот"
+                },
+                {
+                    "id": 4,
+                    "value": "Прокаженный"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 7,
+            "questionContent": "В какой город шел Савл, когда ему явился Иисус в ослепительном свете?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Иерусалим"
+                },
+                {
+                    "id": 2,
+                    "value": "Антиохия"
+                },
+                {
+                    "id": 3,
+                    "value": "Дамаск"
+                },
+                {
+                    "id": 4,
+                    "value": "Тарс"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 8,
+            "questionContent": "Как звали ученика в Дамаске, которому Господь повелел пойти и возложить руки на Савла?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Анания"
+                },
+                {
+                    "id": 2,
+                    "value": "Иуда"
+                },
+                {
+                    "id": 3,
+                    "value": "Варнава"
+                },
+                {
+                    "id": 4,
+                    "value": "Агав"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 9,
+            "questionContent": "В каком городе ученики впервые стали называться Христианами?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Иерусалим"
+                },
+                {
+                    "id": 2,
+                    "value": "Дамаск"
+                },
+                {
+                    "id": 3,
+                    "value": "Антиохия"
+                },
+                {
+                    "id": 4,
+                    "value": "Эфес"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 10,
+            "questionContent": "Кого из апостолов царь Ирод убил мечом?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Петра"
+                },
+                {
+                    "id": 2,
+                    "value": "Иакова, брата Иоанна"
+                },
+                {
+                    "id": 3,
+                    "value": "Филиппа"
+                },
+                {
+                    "id": 4,
+                    "value": "Андрея"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 11,
+            "questionContent": "Как звали сотника Италийского полка в Кесарии, к которому был послан Петр?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Клавдий Лисий"
+                },
+                {
+                    "id": 2,
+                    "value": "Юлий"
+                },
+                {
+                    "id": 3,
+                    "value": "Корнилий"
+                },
+                {
+                    "id": 4,
+                    "value": "Феликс"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 12,
+            "questionContent": "У кого в Иоппии гостил Петр перед встречей с посланниками Корнилия?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Симона кожевника"
+                },
+                {
+                    "id": 2,
+                    "value": "Филиппа благовестника"
+                },
+                {
+                    "id": 3,
+                    "value": "Иуды, по прозванию Варсава"
+                },
+                {
+                    "id": 4,
+                    "value": "Иоанна Марка"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 13,
+            "questionContent": "Какое видение увидел Петр на крыше дома в Иоппии перед приходом людей от Корнилия?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Мужа македонянина, просящего о помощи"
+                },
+                {
+                    "id": 2,
+                    "value": "Ангела с обнаженным мечом"
+                },
+                {
+                    "id": 3,
+                    "value": "Спускающееся с неба полотно с различными животными"
+                },
+                {
+                    "id": 4,
+                    "value": "Огненные языки пламени над домами"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 14,
+            "questionContent": "Из-за кого произошел острый конфликт между Павлом и Варнавой перед вторым миссионерским путешествием?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Тита"
+                },
+                {
+                    "id": 2,
+                    "value": "Силы"
+                },
+                {
+                    "id": 3,
+                    "value": "Тимофея"
+                },
+                {
+                    "id": 4,
+                    "value": "Иоанна, называемого Марком"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 15,
+            "questionContent": "Кого Варнава взял с собой, отплыв на Кипр после расставания с Павлом?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Марка"
+                },
+                {
+                    "id": 2,
+                    "value": "Силу"
+                },
+                {
+                    "id": 3,
+                    "value": "Тита"
+                },
+                {
+                    "id": 4,
+                    "value": "Иуста"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 16,
+            "questionContent": "Кого Павел избрал своим спутником во втором миссионерским путешествии вместо Варнавы?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Силу"
+                },
+                {
+                    "id": 2,
+                    "value": "Тихика"
+                },
+                {
+                    "id": 3,
+                    "value": "Тимофея"
+                },
+                {
+                    "id": 4,
+                    "value": "Аполлоса"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 17,
+            "questionContent": "Как звали молодого ученика из Листры, сына уверовавшей Иудеянки и Эллина, которого Павел взял с собой?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Тимофей"
+                },
+                {
+                    "id": 2,
+                    "value": "Трофим"
+                },
+                {
+                    "id": 3,
+                    "value": "Тит"
+                },
+                {
+                    "id": 4,
+                    "value": "Гаий"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 18,
+            "questionContent": "Как звали торговицу багряницей из Фиатир, уверовавшую в Филиппах?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Лидия"
+                },
+                {
+                    "id": 2,
+                    "value": "Прискилла"
+                },
+                {
+                    "id": 3,
+                    "value": "Дорка (Тавифа)"
+                },
+                {
+                    "id": 4,
+                    "value": "Хлоя"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 19,
+            "questionContent": "Что произошло, когда Павел и Сила молились и пели гимны Богу в темнице в Филиппах?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Ангел вывел их незаметно от стражи"
+                },
+                {
+                    "id": 2,
+                    "value": "Произошло сильное землетрясение, потрясшее основание темницы"
+                },
+                {
+                    "id": 3,
+                    "value": "Стражник мгновенно уснул"
+                },
+                {
+                    "id": 4,
+                    "value": "Двери открылись сами собой, когда подошел начальник темницы"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 20,
+            "questionContent": "Кого проповедовал Павел в Афинах в ареопаге, обратив внимание на жертвенник 'неведомому Богу'?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Бога Творца и воскресение Иисуса"
+                },
+                {
+                    "id": 2,
+                    "value": "Исполнение Закона Моисея"
+                },
+                {
+                    "id": 3,
+                    "value": "Историю Израиля от Авраама до Иоанна Крестителя"
+                },
+                {
+                    "id": 4,
+                    "value": "Святого Духа и говорение на языках"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 21,
+            "questionContent": "Каким ремеслом занимались Павел, Акила и Прискилла?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Делали палатки"
+                },
+                {
+                    "id": 2,
+                    "value": "Шили одежды"
+                },
+                {
+                    "id": 3,
+                    "value": "Были плотниками"
+                },
+                {
+                    "id": 4,
+                    "value": "Ловили рыбу"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 22,
+            "questionContent": "Как звали красноречивого Иудея из Александрии, который хорошо знал Писания, но был наставлен точнее Акилой и Прискиллой?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Сосфен"
+                },
+                {
+                    "id": 2,
+                    "value": "Стефан"
+                },
+                {
+                    "id": 3,
+                    "value": "Аполлос"
+                },
+                {
+                    "id": 4,
+                    "value": "Крисп"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 23,
+            "questionContent": "Что сжигали уверовавшие в Эфесе, занимавшиеся ранее чародейством?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Волшебные книги"
+                },
+                {
+                    "id": 2,
+                    "value": "Идолов Артемиды"
+                },
+                {
+                    "id": 3,
+                    "value": "Жертвенных животных"
+                },
+                {
+                    "id": 4,
+                    "value": "Старые одежды"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 24,
+            "questionContent": "Кто поднял мятеж против Павла в Эфесе?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Серебряник Димитрий"
+                },
+                {
+                    "id": 2,
+                    "value": "Александр медник"
+                },
+                {
+                    "id": 3,
+                    "value": "Скева, иудейский первосвященник"
+                },
+                {
+                    "id": 4,
+                    "value": "Клавдий Лисий"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 25,
+            "questionContent": "Как звали юношу, который заснул на окне во время долгой проповеди Павла в Троаде и упал вниз?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Трофим"
+                },
+                {
+                    "id": 2,
+                    "value": "Евтих"
+                },
+                {
+                    "id": 3,
+                    "value": "Тихик"
+                },
+                {
+                    "id": 4,
+                    "value": "Агав"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 26,
+            "questionContent": "Кого пресвитеры эфесской церкви плача провожали на корабль в Милите?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Петра"
+                },
+                {
+                    "id": 2,
+                    "value": "Павла"
+                },
+                {
+                    "id": 3,
+                    "value": "Варнаву"
+                },
+                {
+                    "id": 4,
+                    "value": "Аполлоса"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 27,
+            "questionContent": "От чего предостерегали Павла ученики в Тире, по внушению Духа?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Отплывать на корабле в бурю"
+                },
+                {
+                    "id": 2,
+                    "value": "Проповедовать обрезание язычникам"
+                },
+                {
+                    "id": 3,
+                    "value": "Ходить в Иерусалим"
+                },
+                {
+                    "id": 4,
+                    "value": "Оставаться ночевать в городе"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 28,
+            "questionContent": "У кого из семи диаконов остановился Павел в Кесарии?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "У Стефана"
+                },
+                {
+                    "id": 2,
+                    "value": "У Филиппа"
+                },
+                {
+                    "id": 3,
+                    "value": "У Прохора"
+                },
+                {
+                    "id": 4,
+                    "value": "У Никанора"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 29,
+            "questionContent": "Пророк Агав связал себе руки и ноги поясом Павла. Что означало это действие?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Что Павел будет связан в Иерусалиме и предан язычникам"
+                },
+                {
+                    "id": 2,
+                    "value": "Что верующие должны быть связаны узами любви"
+                },
+                {
+                    "id": 3,
+                    "value": "Что Павел будет арестован в Риме"
+                },
+                {
+                    "id": 4,
+                    "value": "Что Павел не сможет покинуть Кесарию"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 30,
+            "questionContent": "Какое гражданство спасло Павла от бичевания в Иерусалиме?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Сирийское"
+                },
+                {
+                    "id": 2,
+                    "value": "Римское"
+                },
+                {
+                    "id": 3,
+                    "value": "Греческое"
+                },
+                {
+                    "id": 4,
+                    "value": "Египетское"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 31,
+            "questionContent": "Кто раскрыл заговор иудеев, поклявшихся убить Павла в Иерусалиме?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Сын сестры Павла (племянник)"
+                },
+                {
+                    "id": 2,
+                    "value": "Один из римских сотников"
+                },
+                {
+                    "id": 3,
+                    "value": "Раскаявшийся фарисей"
+                },
+                {
+                    "id": 4,
+                    "value": "Сам тысяченачальник Клавдий Лисий"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 32,
+            "questionContent": "К какому римскому правителю Клавдий Лисий отправил Павла под усиленной охраной в Кесарию?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "К Феликсу"
+                },
+                {
+                    "id": 2,
+                    "value": "К Порцию Фесту"
+                },
+                {
+                    "id": 3,
+                    "value": "К царю Агриппе"
+                },
+                {
+                    "id": 4,
+                    "value": "К Понтию Пилату"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 33,
+            "questionContent": "Суда кого потребовал Павел, отказываясь от суда иудеев перед Порцием Фестом?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Царя Агриппы"
+                },
+                {
+                    "id": 2,
+                    "value": "Кесаря"
+                },
+                {
+                    "id": 3,
+                    "value": "Иерусалимского синедриона"
+                },
+                {
+                    "id": 4,
+                    "value": "Проконсула Галлиона"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 34,
+            "questionContent": "Какой царь пришел к Порцию Фесту и решил послушать Павла?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Ирод Антипа"
+                },
+                {
+                    "id": 2,
+                    "value": "Агриппа"
+                },
+                {
+                    "id": 3,
+                    "value": "Арета"
+                },
+                {
+                    "id": 4,
+                    "value": "Птолемей"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 35,
+            "questionContent": "Какой ветер, подобный буре, обрушился на корабль, на котором Павел плыл в Рим?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Эвроклидон"
+                },
+                {
+                    "id": 2,
+                    "value": "Сирокко"
+                },
+                {
+                    "id": 3,
+                    "value": "Зефир"
+                },
+                {
+                    "id": 4,
+                    "value": "Борей"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 36,
+            "questionContent": "На какой остров был выброшен корабль Павла во время шторма?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Кипр"
+                },
+                {
+                    "id": 2,
+                    "value": "Крит"
+                },
+                {
+                    "id": 3,
+                    "value": "Мелит (Мальта)"
+                },
+                {
+                    "id": 4,
+                    "value": "Патмос"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 37,
+            "questionContent": "Какое животное повисло на руке Павла, когда он собирал хворост для костра на острове?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Ехидна (ядовитая змея)"
+                },
+                {
+                    "id": 2,
+                    "value": "Скорпион"
+                },
+                {
+                    "id": 3,
+                    "value": "Дикая кошка"
+                },
+                {
+                    "id": 4,
+                    "value": "Крупный паук"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 38,
+            "questionContent": "Где закончилось путешествие Павла согласно книге Деяний Апостолов?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "В Иерусалиме"
+                },
+                {
+                    "id": 2,
+                    "value": "В Антиохии"
+                },
+                {
+                    "id": 3,
+                    "value": "В Риме"
+                },
+                {
+                    "id": 4,
+                    "value": "В Испании"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 39,
+            "questionContent": "Кому молилась иерусалимская церковь, когда Петр был в темнице?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Богу Отцу"
+                },
+                {
+                    "id": 2,
+                    "value": "Прямо Иисусу Христу"
+                },
+                {
+                    "id": 3,
+                    "value": "Марии"
+                },
+                {
+                    "id": 4,
+                    "value": "Усердно молилась Богу"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 40,
+            "questionContent": "Кто такая Сапфира из Деяний 5 главы?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Пророчица в Антиохии"
+                },
+                {
+                    "id": 2,
+                    "value": "Жена Анании, солгавшая Духу Святому"
+                },
+                {
+                    "id": 3,
+                    "value": "Служанка в доме Марии, матери Иоанна Марка"
+                },
+                {
+                    "id": 4,
+                    "value": "Жена Феликса"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 41,
+            "questionContent": "Какое чудо совершил апостол Петр в Иоппии?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Исцелил хромого от рождения"
+                },
+                {
+                    "id": 2,
+                    "value": "Воскресил ученицу Тавифу"
+                },
+                {
+                    "id": 3,
+                    "value": "Изгнал множество бесов"
+                },
+                {
+                    "id": 4,
+                    "value": "Ослепил волхва Елиму"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 42,
+            "questionContent": "Кто был парализован восемь лет и исцелен Петром в Лидде?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Эней"
+                },
+                {
+                    "id": 2,
+                    "value": "Вартимей"
+                },
+                {
+                    "id": 3,
+                    "value": "Тимей"
+                },
+                {
+                    "id": 4,
+                    "value": "Нафанаил"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 43,
+            "questionContent": "Кем была служанка Рода?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Первой уверовавшей в Филиппах"
+                },
+                {
+                    "id": 2,
+                    "value": "Девушкой, которая от радости не открыла ворота Петру"
+                },
+                {
+                    "id": 3,
+                    "value": "Женой проконсула Галлиона"
+                },
+                {
+                    "id": 4,
+                    "value": "Женщиной, из которой Павел изгнал духа прорицателя"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 44,
+            "questionContent": "О чем учил Иисус апостолов в течение сорока дней после Своего воскресения?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Только о прощении грехов"
+                },
+                {
+                    "id": 2,
+                    "value": "О Царствии Божием"
+                },
+                {
+                    "id": 3,
+                    "value": "О разрушении Храма"
+                },
+                {
+                    "id": 4,
+                    "value": "Об устройстве местной церкви"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 45,
+            "questionContent": "Где, согласно повелению Иисуса в Деян. 1:8, ученики должны были быть Ему свидетелями?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "В Иерусалиме, Иудее, Самарии и до края земли"
+                },
+                {
+                    "id": 2,
+                    "value": "В Иерусалиме и Вавилоне"
+                },
+                {
+                    "id": 3,
+                    "value": "Сначала Иудеям, затем Еллинам"
+                },
+                {
+                    "id": 4,
+                    "value": "В Иудее, Галилее и Десятиградии"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 46,
+            "questionContent": "Сколько около человек крестилось после первой проповеди Петра в день Пятидесятницы?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Сто двадцать"
+                },
+                {
+                    "id": 2,
+                    "value": "Тысяча"
+                },
+                {
+                    "id": 3,
+                    "value": "Около трех тысяч"
+                },
+                {
+                    "id": 4,
+                    "value": "Около пяти тысяч"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 47,
+            "questionContent": "За что Анания и Сапфира были поражены смертью?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "За то, что солгали Духу Святому, утаив часть цены за землю"
+                },
+                {
+                    "id": 2,
+                    "value": "За то, что отказались продавать свое имение"
+                },
+                {
+                    "id": 3,
+                    "value": "За то, что хулили имя Иисуса"
+                },
+                {
+                    "id": 4,
+                    "value": "За то, что предали апостолов синедриону"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 48,
+            "questionContent": "Кто сказал синедриону: 'Оставьте этих людей... если это предприятие и это дело — от человеков, то оно разрушится, а если от Бога, то вы не можете разрушить его'?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Каиафа"
+                },
+                {
+                    "id": 2,
+                    "value": "Анна"
+                },
+                {
+                    "id": 3,
+                    "value": "Гамалиил"
+                },
+                {
+                    "id": 4,
+                    "value": "Никодим"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 49,
+            "questionContent": "По какой причине были избраны первые семь диаконов?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Чтобы апостолы могли отправиться проповедовать язычникам"
+                },
+                {
+                    "id": 2,
+                    "value": "Из-за ропота Еллинистов, чьи вдовицы обделялись при ежедневной раздаче потребностей"
+                },
+                {
+                    "id": 3,
+                    "value": "Чтобы охранять апостолов от гонений синедриона"
+                },
+                {
+                    "id": 4,
+                    "value": "Для управления финансами, пожертвованными Варнавой"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 50,
+            "questionContent": "Кем был Савл до того, как стал апостолом Павлом?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Мытарем"
+                },
+                {
+                    "id": 2,
+                    "value": "Римским сотником"
+                },
+                {
+                    "id": 3,
+                    "value": "Гонцом синедриона"
+                },
+                {
+                    "id": 4,
+                    "value": "Фарисеем, гнавшим Церковь Божию"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 51,
+            "questionContent": "Кого первосвященники и старейшины, видя смелость Петра и Иоанна, узнали в них?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Бывших учеников Гамалиила"
+                },
+                {
+                    "id": 2,
+                    "value": "Людей некнижных и простых, которые были с Иисусом"
+                },
+                {
+                    "id": 3,
+                    "value": "Мятежников из Галилеи"
+                },
+                {
+                    "id": 4,
+                    "value": "Пророков Илии и Еноха"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 52,
+            "questionContent": "Где ученики собирались единодушно после Вознесения Иисуса?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "В храме Соломона"
+                },
+                {
+                    "id": 2,
+                    "value": "В горнице Иерусалима"
+                },
+                {
+                    "id": 3,
+                    "value": "На Елеонской горе"
+                },
+                {
+                    "id": 4,
+                    "value": "В доме Марии, матери Иоанна"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 53,
+            "questionContent": "Какое пророчество Давида из Псалтиря Петр применил к Иуде Искариоту?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Двор его да будет пуст, и достоинство его да примет другой"
+                },
+                {
+                    "id": 2,
+                    "value": "Человек мирный, который ел хлеб мой, поднял на меня пяту"
+                },
+                {
+                    "id": 3,
+                    "value": "За тридцать сребреников оценили меня"
+                },
+                {
+                    "id": 4,
+                    "value": "Отвесили мне плату мою"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 54,
+            "questionContent": "Как называлось село, купленное на деньги Иуды Искариота?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Армагеддон (Гора Суда)"
+                },
+                {
+                    "id": 2,
+                    "value": "Голгофа (Лобное место)"
+                },
+                {
+                    "id": 3,
+                    "value": "Гефсимания (Масличное точило)"
+                },
+                {
+                    "id": 4,
+                    "value": "Акелдама (Земля крови)"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 55,
+            "questionContent": "Какого пророка цитировал Петр в день Пятидесятницы, чтобы объяснить сошествие Духа Святого?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Исаию"
+                },
+                {
+                    "id": 2,
+                    "value": "Иоиля"
+                },
+                {
+                    "id": 3,
+                    "value": "Иеремию"
+                },
+                {
+                    "id": 4,
+                    "value": "Захарию"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 56,
+            "questionContent": "Что Стефан в своей защитительной речи сказал об отношении израильтян к пророкам?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Что они почитали пророков только после их смерти"
+                },
+                {
+                    "id": 2,
+                    "value": "Что они извращали слова всех пророков"
+                },
+                {
+                    "id": 3,
+                    "value": "Кого из пророков не гнали отцы ваши?"
+                },
+                {
+                    "id": 4,
+                    "value": "Никакого пророка не слушали, пока он не творил чудеса"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 57,
+            "questionContent": "Где произошло массовое рассеяние церкви, после которого слово Божье начало распространяться за пределы Иерусалима?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "После ареста Петра и Иоанна"
+                },
+                {
+                    "id": 2,
+                    "value": "Из-за голода в Иудее"
+                },
+                {
+                    "id": 3,
+                    "value": "После смерти Стефана и начала великого гонения"
+                },
+                {
+                    "id": 4,
+                    "value": "После собора в Иерусалиме"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 58,
+            "questionContent": "В каком городе Самарии проповедовал Филипп, где уверовал эфиопский евнух?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "В городе Самарийском он проповедовал народу вообще, а евнуха встретил на пустой дороге к Газе"
+                },
+                {
+                    "id": 2,
+                    "value": "В Сихаре"
+                },
+                {
+                    "id": 3,
+                    "value": "В Себастии"
+                },
+                {
+                    "id": 4,
+                    "value": "В Кесарии"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 59,
+            "questionContent": "Книгу какого пророка читал эфиопский евнух, возвращаясь из Иерусалима?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Даниила"
+                },
+                {
+                    "id": 2,
+                    "value": "Осии"
+                },
+                {
+                    "id": 3,
+                    "value": "Иеремии"
+                },
+                {
+                    "id": 4,
+                    "value": "Исаии"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 60,
+            "questionContent": "Где оказался Филипп после того, как Дух Святой восхитил его от евнуха?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "В Иоппии"
+                },
+                {
+                    "id": 2,
+                    "value": "В Азоте"
+                },
+                {
+                    "id": 3,
+                    "value": "В Дамаске"
+                },
+                {
+                    "id": 4,
+                    "value": "В Антиохии"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 61,
+            "questionContent": "Сколько дней Савл был слепым, не ел и не пил после видения на пути в Дамаск?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Один день"
+                },
+                {
+                    "id": 2,
+                    "value": "Три дня"
+                },
+                {
+                    "id": 3,
+                    "value": "Семь дней"
+                },
+                {
+                    "id": 4,
+                    "value": "Сорок дней"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 62,
+            "questionContent": "Как Савл смог спастись от иудеев Дамаска, которые стерегли ворота, чтобы убить его?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Он переоделся римским солдатом"
+                },
+                {
+                    "id": 2,
+                    "value": "Ученики ночью спустили его по стене в корзине"
+                },
+                {
+                    "id": 3,
+                    "value": "На город напали разбойники, и в суматохе он сбежал"
+                },
+                {
+                    "id": 4,
+                    "value": "Римский тысяченачальник вывел его под охраной"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 63,
+            "questionContent": "Кто представил Савла Апостолам в Иерусалиме, когда они боялись его, не веря, что он ученик?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Петр"
+                },
+                {
+                    "id": 2,
+                    "value": "Стефан"
+                },
+                {
+                    "id": 3,
+                    "value": "Варнава"
+                },
+                {
+                    "id": 4,
+                    "value": "Сила"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 64,
+            "questionContent": "Как звали пророка из Иерусалима, предсказавшего великий голод по всей вселенной при кесаре Клавдии?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Агав"
+                },
+                {
+                    "id": 2,
+                    "value": "Сила"
+                },
+                {
+                    "id": 3,
+                    "value": "Прохор"
+                },
+                {
+                    "id": 4,
+                    "value": "Иуда"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 65,
+            "questionContent": "Куда отправился Павел после своего обращения и первых гонений в Иерусалиме?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "В Аравию, затем вернулся в Дамаск"
+                },
+                {
+                    "id": 2,
+                    "value": "В Кесарию, а оттуда в Тарс"
+                },
+                {
+                    "id": 3,
+                    "value": "Прямо в Рим"
+                },
+                {
+                    "id": 4,
+                    "value": "В Галатию к язычникам"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 66,
+            "questionContent": "Что случилось со стражами, которые охраняли Петра перед тем, как ангел вывел его из темницы?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Они ослепли"
+                },
+                {
+                    "id": 2,
+                    "value": "Они уверовали в Бога и отпустили его"
+                },
+                {
+                    "id": 3,
+                    "value": "Царь Ирод велел казнить их"
+                },
+                {
+                    "id": 4,
+                    "value": "Они не заметили его ухода и продолжали стеречь пустую цепь"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 67,
+            "questionContent": "Какова была причина смерти царя Ирода (Агриппы I)?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Его убили заговорщики-зилоты"
+                },
+                {
+                    "id": 2,
+                    "value": "Ангел Господень поразил его, и он был изъеден червями за то, что принял божеские почести"
+                },
+                {
+                    "id": 3,
+                    "value": "Римский император приказал его казнить за связи с мятежниками"
+                },
+                {
+                    "id": 4,
+                    "value": "Он покончил с собой после поражения в битве"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 68,
+            "questionContent": "Кто руководил церковью в Антиохии, которая стала отправной точкой для миссионерских путешествий Павла?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Только Павел и Варнава"
+                },
+                {
+                    "id": 2,
+                    "value": "Пророки и учители, включая Варнаву, Симеона Нигера, Луция и Манаила"
+                },
+                {
+                    "id": 3,
+                    "value": "Петр и пресвитеры из Иерусалима"
+                },
+                {
+                    "id": 4,
+                    "value": "Аполлос и Иаков"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 69,
+            "questionContent": "На каком острове Варнава и Савл встретили волхва Вариисуса (Елиму)?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Крит"
+                },
+                {
+                    "id": 2,
+                    "value": "Патмос"
+                },
+                {
+                    "id": 3,
+                    "value": "Мальта"
+                },
+                {
+                    "id": 4,
+                    "value": "Кипр"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 70,
+            "questionContent": "Где толпа хотела принести жертвоприношения Павлу и Варнаве, приняв их за Ермия и Зевса?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "В Иконии"
+                },
+                {
+                    "id": 2,
+                    "value": "В Листре"
+                },
+                {
+                    "id": 3,
+                    "value": "В Антиохии Писидийской"
+                },
+                {
+                    "id": 4,
+                    "value": "В Дервии"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 71,
+            "questionContent": "Куда отплыли Иоанн Марк, отделившись от Павла и Варнавы во время первого миссионерского путешествия?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "В Иерусалим"
+                },
+                {
+                    "id": 2,
+                    "value": "В Антиохию"
+                },
+                {
+                    "id": 3,
+                    "value": "В Рим"
+                },
+                {
+                    "id": 4,
+                    "value": "На Кипр"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 72,
+            "questionContent": "Какое главное решение было принято на Иерусалимском соборе (Деян. 15 глава)?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Что евреи не могут есть с язычниками за одним столом"
+                },
+                {
+                    "id": 2,
+                    "value": "Что язычники должны обрезаться, чтобы спастись"
+                },
+                {
+                    "id": 3,
+                    "value": "Не возлагать на язычников бремени сверх необходимого: воздерживаться от идоложертвенного, крови, удавленины и блуда"
+                },
+                {
+                    "id": 4,
+                    "value": "Официально отделить христианство от иудаизма"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 73,
+            "questionContent": "Кто от имени собора написал послание языческим церквам в Антиохию, Сирию и Киликию?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Петр и Иоанн"
+                },
+                {
+                    "id": 2,
+                    "value": "Павел и Варнава"
+                },
+                {
+                    "id": 3,
+                    "value": "Иаков (брат Господень) вместе с апостолами и пресвитерами"
+                },
+                {
+                    "id": 4,
+                    "value": "Тимофей и Тит"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 74,
+            "questionContent": "Почему Павел не захотел брать Марка во второе миссионерское путешествие?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Потому что Марк учил обрезанию язычников"
+                },
+                {
+                    "id": 2,
+                    "value": "Потому что Марк отстал от них в Памфилии и не шел с ними на дело"
+                },
+                {
+                    "id": 3,
+                    "value": "Потому что Марк был родственником Петра, а Петр лицемерил в Антиохии"
+                },
+                {
+                    "id": 4,
+                    "value": "Потому что Господь повелел взять Силу"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 75,
+            "questionContent": "Где Павлу было видение мужа-македонянина, просящего 'приди и помоги нам'?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "В Ефесе"
+                },
+                {
+                    "id": 2,
+                    "value": "В дервии"
+                },
+                {
+                    "id": 3,
+                    "value": "В Троаде"
+                },
+                {
+                    "id": 4,
+                    "value": "В Афинах"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 76,
+            "questionContent": "Кого Писание описывает как 'благомысленнее Фессалоникских', так как они ежедневно разбирали Писания?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Коринфян"
+                },
+                {
+                    "id": 2,
+                    "value": "Верийцев"
+                },
+                {
+                    "id": 3,
+                    "value": "Афинян"
+                },
+                {
+                    "id": 4,
+                    "value": "Римлян"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 77,
+            "questionContent": "С какими философами вступил в спор Павел на площади в Афинах?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "С эпикурейцами и стоиками"
+                },
+                {
+                    "id": 2,
+                    "value": "С платониками и пифагорейцами"
+                },
+                {
+                    "id": 3,
+                    "value": "Со скептиками и циниками"
+                },
+                {
+                    "id": 4,
+                    "value": "С натурфилософами Эфеса"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 78,
+            "questionContent": "Кто из ареопагитов уверовал после проповеди Павла в Афинах?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Дионисий"
+                },
+                {
+                    "id": 2,
+                    "value": "Дамарь"
+                },
+                {
+                    "id": 3,
+                    "value": "Крисп"
+                },
+                {
+                    "id": 4,
+                    "value": "Галлион"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 79,
+            "questionContent": "Кто был проконсулом Ахаии, который отказался судить Павла по религиозному закону иудеев в Коринфе?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Клавдий"
+                },
+                {
+                    "id": 2,
+                    "value": "Феликс"
+                },
+                {
+                    "id": 3,
+                    "value": "Галлион"
+                },
+                {
+                    "id": 4,
+                    "value": "Фест"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 80,
+            "questionContent": "Как звали начальника синагоги в Коринфе, который уверовал в Иисуса со всем своим домом?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Сосфен"
+                },
+                {
+                    "id": 2,
+                    "value": "Титий Иуст"
+                },
+                {
+                    "id": 3,
+                    "value": "Крисп"
+                },
+                {
+                    "id": 4,
+                    "value": "Стефан"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 81,
+            "questionContent": "Почему Павел остриг голову в Кенхреях?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "По обету (обет назорейства)"
+                },
+                {
+                    "id": 2,
+                    "value": "В знак траура по умершим в Коринфе"
+                },
+                {
+                    "id": 3,
+                    "value": "Чтобы скрыться от римских гонителей"
+                },
+                {
+                    "id": 4,
+                    "value": "Из-за болезни"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 82,
+            "questionContent": "Какое единственное крещение знали 12 учеников, которых Павел встретил в Эфесе?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Крещение огнем"
+                },
+                {
+                    "id": 2,
+                    "value": "Иоанново крещение"
+                },
+                {
+                    "id": 3,
+                    "value": "Крещение во Имя Иисуса"
+                },
+                {
+                    "id": 4,
+                    "value": "Крещение во имя Святого Духа"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 83,
+            "questionContent": "Сколько лет Павел ежедневно проповедовал в училище некоего Тиранна в Эфесе?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Один год"
+                },
+                {
+                    "id": 2,
+                    "value": "Два года"
+                },
+                {
+                    "id": 3,
+                    "value": "Три года"
+                },
+                {
+                    "id": 4,
+                    "value": "Пять лет"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 84,
+            "questionContent": "Кто усмирил мятеж в Эфесе, призвав собрание к законному суду, а не к самосуду над Павлом и его спутниками?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Серебряник Димитрий"
+                },
+                {
+                    "id": 2,
+                    "value": "Блюститель порядка (или градоначальник/секретарь) Эфеса"
+                },
+                {
+                    "id": 3,
+                    "value": "Александр медник"
+                },
+                {
+                    "id": 4,
+                    "value": "Азиархи, друзья Павла"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 85,
+            "questionContent": "В какой город Павел обошел пешком берегом после воскрешения Евтиха, тогда как другие отплыли на корабле из Троады?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "В Асс"
+                },
+                {
+                    "id": 2,
+                    "value": "В Митилену"
+                },
+                {
+                    "id": 3,
+                    "value": "В Эфес"
+                },
+                {
+                    "id": 4,
+                    "value": "В Хиос"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 86,
+            "questionContent": "Где Павел впервые встретил Филиппа-благовестника после своего обращения?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "В Иерусалиме"
+                },
+                {
+                    "id": 2,
+                    "value": "В Кесарии"
+                },
+                {
+                    "id": 3,
+                    "value": "В Дамаске"
+                },
+                {
+                    "id": 4,
+                    "value": "В Птолемаиде"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 87,
+            "questionContent": "Кем приходились друг другу Ирод (четверовластник) и Манаил из антиохийской церкви?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Они были врагами"
+                },
+                {
+                    "id": 2,
+                    "value": "Они были учинёнными вместе (совоспитаниками)"
+                },
+                {
+                    "id": 3,
+                    "value": "Ирод был господином, а Манаил - рабом"
+                },
+                {
+                    "id": 4,
+                    "value": "Они были родными братьями"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 88,
+            "questionContent": "Какое обвинение выдвинули иудеи из Асии против Павла в Иерусалимском храме?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Что он хулил Бога и не платил храмовую подать"
+                },
+                {
+                    "id": 2,
+                    "value": "Что он учил против народа, закона и ввел Еллинов в храм, осквернив его"
+                },
+                {
+                    "id": 3,
+                    "value": "Что он призывал к вооруженному восстанию против Рима"
+                },
+                {
+                    "id": 4,
+                    "value": "Что он признал себя Мессией"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 89,
+            "questionContent": "С кем перепутал тысяченачальник Клавдий Лисий Павла после его ареста в Иерусалиме?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "С фарисеем Гамалиилом"
+                },
+                {
+                    "id": 2,
+                    "value": "С Египтянином, поднявшим мятеж и выведшим в пустыню бандитов"
+                },
+                {
+                    "id": 3,
+                    "value": "Со Стефаном"
+                },
+                {
+                    "id": 4,
+                    "value": "С разбойником Вараввой"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 90,
+            "questionContent": "Что вызвало распрю между фарисеями и саддукеями во время допроса Павла в синедрионе?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Вопрос о том, нужно ли платить подать кесарю"
+                },
+                {
+                    "id": 2,
+                    "value": "Вопрос о том, был ли Иисус Богом"
+                },
+                {
+                    "id": 3,
+                    "value": "Заявление Павла, что его судят за надежду на воскресение мертвых"
+                },
+                {
+                    "id": 4,
+                    "value": "Спор о том, кто должен вынести Павлу смертный приговор: Пилат или первосвященник"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 91,
+            "questionContent": "Кем был Тертулл в истории с судом над Павлом перед Феликсом?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Ритор (адвокат), который обвинял Павла от имени иудейских старейшин"
+                },
+                {
+                    "id": 2,
+                    "value": "Римский центурион, охранявший Павла"
+                },
+                {
+                    "id": 3,
+                    "value": "Один из тайных учеников Иисуса"
+                },
+                {
+                    "id": 4,
+                    "value": "Двоюродный брат Порция Феста"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 92,
+            "questionContent": "Почему Феликс оставил Павла в узах, когда его правительство сменилось Фестом?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Потому что не получил взятку от Павла"
+                },
+                {
+                    "id": 2,
+                    "value": "Желая угодить Иудеям"
+                },
+                {
+                    "id": 3,
+                    "value": "Ждал письмо от самого Кесаря"
+                },
+                {
+                    "id": 4,
+                    "value": "Потому что считал его крайне опасным преступником"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 93,
+            "questionContent": "Что сказал царь Агриппа Павлу после его защитительной речи?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Безумствуешь ты, Павел; большая ученость доводит тебя до сумасшествия"
+                },
+                {
+                    "id": 2,
+                    "value": "Ты почти убеждаешь меня сделаться Христианином"
+                },
+                {
+                    "id": 3,
+                    "value": "Этот человек не сделал ничего, достойного смерти"
+                },
+                {
+                    "id": 4,
+                    "value": "Пусть Кесарь судит этого человека"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 94,
+            "questionContent": "На каком постулате Фест посчитал Павла безумным во время речи перед Агриппой?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Когда Павел заговорил о видении света с неба"
+                },
+                {
+                    "id": 2,
+                    "value": "Когда Павел сказал, что он римский гражданин"
+                },
+                {
+                    "id": 3,
+                    "value": "Когда Павел возвестил судный день и конец света"
+                },
+                {
+                    "id": 4,
+                    "value": "Из-за большой учености, когда Павел начал говорить о воскресении мертвых и пришествии Христа"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 95,
+            "questionContent": "Где зимовал корабль, на котором Павел отплыл из Мелиты в Рим?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "В Александрии"
+                },
+                {
+                    "id": 2,
+                    "value": "В Путеолах"
+                },
+                {
+                    "id": 3,
+                    "value": "Александрийский корабль, имевший знаком Диоскуров, перезимовал на самом острове Мелита"
+                },
+                {
+                    "id": 4,
+                    "value": "В Сиракузах"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 96,
+            "questionContent": "В каких городах верующие вышли навстречу Павлу по пути в Рим?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "До Аппиевой площади и трех гостиниц"
+                },
+                {
+                    "id": 2,
+                    "value": "В Неаполе и Помпеях"
+                },
+                {
+                    "id": 3,
+                    "value": "В Коринфе и Афинах"
+                },
+                {
+                    "id": 4,
+                    "value": "В Милите и Троаде"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 97,
+            "questionContent": "С кем первым встретился Павел в Риме после того, как его поселили под домашним арестом?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "С самим императором Нероном"
+                },
+                {
+                    "id": 2,
+                    "value": "Со знатнейшими из Иудеев"
+                },
+                {
+                    "id": 3,
+                    "value": "С Петром, который был там епископом"
+                },
+                {
+                    "id": 4,
+                    "value": "Со всеми римскими христианами одновременно, собрав их на площади"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 98,
+            "questionContent": "Какого пророка цитировал Павел иудеям в Риме, которые не приняли Евангелие?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Иеремию ('ибо два зла сделал народ мой')"
+                },
+                {
+                    "id": 2,
+                    "value": "Исаию ('Слухом услышите - и не уразумеете...')"
+                },
+                {
+                    "id": 3,
+                    "value": "Иоиля ('И будет в последние дни...')"
+                },
+                {
+                    "id": 4,
+                    "value": "Осию ('Отвергну от себя народ Мой')"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 99,
+            "questionContent": "Чем заканчивается книга Деяний Апостолов?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Описание казни Петра и Павла в Риме"
+                },
+                {
+                    "id": 2,
+                    "value": "Павел два года живет на своем иждивении, проповедуя беспрепятственно Царство Божие"
+                },
+                {
+                    "id": 3,
+                    "value": "Павел освобождается из-под стражи и едет в Испанию"
+                },
+                {
+                    "id": 4,
+                    "value": "Император Нерон начинает великое гонение"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 100,
+            "questionContent": "О ком Иоанн Креститель свидетельствовал, согласно проповеди Павла в Антиохии Писидийской?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Я не тот, за кого вы почитаете меня, но вот, идет за мною..."
+                },
+                {
+                    "id": 2,
+                    "value": "Он - Агнец Божий, Который берет на Себя грех мира"
+                },
+                {
+                    "id": 3,
+                    "value": "Покайтесь, ибо приблизилось Царство Небесное"
+                },
+                {
+                    "id": 4,
+                    "value": "У Того в руках лопата, и Он очистит гумно Свое"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 101,
+            "questionContent": "Как звали отца Публия, начальника острова Мелит, которого исцелил Павел?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "В Библии не названо его имя, сказано только 'отец Публия'"
+                },
+                {
+                    "id": 2,
+                    "value": "Дионисий"
+                },
+                {
+                    "id": 3,
+                    "value": "Крисп"
+                },
+                {
+                    "id": 4,
+                    "value": "Тибальд"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 102,
+            "questionContent": "Чем был болен отец Публия на острове Мелит?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Проказой и слепотой"
+                },
+                {
+                    "id": 2,
+                    "value": "Горячкой и болью в животе"
+                },
+                {
+                    "id": 3,
+                    "value": "Параличом"
+                },
+                {
+                    "id": 4,
+                    "value": "Укусом ядовитой ехидны"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 103,
+            "questionContent": "Какой знак (эмблема) был на Александрийском корабле, на котором Павел отплыл с Мелиты после зимовки?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Орел Юпитера"
+                },
+                {
+                    "id": 2,
+                    "value": "Пегас"
+                },
+                {
+                    "id": 3,
+                    "value": "Морской конь (Гиппокамп)"
+                },
+                {
+                    "id": 4,
+                    "value": "Диоскуры (Кастор и Поллукс)"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 104,
+            "questionContent": "В каком городе Сицилии корабль Павла пробыл три дня на пути в Рим?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "В Катане"
+                },
+                {
+                    "id": 2,
+                    "value": "В Мессине"
+                },
+                {
+                    "id": 3,
+                    "value": "В Палермо"
+                },
+                {
+                    "id": 4,
+                    "value": "В Сиракузах"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 105,
+            "questionContent": "Как звали сотника Августова полка, который сопровождал Павла в Рим?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Корнилий"
+                },
+                {
+                    "id": 2,
+                    "value": "Юлий"
+                },
+                {
+                    "id": 3,
+                    "value": "Клавдий Лисий"
+                },
+                {
+                    "id": 4,
+                    "value": "Марк Антониний"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 106,
+            "questionContent": "Сколько душ было на корабле, который потерпел крушение у берегов Мелиты?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "120"
+                },
+                {
+                    "id": 2,
+                    "value": "276"
+                },
+                {
+                    "id": 3,
+                    "value": "200"
+                },
+                {
+                    "id": 4,
+                    "value": "312"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 107,
+            "questionContent": "Где находились 'Хорошие Пристани' (Кали Лименес) и город Ласея?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "На Кипре"
+                },
+                {
+                    "id": 2,
+                    "value": "На Патмосе"
+                },
+                {
+                    "id": 3,
+                    "value": "На Крите"
+                },
+                {
+                    "id": 4,
+                    "value": "На Мальте"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 108,
+            "questionContent": "Как звали кипрянина, давнего ученика, у которого Павел и его спутники должны были остановиться по дороге в Иерусалим?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Варнава"
+                },
+                {
+                    "id": 2,
+                    "value": "Александр Медник"
+                },
+                {
+                    "id": 3,
+                    "value": "Иасон"
+                },
+                {
+                    "id": 4,
+                    "value": "Мнасон"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 109,
+            "questionContent": "Из какого македонского города происходил Аристарх, спутник Павла, отправившийся с ним в Рим?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Из Филипп"
+                },
+                {
+                    "id": 2,
+                    "value": "Из Верии"
+                },
+                {
+                    "id": 3,
+                    "value": "Из Фессалоник"
+                },
+                {
+                    "id": 4,
+                    "value": "Из Неаполя"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 110,
+            "questionContent": "Кто из спутников Павла был родом из Дервии (во время сбора пожертвований перед последним визитом в Иерусалим)?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Тимофей"
+                },
+                {
+                    "id": 2,
+                    "value": "Гай (Гаий)"
+                },
+                {
+                    "id": 3,
+                    "value": "Сосипатр"
+                },
+                {
+                    "id": 4,
+                    "value": "Тихик"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 111,
+            "questionContent": "Какого 'асийца' (жителя Асии) иудеи видели с Павлом в городе и решили, что он ввел его в храм?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Тихика"
+                },
+                {
+                    "id": 2,
+                    "value": "Тита"
+                },
+                {
+                    "id": 3,
+                    "value": "Трофима Ефесянина"
+                },
+                {
+                    "id": 4,
+                    "value": "Епафраса"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 112,
+            "questionContent": "К какой секте или философской школе относился первосвященник Анания (или его партия), судивший Павла в синедрионе?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "К саддукеям"
+                },
+                {
+                    "id": 2,
+                    "value": "К фарисеям"
+                },
+                {
+                    "id": 3,
+                    "value": "К ессеям"
+                },
+                {
+                    "id": 4,
+                    "value": "К зилотам"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 113,
+            "questionContent": "Как звали жену правителя Феликса, которая была Иудеянкой и слушала вместе с мужем проповедь Павла?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Дамарь"
+                },
+                {
+                    "id": 2,
+                    "value": "Лидия"
+                },
+                {
+                    "id": 3,
+                    "value": "Друзилла"
+                },
+                {
+                    "id": 4,
+                    "value": "Береника"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 114,
+            "questionContent": "С кем царь Агриппа пришел в Кесарию поприветствовать Феста?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "С Вереникой (Береникой)"
+                },
+                {
+                    "id": 2,
+                    "value": "С Иродиадой"
+                },
+                {
+                    "id": 3,
+                    "value": "С Друзиллой"
+                },
+                {
+                    "id": 4,
+                    "value": "С женой Понтия Пилата"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 115,
+            "questionContent": "До какого места сопровождали Павла христиане из ефесской церкви (Милита), прощаясь с ним?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "До ворот города"
+                },
+                {
+                    "id": 2,
+                    "value": "До Иерусалима"
+                },
+                {
+                    "id": 3,
+                    "value": "До корабля"
+                },
+                {
+                    "id": 4,
+                    "value": "До дома Трофима"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 116,
+            "questionContent": "Какое пророчество из Псалмов (Пс. 108:8) приводит Петр в первой главе Деяний, говоря об Иуде?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Не оставишь души моей в аде"
+                },
+                {
+                    "id": 2,
+                    "value": "Епископство (достоинство) его да примет другой"
+                },
+                {
+                    "id": 3,
+                    "value": "Сказал Господь Господу моему: седи одесную Меня"
+                },
+                {
+                    "id": 4,
+                    "value": "Камень, который отвергли строители, сделался главою угла"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 117,
+            "questionContent": "К какому колену Израиля принадлежал Саввл (Павел)?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Иудину"
+                },
+                {
+                    "id": 2,
+                    "value": "Левиину"
+                },
+                {
+                    "id": 3,
+                    "value": "Вениаминову"
+                },
+                {
+                    "id": 4,
+                    "value": "Ефремову"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 118,
+            "questionContent": "В каком городе Павла побили камнями и вытащили за город, посчитав умершим?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "В Иконии"
+                },
+                {
+                    "id": 2,
+                    "value": "В Дервии"
+                },
+                {
+                    "id": 3,
+                    "value": "В Памфилии"
+                },
+                {
+                    "id": 4,
+                    "value": "В Листре"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 119,
+            "questionContent": "После чудесного избавления из темницы в Иерусалиме, куда Петр отправился первым делом?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "В Храм, проповедовать"
+                },
+                {
+                    "id": 2,
+                    "value": "В дом Марии, матери Иоанна, называемого Марком"
+                },
+                {
+                    "id": 3,
+                    "value": "В Кесарию к Корнилию"
+                },
+                {
+                    "id": 4,
+                    "value": "В Антиохию к Павлу"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 120,
+            "questionContent": "Кого Иоанн Креститель, согласно Деян. 19:4, призывал народ веровать?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "В пророка Илию"
+                },
+                {
+                    "id": 2,
+                    "value": "В Законодателя Моисея"
+                },
+                {
+                    "id": 3,
+                    "value": "В Грядущего за ним, то есть во Христа Иисуса"
+                },
+                {
+                    "id": 4,
+                    "value": "Во Святого Духа"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 121,
+            "questionContent": "Кому именно Петр сказал: «Серебро твое да будет в погибель с тобою, потому что ты помыслил дар Божий получить за деньги»?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Анании, мужу Сапфиры"
+                },
+                {
+                    "id": 2,
+                    "value": "Елиме (Вариисусу)"
+                },
+                {
+                    "id": 3,
+                    "value": "Иуде Искариоту"
+                },
+                {
+                    "id": 4,
+                    "value": "Симону волхву в Самарии"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 122,
+            "questionContent": "Из какого города родом был Акила, с которым Павел встретился в Коринфе?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Из Рима"
+                },
+                {
+                    "id": 2,
+                    "value": "Из Тарса"
+                },
+                {
+                    "id": 3,
+                    "value": "Из Понта"
+                },
+                {
+                    "id": 4,
+                    "value": "Из Эфеса"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 123,
+            "questionContent": "Кто из римских императоров повелел всем Иудеям удалиться из Рима (из-за чего Акила и Прискилла прибыли в Коринф)?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Нерон"
+                },
+                {
+                    "id": 2,
+                    "value": "Тиберий"
+                },
+                {
+                    "id": 3,
+                    "value": "Калигула"
+                },
+                {
+                    "id": 4,
+                    "value": "Клавдий"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 124,
+            "questionContent": "Как звали прокурора (наместника) Ахаии, перед которым иудеи привели Павла в Коринфе на судилище?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Феликс"
+                },
+                {
+                    "id": 2,
+                    "value": "Галлион"
+                },
+                {
+                    "id": 3,
+                    "value": "Фест"
+                },
+                {
+                    "id": 4,
+                    "value": "Сергий Павел"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 125,
+            "questionContent": "Где Павел оставил Прискиллу и Акилу, отплыв из Кенхрей (порта Коринфа)?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "В Риме"
+                },
+                {
+                    "id": 2,
+                    "value": "В Иерусалиме"
+                },
+                {
+                    "id": 3,
+                    "value": "В Троаде"
+                },
+                {
+                    "id": 4,
+                    "value": "В Эфесе"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 126,
+            "questionContent": "В доме у кого Павел учил в Коринфе после того, как ушел из синагоги и сказал иудеям: 'Кровь ваша на главах ваших... иду к язычникам'?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "У Акилы и Прискиллы"
+                },
+                {
+                    "id": 2,
+                    "value": "У Иуста (Тития Иуста), чтущего Бога"
+                },
+                {
+                    "id": 3,
+                    "value": "У Криспа, начальника синагоги"
+                },
+                {
+                    "id": 4,
+                    "value": "У Сосфена"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 127,
+            "questionContent": "Кто был побит Еллинами перед судилищем Галлиона в Коринфе?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Павел"
+                },
+                {
+                    "id": 2,
+                    "value": "Сила"
+                },
+                {
+                    "id": 3,
+                    "value": "Крисп"
+                },
+                {
+                    "id": 4,
+                    "value": "Сосфен, начальник синагоги"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 128,
+            "questionContent": "Как звали проконсула на Кипре, который был 'мужем разумным' и уверовал, пораженный учением Господним и ослеплением Елимы?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Клавдий Лисий"
+                },
+                {
+                    "id": 2,
+                    "value": "Галлион"
+                },
+                {
+                    "id": 3,
+                    "value": "Порций Фест"
+                },
+                {
+                    "id": 4,
+                    "value": "Сергий Павел"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 129,
+            "questionContent": "В каком портовом городе Сирии находилась Антиохия, откуда начинались миссионерские путешествия?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Она находилась на реке Оронт, а ее морским портом была Селевкия"
+                },
+                {
+                    "id": 2,
+                    "value": "Морским портом была Кесария"
+                },
+                {
+                    "id": 3,
+                    "value": "Она находилась прямо на побережье Средиземного моря"
+                },
+                {
+                    "id": 4,
+                    "value": "Морским портом был Тир"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 130,
+            "questionContent": "Из какого города Павел и его спутники отплыли в Македонию после видения мужа-македонянина?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Из Эфеса"
+                },
+                {
+                    "id": 2,
+                    "value": "Из Милита"
+                },
+                {
+                    "id": 3,
+                    "value": "Из Троады"
+                },
+                {
+                    "id": 4,
+                    "value": "Из Антиохии Писидийской"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 131,
+            "questionContent": "Как назывался первый город в той части Македонии (римская колония), куда прибыли Павел и Сила?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Фессалоники"
+                },
+                {
+                    "id": 2,
+                    "value": "Верия"
+                },
+                {
+                    "id": 3,
+                    "value": "Амфиполь"
+                },
+                {
+                    "id": 4,
+                    "value": "Филиппы"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 132,
+            "questionContent": "Где, возле Филипп, Павел встретил Лидию?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "В синагоге"
+                },
+                {
+                    "id": 2,
+                    "value": "На рыночной площади (агоре)"
+                },
+                {
+                    "id": 3,
+                    "value": "За городом при реке, где собирались на молитву"
+                },
+                {
+                    "id": 4,
+                    "value": "В доме начальника темницы"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 133,
+            "questionContent": "В доме кого происходило собрание церкви в Фессалониках, на чей дом напали неуверовавшие иудеи?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "В доме Акилы"
+                },
+                {
+                    "id": 2,
+                    "value": "В доме Лидии"
+                },
+                {
+                    "id": 3,
+                    "value": "В доме Тития Иуста"
+                },
+                {
+                    "id": 4,
+                    "value": "В доме Иасона"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 134,
+            "questionContent": "Каких двух философов и поэтов (Эпименида или Арата) цитирует Павел в ареопаге: 'Ибо мы Им живем и движемся и существуем... мы Его и род'?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Еллинов, некоторых ваших стихотворцев"
+                },
+                {
+                    "id": 2,
+                    "value": "Платона и Аристотеля"
+                },
+                {
+                    "id": 3,
+                    "value": "Евгемерических и стоических"
+                },
+                {
+                    "id": 4,
+                    "value": "Только Ветхий Завет, псалом 138"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 135,
+            "questionContent": "Сколько сыновей было у Скевы, иудейского первосвященника, которые пытались изгонять злых духов именем 'Иисуса, Которого Павел проповедует'?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Два"
+                },
+                {
+                    "id": 2,
+                    "value": "Трое"
+                },
+                {
+                    "id": 3,
+                    "value": "Семь"
+                },
+                {
+                    "id": 4,
+                    "value": "Двенадцать"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 136,
+            "questionContent": "На какую сумму были сожжены чародейные книги в Эфесе?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Тридцать сребренников"
+                },
+                {
+                    "id": 2,
+                    "value": "Пятьдесят тысяч драхм (серебряных монет)"
+                },
+                {
+                    "id": 3,
+                    "value": "Десять талантов серебра"
+                },
+                {
+                    "id": 4,
+                    "value": "Сто тысяч динариев"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 137,
+            "questionContent": "Каких спутников Павла схватила толпа в Эфесе и потащила на зрелище (в театр)?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Тимофея и Тита"
+                },
+                {
+                    "id": 2,
+                    "value": "Македонян Гаия и Аристарха"
+                },
+                {
+                    "id": 3,
+                    "value": "Луку и Силу"
+                },
+                {
+                    "id": 4,
+                    "value": "Акилу и Прискиллу"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 138,
+            "questionContent": "Из какого города был родом Сопатр (сын Пирра), сопровождавший Павла в Асию?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Из Фессалоник"
+                },
+                {
+                    "id": 2,
+                    "value": "Из Дервии"
+                },
+                {
+                    "id": 3,
+                    "value": "Из Афин"
+                },
+                {
+                    "id": 4,
+                    "value": "Из Верии"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 139,
+            "questionContent": "Где ученики упрашивали Павла не ходить в Иерусалим по внушению Духа, после того как провели с ним семь дней (перед Кесарией)?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "В Тире"
+                },
+                {
+                    "id": 2,
+                    "value": "В Птолемаиде"
+                },
+                {
+                    "id": 3,
+                    "value": "В Милите"
+                },
+                {
+                    "id": 4,
+                    "value": "В Патаре"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 140,
+            "questionContent": "Кого Иаков и пресвитеры в Иерусалиме посоветовали Павлу взять с собой в храм, чтобы очиститься по закону?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Четырех мужей, имевших на себе обет"
+                },
+                {
+                    "id": 2,
+                    "value": "Семь диаконов"
+                },
+                {
+                    "id": 3,
+                    "value": "Трофима Ефесянина"
+                },
+                {
+                    "id": 4,
+                    "value": "Луку и Тимофея"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 141,
+            "questionContent": "На каком языке Павел обратился к тысяченачальнику Клавдию Лисию, когда тот спросил: 'Ты знаешь по-...'?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "По-арамейски"
+                },
+                {
+                    "id": 2,
+                    "value": "По-латыни"
+                },
+                {
+                    "id": 3,
+                    "value": "По-гречески"
+                },
+                {
+                    "id": 4,
+                    "value": "По-еврейски (иврит)"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 142,
+            "questionContent": "Около которого часа дня, по словам Павла в его речи (Деян. 22), его осветил великий свет на пути в Дамаск?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "На рассвете (около третьего часа)"
+                },
+                {
+                    "id": 2,
+                    "value": "В полночь"
+                },
+                {
+                    "id": 3,
+                    "value": "Около полудня"
+                },
+                {
+                    "id": 4,
+                    "value": "На закате (около девятого часа)"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 143,
+            "questionContent": "Сколько человек поклялись не есть и не пить, пока не убьют Павла (в Иерусалиме)?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Около двенадцати"
+                },
+                {
+                    "id": 2,
+                    "value": "Ровно семьдесят"
+                },
+                {
+                    "id": 3,
+                    "value": "Около двадцати"
+                },
+                {
+                    "id": 4,
+                    "value": "Более сорока"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 144,
+            "questionContent": "С каким эскортом Клавдий Лисий отправил Павла к правителю Феликсу?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "С двумя сотнями пеших воинов, семьюдесятью конными и двумя сотнями стрелков (всего 470 человек)"
+                },
+                {
+                    "id": 2,
+                    "value": "Только с Юлием, сотником Августова полка"
+                },
+                {
+                    "id": 3,
+                    "value": "С пятьюдесятью конными всадниками"
+                },
+                {
+                    "id": 4,
+                    "value": "В сопровождении десяти вооруженных стражников"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 145,
+            "questionContent": "Кем, согласно обвинениям ритора Тертулла перед Феликсом, являлся Павел?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Разбойником из Галатии, грабившим храмы"
+                },
+                {
+                    "id": 2,
+                    "value": "Лжепророком, говорящим о приходе царства Римского"
+                },
+                {
+                    "id": 3,
+                    "value": "Зачинщиком мятежа и представителем Назорейской ереси (язвой общества)"
+                },
+                {
+                    "id": 4,
+                    "value": "Осквернителем гробницы Давида"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 146,
+            "questionContent": "Из какого порта отправился первый корабль с направляющимся в Рим Павлом (до пересадки в Мирах Ликийских)?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Троадский корабль"
+                },
+                {
+                    "id": 2,
+                    "value": "Александрийский корабль"
+                },
+                {
+                    "id": 3,
+                    "value": "Адрамитский корабль"
+                },
+                {
+                    "id": 4,
+                    "value": "Милитский корабль"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 147,
+            "questionContent": "Какое название носила мель (коса), на которую моряки боялись наскочить во время шторма по пути в Рим?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Сирт"
+                },
+                {
+                    "id": 2,
+                    "value": "Харибда"
+                },
+                {
+                    "id": 3,
+                    "value": "Пелопоннесский риф"
+                },
+                {
+                    "id": 4,
+                    "value": "Критские скалы"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 148,
+            "questionContent": "Что намеревались сделать воины охраны при кораблекрушении, чтобы узники (включая Павла) не убежали вплавь?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Связать их всех одной цепью к палубе"
+                },
+                {
+                    "id": 2,
+                    "value": "Умертвить узников"
+                },
+                {
+                    "id": 3,
+                    "value": "Оставить их на тонущем корабле, а самим спастись на шлюпке"
+                },
+                {
+                    "id": 4,
+                    "value": "Бросить их связанными в море"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 149,
+            "questionContent": "Сколько дней постились Павел и все находящиеся на корабле перед кораблекрушением (не принимали пищи)?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Семь дней"
+                },
+                {
+                    "id": 2,
+                    "value": "Четырнадцать дней"
+                },
+                {
+                    "id": 3,
+                    "value": "Три дня"
+                },
+                {
+                    "id": 4,
+                    "value": "Двадцать один день"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 150,
+            "questionContent": "В какой провинции (которой управлял Феликс) Павел находился под стражей два года?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Сирия"
+                },
+                {
+                    "id": 2,
+                    "value": "Галатия"
+                },
+                {
+                    "id": 3,
+                    "value": "Македония"
+                },
+                {
+                    "id": 4,
+                    "value": "Иудея (резиденция в Кесарии)"
+                }
+            ],
+            "rightAnswerId": 4
+        }
+    ]
+}

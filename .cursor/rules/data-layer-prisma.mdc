@@ -1,0 +1,249 @@
+---
+description: Prisma ORM + DAL паттерны — доступ к данным, Server Actions, валидация
+globs:
+  - "prisma/**"
+  - "lib/db*"
+  - "src/data/**"
+  - "src/actions/**"
+  - "app/api/**"
+alwaysApply: false
+---
+
+# Data Layer — Prisma + DAL паттерны
+
+**Reference:** [`docs/examples/fitapp/.cursor/rules/data-server-actions-and-api.mdc`](../../docs/examples/fitapp/.cursor/rules/data-server-actions-and-api.mdc)  
+**Schema:** [`prisma/schema.prisma`](../../prisma/schema.prisma)  
+**Prisma singleton:** [`lib/db.ts`](../../lib/db.ts)
+
+## Prisma Singleton (обязательно)
+
+```typescript
+// lib/db.ts
+import { PrismaClient } from '@prisma/client';
+
+const globalForPrisma = globalThis as unknown as { prisma: PrismaClient };
+
+export const prisma =
+  globalForPrisma.prisma ??
+  new PrismaClient({
+    log: process.env.NODE_ENV === 'development' ? ['query', 'error', 'warn'] : ['error'],
+  });
+
+if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = prisma;
+```
+
+**Правило:** `new PrismaClient()` — только в `lib/db.ts`. Везде импортировать `prisma` из `'@/lib/db'`.
+
+## DAL (Data Access Layer)
+
+Все функции доступа к данным — в `src/data/**`:
+
+```typescript
+// src/data/suites/get-suites.server.ts
+import 'server-only';
+import { prisma } from '@/lib/db';
+import type { QuestionSuite } from '@prisma/client';
+
+export async function getAllSuites(): Promise<QuestionSuite[]> {
+  return prisma.questionSuite.findMany({
+    orderBy: { createdAt: 'desc' },
+  });
+}
+```
+
+**Правила DAL:**
+- `import 'server-only'` — обязательно
+- Функции принимают plain объекты (не Request/Response)
+- Возвращают типизированные результаты
+- Содержат всю логику работы с Prisma
+
+## Server Actions (тонкие)
+
+```typescript
+// src/actions/admin/import-suite.ts
+'use server';
+import 'server-only';
+import { auth } from '@/lib/auth';
+import { suiteImportSchema } from '@/lib/validators/suite-import';
+import { importSuiteFromJson } from '@/data/suites/import-suite.server';
+import { revalidateTag } from 'next/cache';
+
+export async function importSuiteAction(rawJson: unknown) {
+  // 1. Auth check
+  const session = await auth();
+  if (!session || session.user?.role !== 'admin') {
+    return { success: false, error: 'Forbidden' };
+  }
+
+  // 2. Validate
+  const parsed = suiteImportSchema.safeParse(rawJson);
+  if (!parsed.success) {
+    return { success: false, error: parsed.error.flatten() };
+  }
+
+  // 3. Call DAL
+  const suite = await importSuiteFromJson(parsed.data);
+
+  // 4. Invalidate cache
+  revalidateTag('suites');
+
+  return { success: true, data: suite };
+}
+```
+
+## Zod Validators
+
+```typescript
+// lib/validators/suite-import.ts
+import { z } from 'zod';
+
+export const answerItemSchema = z.object({
+  id: z.number().int().positive(),
+  value: z.string().min(1).max(500),
+});
+
+export const questionSchema = z.object({
+  id: z.number().int().positive(),
+  questionContent: z.string().min(1).max(1000),
+  complexityLevel: z.enum(['easy', 'medium', 'hard']),
+  answersList: z.array(answerItemSchema).nullable(),
+  answerType: z.enum(['ID', 'String']),
+  rightAnswerId: z.number().int().positive().nullable().optional(),
+  rightAnswerString: z.string().max(500).nullable().optional(),
+});
+
+export const suiteImportSchema = z.object({
+  title: z.string().min(1).max(255),
+  language: z.string().length(2).optional().default('ru'),
+  questionsList: z.array(questionSchema).min(1).max(500),
+});
+
+export type SuiteImportInput = z.infer<typeof suiteImportSchema>;
+```
+
+## Prisma Schema (canonical)
+
+```prisma
+// prisma/schema.prisma
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+enum UserRole {
+  admin
+  editor
+  subscriber
+  @@map("user_role")
+}
+
+enum SuiteSourceType {
+  json
+  manual
+  ai
+  system
+  @@map("suite_source_type")
+}
+
+enum ComplexityLevel {
+  easy
+  medium
+  hard
+  @@map("complexity_level")
+}
+
+model User {
+  id           String   @id @default(cuid())
+  email        String   @unique
+  passwordHash String   @map("password_hash")
+  name         String?
+  role         UserRole @default(subscriber)
+  createdAt    DateTime @default(now()) @map("created_at")
+  updatedAt    DateTime @updatedAt @map("updated_at")
+
+  suites QuestionSuite[]
+
+  @@map("users")
+}
+
+model QuestionSuite {
+  id         String          @id @default(cuid())
+  title      String
+  language   String          @default("ru") @db.Char(2)
+  isSystem   Boolean         @default(false) @map("is_system")
+  sourceType SuiteSourceType @default(manual) @map("source_type")
+  createdAt  DateTime        @default(now()) @map("created_at")
+  updatedAt  DateTime        @updatedAt @map("updated_at")
+
+  createdById String? @map("created_by_id")
+  createdBy   User?   @relation(fields: [createdById], references: [id])
+
+  questions Question[]
+
+  @@map("question_suites")
+}
+
+model Question {
+  id              String          @id @default(cuid())
+  legacyId        Int?            @map("legacy_id")
+  questionContent String          @map("question_content") @db.Text
+  complexityLevel ComplexityLevel @map("complexity_level")
+  answersList     Json?           @map("answers_list")
+  answerType      String          @map("answer_type") @db.VarChar(10)
+  rightAnswerId   Int?            @map("right_answer_id")
+  rightAnswerString String?       @map("right_answer_string") @db.VarChar(500)
+  sortOrder       Int             @default(0) @map("sort_order")
+
+  suiteId String        @map("suite_id")
+  suite   QuestionSuite @relation(fields: [suiteId], references: [id], onDelete: Cascade)
+
+  @@map("questions")
+}
+```
+
+## Миграции (правила)
+
+1. Никогда не используй `prisma db push` в продакшне — только `prisma migrate deploy`
+2. Именуй миграции описательно: `add_question_suite_model`, `add_user_role_enum`
+3. После изменения schema — запускай `prisma generate`
+4. Полные правила: [`docs/architecture/migration-best-practices.md`](../../docs/architecture/migration-best-practices.md)
+
+## Seedding
+
+```typescript
+// prisma/seed.ts
+import { prisma } from '@/lib/db';
+import bcrypt from 'bcryptjs';
+
+async function main() {
+  // Admin user
+  const passwordHash = await bcrypt.hash('admin_password', 12);
+  await prisma.user.upsert({
+    where: { email: 'admin@example.com' },
+    update: {},
+    create: {
+      email: 'admin@example.com',
+      passwordHash,
+      name: 'Administrator',
+      role: 'admin',
+    },
+  });
+}
+
+main()
+  .catch(console.error)
+  .finally(() => prisma.$disconnect());
+```
+
+## Checklist
+
+- [ ] `lib/db.ts` — единственный `new PrismaClient()`
+- [ ] DAL функции — `import 'server-only'`
+- [ ] Server Actions — тонкие (auth + validate + DAL + revalidate)
+- [ ] Zod-схема для всех JSON-импортов
+- [ ] После schema changes — `prisma generate` + миграция

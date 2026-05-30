@@ -1,0 +1,2504 @@
+{
+    "title": "Books of Kings",
+    "language": "en",
+    "questionsList": [
+        {
+            "id": 1,
+            "questionContent": "Who was the priest that supported Adonijah's claim to the throne?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Abiathar"
+                },
+                {
+                    "id": 2,
+                    "value": "Zadok"
+                },
+                {
+                    "id": 3,
+                    "value": "Nathan"
+                },
+                {
+                    "id": 4,
+                    "value": "Hushai"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 2,
+            "questionContent": "According to 1 Kings, how many years did it take Solomon to build the Temple of the Lord?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Thirteen years"
+                },
+                {
+                    "id": 2,
+                    "value": "Seven years"
+                },
+                {
+                    "id": 3,
+                    "value": "Ten years"
+                },
+                {
+                    "id": 4,
+                    "value": "Forty years"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 3,
+            "questionContent": "Which king of Israel was known for his extreme wickedness and for being the husband of Jezebel?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Jeroboam"
+                },
+                {
+                    "id": 2,
+                    "value": "Jehu"
+                },
+                {
+                    "id": 3,
+                    "value": "Ahab"
+                },
+                {
+                    "id": 4,
+                    "value": "Baasha"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 4,
+            "questionContent": "What was the name of the mountain where Elijah challenged the prophets of Baal?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Mount Sinai"
+                },
+                {
+                    "id": 2,
+                    "value": "Mount Nebo"
+                },
+                {
+                    "id": 3,
+                    "value": "Mount Carmel"
+                },
+                {
+                    "id": 4,
+                    "value": "Mount Hermon"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 5,
+            "questionContent": "Who succeeded Elijah as the prophet of Israel?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Isaiah"
+                },
+                {
+                    "id": 2,
+                    "value": "Elisha"
+                },
+                {
+                    "id": 3,
+                    "value": "Amos"
+                },
+                {
+                    "id": 4,
+                    "value": "Jeremiah"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 6,
+            "questionContent": "Which Syrian general was healed of leprosy after washing seven times in the Jordan River?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Hazael"
+                },
+                {
+                    "id": 2,
+                    "value": "Rezin"
+                },
+                {
+                    "id": 3,
+                    "value": "Naaman"
+                },
+                {
+                    "id": 4,
+                    "value": "Ben-Hadad"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 7,
+            "questionContent": "How many years did the famine last in Israel during the days of Elijah?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Three and a half years"
+                },
+                {
+                    "id": 2,
+                    "value": "One year"
+                },
+                {
+                    "id": 3,
+                    "value": "Seven years"
+                },
+                {
+                    "id": 4,
+                    "value": "Twelve years"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 8,
+            "questionContent": "Which king of Judah was miraculously healed and given fifteen additional years of life?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Hezekiah"
+                },
+                {
+                    "id": 2,
+                    "value": "Ahaz"
+                },
+                {
+                    "id": 3,
+                    "value": "Jehoshaphat"
+                },
+                {
+                    "id": 4,
+                    "value": "Josiah"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 9,
+            "questionContent": "What was the name of the man who refused to sell his vineyard to King Ahab?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Obadiah"
+                },
+                {
+                    "id": 2,
+                    "value": "Micaiah"
+                },
+                {
+                    "id": 3,
+                    "value": "Naboth"
+                },
+                {
+                    "id": 4,
+                    "value": "Jehu"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 10,
+            "questionContent": "Which prophet was taken up to heaven in a whirlwind and a chariot of fire?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Enoch"
+                },
+                {
+                    "id": 2,
+                    "value": "Isaiah"
+                },
+                {
+                    "id": 3,
+                    "value": "Elisha"
+                },
+                {
+                    "id": 4,
+                    "value": "Elijah"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 11,
+            "questionContent": "Who was the son of Solomon who caused the kingdom to split into two?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Jeroboam"
+                },
+                {
+                    "id": 2,
+                    "value": "Adonijah"
+                },
+                {
+                    "id": 3,
+                    "value": "Rehoboam"
+                },
+                {
+                    "id": 4,
+                    "value": "Abijam"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 12,
+            "questionContent": "Which king of Israel established two golden calves, one in Bethel and one in Dan?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Ahab"
+                },
+                {
+                    "id": 2,
+                    "value": "Jehu"
+                },
+                {
+                    "id": 3,
+                    "value": "Omri"
+                },
+                {
+                    "id": 4,
+                    "value": "Jeroboam I"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 13,
+            "questionContent": "Which queen mother attempted to destroy the entire royal seed of the house of Judah?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Jezebel"
+                },
+                {
+                    "id": 2,
+                    "value": "Shelomith"
+                },
+                {
+                    "id": 3,
+                    "value": "Maakah"
+                },
+                {
+                    "id": 4,
+                    "value": "Athaliah"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 14,
+            "questionContent": "Who was the boy king hidden in the Temple for six years to escape Athaliah?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Uzziah"
+                },
+                {
+                    "id": 2,
+                    "value": "Josiah"
+                },
+                {
+                    "id": 3,
+                    "value": "Joash"
+                },
+                {
+                    "id": 4,
+                    "value": "Hezekiah"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 15,
+            "questionContent": "Against which Assyrian king did Hezekiah pray, resulting in the death of 185,000 soldiers by an angel?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Sargon II"
+                },
+                {
+                    "id": 2,
+                    "value": "Shalmaneser"
+                },
+                {
+                    "id": 3,
+                    "value": "Tiglath-Pileser"
+                },
+                {
+                    "id": 4,
+                    "value": "Sennacherib"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 16,
+            "questionContent": "Which king of Judah reigned the longest (55 years) and was initially very wicked but later repented?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Amon"
+                },
+                {
+                    "id": 2,
+                    "value": "Ahaz"
+                },
+                {
+                    "id": 3,
+                    "value": "Uzziah"
+                },
+                {
+                    "id": 4,
+                    "value": "Manasseh"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 17,
+            "questionContent": "Which prophet was known for 'the sound of a gentle whisper' after a wind, earthquake, and fire?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Elisha"
+                },
+                {
+                    "id": 2,
+                    "value": "Elijah"
+                },
+                {
+                    "id": 3,
+                    "value": "Samuel"
+                },
+                {
+                    "id": 4,
+                    "value": "Micaiah"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 18,
+            "questionContent": "In which city did Solomon build his extravagant palace, which took thirteen years?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Bethlehem"
+                },
+                {
+                    "id": 2,
+                    "value": "Hebron"
+                },
+                {
+                    "id": 3,
+                    "value": "Shechem"
+                },
+                {
+                    "id": 4,
+                    "value": "Jerusalem"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 19,
+            "questionContent": "Which king of Israel was killed by Jehu after he was anointed by a young prophet?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Joram (Jehoram)"
+                },
+                {
+                    "id": 2,
+                    "value": "Ahab"
+                },
+                {
+                    "id": 3,
+                    "value": "Baasha"
+                },
+                {
+                    "id": 4,
+                    "value": "Zimri"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 20,
+            "questionContent": "What was the name of the Phoenician king of Tyre who provided cedar and gold for Solomon's projects?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Hiram"
+                },
+                {
+                    "id": 2,
+                    "value": "Ethbaal"
+                },
+                {
+                    "id": 3,
+                    "value": "Ben-Hadad"
+                },
+                {
+                    "id": 4,
+                    "value": "Abibaal"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 21,
+            "questionContent": "Which daughter of the king of Tyre married Ahab and introduced Baal worship to Israel on a massive scale?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Jezebel"
+                },
+                {
+                    "id": 2,
+                    "value": "Michal"
+                },
+                {
+                    "id": 3,
+                    "value": "Athaliah"
+                },
+                {
+                    "id": 4,
+                    "value": "Gomer"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 22,
+            "questionContent": "How many water jugs did Elijah have poured over the sacrifice and wood on Mount Carmel?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Three"
+                },
+                {
+                    "id": 2,
+                    "value": "Seven"
+                },
+                {
+                    "id": 3,
+                    "value": "Twelve (once)"
+                },
+                {
+                    "id": 4,
+                    "value": "Four (three times, total 12)"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 23,
+            "questionContent": "Who was the servant of Elisha who was struck with leprosy because of his greed?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Obadiah"
+                },
+                {
+                    "id": 2,
+                    "value": "Hazael"
+                },
+                {
+                    "id": 3,
+                    "value": "Eutychus"
+                },
+                {
+                    "id": 4,
+                    "value": "Gehazi"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 24,
+            "questionContent": "Which king of Judah was famous for finding the Book of the Law in the Temple and leading a great spiritual reform?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Josiah"
+                },
+                {
+                    "id": 2,
+                    "value": "Jehoash"
+                },
+                {
+                    "id": 3,
+                    "value": "Manasseh"
+                },
+                {
+                    "id": 4,
+                    "value": "Hezekiah"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 25,
+            "questionContent": "To which city did Elijah flee when Jezebel threatened his life?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Zarephath"
+                },
+                {
+                    "id": 2,
+                    "value": "Jerusalem"
+                },
+                {
+                    "id": 3,
+                    "value": "Beersheba (and then to Horeb)"
+                },
+                {
+                    "id": 4,
+                    "value": "Damascus"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 26,
+            "questionContent": "Which king of Israel was the father of Ahab and established Samaria as the capital?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Jeroboam I"
+                },
+                {
+                    "id": 2,
+                    "value": "Omri"
+                },
+                {
+                    "id": 3,
+                    "value": "Baasha"
+                },
+                {
+                    "id": 4,
+                    "value": "Jehu"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 27,
+            "questionContent": "Who was the widow that Elijah stayed with in Sidon during the famine?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Ruth"
+                },
+                {
+                    "id": 2,
+                    "value": "The widow of Zarephath"
+                },
+                {
+                    "id": 3,
+                    "value": "The Shunammite woman"
+                },
+                {
+                    "id": 4,
+                    "value": "Naomi"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 28,
+            "questionContent": "What did Elisha ask for from Elijah before he was taken up?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "His mantle"
+                },
+                {
+                    "id": 2,
+                    "value": "A double portion of his spirit"
+                },
+                {
+                    "id": 3,
+                    "value": "To go to heaven with him"
+                },
+                {
+                    "id": 4,
+                    "value": "Wisdom"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 29,
+            "questionContent": "Which king of Aram (Syria) sent a letter and money with Naaman to the king of Israel?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Rezin"
+                },
+                {
+                    "id": 2,
+                    "value": "Tiglath-Pileser"
+                },
+                {
+                    "id": 3,
+                    "value": "Hazael"
+                },
+                {
+                    "id": 4,
+                    "value": "Ben-Hadad II"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 30,
+            "questionContent": "What happened to the children (young men) of Bethel who mocked Elisha?), calling him 'Baldy'?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "They were struck with blindness"
+                },
+                {
+                    "id": 2,
+                    "value": "They were turned into stone"
+                },
+                {
+                    "id": 3,
+                    "value": "Fire came down from heaven"
+                },
+                {
+                    "id": 4,
+                    "value": "Two she-bears came out and mauled forty-two of them"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 31,
+            "questionContent": "Which king of Israel only reigned for seven days and then committed suicide seting the palace on fire?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Zimri"
+                },
+                {
+                    "id": 2,
+                    "value": "Shallum"
+                },
+                {
+                    "id": 3,
+                    "value": "Zechariah"
+                },
+                {
+                    "id": 4,
+                    "value": "Elah"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 32,
+            "questionContent": "Who was the prophet whose word about the end of the famine in Samaria was doubted by a king's official?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Elijah"
+                },
+                {
+                    "id": 2,
+                    "value": "Elisha"
+                },
+                {
+                    "id": 3,
+                    "value": "Micaiah"
+                },
+                {
+                    "id": 4,
+                    "value": "Obadiah"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 33,
+            "questionContent": "What did Josiah do when the Book of the Law was read to him?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "He rewarded the high priest"
+                },
+                {
+                    "id": 2,
+                    "value": "He tore his clothes in repentance"
+                },
+                {
+                    "id": 3,
+                    "value": "He threw it into the fire"
+                },
+                {
+                    "id": 4,
+                    "value": "He ignored it"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 34,
+            "questionContent": "Which Babylonian king finally destroyed Jerusalem and the Temple in the 11th year of Zedekiah?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Evil-Merodach"
+                },
+                {
+                    "id": 2,
+                    "value": "Cyrus"
+                },
+                {
+                    "id": 3,
+                    "value": "Belshazzar"
+                },
+                {
+                    "id": 4,
+                    "value": "Nebuchadnezzar"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 35,
+            "questionContent": "Who was the last king of Judah recorded in the Books of Kings?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Jehoiakim"
+                },
+                {
+                    "id": 2,
+                    "value": "Jehoahaz"
+                },
+                {
+                    "id": 3,
+                    "value": "Josiah"
+                },
+                {
+                    "id": 4,
+                    "value": "Zedekiah (reign) / Jehoiachin (release)"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 36,
+            "questionContent": "Who was the prophetess consulted by Josiah for the Book of the Law?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Huldah"
+                },
+                {
+                    "id": 2,
+                    "value": "Deborah"
+                },
+                {
+                    "id": 3,
+                    "value": "Miriam"
+                },
+                {
+                    "id": 4,
+                    "value": "Anna"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 37,
+            "questionContent": "Which king of Israel destroyed the house of Ahab in fulfillment of Elijah's prophecy?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Zimri"
+                },
+                {
+                    "id": 2,
+                    "value": "Jehoahaz"
+                },
+                {
+                    "id": 3,
+                    "value": "Baasha"
+                },
+                {
+                    "id": 4,
+                    "value": "Jehu"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 38,
+            "questionContent": "How many bulls were prepared for the sacrifice on Mount Carmel?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Twelve"
+                },
+                {
+                    "id": 2,
+                    "value": "One"
+                },
+                {
+                    "id": 3,
+                    "value": "Seven"
+                },
+                {
+                    "id": 4,
+                    "value": "Two (one for Baal, one for the Lord)"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 39,
+            "questionContent": "What happened to the axe head that fell into the Jordan River while Elisha was with a group of prophets?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Elisha made it float"
+                },
+                {
+                    "id": 2,
+                    "value": "It turned into wood"
+                },
+                {
+                    "id": 3,
+                    "value": "It was lost forever"
+                },
+                {
+                    "id": 4,
+                    "value": "A servant dived for it"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 40,
+            "questionContent": "Which king of Israel was known for his 'furious driving' of his chariot?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Jehu"
+                },
+                {
+                    "id": 2,
+                    "value": "Baasha"
+                },
+                {
+                    "id": 3,
+                    "value": "Ahab"
+                },
+                {
+                    "id": 4,
+                    "value": "Joram"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 41,
+            "questionContent": "Who was the queen of Sheba who visited Solomon to test him with hard questions?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Candace"
+                },
+                {
+                    "id": 2,
+                    "value": "Zenobia"
+                },
+                {
+                    "id": 3,
+                    "value": "Esther"
+                },
+                {
+                    "id": 4,
+                    "value": "She is unnamed (Queen of Sheba)"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 42,
+            "questionContent": "How many wives and concubines did Solomon have eventually?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "300 wives and 700 concubines"
+                },
+                {
+                    "id": 2,
+                    "value": "Thousand wives (no concubines mentioned)"
+                },
+                {
+                    "id": 3,
+                    "value": "700 wives and 300 concubines"
+                },
+                {
+                    "id": 4,
+                    "value": "100 wives and 50 concubines"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 43,
+            "questionContent": "Which prophet told Jeroboam I that he would be king over ten tribes using a torn robe?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Shemaiah"
+                },
+                {
+                    "id": 2,
+                    "value": "Nathan"
+                },
+                {
+                    "id": 3,
+                    "value": "Micaiah"
+                },
+                {
+                    "id": 4,
+                    "value": "Ahijah the Shilonite"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 44,
+            "questionContent": "Which city did Solomon build up specifically for his horses and chariots?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Hebron"
+                },
+                {
+                    "id": 2,
+                    "value": "Samaria"
+                },
+                {
+                    "id": 3,
+                    "value": "Jericho"
+                },
+                {
+                    "id": 4,
+                    "value": "Megiddo and Hazor"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 45,
+            "questionContent": "Who was the High Priest who found the Book of the Law inside the Temple?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Zadok"
+                },
+                {
+                    "id": 2,
+                    "value": "Abiathar"
+                },
+                {
+                    "id": 3,
+                    "value": "Hilkiah"
+                },
+                {
+                    "id": 4,
+                    "value": "Jehoiada"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 46,
+            "questionContent": "Who was the counselor who advised Rehoboam to answer the people roughly?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Joab"
+                },
+                {
+                    "id": 2,
+                    "value": "The elders"
+                },
+                {
+                    "id": 3,
+                    "value": "The young men who grew up with him"
+                },
+                {
+                    "id": 4,
+                    "value": "Ahithophel"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 47,
+            "questionContent": "Against which city did Josiah initiate a reform, even though it was in the territory of the former northern kingdom?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Shechem"
+                },
+                {
+                    "id": 2,
+                    "value": "Bethel"
+                },
+                {
+                    "id": 3,
+                    "value": "Samaria"
+                },
+                {
+                    "id": 4,
+                    "value": "Dan"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 48,
+            "questionContent": "Which king of Israel was the owner of the Hill of Samaria before Omri bought it?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Sihon"
+                },
+                {
+                    "id": 2,
+                    "value": "Naboth"
+                },
+                {
+                    "id": 3,
+                    "value": "Shemer"
+                },
+                {
+                    "id": 4,
+                    "value": "Og"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 49,
+            "questionContent": "Who were the two pillars of the porch of the Temple named?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Abner and Joab"
+                },
+                {
+                    "id": 2,
+                    "value": "Jachin and Boaz"
+                },
+                {
+                    "id": 3,
+                    "value": "Urim and Thummim"
+                },
+                {
+                    "id": 4,
+                    "value": "Alpha and Omega"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 50,
+            "questionContent": "Which king of Israel was blinded and taken to Babylon after seeing his sons killed?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Zedekiah"
+                },
+                {
+                    "id": 2,
+                    "value": "Hezekiah"
+                },
+                {
+                    "id": 3,
+                    "value": "Jehoiachin"
+                },
+                {
+                    "id": 4,
+                    "value": "Manasseh"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 51,
+            "questionContent": "Who was the prophet that rebuked Ahab for Naboth's murder?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Gad"
+                },
+                {
+                    "id": 2,
+                    "value": "Elijah"
+                },
+                {
+                    "id": 3,
+                    "value": "Elisha"
+                },
+                {
+                    "id": 4,
+                    "value": "Nathan"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 52,
+            "questionContent": "How many years did the widow's jar of oil and bin of flour not fail during the famine Elijah announced?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Daily for life"
+                },
+                {
+                    "id": 2,
+                    "value": "Until the Lord sent rain (approx 3.5 years)"
+                },
+                {
+                    "id": 3,
+                    "value": "One year"
+                },
+                {
+                    "id": 4,
+                    "value": "Seven years"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 53,
+            "questionContent": "What did Elisha do to heal the 'bad water' in Jericho?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "He poured oil on it"
+                },
+                {
+                    "id": 2,
+                    "value": "He struck it with his mantle"
+                },
+                {
+                    "id": 3,
+                    "value": "He threw salt into the spring"
+                },
+                {
+                    "id": 4,
+                    "value": "He prayed three times"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 54,
+            "questionContent": "Which king of Aram was murdered by Hazael with a wet cloth?), as predicted by Elisha?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Hadad-Ezer"
+                },
+                {
+                    "id": 2,
+                    "value": "Tiglath"
+                },
+                {
+                    "id": 3,
+                    "value": "Ben-Hadad"
+                },
+                {
+                    "id": 4,
+                    "value": "Rezin"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 55,
+            "questionContent": "In which city did Elijah encounter a chariot of fire?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "In Samaria"
+                },
+                {
+                    "id": 2,
+                    "value": "On Mount Carmel"
+                },
+                {
+                    "id": 3,
+                    "value": "Between Jericho and the Jordan"
+                },
+                {
+                    "id": 4,
+                    "value": "In Horeb"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 56,
+            "questionContent": "How many descendants of Ahab did Jehu have killed in Samaria?), specifically the 'seventy sons'?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Twelve sons"
+                },
+                {
+                    "id": 2,
+                    "value": "All of them (uncounted)"
+                },
+                {
+                    "id": 3,
+                    "value": "Seventy sons"
+                },
+                {
+                    "id": 4,
+                    "value": "Ten sons"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 57,
+            "questionContent": "Who was the priest who crowned Joash king?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Jehoiada"
+                },
+                {
+                    "id": 2,
+                    "value": "Hilkiah"
+                },
+                {
+                    "id": 3,
+                    "value": "Abiathar"
+                },
+                {
+                    "id": 4,
+                    "value": "Zadok"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 58,
+            "questionContent": "Who was the Assyrian king who captured Samaria and led Israel into exile in 722 BC?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Cyrus"
+                },
+                {
+                    "id": 2,
+                    "value": "Nebuchadnezzar"
+                },
+                {
+                    "id": 3,
+                    "value": "Sennacherib"
+                },
+                {
+                    "id": 4,
+                    "value": "Shalmaneser V (Sargon II completed it)"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 59,
+            "questionContent": "Which king of Judah 'did right in the sight of the Lord' and even destroyed the bronze serpent Moses had made because the people offered incense to it?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Josiah"
+                },
+                {
+                    "id": 2,
+                    "value": "Asa"
+                },
+                {
+                    "id": 3,
+                    "value": "Hezekiah"
+                },
+                {
+                    "id": 4,
+                    "value": "Jehu"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 60,
+            "questionContent": "What was the name of the place where Elisha died?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Jericho"
+                },
+                {
+                    "id": 2,
+                    "value": "Bethel"
+                },
+                {
+                    "id": 3,
+                    "value": "Jerusalem" },
+                {
+                    "id": 4,
+                    "value": "Not named (likely in Samaria or his home)"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 61,
+            "questionContent": "How many years did Solomon reign over Israel?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Twelfth"
+                },
+                {
+                    "id": 2,
+                    "value": "Thirty-three years"
+                },
+                {
+                    "id": 3,
+                    "value": "Forty years"
+                },
+                {
+                    "id": 4,
+                    "value": "Seventy years"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 62,
+            "questionContent": "Who was the mother of Rehoboam?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Maakah"
+                },
+                {
+                    "id": 2,
+                    "value": "Michal"
+                },
+                {
+                    "id": 3,
+                    "value": "Naamah the Ammonitess"
+                },
+                {
+                    "id": 4,
+                    "value": "Bathsheba"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 63,
+            "questionContent": "Which king of Israel was known as 'the son of Nimshi'?),.",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Omri"
+                },
+                {
+                    "id": 2,
+                    "value": "Baasha"
+                },
+                {
+                    "id": 3,
+                    "value": "Jehu"
+                },
+                {
+                    "id": 4,
+                    "value": "Ahab"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 64,
+            "questionContent": "Who was the man who struck Ahab with an arrow 'at random' during the battle at Ramoth-Gilead?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "An unnamed Syrian soldier"
+                },
+                {
+                    "id": 2,
+                    "value": "Jehu"
+                },
+                {
+                    "id": 3,
+                    "value": "Hazael"
+                },
+                {
+                    "id": 4,
+                    "value": "Ben-Hadad"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 65,
+            "questionContent": "How many prophets of Baal were there on Mount Carmel?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "850"
+                },
+                {
+                    "id": 2,
+                    "value": "100" },
+                {
+                    "id": 3,
+                    "value": "400"
+                },
+                {
+                    "id": 4,
+                    "value": "450"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 66,
+            "questionContent": "How many prophets of Asherah did Elijah challenge?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "450"
+                },
+                {
+                    "id": 2,
+                    "value": "400"
+                },
+                {
+                    "id": 3,
+                    "value": "850"
+                },
+                {
+                    "id": 4,
+                    "value": "None (they didn't show up according to some readings)"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 67,
+            "questionContent": "Who was the 'head' of the prophets who hidden 100 prophets in caves?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Elisha"
+                },
+                {
+                    "id": 2,
+                    "value": "Samuel"
+                },
+                {
+                    "id": 3,
+                    "value": "Obadiah (the palace official)"
+                },
+                {
+                    "id": 4,
+                    "value": "Elijah"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 68,
+            "questionContent": "Which city did Omri build and make the capital of Israel?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Shechem"
+                },
+                {
+                    "id": 2,
+                    "value": "Jerusalem"
+                },
+                {
+                    "id": 3,
+                    "value": "Samaria"
+                },
+                {
+                    "id": 4,
+                    "value": "Tirzah"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 69,
+            "questionContent": "What was the name of the place where Josiah was killed in battle against Pharaoh Necho?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Carchemish"
+                },
+                {
+                    "id": 2,
+                    "value": "Megiddo"
+                },
+                {
+                    "id": 3,
+                    "value": "Beth-Shean"
+                },
+                {
+                    "id": 4,
+                    "value": "Jerusalem"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 70,
+            "questionContent": "Who was the Babylonian governor appointed over the people of Judah after the destruction of Jerusalem?),.",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Johanan"
+                },
+                {
+                    "id": 2,
+                    "value": "Gedaliah"
+                },
+                {
+                    "id": 3,
+                    "value": "Serajah"
+                },
+                {
+                    "id": 4,
+                    "value": "Ishmael"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 71,
+            "questionContent": "Who was the king that Elijah told 'I have not troubled Israel, but you and your father's house have'?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Jehu"
+                },
+                {
+                    "id": 2,
+                    "value": "Baasha"
+                },
+                {
+                    "id": 3,
+                    "value": "Jeroboam"
+                },
+                {
+                    "id": 4,
+                    "value": "Ahab"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 72,
+            "questionContent": "Which king of Judah removed his grandmother Maakah from being queen mother because she made an obscene idol?),.",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Josiah"
+                },
+                {
+                    "id": 2,
+                    "value": "Hezekiah"
+                },
+                {
+                    "id": 3,
+                    "value": "Asa"
+                },
+                {
+                    "id": 4,
+                    "value": "Jehoshaphat"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 73,
+            "questionContent": "In which city did Solomon build the Temple?), specifically which mount?),.",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Mount Carmel"
+                },
+                {
+                    "id": 2,
+                    "value": "Mount Moriah"
+                },
+                {
+                    "id": 3,
+                    "value": "Mount Nebo"
+                },
+                {
+                    "id": 4,
+                    "value": "Mount Zion"
+                }
+            ],
+            "rightAnswerId": 2
+        },
+        {
+            "id": 74,
+            "questionContent": "Who was the High Priest that supported Solomon against Adonijah?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Nathan"
+                },
+                {
+                    "id": 2,
+                    "value": "Benaiah"
+                },
+                {
+                    "id": 3,
+                    "value": "Zadok"
+                },
+                {
+                    "id": 4,
+                    "value": "Abiathar"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 75,
+            "questionContent": "Who was the commander of Solomon's army after Joab was executed?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Joab"
+                },
+                {
+                    "id": 2,
+                    "value": "Amasa"
+                },
+                {
+                    "id": 3,
+                    "value": "Abner"
+                },
+                {
+                    "id": 4,
+                    "value": "Benaiah son of Jehoiada"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 76,
+            "questionContent": "What did Solomon say he wanted above all things when God appeared to him in a dream at Gibeon?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Wisdom (and an understanding heart)"
+                },
+                {
+                    "id": 2,
+                    "value": "The lives of his enemies"
+                },
+                {
+                    "id": 3,
+                    "value": "Riches"
+                },
+                {
+                    "id": 4,
+                    "value": "Long life"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 77,
+            "questionContent": "What was the name of the woman whose son Elisha raised in Shunem?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Ruth"
+                },
+                {
+                    "id": 2,
+                    "value": "Zarephath widow"
+                },
+                {
+                    "id": 3,
+                    "value": "Bathsheba"
+                },
+                {
+                    "id": 4,
+                    "value": "The Shunammite woman (unnamed)"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 78,
+            "questionContent": "Which king of Israel built the city of Jezreel where he had a second palace?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Ahab"
+                },
+                {
+                    "id": 2,
+                    "value": "Omri"
+                },
+                {
+                    "id": 3,
+                    "value": "Jehu"
+                },
+                {
+                    "id": 4,
+                    "value": "Jeroboam II"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 79,
+            "questionContent": "Which king of Israel was known for having seventy sons killed by the elders of Samaria?).",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Ahab (his sons)"
+                },
+                {
+                    "id": 2,
+                    "value": "Omri"
+                },
+                {
+                    "id": 3,
+                    "value": "Jehu"
+                },
+                {
+                    "id": 4,
+                    "value": "Baasha"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 80,
+            "questionContent": "What was the name of the place where Zimri commit suicide?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Shechem"
+                },
+                {
+                    "id": 2,
+                    "value": "Samaria"
+                },
+                {
+                    "id": 3,
+                    "value": "Jericho"
+                },
+                {
+                    "id": 4,
+                    "value": "Tirzah (the palace)"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 81,
+            "questionContent": "Which king of Israel had a ivory palace mentioned in 1 Kings 22?),.",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Jehu"
+                },
+                {
+                    "id": 2,
+                    "value": "Solomon"
+                },
+                {
+                    "id": 3,
+                    "value": "Jeroboam II"
+                },
+                {
+                    "id": 4,
+                    "value": "Ahab"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 82,
+            "questionContent": "Who was the prophet who told Hezekiah he would die?),.",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Jeremiah"
+                },
+                {
+                    "id": 2,
+                    "value": "Micah"
+                },
+                {
+                    "id": 3,
+                    "value": "Hosea"
+                },
+                {
+                    "id": 4,
+                    "value": "Isaiah"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 83,
+            "questionContent": "How many chariots and horsemen did Solomon have?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "1,400 chariots and 12,000 horsemen"
+                },
+                {
+                    "id": 2,
+                    "value": "40,000 stalls (stalls vs horsemen varies)"
+                },
+                {
+                    "id": 3,
+                    "value": "5,000 horsemen"
+                },
+                {
+                    "id": 4,
+                    "value": "100 chariots"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 84,
+            "questionContent": "In which city did Elijah pray for the drought to end?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Zarephath"
+                },
+                {
+                    "id": 2,
+                    "value": "Samaria"
+                },
+                {
+                    "id": 3,
+                    "value": "Mount Carmel (top of)"
+                },
+                {
+                    "id": 4,
+                    "value": "Jericho"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 85,
+            "questionContent": "Which king of Aram was Hazael's son after Ben-Hadad?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Ben-Hadad III"
+                },
+                {
+                    "id": 2,
+                    "value": "Tiglath"
+                },
+                {
+                    "id": 3,
+                    "value": "Rezin"
+                },
+                {
+                    "id": 4,
+                    "value": "Sargon"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 86,
+            "questionContent": "Who was the man from Bethlehem who was known as the 'wisest' besides Solomon?),.",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Ethan, Heman, Calcol, and Darda"
+                },
+                {
+                    "id": 2,
+                    "value": "Eliab"
+                },
+                {
+                    "id": 3,
+                    "value": "Nathan"
+                },
+                {
+                    "id": 4,
+                    "value": "David"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 87,
+            "questionContent": "Which king of Israel was king when Elisha had his final prophecy and died?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Jeroboam II"
+                },
+                {
+                    "id": 2,
+                    "value": "Jehoahaz"
+                },
+                {
+                    "id": 3,
+                    "value": "Jehu"
+                },
+                {
+                    "id": 4,
+                    "value": "Jehoash (Joash)"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 88,
+            "questionContent": "How many times did Joash of Israel strike the ground with arrows when Elisha told him to?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Three times"
+                },
+                {
+                    "id": 2,
+                    "value": "Once"
+                },
+                {
+                    "id": 3,
+                    "value": "Seven times"
+                },
+                {
+                    "id": 4,
+                    "value": "Five times"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 89,
+            "questionContent": "Which kingdom fell first to a foreign power?),.",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Moab"
+                },
+                {
+                    "id": 2,
+                    "value": "Judah (Southern)"
+                },
+                {
+                    "id": 3,
+                    "value": "Aram"
+                },
+                {
+                    "id": 4,
+                    "value": "Israel (Northern)"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 90,
+            "questionContent": "Who was the High Priest that led the revolt against Athaliah?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Zadok"
+                },
+                {
+                    "id": 2,
+                    "value": "Abiathar"
+                },
+                {
+                    "id": 3,
+                    "value": "Hilkiah"
+                },
+                {
+                    "id": 4,
+                    "value": "Jehoiada"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 91,
+            "questionContent": "In which city did Elisha raise the Shunammite's son?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Jezreel"
+                },
+                {
+                    "id": 2,
+                    "value": "Jericho"
+                },
+                {
+                    "id": 3,
+                    "value": "Samaria"
+                },
+                {
+                    "id": 4,
+                    "value": "Shunem"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 92,
+            "questionContent": "What did Elisha do when the widow had nothing but a jar of oil?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "He prayed for rain"
+                },
+                {
+                    "id": 2,
+                    "value": "He sent her to Egypt"
+                },
+                {
+                    "id": 3,
+                    "value": "He told her to borrow jars from all her neighbors"
+                },
+                {
+                    "id": 4,
+                    "value": "He gave her gold"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 93,
+            "questionContent": "Who was the prophet whose bones revived a dead man when he was thrown into his grave?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Moses"
+                },
+                {
+                    "id": 2,
+                    "value": "Samuel"
+                },
+                {
+                    "id": 3,
+                    "value": "Elijah"
+                },
+                {
+                    "id": 4,
+                    "value": "Elisha"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 94,
+            "questionContent": "Who was the king that sought out Elisha for 'the chariot and horsemen of Israel'?",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Jehoram"
+                },
+                {
+                    "id": 2,
+                    "value": "Ahab"
+                },
+                {
+                    "id": 3,
+                    "value": "Jehu"
+                },
+                {
+                    "id": 4,
+                    "value": "Jehoash (Joash)"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 95,
+            "questionContent": "Which king of Judah was struck with leprosy for trying to burn incense in the Temple?),.",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Azariah (Uzziah)"
+                },
+                {
+                    "id": 2,
+                    "value": "Josiah"
+                },
+                {
+                    "id": 3,
+                    "value": "Hezekiah"
+                },
+                {
+                    "id": 4,
+                    "value": "Ahaz"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 96,
+            "questionContent": "Which king of Judah had a sun-dial mentioned as a sign from God?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Both are mentioned"
+                },
+                {
+                    "id": 2,
+                    "value": "Ahaz (was his dial)"
+                },
+                {
+                    "id": 3,
+                    "value": "Hezekiah"
+                },
+                {
+                    "id": 4,
+                    "value": "Josiah"
+                }
+            ],
+            "rightAnswerId": 3
+        },
+        {
+            "id": 97,
+            "questionContent": "Who was the Assyrian officer who taunted the people on the walls of Jerusalem during Hezekiah's reign?",
+            "complexityLevel": "hard",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Tartan"
+                },
+                {
+                    "id": 2,
+                    "value": "Sennacherib"
+                },
+                {
+                    "id": 3,
+                    "value": "Rabsaris"
+                },
+                {
+                    "id": 4,
+                    "value": "Rabshakeh"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 98,
+            "questionContent": "How many years was the exile to Babylon predicted to last?),.",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Seventy years"
+                },
+                {
+                    "id": 2,
+                    "value": "Forty years"
+                },
+                {
+                    "id": 3,
+                    "value": "One hundred years"
+                },
+                {
+                    "id": 4,
+                    "value": "Fifty years"
+                }
+            ],
+            "rightAnswerId": 1
+        },
+        {
+            "id": 99,
+            "questionContent": "Who was the priest who hid the Book of the Law inside the Temple?),.",
+            "complexityLevel": "medium",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Zadok"
+                },
+                {
+                    "id": 2,
+                    "value": "Jehoiada"
+                },
+                {
+                    "id": 3,
+                    "value": "Azariah"
+                },
+                {
+                    "id": 4,
+                    "value": "Hilkiah"
+                }
+            ],
+            "rightAnswerId": 4
+        },
+        {
+            "id": 100,
+            "questionContent": "In which city was the Temple of the Lord located?",
+            "complexityLevel": "easy",
+            "answerType": "ID",
+            "answersList": [
+                {
+                    "id": 1,
+                    "value": "Bethany"
+                },
+                {
+                    "id": 2,
+                    "value": "Jerusalem"
+                },
+                {
+                    "id": 3,
+                    "value": "Hebron"
+                },
+                {
+                    "id": 4,
+                    "value": "Samaria"
+                }
+            ],
+            "rightAnswerId": 2
+        }
+    ]
+}

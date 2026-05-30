@@ -1,0 +1,177 @@
+---
+description: React компоненты — 'use client', паттерны, именование, структура
+globs:
+  - "components/**"
+  - "app/**/*.tsx"
+alwaysApply: false
+---
+
+# React Component паттерны — проект «Алфавит»
+
+**Reference:** [`docs/examples/fitapp/.cursor/rules/react-logic-presentation.mdc`](../../docs/examples/fitapp/.cursor/rules/react-logic-presentation.mdc)
+
+## Основные правила
+
+### 'use client' для компонентов в components/
+
+Все файлы в `components/` — клиентские компоненты (используют хуки, Zustand, Framer Motion):
+
+```typescript
+// components/GameBoard.tsx
+'use client';
+
+import React from 'react';
+import { useGameStore } from '@/store';
+// ...
+```
+
+### Один компонент — один файл
+
+```
+❌ components/GameUI.tsx — несколько компонентов
+✅ components/GameBoard.tsx
+✅ components/ScoreBoard.tsx
+✅ components/Timer.tsx
+```
+
+### Именование
+
+- Компоненты: `PascalCase` — `QuestionModal`, `AdminSuiteTable`
+- Файлы: `PascalCase.tsx` — `QuestionModal.tsx`
+- Server компоненты в `app/`: могут быть lowercase `page.tsx`, `layout.tsx`
+- Client компоненты с суффиксом `.client.tsx` если нужно явно выделить
+
+### Props с типами
+
+```typescript
+// Явные интерфейсы Props
+interface QuestionModalProps {
+  question: Question;
+  onAnswer: (isCorrect: boolean) => void;
+  onClose: () => void;
+}
+
+export const QuestionModal: React.FC<QuestionModalProps> = ({ question, onAnswer, onClose }) => {
+  // ...
+};
+```
+
+## Admin Panel компоненты (shadcn/ui)
+
+Admin панель использует shadcn/ui:
+
+```typescript
+// components/admin/SuiteImportForm.tsx
+'use client';
+
+import { useState } from 'react';
+import { Button } from '@/components/ui/button';
+import { Textarea } from '@/components/ui/textarea';
+import { Alert, AlertDescription } from '@/components/ui/alert';
+import { importSuiteAction } from '@/src/actions/admin/import-suite';
+
+export function SuiteImportForm() {
+  const [json, setJson] = useState('');
+  const [error, setError] = useState<string | null>(null);
+  const [isPending, setIsPending] = useState(false);
+
+  async function handleSubmit() {
+    setIsPending(true);
+    setError(null);
+    try {
+      const data = JSON.parse(json);
+      const result = await importSuiteAction(data);
+      if (!result.success) setError(JSON.stringify(result.error));
+    } catch (e) {
+      setError('Invalid JSON format');
+    } finally {
+      setIsPending(false);
+    }
+  }
+
+  return (
+    <div className="space-y-4">
+      <Textarea
+        value={json}
+        onChange={(e) => setJson(e.target.value)}
+        placeholder='{"title": "...", "questionsList": [...]}'
+        rows={20}
+        className="font-mono text-sm"
+      />
+      {error && (
+        <Alert variant="destructive">
+          <AlertDescription>{error}</AlertDescription>
+        </Alert>
+      )}
+      <Button onClick={handleSubmit} disabled={isPending}>
+        {isPending ? 'Импорт...' : 'Импортировать набор'}
+      </Button>
+    </div>
+  );
+}
+```
+
+## Игровые компоненты (Zustand + Framer Motion)
+
+Игровые компоненты используют Zustand store:
+
+```typescript
+// components/Card.tsx
+'use client';
+
+import React from 'react';
+import { motion } from 'framer-motion';
+import type { CardData } from '@/types';
+
+interface CardProps {
+  data: CardData;
+  onClick: (id: number) => void;
+  disabled: boolean;
+}
+
+export const Card: React.FC<CardProps> = ({ data, onClick, disabled }) => {
+  // ...
+};
+```
+
+## Server Components в app/
+
+```typescript
+// app/admin/suites/page.tsx — Server Component
+import { getAllSuites } from '@/src/data/suites/get-suites.server';
+import { SuitesTable } from '@/components/admin/SuitesTable';
+
+export default async function SuitesPage() {
+  const suites = await getAllSuites();
+  return (
+    <div>
+      <h1>Наборы вопросов</h1>
+      <SuitesTable suites={suites} />  // <- Client Component
+    </div>
+  );
+}
+```
+
+## Tailwind классы
+
+- Использовать TailwindCSS v4 (npm, не CDN)
+- Кастомные CSS — только в `app/globals.css`
+- Утилита `cn()` для условных классов:
+
+```typescript
+// lib/utils.ts
+import { clsx, type ClassValue } from 'clsx';
+import { twMerge } from 'tailwind-merge';
+
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs));
+}
+```
+
+## Запрещено
+
+- Компоненты без `'use client'` в `components/` (если используют хуки)
+- Несколько экспортируемых компонентов в одном файле
+- `import { useRouter } from 'next/router'` → только `next/navigation`
+- Прямые вызовы Prisma в компонентах
+- `process.env.SECRET_KEY` в клиентских компонентах

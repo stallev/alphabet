@@ -1,0 +1,96 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../generated"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+// ─── Enums ────────────────────────────────────────────────────────────────────
+
+enum UserRole {
+  admin
+  editor
+  subscriber
+
+  @@map("user_role")
+}
+
+enum SuiteSourceType {
+  json
+  manual
+  ai
+  system
+
+  @@map("suite_source_type")
+}
+
+enum ComplexityLevel {
+  easy
+  medium
+  hard
+
+  @@map("complexity_level")
+}
+
+// ─── Models ───────────────────────────────────────────────────────────────────
+
+/// Пользователи системы (MVP: только admin)
+model User {
+  id           String   @id @default(cuid())
+  email        String   @unique
+  passwordHash String   @map("password_hash")
+  name         String?
+  role         UserRole @default(subscriber)
+  createdAt    DateTime @default(now()) @map("created_at")
+  updatedAt    DateTime @updatedAt @map("updated_at")
+
+  suites QuestionSuite[]
+
+  @@map("users")
+}
+
+/// Набор вопросов (библейская тема, уровни и т.д.)
+model QuestionSuite {
+  id          String          @id @default(cuid())
+  title       String          @db.VarChar(255)
+  language    String          @default("ru") @db.Char(2)
+  isSystem    Boolean         @default(false) @map("is_system")
+  sourceType  SuiteSourceType @default(manual) @map("source_type")
+  description String?         @db.Text
+  createdAt   DateTime        @default(now()) @map("created_at")
+  updatedAt   DateTime        @updatedAt @map("updated_at")
+
+  createdById String? @map("created_by_id")
+  createdBy   User?   @relation(fields: [createdById], references: [id], onDelete: SetNull)
+
+  questions Question[]
+
+  @@index([language])
+  @@index([isSystem])
+  @@map("question_suites")
+}
+
+/// Вопрос в наборе
+model Question {
+  id                String          @id @default(cuid())
+  /// Исходный числовой id из JSON (для обратной совместимости)
+  legacyId          Int?            @map("legacy_id")
+  questionContent   String          @map("question_content") @db.Text
+  complexityLevel   ComplexityLevel @map("complexity_level")
+  /// JSON-массив вариантов: [{id: number, value: string}] | null
+  answersList       Json?           @map("answers_list")
+  /// "ID" — ответ выбором из списка; "String" — ответ свободным текстом
+  answerType        String          @map("answer_type") @db.VarChar(10)
+  rightAnswerId     Int?            @map("right_answer_id")
+  rightAnswerString String?         @map("right_answer_string") @db.VarChar(500)
+  sortOrder         Int             @default(0) @map("sort_order")
+  createdAt         DateTime        @default(now()) @map("created_at")
+
+  suiteId String        @map("suite_id")
+  suite   QuestionSuite @relation(fields: [suiteId], references: [id], onDelete: Cascade)
+
+  @@index([suiteId])
+  @@map("questions")
+}
