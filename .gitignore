@@ -45,7 +45,7 @@ generated/
 next-env.d.ts
 
 # Docs examples (large reference projects)
-/docs/examples/**/*.*
+/docs/examples/
 
 # Test
 coverage/
