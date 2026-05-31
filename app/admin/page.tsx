@@ -1,15 +1,52 @@
+import { Suspense } from 'react';
+import { connection } from 'next/server';
 import { getAllSuites } from '@/src/data/suites/get-suites.server';
 import Link from 'next/link';
 
 export const metadata = { title: 'Admin Dashboard — Алфавит' };
 
-export default async function AdminDashboardPage() {
+async function DashboardStats() {
+  await connection();
   const suites = await getAllSuites();
-
   const total = suites.length;
   const system = suites.filter((s) => s.isSystem).length;
   const custom = suites.filter((s) => !s.isSystem).length;
 
+  return (
+    <div className="grid grid-cols-3 gap-4 mb-8">
+      {[
+        { label: 'Всего наборов', value: total, color: 'text-emerald-400' },
+        { label: 'Системных', value: system, color: 'text-blue-400' },
+        { label: 'Пользовательских', value: custom, color: 'text-amber-400' },
+      ].map((stat) => (
+        <div
+          key={stat.label}
+          className="bg-slate-900 border border-white/5 rounded-2xl p-6"
+        >
+          <div className={`text-3xl font-black ${stat.color}`}>{stat.value}</div>
+          <div className="text-slate-500 text-xs uppercase tracking-widest mt-1">
+            {stat.label}
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function StatsSkeleton() {
+  return (
+    <div className="grid grid-cols-3 gap-4 mb-8">
+      {[0, 1, 2].map((i) => (
+        <div key={i} className="bg-slate-900 border border-white/5 rounded-2xl p-6 animate-pulse">
+          <div className="h-9 w-12 bg-slate-800 rounded mb-2" />
+          <div className="h-3 w-24 bg-slate-800 rounded" />
+        </div>
+      ))}
+    </div>
+  );
+}
+
+export default function AdminDashboardPage() {
   return (
     <div className="p-8">
       <div className="mb-8">
@@ -19,26 +56,10 @@ export default async function AdminDashboardPage() {
         <p className="text-slate-500 text-xs mt-1">Управление контентом «Алфавит»</p>
       </div>
 
-      {/* Stats */}
-      <div className="grid grid-cols-3 gap-4 mb-8">
-        {[
-          { label: 'Всего наборов', value: total, color: 'text-emerald-400' },
-          { label: 'Системных', value: system, color: 'text-blue-400' },
-          { label: 'Пользовательских', value: custom, color: 'text-amber-400' },
-        ].map((stat) => (
-          <div
-            key={stat.label}
-            className="bg-slate-900 border border-white/5 rounded-2xl p-6"
-          >
-            <div className={`text-3xl font-black ${stat.color}`}>{stat.value}</div>
-            <div className="text-slate-500 text-xs uppercase tracking-widest mt-1">
-              {stat.label}
-            </div>
-          </div>
-        ))}
-      </div>
+      <Suspense fallback={<StatsSkeleton />}>
+        <DashboardStats />
+      </Suspense>
 
-      {/* Quick actions */}
       <div className="grid grid-cols-2 gap-4">
         <Link
           href="/admin/suites/import"
