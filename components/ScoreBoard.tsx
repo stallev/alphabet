@@ -80,15 +80,7 @@ export const ScoreBoard: React.FC = () => {
             </span>
           </div>
           
-          <button 
-            onClick={toggleMute}
-            className={`p-3 rounded-xl font-black transition-all shadow-md active:scale-95 ${
-              isMuted ? 'bg-slate-200 text-slate-400' : 'bg-white text-blue-600 border border-blue-100'
-            }`}
-            title={isMuted ? 'Unmute' : 'Mute'}
-          >
-            {isMuted ? '🔇' : '🔊'}
-          </button>
+          {/* Audio button hidden — sounds temporarily disabled */}
 
           {!isGameOver && (
             <>

@@ -14,7 +14,9 @@ const getCtx = () => {
 export type SoundType = 'flip' | 'match' | 'error' | 'correct' | 'win' | 'click';
 
 export const playSound = (type: SoundType, isMuted: boolean) => {
-  if (isMuted) return;
+  // Audio effects are temporarily disabled
+  return;
+  if (isMuted) return; // eslint-disable-line no-unreachable
   
   try {
     const ctx = getCtx();
