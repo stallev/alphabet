@@ -23,7 +23,9 @@ import { playSound } from './utils/audio';
 
 const TTL_MS = 3 * 24 * 60 * 60 * 1000;
 const LOCALE_STORAGE_KEY = 'alphabet_locale';
-const VALID_LOCALES: Locale[] = ['ru', 'en', 'uk', 'de', 'ro'];
+// Temporarily active locales — only languages with question suites in the DB.
+// Extend this list when uk/de/ro suites are added.
+const VALID_LOCALES: Locale[] = ['ru', 'en'];
 
 const getInitialLocale = (): Locale => {
   if (typeof window !== 'undefined') {
@@ -32,10 +34,7 @@ const getInitialLocale = (): Locale => {
   }
   if (typeof navigator === 'undefined') return 'ru';
   const lang = (navigator.language || (navigator as any).userLanguage || '').toLowerCase();
-  if (lang.startsWith('uk')) return 'uk';
   if (lang.startsWith('ru')) return 'ru';
-  if (lang.startsWith('de')) return 'de';
-  if (lang.startsWith('ro')) return 'ro';
   return 'en';
 };
 

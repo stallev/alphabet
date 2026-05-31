@@ -6,7 +6,9 @@ import { Locale } from '../types';
 import { LOCALE_META, ALPHABET_BY_LOCALE } from '../constants';
 import { useGameStore } from '../store';
 
-const LOCALES: Locale[] = ['ru', 'en', 'uk', 'de', 'ro'];
+// Temporarily active locales — only languages with question suites in the DB.
+// Full list (uk, de, ro) is preserved in types.ts, constants.ts, and LOCALE_META.
+const LOCALES: Locale[] = ['ru', 'en'];
 
 function getAlphabetHint(locale: Locale): string {
   const letters = ALPHABET_BY_LOCALE[locale];
