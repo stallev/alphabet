@@ -1,0 +1,2106 @@
+{
+  "title": "Книга Притчей Соломоновых",
+  "language": "ru",
+  "questionsList": [
+    {
+      "id": 1,
+      "questionContent": "Кто является главным составителем Книги Притчей согласно её заглавию?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Давид"},
+        {"id": 2, "value": "Соломон"},
+        {"id": 3, "value": "Иезекия"},
+        {"id": 4, "value": "Асаф"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 2,
+      "questionContent": "«Начало мудрости — ...» Закончите Притч. 1:7.",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "страх Господень"},
+        {"id": 2, "value": "смирение сердца"},
+        {"id": 3, "value": "молитва и пост"},
+        {"id": 4, "value": "любовь к ближнему"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 3,
+      "questionContent": "К кому обращается автор Книги Притчей на протяжении первых девяти глав?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "К царям и правителям Израиля"},
+        {"id": 2, "value": "К левитам и священникам"},
+        {"id": 3, "value": "К старцам и судьям народа"},
+        {"id": 4, "value": "К сыну"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 4,
+      "questionContent": "Закончите Притч. 3:5: «Надейся на Господа всем сердцем твоим, и не полагайся на...»",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "богатство своё"},
+        {"id": 2, "value": "силу свою"},
+        {"id": 3, "value": "разум свой"},
+        {"id": 4, "value": "близких своих"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 5,
+      "questionContent": "К какому насекомому обращает ленивца Притч. 6:6, призывая поучиться трудолюбию?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Муравей"},
+        {"id": 2, "value": "Пчела"},
+        {"id": 3, "value": "Шмель"},
+        {"id": 4, "value": "Светлячок"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 6,
+      "questionContent": "Что, по Притч. 15:1, «отвращает гнев»?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Молитва и пост"},
+        {"id": 2, "value": "Кроткий ответ"},
+        {"id": 3, "value": "Дар и подношение"},
+        {"id": 4, "value": "Молчание и уход"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 7,
+      "questionContent": "Что «предшествует падению», по Притч. 16:18?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Ложь"},
+        {"id": 2, "value": "Лень"},
+        {"id": 3, "value": "Гордость"},
+        {"id": 4, "value": "Гнев"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 8,
+      "questionContent": "Что утверждает Притч. 13:24 о воспитании с применением розги?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Кто много трудится, тот любит сына"},
+        {"id": 2, "value": "Кто хвалит сына, тот любит его"},
+        {"id": 3, "value": "Кто даёт сыну богатство, тот любит его"},
+        {"id": 4, "value": "Кто жалеет розги своей, тот ненавидит сына"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 9,
+      "questionContent": "Что делает настоящий друг, по Притч. 17:17?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Делит имущество в нужде"},
+        {"id": 2, "value": "Любит во всякое время"},
+        {"id": 3, "value": "Хранит тайну навсегда"},
+        {"id": 4, "value": "Первым мирится после ссоры"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 10,
+      "questionContent": "«Больше всего хранимого храни...» (Притч. 4:23). Что?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Сердце своё"},
+        {"id": 2, "value": "Уста свои"},
+        {"id": 3, "value": "Руки свои"},
+        {"id": 4, "value": "Ноги свои"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 11,
+      "questionContent": "Что, по Притч. 18:21, находится «во власти языка»?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Слава и бесчестие"},
+        {"id": 2, "value": "Мир и война"},
+        {"id": 3, "value": "Смерть и жизнь"},
+        {"id": 4, "value": "Богатство и нищета"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 12,
+      "questionContent": "Кто написал 30-ю главу Книги Притчей?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Ездра"},
+        {"id": 2, "value": "Соломон"},
+        {"id": 3, "value": "Лемуил"},
+        {"id": 4, "value": "Агур"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 13,
+      "questionContent": "Чему посвящена большая часть 31-й главы Книги Притчей (стихи 10–31)?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Страху Господню и его плодам"},
+        {"id": 2, "value": "Добродетельной жене"},
+        {"id": 3, "value": "Мудрости как основе закона"},
+        {"id": 4, "value": "Воспитанию детей в страхе Господнем"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 14,
+      "questionContent": "Кто, по заглавию Притч. 31:1, научил царя Лемуила изречённым словам?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Его мать"},
+        {"id": 2, "value": "Его отец"},
+        {"id": 3, "value": "Пророк Нафан"},
+        {"id": 4, "value": "Мудрецы двора"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 15,
+      "questionContent": "Что, по Притч. 22:1, лучше большого богатства?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Мудрость и разум"},
+        {"id": 2, "value": "Здоровье и долголетие"},
+        {"id": 3, "value": "Мир и тишина"},
+        {"id": 4, "value": "Доброе имя"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 16,
+      "questionContent": "Что Господь сделает со «стезями» того, кто во всех путях «познаёт Его»? (Притч. 3:6)",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Убережёт его от врагов"},
+        {"id": 2, "value": "Откроет тайны сердца его"},
+        {"id": 3, "value": "Направит их"},
+        {"id": 4, "value": "Благословит его дни"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 17,
+      "questionContent": "Что, по Притч. 20:1, говорится о том, кто «увлекается» вином и сикерой?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Он неразумен"},
+        {"id": 2, "value": "Он грешит против Господа"},
+        {"id": 3, "value": "Он погубит добро своё"},
+        {"id": 4, "value": "Он не войдёт в собрание"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 18,
+      "questionContent": "Что, по Притч. 6:8, делает муравей «во время жатвы»?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Готовит зерно для нужды зимой"},
+        {"id": 2, "value": "Собирает корм свой"},
+        {"id": 3, "value": "Прячется в земляных норах"},
+        {"id": 4, "value": "Охраняет запасы колонии"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 19,
+      "questionContent": "Что, по Притч. 19:17, делает тот, кто «благотворит бедному»?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Умножает своё богатство"},
+        {"id": 2, "value": "Обретает благоволение людей"},
+        {"id": 3, "value": "Откладывает запас себе"},
+        {"id": 4, "value": "Даёт взаймы Господу"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 20,
+      "questionContent": "Сколько глав в Книге Притчей?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "28"},
+        {"id": 2, "value": "29"},
+        {"id": 3, "value": "31"},
+        {"id": 4, "value": "33"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 21,
+      "questionContent": "Что, по Притч. 10:1, делает «мудрый сын»?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Умножает наследие отца"},
+        {"id": 2, "value": "Радует отца"},
+        {"id": 3, "value": "Прославляет имя Господа"},
+        {"id": 4, "value": "Чтит мать свою"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 22,
+      "questionContent": "Что, по Притч. 27:17, «острит» железо?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Железо"},
+        {"id": 2, "value": "Камень"},
+        {"id": 3, "value": "Огонь"},
+        {"id": 4, "value": "Вода"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 23,
+      "questionContent": "Кто, по заглавию Притч. 25:1, собрал притчи Соломона в этом разделе?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Священники при Иосии"},
+        {"id": 2, "value": "Пророки при Иезекии"},
+        {"id": 3, "value": "Книжники при Зоровавеле"},
+        {"id": 4, "value": "Мужи Езекии"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 24,
+      "questionContent": "Что, по Притч. 22:6, нужно сделать с юношей «при начале пути его»?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Дать ему наследство"},
+        {"id": 2, "value": "Женить его рано"},
+        {"id": 3, "value": "Наставить его"},
+        {"id": 4, "value": "Испытать его трудом"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 25,
+      "questionContent": "Каким образом Притч. 26:11 описывает возвращение «глупого» к его глупости?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Как пёс, возвращающийся на блевотину свою"},
+        {"id": 2, "value": "Как вол, влекущийся к бойне"},
+        {"id": 3, "value": "Как птица, летящая в расставленную сеть"},
+        {"id": 4, "value": "Как рыба, попавшаяся на крючок"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 26,
+      "questionContent": "Чего, по Притч. 27:1, не следует делать в отношении «завтрашнего дня»?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Планировать большие расходы"},
+        {"id": 2, "value": "Хвалиться им"},
+        {"id": 3, "value": "Откладывать все дела на него"},
+        {"id": 4, "value": "Давать обеты на него"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 27,
+      "questionContent": "Что «приходит» вместе с «гордостью», по Притч. 11:2?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Раздор"},
+        {"id": 2, "value": "Бедность"},
+        {"id": 3, "value": "Падение"},
+        {"id": 4, "value": "Посрамление"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 28,
+      "questionContent": "Что, по Притч. 17:22, «благотворно, как врачевство»?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Доброе слово"},
+        {"id": 2, "value": "Тихая молитва"},
+        {"id": 3, "value": "Весёлое сердце"},
+        {"id": 4, "value": "Мирный дом"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 29,
+      "questionContent": "Что, по Притч. 14:12, кажется человеку «прямым», но «конец» его — «путь к смерти»?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Путь, который кажется ему правильным"},
+        {"id": 2, "value": "Слова лести и неправды"},
+        {"id": 3, "value": "Путь самоправедности"},
+        {"id": 4, "value": "Дорога без знания закона"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 30,
+      "questionContent": "Что, по Притч. 18:10, является «крепкой башней»?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Крепость Сиона"},
+        {"id": 2, "value": "Имя Господа"},
+        {"id": 3, "value": "Слово мудрого"},
+        {"id": 4, "value": "Стена закона Его"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 31,
+      "questionContent": "Что, по Притч. 12:1, любит тот, кто «любит наставление»?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Слово Господне"},
+        {"id": 2, "value": "Мудрость и разум"},
+        {"id": 3, "value": "Знание"},
+        {"id": 4, "value": "Путь праведных"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 32,
+      "questionContent": "Что, по Притч. 31:10, «дороже жемчугов»?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Истинная мудрость"},
+        {"id": 2, "value": "Благочестивый муж"},
+        {"id": 3, "value": "Верный и преданный друг"},
+        {"id": 4, "value": "Добродетельная жена"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 33,
+      "questionContent": "Что, по Притч. 31:30, является «суетной»?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Власть и мирская слава"},
+        {"id": 2, "value": "Красота"},
+        {"id": 3, "value": "Земное богатство"},
+        {"id": 4, "value": "Молодость и сила"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 34,
+      "questionContent": "В какой главе Книги Притчей Мудрость представлена как Личность, присутствовавшая при сотворении мира?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Глава 8"},
+        {"id": 2, "value": "Глава 16"},
+        {"id": 3, "value": "Глава 22"},
+        {"id": 4, "value": "Глава 30"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 35,
+      "questionContent": "Что, по Притч. 4:7, является «главным»?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Страх Господень"},
+        {"id": 2, "value": "Молитва и пост"},
+        {"id": 3, "value": "Послушание родителям"},
+        {"id": 4, "value": "Мудрость"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 36,
+      "questionContent": "Сколько вещей, «ненавидимых» Господом, перечислено в Притч. 6:16–19?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Пять"},
+        {"id": 2, "value": "Шесть"},
+        {"id": 3, "value": "Семь"},
+        {"id": 4, "value": "Восемь"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 37,
+      "questionContent": "Что, по Притч. 10:12, «покрывает все грехи»?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Любовь"},
+        {"id": 2, "value": "Смирение"},
+        {"id": 3, "value": "Покаяние"},
+        {"id": 4, "value": "Долготерпение"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 38,
+      "questionContent": "Сколько столбов было у дома, который построила Мудрость? (Притч. 9:1)",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Пять"},
+        {"id": 2, "value": "Семь"},
+        {"id": 3, "value": "Девять"},
+        {"id": 4, "value": "Двенадцать"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 39,
+      "questionContent": "Что, по Притч. 20:27, является «светильником Господним»?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Закон Господень"},
+        {"id": 2, "value": "Слово пророческое"},
+        {"id": 3, "value": "Скиния собрания"},
+        {"id": 4, "value": "Дух человека"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 40,
+      "questionContent": "Что, по Притч. 15:17, «лучше откормленного быка»?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Хлеб и вода в тишине"},
+        {"id": 2, "value": "Простая трапеза с братьями"},
+        {"id": 3, "value": "Блюдо зелени, когда там любовь"},
+        {"id": 4, "value": "Скудная еда с праведниками"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 41,
+      "questionContent": "Что, по Притч. 25:11, «подобно золотым яблокам в серебряных прозрачных сосудах»?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Слово мудрого учителя"},
+        {"id": 2, "value": "Слово, сказанное вовремя"},
+        {"id": 3, "value": "Слово закона Господня"},
+        {"id": 4, "value": "Слово искренней хвалы"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 42,
+      "questionContent": "С чем, по Притч. 21:9, сравнивается жизнь на «углу кровли»?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Лучше, чем жить со сварливой женой в пространном доме"},
+        {"id": 2, "value": "Лучше, чем жить в шатре в пустыне"},
+        {"id": 3, "value": "Лучше, чем жить в доме у дороги"},
+        {"id": 4, "value": "Лучше, чем жить с ленивым слугой"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 43,
+      "questionContent": "Кто, по Притч. 16:9, «управляет шествием» человека, несмотря на его планы?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Судьба народов"},
+        {"id": 2, "value": "Мера воздаяния"},
+        {"id": 3, "value": "Время и обстоятельства"},
+        {"id": 4, "value": "Господь"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 44,
+      "questionContent": "В Притч. 23:29–35 описываются последствия пьянства. Что, согласно стиху 32, «ужалит, как змей»?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Горечь похмелья"},
+        {"id": 2, "value": "Тяжесть долгов пьяницы"},
+        {"id": 3, "value": "Вино"},
+        {"id": 4, "value": "Зависть и гнев"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 45,
+      "questionContent": "Что, по Притч. 29:18, происходит с народом «без откровения свыше»?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Он гибнет в войнах"},
+        {"id": 2, "value": "Он необуздан"},
+        {"id": 3, "value": "Он впадает в идолопоклонство"},
+        {"id": 4, "value": "Он скудеет в нищете"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 46,
+      "questionContent": "Что, по Притч. 25:21–22, нужно сделать с «голодным» врагом?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Накормить его хлебом"},
+        {"id": 2, "value": "Предложить ему мир"},
+        {"id": 3, "value": "Позвать его в гости"},
+        {"id": 4, "value": "Поделиться с ним имением"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 47,
+      "questionContent": "Что, по Притч. 16:32, «лучше завоевателя города»?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Мудрец, говорящий правду"},
+        {"id": 2, "value": "Воин, берегущий братьев"},
+        {"id": 3, "value": "Судья, блюдущий закон"},
+        {"id": 4, "value": "Долготерпеливый и владеющий собой"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 48,
+      "questionContent": "В Притч. 30:4 Агур задаёт вопросы о Господе. Каким вопросом завершается этот отрывок?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Назови мне место пребывания Его и имя Его великое"},
+        {"id": 2, "value": "Покажи мне путь Его и тайну Его силы"},
+        {"id": 3, "value": "Каково имя Его и каково имя Сына Его?"},
+        {"id": 4, "value": "Открой мне тайны Его и дела творения Его"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 49,
+      "questionContent": "Что, по Притч. 12:4, является «венцом для мужа своего»?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Покорная жена"},
+        {"id": 2, "value": "Добродетельная жена"},
+        {"id": 3, "value": "Красивая жена"},
+        {"id": 4, "value": "Мудрая жена"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 50,
+      "questionContent": "Что, по Притч. 3:13–14, «лучше приобретения серебра»?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Обретение мудрости"},
+        {"id": 2, "value": "Получение откровения"},
+        {"id": 3, "value": "Дружба с праведником"},
+        {"id": 4, "value": "Долгая и мирная жизнь"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 51,
+      "questionContent": "Согласно Притч. 8:22, когда Мудрость была «основана» Господом?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "При сотворении первого человека"},
+        {"id": 2, "value": "При основании Иерусалима"},
+        {"id": 3, "value": "Прежде созданий Господних, издревле"},
+        {"id": 4, "value": "В день завета с Авраамом"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 52,
+      "questionContent": "Что, по Притч. 8:30, делала Мудрость рядом с Творцом при сотворении?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Пела Ему хвалу непрестанно"},
+        {"id": 2, "value": "Возвещала Его законы миру"},
+        {"id": 3, "value": "Записывала слова Господни"},
+        {"id": 4, "value": "Была художницею и радовалась пред Ним"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 53,
+      "questionContent": "Каким образом Притч. 5:15–18 образно призывает к супружеской верности?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Пить воду из собственного водоёма"},
+        {"id": 2, "value": "Хранить печать брачного завета"},
+        {"id": 3, "value": "Возвращаться в дом родителей"},
+        {"id": 4, "value": "Клясться у алтаря Господня"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 54,
+      "questionContent": "В какое время суток юноша из Притч. 7 идёт к дому блудной женщины?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "На рассвете, ещё в темноте"},
+        {"id": 2, "value": "В сумерки, вечером и в ночи"},
+        {"id": 3, "value": "В полдень в летний зной"},
+        {"id": 4, "value": "На закате, к вечерней страже"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 55,
+      "questionContent": "Где, по Притч. 1:20–21, Мудрость «возвышает голос свой»?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "В храме и на горе Сион"},
+        {"id": 2, "value": "В школах мудрецов и синагогах"},
+        {"id": 3, "value": "В тишине пустыни ночью"},
+        {"id": 4, "value": "На улицах, площадях и у ворот города"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 56,
+      "questionContent": "Что, по Притч. 11:14, является источником «благоденствия»?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Храбрость воинов"},
+        {"id": 2, "value": "Молитва царя за народ"},
+        {"id": 3, "value": "Множество советников"},
+        {"id": 4, "value": "Крепость стен и запасов"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 57,
+      "questionContent": "Что делает покупатель в Притч. 20:14, когда говорит «нехорошо, нехорошо»?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Хитрит при торговле, а после хвалится"},
+        {"id": 2, "value": "Жалуется на нечестный товар"},
+        {"id": 3, "value": "Нарушает заповедь о правде"},
+        {"id": 4, "value": "Испытывает честность продавца"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 58,
+      "questionContent": "О чём содержат кажущееся противоречие Притч. 26:4–5?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Давать ли взаймы глупому"},
+        {"id": 2, "value": "Отвечать ли глупому по глупости его"},
+        {"id": 3, "value": "Наказывать ли ленивца"},
+        {"id": 4, "value": "Хвалить ли мудрого в лицо"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 59,
+      "questionContent": "Что, по Притч. 14:34, «возвышает» народ?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Богатство народа"},
+        {"id": 2, "value": "Мудрость правящего царя"},
+        {"id": 3, "value": "Военная сила и крепость"},
+        {"id": 4, "value": "Праведность"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 60,
+      "questionContent": "Что настоятельно советует Притч. 6:1–5 тому, кто поручился за долг ближнего?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Немедленно заплатить долг"},
+        {"id": 2, "value": "Взять свидетелей для документа"},
+        {"id": 3, "value": "Как можно скорее освободиться от этого обязательства"},
+        {"id": 4, "value": "Помолиться и вверить дело Господу"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 61,
+      "questionContent": "Что, по Притч. 12:17, говорит «верный свидетель»?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Правду"},
+        {"id": 2, "value": "Что велит закон царя"},
+        {"id": 3, "value": "Что выгодно ближнему"},
+        {"id": 4, "value": "Слова закона Господня"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 62,
+      "questionContent": "Что, по Притч. 15:3, «наблюдает» Господь «повсюду»?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Дела рук человеческих"},
+        {"id": 2, "value": "Злых и добрых"},
+        {"id": 3, "value": "Сердца и намерения"},
+        {"id": 4, "value": "Пути и дороги людей"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 63,
+      "questionContent": "Как названо изречение Агура в Притч. 30:1 согласно Синодальному переводу?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Слова мудреца Агура"},
+        {"id": 2, "value": "Поучение южного мудреца"},
+        {"id": 3, "value": "Загадки Агура, сына Иакея"},
+        {"id": 4, "value": "Пророчество, которое сказал этот человек"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 64,
+      "questionContent": "Что, по Притч. 13:20, происходит с тем, кто «ходит с мудрыми»?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Становится богатым"},
+        {"id": 2, "value": "Обретает долголетие"},
+        {"id": 3, "value": "Становится мудрым"},
+        {"id": 4, "value": "Находит расположение у Бога"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 65,
+      "questionContent": "Какое из «малых, но мудрых» созданий упомянуто первым в Притч. 30:24–28?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Муравьи"},
+        {"id": 2, "value": "Орлы"},
+        {"id": 3, "value": "Лисы"},
+        {"id": 4, "value": "Горные мыши"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 66,
+      "questionContent": "Что, по Притч. 21:13, произойдёт с тем, кто «затыкает ухо от вопля бедного»?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Сам обеднеет внезапно"},
+        {"id": 2, "value": "Сам будет вопить и не получит ответа"},
+        {"id": 3, "value": "Будет посрамлён на суде"},
+        {"id": 4, "value": "Лишится благословения Господня"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 67,
+      "questionContent": "Что, по Притч. 16:33, «бросают в подол», но «всё решение» — от Господа?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Слово пророческое"},
+        {"id": 2, "value": "Дары и жертвы"},
+        {"id": 3, "value": "Судьба народа"},
+        {"id": 4, "value": "Жребий"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 68,
+      "questionContent": "Что, по Притч. 19:11, является «украшением» для человека?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Мудрость и знание"},
+        {"id": 2, "value": "Смирение перед Господом"},
+        {"id": 3, "value": "Медлительность на гнев"},
+        {"id": 4, "value": "Щедрость к нищим"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 69,
+      "questionContent": "Что, по Притч. 23:4–5, происходит с богатством?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Оно делает себе крылья и улетает, как орёл"},
+        {"id": 2, "value": "Оно иссыхает, как трава в зной"},
+        {"id": 3, "value": "Оно рассеивается, как утренний туман"},
+        {"id": 4, "value": "Оно горит, как огонь в ночи"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 70,
+      "questionContent": "Кто, по Притч. 28:1, «бежит», хотя «никто не гонится» за ним?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Ленивый"},
+        {"id": 2, "value": "Нечестивый"},
+        {"id": 3, "value": "Трусливый воин"},
+        {"id": 4, "value": "Клеветник"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 71,
+      "questionContent": "Что, по Притч. 16:24, «сладко для души» и «здорово для костей»?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Молитва и пост"},
+        {"id": 2, "value": "Добрые дела"},
+        {"id": 3, "value": "Слова закона Господня"},
+        {"id": 4, "value": "Приятные слова"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 72,
+      "questionContent": "О чём предупреждает Притч. 23:10–11, упоминая «древний межевой камень»?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "О нарушении договора между народами"},
+        {"id": 2, "value": "О разрушении памяти предков"},
+        {"id": 3, "value": "О переносе межи на поле сирот"},
+        {"id": 4, "value": "О нарушении законов царя"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 73,
+      "questionContent": "Что не следует делать при «падении врага твоего», по Притч. 24:17?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Радоваться и веселиться"},
+        {"id": 2, "value": "Отказываться помочь ему"},
+        {"id": 3, "value": "Говорить злое о нём"},
+        {"id": 4, "value": "Требовать возмездия"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 74,
+      "questionContent": "Что, по Притч. 10:19, свидетельствует о мудрости?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Редкость советов"},
+        {"id": 2, "value": "Воздержание слов"},
+        {"id": 3, "value": "Молчание перед старшими"},
+        {"id": 4, "value": "Тихий голос в собрании"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 75,
+      "questionContent": "Что, по Притч. 21:3, «угоднее Господу», чем жертва?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Молитва в тайне"},
+        {"id": 2, "value": "Пост и воздержание"},
+        {"id": 3, "value": "Чтение закона"},
+        {"id": 4, "value": "Творение правды и правосудия"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 76,
+      "questionContent": "Что, по Притч. 17:1, «лучше дома, полного жертвенного мяса со спорами»?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Хлеб и вода в тишине"},
+        {"id": 2, "value": "Трапеза праведников в бедности"},
+        {"id": 3, "value": "Кусок хлеба в мире и тишине"},
+        {"id": 4, "value": "Блюдо зелени с братьями"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 77,
+      "questionContent": "Сколько «непостижимых» вещей перечисляет Агур в Притч. 30:18–19?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Четыре"},
+        {"id": 2, "value": "Три"},
+        {"id": 3, "value": "Пять"},
+        {"id": 4, "value": "Семь"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 78,
+      "questionContent": "С чем Притч. 25:14 сравнивает «хвалящегося несостоявшимся подарком»?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "С человеком, обещающим урожай в засуху"},
+        {"id": 2, "value": "С облаками и ветром без дождя"},
+        {"id": 3, "value": "С царём, раздающим ненужные награды"},
+        {"id": 4, "value": "С богачом, скрывающим своё состояние"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 79,
+      "questionContent": "Кто, по Притч. 10:26, неприятен «посылающему его», как «уксус для зубов и дым для глаз»?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Нечестный купец"},
+        {"id": 2, "value": "Лжесвидетель на суде"},
+        {"id": 3, "value": "Сварливая жена"},
+        {"id": 4, "value": "Ленивый посланник"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 80,
+      "questionContent": "Что, по Притч. 27:6, «верны» в отличие от «обманчивых поцелуев ненавидящего»?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Похвалы мудрого наставника"},
+        {"id": 2, "value": "Обличения матери"},
+        {"id": 3, "value": "Раны от друга"},
+        {"id": 4, "value": "Слова учителя"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 81,
+      "questionContent": "Что, по Притч. 15:16, «лучше большого богатства с тревогою»?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Немногое при страхе Господнем"},
+        {"id": 2, "value": "Хлеб насущный в радости"},
+        {"id": 3, "value": "Честность в бедности"},
+        {"id": 4, "value": "Мир без излишеств"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 82,
+      "questionContent": "Что, по Притч. 29:15, «даёт мудрость», тогда как «отрок, оставленный в небрежении, срамит мать»?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Труд и прилежание"},
+        {"id": 2, "value": "Розга и обличение"},
+        {"id": 3, "value": "Страх Господень"},
+        {"id": 4, "value": "Слово наставника"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 83,
+      "questionContent": "Как звучит обоснование отеческого наказания в Притч. 3:12?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "«Не отступай от страха Господня»"},
+        {"id": 2, "value": "«Наблюдай за собою и не согрешай»"},
+        {"id": 3, "value": "«Держись учения и не упускай его»"},
+        {"id": 4, "value": "«Ибо кого любит Господь, того наказывает»"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 84,
+      "questionContent": "Что, по Притч. 12:10, делает «праведник» по отношению к своему скоту?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Продаёт его с выгодой"},
+        {"id": 2, "value": "Приносит его в жертву Господу"},
+        {"id": 3, "value": "Заботится о душе его"},
+        {"id": 4, "value": "Хранит его для нужды"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 85,
+      "questionContent": "Согласно Притч. 26:20, что происходит «при недостатке наушника»?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Раздор утихает"},
+        {"id": 2, "value": "Ссора разгорается сильнее"},
+        {"id": 3, "value": "Мир восстанавливается надолго"},
+        {"id": 4, "value": "Правда выходит наружу"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 86,
+      "questionContent": "Что, по Притч. 20:29, является «украшением» для юношей?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Твёрдость и смелость"},
+        {"id": 2, "value": "Сила"},
+        {"id": 3, "value": "Слава и победа"},
+        {"id": 4, "value": "Мудрость и знание"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 87,
+      "questionContent": "Что, по Притч. 16:7, происходит, когда «пути человека угодны Господу»?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Он получает богатство и честь"},
+        {"id": 2, "value": "Ему дарована долгая жизнь"},
+        {"id": 3, "value": "Его молитвы слышит Господь"},
+        {"id": 4, "value": "Господь примиряет с ним даже врагов его"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 88,
+      "questionContent": "Чего, по Притч. 23:31, не следует делать с вином?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Покупать его в изобилии"},
+        {"id": 2, "value": "Пить его в доме нечестивого"},
+        {"id": 3, "value": "Смотреть на него, как оно краснеет в чаше"},
+        {"id": 4, "value": "Предлагать его молодым"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 89,
+      "questionContent": "Чему посвящены Притч. 31:1–9 (первая часть главы 31)?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Наставлениям матери Лемуила о царском достоинстве"},
+        {"id": 2, "value": "Похвале добродетельной жене"},
+        {"id": 3, "value": "Мудрости о правосудии и законе"},
+        {"id": 4, "value": "Предостережению против вина и блуда"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 90,
+      "questionContent": "Что, по Притч. 11:24–25, происходит с «дающим щедро»?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Его жертва принята Господом"},
+        {"id": 2, "value": "Он ещё более обогащается"},
+        {"id": 3, "value": "Он находит благоволение у людей"},
+        {"id": 4, "value": "Он получает мир душевный"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 91,
+      "questionContent": "Что, по Притч. 14:30, является «гнилью для костей»?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Злой язык"},
+        {"id": 2, "value": "Разгульная жизнь"},
+        {"id": 3, "value": "Уныние и печаль"},
+        {"id": 4, "value": "Зависть"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 92,
+      "questionContent": "Кто, по Притч. 18:24, «бывает ближе брата»?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Отец в тяжкий час"},
+        {"id": 2, "value": "Мудрый наставник"},
+        {"id": 3, "value": "Друг, более близкий, чем брат"},
+        {"id": 4, "value": "Верная и добродетельная жена"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 93,
+      "questionContent": "О чём просит Агур у Господа в Притч. 30:7–9?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Не давать ему ни бедности, ни богатства"},
+        {"id": 2, "value": "Дать ему мудрость и знание"},
+        {"id": 3, "value": "Не забирать у него родителей"},
+        {"id": 4, "value": "Хранить его от соблазна и лжи"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 94,
+      "questionContent": "Что, по Притч. 24:3–4, «строится мудростью» и наполняется «всяким богатством»?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Царство праведного"},
+        {"id": 2, "value": "Дом"},
+        {"id": 3, "value": "Закром трудолюбивого"},
+        {"id": 4, "value": "Жизнь благочестивого"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 95,
+      "questionContent": "С чем Притч. 26:17 сравнивает того, кто «вмешивается в чужую ссору»?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "С человеком, навлекающим позор на себя"},
+        {"id": 2, "value": "С умножающим раздор в доме"},
+        {"id": 3, "value": "С потерявшим доброе имя"},
+        {"id": 4, "value": "С хватающим пса за уши"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 96,
+      "questionContent": "Что, по Притч. 20:5, является «глубокой водой», которую «человек разумный» может «почерпать»?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Тайны Господни"},
+        {"id": 2, "value": "Слова закона Господня"},
+        {"id": 3, "value": "Помыслы в сердце человека"},
+        {"id": 4, "value": "Мудрость собранных мудрецов"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 97,
+      "questionContent": "Что, по Притч. 15:33, предшествует «чести»?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Смирение"},
+        {"id": 2, "value": "Страдание"},
+        {"id": 3, "value": "Труд"},
+        {"id": 4, "value": "Молитва"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 98,
+      "questionContent": "Кто, по Притч. 28:13, «не будет иметь успеха»?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Заносчивый богач"},
+        {"id": 2, "value": "Скрывающий грехи свои"},
+        {"id": 3, "value": "Ленивый и беспечный"},
+        {"id": 4, "value": "Забывший заповеди"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 99,
+      "questionContent": "Что, по Притч. 11:29, получит тот, кто «расстраивает дом свой»?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Позор и бесчестие"},
+        {"id": 2, "value": "Одиночество в старости"},
+        {"id": 3, "value": "Наказание от Господа"},
+        {"id": 4, "value": "Ветер в наследство"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 100,
+      "questionContent": "Что, по Притч. 19:21, «исполняется», несмотря на «множество замыслов» в сердце человека?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Слово мудреца"},
+        {"id": 2, "value": "Страдание нечестивого"},
+        {"id": 3, "value": "Определение Господа"},
+        {"id": 4, "value": "Воля праведника"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 101,
+      "questionContent": "В Притч. 8:22 Мудрость говорит: «Господь имел меня началом пути Своего, прежде созданий Своих...». Каким словом заканчивается этот стих?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "издревле"},
+        {"id": 2, "value": "от начала веков"},
+        {"id": 3, "value": "прежде всего"},
+        {"id": 4, "value": "от вечности"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 102,
+      "questionContent": "В Притч. 30:15 упоминается пиявка. Как называются её «две дочери»?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "«Зависть» и «злоба»"},
+        {"id": 2, "value": "«Давай» и «давай»"},
+        {"id": 3, "value": "«Жадность» и «похоть»"},
+        {"id": 4, "value": "«Забери» и «принеси»"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 103,
+      "questionContent": "В каких стихах Притч. 6 перечислены «шесть вещей, которые ненавидит Господь, даже семь»?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "6:10–11"},
+        {"id": 2, "value": "6:1–2"},
+        {"id": 3, "value": "6:20–21"},
+        {"id": 4, "value": "6:16–17"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 104,
+      "questionContent": "Что Агур называет четвёртой «непостижимой» вещью в Притч. 30:18–19?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Путь орла в небе"},
+        {"id": 2, "value": "Путь змея на скале"},
+        {"id": 3, "value": "Путь мужчины к девице"},
+        {"id": 4, "value": "Путь корабля среди моря"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 105,
+      "questionContent": "Чем «угощает» безумная женщина из Притч. 9:17, завлекая в свой дом?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Вином разбавленным"},
+        {"id": 2, "value": "Водами краденными"},
+        {"id": 3, "value": "Молоком разлитым"},
+        {"id": 4, "value": "Мёдом из золотой чаши"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 106,
+      "questionContent": "С чем Притч. 11:22 сравнивает «красивую женщину без разума»?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "С золотым кольцом в носу у свиньи"},
+        {"id": 2, "value": "С венком из роз на голове ворона"},
+        {"id": 3, "value": "С жемчугом под копытами скота"},
+        {"id": 4, "value": "С серебряным сосудом с нечистым питьём"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 107,
+      "questionContent": "Что советует делать Притч. 25:16, когда нашёл мёд?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Поделиться с ближним своим"},
+        {"id": 2, "value": "Принести первину Господу"},
+        {"id": 3, "value": "Есть, сколько тебе нужно, не пресыщайся"},
+        {"id": 4, "value": "Беречь его на время нужды"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 108,
+      "questionContent": "С чем Притч. 26:8 сравнивает того, кто «воздаёт честь глупцу»?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "С человеком, строящим дом на песке"},
+        {"id": 2, "value": "С пастухом, доверяющим стадо волку"},
+        {"id": 3, "value": "С судьёй, принимающим дар от нечестивого"},
+        {"id": 4, "value": "С привязывающим камень к праще"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 109,
+      "questionContent": "С чем сравнивается «конец» блудной жены в Притч. 5:4?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "С горькой полынью и острым мечом обоюдоострым"},
+        {"id": 2, "value": "С ядом аспида"},
+        {"id": 3, "value": "С морской солёной водой"},
+        {"id": 4, "value": "С желчью в чаше"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 110,
+      "questionContent": "Как расценивается в Притч. 27:14 «громкое благословение друга с раннего утра»?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Как безмерная похвала"},
+        {"id": 2, "value": "Как проклятие"},
+        {"id": 3, "value": "Как неуместная лесть"},
+        {"id": 4, "value": "Как нарушение покоя"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 111,
+      "questionContent": "Какое из четырёх «малых, но мудрых» созданий (Притч. 30:24–28) «ставит дом свой на скале»?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Муравьи"},
+        {"id": 2, "value": "Саранча"},
+        {"id": 3, "value": "Паук"},
+        {"id": 4, "value": "Горные мыши"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 112,
+      "questionContent": "Что, по Притч. 17:8, «драгоценный камень» делает «в глазах имеющего его»?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Прославляет его имя"},
+        {"id": 2, "value": "Хранит от несчастий"},
+        {"id": 3, "value": "Успевает везде, куда бы ни обратился"},
+        {"id": 4, "value": "Умножает его мудрость"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 113,
+      "questionContent": "Что «испытывает» «светильник Господень — дух человека», по Притч. 20:27?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Намерения и желания"},
+        {"id": 2, "value": "Все глубины чрева"},
+        {"id": 3, "value": "Сердечные тайны"},
+        {"id": 4, "value": "Мысли и дела"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 114,
+      "questionContent": "Что, по Притч. 25:23, производит «тайный язык», подобно тому как «северный ветер производит дождь»?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Досадливые лица"},
+        {"id": 2, "value": "Споры и раздоры"},
+        {"id": 3, "value": "Горькие слёзы"},
+        {"id": 4, "value": "Смятение в доме"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 115,
+      "questionContent": "Как завершается вопрос Агура в Притч. 30:4: «Каково имя Его и каково...»?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "«...слово Его сокровенное?»"},
+        {"id": 2, "value": "«...дело Его от начала?»"},
+        {"id": 3, "value": "«...имя Сына Его?»"},
+        {"id": 4, "value": "«...завет Его с человеком?»"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 116,
+      "questionContent": "Согласно Притч. 6:31, сколько должен вернуть пойманный вор?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Вдвое"},
+        {"id": 2, "value": "Втрое"},
+        {"id": 3, "value": "Вчетверо"},
+        {"id": 4, "value": "Всемеро"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 117,
+      "questionContent": "Что, по Притч. 27:20, «ненасытимо», подобно «преисподней и Аваддону»?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Похоть и гордость"},
+        {"id": 2, "value": "Глаза человека"},
+        {"id": 3, "value": "Грехи нечестивого"},
+        {"id": 4, "value": "Сердце надменного"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 118,
+      "questionContent": "С чем Притч. 12:4 сравнивает «жену, позорящую» мужа своего?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "С гнилью в костях его"},
+        {"id": 2, "value": "С терниями в руке его"},
+        {"id": 3, "value": "С огнём в доме его"},
+        {"id": 4, "value": "С пепелищем на поле его"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 119,
+      "questionContent": "Чем, по тексту Притч. 7:16–17, убрана постель соблазнительницы?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Золотом и ладаном"},
+        {"id": 2, "value": "Шёлком и виссоном"},
+        {"id": 3, "value": "Египетскими коврами, смирной, алоэ и корицей"},
+        {"id": 4, "value": "Кедровыми балками и миррой"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 120,
+      "questionContent": "Что в Притч. 20:10 названо «мерзостью пред Господом»?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Ложные клятвы и ложные обеты"},
+        {"id": 2, "value": "Неверное свидетельство и нечестный суд"},
+        {"id": 3, "value": "Гордость богача и зависть нищего"},
+        {"id": 4, "value": "Неодинаковые гири и неодинаковая мера"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 121,
+      "questionContent": "С чем сравнивается «светлый взор царя» в Притч. 16:15?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "С облаком поздних дождей"},
+        {"id": 2, "value": "С восходящим солнцем"},
+        {"id": 3, "value": "С золотом в горниле"},
+        {"id": 4, "value": "С росою на траве"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 122,
+      "questionContent": "Что означает наставление Притч. 27:10: «не ходи в дом брата твоего в день бедствия»?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Не ищи помощи у родственников в горе"},
+        {"id": 2, "value": "Ближний сосед лучше далёкого брата"},
+        {"id": 3, "value": "Не ищи помощи у чужих людей"},
+        {"id": 4, "value": "Проверяй намерения друзей заранее"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 123,
+      "questionContent": "Что, по Притч. 26:2, «не сбудется без причины»?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Слово пророческое"},
+        {"id": 2, "value": "Клятва ложная"},
+        {"id": 3, "value": "Наказание нечестивого"},
+        {"id": 4, "value": "Незаслуженное проклятие"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 124,
+      "questionContent": "Уста блудной жены в Притч. 5:3 «источают мёд». Что в стихе 4 сравнивается с «мечом обоюдоострым»?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Её льстивые речи"},
+        {"id": 2, "value": "Её завлекающий взгляд"},
+        {"id": 3, "value": "Её конец, горький как полынь"},
+        {"id": 4, "value": "Её ложные клятвы"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 125,
+      "questionContent": "Сколько вещей, «потрясающих землю», перечисляет Агур в Притч. 30:21–23?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Три"},
+        {"id": 2, "value": "Пять"},
+        {"id": 3, "value": "Шесть"},
+        {"id": 4, "value": "Четыре"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 126,
+      "questionContent": "Что, по Притч. 17:26, «нехорошо» делать даже суду?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Судить без двух свидетелей"},
+        {"id": 2, "value": "Наказывать правдивых людей"},
+        {"id": 3, "value": "Брать деньги с нищих"},
+        {"id": 4, "value": "Откладывать справедливый суд"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 127,
+      "questionContent": "Что утверждает Мудрость о своей роли в управлении в Притч. 8:15–16?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Мной цари царствуют и правители узаконяют правду"},
+        {"id": 2, "value": "Мной народы познают истину Господню"},
+        {"id": 3, "value": "Мной мудрецы получают откровение свыше"},
+        {"id": 4, "value": "Мной судьи получают власть и право"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 128,
+      "questionContent": "Что происходит, «когда нет волов», по Притч. 14:4?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Работник отдыхает и поле пустует"},
+        {"id": 2, "value": "Хозяин беднеет без труда"},
+        {"id": 3, "value": "Ясли чисты, но и нет прибыли от воловьей силы"},
+        {"id": 4, "value": "Земля иссыхает и пустеет без ухода"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 129,
+      "questionContent": "С чем Притч. 25:13 сравнивает «верного посланника»?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "С дождём на сухой земле"},
+        {"id": 2, "value": "С тихим ветром в летний зной"},
+        {"id": 3, "value": "С чистым источником в пустыне"},
+        {"id": 4, "value": "С прохладой снега во время жатвы"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 130,
+      "questionContent": "Что происходит с тем, кто вкушает «хлеб лжи», по Притч. 20:17?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Он тает, как снег, без следа"},
+        {"id": 2, "value": "Рот его наполнится камнями"},
+        {"id": 3, "value": "Он становится отравой для себя"},
+        {"id": 4, "value": "Его вкус обращается в горечь"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 131,
+      "questionContent": "Какую литературную форму имеет описание добродетельной жены в Притч. 31:10–31?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Акростих по буквам еврейского алфавита"},
+        {"id": 2, "value": "Хиазм с центром в стихе 21"},
+        {"id": 3, "value": "Числовую поэму от 1 до 22"},
+        {"id": 4, "value": "Три строфы по семь стихов каждая"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 132,
+      "questionContent": "Каково третье «поколение» из Притч. 30:11–14 — то, «у которого глаза возвышенны и вежды подняты»?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Гордящееся богатством своим"},
+        {"id": 2, "value": "Клянущееся ложно пред Богом"},
+        {"id": 3, "value": "Надменное, смотрящее свысока"},
+        {"id": 4, "value": "Поедающее нищих как хлеб"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 133,
+      "questionContent": "Что нельзя «передвигать», по Притч. 22:28?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Алтарь отцов твоих"},
+        {"id": 2, "value": "Межевой камень давний"},
+        {"id": 3, "value": "Границу племени твоего"},
+        {"id": 4, "value": "Шатёр предков твоих"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 134,
+      "questionContent": "Что, по Притч. 25:3, сравнивается с «сердцем царей» по «неисследимости»?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Пути Господни"},
+        {"id": 2, "value": "Глубина морская"},
+        {"id": 3, "value": "Корни горные"},
+        {"id": 4, "value": "Высота неба и глубина земли"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 135,
+      "questionContent": "Что обещано «нашедшему» Мудрость, по Притч. 8:35?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Богатство и честь"},
+        {"id": 2, "value": "Долгую жизнь и мир"},
+        {"id": 3, "value": "Жизнь и благодать от Господа"},
+        {"id": 4, "value": "Мудрость и силу"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 136,
+      "questionContent": "С чем Притч. 26:6 сравнивает «посылающего слово через глупца»?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "С отрубающим себе ноги и пьющим насилие"},
+        {"id": 2, "value": "С идущим в огонь за соломой"},
+        {"id": 3, "value": "С пьющим яд вместо воды"},
+        {"id": 4, "value": "С строящим дом на болоте"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 137,
+      "questionContent": "Что, по Притч. 16:11, принадлежит Господу?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Слово суда и правды"},
+        {"id": 2, "value": "Верные весы и весовые чаши"},
+        {"id": 3, "value": "Законы и установления"},
+        {"id": 4, "value": "Все суды земные"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 138,
+      "questionContent": "Какова цель наказания «розгой» в Притч. 23:14?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Исправить характер ребёнка"},
+        {"id": 2, "value": "Вразумить и смирить непокорного"},
+        {"id": 3, "value": "Показать власть родителей"},
+        {"id": 4, "value": "Спасти душу его от преисподней"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 139,
+      "questionContent": "О ком Притч. 29:20 говорит: «на глупого больше надежды, нежели на него»?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "О клеветнике в суде"},
+        {"id": 2, "value": "О безрассудном богаче"},
+        {"id": 3, "value": "О торопливом в словах своих"},
+        {"id": 4, "value": "О надменном и дерзком"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 140,
+      "questionContent": "Чья молитва является «мерзостью» для Господа, по Притч. 28:9?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Молитва нечестивого в час бедствия"},
+        {"id": 2, "value": "Молитва с ложным обетом"},
+        {"id": 3, "value": "Молитва за злодея"},
+        {"id": 4, "value": "Молитва того, кто отвращает ухо от закона"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 141,
+      "questionContent": "С чем Притч. 26:23 сравнивает «пылкие уста при злом сердце»?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "С серебряной обшивкой на глиняном сосуде"},
+        {"id": 2, "value": "С красивыми словами лживого ума"},
+        {"id": 3, "value": "С лестью богача с гордым сердцем"},
+        {"id": 4, "value": "С клятвами грешника с нечистой душой"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 142,
+      "questionContent": "Что происходит с «согрешающим против» Мудрости, по Притч. 8:36?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Он блуждает во тьме"},
+        {"id": 2, "value": "Он наносит вред душе своей"},
+        {"id": 3, "value": "Он остаётся без благословения"},
+        {"id": 4, "value": "Он будет оставлен Богом"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 143,
+      "questionContent": "С чем Притч. 25:25 сравнивает «добрую весть из далёкой страны»?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Со словом утешения в печали"},
+        {"id": 2, "value": "С пением псалмов ночью"},
+        {"id": 3, "value": "С встречей с другом после разлуки"},
+        {"id": 4, "value": "С холодной водой для утомлённой души"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 144,
+      "questionContent": "Что, по Притч. 19:18, должен делать отец, «пока есть надежда»?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Наставлять в слове Господнем"},
+        {"id": 2, "value": "Трудиться вместе с сыном"},
+        {"id": 3, "value": "Наказывать сына своего"},
+        {"id": 4, "value": "Непрестанно молиться о сыне"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 145,
+      "questionContent": "Что, по Притч. 14:10, «не разделяет с ним никто посторонний»?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Горесть и радость сердца своего"},
+        {"id": 2, "value": "Радость от трудов своих"},
+        {"id": 3, "value": "Скорбь молитвы своей"},
+        {"id": 4, "value": "Тайну дел своих"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 146,
+      "questionContent": "Что, по Притч. 6:34–35, «не примет» муж обманутый от виновного?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Никаких клятв и обещаний"},
+        {"id": 2, "value": "Никакого выкупа и никаких даров"},
+        {"id": 3, "value": "Никакого суда и закона"},
+        {"id": 4, "value": "Никакого раскаяния и слёз"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 147,
+      "questionContent": "Что, по Притч. 21:14, «укрощает» «сильный гнев»?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Слово мягкое и терпение"},
+        {"id": 2, "value": "Молитва и смирение"},
+        {"id": 3, "value": "Прощение и долготерпение"},
+        {"id": 4, "value": "Тайный подарок и взятка в пазуху"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 148,
+      "questionContent": "Кому Притч. 31:6–7 советует давать вино и сикеру?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Воинам накануне битвы"},
+        {"id": 2, "value": "Странникам и беженцам"},
+        {"id": 3, "value": "Погибающим и горьким душой"},
+        {"id": 4, "value": "Старцам и немощным"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 149,
+      "questionContent": "Что, по Притч. 16:4, создал Господь «ради Себя», включая нечестивого?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Всё живущее на земле"},
+        {"id": 2, "value": "Всё, и даже нечестивого — ко дню бедствия"},
+        {"id": 3, "value": "Всё сущее — для Своей славы"},
+        {"id": 4, "value": "Всё — для суда и правды Своей"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 150,
+      "questionContent": "Что, по Притч. 30:17, постигнет того, кто «насмехается над отцом» и «пренебрегает матерью»?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Его выклюют вороны и пожрут птенцы орлиные"},
+        {"id": 2, "value": "Его покинут братья и друзья"},
+        {"id": 3, "value": "Его постигнут позор и бедность"},
+        {"id": 4, "value": "Его жизнь иссохнет, как трава"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    }
+  ]
+}

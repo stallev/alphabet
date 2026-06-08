@@ -1,0 +1,2106 @@
+{
+  "title": "Book of Genesis",
+  "language": "en",
+  "questionsList": [
+    {
+      "id": 1,
+      "questionContent": "What did God create on the very first day of creation?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Light"},
+        {"id": 2, "value": "The sky and sea"},
+        {"id": 3, "value": "The sun and moon"},
+        {"id": 4, "value": "The land and plants"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 2,
+      "questionContent": "What did God create on the second day of creation?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "The land and seas"},
+        {"id": 2, "value": "The sun, moon, and stars"},
+        {"id": 3, "value": "The vault of sky separating the waters above from the waters below"},
+        {"id": 4, "value": "Birds and fish"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 3,
+      "questionContent": "How many days did God work during the week of creation?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Five"},
+        {"id": 2, "value": "Six"},
+        {"id": 3, "value": "Seven"},
+        {"id": 4, "value": "Ten"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 4,
+      "questionContent": "What was the name of the garden where God placed the first man?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "The Garden of Gethsemane"},
+        {"id": 2, "value": "The Garden of Sinai"},
+        {"id": 3, "value": "The Garden of Babylon"},
+        {"id": 4, "value": "The Garden of Eden"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 5,
+      "questionContent": "From what did God form Adam's body?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "The dust of the ground"},
+        {"id": 2, "value": "Water and clay"},
+        {"id": 3, "value": "Breath and fire"},
+        {"id": 4, "value": "The ribs of an angel"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 6,
+      "questionContent": "What did God take from Adam to form the woman?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Dust from the ground"},
+        {"id": 2, "value": "A handful of clay"},
+        {"id": 3, "value": "A rib from his side"},
+        {"id": 4, "value": "Breath and water"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 7,
+      "questionContent": "Which tree was forbidden to Adam and Eve in the Garden of Eden?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "The tree of eternal life"},
+        {"id": 2, "value": "The tree of the knowledge of good and evil"},
+        {"id": 3, "value": "The tree of wisdom"},
+        {"id": 4, "value": "The tree of blessing and cursing"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 8,
+      "questionContent": "Who tempted Eve to eat the forbidden fruit?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "An angel"},
+        {"id": 2, "value": "Adam"},
+        {"id": 3, "value": "Her own desires"},
+        {"id": 4, "value": "The serpent"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 9,
+      "questionContent": "What was the name of the firstborn son of Adam and Eve?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Seth"},
+        {"id": 2, "value": "Abel"},
+        {"id": 3, "value": "Cain"},
+        {"id": 4, "value": "Enoch"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 10,
+      "questionContent": "Whom did Cain murder in the field?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Seth"},
+        {"id": 2, "value": "Abel"},
+        {"id": 3, "value": "Adam"},
+        {"id": 4, "value": "Enoch"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 11,
+      "questionContent": "Who was commanded by God to build an ark before the flood?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Enoch"},
+        {"id": 2, "value": "Methuselah"},
+        {"id": 3, "value": "Shem"},
+        {"id": 4, "value": "Noah"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 12,
+      "questionContent": "How many of each kind of unclean animal did Noah take on the ark?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Two"},
+        {"id": 2, "value": "Four"},
+        {"id": 3, "value": "Seven"},
+        {"id": 4, "value": "Fourteen"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 13,
+      "questionContent": "What did God place in the clouds as a sign of his covenant with Noah after the flood?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "A pillar of cloud"},
+        {"id": 2, "value": "A rainbow"},
+        {"id": 3, "value": "A shining star"},
+        {"id": 4, "value": "A white dove"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 14,
+      "questionContent": "What did the people of Shinar begin to build at Babel?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "A great palace"},
+        {"id": 2, "value": "A city wall"},
+        {"id": 3, "value": "A temple"},
+        {"id": 4, "value": "A tower that would reach to the heavens"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 15,
+      "questionContent": "From what city did Abram originally come before he settled in Haran?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Nineveh"},
+        {"id": 2, "value": "Damascus"},
+        {"id": 3, "value": "Ur of the Chaldeans"},
+        {"id": 4, "value": "Babylon"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 16,
+      "questionContent": "Who was the nephew who traveled with Abram from Haran to Canaan?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Lot"},
+        {"id": 2, "value": "Nahor"},
+        {"id": 3, "value": "Eliezer"},
+        {"id": 4, "value": "Terah"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 17,
+      "questionContent": "What new name did God give to Abram?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Isaac"},
+        {"id": 2, "value": "Israel"},
+        {"id": 3, "value": "Melchizedek"},
+        {"id": 4, "value": "Abraham"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 18,
+      "questionContent": "What new name did God give to Sarai?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Rebekah"},
+        {"id": 2, "value": "Sarah"},
+        {"id": 3, "value": "Rachel"},
+        {"id": 4, "value": "Miriam"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 19,
+      "questionContent": "What happened to Lot's wife when she looked back at Sodom?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "She became a pillar of salt"},
+        {"id": 2, "value": "She was struck by fire from heaven"},
+        {"id": 3, "value": "She turned to stone"},
+        {"id": 4, "value": "She was consumed by smoke"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 20,
+      "questionContent": "Who was the son God promised to Abraham and Sarah in their old age?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Ishmael"},
+        {"id": 2, "value": "Esau"},
+        {"id": 3, "value": "Isaac"},
+        {"id": 4, "value": "Jacob"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 21,
+      "questionContent": "On what mountain was Abraham commanded to sacrifice his son Isaac?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Mount Sinai"},
+        {"id": 2, "value": "Mount Zion"},
+        {"id": 3, "value": "Mount Carmel"},
+        {"id": 4, "value": "Mount Moriah"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 22,
+      "questionContent": "What did God provide as a substitute sacrifice when Abraham was about to offer up Isaac?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "A ram caught in a thicket"},
+        {"id": 2, "value": "A young goat"},
+        {"id": 3, "value": "A lamb"},
+        {"id": 4, "value": "A bull"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 23,
+      "questionContent": "Who became Isaac's wife, brought by Abraham's servant from Haran?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Rachel"},
+        {"id": 2, "value": "Rebekah"},
+        {"id": 3, "value": "Leah"},
+        {"id": 4, "value": "Zilpah"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 24,
+      "questionContent": "What were the names of Isaac and Rebekah's twin sons?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Shem and Ham"},
+        {"id": 2, "value": "Jacob and Ishmael"},
+        {"id": 3, "value": "Esau and Jacob"},
+        {"id": 4, "value": "Judah and Benjamin"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 25,
+      "questionContent": "What did Esau trade to Jacob in exchange for a bowl of stew?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "His birthright"},
+        {"id": 2, "value": "His flocks"},
+        {"id": 3, "value": "His blessing"},
+        {"id": 4, "value": "His inheritance of land"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 26,
+      "questionContent": "How many sons did Jacob have in total?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Ten"},
+        {"id": 2, "value": "Eleven"},
+        {"id": 3, "value": "Eight"},
+        {"id": 4, "value": "Twelve"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 27,
+      "questionContent": "Which of Jacob's wives did he love more?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Leah"},
+        {"id": 2, "value": "Bilhah"},
+        {"id": 3, "value": "Rachel"},
+        {"id": 4, "value": "Zilpah"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 28,
+      "questionContent": "What did Jacob see in his dream at Bethel?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "A great fire ascending to heaven"},
+        {"id": 2, "value": "A stairway reaching from earth to heaven, with angels going up and down on it"},
+        {"id": 3, "value": "Seven fat cows and seven thin cows"},
+        {"id": 4, "value": "A great tree whose top touched the sky"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 29,
+      "questionContent": "What name did God give to Jacob after he wrestled through the night?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Judah"},
+        {"id": 2, "value": "Israel"},
+        {"id": 3, "value": "Levi"},
+        {"id": 4, "value": "Benjamin"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 30,
+      "questionContent": "Who was Jacob's most beloved son, born of Rachel?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Joseph"},
+        {"id": 2, "value": "Benjamin"},
+        {"id": 3, "value": "Reuben"},
+        {"id": 4, "value": "Judah"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 31,
+      "questionContent": "What special gift did Jacob give to Joseph that stirred his brothers' jealousy?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "A silver cup"},
+        {"id": 2, "value": "A ring of gold"},
+        {"id": 3, "value": "The best portion of land"},
+        {"id": 4, "value": "An ornate robe"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 32,
+      "questionContent": "What did Joseph's brothers do with him when he came to check on them at Dothan?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Sent him as a servant to a relative"},
+        {"id": 2, "value": "Made him tend their flocks"},
+        {"id": 3, "value": "Threw him into a pit and then sold him to passing traders"},
+        {"id": 4, "value": "Sent him away to work in another city"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 33,
+      "questionContent": "To what country was Joseph taken as a slave?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Egypt"},
+        {"id": 2, "value": "Babylon"},
+        {"id": 3, "value": "Assyria"},
+        {"id": 4, "value": "Aram"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 34,
+      "questionContent": "Whose wife falsely accused Joseph of attacking her?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Pharaoh's"},
+        {"id": 2, "value": "Potiphar's"},
+        {"id": 3, "value": "The cupbearer's"},
+        {"id": 4, "value": "The baker's"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 35,
+      "questionContent": "What God-given ability did Joseph demonstrate both in prison and before Pharaoh?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Skill in administration"},
+        {"id": 2, "value": "Great physical strength"},
+        {"id": 3, "value": "Mastery of foreign languages"},
+        {"id": 4, "value": "The ability to interpret dreams"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 36,
+      "questionContent": "What did Pharaoh's dream of seven fat cows and seven thin cows represent?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Seven great kings followed by seven weak ones"},
+        {"id": 2, "value": "Seven years of war and seven years of peace"},
+        {"id": 3, "value": "Seven years of plenty followed by seven years of famine"},
+        {"id": 4, "value": "Seven generations of blessing and seven of judgment"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 37,
+      "questionContent": "What position did Pharaoh give Joseph in Egypt?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Chief treasurer"},
+        {"id": 2, "value": "Second-in-command over all Egypt"},
+        {"id": 3, "value": "Head of the palace guard"},
+        {"id": 4, "value": "Chief priest of the temples"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 38,
+      "questionContent": "Who was Jacob's youngest son at the time Joseph was sold into slavery?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Benjamin"},
+        {"id": 2, "value": "Asher"},
+        {"id": 3, "value": "Zebulun"},
+        {"id": 4, "value": "Naphtali"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 39,
+      "questionContent": "How old was Joseph when he died?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "120 years"},
+        {"id": 2, "value": "90 years"},
+        {"id": 3, "value": "110 years"},
+        {"id": 4, "value": "130 years"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 40,
+      "questionContent": "On which day did God rest from all his creative work?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "The fifth day"},
+        {"id": 2, "value": "The fourth day"},
+        {"id": 3, "value": "The sixth day"},
+        {"id": 4, "value": "The seventh day"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 41,
+      "questionContent": "Who holds the record for the longest human lifespan in Genesis, at 969 years?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Methuselah"},
+        {"id": 2, "value": "Adam"},
+        {"id": 3, "value": "Noah"},
+        {"id": 4, "value": "Lamech"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 42,
+      "questionContent": "What was remarkable about Enoch among all the patriarchs listed in Genesis 5?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "He was the first man to build an altar"},
+        {"id": 2, "value": "He lived 777 years, the shortest span of his generation"},
+        {"id": 3, "value": "He walked with God and was taken by God without dying"},
+        {"id": 4, "value": "He had more children than any other patriarch"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 43,
+      "questionContent": "What were the names of Noah's three sons?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Cain, Abel, and Seth"},
+        {"id": 2, "value": "Levi, Judah, and Reuben"},
+        {"id": 3, "value": "Enoch, Methuselah, and Lamech"},
+        {"id": 4, "value": "Shem, Ham, and Japheth"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 44,
+      "questionContent": "What happened to the cities of Sodom and Gomorrah, according to Genesis 19?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "They were overwhelmed by a great flood"},
+        {"id": 2, "value": "The LORD rained down burning sulfur on them"},
+        {"id": 3, "value": "They were destroyed by an earthquake"},
+        {"id": 4, "value": "They were captured and burned by enemy armies"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 45,
+      "questionContent": "Who was Hagar in the story of Abraham's family?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Sarah's Egyptian servant who became the mother of Ishmael"},
+        {"id": 2, "value": "A relative of Abraham's from Haran"},
+        {"id": 3, "value": "Lot's wife who fled Sodom"},
+        {"id": 4, "value": "Rebekah's maidservant"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 46,
+      "questionContent": "According to Genesis 11:1, what did the whole world have before the Tower of Babel?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "A single ruler"},
+        {"id": 2, "value": "One sacred city"},
+        {"id": 3, "value": "Common laws and customs"},
+        {"id": 4, "value": "One language and a common speech"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 47,
+      "questionContent": "How did God stop the building of the Tower of Babel?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "He sent lightning to destroy it"},
+        {"id": 2, "value": "He confused their language so they could not understand each other"},
+        {"id": 3, "value": "He caused an earthquake to topple the tower"},
+        {"id": 4, "value": "He sent a great storm that scattered the workers"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 48,
+      "questionContent": "Who was Melchizedek, the king Abraham met after rescuing Lot?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "The king of Sodom and a great warrior"},
+        {"id": 2, "value": "A prophet from the east who served Abraham's God"},
+        {"id": 3, "value": "The king of Salem and priest of God Most High"},
+        {"id": 4, "value": "A Canaanite chieftain who made an alliance with Abraham"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 49,
+      "questionContent": "What was the sign of the covenant God made with Abraham and all his male descendants?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "A blue thread woven into their garments"},
+        {"id": 2, "value": "A carved stone worn on the body"},
+        {"id": 3, "value": "A special mark on the forehead"},
+        {"id": 4, "value": "Circumcision"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 50,
+      "questionContent": "What does the name 'Bethel' mean — the place Jacob named after his dream?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "House of God"},
+        {"id": 2, "value": "Gate of heaven"},
+        {"id": 3, "value": "City of peace"},
+        {"id": 4, "value": "Dwelling of the Most High"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 51,
+      "questionContent": "According to Genesis 2, what specifically did God declare was 'not good'?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "That the ground had not yet been watered by rain"},
+        {"id": 2, "value": "That the man was alone"},
+        {"id": 3, "value": "That the serpent roamed the garden freely"},
+        {"id": 4, "value": "That the man had no knowledge of good and evil"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 52,
+      "questionContent": "According to Genesis 1, in what sequence did God create vegetation and the sun?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Vegetation on day three; the sun, moon, and stars on day four"},
+        {"id": 2, "value": "The sun on day two; vegetation on day three"},
+        {"id": 3, "value": "Both were created together on the fourth day"},
+        {"id": 4, "value": "The sun on day three; vegetation on day six"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 53,
+      "questionContent": "Why did Jacob love Joseph more than all his other sons, according to Genesis 37?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Because Joseph was the most obedient"},
+        {"id": 2, "value": "Because Joseph was the most handsome"},
+        {"id": 3, "value": "Because he had been born to Jacob in his old age"},
+        {"id": 4, "value": "Because Joseph resembled his mother Rachel most closely"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 54,
+      "questionContent": "When Joseph's brothers conspired against him, what did Reuben suggest instead of killing him?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Selling him to a passing caravan"},
+        {"id": 2, "value": "Leaving him in the wilderness with bread and water"},
+        {"id": 3, "value": "Sending him back to their father with a warning"},
+        {"id": 4, "value": "Throwing him into a cistern in the desert"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 55,
+      "questionContent": "What region in Egypt did Pharaoh assign to Jacob's family for their settlement?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "The mountains east of the Nile"},
+        {"id": 2, "value": "The region of Goshen"},
+        {"id": 3, "value": "The city of Memphis"},
+        {"id": 4, "value": "The desert region near Sinai"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 56,
+      "questionContent": "After interpreting the cupbearer's dream favorably in prison, what did Joseph ask him to do?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Mention Joseph to Pharaoh and help secure his release"},
+        {"id": 2, "value": "Bring him food and wine from the royal kitchen"},
+        {"id": 3, "value": "Speak to Potiphar on his behalf"},
+        {"id": 4, "value": "Send a message to his father Jacob in Canaan"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 57,
+      "questionContent": "How many shekels of silver did the traders pay when Joseph was sold to them?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Thirty pieces"},
+        {"id": 2, "value": "Fifty shekels"},
+        {"id": 3, "value": "Twenty shekels"},
+        {"id": 4, "value": "A hundred pieces"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 58,
+      "questionContent": "Which of Joseph's brothers proposed selling him to the Ishmaelite traders?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Simeon"},
+        {"id": 2, "value": "Reuben"},
+        {"id": 3, "value": "Levi"},
+        {"id": 4, "value": "Judah"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 59,
+      "questionContent": "Why did God decide to bring the flood upon the earth, according to Genesis 6?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "The people had abandoned the Sabbath"},
+        {"id": 2, "value": "The earth was corrupt and filled with violence"},
+        {"id": 3, "value": "They were building cities and towers against God"},
+        {"id": 4, "value": "They had intermarried with foreign nations"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 60,
+      "questionContent": "What was the name of the son born to Abraham through Hagar the Egyptian servant?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Nahor"},
+        {"id": 2, "value": "Keturah"},
+        {"id": 3, "value": "Ishmael"},
+        {"id": 4, "value": "Zimran"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 61,
+      "questionContent": "What does the name 'Abraham' mean, as God explained when he changed Abram's name in Genesis 17?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Father of many nations"},
+        {"id": 2, "value": "Beloved of God"},
+        {"id": 3, "value": "Servant of the Most High"},
+        {"id": 4, "value": "Called out from the east"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 62,
+      "questionContent": "What was the significance of the smoking firepot and blazing torch passing between the cut animal pieces in Genesis 15?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "They symbolized God's presence watching over Abram"},
+        {"id": 2, "value": "They were signs of the coming destruction of Sodom"},
+        {"id": 3, "value": "They were signals for Abram to begin the burnt offerings"},
+        {"id": 4, "value": "God passed between the cut pieces to ratify his covenant with Abram"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 63,
+      "questionContent": "How did Rebekah help Jacob deceive his blind father Isaac into giving him Esau's blessing?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "She hid Esau outside until after the blessing was given"},
+        {"id": 2, "value": "She put goatskins on Jacob's hands and neck so he felt hairy like Esau"},
+        {"id": 3, "value": "She gave Isaac a drink that dulled his senses"},
+        {"id": 4, "value": "She forged a written message bearing Esau's seal"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 64,
+      "questionContent": "What was Laban's initial condition for Jacob to marry Rachel?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Jacob had to defeat Laban's enemies in battle"},
+        {"id": 2, "value": "Jacob had to provide a large gift of livestock"},
+        {"id": 3, "value": "Jacob had to work for Laban for seven years"},
+        {"id": 4, "value": "Jacob had to wait until Rachel came of marriageable age"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 65,
+      "questionContent": "After Laban tricked Jacob into marrying Leah, what did Jacob agree to in order to receive Rachel as well?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "He agreed to work an additional seven years for Laban"},
+        {"id": 2, "value": "He paid a large bride price in silver and gold"},
+        {"id": 3, "value": "He served Laban for ten more years"},
+        {"id": 4, "value": "He gave Laban half of all his accumulated flocks"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 66,
+      "questionContent": "According to Genesis 19:1, who came to Sodom in the evening when Lot was sitting at the gate?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Two prophets sent from God"},
+        {"id": 2, "value": "Soldiers from Abraham's camp"},
+        {"id": 3, "value": "Priests of the Most High God"},
+        {"id": 4, "value": "Two angels"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 67,
+      "questionContent": "What sin did Ham commit that led Noah to curse Ham's son Canaan?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "He mocked his father openly in front of the household"},
+        {"id": 2, "value": "He saw his father's nakedness and told his two brothers outside"},
+        {"id": 3, "value": "He refused to cover his father and left him exposed"},
+        {"id": 4, "value": "He stole his father's vineyard while Noah lay asleep"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 68,
+      "questionContent": "What was Cain's occupation, according to Genesis 4?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "He worked the soil"},
+        {"id": 2, "value": "He kept flocks"},
+        {"id": 3, "value": "He hunted wild animals"},
+        {"id": 4, "value": "He crafted tools from metal"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 69,
+      "questionContent": "What is the Hebrew meaning of the name 'Isaac'?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "God hears"},
+        {"id": 2, "value": "He who prevails"},
+        {"id": 3, "value": "He laughs"},
+        {"id": 4, "value": "God is gracious"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 70,
+      "questionContent": "Where did Jacob request to be buried when he called Joseph to his deathbed in Genesis 47?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "In the land of Goshen, beside his sons"},
+        {"id": 2, "value": "Near Bethel, where God first appeared to him"},
+        {"id": 3, "value": "At Beersheba, where Abraham made a treaty"},
+        {"id": 4, "value": "In the cave of Machpelah in Canaan"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 71,
+      "questionContent": "What explanation did Joseph give his brothers for why God had allowed him to be sold into slavery?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "God sent him ahead to preserve life and save many people"},
+        {"id": 2, "value": "Their wickedness had brought God's judgment upon them"},
+        {"id": 3, "value": "Pharaoh's plan had required a man of Joseph's gifts"},
+        {"id": 4, "value": "God used their sin to teach Jacob's family humility"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 72,
+      "questionContent": "How many members of Jacob's household came down to Egypt in all?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Forty-six"},
+        {"id": 2, "value": "Sixty-six"},
+        {"id": 3, "value": "Seventy"},
+        {"id": 4, "value": "Eighty"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 73,
+      "questionContent": "What item did Joseph's steward plant in Benjamin's grain sack to frame him?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "A golden ring"},
+        {"id": 2, "value": "Joseph's silver cup"},
+        {"id": 3, "value": "A brass goblet"},
+        {"id": 4, "value": "A carved official seal"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 74,
+      "questionContent": "What did Rachel steal from her father Laban when Jacob's household fled from Haran?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "A large sum of silver coins"},
+        {"id": 2, "value": "Laban's finest breeding animals"},
+        {"id": 3, "value": "The written contract of Jacob's wages"},
+        {"id": 4, "value": "Laban's household idols"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 75,
+      "questionContent": "What was the name of the field and cave Abraham purchased to bury Sarah?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "The field of Machpelah near Mamre"},
+        {"id": 2, "value": "The grove of Mamre near Hebron"},
+        {"id": 3, "value": "The cave at Beersheba beside the well"},
+        {"id": 4, "value": "The field of Ephron near Bethel"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 76,
+      "questionContent": "What does the name 'Edom' mean — the other name by which Esau was known?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "The hunter"},
+        {"id": 2, "value": "The firstborn"},
+        {"id": 3, "value": "Red"},
+        {"id": 4, "value": "Hairy"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 77,
+      "questionContent": "What name did Jacob give to the place where he wrestled with God through the night?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Bethel"},
+        {"id": 2, "value": "Beersheba"},
+        {"id": 3, "value": "Mahanaim"},
+        {"id": 4, "value": "Peniel"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 78,
+      "questionContent": "According to Genesis 15:13, how many years did God tell Abram his descendants would be enslaved in a foreign land?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Two hundred years"},
+        {"id": 2, "value": "Four hundred years"},
+        {"id": 3, "value": "Three hundred years"},
+        {"id": 4, "value": "Five hundred years"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 79,
+      "questionContent": "According to Genesis 17, at what age were male infants in Abraham's household to be circumcised?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "On the eighth day"},
+        {"id": 2, "value": "At thirty days old"},
+        {"id": 3, "value": "At their first birthday"},
+        {"id": 4, "value": "When they reached adulthood"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 80,
+      "questionContent": "Why did Simeon and Levi attack and kill all the men of Shechem?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "The king of Shechem had imposed heavy taxes on Jacob's family"},
+        {"id": 2, "value": "The men of Shechem had stolen Jacob's flocks"},
+        {"id": 3, "value": "Shechem had refused to sell land to Jacob's household"},
+        {"id": 4, "value": "Shechem son of Hamor had violated their sister Dinah"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 81,
+      "questionContent": "What was the first thing Jacob did when he arrived at the well and saw Rachel coming with her flock?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "He sang a blessing in her honor"},
+        {"id": 2, "value": "He knelt before her and wept with joy"},
+        {"id": 3, "value": "He rolled the stone from the well's mouth and watered her flock"},
+        {"id": 4, "value": "He gave her his ring as a sign of his intentions"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 82,
+      "questionContent": "What did Jacob send in successive waves ahead of him to appease his brother Esau before their meeting?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "A letter carried by servants asking for forgiveness"},
+        {"id": 2, "value": "Large droves of livestock as a gift"},
+        {"id": 3, "value": "Silver coins and fine garments from Paddan-Aram"},
+        {"id": 4, "value": "His wives and children walking ahead as a peace offering"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 83,
+      "questionContent": "What happened to Dinah, daughter of Jacob and Leah, in the city of Shechem?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "She was violated by Shechem, the son of Hamor the Hivite"},
+        {"id": 2, "value": "She was kidnapped by the king of Canaan"},
+        {"id": 3, "value": "She was taken into the palace as a servant"},
+        {"id": 4, "value": "She was sold by her brothers to a foreign merchant"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 84,
+      "questionContent": "What promise did Joseph make to his dying father Jacob?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "To send Jacob's body back to Canaan within three days"},
+        {"id": 2, "value": "To care for all of Jacob's children and grandchildren"},
+        {"id": 3, "value": "To build a memorial tomb in Goshen"},
+        {"id": 4, "value": "To bury him in Canaan in the cave of his fathers"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 85,
+      "questionContent": "What happened to the chief baker after Joseph interpreted his dream in prison?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "He was released and restored to his position"},
+        {"id": 2, "value": "He was given a reduced sentence and set free"},
+        {"id": 3, "value": "He was impaled on a pole, just as Joseph had predicted"},
+        {"id": 4, "value": "He was transferred to a harsher prison"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 86,
+      "questionContent": "How did Judah guarantee Benjamin's safety to his father Jacob before the second journey to Egypt?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "He offered twenty silver pieces as surety"},
+        {"id": 2, "value": "He pledged himself personally, promising to bear the blame forever if Benjamin did not return safely"},
+        {"id": 3, "value": "He left his own son Shelah with Jacob as a hostage"},
+        {"id": 4, "value": "He swore an oath over their mother Rachel's burial place"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 87,
+      "questionContent": "In Jacob's final blessing in Genesis 49, from which son would the scepter and ruler's staff not depart?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Judah"},
+        {"id": 2, "value": "Reuben"},
+        {"id": 3, "value": "Joseph"},
+        {"id": 4, "value": "Benjamin"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 88,
+      "questionContent": "What Egyptian name did Pharaoh give to Joseph?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Manasseh"},
+        {"id": 2, "value": "Imhotep"},
+        {"id": 3, "value": "Amenhotep"},
+        {"id": 4, "value": "Zaphenath-Paneah"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 89,
+      "questionContent": "What were the names of Joseph's two sons born to him in Egypt?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Ephraim and Benjamin"},
+        {"id": 2, "value": "Manasseh and Issachar"},
+        {"id": 3, "value": "Manasseh and Ephraim"},
+        {"id": 4, "value": "Ephraim and Reuben"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 90,
+      "questionContent": "In Genesis 48, which of Joseph's sons did Jacob bless with the greater blessing despite being the younger?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Manasseh"},
+        {"id": 2, "value": "Ephraim"},
+        {"id": 3, "value": "Both sons received equal blessings"},
+        {"id": 4, "value": "Neither — Jacob blessed Reuben instead"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 91,
+      "questionContent": "Why did Jacob's family settle in the region of Goshen rather than among the Egyptians?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Because shepherds were detestable to the Egyptians, and the Israelites were shepherds"},
+        {"id": 2, "value": "Because foreigners were forbidden from living inside Egyptian cities"},
+        {"id": 3, "value": "Because Joseph wanted to keep his family away from Pharaoh's court"},
+        {"id": 4, "value": "Because Goshen was the only land Pharaoh offered to foreign peoples"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 92,
+      "questionContent": "According to Genesis 49, what disqualified Reuben from excelling as Jacob's firstborn?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "He failed to protect Joseph from his brothers"},
+        {"id": 2, "value": "He was too weak to lead the family in battle"},
+        {"id": 3, "value": "He refused to follow Jacob's commands"},
+        {"id": 4, "value": "He defiled his father's bed by sleeping with Bilhah"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 93,
+      "questionContent": "How did Tamar force Judah to acknowledge that she was more righteous than he was?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "She brought witnesses before the city elders"},
+        {"id": 2, "value": "She appealed directly to Jacob's household"},
+        {"id": 3, "value": "She produced Judah's seal, cord, and staff as evidence"},
+        {"id": 4, "value": "She presented written proof of Judah's pledge"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 94,
+      "questionContent": "In whose house did Joseph serve before he was thrown into prison?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Pharaoh's own palace"},
+        {"id": 2, "value": "The house of Potiphar, captain of Pharaoh's guard"},
+        {"id": 3, "value": "The house of the chief cupbearer"},
+        {"id": 4, "value": "The house of Asenath's father"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 95,
+      "questionContent": "What did the three visitors announce when they came to Abraham at the oaks of Mamre?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "That Sarah would give birth to a son within a year"},
+        {"id": 2, "value": "That Abraham was to sacrifice Isaac on Moriah"},
+        {"id": 3, "value": "That the covenant of circumcision would be established that day"},
+        {"id": 4, "value": "That Lot's household would be spared from Sodom's judgment"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 96,
+      "questionContent": "What caused Jacob's spirit to revive after hearing that Joseph was still alive?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "The detailed account his sons gave him about Egypt"},
+        {"id": 2, "value": "Seeing Joseph's garments the brothers brought back"},
+        {"id": 3, "value": "Receiving a letter written in Joseph's hand"},
+        {"id": 4, "value": "Seeing the carts Joseph had sent to carry him to Egypt"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 97,
+      "questionContent": "How did Jacob describe the tribe of Benjamin in his final blessing in Genesis 49?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Like a lion crouching to spring on its prey"},
+        {"id": 2, "value": "Like a fruitful vine growing beside a spring"},
+        {"id": 3, "value": "Like a ravenous wolf that devours its prey"},
+        {"id": 4, "value": "Like a strong donkey resting between its burdens"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 98,
+      "questionContent": "What was the name of Joseph's wife, given to him by Pharaoh?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Miriam daughter of Laban"},
+        {"id": 2, "value": "Asenath daughter of Potiphera"},
+        {"id": 3, "value": "Dinah daughter of Jacob"},
+        {"id": 4, "value": "Tamar daughter of Judah"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 99,
+      "questionContent": "What were the dimensions of Noah's ark as specified in Genesis 6:15?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "300 cubits long, 50 cubits wide, and 30 cubits high"},
+        {"id": 2, "value": "200 cubits long, 40 cubits wide, and 20 cubits high"},
+        {"id": 3, "value": "400 cubits long, 60 cubits wide, and 40 cubits high"},
+        {"id": 4, "value": "300 cubits long, 60 cubits wide, and 25 cubits high"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 100,
+      "questionContent": "When Joseph's brothers came to buy grain and did not recognize him, what did he accuse them of?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Stealing grain from Pharaoh's stores"},
+        {"id": 2, "value": "Worshiping false gods"},
+        {"id": 3, "value": "Cheating the merchants at the market"},
+        {"id": 4, "value": "Being spies who had come to see where the land was unprotected"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 101,
+      "questionContent": "According to Genesis 1:2, what was the Spirit of God doing at the beginning of creation?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Speaking the words of creation aloud"},
+        {"id": 2, "value": "Dividing the light from the darkness"},
+        {"id": 3, "value": "Hovering over the surface of the waters"},
+        {"id": 4, "value": "Moving the waters to form the seas"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 102,
+      "questionContent": "Genesis 3:15 — God's word to the serpent — is often called the 'protoevangelium.' What does this verse declare?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "God would put enmity between the serpent and the woman, and between their offspring"},
+        {"id": 2, "value": "The serpent would be the eternal enemy of all human descendants"},
+        {"id": 3, "value": "The woman's offspring would ultimately worship God instead of the serpent"},
+        {"id": 4, "value": "God would destroy the serpent at the appointed end of days"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 103,
+      "questionContent": "For which patriarch in the genealogy of Genesis 5 is the phrase 'and then he died' conspicuously absent?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Noah"},
+        {"id": 2, "value": "Enoch"},
+        {"id": 3, "value": "Methuselah"},
+        {"id": 4, "value": "Adam"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 104,
+      "questionContent": "According to Genesis 5:29, what does the name 'Noah' mean, as Lamech his father explained it?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Man of rest"},
+        {"id": 2, "value": "Survivor of the waters"},
+        {"id": 3, "value": "Righteous before God"},
+        {"id": 4, "value": "He will comfort us"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 105,
+      "questionContent": "According to Genesis 6:4, who were the Nephilim?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "The mighty descendants of Cain who first founded cities and ruled the surrounding lands"},
+        {"id": 2, "value": "Warrior-priests who served at the ancient high places and kept the sacred rites"},
+        {"id": 3, "value": "The heroes of old, men of renown, born of the sons of God and daughters of humans"},
+        {"id": 4, "value": "A race of giants who had crossed the mountains from the lands east of Eden"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 106,
+      "questionContent": "For how many days did the floodwaters prevail over the earth before they began to recede?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "150 days"},
+        {"id": 2, "value": "40 days"},
+        {"id": 3, "value": "100 days"},
+        {"id": 4, "value": "370 days"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 107,
+      "questionContent": "What was the first bird Noah released from the ark, before he sent out the dove?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "A pigeon"},
+        {"id": 2, "value": "A raven"},
+        {"id": 3, "value": "A turtledove"},
+        {"id": 4, "value": "A sparrow"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 108,
+      "questionContent": "What kind of leaf did the dove bring back to Noah on its second flight from the ark?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "A palm leaf"},
+        {"id": 2, "value": "A cedar branch"},
+        {"id": 3, "value": "A fig leaf"},
+        {"id": 4, "value": "A freshly plucked olive leaf"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 109,
+      "questionContent": "According to Genesis 10, who was Nimrod and what was he famous for?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "The eldest son of Shem, a lawgiver who first established order among the nations"},
+        {"id": 2, "value": "A descendant of Japheth who founded Babel and ruled all of Mesopotamia"},
+        {"id": 3, "value": "A mighty hunter before the LORD and the founder of Babylon and Nineveh"},
+        {"id": 4, "value": "The first king to rule over all of Ham's descendants from Egypt to Assyria"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 110,
+      "questionContent": "In the war of the kings in Genesis 14, which five city-states were defeated by the four kings?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Jerusalem, Jericho, Ai, Bethel, and Gibeon"},
+        {"id": 2, "value": "Sodom, Gomorrah, Admah, Zeboyim, and Bela (Zoar)"},
+        {"id": 3, "value": "Canaan, Aram, Moab, Edom, and Philistia"},
+        {"id": 4, "value": "Damascus, Hazor, Megiddo, Shechem, and Hebron"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 111,
+      "questionContent": "What did Abram give to the priest-king Melchizedek after the battle of the kings?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "A tenth of everything"},
+        {"id": 2, "value": "Half of the recovered spoils"},
+        {"id": 3, "value": "Three of his finest animals as a burnt offering"},
+        {"id": 4, "value": "A silver talent and a gold ring"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 112,
+      "questionContent": "According to Genesis 17:14, what must happen to an uncircumcised male in Abraham's household?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "He will be denied a share in the promised land"},
+        {"id": 2, "value": "He will be enslaved in a foreign country"},
+        {"id": 3, "value": "He will receive no part of Abraham's inheritance"},
+        {"id": 4, "value": "He will be cut off from his people — he has broken the covenant"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 113,
+      "questionContent": "Why did Sarah laugh to herself when the visitors at Mamre announced she would have a son?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Because she thought the visitors were speaking in jest"},
+        {"id": 2, "value": "Because she believed Abraham was far too old to father children"},
+        {"id": 3, "value": "Because she and Abraham were both past the age of childbearing"},
+        {"id": 4, "value": "Because she had given up all hope and thought they were mocking her"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 114,
+      "questionContent": "In Abraham's intercession for Sodom, what was the final number of righteous people he negotiated down to?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Twenty"},
+        {"id": 2, "value": "Ten"},
+        {"id": 3, "value": "Five"},
+        {"id": 4, "value": "Fifteen"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 115,
+      "questionContent": "What did Lot's two daughters do after the destruction of Sodom and the loss of their husbands-to-be?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "They made their father drunk on successive nights and became pregnant by him, bearing Moab and Ben-Ammi"},
+        {"id": 2, "value": "They fled to the city of Zoar and married men from that city"},
+        {"id": 3, "value": "One died in the mountains; the other married a Canaanite man"},
+        {"id": 4, "value": "They returned to the ruins of Sodom to search for survivors"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 116,
+      "questionContent": "What does the place name 'Beersheba' mean, according to the context of Genesis 21 when Abraham and Abimelech made a treaty there?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Valley of the covenant"},
+        {"id": 2, "value": "Holy spring of the promise"},
+        {"id": 3, "value": "Place of the great oath"},
+        {"id": 4, "value": "Well of the oath or well of seven"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 117,
+      "questionContent": "What did Abraham name the location of the near-sacrifice, and what does that name mean?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Moriah — place of the LORD's presence"},
+        {"id": 2, "value": "El-Bethel — the God of the house of God"},
+        {"id": 3, "value": "The LORD Will Provide (Yahweh-Yireh)"},
+        {"id": 4, "value": "Peniel — face of God"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 118,
+      "questionContent": "How did Abraham's servant know that Rebekah was the right wife for Isaac?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "He recognized a divine radiance about her appearance"},
+        {"id": 2, "value": "She drew water for him and all ten of his camels, fulfilling his exact prayer"},
+        {"id": 3, "value": "She wore the color the servant had prayed for as a sign from God"},
+        {"id": 4, "value": "A voice from heaven confirmed her as the chosen one"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 119,
+      "questionContent": "What physical detail at Jacob and Esau's birth gave Jacob his name, according to Genesis 25?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Jacob was grasping Esau's heel as they came out of the womb"},
+        {"id": 2, "value": "Jacob came out with a blue birthmark on his hand"},
+        {"id": 3, "value": "The midwife tied a red thread on Jacob's hand first"},
+        {"id": 4, "value": "Jacob was born at dawn and Esau at dusk the same day"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 120,
+      "questionContent": "How does Genesis 25:25 describe Esau's physical appearance at birth?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Unusually large and strong for a newborn"},
+        {"id": 2, "value": "Dark-skinned with thick black hair"},
+        {"id": 3, "value": "Pale and thin, with fine light hair"},
+        {"id": 4, "value": "Red and his whole body was like a hairy garment"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 121,
+      "questionContent": "In Genesis 35, when God reappeared to Jacob at Bethel and reaffirmed the covenant, what did God tell him to do first?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Build an altar of twelve stones for the twelve future tribes"},
+        {"id": 2, "value": "Send messengers ahead to announce his return to Canaan"},
+        {"id": 3, "value": "Go up to Bethel, settle there, and build an altar to God"},
+        {"id": 4, "value": "Visit his father Isaac first to receive a final patriarchal blessing"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 122,
+      "questionContent": "How does the NIV specifically describe the garment Jacob gave to Joseph in Genesis 37:3?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "A garment embroidered with gold and silver thread"},
+        {"id": 2, "value": "An ornate robe"},
+        {"id": 3, "value": "A coat of many colors"},
+        {"id": 4, "value": "A robe woven in royal purple and crimson"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 123,
+      "questionContent": "In Joseph's first dream, what did his brothers' sheaves do?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "They gathered around and bowed down to Joseph's sheaf"},
+        {"id": 2, "value": "They fell to the ground while his sheaf remained standing"},
+        {"id": 3, "value": "They withered while his sheaf grew tall and full"},
+        {"id": 4, "value": "They were swallowed up by his sheaf one by one"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 124,
+      "questionContent": "In Joseph's second dream, what celestial bodies bowed down to him?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Twelve stars"},
+        {"id": 2, "value": "Seven planets and five stars"},
+        {"id": 3, "value": "The moon and eleven stars"},
+        {"id": 4, "value": "The sun, the moon, and eleven stars"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 125,
+      "questionContent": "According to Genesis 38, why did God put Onan to death?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "He refused to marry Tamar at all, in defiance of his duty"},
+        {"id": 2, "value": "He secretly worshiped the gods of Canaan"},
+        {"id": 3, "value": "He spilled his seed on the ground to avoid giving offspring to his dead brother"},
+        {"id": 4, "value": "He swore a false oath before the elders of the city"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 126,
+      "questionContent": "According to Genesis 39:5, how did God bless Potiphar's household on account of Joseph?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "The LORD blessed Potiphar's household and everything he had, in house and field"},
+        {"id": 2, "value": "Potiphar's lands produced double harvests every season for seven years"},
+        {"id": 3, "value": "Potiphar received great honor and gifts from Pharaoh on Joseph's account"},
+        {"id": 4, "value": "Every member of Potiphar's family was kept in good health"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 127,
+      "questionContent": "In the cupbearer's dream, what did the three branches represent, according to Joseph's interpretation?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Three years of service before Pharaoh would review his case"},
+        {"id": 2, "value": "Three days, after which Pharaoh would restore him to his former position"},
+        {"id": 3, "value": "Three generations before his family would prosper again"},
+        {"id": 4, "value": "Three harvests of the vine he would oversee for Pharaoh"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 128,
+      "questionContent": "In Pharaoh's second dream, what devoured the seven healthy, full heads of grain?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Seven thin cows rising from the Nile"},
+        {"id": 2, "value": "A scorching wind from the eastern desert"},
+        {"id": 3, "value": "A great swarm of locusts from the south"},
+        {"id": 4, "value": "Seven thin and scorched heads of grain"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 129,
+      "questionContent": "When Jacob sent his sons back to Egypt with Benjamin, what gifts did he tell them to take for the Egyptian official?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Gold, silver, and the finest linen cloth of Canaan"},
+        {"id": 2, "value": "Twenty of their best goats and a jar of wine"},
+        {"id": 3, "value": "Balm, honey, spices, myrrh, pistachio nuts, and almonds"},
+        {"id": 4, "value": "Fine cloth, carved woodwork, and perfumed oil"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 130,
+      "questionContent": "What economic policy did Joseph implement during the severe famine to acquire all Egypt's land for Pharaoh?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "He bought all Egypt's land in exchange for grain, then required one-fifth of every crop for Pharaoh"},
+        {"id": 2, "value": "He taxed all merchants and foreign caravans passing through Egypt's territory"},
+        {"id": 3, "value": "He required foreign nations to surrender their gold and silver reserves in exchange for Egyptian grain"},
+        {"id": 4, "value": "He redistributed all of Egypt's farmland equally to feed the starving population"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 131,
+      "questionContent": "What did Joseph make the Israelites swear an oath about before his death?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "To honor his name and teach it to every future generation"},
+        {"id": 2, "value": "To carry his bones out of Egypt when God brought them to the promised land"},
+        {"id": 3, "value": "To bury him beside his father Jacob in Canaan within one year of his death"},
+        {"id": 4, "value": "To keep his embalmed body in a place of honor in the sanctuary"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 132,
+      "questionContent": "According to Genesis 49:10, what did Jacob prophesy about the tribe of Judah?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Its descendants would spread to the four corners of the promised land"},
+        {"id": 2, "value": "The greatest priests would come from Judah's line alone"},
+        {"id": 3, "value": "Judah would inherit the most fertile territory in Canaan"},
+        {"id": 4, "value": "The scepter would not depart from Judah until Shiloh comes"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 133,
+      "questionContent": "In Genesis 1:26, what specific role did God give to humans when he made them in his image?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "To worship God on behalf of all living things"},
+        {"id": 2, "value": "To till the soil and tend the garden"},
+        {"id": 3, "value": "To rule over every living creature on earth"},
+        {"id": 4, "value": "To name and classify all living things"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 134,
+      "questionContent": "According to Genesis 2:10–14, how many rivers flowed from Eden, and what was the first one called?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Four rivers; the first was the Pishon"},
+        {"id": 2, "value": "Two rivers; the first was the Euphrates"},
+        {"id": 3, "value": "Three rivers; the first was the Gihon"},
+        {"id": 4, "value": "Four rivers; the first was the Gihon"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 135,
+      "questionContent": "What precise argument did the serpent use to convince Eve that eating the fruit would not cause death?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "\"God knows this fruit contains immortality and does not want you to have it\""},
+        {"id": 2, "value": "\"God knows that when you eat it your eyes will be opened, and you will be like God, knowing good and evil\""},
+        {"id": 3, "value": "\"The fruit only bestows wisdom, and God has hidden it from you unjustly\""},
+        {"id": 4, "value": "\"You will not die, because God loves you too much to allow any harm\""}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 136,
+      "questionContent": "According to Genesis 4:17, who built the first city mentioned in the Bible, and for whom was it named?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Nimrod built a great city and named it Babylon after the language confusion"},
+        {"id": 2, "value": "Seth built a city on a wide plain and named it after his son Enosh"},
+        {"id": 3, "value": "Adam built a settlement by the river and called it the City of Nod"},
+        {"id": 4, "value": "Cain built a city and named it after his son Enoch"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 137,
+      "questionContent": "According to the genealogy in Genesis 5, what is the direct family relationship between Lamech (in Seth's line) and Noah?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Lamech was Noah's grandfather through Methuselah"},
+        {"id": 2, "value": "Lamech was Noah's great-grandfather through Enoch and Methuselah"},
+        {"id": 3, "value": "Lamech was Noah's father"},
+        {"id": 4, "value": "Lamech was Noah's uncle through his brother Methuselah"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 138,
+      "questionContent": "What phrase in Genesis 5 uniquely sets Enoch apart from all the other patriarchs in his lineage?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "\"And Enoch feared the LORD above all men of his generation\""},
+        {"id": 2, "value": "\"Enoch walked faithfully with God\""},
+        {"id": 3, "value": "\"Enoch was righteous and blameless before the LORD\""},
+        {"id": 4, "value": "\"Enoch was more beloved by God than any who came before him\""}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 139,
+      "questionContent": "What is the main purpose of the 'Table of Nations' in Genesis 10?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "To trace how the seventy nations spread across the earth from Noah's three sons after the flood"},
+        {"id": 2, "value": "To identify the nations promised to Abraham's descendants as their inheritance"},
+        {"id": 3, "value": "To record the covenant nations that would stand at the end of days"},
+        {"id": 4, "value": "To name the nations that would be judged for their wickedness in Canaan"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 140,
+      "questionContent": "According to Genesis 17:14, what must happen to an uncircumcised male found in Abraham's covenant community?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "He must be denied any portion of the promised inheritance"},
+        {"id": 2, "value": "He must be sold as a servant outside the household"},
+        {"id": 3, "value": "He must be excluded from the community until he complies"},
+        {"id": 4, "value": "He must be cut off from his people for breaking the covenant"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 141,
+      "questionContent": "What literary function does the repeated Hebrew formula 'toledot' ('these are the generations of') serve in Genesis?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "A priestly benediction signaling the start of a new covenant"},
+        {"id": 2, "value": "A poetic refrain summarizing the events that just occurred"},
+        {"id": 3, "value": "A structural heading that divides the book into its major sections"},
+        {"id": 4, "value": "A legal formula certifying that the account is an eyewitness report"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 142,
+      "questionContent": "From whom did Abraham purchase the cave of Machpelah, and at what price?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Ephron the Hittite, for four hundred shekels of silver"},
+        {"id": 2, "value": "Hamor the Hivite, for one hundred pieces of silver"},
+        {"id": 3, "value": "Abimelech the Philistine, for twenty gold shekels"},
+        {"id": 4, "value": "The sons of Heth, for fifty shekels of silver"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 143,
+      "questionContent": "In Genesis 26, when Isaac re-dug his father's wells, what was the name of the well over which there was no quarrel?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Esek"},
+        {"id": 2, "value": "Rehoboth"},
+        {"id": 3, "value": "Sitnah"},
+        {"id": 4, "value": "Beersheba"}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 144,
+      "questionContent": "When Isaac asked Jacob how he found the game so quickly, what was Jacob's reply?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "\"I ran without stopping to bring you what you love\""},
+        {"id": 2, "value": "\"The animals came to me as if sent to my hand\""},
+        {"id": 3, "value": "\"Your eyesight has faded, father — I have been hunting since dawn\""},
+        {"id": 4, "value": "\"The LORD your God gave me success\""}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 145,
+      "questionContent": "What was Benjamin's portion at the feast Joseph hosted for his brothers in Egypt, compared to the others?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "The same as everyone else as a gesture of fairness"},
+        {"id": 2, "value": "Double that of the eldest brother Reuben"},
+        {"id": 3, "value": "Five times as much as anyone else's"},
+        {"id": 4, "value": "Triple the portion given to the other younger brothers"}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 146,
+      "questionContent": "In what order were the brothers' sacks searched when Joseph's steward pursued them after the banquet?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "Beginning with the oldest and ending with the youngest"},
+        {"id": 2, "value": "Beginning with the youngest and ending with the oldest"},
+        {"id": 3, "value": "In the order in which they had arrived at Joseph's house"},
+        {"id": 4, "value": "Beginning with whichever brother Joseph suspected first"}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 147,
+      "questionContent": "What was Judah's exact reply to Joseph when the silver cup was found in Benjamin's sack?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "\"Punish me in his place — I swore to my father I would keep him safe\""},
+        {"id": 2, "value": "\"What can we say? God has uncovered your servants' guilt\""},
+        {"id": 3, "value": "\"We are innocent — this cup must have been placed there by another hand\""},
+        {"id": 4, "value": "\"Take any of us you wish, but let the boy return to his father\""}
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 148,
+      "questionContent": "In Jacob's blessing of Issachar in Genesis 49, what fate did the prophecy describe for that tribe?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "That Issachar would be blessed with the most fertile land of all his brothers"},
+        {"id": 2, "value": "That Issachar's descendants would refuse to fight in Israel's wars"},
+        {"id": 3, "value": "That Issachar would become the wealthiest tribe in all of Canaan"},
+        {"id": 4, "value": "He would see how good his resting place was and bow his shoulder to the burden, becoming a forced laborer"}
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 149,
+      "questionContent": "What refrain is repeated after each creative act in Genesis 1 to show God's evaluation of his work?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "\"And God blessed it and called it holy\""},
+        {"id": 2, "value": "\"And the morning came and the work was complete\""},
+        {"id": 3, "value": "\"And God saw that it was good\""},
+        {"id": 4, "value": "\"And God rested from the work of that day\""}
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 150,
+      "questionContent": "According to Genesis 50:20, what did Joseph tell his brothers about their intention to harm him?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {"id": 1, "value": "\"You intended to harm me, but God intended it for good to accomplish the saving of many lives\""},
+        {"id": 2, "value": "\"The evil you meant for me, God has turned into blessing for you and for all Egypt\""},
+        {"id": 3, "value": "\"What was meant for evil, God made into righteousness and salvation for his people\""},
+        {"id": 4, "value": "\"God saw your wickedness and reshaped it into his great purposes for the nations\""}
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    }
+  ]
+}

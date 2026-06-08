@@ -1,54 +1,54 @@
 {
-  "title": "Proverbs of the Bible",
+  "title": "The Book of Proverbs",
   "language": "en",
   "questionsList": [
     {
       "id": 1,
-      "questionContent": "The Book of Proverbs opens: 'The proverbs of Solomon son of David, king of ___.'",
+      "questionContent": "Proverbs 1:8-9 says obeying a father's instruction and a mother's teaching will be like what for your head?",
       "complexityLevel": "easy",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "Egypt"
+          "value": "A crown of honour"
         },
         {
           "id": 2,
-          "value": "Israel"
+          "value": "A shield of protection"
         },
         {
           "id": 3,
-          "value": "Judah"
+          "value": "A garland to grace your head"
         },
         {
           "id": 4,
-          "value": "Jerusalem"
+          "value": "A lamp for your path"
         }
       ],
-      "rightAnswerId": 2,
+      "rightAnswerId": 3,
       "rightAnswerString": null
     },
     {
       "id": 2,
-      "questionContent": "According to Proverbs 1:7, what is 'the beginning of knowledge'?",
+      "questionContent": "According to Proverbs 14:1 (NIV), the wise woman does what?",
       "complexityLevel": "easy",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "The fear of the LORD"
+          "value": "Builds her house"
         },
         {
           "id": 2,
-          "value": "Love for one's neighbour"
+          "value": "Seeks a worthy husband"
         },
         {
           "id": 3,
-          "value": "Daily reading of Scripture"
+          "value": "Teaches her children"
         },
         {
           "id": 4,
-          "value": "A parent teaching"
+          "value": "Plants her fields"
         }
       ],
       "rightAnswerId": 1,
@@ -56,25 +56,25 @@
     },
     {
       "id": 3,
-      "questionContent": "According to Proverbs 16:18 (NIV), what 'goes before destruction'?",
+      "questionContent": "Proverbs 3:3 says: 'Let love and faithfulness never leave you; write them on the tablet of your ___.'",
       "complexityLevel": "easy",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "Envy"
+          "value": "mind"
         },
         {
           "id": 2,
-          "value": "Anger"
+          "value": "soul"
         },
         {
           "id": 3,
-          "value": "Greed"
+          "value": "hands"
         },
         {
           "id": 4,
-          "value": "Pride"
+          "value": "heart"
         }
       ],
       "rightAnswerId": 4,
@@ -82,103 +82,103 @@
     },
     {
       "id": 4,
-      "questionContent": "Proverbs 3:5 says: 'Trust in the LORD with all your heart and lean not on your own ___.'",
+      "questionContent": "What does Proverbs 10:4 (NIV) say 'diligent hands' bring?",
       "complexityLevel": "easy",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "desires"
+          "value": "Honour and status"
         },
         {
           "id": 2,
-          "value": "plans"
+          "value": "Wealth"
         },
         {
           "id": 3,
-          "value": "understanding"
+          "value": "Favour from God"
         },
         {
           "id": 4,
-          "value": "strength"
-        }
-      ],
-      "rightAnswerId": 3,
-      "rightAnswerString": null
-    },
-    {
-      "id": 5,
-      "questionContent": "What does Proverbs 15:1 (NIV) say 'turns away wrath'?",
-      "complexityLevel": "easy",
-      "answerType": "ID",
-      "answersList": [
-        {
-          "id": 1,
-          "value": "A gentle answer"
-        },
-        {
-          "id": 2,
-          "value": "A firm rebuke"
-        },
-        {
-          "id": 3,
-          "value": "A quiet spirit"
-        },
-        {
-          "id": 4,
-          "value": "A wise counsel"
-        }
-      ],
-      "rightAnswerId": 1,
-      "rightAnswerString": null
-    },
-    {
-      "id": 6,
-      "questionContent": "What does Proverbs 22:1 (NIV) say is 'more desirable than great riches'?",
-      "complexityLevel": "easy",
-      "answerType": "ID",
-      "answersList": [
-        {
-          "id": 1,
-          "value": "Many faithful friends"
-        },
-        {
-          "id": 2,
-          "value": "A good name"
-        },
-        {
-          "id": 3,
-          "value": "Peace in the household"
-        },
-        {
-          "id": 4,
-          "value": "Long life"
+          "value": "Long life and ease"
         }
       ],
       "rightAnswerId": 2,
       "rightAnswerString": null
     },
     {
-      "id": 7,
-      "questionContent": "Which creature does Proverbs 6 hold up as a model of diligence for the lazy person?",
+      "id": 5,
+      "questionContent": "Proverbs 10:22 says: 'The blessing of the LORD brings wealth, without ___ toil for it.'",
       "complexityLevel": "easy",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "The bee"
+          "value": "extra"
         },
         {
           "id": 2,
-          "value": "The sparrow"
+          "value": "constant"
         },
         {
           "id": 3,
-          "value": "The spider"
+          "value": "painful"
         },
         {
           "id": 4,
-          "value": "The ant"
+          "value": "endless"
+        }
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 6,
+      "questionContent": "Proverbs 31:8 commands us to 'speak up for those who ___.'",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "cannot speak for themselves"
+        },
+        {
+          "id": 2,
+          "value": "are poor and afflicted"
+        },
+        {
+          "id": 3,
+          "value": "are led to death unjustly"
+        },
+        {
+          "id": 4,
+          "value": "have no advocate at court"
+        }
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 7,
+      "questionContent": "Proverbs 4:18 says the path of the righteous is like 'the morning sun, shining ever brighter till ___.'",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "it sets in glory"
+        },
+        {
+          "id": 2,
+          "value": "it warms the whole earth"
+        },
+        {
+          "id": 3,
+          "value": "it fades at last"
+        },
+        {
+          "id": 4,
+          "value": "the full light of day"
         }
       ],
       "rightAnswerId": 4,
@@ -186,39 +186,585 @@
     },
     {
       "id": 8,
-      "questionContent": "Proverbs 17:22 (NIV) states: 'A cheerful heart is ___.'",
+      "questionContent": "Proverbs 11:3 (NIV) says the integrity of the upright ___.",
       "complexityLevel": "easy",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "a tonic"
+          "value": "earns them honour"
         },
         {
           "id": 2,
-          "value": "the strength of the wise"
+          "value": "guides them"
         },
         {
           "id": 3,
-          "value": "good medicine"
+          "value": "shields from harm"
         },
         {
           "id": 4,
-          "value": "a blessing to all"
+          "value": "brings household peace"
+        }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 9,
+      "questionContent": "According to Proverbs 21:2 (NIV), a person 'may think their own ways are right' — but who 'weighs the heart'?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Their friends"
+        },
+        {
+          "id": 2,
+          "value": "The city elders"
+        },
+        {
+          "id": 3,
+          "value": "The LORD"
+        },
+        {
+          "id": 4,
+          "value": "Their conscience"
         }
       ],
       "rightAnswerId": 3,
       "rightAnswerString": null
     },
     {
-      "id": 9,
-      "questionContent": "Proverbs 4:23 (NIV) commands: 'Above all else, guard your ___.'",
+      "id": 10,
+      "questionContent": "What does Proverbs 16:31 (NIV) call grey hair?",
       "complexityLevel": "easy",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "tongue"
+          "value": "A glorious crown"
+        },
+        {
+          "id": 2,
+          "value": "A mark of favour"
+        },
+        {
+          "id": 3,
+          "value": "A sign of long years"
+        },
+        {
+          "id": 4,
+          "value": "A sign of wisdom"
+        }
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 11,
+      "questionContent": "Proverbs 19:14 says a prudent wife comes from whom?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "His own choosing"
+        },
+        {
+          "id": 2,
+          "value": "His own wisdom"
+        },
+        {
+          "id": 3,
+          "value": "His prayers over years"
+        },
+        {
+          "id": 4,
+          "value": "The LORD"
+        }
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 12,
+      "questionContent": "Proverbs 22:7 (NIV) says: 'the borrower is ___ to the lender.'",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "indebted"
+        },
+        {
+          "id": 2,
+          "value": "slave"
+        },
+        {
+          "id": 3,
+          "value": "subject"
+        },
+        {
+          "id": 4,
+          "value": "servant"
+        }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 13,
+      "questionContent": "What does Proverbs 3:27 say about doing good to those who deserve it?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Do it joyfully"
+        },
+        {
+          "id": 2,
+          "value": "It brings great reward"
+        },
+        {
+          "id": 3,
+          "value": "Do not withhold it when it is in your power"
+        },
+        {
+          "id": 4,
+          "value": "Build a lasting reputation by it"
+        }
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 14,
+      "questionContent": "What does Proverbs 21:13 say will happen to one who 'shuts their ears to the cry of the poor'?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "They too will cry out and not be answered"
+        },
+        {
+          "id": 2,
+          "value": "They will lose their wealth"
+        },
+        {
+          "id": 3,
+          "value": "They will be rejected by the community"
+        },
+        {
+          "id": 4,
+          "value": "Their children will suffer for it"
+        }
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 15,
+      "questionContent": "What does Proverbs 31:20 say the wife of noble character does for the poor and needy?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Gives from her own surplus"
+        },
+        {
+          "id": 2,
+          "value": "Teaches her household to care for them"
+        },
+        {
+          "id": 3,
+          "value": "Prays and fasts on their behalf"
+        },
+        {
+          "id": 4,
+          "value": "Opens her arms and extends her hands to them"
+        }
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 16,
+      "questionContent": "What does Proverbs 10:19 say is found 'when words are many'?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Pride"
+        },
+        {
+          "id": 2,
+          "value": "Sin"
+        },
+        {
+          "id": 3,
+          "value": "Strife"
+        },
+        {
+          "id": 4,
+          "value": "Folly"
+        }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 17,
+      "questionContent": "Proverbs 3:13 (NIV) says: 'Blessed are those who find ___.'",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "a pure heart"
+        },
+        {
+          "id": 2,
+          "value": "favour with God"
+        },
+        {
+          "id": 3,
+          "value": "wisdom"
+        },
+        {
+          "id": 4,
+          "value": "peace"
+        }
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 18,
+      "questionContent": "What does Proverbs 24:17-18 warn against doing when your enemy falls?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Gloating"
+        },
+        {
+          "id": 2,
+          "value": "Speaking ill of them"
+        },
+        {
+          "id": 3,
+          "value": "Turning others away"
+        },
+        {
+          "id": 4,
+          "value": "Refusing to help"
+        }
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 19,
+      "questionContent": "What does Proverbs 20:22 say NOT to do when someone wrongs you?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Plot revenge in secret"
+        },
+        {
+          "id": 2,
+          "value": "Act out of wounded pride"
+        },
+        {
+          "id": 3,
+          "value": "Speak against them in public"
+        },
+        {
+          "id": 4,
+          "value": "Say 'I'll pay you back for this wrong'"
+        }
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 20,
+      "questionContent": "Proverbs 11:28 says: 'Those who trust in their riches will ___.'",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "stumble"
+        },
+        {
+          "id": 2,
+          "value": "fall"
+        },
+        {
+          "id": 3,
+          "value": "perish"
+        },
+        {
+          "id": 4,
+          "value": "crumble"
+        }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 21,
+      "questionContent": "Proverbs 16:4 says the LORD works out everything to its proper end — even whom?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "The wicked, for a day of disaster"
+        },
+        {
+          "id": 2,
+          "value": "Those who have strayed from his commands"
+        },
+        {
+          "id": 3,
+          "value": "Events that appear to be beyond his purpose"
+        },
+        {
+          "id": 4,
+          "value": "Things hidden from the wise"
+        }
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 22,
+      "questionContent": "Proverbs 28:6 says: 'Better the poor whose walk is blameless than the rich whose ways are ___.'",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "haughty"
+        },
+        {
+          "id": 2,
+          "value": "dishonest"
+        },
+        {
+          "id": 3,
+          "value": "perverse"
+        },
+        {
+          "id": 4,
+          "value": "proud"
+        }
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 23,
+      "questionContent": "What does Proverbs 14:26 (NIV) say the fear of the LORD provides?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Wisdom and understanding"
+        },
+        {
+          "id": 2,
+          "value": "Long life and good favour"
+        },
+        {
+          "id": 3,
+          "value": "Peace and safety"
+        },
+        {
+          "id": 4,
+          "value": "A secure fortress"
+        }
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 24,
+      "questionContent": "What does Proverbs 12:11 say about 'those who work their land'?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "They will never lack honour"
+        },
+        {
+          "id": 2,
+          "value": "They will have abundant food"
+        },
+        {
+          "id": 3,
+          "value": "They earn the respect of all"
+        },
+        {
+          "id": 4,
+          "value": "They prosper in every season"
+        }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 25,
+      "questionContent": "What does Proverbs 27:5 say is 'better than hidden love'?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Open rebuke"
+        },
+        {
+          "id": 2,
+          "value": "A kind suggestion"
+        },
+        {
+          "id": 3,
+          "value": "A parent's advice"
+        },
+        {
+          "id": 4,
+          "value": "A gentle reproof"
+        }
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 26,
+      "questionContent": "Proverbs 22:9 (NIV) says: 'The generous will themselves be blessed, for they ___.'",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "earn the gratitude of many"
+        },
+        {
+          "id": 2,
+          "value": "store up treasure in heaven"
+        },
+        {
+          "id": 3,
+          "value": "share their food with the poor"
+        },
+        {
+          "id": 4,
+          "value": "walk in the way of righteousness"
+        }
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 27,
+      "questionContent": "According to Proverbs 5:21, 'a man's ways are in full view of ___.'",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "his neighbours"
+        },
+        {
+          "id": 2,
+          "value": "his household"
+        },
+        {
+          "id": 3,
+          "value": "his children"
+        },
+        {
+          "id": 4,
+          "value": "the LORD"
+        }
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 28,
+      "questionContent": "Proverbs 16:1 says 'to humans belong the plans of the heart' — but from the LORD comes what?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "The power to carry out those plans"
+        },
+        {
+          "id": 2,
+          "value": "The proper answer of the tongue"
+        },
+        {
+          "id": 3,
+          "value": "Blessing or correction"
+        },
+        {
+          "id": 4,
+          "value": "The wisdom to choose rightly"
+        }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 29,
+      "questionContent": "Proverbs 11:24 says one gives freely and yet gains even more — but another 'withholds unduly' and comes to what?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Poverty"
+        },
+        {
+          "id": 2,
+          "value": "Disgrace"
+        },
+        {
+          "id": 3,
+          "value": "Emptiness"
+        },
+        {
+          "id": 4,
+          "value": "Ruin"
+        }
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 30,
+      "questionContent": "Proverbs 31:26 says that when the wife of noble character speaks, 'faithful instruction is on her ___.'",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "mind"
         },
         {
           "id": 2,
@@ -226,33 +772,293 @@
         },
         {
           "id": 3,
-          "value": "soul"
+          "value": "tongue"
         },
         {
           "id": 4,
-          "value": "integrity"
+          "value": "lips"
+        }
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 31,
+      "questionContent": "Proverbs 11:4 says wealth is 'worthless in the day of ___.'",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "temptation"
+        },
+        {
+          "id": 2,
+          "value": "reckoning"
+        },
+        {
+          "id": 3,
+          "value": "sorrow"
+        },
+        {
+          "id": 4,
+          "value": "wrath"
+        }
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 32,
+      "questionContent": "According to Proverbs 15:16 (NIV), what is 'better than great wealth with turmoil'?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "A righteous name free from reproach"
+        },
+        {
+          "id": 2,
+          "value": "Little with the fear of the LORD"
+        },
+        {
+          "id": 3,
+          "value": "Health and contentment"
+        },
+        {
+          "id": 4,
+          "value": "The blessing of God on simple things"
         }
       ],
       "rightAnswerId": 2,
       "rightAnswerString": null
     },
     {
-      "id": 10,
-      "questionContent": "Proverbs 9:10 says 'knowledge of the Holy One' brings what?",
+      "id": 33,
+      "questionContent": "In Proverbs 23:26, what does the father ask of his son?",
       "complexityLevel": "easy",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "Understanding"
+          "value": "Give me your heart and keep to my ways"
         },
         {
           "id": 2,
-          "value": "Peace"
+          "value": "Walk faithfully in the path I have shown you"
         },
         {
           "id": 3,
-          "value": "Long life"
+          "value": "Never bring shame upon our name"
+        },
+        {
+          "id": 4,
+          "value": "Honour your mother all your days"
+        }
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 34,
+      "questionContent": "What does Proverbs 29:2 say happens 'when the righteous thrive'?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Children follow suit"
+        },
+        {
+          "id": 2,
+          "value": "God blesses the land"
+        },
+        {
+          "id": 3,
+          "value": "The people rejoice"
+        },
+        {
+          "id": 4,
+          "value": "Justice is done"
+        }
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 35,
+      "questionContent": "What does Proverbs 30:6 say you should not do to 'his words'?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Speak carelessly"
+        },
+        {
+          "id": 2,
+          "value": "Ignore in pride"
+        },
+        {
+          "id": 3,
+          "value": "Use for gain"
+        },
+        {
+          "id": 4,
+          "value": "Add to them"
+        }
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 36,
+      "questionContent": "What does Proverbs 27:19 (NIV) compare to 'water reflecting a face'?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "A man's deeds in God's sight"
+        },
+        {
+          "id": 2,
+          "value": "One's life reflecting the heart"
+        },
+        {
+          "id": 3,
+          "value": "A friend who truly knows you"
+        },
+        {
+          "id": 4,
+          "value": "The mirror of a righteous life"
+        }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 37,
+      "questionContent": "Proverbs 2:6 says 'from his mouth come ___.'",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "knowledge and understanding"
+        },
+        {
+          "id": 2,
+          "value": "instruction for the upright"
+        },
+        {
+          "id": 3,
+          "value": "words to guide the humble"
+        },
+        {
+          "id": 4,
+          "value": "judgment and discernment"
+        }
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 38,
+      "questionContent": "What does Proverbs 18:16 say a gift 'opens the way for the giver' and ushers them into?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "The favour of all they meet"
+        },
+        {
+          "id": 2,
+          "value": "Places of honour"
+        },
+        {
+          "id": 3,
+          "value": "The presence of the great"
+        },
+        {
+          "id": 4,
+          "value": "Doors that were closed to them"
+        }
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 39,
+      "questionContent": "What does Proverbs 19:18 say a parent should do 'while there is hope'?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Pray earnestly"
+        },
+        {
+          "id": 2,
+          "value": "Train them in faith"
+        },
+        {
+          "id": 3,
+          "value": "Guard their company"
+        },
+        {
+          "id": 4,
+          "value": "Discipline their children"
+        }
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 40,
+      "questionContent": "According to Proverbs 21:30, no wisdom, no insight, and no plan can succeed against whom?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "The king alone"
+        },
+        {
+          "id": 2,
+          "value": "The LORD"
+        },
+        {
+          "id": 3,
+          "value": "Human effort"
+        },
+        {
+          "id": 4,
+          "value": "Heavenly counsel"
+        }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 41,
+      "questionContent": "Proverbs 21:31 says 'the horse is made ready for the day of battle' — but what rests with the LORD?",
+      "complexityLevel": "easy",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Victory"
+        },
+        {
+          "id": 2,
+          "value": "Strategy"
+        },
+        {
+          "id": 3,
+          "value": "Courage"
         },
         {
           "id": 4,
@@ -263,858 +1069,52 @@
       "rightAnswerString": null
     },
     {
-      "id": 11,
-      "questionContent": "Proverbs 10:1 says a wise son brings joy to his father, but a foolish son brings grief to whom?",
-      "complexityLevel": "easy",
-      "answerType": "ID",
-      "answersList": [
-        {
-          "id": 1,
-          "value": "His father and household"
-        },
-        {
-          "id": 2,
-          "value": "His father"
-        },
-        {
-          "id": 3,
-          "value": "His mother"
-        },
-        {
-          "id": 4,
-          "value": "His brothers and sisters"
-        }
-      ],
-      "rightAnswerId": 3,
-      "rightAnswerString": null
-    },
-    {
-      "id": 12,
-      "questionContent": "What does Proverbs 18:10 call 'the name of the LORD'?",
-      "complexityLevel": "easy",
-      "answerType": "ID",
-      "answersList": [
-        {
-          "id": 1,
-          "value": "A sure refuge"
-        },
-        {
-          "id": 2,
-          "value": "A shining light"
-        },
-        {
-          "id": 3,
-          "value": "A holy sanctuary"
-        },
-        {
-          "id": 4,
-          "value": "A fortified tower"
-        }
-      ],
-      "rightAnswerId": 4,
-      "rightAnswerString": null
-    },
-    {
-      "id": 13,
-      "questionContent": "According to Proverbs 26:11 (NIV), a fool who repeats his folly is like what?",
-      "complexityLevel": "easy",
-      "answerType": "ID",
-      "answersList": [
-        {
-          "id": 1,
-          "value": "A moth drawn to the flame"
-        },
-        {
-          "id": 2,
-          "value": "A dog returning to its vomit"
-        },
-        {
-          "id": 3,
-          "value": "A bird returning to its cage"
-        },
-        {
-          "id": 4,
-          "value": "A fish caught in the same net"
-        }
-      ],
-      "rightAnswerId": 2,
-      "rightAnswerString": null
-    },
-    {
-      "id": 14,
-      "questionContent": "Proverbs 28:13 says that one who confesses and renounces their sins finds what?",
-      "complexityLevel": "easy",
-      "answerType": "ID",
-      "answersList": [
-        {
-          "id": 1,
-          "value": "Mercy"
-        },
-        {
-          "id": 2,
-          "value": "Favour with God"
-        },
-        {
-          "id": 3,
-          "value": "Peace"
-        },
-        {
-          "id": 4,
-          "value": "Freedom from guilt"
-        }
-      ],
-      "rightAnswerId": 1,
-      "rightAnswerString": null
-    },
-    {
-      "id": 15,
-      "questionContent": "What does Proverbs 3:12 say the LORD does to those He loves?",
-      "complexityLevel": "easy",
-      "answerType": "ID",
-      "answersList": [
-        {
-          "id": 1,
-          "value": "Gives them great wisdom"
-        },
-        {
-          "id": 2,
-          "value": "Shields them from all harm"
-        },
-        {
-          "id": 3,
-          "value": "Disciplines them"
-        },
-        {
-          "id": 4,
-          "value": "Chastens them"
-        }
-      ],
-      "rightAnswerId": 3,
-      "rightAnswerString": null
-    },
-    {
-      "id": 16,
-      "questionContent": "How many things does Proverbs 6:16-19 list as 'detestable' to the LORD?",
-      "complexityLevel": "easy",
-      "answerType": "ID",
-      "answersList": [
-        {
-          "id": 1,
-          "value": "Five"
-        },
-        {
-          "id": 2,
-          "value": "Six"
-        },
-        {
-          "id": 3,
-          "value": "Eight"
-        },
-        {
-          "id": 4,
-          "value": "Seven"
-        }
-      ],
-      "rightAnswerId": 4,
-      "rightAnswerString": null
-    },
-    {
-      "id": 17,
-      "questionContent": "Proverbs 27:1 warns: 'Do not boast about tomorrow, for you do not know what a ___ may bring.'",
-      "complexityLevel": "easy",
-      "answerType": "ID",
-      "answersList": [
-        {
-          "id": 1,
-          "value": "season"
-        },
-        {
-          "id": 2,
-          "value": "day"
-        },
-        {
-          "id": 3,
-          "value": "age"
-        },
-        {
-          "id": 4,
-          "value": "moment"
-        }
-      ],
-      "rightAnswerId": 2,
-      "rightAnswerString": null
-    },
-    {
-      "id": 18,
-      "questionContent": "What does Proverbs 13:3 say 'guarding your lips' preserves?",
-      "complexityLevel": "easy",
-      "answerType": "ID",
-      "answersList": [
-        {
-          "id": 1,
-          "value": "Your life"
-        },
-        {
-          "id": 2,
-          "value": "Your ways"
-        },
-        {
-          "id": 3,
-          "value": "Your relationships"
-        },
-        {
-          "id": 4,
-          "value": "Your reputation"
-        }
-      ],
-      "rightAnswerId": 1,
-      "rightAnswerString": null
-    },
-    {
-      "id": 19,
-      "questionContent": "What does Proverbs 15:3 say about 'the eyes of the LORD'?",
-      "complexityLevel": "easy",
-      "answerType": "ID",
-      "answersList": [
-        {
-          "id": 1,
-          "value": "They are fixed on those who fear Him"
-        },
-        {
-          "id": 2,
-          "value": "They watch the righteous only"
-        },
-        {
-          "id": 3,
-          "value": "In every place"
-        },
-        {
-          "id": 4,
-          "value": "They are everywhere"
-        }
-      ],
-      "rightAnswerId": 4,
-      "rightAnswerString": null
-    },
-    {
-      "id": 20,
-      "questionContent": "In Proverbs 21:9, it is better to live where than with a quarrelsome wife?",
-      "complexityLevel": "easy",
-      "answerType": "ID",
-      "answersList": [
-        {
-          "id": 1,
-          "value": "In the wilderness alone"
-        },
-        {
-          "id": 2,
-          "value": "Among strangers in a foreign land"
-        },
-        {
-          "id": 3,
-          "value": "On a corner of the roof"
-        },
-        {
-          "id": 4,
-          "value": "In the house of a neighbour"
-        }
-      ],
-      "rightAnswerId": 3,
-      "rightAnswerString": null
-    },
-    {
-      "id": 21,
-      "questionContent": "What does Proverbs 22:6 say will happen when a child is trained in the right way, 'even when they are old'?",
-      "complexityLevel": "easy",
-      "answerType": "ID",
-      "answersList": [
-        {
-          "id": 1,
-          "value": "They will not turn from it"
-        },
-        {
-          "id": 2,
-          "value": "They pass it on"
-        },
-        {
-          "id": 3,
-          "value": "They will be a light to others"
-        },
-        {
-          "id": 4,
-          "value": "They will return after wandering"
-        }
-      ],
-      "rightAnswerId": 1,
-      "rightAnswerString": null
-    },
-    {
-      "id": 22,
-      "questionContent": "According to Proverbs 25:1, the proverbs of Solomon in chapters 25–29 were compiled by the men of whom?",
-      "complexityLevel": "easy",
-      "answerType": "ID",
-      "answersList": [
-        {
-          "id": 1,
-          "value": "The prophets of Judah"
-        },
-        {
-          "id": 2,
-          "value": "King Hezekiah of Judah"
-        },
-        {
-          "id": 3,
-          "value": "The priests of Jerusalem"
-        },
-        {
-          "id": 4,
-          "value": "The scribes of King David"
-        }
-      ],
-      "rightAnswerId": 2,
-      "rightAnswerString": null
-    },
-    {
-      "id": 23,
-      "questionContent": "What does Proverbs 20:1 call beer (alongside calling wine a 'mocker')?",
-      "complexityLevel": "easy",
-      "answerType": "ID",
-      "answersList": [
-        {
-          "id": 1,
-          "value": "A tempter"
-        },
-        {
-          "id": 2,
-          "value": "A deceiver"
-        },
-        {
-          "id": 3,
-          "value": "A destroyer"
-        },
-        {
-          "id": 4,
-          "value": "A brawler"
-        }
-      ],
-      "rightAnswerId": 4,
-      "rightAnswerString": null
-    },
-    {
-      "id": 24,
-      "questionContent": "According to Proverbs 21:23, guarding your 'mouth and tongue' keeps you from what?",
-      "complexityLevel": "easy",
-      "answerType": "ID",
-      "answersList": [
-        {
-          "id": 1,
-          "value": "Foolish decisions"
-        },
-        {
-          "id": 2,
-          "value": "The company of sinners"
-        },
-        {
-          "id": 3,
-          "value": "Calamity"
-        },
-        {
-          "id": 4,
-          "value": "Regret"
-        }
-      ],
-      "rightAnswerId": 3,
-      "rightAnswerString": null
-    },
-    {
-      "id": 25,
-      "questionContent": "What does Proverbs 10:12 say love covers?",
-      "complexityLevel": "easy",
-      "answerType": "ID",
-      "answersList": [
-        {
-          "id": 1,
-          "value": "The shame of the guilty"
-        },
-        {
-          "id": 2,
-          "value": "All wrongs"
-        },
-        {
-          "id": 3,
-          "value": "The sins of the repentant"
-        },
-        {
-          "id": 4,
-          "value": "All faults"
-        }
-      ],
-      "rightAnswerId": 2,
-      "rightAnswerString": null
-    },
-    {
-      "id": 26,
-      "questionContent": "How many times does Proverbs 24:16 say the righteous person falls, yet rises again?",
-      "complexityLevel": "easy",
-      "answerType": "ID",
-      "answersList": [
-        {
-          "id": 1,
-          "value": "Seven times"
-        },
-        {
-          "id": 2,
-          "value": "Three times"
-        },
-        {
-          "id": 3,
-          "value": "Five times"
-        },
-        {
-          "id": 4,
-          "value": "Ten times"
-        }
-      ],
-      "rightAnswerId": 1,
-      "rightAnswerString": null
-    },
-    {
-      "id": 27,
-      "questionContent": "According to Proverbs 15:29, the LORD 'hears the prayer' of whom?",
-      "complexityLevel": "easy",
-      "answerType": "ID",
-      "answersList": [
-        {
-          "id": 1,
-          "value": "Those who fast and mourn"
-        },
-        {
-          "id": 2,
-          "value": "Those who seek His face early"
-        },
-        {
-          "id": 3,
-          "value": "The sincere"
-        },
-        {
-          "id": 4,
-          "value": "The righteous"
-        }
-      ],
-      "rightAnswerId": 4,
-      "rightAnswerString": null
-    },
-    {
-      "id": 28,
-      "questionContent": "Proverbs 13:24 says 'whoever spares the rod' actually does what to their children?",
-      "complexityLevel": "easy",
-      "answerType": "ID",
-      "answersList": [
-        {
-          "id": 1,
-          "value": "Encourages their rebellion"
-        },
-        {
-          "id": 2,
-          "value": "Shows a lack of care"
-        },
-        {
-          "id": 3,
-          "value": "Hates them"
-        },
-        {
-          "id": 4,
-          "value": "Fails them"
-        }
-      ],
-      "rightAnswerId": 3,
-      "rightAnswerString": null
-    },
-    {
-      "id": 29,
-      "questionContent": "In Proverbs 9:1, who built a house, hewn out its seven pillars, and sent out an invitation to a feast?",
-      "complexityLevel": "easy",
-      "answerType": "ID",
-      "answersList": [
-        {
-          "id": 1,
-          "value": "Lady Wisdom"
-        },
-        {
-          "id": 2,
-          "value": "The Proverbs 31 woman"
-        },
-        {
-          "id": 3,
-          "value": "Lady Folly"
-        },
-        {
-          "id": 4,
-          "value": "The wife of Solomon"
-        }
-      ],
-      "rightAnswerId": 1,
-      "rightAnswerString": null
-    },
-    {
-      "id": 30,
-      "questionContent": "What does Proverbs 26:20 say will happen 'without wood'?",
-      "complexityLevel": "easy",
-      "answerType": "ID",
-      "answersList": [
-        {
-          "id": 1,
-          "value": "The harvest cannot be cooked"
-        },
-        {
-          "id": 2,
-          "value": "The fire goes out"
-        },
-        {
-          "id": 3,
-          "value": "The winter will be harsh"
-        },
-        {
-          "id": 4,
-          "value": "The house falls"
-        }
-      ],
-      "rightAnswerId": 2,
-      "rightAnswerString": null
-    },
-    {
-      "id": 31,
-      "questionContent": "According to Proverbs 16:9, a person plans his course, but who 'determines his steps'?",
-      "complexityLevel": "easy",
-      "answerType": "ID",
-      "answersList": [
-        {
-          "id": 1,
-          "value": "Fate and circumstance"
-        },
-        {
-          "id": 2,
-          "value": "The counsel of the wise"
-        },
-        {
-          "id": 3,
-          "value": "The LORD"
-        },
-        {
-          "id": 4,
-          "value": "Himself"
-        }
-      ],
-      "rightAnswerId": 3,
-      "rightAnswerString": null
-    },
-    {
-      "id": 32,
-      "questionContent": "What does Proverbs 11:2 (NIV) say comes 'with the proud'?",
-      "complexityLevel": "easy",
-      "answerType": "ID",
-      "answersList": [
-        {
-          "id": 1,
-          "value": "Strife"
-        },
-        {
-          "id": 2,
-          "value": "Destruction"
-        },
-        {
-          "id": 3,
-          "value": "Rebellion"
-        },
-        {
-          "id": 4,
-          "value": "Disgrace"
-        }
-      ],
-      "rightAnswerId": 4,
-      "rightAnswerString": null
-    },
-    {
-      "id": 33,
-      "questionContent": "Proverbs 31:30 says a woman who fears the LORD is to be what?",
-      "complexityLevel": "easy",
-      "answerType": "ID",
-      "answersList": [
-        {
-          "id": 1,
-          "value": "Praised"
-        },
-        {
-          "id": 2,
-          "value": "Honoured"
-        },
-        {
-          "id": 3,
-          "value": "Blessed"
-        },
-        {
-          "id": 4,
-          "value": "Exalted"
-        }
-      ],
-      "rightAnswerId": 1,
-      "rightAnswerString": null
-    },
-    {
-      "id": 34,
-      "questionContent": "According to Proverbs 12:10, what does a 'righteous man' care for?",
-      "complexityLevel": "easy",
-      "answerType": "ID",
-      "answersList": [
-        {
-          "id": 1,
-          "value": "The orphans and widows"
-        },
-        {
-          "id": 2,
-          "value": "The needs of his animal"
-        },
-        {
-          "id": 3,
-          "value": "The poor in his city"
-        },
-        {
-          "id": 4,
-          "value": "The strangers in his land"
-        }
-      ],
-      "rightAnswerId": 2,
-      "rightAnswerString": null
-    },
-    {
-      "id": 35,
-      "questionContent": "Proverbs 3:9 says to honour the LORD with your wealth and with the ___ of all your crops.",
-      "complexityLevel": "easy",
-      "answerType": "ID",
-      "answersList": [
-        {
-          "id": 1,
-          "value": "abundance"
-        },
-        {
-          "id": 2,
-          "value": "surplus"
-        },
-        {
-          "id": 3,
-          "value": "remainder"
-        },
-        {
-          "id": 4,
-          "value": "firstfruits"
-        }
-      ],
-      "rightAnswerId": 4,
-      "rightAnswerString": null
-    },
-    {
-      "id": 36,
-      "questionContent": "Proverbs 31:10 says a wife of noble character 'is worth far more than ___.'",
-      "complexityLevel": "easy",
-      "answerType": "ID",
-      "answersList": [
-        {
-          "id": 1,
-          "value": "gold"
-        },
-        {
-          "id": 2,
-          "value": "silver"
-        },
-        {
-          "id": 3,
-          "value": "rubies"
-        },
-        {
-          "id": 4,
-          "value": "pearls"
-        }
-      ],
-      "rightAnswerId": 3,
-      "rightAnswerString": null
-    },
-    {
-      "id": 37,
-      "questionContent": "Proverbs 17:17 says a friend loves at all times, and a brother is born for what?",
-      "complexityLevel": "easy",
-      "answerType": "ID",
-      "answersList": [
-        {
-          "id": 1,
-          "value": "A time of adversity"
-        },
-        {
-          "id": 2,
-          "value": "Days of celebration"
-        },
-        {
-          "id": 3,
-          "value": "Seasons of harvest"
-        },
-        {
-          "id": 4,
-          "value": "Times of great need"
-        }
-      ],
-      "rightAnswerId": 1,
-      "rightAnswerString": null
-    },
-    {
-      "id": 38,
-      "questionContent": "Proverbs 14:12 warns: 'There is a way that appears to be right, but in the end it leads to ___.'",
-      "complexityLevel": "easy",
-      "answerType": "ID",
-      "answersList": [
-        {
-          "id": 1,
-          "value": "ruin"
-        },
-        {
-          "id": 2,
-          "value": "death"
-        },
-        {
-          "id": 3,
-          "value": "loss"
-        },
-        {
-          "id": 4,
-          "value": "darkness"
-        }
-      ],
-      "rightAnswerId": 2,
-      "rightAnswerString": null
-    },
-    {
-      "id": 39,
-      "questionContent": "Proverbs 3:6 promises that if you 'submit to God in all your ways,' He will do what?",
-      "complexityLevel": "easy",
-      "answerType": "ID",
-      "answersList": [
-        {
-          "id": 1,
-          "value": "Bless your household greatly"
-        },
-        {
-          "id": 2,
-          "value": "Grant you long life"
-        },
-        {
-          "id": 3,
-          "value": "Shield you from all enemies"
-        },
-        {
-          "id": 4,
-          "value": "Make your paths straight"
-        }
-      ],
-      "rightAnswerId": 4,
-      "rightAnswerString": null
-    },
-    {
-      "id": 40,
-      "questionContent": "In Proverbs 31, whose children 'arise and call her blessed' while her husband praises her?",
-      "complexityLevel": "easy",
-      "answerType": "ID",
-      "answersList": [
-        {
-          "id": 1,
-          "value": "Lady Wisdom at the city gate"
-        },
-        {
-          "id": 2,
-          "value": "The wife of King Lemuel"
-        },
-        {
-          "id": 3,
-          "value": "The wife of noble character"
-        },
-        {
-          "id": 4,
-          "value": "The daughter of Zion"
-        }
-      ],
-      "rightAnswerId": 3,
-      "rightAnswerString": null
-    },
-    {
-      "id": 41,
-      "questionContent": "What does Proverbs 20:29 say is 'the glory of young men'?",
-      "complexityLevel": "easy",
-      "answerType": "ID",
-      "answersList": [
-        {
-          "id": 1,
-          "value": "Their zeal and devotion"
-        },
-        {
-          "id": 2,
-          "value": "Their strength"
-        },
-        {
-          "id": 3,
-          "value": "Their wisdom"
-        },
-        {
-          "id": 4,
-          "value": "Their courage in battle"
-        }
-      ],
-      "rightAnswerId": 2,
-      "rightAnswerString": null
-    },
-    {
       "id": 42,
-      "questionContent": "What does Proverbs 23:13 say you should not do to a child regarding discipline?",
+      "questionContent": "What does Proverbs 24:10 say if 'you falter in a time of trouble'?",
       "complexityLevel": "easy",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "Withhold it"
+          "value": "Your faith must be renewed"
         },
         {
           "id": 2,
-          "value": "Apply it too harshly"
+          "value": "You have not trusted the LORD"
         },
         {
           "id": 3,
-          "value": "Delay it indefinitely"
+          "value": "How small is your strength"
         },
         {
           "id": 4,
-          "value": "Ignore it"
+          "value": "You have not sought wise counsel"
         }
       ],
-      "rightAnswerId": 1,
+      "rightAnswerId": 3,
       "rightAnswerString": null
     },
     {
       "id": 43,
-      "questionContent": "According to Proverbs 6:31, if a thief is caught, how much must he pay back?",
+      "questionContent": "Proverbs 31:4-5 warns kings and rulers not to drink wine or crave beer — because they might do what?",
       "complexityLevel": "easy",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "Double what he stole"
+          "value": "Set a bad example for their people"
         },
         {
           "id": 2,
-          "value": "Triple what he stole"
+          "value": "Lose the respect of their court"
         },
         {
           "id": 3,
-          "value": "Eightfold"
+          "value": "Weaken their judgment in battle"
         },
         {
           "id": 4,
-          "value": "Sevenfold"
+          "value": "Pervert justice and deprive the oppressed of their rights"
         }
       ],
       "rightAnswerId": 4,
@@ -1122,259 +1122,259 @@
     },
     {
       "id": 44,
-      "questionContent": "Proverbs 18:24 says 'there is a friend who sticks closer than a ___.'",
+      "questionContent": "What does Proverbs 12:14 say 'the mouth of the wise' brings them?",
       "complexityLevel": "easy",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "father"
+          "value": "The respect of leaders"
         },
         {
           "id": 2,
-          "value": "kinsman"
+          "value": "Good things"
         },
         {
           "id": 3,
-          "value": "brother"
+          "value": "Long life and favour"
         },
         {
           "id": 4,
-          "value": "neighbour"
+          "value": "A righteous name"
         }
       ],
-      "rightAnswerId": 3,
+      "rightAnswerId": 2,
       "rightAnswerString": null
     },
     {
       "id": 45,
-      "questionContent": "According to Proverbs 15:33, what 'comes before honour'?",
+      "questionContent": "Proverbs 6:20-23 says a father's command is a lamp, and a mother's teaching is what?",
       "complexityLevel": "easy",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "Humility"
+          "value": "A fountain"
         },
         {
           "id": 2,
-          "value": "Patience"
+          "value": "A garland"
         },
         {
           "id": 3,
-          "value": "Faithfulness"
+          "value": "A guide"
         },
         {
           "id": 4,
-          "value": "Righteousness"
+          "value": "A light"
         }
       ],
-      "rightAnswerId": 1,
+      "rightAnswerId": 4,
       "rightAnswerString": null
     },
     {
       "id": 46,
-      "questionContent": "Proverbs 4:7 (NIV) says: 'The beginning of wisdom is this: ___ wisdom.'",
+      "questionContent": "How does Proverbs 14:27 (NIV) describe 'the fear of the LORD'?",
       "complexityLevel": "easy",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "Seek"
+          "value": "The beginning of all wisdom"
         },
         {
           "id": 2,
-          "value": "Get"
+          "value": "A shield in the day of trouble"
         },
         {
           "id": 3,
-          "value": "Love"
+          "value": "A fountain of life, turning a person from the snares of death"
         },
         {
           "id": 4,
-          "value": "Use"
-        }
-      ],
-      "rightAnswerId": 2,
-      "rightAnswerString": null
-    },
-    {
-      "id": 47,
-      "questionContent": "According to Proverbs 31:27, what does the wife of noble character do regarding the affairs of her household?",
-      "complexityLevel": "easy",
-      "answerType": "ID",
-      "answersList": [
-        {
-          "id": 1,
-          "value": "She delegates them to trusted servants"
-        },
-        {
-          "id": 2,
-          "value": "She plans them carefully each morning"
-        },
-        {
-          "id": 3,
-          "value": "She reviews them daily"
-        },
-        {
-          "id": 4,
-          "value": "She watches over them"
-        }
-      ],
-      "rightAnswerId": 4,
-      "rightAnswerString": null
-    },
-    {
-      "id": 48,
-      "questionContent": "According to Proverbs 1:20-21, where does Lady Wisdom raise her voice and call out?",
-      "complexityLevel": "easy",
-      "answerType": "ID",
-      "answersList": [
-        {
-          "id": 1,
-          "value": "In the temple courts"
-        },
-        {
-          "id": 2,
-          "value": "On the mountain heights"
-        },
-        {
-          "id": 3,
-          "value": "In the public square"
-        },
-        {
-          "id": 4,
-          "value": "By the city walls"
+          "value": "A sure foundation for all of life"
         }
       ],
       "rightAnswerId": 3,
       "rightAnswerString": null
     },
     {
-      "id": 49,
-      "questionContent": "What does Proverbs 3:7 warn you NOT to be?",
+      "id": 47,
+      "questionContent": "Proverbs 28:14 calls 'blessed' the one who always does what?",
       "complexityLevel": "easy",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "Hasty with words"
+          "value": "Walks in wisdom"
         },
         {
           "id": 2,
-          "value": "Wise in your own eyes"
+          "value": "Fears the LORD"
         },
         {
           "id": 3,
-          "value": "Slow to help others"
+          "value": "Gives generously"
         },
         {
           "id": 4,
-          "value": "Quick to make vows"
+          "value": "Seeks wisdom"
         }
       ],
       "rightAnswerId": 2,
       "rightAnswerString": null
     },
     {
-      "id": 50,
-      "questionContent": "According to Proverbs 10:7, 'the memory of the righteous' is described as what?",
+      "id": 48,
+      "questionContent": "What does Proverbs 3:11 say you should NOT do with 'the LORD's discipline'?",
       "complexityLevel": "easy",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "A blessing"
+          "value": "Despise it or resent his rebuke"
         },
         {
           "id": 2,
-          "value": "A light to the living"
+          "value": "Take it lightly or flee from it"
         },
         {
           "id": 3,
-          "value": "An inheritance for children"
+          "value": "Hide it from others"
         },
         {
           "id": 4,
-          "value": "A great joy"
+          "value": "Question it or doubt his love"
         }
       ],
       "rightAnswerId": 1,
       "rightAnswerString": null
     },
     {
-      "id": 51,
-      "questionContent": "According to Proverbs 8:30, how did Wisdom respond while present with God at creation?",
-      "complexityLevel": "medium",
+      "id": 49,
+      "questionContent": "Proverbs 13:7 says one person 'pretends to be rich yet has nothing.' What does the other do?",
+      "complexityLevel": "easy",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "With awe at the immensity of all created things"
+          "value": "Flaunts wealth they do not own"
         },
         {
           "id": 2,
-          "value": "By ordering the depths and setting the foundations"
+          "value": "Earns greatly while living as a pauper"
         },
         {
           "id": 3,
-          "value": "With delight, rejoicing before Him always"
+          "value": "Pretends to be poor yet has great wealth"
         },
         {
           "id": 4,
-          "value": "By singing praise with the morning stars"
+          "value": "Hoards wealth while claiming righteousness"
         }
       ],
       "rightAnswerId": 3,
       "rightAnswerString": null
     },
     {
-      "id": 52,
-      "questionContent": "In Proverbs 7:22, the young man drawn astray by the adulteress is compared to which animal being led to slaughter?",
-      "complexityLevel": "medium",
+      "id": 50,
+      "questionContent": "According to Proverbs 31:28, who 'arise and call her blessed'?",
+      "complexityLevel": "easy",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "A pig"
+          "value": "The city elders"
         },
         {
           "id": 2,
-          "value": "A goat"
+          "value": "The poor she helps"
         },
         {
           "id": 3,
-          "value": "A deer"
+          "value": "All in the marketplace"
         },
         {
           "id": 4,
-          "value": "An ox"
+          "value": "Her children and her husband"
         }
       ],
       "rightAnswerId": 4,
       "rightAnswerString": null
     },
     {
-      "id": 53,
-      "questionContent": "Proverbs 5:3-4 warns that the adulteress's lips 'drip honey,' but in the end she is as bitter as what?",
+      "id": 51,
+      "questionContent": "According to Proverbs 8:15-16, what does Wisdom say kings and rulers do 'by her'?",
       "complexityLevel": "medium",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "Gall"
+          "value": "Find peace for their kingdoms"
         },
         {
           "id": 2,
-          "value": "Wormwood"
+          "value": "Earn the loyalty of their people"
         },
         {
           "id": 3,
-          "value": "Hemlock"
+          "value": "Build legacies that outlast their reign"
         },
         {
           "id": 4,
-          "value": "Bile"
+          "value": "Reign and issue decrees that are just"
+        }
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 52,
+      "questionContent": "In Proverbs 9:13-15, where exactly does Lady Folly sit as she calls out to passersby?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "At the highest point of the city"
+        },
+        {
+          "id": 2,
+          "value": "At the crossroads below"
+        },
+        {
+          "id": 3,
+          "value": "At the city gate entrance"
+        },
+        {
+          "id": 4,
+          "value": "By the busy road side"
+        }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 53,
+      "questionContent": "What does Proverbs 19:1 (NIV) say is 'better' than a fool whose lips are perverse?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "A poor man whose walk is blameless"
+        },
+        {
+          "id": 2,
+          "value": "A wise man who holds his tongue"
+        },
+        {
+          "id": 3,
+          "value": "A rich man who fears the LORD"
+        },
+        {
+          "id": 4,
+          "value": "A poor man with righteous works"
         }
       ],
       "rightAnswerId": 1,
@@ -1382,51 +1382,51 @@
     },
     {
       "id": 54,
-      "questionContent": "In Proverbs 9:17, what does Lady Folly say about 'stolen water'?",
+      "questionContent": "In Proverbs 22:16, what happens to the one who 'oppresses the poor to increase his wealth'?",
       "complexityLevel": "medium",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "It delights"
+          "value": "His wealth crumbles quickly"
         },
         {
           "id": 2,
-          "value": "It is sweet"
+          "value": "The LORD judges swiftly"
         },
         {
           "id": 3,
-          "value": "It runs dry in the end"
+          "value": "They come to poverty"
         },
         {
           "id": 4,
-          "value": "It brings only shame"
+          "value": "Their name is cursed"
         }
       ],
-      "rightAnswerId": 2,
+      "rightAnswerId": 3,
       "rightAnswerString": null
     },
     {
       "id": 55,
-      "questionContent": "Proverbs 10:26 compares a sluggard sent on an errand to what combination (NIV)?",
+      "questionContent": "What do Proverbs 8:32-33 urge those who listen to Wisdom to do?",
       "complexityLevel": "medium",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "Thorns under a pot and smoke in the eyes"
+          "value": "Seek her early and give themselves fully to her"
         },
         {
           "id": 2,
-          "value": "Flood at harvest and drought at planting"
+          "value": "Come to her house and sit at her table"
         },
         {
           "id": 3,
-          "value": "A heavy stone and a freezing wind"
+          "value": "Forsake all folly and walk in her paths"
         },
         {
           "id": 4,
-          "value": "Vinegar to the teeth and smoke to the eyes"
+          "value": "Keep to her ways and do not neglect her instruction"
         }
       ],
       "rightAnswerId": 4,
@@ -1434,103 +1434,103 @@
     },
     {
       "id": 56,
-      "questionContent": "What does Proverbs 26:27 say will happen to anyone who 'digs a pit'?",
+      "questionContent": "Proverbs 25:4-5 uses the image of removing dross from silver to illustrate what?",
       "complexityLevel": "medium",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "His enemies will discover it first"
+          "value": "Refining character through suffering"
         },
         {
           "id": 2,
-          "value": "He finds nothing"
+          "value": "Removing the wicked so a king's throne is established in righteousness"
         },
         {
           "id": 3,
-          "value": "He will fall into it"
+          "value": "Searching the Scriptures for hidden wisdom"
         },
         {
           "id": 4,
-          "value": "It becomes a trap for his children"
-        }
-      ],
-      "rightAnswerId": 3,
-      "rightAnswerString": null
-    },
-    {
-      "id": 57,
-      "questionContent": "What does Proverbs 25:16 warn you not to eat too much of, lest you vomit it?",
-      "complexityLevel": "medium",
-      "answerType": "ID",
-      "answersList": [
-        {
-          "id": 1,
-          "value": "Wine"
-        },
-        {
-          "id": 2,
-          "value": "Honey"
-        },
-        {
-          "id": 3,
-          "value": "Rich food and meat"
-        },
-        {
-          "id": 4,
-          "value": "Fresh bread from the oven"
+          "value": "Testing a friend's motives before trusting them"
         }
       ],
       "rightAnswerId": 2,
       "rightAnswerString": null
     },
     {
-      "id": 58,
-      "questionContent": "According to Proverbs 11:14, what happens to a nation that has no 'guidance'?",
+      "id": 57,
+      "questionContent": "What does Proverbs 29:7 say 'the righteous' care about, in contrast to the wicked?",
       "complexityLevel": "medium",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "It falls"
+          "value": "The nation's welfare"
         },
         {
           "id": 2,
-          "value": "It fades"
+          "value": "Justice for the poor"
         },
         {
           "id": 3,
-          "value": "It perishes slowly"
+          "value": "God's honour among all"
         },
         {
           "id": 4,
-          "value": "It stumbles and loses its way"
+          "value": "Instruction of the young"
         }
       ],
       "rightAnswerId": 1,
       "rightAnswerString": null
     },
     {
-      "id": 59,
-      "questionContent": "According to Proverbs 14:4, where there are no oxen, what is the manger?",
+      "id": 58,
+      "questionContent": "According to Proverbs 11:25 (NIV), the one who 'refreshes others' will themselves be what?",
       "complexityLevel": "medium",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "A sign of coming hardship"
+          "value": "Greatly blessed"
         },
         {
           "id": 2,
-          "value": "Full"
+          "value": "Well rewarded"
         },
         {
           "id": 3,
-          "value": "A place of needed rest"
+          "value": "Refreshed"
         },
         {
           "id": 4,
-          "value": "Clean"
+          "value": "Abundantly repaid"
+        }
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 59,
+      "questionContent": "What does Proverbs 25:8-9 caution against hastily doing with a dispute?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Making a vow about it before you know the outcome"
+        },
+        {
+          "id": 2,
+          "value": "Involving others before the matter is resolved"
+        },
+        {
+          "id": 3,
+          "value": "Bringing the matter to the city gates prematurely"
+        },
+        {
+          "id": 4,
+          "value": "Taking your neighbour to court without settling it privately first"
         }
       ],
       "rightAnswerId": 4,
@@ -1538,51 +1538,51 @@
     },
     {
       "id": 60,
-      "questionContent": "Proverbs 16:32 says what is 'better than' a warrior who takes a city?",
+      "questionContent": "Proverbs 21:31 says the horse is made ready for battle — but what does it conclude?",
       "complexityLevel": "medium",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "Wisdom gained through long suffering"
+          "value": "The rider's skill decides"
         },
         {
           "id": 2,
-          "value": "Wealth acquired by honest labour"
+          "value": "The LORD weighs motives"
         },
         {
           "id": 3,
-          "value": "Being slow to anger and ruling your own spirit"
+          "value": "Wisdom stands apart"
         },
         {
           "id": 4,
-          "value": "A friend faithful in the day of battle"
+          "value": "Victory rests with the LORD"
         }
       ],
-      "rightAnswerId": 3,
+      "rightAnswerId": 1,
       "rightAnswerString": null
     },
     {
       "id": 61,
-      "questionContent": "Proverbs 5:15 urges a young man to be satisfied with his own wife using what image?",
+      "questionContent": "Proverbs 17:8 says a bribe is like a 'charm' in the eyes of the one who gives it — wherever it turns, what happens?",
       "complexityLevel": "medium",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "A stream flowing through the wilderness"
+          "value": "It blinds the wise"
         },
         {
           "id": 2,
-          "value": "Drinking from your own cistern and well"
+          "value": "Success follows"
         },
         {
           "id": 3,
-          "value": "A garden enclosed by strong walls"
+          "value": "It opens closed doors"
         },
         {
           "id": 4,
-          "value": "The shade of a tree you planted yourself"
+          "value": "Favour appears anywhere"
         }
       ],
       "rightAnswerId": 2,
@@ -1590,207 +1590,207 @@
     },
     {
       "id": 62,
-      "questionContent": "Proverbs 25:11 compares 'a word aptly spoken' to what?",
+      "questionContent": "What does Proverbs 13:12 (NIV) say 'hope deferred' does?",
       "complexityLevel": "medium",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "Apples of gold in settings of silver"
+          "value": "Reveals weak faith"
         },
         {
           "id": 2,
-          "value": "Honey dripping from the comb"
+          "value": "Turns to bitterness"
         },
         {
           "id": 3,
-          "value": "Cool water on a burning-hot day"
+          "value": "Makes the heart sick"
         },
         {
           "id": 4,
-          "value": "A lamp shining in a dark place"
-        }
-      ],
-      "rightAnswerId": 1,
-      "rightAnswerString": null
-    },
-    {
-      "id": 63,
-      "questionContent": "According to Proverbs 13:12, what does a 'longing fulfilled' become?",
-      "complexityLevel": "medium",
-      "answerType": "ID",
-      "answersList": [
-        {
-          "id": 1,
-          "value": "A cause for lasting rejoicing"
-        },
-        {
-          "id": 2,
-          "value": "A source of true contentment"
-        },
-        {
-          "id": 3,
-          "value": "A tree of life"
-        },
-        {
-          "id": 4,
-          "value": "A well of life"
+          "value": "Fades like morning mist"
         }
       ],
       "rightAnswerId": 3,
       "rightAnswerString": null
     },
     {
-      "id": 64,
-      "questionContent": "According to Proverbs 25:21, if your enemy is hungry, what should you do?",
+      "id": 63,
+      "questionContent": "Proverbs 11:28 says those who trust in riches will fall — but the righteous will thrive like what?",
       "complexityLevel": "medium",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "Avoid him until he repents of his ways"
+          "value": "A wheat field"
         },
         {
           "id": 2,
-          "value": "Bring his need before the authorities"
+          "value": "A planted tree"
         },
         {
           "id": 3,
-          "value": "Pray for his change"
+          "value": "A rooted vine"
         },
         {
           "id": 4,
-          "value": "Give him food to eat"
+          "value": "A green leaf"
         }
       ],
       "rightAnswerId": 4,
       "rightAnswerString": null
     },
     {
-      "id": 65,
-      "questionContent": "Proverbs 23:29-30 associates lingering over wine with which of these?",
+      "id": 64,
+      "questionContent": "What does Proverbs 23:22 urge regarding a father who 'gave you life' and a mother 'when she is old'?",
       "complexityLevel": "medium",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "Foolish speech and the loss of all wealth"
+          "value": "Honour them above your own desires"
         },
         {
           "id": 2,
-          "value": "Woe, sorrow, strife, and complaints"
+          "value": "Listen to him and do not despise her"
         },
         {
           "id": 3,
-          "value": "Poverty, shame, and debt"
+          "value": "Keep their counsel close to your heart"
         },
         {
           "id": 4,
-          "value": "Sickness, conflict, and bitter regret"
+          "value": "Seek their blessing before all else"
         }
       ],
       "rightAnswerId": 2,
       "rightAnswerString": null
     },
     {
-      "id": 66,
-      "questionContent": "In Proverbs 8:25, before the mountains were settled, what had already happened to Wisdom?",
+      "id": 65,
+      "questionContent": "Proverbs 26:12 says there is 'more hope' for a fool than for whom?",
       "complexityLevel": "medium",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "She had been brought forth by God"
+          "value": "A person wise in their own eyes"
         },
         {
           "id": 2,
-          "value": "She had sung praises with the angels"
+          "value": "A wicked man who will not repent"
         },
         {
           "id": 3,
-          "value": "She had walked through all creation"
+          "value": "One who stumbles repeatedly"
         },
         {
           "id": 4,
-          "value": "She had been hidden in the depths"
+          "value": "An unbeliever seeking truth"
         }
       ],
       "rightAnswerId": 1,
       "rightAnswerString": null
     },
     {
-      "id": 67,
-      "questionContent": "Proverbs 27:17 says, 'As iron sharpens iron, so one person sharpens ___.'",
+      "id": 66,
+      "questionContent": "Proverbs 27:4 says jealousy surpasses anger and fury. What question closes the verse?",
       "complexityLevel": "medium",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "itself"
+          "value": "Who can measure its depth?"
         },
         {
           "id": 2,
-          "value": "the edge of a ploughshare"
+          "value": "Who would dare rekindle it?"
         },
         {
           "id": 3,
-          "value": "another"
+          "value": "Who can stand before jealousy?"
         },
         {
           "id": 4,
-          "value": "the teeth of a saw"
+          "value": "Who can withstand its fruit?"
         }
       ],
       "rightAnswerId": 3,
       "rightAnswerString": null
     },
     {
-      "id": 68,
-      "questionContent": "What does Proverbs 19:17 say about showing kindness to the poor?",
+      "id": 67,
+      "questionContent": "Proverbs 10:2 says 'ill-gotten treasures have no lasting value' — but what 'delivers from death'?",
       "complexityLevel": "medium",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "It reflects the wisdom of a generous heart"
+          "value": "Generous giving"
         },
         {
           "id": 2,
-          "value": "It stores up treasure for the days of need"
+          "value": "Righteousness"
         },
         {
           "id": 3,
-          "value": "It shows trust in God"
+          "value": "The fear of God"
         },
         {
           "id": 4,
-          "value": "It is lending to the LORD"
+          "value": "Wisdom sought purely"
         }
       ],
       "rightAnswerId": 4,
       "rightAnswerString": null
     },
     {
-      "id": 69,
-      "questionContent": "In Proverbs 30:8, Agur asked God to give him neither poverty nor riches, but what?",
+      "id": 68,
+      "questionContent": "What does Proverbs 24:6 say 'victory' is won through?",
       "complexityLevel": "medium",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "Only wisdom and a peaceful life"
+          "value": "Many advisers"
         },
         {
           "id": 2,
-          "value": "Only his daily bread"
+          "value": "A godly king"
         },
         {
           "id": 3,
-          "value": "Only health and long years"
+          "value": "Constant prayer"
         },
         {
           "id": 4,
-          "value": "A daily portion"
+          "value": "Thorough training"
+        }
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 69,
+      "questionContent": "Proverbs 27:10 says better than a brother far away is what?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Your own resolve"
+        },
+        {
+          "id": 2,
+          "value": "A neighbour nearby"
+        },
+        {
+          "id": 3,
+          "value": "A faithful friend"
+        },
+        {
+          "id": 4,
+          "value": "A reachable counsellor"
         }
       ],
       "rightAnswerId": 2,
@@ -1798,831 +1798,831 @@
     },
     {
       "id": 70,
-      "questionContent": "Proverbs 19:21 says many are the plans in a person's heart, but what will prevail?",
+      "questionContent": "What does Proverbs 12:1 (NIV) call the person who 'hates correction'?",
       "complexityLevel": "medium",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "The LORD's purpose"
+          "value": "Far from wisdom"
         },
         {
           "id": 2,
-          "value": "His own will"
+          "value": "Like a brute animal"
         },
         {
           "id": 3,
-          "value": "The plans made in prayer"
+          "value": "Stupid"
         },
         {
           "id": 4,
-          "value": "The course of righteousness"
+          "value": "Headed for shame"
         }
       ],
-      "rightAnswerId": 1,
+      "rightAnswerId": 3,
       "rightAnswerString": null
     },
     {
       "id": 71,
-      "questionContent": "Proverbs 11:22 compares a beautiful woman who shows no discretion to what?",
+      "questionContent": "Proverbs 22:15 says folly is 'bound up in the heart of a child' — but what drives it far away?",
       "complexityLevel": "medium",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "A rose growing among thorns"
+          "value": "A parent's patient love"
         },
         {
           "id": 2,
-          "value": "Fine wine poured into a broken jar"
+          "value": "Time and experience"
         },
         {
           "id": 3,
-          "value": "A gold ring in a pig's snout"
+          "value": "The fear of the LORD"
         },
         {
           "id": 4,
-          "value": "A lamp placed under a basket"
+          "value": "The rod of discipline"
         }
       ],
-      "rightAnswerId": 3,
+      "rightAnswerId": 4,
       "rightAnswerString": null
     },
     {
       "id": 72,
-      "questionContent": "What does Proverbs 12:4 call a wife who 'brings shame' on her husband?",
+      "questionContent": "Proverbs 8:17 says Wisdom loves 'those who love her.' What does she promise those who seek her earnestly?",
       "complexityLevel": "medium",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "A deep disgrace"
+          "value": "She grants success"
         },
         {
           "id": 2,
-          "value": "A burden heavier than stone"
+          "value": "They will find her"
         },
         {
           "id": 3,
-          "value": "A storm in the midst of calm"
+          "value": "She will dwell near"
         },
         {
           "id": 4,
-          "value": "Decay in his bones"
+          "value": "She speaks in the night"
         }
       ],
-      "rightAnswerId": 4,
+      "rightAnswerId": 2,
       "rightAnswerString": null
     },
     {
       "id": 73,
-      "questionContent": "Proverbs 14:13 says that even in laughter, what may be present in the heart?",
+      "questionContent": "What does Proverbs 16:11 (NIV) say 'honest scales and balances' belong to?",
       "complexityLevel": "medium",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "Longing for deeper joy"
+          "value": "The merchant's reputation"
         },
         {
           "id": 2,
-          "value": "Grief"
+          "value": "The city elders"
         },
         {
           "id": 3,
-          "value": "Hidden jealousy"
+          "value": "The LORD"
         },
         {
           "id": 4,
-          "value": "Pain"
+          "value": "Those who respect law"
         }
       ],
-      "rightAnswerId": 2,
+      "rightAnswerId": 1,
       "rightAnswerString": null
     },
     {
       "id": 74,
-      "questionContent": "What does Proverbs 16:24 (NIV) compare 'gracious words' to?",
+      "questionContent": "What does Proverbs 13:22 say 'a good person' leaves behind?",
       "complexityLevel": "medium",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "A honeycomb"
+          "value": "A name that will never be forgotten"
         },
         {
           "id": 2,
-          "value": "Autumn rain"
+          "value": "A legacy of wisdom and instruction"
         },
         {
           "id": 3,
-          "value": "Cool water on a thirsty soul"
+          "value": "An inheritance for their children's children"
         },
         {
           "id": 4,
-          "value": "Light breaking through the clouds"
+          "value": "The fruit of all their faithful years"
         }
       ],
-      "rightAnswerId": 1,
+      "rightAnswerId": 3,
       "rightAnswerString": null
     },
     {
       "id": 75,
-      "questionContent": "What does Proverbs 27:6 say about 'wounds from a friend'?",
+      "questionContent": "Proverbs 30:4 asks who has gone up to heaven and come down, and ends by asking what?",
       "complexityLevel": "medium",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "They heal truly"
+          "value": "'What is his name, and what is the name of his son?'"
         },
         {
           "id": 2,
-          "value": "They heal slower than wounds from an enemy"
+          "value": "'And where were you when all these things were made?'"
         },
         {
           "id": 3,
-          "value": "They should be borne without complaint"
+          "value": "'Have you understood this since your birth?'"
         },
         {
           "id": 4,
-          "value": "They can be trusted"
+          "value": "'How great is your throne, and who can challenge it?'"
         }
       ],
-      "rightAnswerId": 4,
+      "rightAnswerId": 1,
       "rightAnswerString": null
     },
     {
       "id": 76,
-      "questionContent": "Proverbs 21:1 says the king's heart is like what in the LORD's hand?",
+      "questionContent": "What does Proverbs 23:5 say will happen to riches 'when you cast your eyes on them'?",
       "complexityLevel": "medium",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "A flame He fans or quenches at will"
+          "value": "They blind the heart to what truly matters"
         },
         {
           "id": 2,
-          "value": "A vessel He fills or empties"
+          "value": "They make a man's sleep uneasy"
         },
         {
           "id": 3,
-          "value": "A watercourse He directs as He pleases"
+          "value": "They lead to striving that brings no peace"
         },
         {
           "id": 4,
-          "value": "A stone He shapes with precision"
+          "value": "They are gone — they sprout wings and fly off to the sky like an eagle"
         }
       ],
-      "rightAnswerId": 3,
+      "rightAnswerId": 4,
       "rightAnswerString": null
     },
     {
       "id": 77,
-      "questionContent": "What does Proverbs 14:34 say 'righteousness' does for a nation?",
+      "questionContent": "According to Proverbs 26:14, a sluggard turning on his bed is likened to what?",
       "complexityLevel": "medium",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "Exalts it"
+          "value": "A spinning windmill"
         },
         {
           "id": 2,
-          "value": "Protects it"
+          "value": "A door turning on its hinges"
         },
         {
           "id": 3,
-          "value": "Unites it"
+          "value": "A restless sea wave"
         },
         {
           "id": 4,
-          "value": "Enriches it"
+          "value": "A leaf caught in wind"
         }
       ],
-      "rightAnswerId": 1,
+      "rightAnswerId": 2,
       "rightAnswerString": null
     },
     {
       "id": 78,
-      "questionContent": "Proverbs 25:14 compares 'clouds and wind without rain' to what kind of person?",
+      "questionContent": "Proverbs 28:19 says those who 'chase fantasies' will have their fill of what?",
       "complexityLevel": "medium",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "A ruler who fails to deliver"
+          "value": "Regret"
         },
         {
           "id": 2,
-          "value": "One who boasts of gifts never given"
+          "value": "Heavy debt"
         },
         {
           "id": 3,
-          "value": "A friend who offers help but disappears"
+          "value": "Poverty"
         },
         {
           "id": 4,
-          "value": "A preacher who speaks but does not live it"
+          "value": "Empty hands"
         }
       ],
-      "rightAnswerId": 2,
+      "rightAnswerId": 3,
       "rightAnswerString": null
     },
     {
       "id": 79,
-      "questionContent": "Proverbs 26:17 compares meddling in a quarrel not your own to what action?",
+      "questionContent": "What does Proverbs 24:29 say you must NOT say to the one who wronged you?",
       "complexityLevel": "medium",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "A fool who answers before listening"
+          "value": "'I'll pay them back for what they did'"
         },
         {
           "id": 2,
-          "value": "A man who lights another person's fire"
+          "value": "'Let justice run its course for them'"
         },
         {
           "id": 3,
-          "value": "A dog that bites its own master"
+          "value": "'I will repay them in their own time'"
         },
         {
           "id": 4,
-          "value": "One who grabs a stray dog by the ears"
+          "value": "'They will get exactly what they deserve'"
         }
       ],
-      "rightAnswerId": 4,
+      "rightAnswerId": 1,
       "rightAnswerString": null
     },
     {
       "id": 80,
-      "questionContent": "According to Proverbs 13:11, what happens to wealth gained hastily?",
+      "questionContent": "According to Proverbs 30:11-14, what does the fourth 'generation' do with its teeth and jaws?",
       "complexityLevel": "medium",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "It is spent before it is fully counted"
+          "value": "Tears at all who oppose them"
         },
         {
           "id": 2,
-          "value": "It brings trouble to the household"
+          "value": "Devours its own kin without mercy"
         },
         {
           "id": 3,
-          "value": "It dwindles away"
+          "value": "Grinds truth into dust"
         },
         {
           "id": 4,
-          "value": "It slips away"
+          "value": "Devours the poor from the earth and the needy from among mankind"
         }
       ],
-      "rightAnswerId": 3,
+      "rightAnswerId": 4,
       "rightAnswerString": null
     },
     {
       "id": 81,
-      "questionContent": "Proverbs 30:24-28 lists four creatures that are 'extremely wise.' Which of the following is NOT among them?",
+      "questionContent": "Proverbs 25:13 compares a 'trustworthy messenger' to what?",
       "complexityLevel": "medium",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "The bee"
+          "value": "A burning lamp"
         },
         {
           "id": 2,
-          "value": "The ant"
+          "value": "The coolness of snow at harvest time"
         },
         {
           "id": 3,
-          "value": "The hyrax (rock badger)"
+          "value": "First rain in spring"
         },
         {
           "id": 4,
-          "value": "The locust"
+          "value": "A cool water fountain"
         }
       ],
-      "rightAnswerId": 1,
+      "rightAnswerId": 2,
       "rightAnswerString": null
     },
     {
       "id": 82,
-      "questionContent": "Proverbs 23:5 warns that riches you set your eyes on will do what?",
+      "questionContent": "Proverbs 8:35-36 says: 'those who find me find life and receive favour from the LORD.' What happens to those who fail to find Wisdom?",
       "complexityLevel": "medium",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "Corrupt your heart and cloud your judgment"
+          "value": "Walk the path of ruin"
         },
         {
           "id": 2,
-          "value": "Sprout wings and fly away like an eagle"
+          "value": "Harm themselves and their soul"
         },
         {
           "id": 3,
-          "value": "Slip through your fingers like water"
+          "value": "They harm only themselves"
         },
         {
           "id": 4,
-          "value": "Bring sorrow to all who chase them"
+          "value": "Lose what was born to them"
         }
       ],
-      "rightAnswerId": 2,
+      "rightAnswerId": 3,
       "rightAnswerString": null
     },
     {
       "id": 83,
-      "questionContent": "What does Proverbs 20:27 call 'the lamp of the LORD' that 'sheds light on one's inmost being'?",
+      "questionContent": "What does Proverbs 26:20 say happens to a quarrel 'without a gossip'?",
       "complexityLevel": "medium",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "The word of God"
+          "value": "It dies down"
         },
         {
           "id": 2,
-          "value": "The eye of the wise"
+          "value": "Families are restored"
         },
         {
           "id": 3,
-          "value": "The voice of conscience"
+          "value": "Old bonds are mended"
         },
         {
           "id": 4,
-          "value": "The human spirit"
+          "value": "Truth surfaces at last"
         }
       ],
-      "rightAnswerId": 4,
+      "rightAnswerId": 1,
       "rightAnswerString": null
     },
     {
       "id": 84,
-      "questionContent": "Proverbs 17:1 says what is 'better than a house full of feasting, with strife'?",
+      "questionContent": "Proverbs 22:11 says 'one who loves a pure heart and whose speech is gracious' will have whom as a friend?",
       "complexityLevel": "medium",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "A simple meal shared in perfect honesty"
+          "value": "Those of good character"
         },
         {
           "id": 2,
-          "value": "A quiet day spent in honest work"
+          "value": "The faithful and wise"
         },
         {
           "id": 3,
-          "value": "A dry crust eaten in peace and quiet"
+          "value": "The righteous and great"
         },
         {
           "id": 4,
-          "value": "A small loaf baked by one's own hand"
+          "value": "The king"
         }
       ],
-      "rightAnswerId": 3,
+      "rightAnswerId": 4,
       "rightAnswerString": null
     },
     {
       "id": 85,
-      "questionContent": "What does Proverbs 14:30 say 'envy' does to the bones?",
+      "questionContent": "Proverbs 28:1 says the wicked flee though no one pursues — but the righteous are as bold as what?",
       "complexityLevel": "medium",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "It rots them"
+          "value": "An eagle"
         },
         {
           "id": 2,
-          "value": "It dims them"
+          "value": "A lion"
         },
         {
           "id": 3,
-          "value": "It dries them out"
+          "value": "Old warriors"
         },
         {
           "id": 4,
-          "value": "It crushes them"
+          "value": "A great army"
         }
       ],
-      "rightAnswerId": 1,
+      "rightAnswerId": 2,
       "rightAnswerString": null
     },
     {
       "id": 86,
-      "questionContent": "Proverbs 29:18 says that where there is 'no revelation,' people do what?",
+      "questionContent": "What does Proverbs 19:14 call a prudent wife, contrasting her with 'house and wealth inherited from parents'?",
       "complexityLevel": "medium",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "The nation strays from the truth"
+          "value": "Greatest treasure possible"
         },
         {
           "id": 2,
-          "value": "The people cast off restraint"
+          "value": "Blessing more than gold"
         },
         {
           "id": 3,
-          "value": "Darkness covers the land"
+          "value": "A gift from the LORD"
         },
         {
           "id": 4,
-          "value": "Enemies rise up unchecked"
+          "value": "Worth more than riches"
         }
       ],
-      "rightAnswerId": 2,
+      "rightAnswerId": 3,
       "rightAnswerString": null
     },
     {
       "id": 87,
-      "questionContent": "What does Proverbs 20:17 say about 'food gained by fraud'?",
+      "questionContent": "What does Proverbs 18:22 (NIV) say about finding a wife?",
       "complexityLevel": "medium",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "It fills the stomach but empties the soul"
+          "value": "He who finds a wife finds what is good and receives favour from the LORD"
         },
         {
           "id": 2,
-          "value": "It tastes like ashes in the end"
+          "value": "It requires careful prayer and seeking"
         },
         {
           "id": 3,
-          "value": "It brings swift ruin on the one who eats it"
+          "value": "It is a lifelong covenant before God"
         },
         {
           "id": 4,
-          "value": "It tastes sweet but turns to gravel in the mouth"
+          "value": "She reflects a man's own character"
         }
       ],
-      "rightAnswerId": 4,
+      "rightAnswerId": 1,
       "rightAnswerString": null
     },
     {
       "id": 88,
-      "questionContent": "Proverbs 25:25 compares 'good news from a distant land' to what?",
+      "questionContent": "Proverbs 22:15 says folly is 'bound up in the heart of a child.' What does the rod of discipline do?",
       "complexityLevel": "medium",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "Morning light after a long night"
+          "value": "Trains the will"
         },
         {
           "id": 2,
-          "value": "A lamp burning through the darkness"
+          "value": "Shows the right way"
         },
         {
           "id": 3,
-          "value": "Cold water to a weary soul"
+          "value": "Reveals the heart"
         },
         {
           "id": 4,
-          "value": "Balm on a wound"
+          "value": "Drives it far from them"
         }
       ],
-      "rightAnswerId": 3,
+      "rightAnswerId": 4,
       "rightAnswerString": null
     },
     {
       "id": 89,
-      "questionContent": "What does Proverbs 19:11 say 'overlooking an offence' demonstrates about a person?",
+      "questionContent": "Proverbs 17:9 says 'whoever would foster love covers over an offence.' But what does one who 'repeats the matter' do?",
       "complexityLevel": "medium",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "Their wisdom"
+          "value": "Reopens old wounds"
         },
         {
           "id": 2,
-          "value": "Their grace"
+          "value": "Separates close friends"
         },
         {
           "id": 3,
-          "value": "True brotherly love"
+          "value": "Brings shame on themselves"
         },
         {
           "id": 4,
-          "value": "Exceptional strength of character"
+          "value": "Multiplies their guilt"
         }
       ],
-      "rightAnswerId": 1,
+      "rightAnswerId": 2,
       "rightAnswerString": null
     },
     {
       "id": 90,
-      "questionContent": "What danger does Proverbs 26:4 warn about when answering a fool according to his folly?",
+      "questionContent": "What does Proverbs 20:22 say you should do instead of paying back wrong for wrong?",
       "complexityLevel": "medium",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "You too will be mocked"
+          "value": "Respond with kindness and a blessing"
         },
         {
           "id": 2,
-          "value": "You yourself will become like him"
+          "value": "Entrust the matter to a righteous judge"
         },
         {
           "id": 3,
-          "value": "You will only deepen his foolishness"
+          "value": "Wait for the LORD, and he will avenge you"
         },
         {
           "id": 4,
-          "value": "You will lose the respect of the wise"
+          "value": "Pray for the one who has wronged you"
         }
       ],
-      "rightAnswerId": 2,
+      "rightAnswerId": 3,
       "rightAnswerString": null
     },
     {
       "id": 91,
-      "questionContent": "According to Proverbs 16:33, the lot is cast into the lap, but whose is 'every decision'?",
+      "questionContent": "Proverbs 16:3 says: 'Commit to the LORD whatever you do, and ___.'",
       "complexityLevel": "medium",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "His own"
+          "value": "he will establish your plans"
         },
         {
           "id": 2,
-          "value": "The one best prepared"
+          "value": "he will direct your paths"
         },
         {
           "id": 3,
-          "value": "The wisest in the room"
+          "value": "he will answer every prayer"
         },
         {
           "id": 4,
-          "value": "The LORD's"
+          "value": "he will guard your steps"
         }
       ],
-      "rightAnswerId": 4,
+      "rightAnswerId": 1,
       "rightAnswerString": null
     },
     {
       "id": 92,
-      "questionContent": "What does Proverbs 25:2 say is 'the glory of God' (contrasted with the glory of kings)?",
+      "questionContent": "Proverbs 25:17 warns: 'Seldom set foot in your neighbour's house — lest they have ___.'",
       "complexityLevel": "medium",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "His wisdom that no one can fathom"
+          "value": "Too much of your advice"
         },
         {
           "id": 2,
-          "value": "His power over all of creation"
+          "value": "No choice but to reject you"
         },
         {
           "id": 3,
-          "value": "To conceal a matter"
+          "value": "Cause to take advantage of your kindness"
         },
         {
           "id": 4,
-          "value": "Hiding things"
+          "value": "Too much of you and hate you"
         }
       ],
-      "rightAnswerId": 3,
+      "rightAnswerId": 4,
       "rightAnswerString": null
     },
     {
       "id": 93,
-      "questionContent": "According to Proverbs 17:22, what 'dries up the bones' (contrasted with a cheerful heart)?",
+      "questionContent": "Proverbs 10:25 says 'when the storm has swept by, the wicked are gone.' But what does it say about the righteous?",
       "complexityLevel": "medium",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "A crushed spirit"
+          "value": "Sheltered by God's name"
         },
         {
           "id": 2,
-          "value": "A life of unending sorrow"
+          "value": "The righteous stand firm for ever"
         },
         {
           "id": 3,
-          "value": "Deep sorrow"
+          "value": "Weather storms through faith"
         },
         {
           "id": 4,
-          "value": "A heavy burden carried alone"
+          "value": "Kept in peace by the LORD"
         }
       ],
-      "rightAnswerId": 1,
+      "rightAnswerId": 2,
       "rightAnswerString": null
     },
     {
       "id": 94,
-      "questionContent": "What does Proverbs 18:21 say has the power of 'life and death'?",
+      "questionContent": "Proverbs 17:15 says the LORD 'detests' two things — acquitting the guilty and what?",
       "complexityLevel": "medium",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "The sword of the king"
+          "value": "Bearing false witness against a neighbour"
         },
         {
           "id": 2,
-          "value": "The tongue"
+          "value": "Bribing a judge"
         },
         {
           "id": 3,
-          "value": "The mind"
+          "value": "Condemning the innocent"
         },
         {
           "id": 4,
-          "value": "The hand of the LORD"
-        }
-      ],
-      "rightAnswerId": 2,
-      "rightAnswerString": null
-    },
-    {
-      "id": 95,
-      "questionContent": "Proverbs 23:17-18 urges not to envy sinners but to fear the LORD, because what?",
-      "complexityLevel": "medium",
-      "answerType": "ID",
-      "answersList": [
-        {
-          "id": 1,
-          "value": "The wicked will soon receive judgment"
-        },
-        {
-          "id": 2,
-          "value": "Your righteousness will be openly rewarded"
-        },
-        {
-          "id": 3,
-          "value": "God sees and records every secret deed"
-        },
-        {
-          "id": 4,
-          "value": "There is surely a future hope for you"
-        }
-      ],
-      "rightAnswerId": 4,
-      "rightAnswerString": null
-    },
-    {
-      "id": 96,
-      "questionContent": "What does Proverbs 13:20 say happens to one who 'walks with the wise'?",
-      "complexityLevel": "medium",
-      "answerType": "ID",
-      "answersList": [
-        {
-          "id": 1,
-          "value": "They gain honour"
-        },
-        {
-          "id": 2,
-          "value": "They find favour with God and man"
-        },
-        {
-          "id": 3,
-          "value": "They become wise"
-        },
-        {
-          "id": 4,
-          "value": "They walk in the path of life"
+          "value": "Perverting justice with flattery"
         }
       ],
       "rightAnswerId": 3,
       "rightAnswerString": null
     },
     {
-      "id": 97,
-      "questionContent": "In Proverbs 30:15-16, four things are listed as 'never satisfied.' Which of the following is one of them?",
+      "id": 95,
+      "questionContent": "Proverbs 24:3-4 says a house is built by wisdom and established by understanding. Through what are 'its rooms filled with rare and beautiful treasures'?",
       "complexityLevel": "medium",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "The grave"
+          "value": "Through knowledge"
         },
         {
           "id": 2,
-          "value": "The proud man's heart"
+          "value": "Through years of labour"
         },
         {
           "id": 3,
-          "value": "The soul of the wicked"
+          "value": "Through God's blessing"
         },
         {
           "id": 4,
-          "value": "Hunger"
+          "value": "Through applied wisdom"
         }
       ],
       "rightAnswerId": 1,
       "rightAnswerString": null
     },
     {
-      "id": 98,
-      "questionContent": "According to Proverbs 31:6-7, wine and strong drink should be given to whom?",
+      "id": 96,
+      "questionContent": "What does Proverbs 11:13 say 'a gossip' does with secrets?",
       "complexityLevel": "medium",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "Travellers far from home"
+          "value": "Twists them for ends"
         },
         {
           "id": 2,
-          "value": "Those who are perishing and in anguish"
+          "value": "Gains power from them"
         },
         {
           "id": 3,
-          "value": "The weary after long labour"
+          "value": "Speaks them carelessly"
         },
         {
           "id": 4,
-          "value": "The poor with nothing else to eat"
-        }
-      ],
-      "rightAnswerId": 2,
-      "rightAnswerString": null
-    },
-    {
-      "id": 99,
-      "questionContent": "What does Proverbs 22:29 say will happen to a person who is 'skilled in their work'?",
-      "complexityLevel": "medium",
-      "answerType": "ID",
-      "answersList": [
-        {
-          "id": 1,
-          "value": "They gain a good name"
-        },
-        {
-          "id": 2,
-          "value": "They will find favour with all people"
-        },
-        {
-          "id": 3,
-          "value": "They will always have enough for their needs"
-        },
-        {
-          "id": 4,
-          "value": "They will serve before kings"
+          "value": "Betrays a confidence"
         }
       ],
       "rightAnswerId": 4,
       "rightAnswerString": null
     },
     {
-      "id": 100,
-      "questionContent": "What does Proverbs 15:17 say is 'better than a fattened calf with hatred'?",
+      "id": 97,
+      "questionContent": "Proverbs 14:31 says the one who 'oppresses the poor' shows contempt for whom?",
       "complexityLevel": "medium",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "Dry bread shared between friends"
+          "value": "The laws of the land"
         },
         {
           "id": 2,
-          "value": "Simple food with a pure heart"
+          "value": "Their Maker"
         },
         {
           "id": 3,
-          "value": "A meal of vegetables where there is love"
+          "value": "The path of right"
         },
         {
           "id": 4,
-          "value": "Plain water drunk in contentment"
+          "value": "The poor man's dignity"
+        }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 98,
+      "questionContent": "Proverbs 18:17 says 'in a lawsuit the first to speak seems right — until ___.'",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "The judge weighs all the evidence"
+        },
+        {
+          "id": 2,
+          "value": "The truth is brought to light"
+        },
+        {
+          "id": 3,
+          "value": "Someone comes forward and cross-examines them"
+        },
+        {
+          "id": 4,
+          "value": "The other party has their say"
         }
       ],
       "rightAnswerId": 3,
       "rightAnswerString": null
     },
     {
+      "id": 99,
+      "questionContent": "Proverbs 13:4 says the desires of the diligent are ___.",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "are fully satisfied"
+        },
+        {
+          "id": 2,
+          "value": "reflect their virtue"
+        },
+        {
+          "id": 3,
+          "value": "show their diligence"
+        },
+        {
+          "id": 4,
+          "value": "please the LORD"
+        }
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 100,
+      "questionContent": "What does Proverbs 15:22 say about plans that lack counsel?",
+      "complexityLevel": "medium",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "They reveal weak wisdom"
+        },
+        {
+          "id": 2,
+          "value": "They bring trouble"
+        },
+        {
+          "id": 3,
+          "value": "They drift aimlessly"
+        },
+        {
+          "id": 4,
+          "value": "They fail"
+        }
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
       "id": 101,
-      "questionContent": "In Proverbs 30:29-31, among the four things that 'move with stately bearing,' which creature is described as 'strutting'?",
+      "questionContent": "According to Proverbs 8:23 (NIV), Wisdom was 'appointed from eternity, from the beginning, ___.'",
       "complexityLevel": "hard",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "The lion"
+          "value": "before the heavens formed"
         },
         {
           "id": 2,
-          "value": "The rooster"
+          "value": "before the world began"
         },
         {
           "id": 3,
-          "value": "The he-goat"
+          "value": "when morning stars sang"
         },
         {
           "id": 4,
-          "value": "The war horse"
+          "value": "before ocean depths formed"
         }
       ],
       "rightAnswerId": 2,
@@ -2630,77 +2630,77 @@
     },
     {
       "id": 102,
-      "questionContent": "Proverbs 8:22-23 says Wisdom was 'brought forth' by the LORD — at what point?",
+      "questionContent": "Proverbs 7:17 says the adulteress perfumed her bed with myrrh, aloes, and cinnamon. Which perfume is NOT mentioned?",
       "complexityLevel": "hard",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "When the first star was set in place"
+          "value": "Myrrh"
         },
         {
           "id": 2,
-          "value": "When God first spoke creation into being"
+          "value": "Aloes"
         },
         {
           "id": 3,
-          "value": "At the very beginning, before His works of old"
+          "value": "Cinnamon"
         },
         {
           "id": 4,
-          "value": "When the morning stars sang together"
-        }
-      ],
-      "rightAnswerId": 3,
-      "rightAnswerString": null
-    },
-    {
-      "id": 103,
-      "questionContent": "According to Proverbs 30:15, the leech has two daughters. What do they both cry?",
-      "complexityLevel": "hard",
-      "answerType": "ID",
-      "answersList": [
-        {
-          "id": 1,
-          "value": "Feed me, feed me"
-        },
-        {
-          "id": 2,
-          "value": "More, more"
-        },
-        {
-          "id": 3,
-          "value": "Never enough"
-        },
-        {
-          "id": 4,
-          "value": "Give, give"
+          "value": "Frankincense"
         }
       ],
       "rightAnswerId": 4,
       "rightAnswerString": null
     },
     {
-      "id": 104,
-      "questionContent": "Proverbs 30:18-19 lists four things 'too amazing' for Agur to understand. Which of the following is NOT one of them?",
+      "id": 103,
+      "questionContent": "Proverbs 30:6 warns 'do not add to his words' or he will rebuke you and prove you ___.",
       "complexityLevel": "hard",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "The way of an eagle in the sky"
+          "value": "a liar"
         },
         {
           "id": 2,
-          "value": "The way of a snake on a rock"
+          "value": "a fool"
         },
         {
           "id": 3,
-          "value": "The way of a lion in the wilderness"
+          "value": "unworthy"
         },
         {
           "id": 4,
-          "value": "The way of a ship on the high seas"
+          "value": "guilty"
+        }
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 104,
+      "questionContent": "In Proverbs 7:8-9, what time of day does the naive young man take the road toward the adulteress's house?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "At midnight, heading toward the city"
+        },
+        {
+          "id": 2,
+          "value": "At sunset, going toward the temple mount"
+        },
+        {
+          "id": 3,
+          "value": "At twilight as the evening approached and the dark of night set in"
+        },
+        {
+          "id": 4,
+          "value": "Early in the morning, wandering aimlessly"
         }
       ],
       "rightAnswerId": 3,
@@ -2708,25 +2708,25 @@
     },
     {
       "id": 105,
-      "questionContent": "Proverbs 6:5 urges someone who has rashly pledged security to free themselves — like what?",
+      "questionContent": "Proverbs 6:4-5 urges the one who has pledged security for a neighbour to free himself like what two animals?",
       "complexityLevel": "hard",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "A bird escaping through the open window"
+          "value": "A lion from the net and a bird from the snare"
         },
         {
           "id": 2,
-          "value": "A gazelle from the hand of the hunter"
+          "value": "A gazelle from the hand of the hunter and a bird from the fowler's snare"
         },
         {
           "id": 3,
-          "value": "A deer fleeing from a roaring lion"
+          "value": "A deer from the arrow and a dove from the cage"
         },
         {
           "id": 4,
-          "value": "A fish leaping free of the net"
+          "value": "A wild horse from the rein and an eagle from the cage"
         }
       ],
       "rightAnswerId": 2,
@@ -2734,207 +2734,207 @@
     },
     {
       "id": 106,
-      "questionContent": "Proverbs 27:20 says 'the eyes of man are never satisfied' — comparing them to what?",
+      "questionContent": "Proverbs 26:18-19 describes someone who deceives a neighbour and says 'I was only joking.' What image does it use?",
       "complexityLevel": "hard",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "Death and Destruction (Sheol and Abaddon)"
+          "value": "A builder ruining foundations"
         },
         {
           "id": 2,
-          "value": "The depths of the ocean and the restless sea"
+          "value": "A shepherd in the storm"
         },
         {
           "id": 3,
-          "value": "The heart of the proud and the arrogant"
+          "value": "A physician in error"
         },
         {
           "id": 4,
-          "value": "The craving of the unrestrained glutton"
+          "value": "A maniac shooting flaming arrows"
+        }
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 107,
+      "questionContent": "In Proverbs 7:20, the adulteress says her husband took his purse and will not be home until what?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "The full moon"
+        },
+        {
+          "id": 2,
+          "value": "The appointed feast"
+        },
+        {
+          "id": 3,
+          "value": "After the harvest"
+        },
+        {
+          "id": 4,
+          "value": "Many days later"
         }
       ],
       "rightAnswerId": 1,
       "rightAnswerString": null
     },
     {
-      "id": 107,
-      "questionContent": "What does Proverbs 30:10 warn will happen if you 'slander a servant to their master'?",
+      "id": 108,
+      "questionContent": "Proverbs 25:20 uses two images for singing songs to a heavy heart. What are they?",
       "complexityLevel": "hard",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "Your slander will be brought before the city elders"
+          "value": "Pouring oil on water and lighting a candle in a blizzard"
         },
         {
           "id": 2,
-          "value": "The whole household will be turned against you"
+          "value": "Adding vinegar to milk and putting a stone over a spring"
         },
         {
           "id": 3,
-          "value": "The servant will curse you, and you will pay for it"
+          "value": "Taking away a garment on a cold day and pouring vinegar on a wound"
         },
         {
           "id": 4,
-          "value": "The servant will repay you with false testimony"
+          "value": "Cutting thorns bare-handed and running into a burning building"
         }
       ],
       "rightAnswerId": 3,
       "rightAnswerString": null
     },
     {
-      "id": 108,
-      "questionContent": "Proverbs 25:3 compares 'the height of the heavens' and 'the depth of the earth' to what?",
-      "complexityLevel": "hard",
-      "answerType": "ID",
-      "answersList": [
-        {
-          "id": 1,
-          "value": "God his works"
-        },
-        {
-          "id": 2,
-          "value": "The love of a faithful parent"
-        },
-        {
-          "id": 3,
-          "value": "The patience of the long-suffering man"
-        },
-        {
-          "id": 4,
-          "value": "The hearts of kings"
-        }
-      ],
-      "rightAnswerId": 4,
-      "rightAnswerString": null
-    },
-    {
       "id": 109,
-      "questionContent": "According to Proverbs 16:15, when the king's face 'brightens,' it is like what?",
+      "questionContent": "Proverbs 5:22 says 'the evil deeds of the wicked ensnare them.' What holds them fast?",
       "complexityLevel": "hard",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "A rain cloud in spring"
+          "value": "Swift coming judgment"
         },
         {
           "id": 2,
-          "value": "The rising of the morning sun"
+          "value": "The cords of their sins"
         },
         {
           "id": 3,
-          "value": "Morning sunlight"
+          "value": "The trap for the righteous"
         },
         {
           "id": 4,
-          "value": "The freshness of the early dew"
-        }
-      ],
-      "rightAnswerId": 1,
-      "rightAnswerString": null
-    },
-    {
-      "id": 110,
-      "questionContent": "According to Proverbs 25:23, a north wind brings unexpected rain — and a sly tongue brings what?",
-      "complexityLevel": "hard",
-      "answerType": "ID",
-      "answersList": [
-        {
-          "id": 1,
-          "value": "Angry faces"
-        },
-        {
-          "id": 2,
-          "value": "Horrified looks"
-        },
-        {
-          "id": 3,
-          "value": "Lasting strife between friends"
-        },
-        {
-          "id": 4,
-          "value": "Words no one can take back"
+          "value": "The chain of their choices"
         }
       ],
       "rightAnswerId": 2,
       "rightAnswerString": null
     },
     {
-      "id": 111,
-      "questionContent": "What does Proverbs 11:1 say the LORD finds 'detestable'?",
+      "id": 110,
+      "questionContent": "What does Proverbs 27:21 say about 'the crucible for silver and the furnace for gold'?",
       "complexityLevel": "hard",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "A false witness who tells lies"
+          "value": "Both refine, but men are refined only through suffering"
         },
         {
           "id": 2,
-          "value": "A man who stirs up conflict"
+          "value": "Only what endures the fire has lasting worth"
         },
         {
           "id": 3,
-          "value": "Bloodshed"
+          "value": "All true treasure comes through fire and toil"
         },
         {
           "id": 4,
-          "value": "Dishonest scales"
+          "value": "But people are tested by the praise they receive"
         }
       ],
       "rightAnswerId": 4,
       "rightAnswerString": null
     },
     {
-      "id": 112,
-      "questionContent": "In Proverbs 7:9, at what time of day does the adulteress approach the naive young man?",
+      "id": 111,
+      "questionContent": "Proverbs 28:9 says that even 'the prayers' of those who turn a deaf ear to the law are what?",
       "complexityLevel": "hard",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "At twilight, as the evening came on"
+          "value": "Detestable"
         },
         {
           "id": 2,
-          "value": "At noon, when the sun was at its height"
+          "value": "Unheard by God"
         },
         {
           "id": 3,
-          "value": "Before dawn, when all the house was quiet"
+          "value": "Worthless and vain"
         },
         {
           "id": 4,
-          "value": "In the deep of the night watch"
+          "value": "Empty as incense smoke"
         }
       ],
       "rightAnswerId": 1,
       "rightAnswerString": null
     },
     {
-      "id": 113,
-      "questionContent": "What does Proverbs 12:16 say a fool does when he perceives an insult?",
+      "id": 112,
+      "questionContent": "Proverbs 6:32 says a man who commits adultery 'has no sense.' What does he do to himself?",
       "complexityLevel": "hard",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "He sulks in silence"
+          "value": "Enters a deadly trap"
         },
         {
           "id": 2,
-          "value": "He shows his annoyance at once"
+          "value": "Chooses ruin willingly"
         },
         {
           "id": 3,
-          "value": "He raises his voice in open anger"
+          "value": "Destroys himself"
         },
         {
           "id": 4,
-          "value": "He makes his grievance known to all"
+          "value": "Walks into danger"
+        }
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 113,
+      "questionContent": "What literary structure does Proverbs 31:10-31 follow in the original Hebrew?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "A repeated refrain built around the name of God"
+        },
+        {
+          "id": 2,
+          "value": "An acrostic poem following the letters of the Hebrew alphabet"
+        },
+        {
+          "id": 3,
+          "value": "A chiastic structure with the fear of the LORD at its centre"
+        },
+        {
+          "id": 4,
+          "value": "A catalogue of virtues ordered by their importance"
         }
       ],
       "rightAnswerId": 2,
@@ -2942,25 +2942,25 @@
     },
     {
       "id": 114,
-      "questionContent": "What does Proverbs 26:23 compare to 'an earthen vessel covered with silver dross'?",
+      "questionContent": "Proverbs 25:26 (NIV) compares what to 'a muddied spring or a polluted well'?",
       "complexityLevel": "hard",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "Beautiful words spoken from a hollow heart"
+          "value": "A king who turns his ear to liars"
         },
         {
           "id": 2,
-          "value": "Wisdom learned but never put into practice"
+          "value": "A nation with no godly leaders"
         },
         {
           "id": 3,
-          "value": "Generosity with bad intent"
+          "value": "A city with no walls or watchmen"
         },
         {
           "id": 4,
-          "value": "Fervent lips with a wicked heart"
+          "value": "A righteous person who gives way to the wicked"
         }
       ],
       "rightAnswerId": 4,
@@ -2968,25 +2968,25 @@
     },
     {
       "id": 115,
-      "questionContent": "According to Proverbs 27:7, what happens to a hungry person when they encounter something bitter?",
+      "questionContent": "Proverbs 5:4 says the end of the adulteress is 'bitter as gall' and sharp as what?",
       "complexityLevel": "hard",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "Even what is bitter tastes sweet"
+          "value": "A double-edged sword"
         },
         {
           "id": 2,
-          "value": "Clear thinking escapes him"
+          "value": "A poisoned arrow shaft"
         },
         {
           "id": 3,
-          "value": "They will take what they need wherever they find it"
+          "value": "An iron nail in oak"
         },
         {
           "id": 4,
-          "value": "They lose the ability to judge what is truly good"
+          "value": "A serpent's tooth in darkness"
         }
       ],
       "rightAnswerId": 1,
@@ -2994,77 +2994,77 @@
     },
     {
       "id": 116,
-      "questionContent": "What does Proverbs 22:2 say the rich and the poor have in common?",
+      "questionContent": "Proverbs 30:11-14 describes four 'generations.' What does the fourth do with its teeth?",
       "complexityLevel": "hard",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "They both seek wisdom in their own way"
+          "value": "Grinds truth into dust"
         },
         {
           "id": 2,
-          "value": "The LORD is the Maker of them all"
+          "value": "Tears at the weak who cannot defend themselves"
         },
         {
           "id": 3,
-          "value": "They both stand before God in judgment"
+          "value": "Devours the poor from the earth and the needy from among mankind"
         },
         {
           "id": 4,
-          "value": "They share the same daily needs"
+          "value": "Devours the righteous without conscience"
+        }
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 117,
+      "questionContent": "What does Proverbs 26:4-5 deliberately demonstrate by placing two contradictory proverbs side by side?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Allegory that requires careful interpretation"
+        },
+        {
+          "id": 2,
+          "value": "The need for wisdom in knowing when to apply each principle"
+        },
+        {
+          "id": 3,
+          "value": "Irony to expose the foolishness of human counsel"
+        },
+        {
+          "id": 4,
+          "value": "A test of discernment embedded in the text"
         }
       ],
       "rightAnswerId": 2,
       "rightAnswerString": null
     },
     {
-      "id": 117,
-      "questionContent": "Proverbs 17:14 compares 'starting a quarrel' to what potentially catastrophic act?",
-      "complexityLevel": "hard",
-      "answerType": "ID",
-      "answersList": [
-        {
-          "id": 1,
-          "value": "Breaching a dam"
-        },
-        {
-          "id": 2,
-          "value": "Kindling a fire in a drought"
-        },
-        {
-          "id": 3,
-          "value": "Loosing an arrow at random"
-        },
-        {
-          "id": 4,
-          "value": "Opening a tomb"
-        }
-      ],
-      "rightAnswerId": 1,
-      "rightAnswerString": null
-    },
-    {
       "id": 118,
-      "questionContent": "Proverbs 20:5 says the purposes of a person's heart are like deep waters — but who can draw them out?",
+      "questionContent": "Proverbs 20:14 describes a buyer who says 'It's no good!' about an item — what does he do after leaving?",
       "complexityLevel": "hard",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "A gifted teacher"
+          "value": "Returns to buy it"
         },
         {
           "id": 2,
-          "value": "A trusted elder in the community"
+          "value": "Spreads word it was bad"
         },
         {
           "id": 3,
-          "value": "One who has endured great suffering"
+          "value": "Complains about the seller"
         },
         {
           "id": 4,
-          "value": "A person of understanding"
+          "value": "Boasts about his purchase"
         }
       ],
       "rightAnswerId": 4,
@@ -3072,51 +3072,51 @@
     },
     {
       "id": 119,
-      "questionContent": "Proverbs 25:20 compares singing songs to a heavy heart to what two images?",
+      "questionContent": "What does Proverbs 27:22 say cannot be 'removed' from a fool, even if you 'grind him in a mortar'?",
       "complexityLevel": "hard",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "Offering advice before understanding the problem"
+          "value": "Their folly"
         },
         {
           "id": 2,
-          "value": "Laughing at the sorrows of a grieving friend"
+          "value": "Their pride"
         },
         {
           "id": 3,
-          "value": "Taking away a garment on a cold day, or vinegar poured on a wound"
+          "value": "Their love of foolish company"
         },
         {
           "id": 4,
-          "value": "Telling a man in grief to count his many blessings"
+          "value": "The habits that formed them"
         }
       ],
-      "rightAnswerId": 3,
+      "rightAnswerId": 1,
       "rightAnswerString": null
     },
     {
       "id": 120,
-      "questionContent": "Proverbs 26:7 compares 'a proverb in the mouth of a fool' to what?",
+      "questionContent": "Proverbs 27:9 says 'perfume and incense bring joy to the heart' — and the pleasantness of what is sweeter than both?",
       "complexityLevel": "hard",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "A harp played by hands without skill"
+          "value": "A quiet morning alone"
         },
         {
           "id": 2,
-          "value": "A straight arrow from a badly bent bow"
+          "value": "A trusted elder's blessing"
         },
         {
           "id": 3,
-          "value": "The legs of the lame that hang limp"
+          "value": "Earnest counsel from a friend"
         },
         {
           "id": 4,
-          "value": "A fig on a dead branch"
+          "value": "Praise from the righteous"
         }
       ],
       "rightAnswerId": 3,
@@ -3124,207 +3124,207 @@
     },
     {
       "id": 121,
-      "questionContent": "What does Proverbs 24:11 command concerning those 'being led away to death'?",
+      "questionContent": "What does Proverbs 16:2 say the LORD 'weighs,' even though 'all a person's ways seem pure to them'?",
       "complexityLevel": "hard",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "Rescue them"
+          "value": "Their works and deeds"
         },
         {
           "id": 2,
-          "value": "Save them"
+          "value": "The motives"
         },
         {
           "id": 3,
-          "value": "Pray fervently for their deliverance"
+          "value": "Their secret thoughts"
         },
         {
           "id": 4,
-          "value": "Alert the righteous among the city elders"
-        }
-      ],
-      "rightAnswerId": 1,
-      "rightAnswerString": null
-    },
-    {
-      "id": 122,
-      "questionContent": "According to Proverbs 27:3, stone is heavy and sand is a burden — but what is 'heavier than both'?",
-      "complexityLevel": "hard",
-      "answerType": "ID",
-      "answersList": [
-        {
-          "id": 1,
-          "value": "A guilty conscience pressing through the night"
-        },
-        {
-          "id": 2,
-          "value": "The grief of a father over a wayward child"
-        },
-        {
-          "id": 3,
-          "value": "A fool's provocation"
-        },
-        {
-          "id": 4,
-          "value": "A sharp insult"
-        }
-      ],
-      "rightAnswerId": 3,
-      "rightAnswerString": null
-    },
-    {
-      "id": 123,
-      "questionContent": "What does Proverbs 5:22 say will happen to the wicked man because of his own iniquities?",
-      "complexityLevel": "hard",
-      "answerType": "ID",
-      "answersList": [
-        {
-          "id": 1,
-          "value": "They bind him fast"
-        },
-        {
-          "id": 2,
-          "value": "They will trap him"
-        },
-        {
-          "id": 3,
-          "value": "They reveal his heart to all who observe him"
-        },
-        {
-          "id": 4,
-          "value": "They become a burden that bends him to the ground"
+          "value": "Words spoken and their effects"
         }
       ],
       "rightAnswerId": 2,
       "rightAnswerString": null
     },
     {
-      "id": 124,
-      "questionContent": "Proverbs 30:21-23 lists four things 'the earth cannot bear.' Which of the following is NOT one of them?",
+      "id": 122,
+      "questionContent": "In Proverbs 7:22-23, the naive young man follows the adulteress. He goes like 'an ox to the slaughter' — and also like what?",
       "complexityLevel": "hard",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "A servant who becomes king"
+          "value": "A blind man at a cliff"
         },
         {
           "id": 2,
-          "value": "A godless fool who gets plenty to eat"
+          "value": "A beetle near a lamp"
         },
         {
           "id": 3,
-          "value": "A contemptible woman who gets married"
+          "value": "A traveller who is lost"
         },
         {
           "id": 4,
-          "value": "A young man who suddenly gains great wealth"
+          "value": "A deer stepping into a noose"
         }
       ],
       "rightAnswerId": 4,
       "rightAnswerString": null
     },
     {
-      "id": 125,
-      "questionContent": "Proverbs 8:35 says that those who find Wisdom receive what alongside 'favour from the LORD'?",
+      "id": 123,
+      "questionContent": "Proverbs 5:23 says the wicked will die 'for lack of discipline' — and 'led astray by ___.'",
       "complexityLevel": "hard",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "Gold"
+          "value": "their own great folly"
         },
         {
           "id": 2,
-          "value": "Peace and deep understanding"
+          "value": "flattery of false friends"
         },
         {
           "id": 3,
-          "value": "Life"
+          "value": "desire of sinful heart"
         },
         {
           "id": 4,
-          "value": "Honour among their people"
-        }
-      ],
-      "rightAnswerId": 3,
-      "rightAnswerString": null
-    },
-    {
-      "id": 126,
-      "questionContent": "Proverbs 30:33 uses churning cream and twisting a nose as analogies for what outcome?",
-      "complexityLevel": "hard",
-      "answerType": "ID",
-      "answersList": [
-        {
-          "id": 1,
-          "value": "Stirring up anger produces strife"
-        },
-        {
-          "id": 2,
-          "value": "Pressing a friend brings hidden secrets to light"
-        },
-        {
-          "id": 3,
-          "value": "Testing a person reveals their true character"
-        },
-        {
-          "id": 4,
-          "value": "Forced words produce lies"
+          "value": "cords of their iniquity"
         }
       ],
       "rightAnswerId": 1,
       "rightAnswerString": null
     },
     {
-      "id": 127,
-      "questionContent": "What does Proverbs 16:26 say about the appetite of a labourer?",
+      "id": 124,
+      "questionContent": "Proverbs 30:20 describes the way of an adulterous woman. What does she say after she 'eats and wipes her mouth'?",
       "complexityLevel": "hard",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "It drives him to seek more than he truly needs"
+          "value": "'No one can prove it'"
         },
         {
           "id": 2,
-          "value": "It works for him — his hunger urges him on"
+          "value": "'The LORD has not seen'"
         },
         {
           "id": 3,
-          "value": "It is never fully satisfied by honest toil"
+          "value": "'I've done nothing wrong'"
         },
         {
           "id": 4,
-          "value": "It is a gift from God to keep him dependent"
+          "value": "'Who is there to judge?'"
+        }
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 125,
+      "questionContent": "Proverbs 14:4 says where there are no oxen 'the manger is empty.' What does it conclude about the strength of an ox?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "A wise man prizes it"
+        },
+        {
+          "id": 2,
+          "value": "It produces abundant harvests"
+        },
+        {
+          "id": 3,
+          "value": "It rewards its keeper"
+        },
+        {
+          "id": 4,
+          "value": "Human effort cannot match it"
         }
       ],
       "rightAnswerId": 2,
       "rightAnswerString": null
     },
     {
-      "id": 128,
-      "questionContent": "According to Proverbs 21:14, what 'soothes great wrath'?",
+      "id": 126,
+      "questionContent": "Proverbs 25:15 uses patience to persuade a ruler — and what does a 'gentle tongue' do to a bone?",
       "complexityLevel": "hard",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "A patient response"
+          "value": "Soothes like cool water"
         },
         {
           "id": 2,
-          "value": "A swift and sincere apology"
+          "value": "Opens up the goodness inside"
         },
         {
           "id": 3,
-          "value": "A gift given in secret"
+          "value": "Persuades more than words"
         },
         {
           "id": 4,
-          "value": "An honest rebuke from a trusted friend"
+          "value": "Breaks it"
+        }
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 127,
+      "questionContent": "Proverbs 16:26 says: 'The appetite of labourers works for them; ___.'",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "their hunger drives them on"
+        },
+        {
+          "id": 2,
+          "value": "it earns them rest the idle never know"
+        },
+        {
+          "id": 3,
+          "value": "it keeps them from the path of idleness"
+        },
+        {
+          "id": 4,
+          "value": "it is a gift from God"
+        }
+      ],
+      "rightAnswerId": 1,
+      "rightAnswerString": null
+    },
+    {
+      "id": 128,
+      "questionContent": "Proverbs 20:10 says 'differing weights and differing measures' are both what?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Against the law"
+        },
+        {
+          "id": 2,
+          "value": "Condemned by the honest"
+        },
+        {
+          "id": 3,
+          "value": "Detestable to the LORD"
+        },
+        {
+          "id": 4,
+          "value": "Evidence of a corrupt heart"
         }
       ],
       "rightAnswerId": 3,
@@ -3332,363 +3332,363 @@
     },
     {
       "id": 129,
-      "questionContent": "What does Proverbs 11:29 say the one who 'brings trouble on his family' will inherit?",
+      "questionContent": "Proverbs 12:18 contrasts 'words that wound like a sword' with what?",
       "complexityLevel": "hard",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "Ruin upon his children after him"
+          "value": "A well-timed rebuke from a trusted friend"
         },
         {
           "id": 2,
-          "value": "The loss of everything he built"
+          "value": "The tongue of the wise that brings healing"
         },
         {
           "id": 3,
-          "value": "Disgrace"
+          "value": "Speech filtered through wisdom"
         },
         {
           "id": 4,
-          "value": "Only wind"
+          "value": "A word withheld until the right moment"
         }
       ],
-      "rightAnswerId": 4,
+      "rightAnswerId": 2,
       "rightAnswerString": null
     },
     {
       "id": 130,
-      "questionContent": "Proverbs 26:2 uses two birds to illustrate that an 'undeserved curse' does what?",
+      "questionContent": "What does Proverbs 17:12 say is 'better to encounter' than a fool bent on folly?",
       "complexityLevel": "hard",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "Does not come to rest"
+          "value": "An angry king in full wrath"
         },
         {
           "id": 2,
-          "value": "Falls back on the one who spoke it"
+          "value": "A debt you cannot repay"
         },
         {
           "id": 3,
-          "value": "Is turned into blessing by the LORD"
+          "value": "A wise man giving bad advice"
         },
         {
           "id": 4,
-          "value": "Fades away soon"
+          "value": "A bear robbed of her cubs"
         }
       ],
-      "rightAnswerId": 1,
+      "rightAnswerId": 4,
       "rightAnswerString": null
     },
     {
       "id": 131,
-      "questionContent": "In Proverbs 12:17, an honest witness 'tells the truth' — but what does a false witness do?",
+      "questionContent": "Proverbs 6:16-19 lists seven things the LORD 'hates' and 'detests.' What is the seventh and final item?",
       "complexityLevel": "hard",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "Accuses the innocent without shame"
+          "value": "A person who stirs up conflict in the community"
         },
         {
           "id": 2,
-          "value": "Uses flattery to deceive the judge"
+          "value": "The one who sheds innocent blood"
         },
         {
           "id": 3,
-          "value": "Corrupts truth"
+          "value": "A heart that devises wicked schemes"
         },
         {
           "id": 4,
-          "value": "Pours out lies"
+          "value": "A lying tongue that deceives the court"
         }
       ],
-      "rightAnswerId": 4,
+      "rightAnswerId": 1,
       "rightAnswerString": null
     },
     {
       "id": 132,
-      "questionContent": "In Proverbs 5:19, Solomon describes the joy of a man's own wife using what image?",
+      "questionContent": "Proverbs 30:33 uses churning cream and twisting a nose to illustrate what outcome?",
       "complexityLevel": "hard",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "A garden watered by your own spring"
+          "value": "Pressing a friend brings hidden secrets to light"
         },
         {
           "id": 2,
-          "value": "A loving doe and a graceful deer"
+          "value": "Testing a person reveals their true character"
         },
         {
           "id": 3,
-          "value": "A rose planted in your own vineyard"
+          "value": "Stirring up anger produces strife"
         },
         {
           "id": 4,
-          "value": "Your own spring"
-        }
-      ],
-      "rightAnswerId": 2,
-      "rightAnswerString": null
-    },
-    {
-      "id": 133,
-      "questionContent": "What does Proverbs 19:12 compare to 'a king's rage'?",
-      "complexityLevel": "hard",
-      "answerType": "ID",
-      "answersList": [
-        {
-          "id": 1,
-          "value": "A lion's roar"
-        },
-        {
-          "id": 2,
-          "value": "A clap of thunder"
-        },
-        {
-          "id": 3,
-          "value": "A rushing torrent"
-        },
-        {
-          "id": 4,
-          "value": "Blazing heat"
-        }
-      ],
-      "rightAnswerId": 1,
-      "rightAnswerString": null
-    },
-    {
-      "id": 134,
-      "questionContent": "What principle does Proverbs 24:27 teach about establishing a household?",
-      "complexityLevel": "hard",
-      "answerType": "ID",
-      "answersList": [
-        {
-          "id": 1,
-          "value": "First honour your parents and secure their blessing"
-        },
-        {
-          "id": 2,
-          "value": "First acquire a good name before laying the foundations"
-        },
-        {
-          "id": 3,
-          "value": "First prepare your fields, then build your house"
-        },
-        {
-          "id": 4,
-          "value": "Seek counsel then build"
+          "value": "Forced words always produce lies"
         }
       ],
       "rightAnswerId": 3,
       "rightAnswerString": null
     },
     {
-      "id": 135,
-      "questionContent": "What does Proverbs 20:19 say a gossip does?",
+      "id": 133,
+      "questionContent": "Proverbs 15:22 says plans fail for lack of counsel — but 'with many advisers' what happens?",
       "complexityLevel": "hard",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "Destroys families with a single careless word"
+          "value": "Every danger is foreseen"
         },
         {
           "id": 2,
-          "value": "Betrays a confidence"
+          "value": "They succeed"
         },
         {
           "id": 3,
-          "value": "Stirs up trouble"
+          "value": "Direction becomes clear"
         },
         {
           "id": 4,
-          "value": "Cannot be trusted with any matter at all"
+          "value": "The LORD blesses it"
         }
       ],
       "rightAnswerId": 2,
       "rightAnswerString": null
     },
     {
-      "id": 136,
-      "questionContent": "What does Proverbs 22:25 warn may happen if you associate with a hot-tempered person?",
+      "id": 134,
+      "questionContent": "Proverbs 14:1 says the wise woman builds her house. What does 'the foolish one' do?",
       "complexityLevel": "hard",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "Their anger will eventually be turned on you"
+          "value": "Lets it fall to ruin"
         },
         {
           "id": 2,
-          "value": "You will be blamed for the trouble they create"
+          "value": "Fills it with quarrels"
         },
         {
           "id": 3,
-          "value": "They will draw you into their conflicts"
+          "value": "Squanders its wealth"
         },
         {
           "id": 4,
-          "value": "You may learn their ways and ensnare yourself"
+          "value": "Tears it down with her own hands"
         }
       ],
       "rightAnswerId": 4,
       "rightAnswerString": null
     },
     {
-      "id": 137,
-      "questionContent": "What does Proverbs 14:10 say about the bitterness and joy of the heart?",
+      "id": 135,
+      "questionContent": "Proverbs 13:9 says 'the light of the righteous shines brightly' — but what happens to 'the lamp of the wicked'?",
       "complexityLevel": "hard",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "Both are known in their fullness only by God"
+          "value": "It is snuffed out"
         },
         {
           "id": 2,
-          "value": "Grief always runs deeper than joy can reach"
+          "value": "It fades slowly"
         },
         {
           "id": 3,
-          "value": "Each heart knows its own bitterness, and no one else can share its joy"
+          "value": "It burns out early"
         },
         {
           "id": 4,
-          "value": "The heart hides what the face so plainly reveals"
-        }
-      ],
-      "rightAnswerId": 3,
-      "rightAnswerString": null
-    },
-    {
-      "id": 138,
-      "questionContent": "According to Proverbs 30:5, 'every word of God' is described as what?",
-      "complexityLevel": "hard",
-      "answerType": "ID",
-      "answersList": [
-        {
-          "id": 1,
-          "value": "Flawless"
-        },
-        {
-          "id": 2,
-          "value": "Life to those who find it"
-        },
-        {
-          "id": 3,
-          "value": "Enduring beyond all ages"
-        },
-        {
-          "id": 4,
-          "value": "Perfect"
+          "value": "It is taken away"
         }
       ],
       "rightAnswerId": 1,
       "rightAnswerString": null
     },
     {
-      "id": 139,
-      "questionContent": "In Proverbs 7:20, the adulteress says her husband has gone on a long journey and taken what with him?",
+      "id": 136,
+      "questionContent": "Proverbs 28:4 says those who 'forsake instruction' do what, in contrast to those who 'heed it'?",
       "complexityLevel": "hard",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "His servants and the whole household"
+          "value": "Stumble without a lamp"
         },
         {
           "id": 2,
-          "value": "A bag filled with money"
+          "value": "Choose the wicked path"
         },
         {
           "id": 3,
-          "value": "All provisions enough for many months"
+          "value": "They praise the wicked"
         },
         {
           "id": 4,
-          "value": "His livestock"
+          "value": "Shame those who taught them"
+        }
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 137,
+      "questionContent": "Proverbs 22:26-27 warns against 'putting up security for debts.' What may be taken if you cannot pay?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Your standing in the community"
+        },
+        {
+          "id": 2,
+          "value": "Your very bed from under you"
+        },
+        {
+          "id": 3,
+          "value": "All the work of your hands"
+        },
+        {
+          "id": 4,
+          "value": "Your good name and reputation"
         }
       ],
       "rightAnswerId": 2,
       "rightAnswerString": null
     },
     {
-      "id": 140,
-      "questionContent": "What does Proverbs 29:23 say humility ultimately brings to a person?",
+      "id": 138,
+      "questionContent": "Proverbs 30:5 says 'every word of God is flawless.' What is he to those who 'take refuge in him'?",
       "complexityLevel": "hard",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "Honour"
+          "value": "A firm stronghold"
         },
         {
           "id": 2,
-          "value": "A circle of loyal friends"
+          "value": "A rock unmoved"
         },
         {
           "id": 3,
-          "value": "Grace"
+          "value": "A day-of-trouble defence"
         },
         {
           "id": 4,
-          "value": "Protection from the destruction of pride"
+          "value": "A shield"
+        }
+      ],
+      "rightAnswerId": 4,
+      "rightAnswerString": null
+    },
+    {
+      "id": 139,
+      "questionContent": "Proverbs 8:13 says the fear of the LORD is 'to hate evil.' What four things does Wisdom say she hates?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "Pride, arrogance, evil behaviour, and perverse speech"
+        },
+        {
+          "id": 2,
+          "value": "Falsehood, greed, cruelty, and slander"
+        },
+        {
+          "id": 3,
+          "value": "Gossip, idleness, envy, and disloyalty"
+        },
+        {
+          "id": 4,
+          "value": "Lying lips, a shedding hand, proud eyes, and an evil heart"
         }
       ],
       "rightAnswerId": 1,
       "rightAnswerString": null
     },
     {
-      "id": 141,
-      "questionContent": "What analogy does Proverbs 24:13-14 use to urge a young man to seek wisdom?",
+      "id": 140,
+      "questionContent": "What does Proverbs 29:1 say happens to the one who 'remains stiff-necked after many rebukes'?",
       "complexityLevel": "hard",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "The usefulness of oil in every season of life"
+          "value": "They will be abandoned even by those who love them"
         },
         {
           "id": 2,
-          "value": "Warmth in winter"
+          "value": "Wisdom will no longer answer when they call"
         },
         {
           "id": 3,
-          "value": "The sweetness of honey"
+          "value": "They will suddenly be destroyed — without remedy"
         },
         {
           "id": 4,
-          "value": "The nourishment of fresh bread in the morning"
+          "value": "The LORD will hand them over to their own foolishness"
         }
       ],
       "rightAnswerId": 3,
       "rightAnswerString": null
     },
     {
-      "id": 142,
-      "questionContent": "Proverbs 26:8 compares 'giving honour to a fool' to what?",
+      "id": 141,
+      "questionContent": "Proverbs 19:3 says 'a person's own folly leads to their ruin.' What does their heart then do?",
       "complexityLevel": "hard",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "Praising a man who does not deserve it"
+          "value": "Hardens against counsel"
         },
         {
           "id": 2,
-          "value": "Wasting money"
+          "value": "Rages against the LORD"
         },
         {
           "id": 3,
-          "value": "Trusting a message to an unreliable man"
+          "value": "Blames all others"
         },
         {
           "id": 4,
-          "value": "Tying a stone in a sling"
+          "value": "Learns nothing from it"
+        }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 142,
+      "questionContent": "Proverbs 31:28-29 says her children call her blessed and her husband praises her. What does verse 29 say he declares?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "'You have blessed this house beyond all measure'"
+        },
+        {
+          "id": 2,
+          "value": "'Your wisdom surpasses all who have gone before you'"
+        },
+        {
+          "id": 3,
+          "value": "'No jewel of the earth could match your worth'"
+        },
+        {
+          "id": 4,
+          "value": "'Many women do noble things, but you surpass them all'"
         }
       ],
       "rightAnswerId": 4,
@@ -3696,207 +3696,207 @@
     },
     {
       "id": 143,
-      "questionContent": "According to Proverbs 27:14, what is said about 'loudly blessing your neighbour early in the morning'?",
+      "questionContent": "What does Proverbs 10:9 say about 'whoever walks in integrity'?",
       "complexityLevel": "hard",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "It disturbs the household"
+          "value": "They walk securely"
         },
         {
           "id": 2,
-          "value": "It shows a striking lack of wisdom and care"
+          "value": "Their path is known to God"
         },
         {
           "id": 3,
-          "value": "It will be taken as a curse"
+          "value": "They find favour with all"
         },
         {
           "id": 4,
-          "value": "It breeds envy among all those nearby"
-        }
-      ],
-      "rightAnswerId": 3,
-      "rightAnswerString": null
-    },
-    {
-      "id": 144,
-      "questionContent": "Proverbs 25:26 compares 'a righteous person who gives way to the wicked' to what?",
-      "complexityLevel": "hard",
-      "answerType": "ID",
-      "answersList": [
-        {
-          "id": 1,
-          "value": "A choked stream"
-        },
-        {
-          "id": 2,
-          "value": "A muddied spring or a polluted well"
-        },
-        {
-          "id": 3,
-          "value": "A fire smothered before it warms the house"
-        },
-        {
-          "id": 4,
-          "value": "A lamp extinguished before the journey ends"
-        }
-      ],
-      "rightAnswerId": 2,
-      "rightAnswerString": null
-    },
-    {
-      "id": 145,
-      "questionContent": "According to Proverbs 28:2, what does a ruler with 'discernment and knowledge' do?",
-      "complexityLevel": "hard",
-      "answerType": "ID",
-      "answersList": [
-        {
-          "id": 1,
-          "value": "Maintains order for a long time"
-        },
-        {
-          "id": 2,
-          "value": "Wins the love and loyalty of the people"
-        },
-        {
-          "id": 3,
-          "value": "Receives the blessing of the Most High"
-        },
-        {
-          "id": 4,
-          "value": "Brings prosperity"
+          "value": "Their steps will not waver"
         }
       ],
       "rightAnswerId": 1,
       "rightAnswerString": null
     },
     {
-      "id": 146,
-      "questionContent": "According to Proverbs 22:11, who 'will have the king for a friend' (NIV)?",
+      "id": 144,
+      "questionContent": "Proverbs 26:9 says 'a proverb in the mouth of a fool' is like what?",
       "complexityLevel": "hard",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "One who is mighty and skilled in counsel"
+          "value": "A sword given to a child without training"
         },
         {
           "id": 2,
-          "value": "One who serves the king with complete loyalty"
+          "value": "A torch carried carelessly through dry fields"
         },
         {
           "id": 3,
-          "value": "One who loves a pure heart and speaks with grace"
+          "value": "A thornbush in a drunkard's hand"
         },
         {
           "id": 4,
-          "value": "One who always brings the king good news"
+          "value": "A broken hammer without a handle"
         }
       ],
       "rightAnswerId": 3,
       "rightAnswerString": null
     },
     {
-      "id": 147,
-      "questionContent": "What does Proverbs 30:17 say will happen to the eye that 'mocks a father' and 'scorns a mother'?",
+      "id": 145,
+      "questionContent": "Proverbs 24:12 asks: 'Does not he who weighs the heart perceive it?' — when you say you 'did not know' about what?",
       "complexityLevel": "hard",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "It will be struck blind before its time"
+          "value": "A sin hidden from all"
         },
         {
           "id": 2,
-          "value": "It will see only darkness in old age"
+          "value": "Those being led away to death"
         },
         {
           "id": 3,
-          "value": "It will weep with bitter tears of lasting regret"
+          "value": "The law requiring action"
         },
         {
           "id": 4,
-          "value": "It will be pecked out by ravens and eaten by vultures"
+          "value": "A task beyond their strength"
+        }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 146,
+      "questionContent": "Proverbs 25:4 uses removing dross from silver — and verse 5 applies it to removing the wicked from whom?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "The righteous assembly"
+        },
+        {
+          "id": 2,
+          "value": "The city gates"
+        },
+        {
+          "id": 3,
+          "value": "The faithful household"
+        },
+        {
+          "id": 4,
+          "value": "The king's presence"
         }
       ],
       "rightAnswerId": 4,
       "rightAnswerString": null
     },
     {
-      "id": 148,
-      "questionContent": "According to Proverbs 21:3, what is 'more acceptable to the LORD than sacrifice'?",
+      "id": 147,
+      "questionContent": "Proverbs 24:13-14 compares wisdom to honey — what does it say wisdom offers for the future?",
       "complexityLevel": "hard",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "A broken heart"
+          "value": "A hope that will not be cut off"
         },
         {
           "id": 2,
-          "value": "To do what is right and just"
+          "value": "Sweetness that no earthly pleasure can match"
         },
         {
           "id": 3,
-          "value": "A life lived in quiet and faithful obedience"
+          "value": "A path beside still waters"
         },
         {
           "id": 4,
-          "value": "Prayer offered in sincerity and truth"
-        }
-      ],
-      "rightAnswerId": 2,
-      "rightAnswerString": null
-    },
-    {
-      "id": 149,
-      "questionContent": "Proverbs 26:18-19 compares the person who deceives a neighbour then says 'I was only joking' to what?",
-      "complexityLevel": "hard",
-      "answerType": "ID",
-      "answersList": [
-        {
-          "id": 1,
-          "value": "A maniac shooting deadly flaming arrows"
-        },
-        {
-          "id": 2,
-          "value": "A fool who sets fire to dry straw"
-        },
-        {
-          "id": 3,
-          "value": "A drunkard stumbling through the dark"
-        },
-        {
-          "id": 4,
-          "value": "A child playing carelessly with sharp stones"
+          "value": "Life and favour with God and man"
         }
       ],
       "rightAnswerId": 1,
       "rightAnswerString": null
     },
     {
-      "id": 150,
-      "questionContent": "Proverbs 11:30 says the fruit of the righteous is a tree of life, and 'the one who is wise' does what?",
+      "id": 148,
+      "questionContent": "What does Proverbs 16:7 say happens when 'the LORD takes pleasure in anyone's way'?",
       "complexityLevel": "hard",
       "answerType": "ID",
       "answersList": [
         {
           "id": 1,
-          "value": "Bears fruit"
+          "value": "Their prayers are answered before they rise"
         },
         {
           "id": 2,
-          "value": "Walks always in paths that lead to life"
+          "value": "He grants them favour before all people"
         },
         {
           "id": 3,
-          "value": "Speaks words that heal and restore the broken"
+          "value": "He causes their enemies to make peace with them"
         },
         {
           "id": 4,
-          "value": "Saves lives"
+          "value": "Their enemies are turned into friends by grace"
+        }
+      ],
+      "rightAnswerId": 3,
+      "rightAnswerString": null
+    },
+    {
+      "id": 149,
+      "questionContent": "According to Proverbs 18:19, what is 'more unyielding than a fortified city'?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "A king publicly insulted"
+        },
+        {
+          "id": 2,
+          "value": "A brother who has been wronged"
+        },
+        {
+          "id": 3,
+          "value": "Trust lost through betrayal"
+        },
+        {
+          "id": 4,
+          "value": "A good name once lost"
+        }
+      ],
+      "rightAnswerId": 2,
+      "rightAnswerString": null
+    },
+    {
+      "id": 150,
+      "questionContent": "Proverbs 25:2 says it is 'the glory of God to conceal a matter.' What is 'the glory of kings'?",
+      "complexityLevel": "hard",
+      "answerType": "ID",
+      "answersList": [
+        {
+          "id": 1,
+          "value": "To rule with justice"
+        },
+        {
+          "id": 2,
+          "value": "To hear humble prayer"
+        },
+        {
+          "id": 3,
+          "value": "To build a lasting name"
+        },
+        {
+          "id": 4,
+          "value": "To search out a matter"
         }
       ],
       "rightAnswerId": 4,

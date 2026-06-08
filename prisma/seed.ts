@@ -113,6 +113,7 @@ async function main() {
     'acts_en.json',
     'acts.json',
     'acts_of_apostles.json',
+    'genesis_en.json',
     'kings_en.json',
     'kings_ru.json',
     'gospels_en.json',
@@ -122,6 +123,7 @@ async function main() {
     'life_of_joseph_ru.json',
     'miracles_ru.json',
     'proverbs_en.json',
+    'proverbs_ru.json',
     'sermon_ru.json',
   ];
 
