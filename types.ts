@@ -42,13 +42,6 @@ export enum GameMode {
   WITHOUT_QUESTIONS = 'withoutQuestions'
 }
 
-export type AIProvider = 'google' | 'openrouter';
-
-export interface AIConfig {
-  provider: AIProvider;
-  model: string;
-}
-
 export interface GameSettings {
   teamsCount: number;
   teamNames: string[];
@@ -63,7 +56,6 @@ export interface GameState {
   isLoading: boolean;
   locale: Locale;
   settings: GameSettings;
-  aiConfig: AIConfig;
   cards: CardData[];
   currentTeamIndex: number;
   turnIdentifier: number;
@@ -78,7 +70,6 @@ export interface GameState {
   showAIGenerator: boolean;
   showLibrary: boolean;
   showGuide: boolean;
-  showAdmin: boolean;
   library: LibrarySuite[];
   systemSuites: QuestionsSuite[];
   questions: {
