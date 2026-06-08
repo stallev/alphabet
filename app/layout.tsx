@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { GoogleAnalytics } from '@next/third-parties/google';
+import { AuthSessionProvider } from '@/components/AuthSessionProvider';
 import './globals.css';
 
 const inter = Inter({
@@ -29,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <body className={`${inter.variable} font-sans antialiased`}>
-        {children}
+        <AuthSessionProvider>{children}</AuthSessionProvider>
       </body>
       {process.env.NEXT_PUBLIC_GA4_MEASUREMENT_ID && (
         <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA4_MEASUREMENT_ID} />

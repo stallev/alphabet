@@ -81,8 +81,8 @@ export const LocaleSelector: React.FC = () => {
         className="w-full flex items-center justify-between gap-2 bg-white/10 hover:bg-white/20 active:bg-white/25 border border-white/20 rounded-xl px-3.5 py-3 text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50"
       >
         <div className="flex items-center gap-2.5 min-w-0">
-          <span className="text-lg leading-none shrink-0" role="img" aria-hidden="true">
-            {current.flag}
+          <span className="text-xs font-black shrink-0 opacity-80">
+            {current.shortLabel}
           </span>
           <span className="text-xs font-bold truncate">{current.label}</span>
         </div>
@@ -132,8 +132,8 @@ export const LocaleSelector: React.FC = () => {
                   `}
                 >
                   <div className="flex items-center gap-2.5 min-w-0">
-                    <span className="text-base leading-none shrink-0" role="img" aria-hidden="true">
-                      {meta.flag}
+                    <span className="text-xs font-black shrink-0 opacity-80">
+                      {meta.shortLabel}
                     </span>
                     <span className="text-xs font-bold truncate">{meta.label}</span>
                   </div>
