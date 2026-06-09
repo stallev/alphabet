@@ -32,7 +32,7 @@ const getInitialLocale = (): Locale => {
     const saved = localStorage.getItem(LOCALE_STORAGE_KEY) as Locale | null;
     if (saved && VALID_LOCALES.includes(saved)) return saved;
   }
-  if (typeof navigator === 'undefined') return 'ru';
+  if (typeof navigator === 'undefined') return 'en';
   const lang = (navigator.language || (navigator as any).userLanguage || '').toLowerCase();
   if (lang.startsWith('ru')) return 'ru';
   return 'en';

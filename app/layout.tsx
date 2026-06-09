@@ -10,15 +10,15 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'Алфавит: Библейская Викторина и Игра на Память',
+  title: 'Alphabet: Bible Quiz & Memory Game',
   description:
-    'Интерактивная командная игра для молодёжных служений. Механика Memory + библейская викторина с поддержкой ИИ.',
+    'Interactive team Bible game for youth ministries. Memory card mechanic + Bible quiz with AI-generated questions.',
   keywords: [
-    'библейская игра',
-    'христианская викторина',
-    'игра алфавит',
-    'библейские вопросы',
-    'молодёжное служение',
+    'bible game',
+    'christian quiz',
+    'alphabet game',
+    'bible questions',
+    'youth ministry',
   ],
   robots: 'noindex, nofollow',
 };
@@ -27,7 +27,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="ru">
+    <html lang="en">
       <body className={`${inter.variable} font-sans antialiased`}>
         {children}
       </body>

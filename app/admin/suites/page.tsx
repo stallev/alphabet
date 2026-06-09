@@ -4,7 +4,7 @@ import { getAllSuites } from '@/src/data/suites/get-suites.server';
 import { SuitesTable } from '@/components/admin/SuitesTable';
 import Link from 'next/link';
 
-export const metadata = { title: 'Наборы вопросов — Admin Алфавит' };
+export const metadata = { title: 'Question Suites — Admin Alphabet' };
 
 async function SuitesContent() {
   await connection();

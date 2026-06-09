@@ -6,7 +6,7 @@ import { ComplexityLevel } from '@/types';
 import type { QuestionsSuite } from '@/types';
 
 export const metadata = {
-  title: 'Алфавит: Игра',
+  title: 'Alphabet: Play',
 };
 
 async function GameContent() {
@@ -36,7 +36,7 @@ function GameFallback() {
     <div className="min-h-screen bg-slate-900 flex flex-col items-center justify-center text-white">
       <div className="w-16 h-16 border-4 border-blue-500 border-t-transparent rounded-full animate-spin mb-6" />
       <h2 className="text-2xl font-black uppercase italic tracking-tighter animate-pulse">
-        Загрузка данных...
+        Loading...
       </h2>
     </div>
   );
