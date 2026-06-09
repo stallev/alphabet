@@ -8,6 +8,7 @@ import { TRANSLATIONS } from '../constants';
 export const OperatorGuide: React.FC = () => {
   const { setGuideOpen, setShowPrompt, closeAllModals, locale } = useGameStore();
   const t = TRANSLATIONS[locale];
+  const g = t.guidePage;
 
   return (
     <div className="fixed inset-0 z-[100] bg-slate-50 flex flex-col overflow-hidden">
@@ -34,8 +35,8 @@ export const OperatorGuide: React.FC = () => {
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
               </div>
               <div>
-                <h1 className="text-xl font-black uppercase italic tracking-tighter">Мануал Ведущего</h1>
-                <p className="text-blue-400 text-[9px] font-black uppercase tracking-[0.2em]">v2.6 • Библиотека</p>
+                <h1 className="text-xl font-black uppercase italic tracking-tighter">{g.title}</h1>
+                <p className="text-blue-400 text-[9px] font-black uppercase tracking-[0.2em]">{g.version}</p>
               </div>
             </div>
           </div>
@@ -63,15 +64,13 @@ export const OperatorGuide: React.FC = () => {
               <div className="flex-1">
                 <div className="flex items-center gap-3 mb-3">
                   <h3 className="text-xl md:text-2xl font-black uppercase tracking-wider italic">
-                    Генерация Вопросов
+                    {g.grokTitle}
                   </h3>
-                  <span className="bg-amber-400 text-indigo-900 text-[10px] px-3 py-1 rounded-full font-black shadow-lg animate-pulse">PRO TIP</span>
+                  <span className="bg-amber-400 text-indigo-900 text-[10px] px-3 py-1 rounded-full font-black shadow-lg animate-pulse">{g.grokBadge}</span>
                 </div>
                 <p className="font-medium text-indigo-100 mb-6 leading-relaxed text-sm md:text-base max-w-2xl">
-                  Для создания уникальных наборов вопросов мы настоятельно рекомендуем использовать <strong>Grok AI</strong>. 
-                  Это проверенный инструмент, который отлично понимает задачу. <br/><br/>
-                  <span className="text-indigo-200">Как сохранить результат:</span> Скопируйте полученный от ИИ текст в обычный "Блокнот" на компьютере и при сохранении назовите файл, например, <strong>mygame.json</strong>. <br/>
-                  Самое главное — дописать в конце названия <strong>.json</strong>, тогда игра сможет "прочитать" ваш файл.
+                  {g.grokText}<br/><br/>
+                  <span className="text-indigo-200">{g.grokSaveHint}</span> {g.grokSaveText('.json')}
                 </p>
                 
                 <div className="flex flex-wrap gap-4">
@@ -81,7 +80,7 @@ export const OperatorGuide: React.FC = () => {
                     rel="noreferrer"
                     className="bg-white text-indigo-700 px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-indigo-50 hover:scale-105 transition-all shadow-xl inline-flex items-center gap-2 group/btn"
                   >
-                    Открыть Grok.com 
+                    {g.grokOpenBtn}
                     <svg className="group-hover/btn:translate-x-1 transition-transform" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
                   </a>
                   <button 
@@ -91,7 +90,7 @@ export const OperatorGuide: React.FC = () => {
                     }}
                     className="bg-indigo-900/40 hover:bg-indigo-900/60 text-white border-2 border-indigo-300/30 px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all hover:border-indigo-300/60"
                   >
-                    Взять Шаблон Промпта
+                    {g.grokPromptBtn}
                   </button>
                 </div>
               </div>
@@ -102,25 +101,25 @@ export const OperatorGuide: React.FC = () => {
           <section>
             <div className="flex items-center gap-4 mb-8">
               <span className="text-5xl font-black text-blue-100 italic select-none">01</span>
-              <h2 className="text-3xl font-black text-slate-900 uppercase italic tracking-tight">Генерация и Языки</h2>
+              <h2 className="text-3xl font-black text-slate-900 uppercase italic tracking-tight">{g.section01Title}</h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="bg-white p-8 rounded-[2rem] shadow-xl border border-slate-200">
-                <h3 className="font-black text-blue-600 mb-4 uppercase text-sm tracking-widest">Мультиязычность:</h3>
+                <h3 className="font-black text-blue-600 mb-4 uppercase text-sm tracking-widest">{g.multiTitle}</h3>
                 <p className="text-sm leading-relaxed mb-6">
-                  Приложение поддерживает RU, EN, UK, DE, RO. Локаль набора отображается текстовым кодом. При выборе не-русского языка ИИ автоматически переключается на современные авторитетные переводы (ESV, NIV, Огиенко и др.).
+                  {g.multiText}
                 </p>
                 <div className="bg-blue-50 p-4 rounded-xl border border-blue-100 italic text-xs text-blue-800">
-                  Совет: При генерации на английском, вводите тему также на английском для лучшего результата.
+                  {g.multiTip}
                 </div>
               </div>
               <div className="bg-blue-600 text-white p-8 rounded-[2rem] shadow-xl relative overflow-hidden">
                 <div className="absolute top-[-20px] right-[-20px] text-9xl opacity-10 rotate-12">✨</div>
-                <h3 className="font-black text-white mb-4 uppercase text-sm tracking-widest">ИИ Управление:</h3>
-                <p className="text-sm leading-relaxed mb-4">Вы можете в любой момент <strong>остановить генерацию</strong>, если заметили ошибку в теме или выбрали не тот язык.</p>
+                <h3 className="font-black text-white mb-4 uppercase text-sm tracking-widest">{g.aiTitle}</h3>
+                <p className="text-sm leading-relaxed mb-4">{g.aiText}</p>
                 <ul className="text-xs space-y-2 font-medium opacity-90">
-                  <li>• Решайте капчу для подтверждения старта</li>
-                  <li>• 200 вопросов создают огромную вариативность</li>
+                  <li>• {g.aiBullet1}</li>
+                  <li>• {g.aiBullet2}</li>
                 </ul>
               </div>
             </div>
@@ -130,29 +129,29 @@ export const OperatorGuide: React.FC = () => {
           <section>
             <div className="flex items-center gap-4 mb-8">
               <span className="text-5xl font-black text-blue-100 italic select-none">02</span>
-              <h2 className="text-3xl font-black text-slate-900 uppercase italic tracking-tight">Библиотека наборов</h2>
+              <h2 className="text-3xl font-black text-slate-900 uppercase italic tracking-tight">{g.section02Title}</h2>
             </div>
             <div className="bg-white rounded-[2.5rem] shadow-2xl border border-slate-200 overflow-hidden p-10 space-y-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                   <div className="space-y-4">
                     <h4 className="text-xl font-black text-blue-600 flex items-center gap-2">
                       <span className="w-2 h-2 bg-blue-600 rounded-full"></span>
-                      Системные наборы (SYSTEM)
+                      {g.systemTitle}
                     </h4>
                     <p className="text-sm leading-relaxed text-slate-600 font-medium">
-                      Это золотой стандарт игры. Наборы по книгам Царств, Деяниям и Притчам всегда доступны и <strong>не могут быть удалены</strong>. 
+                      {g.systemText}
                     </p>
                     <div className="bg-amber-50 p-4 rounded-xl border-l-4 border-amber-400 text-xs font-bold text-amber-900 leading-relaxed">
-                      ОСОБЕННОСТЬ: Вы можете редактировать вопросы в системном наборе "в моменте", но после перезагрузки страницы он вернется к исходному состоянию.
+                      {g.systemNote}
                     </div>
                   </div>
                   <div className="space-y-4">
                     <h4 className="text-xl font-black text-slate-400 flex items-center gap-2">
                       <span className="w-2 h-2 bg-slate-400 rounded-full"></span>
-                      Пользовательские (USER)
+                      {g.userTitle}
                     </h4>
                     <p className="text-sm leading-relaxed text-slate-600 font-medium">
-                      Наборы, которые вы создали через ИИ или импортировали из JSON-файлов. Они хранятся в памяти браузера, пока вы их не удалите.
+                      {g.userText}
                     </p>
                   </div>
                 </div>
@@ -163,23 +162,98 @@ export const OperatorGuide: React.FC = () => {
           <section>
             <div className="flex items-center gap-4 mb-8">
               <span className="text-5xl font-black text-blue-100 italic select-none">03</span>
-              <h2 className="text-3xl font-black text-slate-900 uppercase italic tracking-tight">Управление игрой</h2>
+              <h2 className="text-3xl font-black text-slate-900 uppercase italic tracking-tight">{g.section03Title}</h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-white p-6 rounded-3xl shadow-sm border border-slate-200">
                 <div className="text-3xl mb-4">⏸️</div>
-                <h4 className="font-black text-slate-800 uppercase text-xs mb-2">Пауза</h4>
-                <p className="text-xs leading-relaxed opacity-70">Используйте кнопку паузы для перерывов. Экран игры будет заблюрен, а таймеры остановлены.</p>
+                <h4 className="font-black text-slate-800 uppercase text-xs mb-2">{g.pauseTitle}</h4>
+                <p className="text-xs leading-relaxed opacity-70">{g.pauseText}</p>
               </div>
               <div className="bg-white p-6 rounded-3xl shadow-sm border border-slate-200">
                 <div className="text-3xl mb-4">🖊️</div>
-                <h4 className="font-black text-slate-800 uppercase text-xs mb-2">Редактор</h4>
-                <p className="text-xs leading-relaxed opacity-70">Вы можете изменить любой вопрос прямо перед игрой. Изменения сохраняются только в активной сессии.</p>
+                <h4 className="font-black text-slate-800 uppercase text-xs mb-2">{g.editorTitle}</h4>
+                <p className="text-xs leading-relaxed opacity-70">{g.editorText}</p>
               </div>
               <div className="bg-white p-6 rounded-3xl shadow-sm border border-slate-200">
                 <div className="text-3xl mb-4">💾</div>
-                <h4 className="font-black text-slate-800 uppercase text-xs mb-2">Экспорт</h4>
-                <p className="text-xs leading-relaxed opacity-70">Нажмите на дискету в библиотеке, чтобы сохранить набор на диск. Это лучший способ не потерять свои вопросы.</p>
+                <h4 className="font-black text-slate-800 uppercase text-xs mb-2">{g.exportTitle}</h4>
+                <p className="text-xs leading-relaxed opacity-70">{g.exportText}</p>
+              </div>
+            </div>
+          </section>
+
+          {/* Section 4: Game Settings */}
+          <section>
+            <div className="flex items-center gap-4 mb-8">
+              <span className="text-5xl font-black text-blue-100 italic select-none">04</span>
+              <h2 className="text-3xl font-black text-slate-900 uppercase italic tracking-tight">{g.section04Title}</h2>
+            </div>
+            <p className="text-slate-500 text-sm leading-relaxed mb-8 pl-0">{g.section04Desc}</p>
+
+            <div className="space-y-6">
+              {/* Mode */}
+              <div className="bg-white rounded-[2rem] border border-slate-200 shadow-sm overflow-hidden">
+                <div className="bg-slate-900 px-8 py-4 flex items-center gap-3">
+                  <span className="text-xl">🎮</span>
+                  <h3 className="text-white font-black uppercase text-sm tracking-widest">{g.settingsMode}</h3>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-slate-100">
+                  <div className="p-6 space-y-2">
+                    <div className="inline-flex items-center gap-2 bg-blue-600 text-white text-[10px] font-black uppercase px-3 py-1 rounded-lg">{g.settingsModeWithQ}</div>
+                    <p className="text-sm text-slate-600 leading-relaxed">{g.settingsModeWithQDesc}</p>
+                  </div>
+                  <div className="p-6 space-y-2">
+                    <div className="inline-flex items-center gap-2 bg-slate-200 text-slate-600 text-[10px] font-black uppercase px-3 py-1 rounded-lg">{g.settingsModeMemory}</div>
+                    <p className="text-sm text-slate-600 leading-relaxed">{g.settingsModeMemoryDesc}</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Suite + Teams */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="bg-white p-7 rounded-[2rem] border border-slate-200 shadow-sm space-y-3">
+                  <div className="flex items-center gap-3">
+                    <span className="text-2xl">📚</span>
+                    <h3 className="font-black text-slate-800 uppercase text-xs tracking-widest">{g.settingsSuite}</h3>
+                  </div>
+                  <p className="text-sm text-slate-600 leading-relaxed">{g.settingsSuiteDesc}</p>
+                </div>
+                <div className="bg-white p-7 rounded-[2rem] border border-slate-200 shadow-sm space-y-3">
+                  <div className="flex items-center gap-3">
+                    <span className="text-2xl">👥</span>
+                    <h3 className="font-black text-slate-800 uppercase text-xs tracking-widest">{g.settingsTeams}</h3>
+                  </div>
+                  <p className="text-sm text-slate-600 leading-relaxed">{g.settingsTeamsDesc}</p>
+                </div>
+              </div>
+
+              {/* Timers */}
+              <div className="bg-white rounded-[2rem] border border-slate-200 shadow-sm overflow-hidden">
+                <div className="bg-blue-50 border-b border-slate-200 px-8 py-4 flex items-center gap-3">
+                  <span className="text-xl">⏱️</span>
+                  <h3 className="font-black text-slate-800 uppercase text-sm tracking-widest">{g.settingsTimers}</h3>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-slate-100">
+                  {[
+                    { label: g.settingsTimerFlip,   range: '5–60',   desc: g.settingsTimerFlipDesc,   color: 'bg-blue-600' },
+                    { label: g.settingsTimerLevel,  range: '3–30',   desc: g.settingsTimerLevelDesc,  color: 'bg-amber-500' },
+                    { label: g.settingsTimerAnswer, range: '10–120', desc: g.settingsTimerAnswerDesc, color: 'bg-emerald-600' },
+                  ].map((timer) => (
+                    <div key={timer.label} className="p-6 space-y-2">
+                      <div className="flex items-center justify-between">
+                        <span className="text-[10px] font-black uppercase text-slate-500 tracking-widest">{timer.label}</span>
+                        <span className={`text-white text-[10px] font-black px-2 py-0.5 rounded ${timer.color}`}>{timer.range} сек</span>
+                      </div>
+                      <p className="text-xs text-slate-600 leading-relaxed">{timer.desc}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Start tip */}
+              <div className="bg-emerald-50 border-l-4 border-emerald-500 p-6 rounded-r-3xl">
+                <p className="text-emerald-900 font-bold text-sm leading-relaxed">💡 {g.settingsStartTip}</p>
               </div>
             </div>
           </section>
@@ -189,13 +263,12 @@ export const OperatorGuide: React.FC = () => {
       <div className="p-6 bg-white border-t border-slate-200 flex flex-col md:flex-row items-center justify-between gap-4">
         <div className="flex items-center gap-3">
           <div className="w-2.5 h-2.5 bg-emerald-500 rounded-full animate-ping"></div>
-          <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">v2.6 Stable / No-Flag Locale Engine</p>
+          <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">{g.footerVersion}</p>
         </div>
         <p className="text-[10px] text-slate-400 font-bold max-w-md text-center md:text-right uppercase tracking-tighter opacity-60 italic">
-          Интеллектуальная игра "Алфавит" — инструмент для созидания и познания.
+          {g.footerTagline}
         </p>
       </div>
     </div>
   );
 };
-

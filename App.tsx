@@ -15,7 +15,6 @@ import { PromptPage } from './components/PromptPage';
 import { AIGenerator } from './components/AIGenerator';
 import { QuestionLibraryPage } from './components/QuestionLibraryPage';
 import { OperatorGuide } from './components/OperatorGuide';
-import { AdminSettings } from './components/AdminSettings';
 import { Timer } from './components/Timer';
 import { TRANSLATIONS } from './constants';
 
@@ -87,7 +86,7 @@ const App: React.FC<AppProps> = ({ initialSuites }) => {
   const { 
     isLoading, loadSystemSuites, setSystemSuites, isSettingsStage, cards, flipCard, temp, 
     isGameActive, showEditor, showPrompt, showAIGenerator, showLibrary, 
-    showGuide, showAdmin, isGameOver, isPaused, togglePause, settings, 
+    showGuide, isGameOver, isPaused, togglePause, settings, 
     currentTeamIndex, handleTurnTimeout, locale, turnIdentifier 
   } = useGameStore();
 
@@ -135,19 +134,18 @@ const App: React.FC<AppProps> = ({ initialSuites }) => {
           transition={{ repeat: Infinity, duration: 1.5, ease: "linear" }}
           className="w-16 h-16 border-4 border-blue-500 border-t-transparent rounded-full mb-6"
         />
-        <h2 className="text-2xl font-black uppercase italic tracking-tighter animate-pulse">
+        <h2 suppressHydrationWarning className="text-2xl font-black uppercase italic tracking-tighter animate-pulse">
           {locale === 'ru' ? 'Загрузка данных...' : 'Loading Data...'}
         </h2>
       </div>
     );
   }
 
-  const isAnyModalOpen = showRules || showAdmin || showPrompt || showEditor || showAIGenerator || showLibrary || showGuide;
+  const isAnyModalOpen = showRules || showPrompt || showEditor || showAIGenerator || showLibrary || showGuide;
   const showGlobalHome = (!isSettingsStage || isAnyModalOpen) && !isGameOver;
 
   let mainContent;
   if (showRules) mainContent = <RulesPage />;
-  else if (showAdmin) mainContent = <AdminSettings />;
   else if (showPrompt) mainContent = <PromptPage />;
   else if (showEditor) mainContent = <QuestionEditor />;
   else if (showAIGenerator) mainContent = <AIGenerator />;

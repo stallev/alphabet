@@ -8,7 +8,6 @@ import {
   Question,
   QuestionsSuite,
   LibrarySuite,
-  AIConfig,
   Locale
 } from './types';
 import { 
@@ -42,10 +41,6 @@ const INITIAL_DATA = {
   isLoading: true,
   locale: getInitialLocale(),
   settings: { ...DEFAULT_SETTINGS },
-  aiConfig: {
-    provider: 'openrouter' as const,
-    model: 'qwen/qwen-2.5-72b-instruct:free'
-  },
   cards: [] as CardData[],
   currentTeamIndex: 0,
   turnIdentifier: 0,
@@ -60,7 +55,6 @@ const INITIAL_DATA = {
   showAIGenerator: false,
   showLibrary: false,
   showGuide: false,
-  showAdmin: false,
   library: [] as LibrarySuite[],
   systemSuites: [] as QuestionsSuite[],
   questions: {
@@ -98,9 +92,7 @@ interface GameActions {
   setAIGeneratorOpen: (isOpen: boolean) => void;
   setLibraryOpen: (isOpen: boolean) => void;
   setGuideOpen: (isOpen: boolean) => void;
-  setAdminOpen: (isOpen: boolean) => void;
   closeAllModals: () => void;
-  updateAIConfig: (config: Partial<AIConfig>) => void;
   loadCustomQuestions: (suite: QuestionsSuite) => void;
   updateCurrentSuiteTitle: (title: string) => void;
   addQuestion: (q: Question) => void;
@@ -229,7 +221,6 @@ export const useGameStore = create<GameState & GameActions>()((set, get) => ({
       isMuted: state.isMuted,
       library: state.library,
       systemSuites: state.systemSuites,
-      aiConfig: state.aiConfig,
       questions: {
         currentSuite: state.questions.currentSuite,
         answeredQuestionIds: [],
@@ -257,7 +248,6 @@ export const useGameStore = create<GameState & GameActions>()((set, get) => ({
       showAIGenerator: false,
       showLibrary: false, 
       showGuide: false, 
-      showAdmin: false,
       temp: { 
         ...state.temp, 
         isProcessing: false,
@@ -435,23 +425,18 @@ export const useGameStore = create<GameState & GameActions>()((set, get) => ({
     showAIGenerator: false, 
     showLibrary: false, 
     showGuide: false, 
-    showAdmin: false 
   }),
-  setShowPrompt: (isOpen) => set({ showPrompt: isOpen, showEditor: false, showAIGenerator: false, showLibrary: false, showGuide: false, showAdmin: false }),
-  setAIGeneratorOpen: (isOpen) => set({ showAIGenerator: isOpen, showEditor: false, showPrompt: false, showLibrary: false, showGuide: false, showAdmin: false }),
-  setLibraryOpen: (isOpen) => set({ showLibrary: isOpen, showEditor: false, showPrompt: false, showAIGenerator: false, showGuide: false, showAdmin: false }),
-  setGuideOpen: (isOpen) => set({ showGuide: isOpen, showEditor: false, showPrompt: false, showAIGenerator: false, showLibrary: false, showAdmin: false }),
-  setAdminOpen: (isOpen) => set({ showAdmin: isOpen, showEditor: false, showPrompt: false, showAIGenerator: false, showLibrary: false, showGuide: false }),
+  setShowPrompt: (isOpen) => set({ showPrompt: isOpen, showEditor: false, showAIGenerator: false, showLibrary: false, showGuide: false }),
+  setAIGeneratorOpen: (isOpen) => set({ showAIGenerator: isOpen, showEditor: false, showPrompt: false, showLibrary: false, showGuide: false }),
+  setLibraryOpen: (isOpen) => set({ showLibrary: isOpen, showEditor: false, showPrompt: false, showAIGenerator: false, showGuide: false }),
+  setGuideOpen: (isOpen) => set({ showGuide: isOpen, showEditor: false, showPrompt: false, showAIGenerator: false, showLibrary: false }),
   closeAllModals: () => set({ 
     showEditor: false, 
     showPrompt: false, 
     showAIGenerator: false, 
     showLibrary: false, 
     showGuide: false, 
-    showAdmin: false 
   }),
-  
-  updateAIConfig: (config) => set({ aiConfig: { ...get().aiConfig, ...config } }),
 
   loadCustomQuestions: (suite) => set({ 
     questions: { currentSuite: JSON.parse(JSON.stringify(suite)), answeredQuestionIds: [] }, 
