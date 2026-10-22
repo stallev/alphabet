@@ -52,3 +52,6 @@ coverage/
 
 # Prompt history / local AI session exports (may contain secrets)
 migrated_prompt_history/
+
+# Phase driver runs, logs and path lists (never committed)
+.local/

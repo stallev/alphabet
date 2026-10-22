@@ -16,7 +16,7 @@
 
 ## Scope
 
-1. Инструменты и гейты: проверка ссылок и кодировки, ESLint (flat config), Vitest, точные версии зависимостей, commitlint + husky + lint-staged, CI, драйвер фаз (`cu-verify`, `cu-commit`, `run-phase`).
+1. Инструменты и гейты: проверка ссылок и кодировки, ESLint (flat config), Vitest, точные версии зависимостей, commitlint + husky + lint-staged, CI, подключение драйвера фаз (скрипты уже написаны: [`phase_driver_contract.md`](../contracts/phase_driver_contract.md), [`cu_boundary_scripts_contract.md`](../contracts/cu_boundary_scripts_contract.md), [`precommit_build_gate_contract.md`](../contracts/precommit_build_gate_contract.md)) — npm-скрипты, hook, CI.
 2. `docs/meta/`: методология, маршрутизация моделей, профиль качества `lean`, реестр документации, шаблон задач фазы, шаблоны PRD/contract/spec/ADR/описания игры.
 3. `.cursor/`: правила (tier 0–2) по [`repo_restructure_plan.md` §A.4.3](../../meta/repo_restructure_plan.md), субагенты `architect`/`implementer`/`reviewer`, skill `app-conventions`, манифест правил.
 4. `docs/guidelines/`: перенесённые и адаптированные руководства (§A.4.4).
@@ -33,7 +33,8 @@
 ## Входные условия
 
 - [ ] Документ [`repo_restructure_plan.md`](../../meta/repo_restructure_plan.md) утверждён владельцем.
-- [ ] Рабочее дерево чистое (кроме удаления `docs/examples/fitapp`, которое пользователь оставляет как есть) — перед стартом создана ветка `R01-process-foundation`.
+- [ ] Скрипты драйвера (`scripts/`), контракты `docs/implementation/contracts/{phase_driver,cu_boundary_scripts,precommit_build_gate}_contract.md` и `.local/` в `.gitignore` закоммичены отдельным коммитом (драйвер требует чистое дерево).
+- [ ] Рабочее дерево чистое (кроме удаления `docs/examples/fitapp`, которое пользователь оставляет как есть: перед запуском закоммитить или восстановить это удаление) — создана ветка `R01-process-foundation`.
 - [ ] Node.js LTS и npm доступны; `npm ci` проходит.
 
 ## Принятые решения для фазы
@@ -57,7 +58,7 @@
 |--------|-----------|
 | Корень | `AGENTS.md`, `README.md`, `.cursorignore`, `eslint.config.mjs`, `vitest.config.mjs`, `commitlint.config.mjs`, `.husky/`, `.github/workflows/ci.yml` |
 | Промпты | `docs/prompts/phase-implementation.md`, `docs/prompts/launch-prompts.md` |
-| Скрипты | `scripts/check-doc-links.mjs`, `check-text-encoding.mjs`, `check-exact-deps.mjs`, `cu-verify.mjs`, `cu-commit.mjs`, `unit-driver.mjs` (+тест), `run-unit.mjs`, `run-phase.mjs` |
+| Скрипты | Уже есть до старта: `phase-driver.mjs`, `run-phase.mjs`, `cu-verify.mjs`, `cu-commit.mjs`, `precommit-build-check.mjs`, `check-build-isolation.mjs` (+ тесты). Добавляет R01: `check-doc-links.mjs`, `check-text-encoding.mjs`, `check-exact-deps.mjs` |
 | Meta | `docs/meta/{ai_first_methodology, ai_agent_model_routing, project_quality_profile, documentation_registry, phase_tasks.template}.md`, `docs/meta/templates/*` |
 | Rules/agents | `.cursor/rules/*.mdc` (+`README.md`), `.cursor/agents/{architect,implementer,reviewer}.md`, `.cursor/skills/app-conventions/SKILL.md` |
 | Guidelines | `docs/guidelines/**` по §A.4.4 |
@@ -69,7 +70,7 @@
 - [ ] Все CU фазы закоммичены; у каждого trace `Review: …`
 - [ ] `npm run docs:links`, `encoding:check`, `deps:check`, `typecheck`, `lint`, `test` — зелёные; `npm run build` проходит (код не сломан)
 - [ ] Чек-лист [`repo_restructure_plan.md` §A.8](../../meta/repo_restructure_plan.md) выполнен полностью
-- [ ] Драйвер: `node scripts/run-phase.mjs R01 --environment cursor` корректно печатает блоки для первого открытого CU (dry-run на копии файла задач; `unit-driver.test.mjs` зелёный)
+- [ ] Драйвер: `node scripts/run-phase.mjs R01 --environment cursor` корректно печатает блоки для первого открытого CU (dry-run на копии файла задач; тесты `scripts/*.test.mjs` зелёные; тестовый коммит с изменением `package.json` запускает `precommit-build-check`)
 - [ ] `AGENTS.md` ≤ 120 строк, ссылки открываются, структура проекта соответствует [`repo_structure_contract.md`](../contracts/repo_structure_contract.md) §1 как **целевая**
 - [ ] В `docs/**` (кроме `docs/examples/`, `docs/archive/`) нет слов «Pulse», «monorepo», `apps/web`, `packages/`, `{{`
 - [ ] Документы R02 и R03 прошли ссылочную проверку после переноса meta-файлов (пути в них актуальны)
