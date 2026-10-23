@@ -9,8 +9,8 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import {
-  assertCommitIndex, assertStagePaths, buildCommitMessage, logTail, parseCuCommitArgs, parsePathsFile,
-  parsePorcelain, partitionChangedPaths,
+  assertCommitIndex, assertStagePaths, buildCommitMessage, filterPathsNeedingGitAdd, logTail,
+  parseCuCommitArgs, parsePathsFile, parsePorcelain, partitionChangedPaths,
 } from "./phase-driver.mjs";
 
 const rootDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -45,8 +45,11 @@ for (const p of unchanged) console.log(`unchanged: ${p}`);
 if (!allowed.length) fail("в списке путей нет изменённых файлов");
 
 if (args.mode === "stage") {
-  const added = git(["add", "--", ...allowed]);
-  if (added.status !== 0) fail("git add failed", out(added));
+  const toStage = filterPathsNeedingGitAdd(status.stdout, allowed);
+  if (toStage.length) {
+    const added = git(["add", "--", ...toStage]);
+    if (added.status !== 0) fail("git add failed", out(added));
+  }
   console.log(["cu-commit: staged", ...allowed].join("\n"));
   process.exit(0);
 }

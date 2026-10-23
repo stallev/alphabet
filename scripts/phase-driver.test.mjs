@@ -19,6 +19,7 @@ import {
   renderStatusLine,
   summarizeSessionResult,
   tasksPathFor,
+  filterPathsNeedingGitAdd,
 } from "./phase-driver.mjs";
 
 const TASKS = `
@@ -355,5 +356,14 @@ describe("project conventions (R-phases)", () => {
       expect(prompt).toContain("UI-check:");
       expect(prompt).not.toContain("rules:sync");
     }
+  });
+});
+
+describe("filterPathsNeedingGitAdd", () => {
+  it("keeps unstaged and untracked paths and skips index-only rows", () => {
+    const porcelain = [" M games/a.ts", "?? games/new.ts", "D  old/file.ts", "M  staged.ts", "MM both.ts", "R  a.ts -> b.ts"].join("\n");
+    expect(
+      filterPathsNeedingGitAdd(porcelain, ["games/a.ts", "games/new.ts", "old/file.ts", "staged.ts", "both.ts", "b.ts", "clean.ts"]),
+    ).toEqual(["games/a.ts", "games/new.ts", "both.ts"]);
   });
 });

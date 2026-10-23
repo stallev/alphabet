@@ -163,6 +163,26 @@ export function parsePorcelain(porcelain) {
   return paths;
 }
 
+/** Paths with unstaged or untracked changes — skip index-only rows (e.g. staged deletion `D `). */
+export function filterPathsNeedingGitAdd(porcelain, paths) {
+  const statusByPath = new Map();
+  for (const line of String(porcelain).split(/\r?\n/)) {
+    if (!line.trim()) continue;
+    const xy = line.slice(0, 2);
+    const rest = line.slice(3);
+    const renamed = rest.split(" -> ");
+    const target = renamed[renamed.length - 1].trim().replace(/^"|"$/g, "");
+    if (target) statusByPath.set(target.replace(/\\/g, "/"), xy);
+  }
+  const normalize = (filePath) => filePath.replace(/\\/g, "/").replace(/^\.\//, "");
+  return paths.filter((filePath) => {
+    const xy = statusByPath.get(normalize(filePath));
+    if (!xy) return false;
+    if (xy === "??") return true;
+    return xy[1] !== " ";
+  });
+}
+
 export function classifyDirtyPaths(dirtyPaths, allowedPatterns, tasksFile) {
   const tasks = tasksFile.replace(/\\/g, "/");
   const blocked = [];

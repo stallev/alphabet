@@ -87,7 +87,7 @@
 
 **CU DoD:** `typecheck` · `lint` · `test` · `build` · smoke админки (вход → список → импорт тестового JSON → удаление) · три S-кейса (результат в отчёте)
 
-### R02-CU5 — feat(portal): add game route, alphabet manifest and catalog stub · Review: reviewer · Smoke: blocking · Commit: auto
+### R02-CU5 — feat(portal): add game route, alphabet manifest and catalog stub · Review: reviewer · Smoke: none · Commit: auto
 
 - [x] R02-T10 · T2 · Spec: [manifest §1–§3](../contracts/game_manifest_contract.md) · Spec: [migration §2.4](../specs/alphabet_migration_spec.md)
       Files: `games/alphabet/manifest.ts`, `games/registry.ts`, `public/games/alphabet/cover.webp`
