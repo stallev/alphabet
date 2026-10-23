@@ -5,7 +5,7 @@ import { GameApp } from "@/games/alphabet/components/GameApp";
 import { ComplexityLevel } from "@/games/alphabet/types";
 import type { QuestionsSuite } from "@/games/alphabet/types";
 import type { GamePageProps } from "@/shared/game-kit/manifest";
-import { getAllSuitesForGame } from "@/src/data/suites/get-suites.server";
+import { getAllSuitesForGame } from "@/games/alphabet/server/suites/get-suites.server";
 
 export const metadata = {
   title: "Alphabet: Play",

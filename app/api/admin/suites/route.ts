@@ -1,8 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { auth } from '@/server/auth/auth';
-import { getAllSuites } from '@/src/data/suites/get-suites.server';
-import { importSuiteFromJson } from '@/src/data/suites/import-suite.server';
-import { suiteImportSchema } from '@/lib/validators/suite-import';
+import { getAllSuites } from '@/games/alphabet/server/suites/get-suites.server';
+import { importSuiteFromJson } from '@/games/alphabet/server/suites/import-suite.server';
+import { suiteImportSchema } from '@/games/alphabet/validators/suite-import';
 import { revalidateTag } from 'next/cache';
 
 async function requireAdmin() {

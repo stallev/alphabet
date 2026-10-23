@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useRef } from 'react';
-import { importSuiteAction } from '@/src/actions/admin/import-suite';
+import { importSuiteAction } from '@/games/alphabet/server/actions/import-suite';
 import { useRouter } from 'next/navigation';
 
 type Tab = 'paste' | 'file';

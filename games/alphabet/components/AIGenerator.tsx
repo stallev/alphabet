@@ -6,7 +6,7 @@ import { useSession } from 'next-auth/react';
 import { useGameStore } from '@/games/alphabet/store';
 import { QuestionsSuite, Question } from '@/games/alphabet/types';
 import { TRANSLATIONS } from '@/games/alphabet/i18n/translations';
-import { getDemoSuite } from '@/lib/demo-questions';
+import { getDemoSuite } from '@/games/alphabet/data/demo-questions';
 import { CreditsGateOverlay } from './CreditsGateOverlay';
 
 const AUDIENCE_LEVELS = [

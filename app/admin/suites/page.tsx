@@ -1,7 +1,7 @@
 import { Suspense } from 'react';
 import { connection } from 'next/server';
-import { getAllSuites } from '@/src/data/suites/get-suites.server';
-import { SuitesTable } from '@/components/admin/SuitesTable';
+import { getAllSuites } from '@/games/alphabet/server/suites/get-suites.server';
+import { SuitesTable } from '@/app/admin/_components/SuitesTable';
 import Link from 'next/link';
 
 export const metadata = { title: 'Question Suites — Admin Alphabet' };

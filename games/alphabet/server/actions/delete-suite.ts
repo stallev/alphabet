@@ -3,7 +3,7 @@ import 'server-only';
 
 import { revalidateTag } from 'next/cache';
 import { auth } from '@/server/auth/auth';
-import { deleteSuite } from '@/src/data/suites/get-suites.server';
+import { deleteSuite } from '@/games/alphabet/server/suites/get-suites.server';
 
 type DeleteResult = { success: true } | { success: false; error: string };
 

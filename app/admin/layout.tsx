@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { AdminSignOutButton } from '@/components/admin/AdminSignOutButton';
+import { AdminSignOutButton } from '@/app/admin/_components/AdminSignOutButton';
 
 export const metadata = { title: 'Admin — Alphabet' };
 

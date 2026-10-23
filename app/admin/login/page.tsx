@@ -1,5 +1,5 @@
 import { Suspense } from 'react';
-import { AdminLoginForm } from '@/components/admin/AdminLoginForm';
+import { AdminLoginForm } from '@/app/admin/_components/AdminLoginForm';
 
 export const metadata = { title: 'Admin Login — Alphabet' };
 

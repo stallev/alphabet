@@ -3,8 +3,8 @@ import 'server-only';
 
 import { revalidateTag } from 'next/cache';
 import { auth } from '@/server/auth/auth';
-import { suiteImportSchema } from '@/lib/validators/suite-import';
-import { importSuiteFromJson } from '@/src/data/suites/import-suite.server';
+import { suiteImportSchema } from '@/games/alphabet/validators/suite-import';
+import { importSuiteFromJson } from '@/games/alphabet/server/suites/import-suite.server';
 
 type ImportResult =
   | { success: true; data: { id: string; title: string; language: string; questionsCount: number } }

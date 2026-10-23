@@ -105,9 +105,9 @@ async function main() {
 
   const admin = await seedAdmin();
 
-  console.log('\n📚 Seeding system suites from data/...');
+  console.log('\n📚 Seeding system suites from games/alphabet/data/...');
 
-  const dataDir = join(process.cwd(), 'data');
+  const dataDir = join(process.cwd(), 'games', 'alphabet', 'data');
   const systemFiles = [
     'christmas.json',
     'acts_en.json',

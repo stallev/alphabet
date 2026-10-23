@@ -78,7 +78,7 @@
 
 ### R02-CU4 — refactor(games): move alphabet data and server code · Review: reviewer · Smoke: none · Commit: auto
 
-- [ ] R02-T9 · T3 · Spec: [migration §2.3](../specs/alphabet_migration_spec.md) · Contract: [structure §2, §3, §5](../contracts/repo_structure_contract.md)
+- [x] R02-T9 · T3 · Spec: [migration §2.3](../specs/alphabet_migration_spec.md) · Contract: [structure §2, §3, §5](../contracts/repo_structure_contract.md)
       Files: `games/alphabet/data/**`, `games/alphabet/validators/suite-import.ts`, `games/alphabet/server/**`, `app/admin/_components/**`, `app/admin/**`, `app/api/**`, `data/**`, `lib/demo-questions.ts`, `lib/validators/suite-import.ts`, `src/**`, `components/admin/**`, `prisma/seed.ts`, `prisma/import-suites.ts`
       Acceptance: перенос по таблице §2.3; `get-suites.server.ts`, `import-suite.server.ts` и actions сохраняют `import "server-only"` / `'use server'` и **те же проверки `auth()`**; `app/admin/**` и `app/api/**` меняются только импортами; пути к `data/` в `prisma/seed.ts` и `prisma/import-suites.ts` обновлены → `npm run db:import -- --help` (или сухой запуск) и `npm run db:seed` выполняются на dev-БД без ошибок и без дублей; `rg "@/(lib|src|components/admin)"` вне `docs/` пуст; границы (линтер) соблюдены
       Paths: H [spec §2.3] · N [импорт невалидного JSON → та же ошибка валидации, что до переноса] · S [authz: anon × POST /api/admin/suites → отказ как до переноса; non-admin × server action delete-suite → отказ как до переноса; GET /api/suites без изменений]

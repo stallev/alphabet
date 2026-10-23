@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { getAllSuitesForGame } from '@/src/data/suites/get-suites.server';
+import { getAllSuitesForGame } from '@/games/alphabet/server/suites/get-suites.server';
 
 /**
  * Public API — игра загружает все наборы вопросов из БД.

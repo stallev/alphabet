@@ -2,7 +2,7 @@
 
 import React, { useState, useMemo } from 'react';
 import type { QuestionSuite } from '@/generated/client';
-import { deleteSuiteAction } from '@/src/actions/admin/delete-suite';
+import { deleteSuiteAction } from '@/games/alphabet/server/actions/delete-suite';
 import { useRouter } from 'next/navigation';
 
 const SOURCE_LABELS: Record<string, string> = {
