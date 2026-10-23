@@ -1,0 +1,25 @@
+---
+description: Tests — Vitest (lean), placement, contract-driven assertions
+globs:
+  - "**/*.test.{ts,tsx,mjs}"
+  - "vitest.config.*"
+alwaysApply: false
+---
+
+# Testing (профиль lean)
+
+**Profile:** [`docs/meta/project_quality_profile.md`](../../docs/meta/project_quality_profile.md)  
+**Guide:** `docs/guidelines/testing/ai_testing_guidelines.md` (R01-CU6)
+
+## Контракт (lean)
+
+- **Vitest** на чистую логику: `games/*/logic/**`, реестр, валидаторы, `scripts/**/*.test.mjs`
+- Тест рядом с кодом: `*.test.ts` / `*.test.mjs`
+- Ожидания — из spec/contract задачи, не из «как сейчас написано»
+- Unit: без сети и без реальной БД; внешнее — через fakes/ports
+- **E2E / Playwright** — post-MVP; UI портала и игр — ручная проверка (**ai_ui_verification**)
+
+## Запрещено
+
+- Понижать пороги или удалять падающий тест ради зелёного CI
+- Snapshot-only для бизнес-логики

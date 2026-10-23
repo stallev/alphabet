@@ -1,0 +1,110 @@
+---
+description: "Commit pipeline: auto-commit at a commit-unit boundary or on explicit request → verify → review → branch-prefixed conventional commit"
+alwaysApply: true
+---
+
+# Agent commit pipeline
+
+**Review spec:** [`agent-code-review-subagent.mdc`](agent-code-review-subagent.mdc)  
+**Methodology:** [`docs/meta/ai_first_methodology.md`](docs/meta/ai_first_methodology.md) §2.2 ВЕРИФИКАЦИЯ
+
+## Trigger
+
+Коммит выполняется в двух случаях:
+
+1. **Граница commit unit (auto):** завершена последняя задача CU из `docs/implementation/phases/R{N}_tasks.md` § Commit plan ([`model-routing.mdc`](model-routing.mdc) §3a).
+2. **Явный запрос пользователя.**
+
+Во всех остальных случаях не коммитить. Ad-hoc правка вне CU ждёт границы CU или явного запроса.
+
+**Ограничители auto-commit:**
+
+- ВЕРИФИКАЦИЯ (§1) зелёная, CU DoD выполнен;
+- review (§3) без blockers (≤ 1 re-review delta);
+- в stage только файлы задач CU; нет `.env*`, credentials;
+- commit subject = заголовок CU (`type(scope): subject`) с branch prefix (§4);
+- **никогда:** `git push`, `--amend`, `--no-verify`, force-операции, правка git config.
+
+## Pipeline
+
+```
+граница CU | запрос → ВЕРИФИКАЦИЯ → stage → review → compose message → git commit → commitlint (hook)
+```
+
+### Прогон фазы
+
+Поток — [`docs/guidelines/agent-phase-orchestration.md`](docs/guidelines/agent-phase-orchestration.md) (после R01-CU6). На границе CU:
+
+```
+граница CU → cu-verify.mjs → cu-commit.mjs stage → review → cu-commit.mjs commit → hook
+```
+
+- Индекс и коммит меняет **только** `cu-commit.mjs`. Сырые `git add` / `git commit` в прогоне фазы запрещены.
+- Production build в сессии не запускать — его выполняет pre-commit hook.
+
+### 1. Deterministic verification
+
+Перед коммитом, если затронут код:
+
+- `npm run typecheck`, `npm run lint` — когда скрипты есть
+- `npm run deps:check` — если в diff есть `package.json` / `package-lock.json` (`dependency-pinning.mdc`)
+- Тесты — по [`project_quality_profile.md`](docs/meta/project_quality_profile.md) (D4/D5/D7; нет профиля → `lean`): `npm run test`, если CU затрагивает код с тестами
+- CU DoD из `R{N}_tasks.md` (Phase DoD — на последнем CU фазы)
+
+При fail — исправить, не коммитить.
+
+**UI-check (D11):** для задач со строкой `UI:` в `R{N}_tasks.md` — до stage, по [`docs/guidelines/testing/ai_ui_verification.md`](docs/guidelines/testing/ai_ui_verification.md) (создаётся в R01-CU6); строка `UI-check:` в ответе.
+
+**Runtime dual-view:** только по явному запросу пользователя.
+
+### 2. Collect git context
+
+Вне прогона фазы: `git status`, `git diff`, `git log --oneline -10`, stage релевантных файлов. В прогоне — `cu-commit.mjs stage`.
+
+### 3. Pre-commit review
+
+[`agent-code-review-subagent.mdc`](agent-code-review-subagent.mdc) в режиме **pre-commit**; протокол — [`docs/guidelines/ai_code_review_protocol.md`](docs/guidelines/ai_code_review_protocol.md).
+
+1. Уровень по staged diff (§ Depth): `skip` → `diff-only` → `reviewer`.
+2. `reviewer` — субагент [`.cursor/agents/reviewer.md`](../agents/reviewer.md), readonly; не Bugbot, не `generalPurpose`.
+3. Trace `Review: …` в ответе — всегда.
+4. Blocker → fix → re-review delta ≤ 1 раза.
+
+### 4. Compose commit message
+
+**Branch prefix** = `git branch --show-current`:
+
+```
+<branch-name>: type(scope): subject
+```
+
+#### Types
+
+`feat` · `fix` · `refactor` · `perf` · `docs` · `test` · `chore` · `ci` · `revert` · `style`
+
+#### Scopes
+
+`portal` · `games` · `game-kit` · `ui` · `server` · `db` · `auth` · `i18n` · `docs` · `config` · `ci` · `deps` · `shared`
+
+#### Rules
+
+Imperative · lowercase subject · no trailing `.` · header ≤ 120 chars · body = **ПОЧЕМУ**
+
+Примеры:
+
+```
+R01-process-foundation: docs(rules): add tier 0 rules and agents
+main: chore(config): sync husky hooks
+```
+
+### 5. Execute commit
+
+В прогоне фазы — только `cu-commit.mjs commit`. HEREDOC для message; hook fail → новый commit, не `--amend`.
+
+## Git tooling (уже в репозитории)
+
+`commitlint.config.mjs`, `.husky/commit-msg`, `.husky/pre-commit`, `lint-staged` в `package.json`. На Vercel/CI: `HUSKY=0` или условный `prepare`.
+
+## Related
+
+**agent-code-review-subagent** · **model-routing** · **typescript-types** · **product-docs-alignment**

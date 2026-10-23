@@ -1,0 +1,5 @@
+docs/examples/
+docs/archive/
+node_modules/
+.next/
+generated/

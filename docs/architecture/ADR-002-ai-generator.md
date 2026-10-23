@@ -1,6 +1,6 @@
 # ADR-002 — AI Generator: Demo Mode, Credits Gate, Server-Side API
 
-**Status:** Accepted  
+**Status:** Accepted — генератор вопросов принадлежит `games/alphabet` ([ADR-003](./ADR-003-repo-structure.md))  
 **Date:** 2026-06-08  
 **Authors:** AI Agent (Cursor)
 

@@ -1,155 +1,86 @@
-# Алфавит — Инструкции для AI-агентов
+# EdenGames — инструкции для AI-агентов
 
-**Алфавит** — интерактивная библейская командная игра: механика Memory (поиск пар букв) + бонусная викторина с ИИ-генерацией вопросов.  
-Стек: **Next.js 16.2.6 App Router** + **Neon PostgreSQL v17** + **Auth.js v5** + **Prisma** + **TailwindCSS v4** + **Zustand** + **Framer Motion**.
+**EdenGames** — портал браузерных командных христианских игр; первая игра — **«Алфавит»** (Memory + викторина, наборы вопросов, AI-генерация).  
+Стек: **Next.js 16.2.6** App Router · **Neon PostgreSQL 17** · **Prisma 7.8** · **Auth.js v5** (`next-auth@5.0.0-beta.31`) · **React 19.2** · **Tailwind CSS 4.3** · **Zustand 5** · **Framer Motion 12** · **Zod** · **shadcn/ui** (admin).
 
-**Методология:** [`docs/meta/documentation_creation_guide.md`](docs/meta/documentation_creation_guide.md) — цикл КОНТЕКСТ → ФАЗА → КОНТРАКТ → ЗАДАЧИ → ВЕРИФИКАЦИЯ.
+**Методология:** [`docs/meta/ai_first_methodology.md`](docs/meta/ai_first_methodology.md) — цикл КОНТЕКСТ → ФАЗА → КОНТРАКТ → ЗАДАЧИ → ВЕРИФИКАЦИЯ.  
+**Маршрутизация моделей и DoR:** [`docs/meta/ai_agent_model_routing.md`](docs/meta/ai_agent_model_routing.md) · правило [`model-routing.mdc`](.cursor/rules/model-routing.mdc).
 
----
+## Профиль качества
 
-## Структура проекта
+[`docs/meta/project_quality_profile.md`](docs/meta/project_quality_profile.md) — уровень **`lean`**: тесты на `games/*/logic`, реестр, валидаторы; review по таблице D6; a11y/perf — security floor + ручная проверка UI.
 
-| Путь | Назначение |
-|------|------------|
-| [`app/`](app/) | Next.js App Router — страницы, layouts, API routes |
-| [`app/(game)/`](app/(game)/) | Игровые маршруты (публичные) |
-| [`app/admin/`](app/admin/) | Административная панель (role: `admin`) |
-| [`app/api/`](app/api/) | Route Handlers (Auth.js, Admin API) |
-| [`components/`](components/) | React UI-компоненты (все — `'use client'`) |
-| [`lib/`](lib/) | Server-only утилиты: auth, db, validators |
-| [`prisma/`](prisma/) | Prisma schema, migrations, seed |
-| [`data/`](data/) | Статические JSON-файлы (исторические наборы, seed-данные) |
-| [`docs/`](docs/) | Документация проекта |
-| [`docs/meta/`](docs/meta/) | Методология и гиды по документированию |
-| [`docs/architecture/`](docs/architecture/) | ADR (Architecture Decision Records) |
-| [`store.ts`](store.ts) | Zustand — клиентский игровой стейт |
-| [`types.ts`](types.ts) | Общие TypeScript-типы |
+## Целевая структура репозитория
 
----
+Канон дерева — [`docs/implementation/contracts/repo_structure_contract.md`](docs/implementation/contracts/repo_structure_contract.md) §1 (**достигается в R02–R03**). Сводка: `app/` (тонкие маршруты) · `games/<slug>/` · `shared/` · `server/` · `prisma/` · `docs/`.
 
-## Технический стек (canonical)
+До R02 действует унаследованная раскладка (`components/`, `lib/`, корневой `store.ts`) — не расширять её; новый код — по контракту после миграции.
 
-| Слой | Технология | Версия |
-|------|-----------|--------|
-| Framework | Next.js App Router | **16.2.6** |
-| Runtime | Node.js (Vercel) | LTS |
-| Language | TypeScript | 5.x |
-| Database | Neon PostgreSQL | v17 |
-| ORM | Prisma | 6.x |
-| Auth | Auth.js (NextAuth) | v5 (`next-auth@beta`) |
-| UI | React | 19.x |
-| State (client) | Zustand | 5.x |
-| Animation | Framer Motion | 12.x |
-| Styling | TailwindCSS | v4 |
-| Components | shadcn/ui | latest |
-| AI | Google Gemini / OpenRouter | — |
+## Инварианты ([`repo_structure_contract.md`](docs/implementation/contracts/repo_structure_contract.md) §5)
 
----
+1. Prisma Client — singleton (`server/db/client.ts` после R02; сейчас [`lib/db.ts`](lib/db.ts)).
+2. `auth()` — в каждом защищённом Server Action и Route Handler; `proxy.ts` — только JWT/роль.
+3. `/admin/**`, `/api/admin/**` — только `role === 'admin'`.
+4. Интерактивные компоненты — `'use client'`.
+5. Игра не дублирует shell/game-kit (с R03) — только `shared/game-kit`.
+6. `app/` — без логики игр; страницы игр через реестр.
 
 ## Роли пользователей
 
-| Роль | Описание |
-|------|---------|
-| `admin` | Управление наборами вопросов, загрузка через JSON, ручное создание |
-| `editor` | (post-MVP) Создание и редактирование наборов |
-| `subscriber` | (post-MVP) Доступ к расширенным наборам |
+| Роль | MVP |
+|------|-----|
+| `admin` | Наборы вопросов, JSON-import, ручное создание |
+| `editor`, `subscriber` | post-MVP |
 
-Аутентификация: **Credentials (email + password)** на MVP.  
-Post-MVP: Google OAuth + роли `editor`, `subscriber`.
+Auth MVP: **Credentials** (email + password), JWT.
 
----
-
-## База данных
-
-**Schema canonical:** [`prisma/schema.prisma`](prisma/schema.prisma)  
-**DDL документация:** [`docs/architecture/database_schema.md`](docs/architecture/database_schema.md)
-
-Ключевые модели:
-- `User` — пользователи (id, email, passwordHash, role)
-- `QuestionSuite` — наборы вопросов (title, language, isSystem, source)
-- `Question` — вопросы (content, complexityLevel, answersList, answerType)
-
----
-
-## Аутентификация (Auth.js v5)
-
-**Split config (обязательно):**
-- `lib/auth.config.ts` — JWT callbacks, pages, providers (без Prisma) → используется в `proxy.ts` (Next.js 16)
-- `src/auth.ts` — полный Auth.js с Prisma (`import "server-only"`) → используется в Server Actions и Route Handlers
-
-**Защита маршрутов:**
-- `proxy.ts` — JWT role gate (только `lib/auth.config.ts`, без DB) — **Next.js 16 заменил middleware.ts**
-- Layout-уровень — UX-редиректы для незалогиненных
-- Route Handler / Server Action уровень — обязательная проверка `auth()`
-
----
-
-## Данные (Data Layer)
-
-- **Server Actions** (`src/actions/`) — тонкие: вызывают DAL, затем `revalidatePath`/`revalidateTag`/`redirect`
-- **Route Handlers** (`app/api/`) — для JSON API, внешних интеграций
-- **DAL** (`src/data/`) — функции доступа к данным с `import "server-only"`
-- **Валидация** — Zod-схемы в `src/lib/validators/`
-
----
-
-## Cursor Rules
-
-| Rule | Glob | Описание |
-|------|------|---------|
-| `alphabet-project-context` | `**` | Контекст проекта и источники истины |
-| `nextjs-app-router` | `app/**`, `src/**` | Next.js 15 App Router паттерны |
-| `auth-security` | `**/auth*`, `**/api/**` | Auth.js v5 безопасность |
-| `data-layer-prisma` | `**/data/**`, `**/actions/**` | Prisma + DAL паттерны |
-| `react-component-patterns` | `components/**` | React компоненты |
-
-Все правила: [`.cursor/rules/`](.cursor/rules/)
-
----
-
-## Иерархия источников истины
-
-При конфликте: **Cursor Rules** → **AGENTS.md** → **ADR** → **PRD/docs** → **prototype/examples**.
-
----
-
-## Цикл работы агента
+## Цикл агента
 
 ```
-КОНТЕКСТ → ФАЗА → КОНТРАКТ → ЗАДАЧИ → ВЕРИФИКАЦИЯ
+КОНТЕКСТ → TIER/DoR → ФАЗА → КОНТРАКТ → ЗАДАЧИ (CU) → РЕАЛИЗАЦИЯ → ВЕРИФИКАЦИЯ → REVIEW → COMMIT
 ```
 
-1. Прочитать этот файл и `.cursor/rules/alphabet-project-context.mdc`
-2. Определить текущую фазу реализации из [`docs/meta/documentation_creation_guide.md`](docs/meta/documentation_creation_guide.md)
-3. Прочитать соответствующий ADR/contract для изменений
-4. Выполнить задачи с соблюдением паттернов из Cursor Rules
-5. Верифицировать: нет нарушений архитектурных инвариантов
+1. Этот файл + [`project-context.mdc`](.cursor/rules/project-context.mdc) + профиль качества.
+2. Фаза и задачи — [`docs/implementation/phases/`](docs/implementation/phases/).
+3. Читать только § из contracts/specs/ADR, на которые ссылается задача.
+4. Перед кодом — применимые [`.cursor/rules/`](.cursor/rules/) (индекс: [`.cursor/rules/README.md`](.cursor/rules/README.md), skill `app-conventions`).
+5. Прогон фазы — [`docs/guidelines/agent-phase-orchestration.md`](docs/guidelines/agent-phase-orchestration.md); старт: [`docs/prompts/phase-implementation.md`](docs/prompts/phase-implementation.md).
 
----
+Иерархия источников истины — только в [`project-context.mdc`](.cursor/rules/project-context.mdc) § Source-of-truth order.
 
-## Архитектурные инварианты (нельзя нарушать)
+## Коммиты и review
 
-- `lib/db.ts` — единственный источник Prisma Client (singleton)
-- `src/auth.config.ts` — **без** Prisma-импортов (используется в middleware)
-- `src/auth.ts` — `import "server-only"`, только Server Actions и Route Handlers
-- `components/**` — все клиентские компоненты используют `'use client'`
-- Server Actions и Route Handlers — обязательная проверка `auth()` для защищённых операций
-- `admin/**` маршруты — доступны только при `role === 'admin'`
-- Prisma Client не используется в middleware/Edge runtime
+| Шаг | Документ |
+|-----|----------|
+| Verify → stage → commit (прогон фазы) | [`.cursor/rules/agent-commit-pipeline.mdc`](.cursor/rules/agent-commit-pipeline.mdc) |
+| Протокол review | [`.cursor/rules/agent-code-review-subagent.mdc`](.cursor/rules/agent-code-review-subagent.mdc) · [`docs/guidelines/ai_code_review_protocol.md`](docs/guidelines/ai_code_review_protocol.md) |
 
----
+Формат: `<ветка>: type(scope): subject` (commitlint). Задача вне commit unit не коммитится.
+
+## Точки входа в документацию
+
+| Область | Путь |
+|---------|------|
+| Реестр docs, DoR, H/N/S | [`docs/meta/documentation_registry.md`](docs/meta/documentation_registry.md) |
+| Шаблон задач фазы | [`docs/meta/phase_tasks.template.md`](docs/meta/phase_tasks.template.md) |
+| ADR | [`docs/architecture/adr_index.md`](docs/architecture/adr_index.md) |
+| Контракты | [`docs/implementation/contracts/`](docs/implementation/contracts/) |
+| Guidelines | [`docs/guidelines/README.md`](docs/guidelines/README.md) |
+| План реструктуризации | [`docs/meta/repo_restructure_plan.md`](docs/meta/repo_restructure_plan.md) |
 
 ## Текущий статус
 
-**Фаза:** P02 — Neon PostgreSQL + Auth.js v5 + Admin JSON Import  
-**Предыдущее состояние:** Vite + React SPA (без DB, без auth)  
-**Миграция:** [ADR-001](docs/architecture/ADR-001-migration-to-nextjs.md)
+| Фаза | Описание |
+|------|----------|
+| **R01** (завершение) | Процесс, правила, ADR, драйвер CU — [`R01_phase_description.md`](docs/implementation/phases/R01_phase_description.md) |
+| **R02** | Структура кода, реестр игр — [`R02_phase_description.md`](docs/implementation/phases/R02_phase_description.md) |
+| **R03** | UI-kit, i18n, шаблон игры — [`R03_phase_description.md`](docs/implementation/phases/R03_phase_description.md) |
 
-### Чеклист верификации
+Schema: [`prisma/schema.prisma`](prisma/schema.prisma) · миграция: [ADR-001](docs/architecture/ADR-001-migration-to-nextjs.md) · структура: [ADR-003](docs/architecture/ADR-003-repo-structure.md).
 
-- [ ] Все компоненты в `components/` имеют `'use client'`
-- [ ] `middleware.ts` использует только `auth.config.ts` (без Prisma)
-- [ ] Admin маршруты защищены проверкой роли
-- [ ] Prisma Client — singleton в `lib/db.ts`
-- [ ] Zod-валидация для всех входящих JSON данных
-- [ ] Набор JSON при импорте проходит валидацию по схеме
+## Проверки перед коммитом
+
+**Локально (изменён TS/скрипты):** `npm run typecheck` · `npm run lint` · при необходимости `npm run test`.  
+**Pre-commit:** `lint-staged` (`eslint --fix`) + [`scripts/precommit-build-check.mjs`](scripts/precommit-build-check.mjs) (production build при изменении зависимостей/конфига).  
+**CI / Phase DoD:** `docs:links` · `encoding:check` · `deps:check` · `test` · `build`.  
+**Прогон фазы:** `npm run cu:verify` · `npm run cu:commit` (см. [`phase_driver_contract.md`](docs/implementation/contracts/phase_driver_contract.md)).

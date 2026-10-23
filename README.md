@@ -1,20 +1,34 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# EdenGames
 
-# Run and deploy your AI Studio app
+Портал браузерных командных христианских игр. Первая игра — **«Алфавит»**: механика Memory (пары букв) и бонусная викторина с наборами вопросов и AI-генерацией.
 
-This contains everything you need to run your app locally.
+Стек: Next.js 16 (App Router), Neon PostgreSQL, Prisma, Auth.js, Tailwind CSS v4.
 
-View your app in AI Studio: https://ai.studio/apps/77e5675c-f4f8-48db-88a4-b32f65581284
+## Быстрый старт
 
-## Run Locally
+**Требования:** Node.js `>=22 <26` (см. `engines` в `package.json`).
 
-**Prerequisites:**  Node.js
+```bash
+npm ci
+cp .env.local.example .env.local   # заполните DATABASE_URL, DIRECT_URL, AUTH_SECRET, AUTH_URL
+npm run dev
+```
 
+Приложение: [http://localhost:3000](http://localhost:3000).
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Основные скрипты
+
+| Команда | Назначение |
+|---------|------------|
+| `npm run dev` | Dev-сервер (Turbopack) |
+| `npm run build` / `start` | Production-сборка и запуск |
+| `npm run lint` / `typecheck` / `test` | Качество кода |
+| `npm run db:migrate` / `db:seed` | Prisma и начальные данные |
+| `npm run docs:links` / `encoding:check` / `deps:check` | Проверки документации и зависимостей |
+| `npm run phase:run` | Драйвер прогона фаз (см. `docs/prompts/`) |
+
+## Документация
+
+- Инструкции для AI-агентов: [`AGENTS.md`](AGENTS.md)
+- Документация проекта: [`docs/`](docs/)
+- Фазы реализации: [`docs/implementation/phases/`](docs/implementation/phases/)

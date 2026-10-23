@@ -1,0 +1,60 @@
+---
+description: Domain literals, mutation error codes, API string values — no inline magic strings
+alwaysApply: true
+---
+
+# Domain literals and codes
+
+**Methodology:** [`docs/meta/ai_first_methodology.md`](docs/meta/ai_first_methodology.md)  
+**Canon:** [`docs/guidelines/typescript/ai_typescript_guidelines.md`](docs/guidelines/typescript/ai_typescript_guidelines.md) (создаётся в R01-CU6) §3–§4  
+**Copy:** [`ui-messages-and-copy.mdc`](ui-messages-and-copy.mdc) (tier 2, R01-CU5)
+
+## Контракт
+
+**Запрещено** inline magic strings для доменных/API значений в `app/`, `server/`, `games/`, `shared/`:
+
+- коды ошибок мутаций (`MutationResult.code`);
+- роли, статусы, enum-like значения;
+- ветвления по этим значениям.
+
+**User-visible текст** — словари `shared/i18n` и `games/<slug>/i18n`, не дублировать в action и UI.
+
+## Где брать константы
+
+| Значение | Источник |
+|----------|----------|
+| Коды ошибок мутаций | `shared/domain` |
+| Роли (`admin`, `editor`, `subscriber`) | `shared/domain` |
+| Статусы сущностей | `shared/domain` |
+| UI-копирайт | `shared/i18n` |
+
+Новый код ошибки → сначала в `shared/domain`, затем DAL/actions/UI.
+
+## Паттерн
+
+```ts
+import { AUTH_MUTATION_ERROR_CODES, USER_ROLE } from "@/shared/domain";
+
+return {
+  ok: false,
+  code: AUTH_MUTATION_ERROR_CODES.INVALID_CREDENTIALS,
+  messageKey: "auth.login.invalidCredentials",
+};
+```
+
+## Исключения
+
+- Prisma/vendor codes (`P2002`) — documented literal.
+- Auth.js provider id (`"credentials"`) — framework contract.
+- Test fixtures — inline только в `*.test.*` / seed.
+
+## Checklist
+
+- [ ] Нет новых `"INVALID_*"` inline в actions/DAL/UI
+- [ ] Роли — `USER_ROLE.*`, не строки на call site
+- [ ] Константа в domain до использования
+
+## Related
+
+- [typescript-types.mdc](typescript-types.mdc)
+- [data-server-actions-and-api.mdc](data-server-actions-and-api.mdc) (R01-CU5)

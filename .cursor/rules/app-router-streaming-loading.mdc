@@ -1,0 +1,27 @@
+---
+description: Suspense, loading.tsx — без обязательного cacheComponents
+globs:
+  - "app/**"
+alwaysApply: false
+---
+
+# App Router — streaming & loading
+
+**Guide:** `docs/guidelines/nextjs/ai_loading_patterns.md` (R01-CU6)  
+**Runtime:** Next.js 16.2.6; PPR / Instant Navigations — **не включено**
+
+При добавлении или правке `page.tsx`, `layout.tsx`, `loading.tsx`, `error.tsx`:
+
+## Do
+
+1. Независимые тяжёлые секции — отдельные async Server Components в `<Suspense fallback={…}>`
+2. Новый data-heavy маршрут — colocated **`loading.tsx`** (скелет под финальный layout)
+3. **`page.tsx` лёгкий:** `await params`, быстрый `auth()` + redirect; данные — в дочерних Suspense / DAL
+4. Независимые запросы в одном child — `Promise.all`, не последовательные await без нужды
+5. Повторные read в одном request — React `cache()` где уместно
+6. `error.tsx` там, где возможен сбой загрузки
+
+## Do not
+
+- Требовать `cacheComponents: true` или `'use cache'` на всех маршрутах без ADR
+- Блокировать всю страницу одним top-level await тяжёлой работы

@@ -1,0 +1,64 @@
+---
+description: "EdenGames — portal context: product, stack, quality profile, source-of-truth order"
+alwaysApply: true
+---
+
+# EdenGames — project context
+
+## Product
+
+**EdenGames** — портал браузерных командных игр. Первая игра: **«Алфавит»** (Memory с буквами + викторина, наборы вопросов, AI-генерация).  
+Роли MVP: **`admin`** (управление наборами); `editor` / `subscriber` — post-MVP.
+
+## Quality profile
+
+[`docs/meta/project_quality_profile.md`](docs/meta/project_quality_profile.md) — уровень **`lean`**: тесты на `games/*/logic`, реестр, валидаторы; review по таблице D6; a11y/perf — security floor + ручная проверка. Правила «по профилю Dn» берут значения оттуда.
+
+## Stack (не менять без ADR)
+
+- **Next.js 16.2.6** App Router · **TypeScript** · **Node.js** LTS (`engines` в `package.json`)
+- **Neon PostgreSQL 17** + **Prisma 7** (`DATABASE_URL`, `DIRECT_URL`)
+- **Auth.js v5** — Credentials, JWT, split `auth.config.ts` (Edge) + `auth.ts` (server-only)
+- **Tailwind CSS v4** · **Zustand 5** (клиентский игровой стейт) · **Framer Motion 12** · **shadcn/ui** (admin) · **Zod**
+- **Hosting:** Vercel · **Request gate:** `proxy.ts` (JWT role), без Prisma на edge
+
+Runtime: [`docs/architecture/ADR-001-migration-to-nextjs.md`](docs/architecture/ADR-001-migration-to-nextjs.md); структура репо — ADR-003 (создаётся в R01-CU7).
+
+## Source-of-truth order (canonical — link here, do not duplicate)
+
+1. **Cursor Rules** (`.cursor/rules/*.mdc`)
+2. **[`AGENTS.md`](AGENTS.md)**
+3. **ADR** (`docs/architecture/`)
+4. **Contracts** ([`docs/implementation/contracts/`](docs/implementation/contracts/))
+5. **PRD** (`docs/prds/` — по мере появления)
+6. **Guidelines** (`docs/guidelines/`)
+7. **Specs / примеры** (`docs/implementation/specs/`, `docs/examples/` — read-only)
+
+## Domain invariants (текущий код до R02)
+
+| Инвариант | Правило |
+|-----------|---------|
+| Prisma Client | Singleton [`lib/db.ts`](lib/db.ts) only |
+| Auth split | `lib/auth.config.ts` без Prisma; `lib/auth.ts` — `import "server-only"` |
+| Client components | `components/**` — `'use client'` |
+| Admin | `role === 'admin'` в `proxy.ts` и в handler |
+| JSON import | Zod до записи в БД |
+| Мутации | `auth()` в Server Action / Route Handler |
+
+Ключевые модели: `User`, `QuestionSuite`, `Question` — [`prisma/schema.prisma`](prisma/schema.prisma).
+
+## Where to find norms
+
+| Area | Document |
+|------|----------|
+| Методология | [`docs/meta/ai_first_methodology.md`](docs/meta/ai_first_methodology.md) |
+| Маршрутизация моделей | [`docs/meta/ai_agent_model_routing.md`](docs/meta/ai_agent_model_routing.md) |
+| Структура (целевая) | [`repo_structure_contract.md`](docs/implementation/contracts/repo_structure_contract.md) |
+| Игры / маршруты | [`game_routing_contract.md`](docs/implementation/contracts/game_routing_contract.md) |
+| Фазы | [`docs/implementation/phases/`](docs/implementation/phases/) |
+| Драйвер CU | [`phase_driver_contract.md`](docs/implementation/contracts/phase_driver_contract.md) |
+| Schema DDL | [`docs/architecture/database_schema.md`](docs/architecture/database_schema.md) |
+
+## Repository status
+
+**Фаза:** R01 — основа процесса. Не расширять целевую структуру (`games/`, `shared/`) без фазы R02+ и контракта.

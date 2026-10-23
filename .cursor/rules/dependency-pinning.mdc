@@ -1,0 +1,24 @@
+---
+description: Exact npm versions, lockfile, deps:check
+globs:
+  - "package.json"
+  - "package-lock.json"
+  - ".npmrc"
+alwaysApply: false
+---
+
+# Dependency pinning
+
+**Проверка:** `npm run deps:check` (`scripts/check-exact-deps.mjs`)  
+**Коммиты обновлений:** scope `deps` — отдельный CU (**agent-commit-pipeline**)
+
+## Контракт
+
+1. **Exact versions** в `dependencies` / `devDependencies`: `"next": "16.2.6"` — без `^`, `~`, `*`, dist-tags без ADR.
+2. **`.npmrc`:** `save-exact=true` в корне.
+3. **Lockfile** в git; CI и deploy — `npm ci`.
+4. Обновление зависимости — явный коммит с review, не побочный эффект `npm install`.
+
+## Next.js
+
+Pin `next`, `eslint-config-next` на один patch. Смена minor — ADR.

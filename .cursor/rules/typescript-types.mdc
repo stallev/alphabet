@@ -1,0 +1,35 @@
+---
+description: TypeScript — typecheck, shared domain types, mutation ADT (single app)
+alwaysApply: true
+---
+
+# TypeScript types
+
+**Methodology:** [`docs/meta/ai_first_methodology.md`](docs/meta/ai_first_methodology.md)  
+**Canon:** [`docs/guidelines/typescript/ai_typescript_guidelines.md`](docs/guidelines/typescript/ai_typescript_guidelines.md) (создаётся в R01-CU6)
+
+## Before finishing a task
+
+1. **`npm run typecheck`** (`tsc --noEmit` в корне).
+2. **`npm run lint`** при изменении TS/TSX.
+
+## Where types live
+
+| Layer | Types |
+|-------|--------|
+| `shared/domain` | Роли, статусы, `MutationResult`, shared Zod DTOs |
+| `server/*` | DAL types, server-only helpers |
+| `games/*` | Игровая логика, view-models |
+| `app/`, `components/` | UI props, mappers session → domain |
+
+**Запрещено** в `shared/domain`: `import type { Session } from "next-auth"` без ADR.
+
+## Domain literals
+
+Роли/статусы из `shared/domain` — см. **domain-literals-and-codes**. Type guards после валидации, не unsafe `as`.
+
+## Related
+
+- [domain-literals-and-codes.mdc](domain-literals-and-codes.mdc)
+- [auth-security.mdc](auth-security.mdc)
+- [data-server-actions-and-api.mdc](data-server-actions-and-api.mdc) (Prisma-слой после R01-CU5)

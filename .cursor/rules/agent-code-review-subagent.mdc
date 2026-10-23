@@ -1,0 +1,80 @@
+---
+description: "Review protocol: problem → expected shape → diff. Pinned readonly reviewer for runtime code; diff-only for docs/tooling."
+alwaysApply: false
+---
+
+# Code review
+
+**Commit orchestration:** [`agent-commit-pipeline.mdc`](agent-commit-pipeline.mdc)  
+**HOW:** [`docs/guidelines/ai_code_review_protocol.md`](docs/guidelines/ai_code_review_protocol.md) — перед уровнем `reviewer`.  
+**Routing:** [`model-routing.mdc`](model-routing.mdc) §3a / §6.
+
+Один review-гейт на CU. **Не вызывать** `bugbot`. Независимый review — только **`reviewer`** ([`.cursor/agents/reviewer.md`](../agents/reviewer.md), `readonly: true`).
+
+## Triggers
+
+| Mode | Когда | Уровень |
+|------|-------|---------|
+| **standalone** | Явный запрос review | Всегда `reviewer` |
+| **pre-commit** | Шаг 3 commit pipeline | По § Depth |
+
+Standalone review не ведёт к commit. `reviewer` не правит код.
+
+## Sensitive zones
+
+**Единственный список** — pipeline и registry §2.3.2a (признак S) ссылаются сюда.
+
+| Zone |
+|------|
+| `**/auth/**`, `app/api/**` |
+| `server/db/**`, `prisma/**` |
+| `proxy.ts`, `middleware.ts` |
+| `.env*`, `next.config.*`, CSP/cookies |
+
+## Depth
+
+По **staged diff**, не по type коммита. Lockfiles и generated не считаются.
+
+| Уровень | Когда (pre-commit) | Кто |
+|---------|-------------------|-----|
+| `skip` | ≤ 10 строк, вне zones, вне runtime |
+| `diff-only` | Docs, `.mdc`, tests, tooling — в т.ч. внутри zones |
+| `reviewer` | Runtime-код в CU; T3 / `Paths: S`; явный запрос |
+
+**Профиль D6** — [`project_quality_profile.md`](docs/meta/project_quality_profile.md) (`lean`: `reviewer` только для T3 / S / sensitive runtime; остальной runtime — `diff-only`).
+
+## Protocol (кратко)
+
+1. **2a Проблема** — из задач CU в `R{N}_tasks.md`, не из diff.
+2. **2b Ожидаемая форма** — таблица guideline + пути H/N/S из задачи.
+3. **2c Diff** — только дефекты по таблице вердиктов; пропуск H/N/S — blocker.
+
+## Budget
+
+1. Review после зелёной верификации.
+2. Один `reviewer` на CU; re-review delta ≤ 1 раза.
+3. `reviewer`: staged diff + задачи CU; ≤ 10 находок.
+
+## Вызов reviewer
+
+Task: `reviewer`, `run_in_background: false`. Не `generalPurpose`.
+
+## Trace
+
+Первая строка `Review:`. `diff-only` — одна строка. `reviewer` — ≤ 4 строки (guideline §6).
+
+| Severity | Критерий |
+|----------|----------|
+| `blocker` | Баг, правило, security, пропуск H/N/S |
+| `suggestion` | Стиль, опционально |
+
+## Diff scope
+
+| Mode | Scope |
+|------|--------|
+| pre-commit | `git diff --staged` |
+| standalone | working tree / по запросу ветки |
+
+## Related
+
+**agent-commit-pipeline** · **model-routing** · **domain-literals-and-codes**

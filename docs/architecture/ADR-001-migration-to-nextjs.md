@@ -1,6 +1,6 @@
 # ADR-001 — Миграция с Vite+React SPA на Next.js 15 App Router
 
-**Status:** Accepted  
+**Status:** Accepted — реализовано; структура репозитория пересмотрена в [ADR-003](./ADR-003-repo-structure.md)  
 **Date:** 2026-05-30  
 **Authors:** AI Agent (Cursor)
 
@@ -142,4 +142,4 @@
 - [Auth.js v5 для Next.js](https://authjs.dev/getting-started/installation?framework=Next.js)
 - [Prisma + Next.js](https://www.prisma.io/nextjs)
 - [Neon + Prisma](https://neon.tech/docs/guides/prisma)
-- Референсный проект: [`docs/examples/fitapp/`](../examples/fitapp/)
+- Референсный каталог `docs/examples/ai_first_tmp` в репозиторий не входит.
