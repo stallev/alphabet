@@ -12,7 +12,7 @@ alwaysApply: false
 
 **Stack:** Next.js **16.2.6**, React 19.2.4, TypeScript 5, TailwindCSS v4  
 **Version pin (hard):** `"next": "16.2.6"` — не менять без ADR  
-**Reference:** [`docs/examples/fitapp/.cursor/rules/nextjs-vercel-app-router.mdc`](../../docs/examples/fitapp/.cursor/rules/nextjs-vercel-app-router.mdc)
+**Reference:** [`docs/examples/ai_first_tmp/docs/examples/pulse/.cursor/rules/nextjs-vercel-app-router.mdc`](../../docs/examples/ai_first_tmp/docs/examples/pulse/.cursor/rules/nextjs-vercel-app-router.mdc)
 
 ## Обязательные практики
 

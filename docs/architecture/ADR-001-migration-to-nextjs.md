@@ -142,4 +142,4 @@
 - [Auth.js v5 для Next.js](https://authjs.dev/getting-started/installation?framework=Next.js)
 - [Prisma + Next.js](https://www.prisma.io/nextjs)
 - [Neon + Prisma](https://neon.tech/docs/guides/prisma)
-- Референсный проект: [`docs/examples/fitapp/`](../examples/fitapp/)
+- Референсный проект: [`docs/examples/ai_first_tmp/docs/examples/pulse/`](../examples/ai_first_tmp/docs/examples/pulse/)

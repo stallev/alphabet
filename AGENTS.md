@@ -12,7 +12,7 @@
 | Путь | Назначение |
 |------|------------|
 | [`app/`](app/) | Next.js App Router — страницы, layouts, API routes |
-| [`app/(game)/`](app/(game)/) | Игровые маршруты (публичные) |
+| `app/(game)/` | Игровые маршруты (публичные) |
 | [`app/admin/`](app/admin/) | Административная панель (role: `admin`) |
 | [`app/api/`](app/api/) | Route Handlers (Auth.js, Admin API) |
 | [`components/`](components/) | React UI-компоненты (все — `'use client'`) |

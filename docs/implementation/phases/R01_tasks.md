@@ -36,19 +36,19 @@
 
 ### R01-CU1 — chore(config): add doc checks, eslint and test runner · Review: diff-only · Smoke: none · Commit: auto
 
-- [ ] R01-T1 · T1 · Spec: [plan §A.4.5](../../meta/repo_restructure_plan.md)
+- [x] R01-T1 · T1 · Spec: [plan §A.4.5](../../meta/repo_restructure_plan.md)
       Files: `scripts/check-doc-links.mjs`, `scripts/check-text-encoding.mjs`, `scripts/check-exact-deps.mjs`, `package.json`
       Acceptance: скрипты скопированы из `docs/examples/ai_first_tmp/scripts/`; `check-doc-links` адаптирован — исключает `docs/examples/`, `docs/archive/`, `node_modules/`, `.next/`; в `package.json` добавлены `docs:links`, `encoding:check`, `deps:check` → `npm run encoding:check` = 0; `npm run docs:links` выводит только ссылки вперёд (см. «Ссылки вперёд»), реальные битые ссылки исправлены
       Paths: n/a — tooling
-- [ ] R01-T2 · T1 · Spec: [phase §Принятые решения](R01_phase_description.md#принятые-решения-для-фазы)
+- [x] R01-T2 · T1 · Spec: [phase §Принятые решения](R01_phase_description.md#принятые-решения-для-фазы)
       Files: `eslint.config.mjs`, `package.json`
       Acceptance: создан flat-config на `eslint-config-next` (core-web-vitals + typescript), игнорирует `.next/`, `generated/`, `docs/examples/`, `docs/archive/`, `node_modules/`; `scripts/**/*.mjs` линтуются с node-окружением (globals `process`, `console`, `URL`…); скрипт `lint` заменён на `eslint .` (`next lint` в Next.js 16 отсутствует) → `npm run lint` выходит с кодом 0; правила, дающие ошибки на унаследованном коде, понижены до `warn` с комментарием `// legacy: <причина>`; число предупреждений и список понижений записаны в отчёт CU
       Paths: n/a — tooling
-- [ ] R01-T3 · T1 · Spec: [plan §A.2](../../meta/repo_restructure_plan.md)
+- [x] R01-T3 · T1 · Spec: [plan §A.2](../../meta/repo_restructure_plan.md)
       Files: `package.json`, `package-lock.json`
       Acceptance: все `dependencies`/`devDependencies` без `^`/`~` с версиями, уже установленными по lock-файлу; `engines.node` задан; `typescript` закреплён точно → `npm run deps:check` = 0, `npm ci && npm run build` проходит
       Paths: n/a — tooling
-- [ ] R01-T4 · T1 · Spec: [plan §A.2](../../meta/repo_restructure_plan.md)
+- [x] R01-T4 · T1 · Spec: [plan §A.2](../../meta/repo_restructure_plan.md)
       Files: `vitest.config.mjs`, `package.json`, `package-lock.json`
       Acceptance: установлен `vitest` (точная версия); конфиг покрывает `**/*.test.{ts,tsx,mjs}`, исключает `docs/examples`, `node_modules`, `.next`; алиас `@/` → корень; скрипты `test` (`vitest run`), `typecheck` (`tsc --noEmit`) → `npm run test` выполняет существующие тесты скриптов (`scripts/phase-driver.test.mjs`, `check-build-isolation.test.mjs`, `precommit-build-check.test.mjs` — 39 тестов) и они зелёные, `npm run typecheck` = 0 (ошибки типов унаследованного кода, если есть, исправлены минимально или записаны в отчёт и скрыты не `ts-ignore`, а явным списком — вопрос владельцу)
       Paths: n/a — tooling

@@ -91,8 +91,8 @@ alphabet/
 ## Референсный проект
 
 Архитектурные паттерны наследуются из **fitapp (Pulse)**:
-- Код: [`docs/examples/fitapp/`](../../docs/examples/fitapp/)
-- AGENTS: [`docs/examples/fitapp/AGENTS.md`](../../docs/examples/fitapp/AGENTS.md)
+- Код: [`docs/examples/ai_first_tmp/docs/examples/pulse/`](../../docs/examples/ai_first_tmp/docs/examples/pulse/)
+- AGENTS: [`docs/examples/ai_first_tmp/AGENTS.md`](../../docs/examples/ai_first_tmp/AGENTS.md)
 
 Отличия от fitapp:
 - Одно приложение (не monorepo)
