@@ -79,19 +79,19 @@
 
 ### R01-CU3 — docs(docs): add methodology, quality profile and templates · Review: diff-only · Smoke: none · Commit: auto
 
-- [ ] R01-T8 · T1 · Spec: [plan §A.4.4](../../meta/repo_restructure_plan.md)
+- [x] R01-T8 · T1 · Spec: [plan §A.4.4](../../meta/repo_restructure_plan.md)
       Files: `docs/meta/ai_first_methodology.md`, `docs/meta/ai_agent_model_routing.md`, `docs/meta/phase_tasks.template.md`
       Acceptance: перенесены из `ai_first_project_methodology.md`, `ai_agent_model_routing.md`, `phase_tasks.template.md`; удалено всё про Pulse/волны W0–W14/monorepo; пути в примерах — `docs/implementation/phases/R0N_*`; пример CU использует scope из [phase §Принятые решения](R01_phase_description.md#принятые-решения-для-фазы) → `rg -i "pulse|monorepo|apps/web|packages/|\{\{" docs/meta` пуст (кроме `repo_restructure_plan.md`)
       Paths: n/a — docs-only
-- [ ] R01-T9 · T1 · Spec: [plan §A.2](../../meta/repo_restructure_plan.md)
+- [x] R01-T9 · T1 · Spec: [plan §A.2](../../meta/repo_restructure_plan.md)
       Files: `docs/meta/project_quality_profile.md`
       Acceptance: создан из `project_quality_profile.template.md`: уровень `lean`; значения D2–D11 заполнены (тесты — на `games/*/logic`, реестр, валидаторы; review — по таблице `lean`; a11y/perf — по security floor и ручной проверке); включённые/выключенные модули стека — как в плане §A.2 → в документе нет незаполненных `{{…}}`/`TBD`
       Paths: n/a — docs-only
-- [ ] R01-T10 · T1 · Spec: [plan §A.4.4](../../meta/repo_restructure_plan.md)
+- [x] R01-T10 · T1 · Spec: [plan §A.4.4](../../meta/repo_restructure_plan.md)
       Files: `docs/meta/documentation_registry.md`
       Acceptance: ≤ 150 строк; содержит критерии путей H/N/S (из §2.3.2a реестра шаблона) и DoR-чеклист (§2.3.6), адаптированные под `lean`, плюс таблицу «документ → где живёт → статус» для создаваемых в R01–R03 документов → ссылки открываются
       Paths: n/a — docs-only
-- [ ] R01-T11 · T1 · Spec: [plan §A.4.4](../../meta/repo_restructure_plan.md)
+- [x] R01-T11 · T1 · Spec: [plan §A.4.4](../../meta/repo_restructure_plan.md)
       Files: `docs/meta/templates/prd.template.md`, `docs/meta/templates/contract.template.md`, `docs/meta/templates/spec.template.md`, `docs/meta/templates/adr.template.md`, `docs/meta/templates/game_description.template.md`
       Acceptance: у каждого шаблона шапка метаданных (Тип, Статус, Версия, Дата, Зависит от), разделы-заготовки и критерии соответствия (структура — как у существующих [`contracts/*`](../contracts/) и [`specs/*`](../specs/)); `adr.template.md` — Status/Context/Decision/Rejected alternatives/Consequences; `game_description.template.md` — правила, механика, количество игроков/команд, материалы, ссылки на manifest и i18n
       Paths: n/a — docs-only
