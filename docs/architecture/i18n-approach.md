@@ -2,14 +2,14 @@
 
 > **Обновляется в R03** под cookie `locale` и RU/EN. Принятое решение — [ADR-006](./ADR-006-i18n-and-game-data.md); контракт — [`i18n_contract.md`](../implementation/contracts/i18n_contract.md).
 
-**Дата:** 2026-05-31  
+**Дата:** 2026-10-23  
 **Статус:** Legacy (до R03)
 
 ---
 
 ## Обзор
 
-В проекте «Алфавит» интернационализация реализована как **клиентский слой без URL-локализации**. Нет next-intl, i18next, react-intl или сегментов `[locale]` в маршрутах. Язык — это игровая настройка пользователя, которая хранится в `localStorage` и управляется через Zustand.
+В игре «Алфавит» интернационализация — **клиентский слой без URL-локализации**. Нет next-intl, i18next, react-intl или сегментов `[locale]` в маршрутах. Язык — игровая настройка в `localStorage`, управляется через Zustand в `games/alphabet/store.ts`.
 
 ---
 
@@ -19,137 +19,99 @@
 
 | Файл | Что хранит |
 |------|-----------|
-| `types.ts` → `Locale` | Тип-объединение всех поддерживаемых локалей |
-| `constants.ts` → `TRANSLATIONS` | Строки UI для каждой локали |
-| `constants.ts` → `LOCALE_META` | Метаданные: label, flag, shortLabel |
-| `constants.ts` → `ALPHABET_BY_LOCALE` | Буквы алфавита для Memory-карточек |
-| `store.ts` → `VALID_LOCALES` | Список **активных** (включённых) локалей |
-| `components/LocaleSelector.tsx` → `LOCALES` | Список локалей, отображаемых в UI-переключателе |
-| `data/*.json` | Seed-файлы наборов вопросов (по локали в имени файла) |
+| `shared/domain/locale.ts` → `Locale` | Тип всех поддерживаемых локалей |
+| `games/alphabet/i18n/translations.ts` → `TRANSLATIONS` | Строки UI для каждой локали |
+| `shared/i18n/locales.ts` → `LOCALE_META` | Метаданные: label, flag, shortLabel, `active` |
+| `games/alphabet/constants.ts` → `ALPHABET_BY_LOCALE` | Буквы алфавита для Memory-карточек |
+| `games/alphabet/store.ts` → `VALID_LOCALES` | Список **активных** локалей |
+| `games/alphabet/components/LocaleSelector.tsx` → `LOCALES` | Локали в UI-переключателе |
+| `games/alphabet/data/*.json` | Seed-файлы наборов вопросов (по локали в имени) |
 
 ### Поток данных
 
 ```
 LocaleSelector (UI)
-  └─► setLocale() в Zustand store
+  └─► setLocale() в games/alphabet/store.ts
         ├─► localStorage.setItem('alphabet_locale', locale)
         ├─► Обновляет state.locale
         └─► Выбирает systemSuite с language === locale
 
 Компоненты
   └─► const { locale } = useGameStore()
-  └─► const t = TRANSLATIONS[locale]   // строки UI
-  └─► ALPHABET_BY_LOCALE[locale]       // карточки Memory
+  └─► const t = TRANSLATIONS[locale]
+  └─► ALPHABET_BY_LOCALE[locale]
 ```
 
 ### Инициализация локали (`getInitialLocale`)
 
-При первой загрузке `store.ts` определяет начальную локаль в следующем порядке приоритетов:
+При первой загрузке `games/alphabet/store.ts` определяет начальную локаль:
 
-1. Значение из `localStorage` — если оно входит в `VALID_LOCALES`
+1. Значение из `localStorage` — если входит в `VALID_LOCALES`
 2. Язык браузера (`navigator.language`) — маппинг на поддерживаемую локаль
-3. Дефолт: `'ru'` (на SSR без `window`), `'en'` (неизвестный язык браузера)
+3. Дефолт: `'ru'` (SSR без `window`), `'en'` (неизвестный язык браузера)
 
 ---
 
 ## Поддерживаемые локали
 
-### Определение типа (`types.ts`)
+### Определение типа
 
 ```typescript
+// shared/domain/locale.ts
 export type Locale = 'ru' | 'en' | 'uk' | 'de' | 'ro';
 ```
 
-Тип содержит **все** потенциальные локали. Это позволяет хранить переводы и алфавиты для неактивных локалей без изменения TypeScript-схемы.
-
 ### Активные локали
-
-Список локалей, **доступных пользователям в UI**, определяется в двух местах:
 
 | Место | Переменная | Назначение |
 |-------|-----------|-----------|
-| `store.ts` | `VALID_LOCALES` | Валидация значения из `localStorage`; автодетект браузера |
-| `components/LocaleSelector.tsx` | `LOCALES` | Пункты выпадающего списка переключателя |
+| `games/alphabet/store.ts` | `VALID_LOCALES` | Валидация `localStorage`; автодетект |
+| `games/alphabet/components/LocaleSelector.tsx` | `LOCALES` | Пункты переключателя |
 
-> **Оба списка должны быть синхронизированы.** При добавлении или отключении локали — обновляй оба.
+> **Оба списка должны быть синхронизированы.**
 
-### Текущее состояние (2026-05-31)
+### Текущее состояние
 
 | Локаль | Статус | Причина |
 |--------|--------|---------|
-| `ru` | **Активна** | Наборы вопросов загружены в БД |
-| `en` | **Активна** | Наборы вопросов загружены в БД |
-| `uk` | Отключена | Нет наборов вопросов в БД |
-| `de` | Отключена | Нет наборов вопросов в БД |
-| `ro` | Отключена | Нет наборов вопросов в БД |
+| `ru` | **Активна** | Наборы в БД |
+| `en` | **Активна** | Наборы в БД |
+| `uk`, `de`, `ro` | Отключены | Нет наборов в БД |
 
-Переводы (`TRANSLATIONS`), метаданные (`LOCALE_META`) и алфавиты (`ALPHABET_BY_LOCALE`) для всех пяти локалей **сохранены** и готовы к активации.
+Переводы, `LOCALE_META` и алфавиты для всех пяти локалей сохранены.
 
 ---
 
 ## Связь с базой данных
 
-Наборы вопросов в таблице `QuestionSuite` имеют поле `language: Char(2)` (ISO 639-1), например `'ru'`, `'en'`.
-
-При смене локали в `setLocale()` Zustand-стор автоматически переключает `questions.currentSuite` на набор с совпадающим `language`. Наборы загружаются через `/api/suites` (Route Handler → Prisma → Neon PostgreSQL).
+Наборы в `QuestionSuite` имеют `language: Char(2)`. При `setLocale()` стор переключает активный набор. Загрузка — `/api/suites` (Prisma). См. [`database_schema.md`](./database_schema.md).
 
 ---
 
 ## Использование в компонентах
 
 ```typescript
-// Стандартный паттерн в клиентских компонентах
 const { locale } = useGameStore();
 const t = TRANSLATIONS[locale];
-
-// Строка UI
-<button>{t.start}</button>
-
-// Алфавит для Memory-карточек
 const letters = ALPHABET_BY_LOCALE[locale];
-```
-
-Частичные переводы (маленькие UI-фразы) иногда хранятся inline внутри компонентов:
-
-```typescript
-// Допустимо для единичных строк
-const label = locale === 'ru' ? 'Загрузка...' : 'Loading...';
 ```
 
 ---
 
 ## Как включить/отключить локаль
 
-### Включить локаль (например, `uk`)
-
-1. Загрузить наборы вопросов с `language = 'uk'` в БД (через Admin → JSON Import)
-2. В `store.ts` добавить `'uk'` в `VALID_LOCALES` и ветку `if (lang.startsWith('uk')) return 'uk'` в `getInitialLocale`
-3. В `components/LocaleSelector.tsx` добавить `'uk'` в `LOCALES`
-
-### Отключить локаль
-
-1. Убрать локаль из `VALID_LOCALES` в `store.ts` и из `LOCALES` в `LocaleSelector.tsx`
-2. Переводы и метаданные **не удалять** — они остаются в `constants.ts`
+1. Загрузить наборы с нужным `language` (Admin → JSON Import)
+2. Добавить локаль в `VALID_LOCALES` (`games/alphabet/store.ts`) и `LOCALES` (`LocaleSelector.tsx`)
+3. При отключении — убрать из списков; переводы **не удалять**
 
 ---
 
-## Ограничения текущего подхода
+## Ограничения и будущее
 
 | Ограничение | Описание |
-|-------------|---------|
-| Только клиент | Admin-панель и серверные метаданные не зависят от выбранной локали |
-| Нет URL-локализации | Невозможно поделиться ссылкой с конкретным языком |
-| Переводы в TypeScript | Для добавления новой локали нужно редактировать `constants.ts` (не JSON-файлы) |
-| Нет плюрализации | Нет встроенной поддержки форм числительных |
+|-------------|----------|
+| Только клиент | Admin не зависит от локали игры |
+| Нет URL-локализации | Нельзя поделиться ссылкой с языком |
+| Переводы в TS | Новая локаль — правка `games/alphabet/i18n/` |
 
----
-
-## Возможное будущее развитие
-
-При необходимости полноценной серверной локализации рекомендуется:
-
-- Перейти на **next-intl** с сегментом `app/[locale]/`
-- Вынести `TRANSLATIONS` в JSON-файлы `messages/{locale}.json`
-- Добавить `middleware.ts` для определения локали по URL / `Accept-Language`
-
-Решение о переходе должно быть оформлено как ADR.
+Переход на next-intl / cookie `locale` — R03 (ADR-006).

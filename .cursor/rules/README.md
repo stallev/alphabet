@@ -31,7 +31,7 @@
 | `testing.mdc` | globs | Vitest (lean), размещение тестов |
 | `app-router-streaming-loading.mdc` | globs | Suspense, `loading.tsx` |
 | `admin-json-import.mdc` | globs | JSON импорт наборов (Alphabet / R02) |
-| `import-boundaries.mdc` | globs | Границы импортов `games/*` / `shared/*` / `server/*` |
+| `import-boundaries.mdc` | globs | Границы импортов `games/*` / `shared/*` / `server/*` (R02) |
 
 ## Tier 2 — globs (UI)
 

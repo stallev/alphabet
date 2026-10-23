@@ -123,15 +123,15 @@
 
 ### R02-CU7 — docs(docs): document alphabet, schema and structure · Review: diff-only · Smoke: deferred · Commit: auto
 
-- [ ] R02-T15 · T1 · Spec: [migration §2.6](../specs/alphabet_migration_spec.md) · Template: [`game_description.template.md`](../../meta/templates/game_description.template.md)
+- [x] R02-T15 · T1 · Spec: [migration §2.6](../specs/alphabet_migration_spec.md) · Template: [`game_description.template.md`](../../meta/templates/game_description.template.md)
       Files: `docs/games/alphabet.md`, `docs/games/alphabet/ai_system.md`, `docs/games/alphabet/ui_components.md`, `docs/games/alphabet/state_management.md`, `docs/OVERVIEW.md`, `docs/GAME_DESCRIPTION.md`, `docs/AI_SYSTEM.md`, `docs/UI_COMPONENTS.md`, `docs/STATE_MANAGEMENT.md`
       Acceptance: `docs/games/alphabet.md` = объединение `OVERVIEW.md` и `GAME_DESCRIPTION.md` по шаблону (правила, механика, команды, режимы, ссылки на manifest/i18n/data); остальные три файла перенесены `git mv` и поправлены пути (`components/…` → `games/alphabet/components/…`); в старых местах остаются заглушки из 3 строк со ссылкой → `docs:links` = 0
       Paths: n/a — docs-only
-- [ ] R02-T16 · T1 · Spec: [migration §2.6](../specs/alphabet_migration_spec.md) · Contract: [structure §2](../contracts/repo_structure_contract.md)
+- [x] R02-T16 · T1 · Spec: [migration §2.6](../specs/alphabet_migration_spec.md) · Contract: [structure §2](../contracts/repo_structure_contract.md)
       Files: `docs/architecture/database_schema.md`
       Acceptance: сгенерирован по `prisma/schema.prisma` (модели `User`, `QuestionSuite`, `Question`, enum'ы), у каждой модели — владелец (`портал` для `User`, `games/alphabet` для остальных), правила доступа (кто читает/пишет); формат `docs:links`-совместим
       Paths: n/a — docs-only
-- [ ] R02-T17 · T1 · Spec: [product-docs-alignment](../../../.cursor/rules/product-docs-alignment.mdc)
+- [x] R02-T17 · T1 · Spec: [product-docs-alignment](../../../.cursor/rules/product-docs-alignment.mdc)
       Files: `AGENTS.md`, `.cursor/rules/README.md`, `.cursor/skills/app-conventions/SKILL.md`, `docs/architecture/ADR-003-repo-structure.md`, `docs/architecture/i18n-approach.md`
       Acceptance: в `AGENTS.md` блок «Структура» стал фактическим (без пометок «целевая»), статус фазы — `R02 завершена`; индекс skill и манифест правил обновлены; в ADR-003 добавлен раздел «Реализация» со ссылкой на коммиты/CU R02; в `i18n-approach.md` пути к файлам исправлены на новые (`games/alphabet/…`, `shared/i18n/locales.ts`) → `AGENTS.md` ≤ 120 строк; `docs:links` = 0
       Paths: n/a — docs-only
