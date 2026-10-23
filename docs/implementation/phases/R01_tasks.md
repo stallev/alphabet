@@ -192,15 +192,15 @@
 
 ### R01-CU8 — docs(docs): rewrite agent instructions and readme, close phase · Review: diff-only · Smoke: none · Commit: auto
 
-- [ ] R01-T30 · T2 · Spec: [`AGENTS.template.md`](../../examples/ai_first_tmp/AGENTS.template.md), [`repo_structure_contract.md`](../contracts/repo_structure_contract.md) §1, [plan §A.3](../../meta/repo_restructure_plan.md)
+- [x] R01-T30 · T2 · Spec: [`AGENTS.template.md`](../../examples/ai_first_tmp/AGENTS.template.md), [`repo_structure_contract.md`](../contracts/repo_structure_contract.md) §1, [plan §A.3](../../meta/repo_restructure_plan.md)
       Files: `AGENTS.md`
       Acceptance: ≤ 120 строк; разделы — суть проекта, методология (ссылки), профиль качества, целевая структура (с пометкой «достигается в R02–R03»), инварианты ([`repo_structure_contract.md`](../contracts/repo_structure_contract.md) §5), роли пользователей, цикл агента, коммиты/ревью (ссылки на правила), точки входа в документацию, текущий статус (`R01` → список фаз и ссылки), проверки перед коммитом; стек и версии соответствуют `package.json`; нет Pulse/monorepo/`{{` → `wc -l AGENTS.md` ≤ 120; все ссылки открываются
       Paths: n/a — docs-only
-- [ ] R01-T31 · T1 · Spec: [`AGENTS.md`](../../../AGENTS.md)
+- [x] R01-T31 · T1 · Spec: [`AGENTS.md`](../../../AGENTS.md)
       Files: `README.md`
       Acceptance: коротко: что за проект (каталог христианских игр EdenGames), как запустить (`npm ci`, `.env.local.example`, `npm run dev`), скрипты, ссылка на `AGENTS.md` и `docs/`; без устаревших инструкций Vite/AI Studio
       Paths: n/a — docs-only
-- [ ] R01-T32 · T1 · Spec: [R01_phase_description §Phase DoD](R01_phase_description.md#phase-dod)
+- [x] R01-T32 · T1 · Spec: [R01_phase_description §Phase DoD](R01_phase_description.md#phase-dod)
       Files: `docs/implementation/phases/R01_tasks.md`
       Acceptance: выполнен весь Phase DoD; в разделе Verification ниже заполнены отметки и приложен список понижённых lint-правил (T2); пути в `R02_*`/`R03_*`/контрактах/спецификациях проверены `docs:links`; зафиксированы в отчёте результат dry-run драйвера и вопросы, оставшиеся к владельцу
       Paths: n/a — docs-only
@@ -209,11 +209,13 @@
 
 ## Verification (phase)
 
-- [ ] Все CU закоммичены; у каждого trace `Review: …`
-- [ ] Phase DoD из [`R01_phase_description.md`](R01_phase_description.md#phase-dod)
-- [ ] Чек-лист [plan §A.8](../../meta/repo_restructure_plan.md) выполнен
-- [ ] Список понижённых lint-правил (legacy) записан здесь: _(заполняется в R01-T2/T32)_
-- [ ] Вопросы, оставшиеся к владельцу: _(заполняется по ходу)_
+- [x] Все CU закоммичены; у каждого trace `Review: …` (CU8 — коммит драйвера после stage)
+- [x] Phase DoD из [`R01_phase_description.md`](R01_phase_description.md#phase-dod) — проверки в `cu-verify` CU8
+- [x] Чек-лист [plan §A.8](../../meta/repo_restructure_plan.md) выполнен (артефакты R01 по commit plan)
+- [x] Список понижённых lint-правил (legacy) записан здесь: `@typescript-eslint/no-explicit-any` (warn); `react/no-unescaped-entities` (warn); `react-hooks/set-state-in-effect` (warn) — см. `eslint.config.mjs` `// legacy: …`
+- [x] Dry-run драйвера (T32): `node scripts/run-phase.mjs R01 --environment cursor` → `STATUS: cu R01-CU8`, блок IMPLEMENTER для открытого CU
+- [ ] `npm run docs:links` (T32): сейчас 83 битых (в основном `docs/guidelines/**` и tier-2 `.cursor/rules` → несуществующие PRD/design); в `docs/implementation/**` — 2 legacy `mvp/` в `.mdc` (вне Files CU8)
+- [x] Вопросы, оставшиеся к владельцу: Phase DoR audit не подписан; `lean` / **EdenGames** — по умолчанию; **`docs:links` не зелёный (83)** — чинить guidelines/rules в отдельном CU или расширить allowlist?
 
 ---
 
