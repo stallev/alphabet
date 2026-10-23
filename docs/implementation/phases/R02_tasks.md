@@ -28,15 +28,15 @@
 
 ### R02-CU1 — feat(games): add game registry, manifest types and import boundaries · Review: diff-only · Smoke: none · Commit: auto
 
-- [ ] R02-T1 · T1 · Spec: [manifest §1](../contracts/game_manifest_contract.md) · Contract: [structure §1](../contracts/repo_structure_contract.md)
+- [x] R02-T1 · T1 · Spec: [manifest §1](../contracts/game_manifest_contract.md) · Contract: [structure §1](../contracts/repo_structure_contract.md)
       Files: `shared/domain/locale.ts`, `shared/game-kit/manifest.ts`, `shared/game-kit/manifest.test.ts`, `types.ts`
       Acceptance: `Locale`, `ACTIVE_LOCALES = ['ru','en']`, `DEFAULT_LOCALE` определены в `shared/domain/locale.ts` (тип `Locale` по-прежнему включает `uk|de|ro`); `manifest.ts` содержит типы и `defineGame` по §1 контракта; `types.ts` временно реэкспортирует `Locale` из нового места (мост, удаляется в R02-CU3) → `npm run typecheck` = 0; тесты манифеста зелёные
       Paths: H [manifest §1] · N [manifest §3.1: невалидные поля]
-- [ ] R02-T2 · T1 · Spec: [manifest §2–§4](../contracts/game_manifest_contract.md)
+- [x] R02-T2 · T1 · Spec: [manifest §2–§4](../contracts/game_manifest_contract.md)
       Files: `games/reserved-slugs.ts`, `games/registry.ts`, `games/registry.test.ts`
       Acceptance: `RESERVED_SLUGS`, `GAME_ENTRIES` (пока пустой), `listGames`, `getGameEntry`, `assertValidRegistry` по контракту; тесты покрывают каждую строку таблицы §3.1 на фикстурах (формат/зарезервированный/дубликат slug, active без `loadPage`, coming-soon с `loadPage`, длины текстов, теги, команды, обложка), сортировку `listGames` → `npm run test` зелёный
       Paths: H [manifest §3] · N [manifest §3.1: каждая строка таблицы]
-- [ ] R02-T3 · T2 · Spec: [structure §3, §3.1](../contracts/repo_structure_contract.md)
+- [x] R02-T3 · T2 · Spec: [structure §3, §3.1](../contracts/repo_structure_contract.md)
       Files: `eslint.config.mjs`, `tsconfig.json`, `scripts/lint-fixtures/boundary-violation.ts`, `scripts/check-boundaries.test.mjs`, `.cursor/rules/import-boundaries.mdc`, `.cursor/rules/README.md`
       Acceptance: `eslint.config.mjs` формирует `no-restricted-imports` программно по `games/*` (кроме `_template`) и общим блокам `shared/**`, `server/**`; `scripts/lint-fixtures/` исключён из обычного `lint` и из `tsconfig.json`; тест запускает ESLint на фикстуре через Node API и ожидает ошибку границы для: `shared → games`, `shared → server`, `games/a → games/b`, `games/a (не server) → server`, `server → games`; правило `import-boundaries.mdc` (`globs: games/**,shared/**,server/**`) ссылается на контракт (не копирует его) и добавлено в манифест → `npm run lint` = 0; `npm run test` зелёный
       Paths: H [structure §3.1] · N [структура без игр: правила не падают]

@@ -1,11 +1,12 @@
+import type { Locale } from "@/shared/domain/locale";
+
+export type { Locale };
 
 export enum ComplexityLevel {
   EASY = 'easy',
   MEDIUM = 'medium',
   HARD = 'hard'
 }
-
-export type Locale = 'ru' | 'en' | 'uk' | 'de' | 'ro';
 
 export interface Question {
   id: number;
