@@ -2,6 +2,7 @@
 description: Auth.js v5 — split config, роли, защита маршрутов и мутаций
 globs:
   - "lib/auth*"
+  - "proxy.ts"
   - "middleware.ts"
   - "app/api/auth/**"
   - "app/admin/**"
@@ -191,9 +192,16 @@ Post-MVP: `editor`, `subscriber` + Google OAuth.
 - `verifyAdminCredentials()` — сравнивает `bcrypt.compare(password, user.passwordHash)`
 - Никогда не хранить plaintext пароль
 
+## Defense in depth
+
+1. **`proxy.ts`** — JWT role gate (`auth.config.ts` only)
+2. Layout — UX-редиректы (опционально)
+3. **Server Actions / Route Handlers** — обязательный `auth()` + роль
+4. XSS/CSRF/CSP — **security-xss-csrf** (Origin, CSRF-токены для cookie-сессий при появлении)
+
 ## Checklist безопасности
 
-- [ ] `middleware.ts` использует только `auth.config.ts` (без Prisma)
+- [ ] `proxy.ts` использует только `auth.config.ts` (без Prisma)
 - [ ] `lib/auth.ts` имеет `import 'server-only'`
 - [ ] Каждый admin Server Action проверяет `role === 'admin'`
 - [ ] Каждый admin Route Handler проверяет `role === 'admin'`

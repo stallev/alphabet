@@ -1,0 +1,53 @@
+---
+description: DAL, Server Actions vs Route Handlers, Prisma/Neon, Zod validation
+globs:
+  - "prisma/**"
+  - "lib/db*"
+  - "lib/validators/**"
+  - "src/data/**"
+  - "src/actions/**"
+  - "app/api/**"
+alwaysApply: false
+---
+
+# Data access — Server Actions, API, Prisma
+
+**Schema:** [`prisma/schema.prisma`](../../prisma/schema.prisma)  
+**Singleton:** [`lib/db.ts`](../../lib/db.ts) — единственное место `new PrismaClient()`  
+**Auth:** проверка `auth()` в каждом защищённом Action/Handler (**auth-security**)
+
+## Server Action vs Route Handler
+
+| Сценарий | Предпочтительно |
+|----------|-----------------|
+| Форма, импорт JSON, обновление списка после мутации | **Server Action** + `revalidateTag` / `revalidatePath` |
+| Внешний JSON API, polling | **Route Handler** |
+
+Server Action из клиента перерисовывает RSC на текущей странице; Route Handler + `fetch` — нет.
+
+## DAL (`src/data/**`)
+
+- `import 'server-only'` обязательно
+- Импорт `prisma` только из `@/lib/db`
+- Plain-аргументы, типизированные возвраты, вся Prisma-логика здесь
+
+## Server Actions (`src/actions/**`)
+
+Тонкие: `auth()` → Zod `safeParse` → DAL → `revalidateTag` / `redirect`. Без бизнес-логики в Action.
+
+## Zod
+
+Схемы входящих JSON — `lib/validators/**`; импорт наборов — **admin-json-import**.
+
+## Neon / миграции
+
+- Прод: `prisma migrate deploy`, не `db push`
+- После schema change: `prisma generate` + миграция
+- `DATABASE_URL` (pooler) + `DIRECT_URL` для миграций
+
+## Checklist
+
+- [ ] Нет `new PrismaClient()` вне `lib/db.ts`
+- [ ] DAL — `server-only`
+- [ ] Admin мутации — `role === 'admin'`
+- [ ] JSON-импорт проходит Zod до записи в БД

@@ -1,0 +1,39 @@
+---
+description: XSS, CSRF, CSP — defense in depth
+globs:
+  - "proxy.ts"
+  - "middleware.ts"
+  - "app/api/**"
+  - "src/actions/**"
+  - "src/data/**"
+  - "next.config.*"
+  - "components/**"
+alwaysApply: false
+---
+
+# Security — XSS, CSRF, CSP
+
+**Guide:** `docs/guidelines/security/ai_security_xss_csrf_guidelines.md` (R01-CU6)  
+**Связь:** **auth-security** — слои авторизации
+
+## XSS (MUST)
+
+- React экранирует строки в JSX — не использовать `dangerouslySetInnerHTML` без санитизации
+- User-controlled `href`/`src`: блокировать `javascript:` и data-URL где не нужны
+- Rich text (post-MVP): санитизация при записи и при render
+
+## CSRF
+
+- Credentials + cookie session: проверять `Origin`/`Referer` на мутациях; для форм — CSRF-токен при расширении auth
+- Server Actions: same-site cookies + проверка сессии в `auth()`
+
+## CSP (по мере внедрения)
+
+- Nonce per-request в `proxy.ts` → заголовки для inline script/style при необходимости
+- Не ослаблять CSP ради сторонних виджетов без ADR
+
+## Checklist
+
+- [ ] Нет неэкранированного HTML из пользовательского ввода
+- [ ] Admin/API мутации — auth + роль
+- [ ] Секреты только в server-only коде и env

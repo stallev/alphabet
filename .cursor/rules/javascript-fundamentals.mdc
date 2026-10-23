@@ -1,0 +1,21 @@
+---
+description: JS/TS fundamentals — closures, async map, modules, generics
+globs:
+  - "**/*.{ts,tsx,mjs}"
+alwaysApply: false
+---
+
+# JavaScript/TypeScript fundamentals
+
+**Guide:** `docs/guidelines/typescript/ai_javascript_fundamentals_guidelines.md` (R01-CU6)  
+**Типы:** **typescript-types**
+
+## MUST
+
+- **`reduce`** — всегда с `initialValue`
+- **async в `.map()`** — не fire-and-forget; `for...of` или `Promise.all`
+- **Closures:** флаги инициализации — factory `once(fn)`, не общий mutable `let` между вызовами
+- **Generics** вместо `any` в переиспользуемых хелперах; DTO через `Pick`/`Omit` от канонического типа
+- **ESM** в проекте; named exports в публичных API модулей
+
+Применять там, где предотвращается реальный runtime-баг, не как стиль ради стиля.

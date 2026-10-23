@@ -1,0 +1,63 @@
+---
+description: Next.js 16.2.6 App Router, Vercel, proxy.ts, async APIs
+globs:
+  - "app/**"
+  - "src/**"
+  - "lib/**"
+  - "proxy.ts"
+  - "next.config.*"
+alwaysApply: false
+---
+
+# Next.js 16.2.6 + Vercel
+
+**Stack:** Next.js **16.2.6** (exact pin — без ADR не менять), React 19, TypeScript 5  
+**Guidelines:** `docs/guidelines/nextjs/` (создаётся в R01-CU6)  
+**Reference:** `docs/examples/ai_first_tmp/.cursor/rules/tiers/t1-implementation/nextjs-vercel-app-router.mdc`
+
+## Version pin
+
+```json
+"next": "16.2.6"
+```
+
+Pin matching `eslint-config-next` to the same patch. No Next.js 15 patterns.
+
+## Request interception — `proxy.ts`
+
+| Next.js 15 | Next.js 16.2.6 |
+|------------|----------------|
+| `middleware.ts` | **`proxy.ts`** |
+| `export function middleware()` | **`export async function proxy()`** |
+| Edge runtime | **Node.js** in proxy |
+
+- Auth in proxy: **only** `lib/auth.config.ts` — never `lib/auth.ts` (Prisma).
+- Do not add new auth gates in `middleware.ts`.
+
+## Required practices
+
+- **Async Request APIs:** `await cookies()`, `await headers()`, `await params`, `await searchParams`
+- **Server Components by default** — `'use client'` only for hooks, browser APIs, Zustand, Framer Motion
+- **Thin BFF:** Route Handlers / Server Actions → DAL `src/data/**` (см. **data-server-actions-and-api**)
+- **Cache invalidation:** `revalidateTag`, `revalidatePath`, `redirect` after mutations
+- **Cross-request reads:** prefer React `cache()` in request scope; `'use cache'` / PPR / Instant Navigations — **не включено** (отдельный ADR при необходимости)
+
+## Структура маршрутов (текущая; целевая — `repo_structure_contract.md` §1)
+
+```
+app/          — маршруты, layouts
+app/(game)/   — публичная игра
+app/admin/**  — admin (role gate в proxy)
+app/api/**    — Auth.js + Admin API
+components/   — клиентские UI (`'use client'`)
+src/data/**   — DAL (server-only)
+src/actions/** — тонкие Server Actions
+```
+
+## Запрещено
+
+- `import { useRouter } from 'next/router'` → `next/navigation`
+- `getServerSideProps` / Pages Router data APIs
+- `new PrismaClient()` вне `lib/db.ts` (до R02 — `server/db/`)
+- `import { auth } from '@/lib/auth'` в `proxy.ts`
+- Обязательное `cacheComponents: true` / Instant Navigations без ADR

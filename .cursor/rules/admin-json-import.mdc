@@ -10,6 +10,7 @@ alwaysApply: false
 
 # Admin JSON Import — наборы вопросов
 
+**Область:** `games/alphabet` после R02 (текущие пути — legacy до переноса).  
 **ADR:** [`docs/architecture/ADR-001-migration-to-nextjs.md`](../../docs/architecture/ADR-001-migration-to-nextjs.md)  
 **Validator:** [`lib/validators/suite-import.ts`](../../lib/validators/suite-import.ts)
 
