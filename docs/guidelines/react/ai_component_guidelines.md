@@ -47,7 +47,7 @@
 - New repeating primitive → add to catalog + Design Lab section before use in product screens.
 - Routes stay thin — compose features, do not embed large UI trees.
 
-Spec: [`design_system_lab_spec.md`](../../implementation/mvp/specs/design_system_lab_spec.md) §Product UI catalog contract.
+Spec: [`design_system_lab_spec.md`](../../implementation/contracts/design_tokens_contract.md) §Product UI catalog contract.
 
 ---
 
@@ -64,9 +64,9 @@ Spec: [`design_system_lab_spec.md`](../../implementation/mvp/specs/design_system
 ## 3. Styling
 
 - **`cn()`** + **cva** for variants
-- Semantic tokens from [``](../../default_docs/) (until UX-03)
+- Semantic tokens from [`design_tokens_contract.md`](../../implementation/contracts/design_tokens_contract.md) (until UX-03)
 - **Mobile-first** — base = mobile; `md:` / `lg:` expand (see **ui-mobile-first**, design system §2)
-- **Prototype fidelity** — fonts, sizes, weights, colors from [``](../../prototypes/) + design system (**
+- **Prototype fidelity** — fonts, sizes, weights, colors from [`design_tokens_contract.md`](../../implementation/contracts/design_tokens_contract.md) (**ui-design-system**)
 
 ---
 
@@ -106,7 +106,7 @@ components/
   admin/        # moderation tables
 ```
 
-**Full inventory (paths, phases, FAANG UX, Context7, prototype anchors):** [`design_system_lab_spec.md`](../../implementation/mvp/specs/design_system_lab_spec.md) § Component catalog placement & Phase 2–3 inventory.
+**Full inventory (paths, phases, FAANG UX, Context7, prototype anchors):** [`design_system_lab_spec.md`](../../implementation/contracts/design_tokens_contract.md) § Component catalog placement & Phase 2–3 inventory.
 
 **Catalog index:** `/design-system` (dev-only). Cursor rule: **ui-design-system** §Design Lab catalog.
 
@@ -147,4 +147,4 @@ Cursor rules: **react-ui-components**, **app-router-streaming-loading**.
 - `aria-invalid` + `FieldError` on forms; `aria-busy` on mutations (**ui-mutation-pending**)
 - Contrast AA in light and dark; touch targets = 44px (**ui-mobile-first**)
 
-**Reference:** EdenGames snapshot [`ai_component_guidelines.md`](../../examples/ai_first_tmp/docs/docs/guidelines/react/ai_component_guidelines.md) §8
+**Reference:** EdenGames snapshot ``ai_component_guidelines.md`` §8

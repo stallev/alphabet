@@ -11,7 +11,7 @@ alwaysApply: false
 **Methodology:** [`docs/meta/ai_first_methodology.md`](docs/meta/ai_first_methodology.md)  
 **Guide:** [`ai_semantics_a11y_guidelines.md`](docs/guidelines/react/ai_semantics_a11y_guidelines.md)  
 **Deep dive:** [`docs/general/03-accessibility.md`](docs/general/03-accessibility.md)  
-**Design system:** [`{{INTERIM_DESIGN_SYSTEM_DOC}}`](docs/default_docs/{{INTERIM_DESIGN_SYSTEM_DOC}}) §15 Checklist
+**Design system:** [`design_tokens_contract.md`](docs/implementation/contracts/design_tokens_contract.md)
 
 **Target:** **WCAG 2.1 Level AA** — contrast, keyboard, names, structure.
 

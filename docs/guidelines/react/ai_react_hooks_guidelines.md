@@ -160,4 +160,4 @@ Cursor rule: **react-naming-conventions**. React canon: [custom hooks](https://r
 
 ---
 
-**Reference:** EdenGames snapshot [`ai_react_hooks_guidelines.md`](../../examples/ai_first_tmp/docs/docs/guidelines/react/ai_react_hooks_guidelines.md)
+**Reference:** EdenGames snapshot ``ai_react_hooks_guidelines.md``

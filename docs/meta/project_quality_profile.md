@@ -2,7 +2,7 @@
 
 **Тип:** Meta  
 **Статус:** Canonical  
-**Канон матрицы:** [`project_quality_profile.template.md`](../examples/ai_first_tmp/docs/meta/project_quality_profile.template.md) (read-only образец)  
+**Канон матрицы:** этот файл (образец `project_quality_profile.template.md` из шаблона в репозиторий не входит).  
 **Версия:** 1.0  
 **Дата:** 2026-10-23  
 **Зависит от:** [`repo_restructure_plan.md`](./repo_restructure_plan.md) §A.2

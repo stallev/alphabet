@@ -2,7 +2,7 @@
 
 Typography for **`app`** using shared atoms (on scaffold), semantic HTML,  font tokens, and accessibility.
 
-**Design source:** [`visual_identity_contract.md`](../design/visual_identity_contract.md), interim [``](../default_docs/) §typography  
+**Design source:** [`design_tokens_contract.md`](../implementation/contracts/design_tokens_contract.md) §typography.  
 **UI rule:** **ui-design-system**
 
 ---
@@ -58,7 +58,7 @@ From design system — **mobile-first** (base = mobile, `md:`/`lg:` = desktop):
 | Body | `text-base` | `text-base` |
 | Caption / meta | `text-sm text-muted-foreground` | same |
 
-**Prototype parity:** match font family, weight, and size from [``](../prototypes/) — Cursor rule **
+**Prototype parity:** match font family, weight, and size from the design tokens — Cursor rule **ui-design-system**.
 
 ---
 
@@ -75,4 +75,4 @@ From design system — **mobile-first** (base = mobile, `md:`/`lg:` = desktop):
 
 All strings from **`@/lib/messages`** — not hardcoded in typography components except dev placeholders.
 
-**Reference:** EdenGames snapshot [`typography_text_guidelines.md`](../examples/ai_first_tmp/docs/docs/guidelines/typography_text_guidelines.md) — Calm Editorial → design tokens (R03)
+**Reference:** EdenGames snapshot ``typography_text_guidelines.md`` — Calm Editorial → design tokens (R03)

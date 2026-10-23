@@ -2,7 +2,7 @@
 
 **Stack:** Next.js **16.2.6**, React 19, Tailwind CSS v4  
 **Methodology:** [`docs/meta/ai_first_methodology.md`](../../meta/ai_first_methodology.md)  
-**Deep dive:** [`docs/general/05-browser-rendering.md`](../../general/05-browser-rendering.md)  
+**Deep dive:** [`docs/general/05-browser-rendering.md`](../../general/README.md)  
 **Cursor rule:** **ui-animation-performance**  
 **Lazy loading:** [`ai_client_lazy_loading.md`](../nextjs/ai_client_lazy_loading.md)
 
@@ -128,8 +128,8 @@ className="transition-all duration-300" // may animate layout props
 
 | Document | Topic |
 |----------|--------|
-| [`docs/general/05-browser-rendering.md`](../../general/05-browser-rendering.md) | FLIP technique, full pipeline theory |
-| [`docs/general/04-code-splitting.md`](../../general/04-code-splitting.md) | TBT, bundle size |
+| [`docs/general/05-browser-rendering.md`](../../general/README.md) | FLIP technique, full pipeline theory |
+| [`docs/general/04-code-splitting.md`](../../general/README.md) | TBT, bundle size |
 | [`ai_client_lazy_loading.md`](../nextjs/ai_client_lazy_loading.md) | Client bundle |
 | [`ai_semantics_a11y_guidelines.md`](./ai_semantics_a11y_guidelines.md) | Motion a11y |
 

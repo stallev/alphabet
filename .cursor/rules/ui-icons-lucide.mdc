@@ -18,7 +18,7 @@ Package in `package.json`; aligns with shadcn/ui and tree-shakable imports.
 
 - **Brand assets** (official multi-color logos if required).
 - **Illustrations** or non-icon artwork.
-- **Design-system mandates** from [`{{INTERIM_DESIGN_SYSTEM_DOC}}`](docs/default_docs/{{INTERIM_DESIGN_SYSTEM_DOC}}) for pixel parity.
+- **Design-system mandates** from [`design_tokens_contract.md`](docs/implementation/contracts/design_tokens_contract.md) for pixel parity.
 
 ## Usage
 

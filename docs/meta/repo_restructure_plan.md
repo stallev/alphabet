@@ -5,7 +5,7 @@
 **Версия:** 1.0  
 **Дата:** 2026-10-22  
 **Аудитория:** владелец проекта + AI-агенты в Cursor  
-**Источник методологии:** [`docs/examples/ai_first_tmp/`](../examples/ai_first_tmp/) (read-only шаблон, далее — «шаблон»)
+**Источник методологии:** `docs/examples/ai_first_tmp/` (read-only шаблон, в репозиторий не входит; далее — «шаблон»)
 
 Документ состоит из двух частей:
 
@@ -45,14 +45,14 @@
 
 1. **Белый список.** Переносится только то, что названо в §A.4. Всё остальное в шаблоне — игнорировать, даже если выглядит полезным.
 2. **Копировать, затем адаптировать.** Файл копируется из шаблона, потом правится под этот проект (§A.5). Ссылок из рабочих документов на `docs/examples/**` не оставлять (кроме явного раздела «Reference»).
-3. **Шаблон не править.** `docs/examples/ai_first_tmp/` остаётся read-only; проверка ссылок ([`check-doc-links`](../examples/ai_first_tmp/scripts/check-doc-links.mjs)) его уже исключает. В Cursor добавляется `.cursorignore` (§A.7), чтобы агент не принимал шаблон за часть проекта.
+3. **Шаблон не править.** `docs/examples/ai_first_tmp/` остаётся read-only и в этот репозиторий не входит; проверка ссылок ([`check-doc-links`](../../scripts/check-doc-links.mjs)) исключает `docs/examples/`. В Cursor добавляется `.cursorignore` (§A.7), чтобы агент не принимал шаблон за часть проекта.
 4. **Single source.** Списки правил, уровни профиля, критерии путей H/N/S, уровни review живут в одном месте (в перенесённых файлах); остальные документы ссылаются, не копируют.
 5. **Один пункт — одна сессия** агента. Пункт считается готовым только после проверок §A.8.
 6. **Конфликт источников** — по иерархии (§A.6): сначала правила `.cursor/rules`, потом `AGENTS.md`, дальше ADR, contracts, PRD, guidelines, прототипы.
 
 ## A.2 Профиль качества и значения плейсхолдеров
 
-Профиль: **`lean`** (D8). Создаётся из [`project_quality_profile.template.md`](../examples/ai_first_tmp/docs/meta/project_quality_profile.template.md) в `docs/meta/project_quality_profile.md`; значения D2–D11 профиля — по умолчанию уровня `lean`, отличия вносятся явно:
+Профиль: **`lean`** (D8). Создаётся в [`project_quality_profile.md`](./project_quality_profile.md) по образцу шаблона; значения D2–D11 профиля — по умолчанию уровня `lean`, отличия вносятся явно:
 
 | Параметр профиля | Значение |
 |------------------|----------|
@@ -197,7 +197,7 @@ scripts/                       # check-doc-links, check-text-encoding, check-exa
 | `specs/design_system_lab_spec.template.md` | **Отложить** (R3: опциональный `/design-system` как каталог UI-кита) | — |
 | `docs/reference/*`, `docs/examples/*`, `docs/ops/*`, `docs/prototypes/`, `docs/project-react-skill-requirements.md`, `docs/claude-code-cursor-rules-sync.md` | **Игнорировать** (последний — только если выбран Claude Code, §A.4.1) |
 
-**Шаблоны новых документов** (создаются в R1 в `docs/meta/templates/`, по образцу шаблона): `prd.template.md`, `contract.template.md`, `spec.template.md`, `adr.template.md`, `game_description.template.md`. Содержание — по принципу «заголовки + таблицы + checklist» из [`documentation_creation_guide.md`](documentation_creation_guide.md); у каждого — метаданные (Тип, Статус, Версия, Дата, Зависит от).
+**Шаблоны новых документов** (создаются в R1 в `docs/meta/templates/`, по образцу шаблона): `prd.template.md`, `contract.template.md`, `spec.template.md`, `adr.template.md`, `game_description.template.md`. Содержание — по принципу «заголовки + таблицы + checklist» из [`documentation_creation_guide.md`](../archive/documentation_creation_guide.md); у каждого — метаданные (Тип, Статус, Версия, Дата, Зависит от).
 
 ### A.4.5 Скрипты, git-хуки, CI
 

@@ -12,7 +12,7 @@ alwaysApply: false
 
 # Аутентификация и безопасность — Auth.js v5
 
-**Reference:** [`docs/examples/ai_first_tmp/.cursor/rules/tiers/t1-implementation/auth-security.mdc`](../../docs/examples/ai_first_tmp/.cursor/rules/tiers/t1-implementation/auth-security.mdc)  
+**Reference:** шаблон `docs/examples/ai_first_tmp` в репозиторий не входит.  
 **Auth files:** [`lib/auth.config.ts`](../../lib/auth.config.ts) + [`lib/auth.ts`](../../lib/auth.ts)
 
 ## Split Config (обязательно)

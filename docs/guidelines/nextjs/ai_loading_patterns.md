@@ -3,14 +3,14 @@
 **Version:** 2.0 · **Project:** EdenGames `app`  
 **Stack:** Next.js **16.2.6** App Router, React 19, Vercel, Neon PostgreSQL 17 + Prisma v7  
 **Methodology:** [`docs/meta/ai_first_methodology.md`](../../meta/ai_first_methodology.md)  
-**Runtime:** [ADR-002 template](../../prds/07_governance/adr_002_nextjs_vercel_runtime_policy.template.md)  
+**Runtime:** [ADR-002 template](../../architecture/ADR-005-nextjs-vercel-runtime.md)  
 **Cursor rule:** **app-router-streaming-loading**
 
-> **Scope:** `app/src/app/**` — loading UX, streaming shell, and page-level performance. Cross-request data cache: **`'use cache'`** (Next.js 16) — see §8; tag invalidation — [`cache_revalidation_policy.md`](../../prds/05_runtime/cache_revalidation_policy.md) (после W5).
+> **Scope:** `app/src/app/**` — loading UX, streaming shell, and page-level performance. Cross-request data cache: **`'use cache'`** (Next.js 16) — see §8; tag invalidation — [`cache_revalidation_policy.md`](../../architecture/ADR-005-nextjs-vercel-runtime.md) (после W5).
 
 Verify against Context7 `/vercel/next.js` and [Loading UI and Streaming](https://nextjs.org/docs/app/building-your-application/routing/loading-ui-and-streaming).
 
-**Adapted from:** EdenGames snapshot [`ai_loading_patterns.md`](../../examples/ai_first_tmp/docs/docs/guidelines/nextjs/ai_loading_patterns.md) (includes former `ai_page_performance_streaming.md` in §4–§18) — Vercel, EdenGames domain.
+**Adapted from:** EdenGames snapshot ``ai_loading_patterns.md`` (includes former `ai_page_performance_streaming.md` in §4–§18) — Vercel, EdenGames domain.
 
 ---
 
@@ -216,7 +216,7 @@ Data fetching lives in `booking-detail-content.server.tsx` via DAL `app/src/data
 
 **Default (ADR-002):** `await params` / `await searchParams` in async `page.tsx` — see examples above.
 
-**Opt-in** when `cacheComponents: true` and stable page chrome must paint **before** dynamic params resolve (static shell / Partial Prerendering). Provenance: evaluated against [nextjs-app-architecture-skill](https://github.com/aurorascharff/nextjs-app-architecture-skill) — **not installed**; governance: [`adr_010_nextjs_app_architecture_skill.md`](../../reference/adr_010_nextjs_app_architecture_skill.md).
+**Opt-in** when `cacheComponents: true` and stable page chrome must paint **before** dynamic params resolve (static shell / Partial Prerendering). Provenance: evaluated against [nextjs-app-architecture-skill](https://github.com/aurorascharff/nextjs-app-architecture-skill) — **not installed**; governance: [`adr_010_nextjs_app_architecture_skill.md`](../../architecture/ADR-005-nextjs-vercel-runtime.md).
 
 ```tsx
 import { Suspense } from 'react'
@@ -344,7 +344,7 @@ async function TrainerProfile({ id }: { id: string }) {
 
 ### Context (EdenGames)
 
-Root `layout.tsx` may `await auth()` for session-aware chrome (nav, role). EdenGames uses **JWT sessions** (Auth.js v5, Credentials) — see [ADR-003](../../prds/07_governance/adr_003_auth_credentials_jwt_rbac.md).
+Root `layout.tsx` may `await auth()` for session-aware chrome (nav, role). EdenGames uses **JWT sessions** (Auth.js v5, Credentials) — see [ADR-003](../auth/ai_auth_implementation_guide.md).
 
 Typical JWT `auth()`:
 
@@ -456,7 +456,7 @@ Verify against Context7 `/vercel/next.js` (prefer version-matched docs under `no
 
 ### 8.1 Instant Navigations (Next.js 16.2.6) — required
 
-[Instant Navigations](https://nextjs.org/blog/next-16-3-instant-navigations) are **required** on pin **16.2.6** ([ADR-002 template](../../prds/07_governance/adr_002_nextjs_vercel_runtime_policy.template.md) §5.1). **Adoption order:** enable **Cache Components** first, then **Partial Prefetching**. Shape each route as Stream, Cache, or deliberate Block:
+[Instant Navigations](https://nextjs.org/blog/next-16-3-instant-navigations) are **required** on pin **16.2.6** ([ADR-002 template](../../architecture/ADR-005-nextjs-vercel-runtime.md) §5.1). **Adoption order:** enable **Cache Components** first, then **Partial Prefetching**. Shape each route as Stream, Cache, or deliberate Block:
 
 ```ts
 // app/next.config.ts — required
@@ -548,7 +548,7 @@ Colocate role- or domain-specific cached loaders in `app/src/lib/**` or `src/dat
 
 ### `'use cache'` — cross-request cache (Next.js 16)
 
-Colocate cached read functions in `src/data/**` with `import 'server-only'`. Tag names **must** match [`cache_revalidation_policy.md`](../../prds/05_runtime/cache_revalidation_policy.md).
+Colocate cached read functions in `src/data/**` with `import 'server-only'`. Tag names **must** match [`cache_revalidation_policy.md`](../../architecture/ADR-005-nextjs-vercel-runtime.md).
 
 ```tsx
 import 'server-only'
@@ -667,7 +667,7 @@ DATABASE_URL="postgresql://user:pass@ep-xxx-pooler.region.aws.neon.tech/dbname?s
 DIRECT_URL="postgresql://user:pass@ep-xxx.region.aws.neon.tech/dbname?sslmode=require"
 ```
 
-See [`neon_prisma_migrations_guide.md`](../../implementation/mvp/guides/neon_prisma_migrations_guide.md) and [`migration_runbook.md`](../../prds/06_operations/migration_runbook.md).
+See [`neon_prisma_migrations_guide.md`](../../architecture/ADR-001-migration-to-nextjs.md) and [`migration_runbook.md`](../../architecture/ADR-001-migration-to-nextjs.md).
 
 **2. Suspend timeout** — tune in Neon Console for production traffic patterns.
 
@@ -700,7 +700,7 @@ Auth/session alone does **not** require `loading.tsx`; add it when the page fetc
 
 ### Content
 
-Reproduce **page chrome** (container, vertical rhythm) with `<Skeleton />` — not a generic full-page spinner. Use `Container` from `@/components/ui/container` and skeleton shapes from [`ui_states_contract.md`](../../design/ui_states_contract.md) S1.
+Reproduce **page chrome** (container, vertical rhythm) with `<Skeleton />` — not a generic full-page spinner. Use `Container` from `@/components/ui/container` and skeleton shapes from [`ui_states_contract.md`](../../general/ai_agent_ui_ux_guideline.md) S1.
 
 Reuse the same skeleton component in `loading.tsx` and Suspense fallback when they represent the **same** layout.
 
@@ -735,7 +735,7 @@ export function TrainerCardSkeleton() {
 }
 ```
 
-Wireframe matrix: [`ui_states_contract.md`](../../design/ui_states_contract.md) — per-route skeleton shapes.
+Wireframe matrix: [`ui_states_contract.md`](../../general/ai_agent_ui_ux_guideline.md) — per-route skeleton shapes.
 
 ---
 
@@ -919,7 +919,7 @@ Run before finishing any `page.tsx`, segment `layout.tsx`, or colocated `loading
 ### C. Cache
 
 - [ ] Repeated reads in one request — React `cache()` or shared cached loader
-- [ ] Cross-request public reads — **`'use cache'`** + `cacheTag()` + `cacheLife()` per [`cache_revalidation_policy.md`](../../prds/05_runtime/cache_revalidation_policy.md) — **not** `unstable_cache`
+- [ ] Cross-request public reads — **`'use cache'`** + `cacheTag()` + `cacheLife()` per [`cache_revalidation_policy.md`](../../architecture/ADR-005-nextjs-vercel-runtime.md) — **not** `unstable_cache`
 - [ ] `cacheComponents: true` **and** `partialPrefetching: true` in `next.config.ts` (Instant Navigations best practice — §8.1)
 - [ ] Dynamic regions use Stream (`Suspense`) or Cache; Block (`instant = false`) only with a documented reason
 - [ ] With Instant Navigations on: Instant Insights overlay reviewed for the route; findings closed via Stream / Cache / Block (§8.1.1)
@@ -988,11 +988,11 @@ State briefly in PR/task which exception applies:
 
 | Document | Topic |
 |----------|-------|
-| [`cache_revalidation_policy.md`](../../prds/05_runtime/cache_revalidation_policy.md) | Tag registry, `updateTag` after mutations |
-| [`ui_states_contract.md`](../../design/ui_states_contract.md) | Empty/loading/error matrix per route |
+| [`cache_revalidation_policy.md`](../../architecture/ADR-005-nextjs-vercel-runtime.md) | Tag registry, `updateTag` after mutations |
+| [`ui_states_contract.md`](../../general/ai_agent_ui_ux_guideline.md) | Empty/loading/error matrix per route |
 | [`ai_auth_implementation_guide.md`](../auth/ai_auth_implementation_guide.md) | JWT, `proxy.ts`, split config |
 | [`ai_nextjs_db_data_handle.md`](./ai_nextjs_db_data_handle.md) | DAL, Server Actions vs Route Handlers |
-| [`neon_prisma_migrations_guide.md`](../../implementation/mvp/guides/neon_prisma_migrations_guide.md) | Pooler vs direct URLs |
+| [`neon_prisma_migrations_guide.md`](../../architecture/ADR-001-migration-to-nextjs.md) | Pooler vs direct URLs |
 | [`ai_vercel_runtime_compatibility.md`](./ai_vercel_runtime_compatibility.md) | Vercel streaming baseline |
 | [`ai_client_lazy_loading.md`](./ai_client_lazy_loading.md) | `next/dynamic`, heavy client deps — orthogonal to Suspense |
 | [Next.js: Loading UI and Streaming](https://nextjs.org/docs/app/building-your-application/routing/loading-ui-and-streaming) | Official API |
@@ -1001,9 +1001,9 @@ State briefly in PR/task which exception applies:
 | [Next.js: Cache Components](https://nextjs.org/docs/app/getting-started/cache-components) | `cacheComponents`, PPR, static + cached + dynamic mix |
 | [Next.js 16.2.6: Instant Navigations](https://nextjs.org/blog/next-16-3-instant-navigations) | Required §8.1 — Cache Components then `partialPrefetching` |
 | [Next.js: `instant` route segment config](https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config/instant) | Instant Insights validationLevel / per-segment `instant` — §8.1.1 |
-| [ADR-002 template](../../prds/07_governance/adr_002_nextjs_vercel_runtime_policy.template.md) | Pin 16.2.6 + §5.1 Instant Navigations required |
-| EdenGames [`ai_loading_patterns.md`](../../examples/ai_first_tmp/docs/docs/guidelines/nextjs/ai_loading_patterns.md) | Snapshot; former `ai_page_performance_streaming.md` merged into §4–§18 |
-| [`adr_010_nextjs_app_architecture_skill.md`](../../reference/adr_010_nextjs_app_architecture_skill.md) | External RSC skill — adopt/reject mapping |
+| [ADR-002 template](../../architecture/ADR-005-nextjs-vercel-runtime.md) | Pin 16.2.6 + §5.1 Instant Navigations required |
+| EdenGames ``ai_loading_patterns.md`` | Snapshot; former `ai_page_performance_streaming.md` merged into §4–§18 |
+| [`adr_010_nextjs_app_architecture_skill.md`](../../architecture/ADR-005-nextjs-vercel-runtime.md) | External RSC skill — adopt/reject mapping |
 
 ---
 

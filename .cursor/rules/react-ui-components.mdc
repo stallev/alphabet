@@ -38,7 +38,7 @@ alwaysApply: false
 ## Styling
 
 - Tailwind + **`cn()`** from `@/lib/utils`; variants via **cva**.
-- Semantic tokens per **ui-design-system** and [`{{INTERIM_DESIGN_SYSTEM_DOC}}`](docs/default_docs/{{INTERIM_DESIGN_SYSTEM_DOC}}).
+- Semantic tokens per **ui-design-system** and [`design_tokens_contract.md`](docs/implementation/contracts/design_tokens_contract.md).
 
 ## Equal-height card rows (обязательно)
 

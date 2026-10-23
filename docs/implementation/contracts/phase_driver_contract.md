@@ -4,7 +4,7 @@
 **Статус:** Canonical (скрипты написаны и проверены тестами 2026-10-23)  
 **Версия:** 1.0  
 **Дата:** 2026-10-23  
-**Зависит от:** [`agent-phase-orchestration.md`](../../guidelines/agent-phase-orchestration.md) (после R01-T18; до этого — [шаблон](../../examples/ai_first_tmp/docs/guidelines/agent-phase-orchestration.md)), [`phase_tasks.template.md`](../../meta/phase_tasks.template.md) (после R01-T8)  
+**Зависит от:** [`agent-phase-orchestration.md`](../../guidelines/agent-phase-orchestration.md), [`phase_tasks.template.md`](../../meta/phase_tasks.template.md)  
 **Реализация:** [`scripts/phase-driver.mjs`](../../../scripts/phase-driver.mjs), [`scripts/run-phase.mjs`](../../../scripts/run-phase.mjs), тесты — [`scripts/phase-driver.test.mjs`](../../../scripts/phase-driver.test.mjs)  
 **Смежные контракты:** [`cu_boundary_scripts_contract.md`](cu_boundary_scripts_contract.md), [`precommit_build_gate_contract.md`](precommit_build_gate_contract.md)  
 **Источник:** `docs/examples/ai_first_tmp/scripts/{phase-driver,run-phase}.mjs` (адаптация — §6)

@@ -5,7 +5,7 @@
 **Версия:** 1.0  
 **Дата:** YYYY-MM-DD  
 **Волна:** W{N}  
-**Зависит от:** [`R{NN}_phase_description.md`](../phases_tasks_descriptions/R{NN}_phase_description.md), contracts / specs, прошедшие [registry §2.3.6](../../../meta/documentation_registry.md#236-implementation-ready-dor-ready-checklist)  
+**Зависит от:** [`R{NN}_phase_description.md`](../phases_tasks_descriptions/R{NN}_phase_description.md), contracts / specs, прошедшие [registry §2.3.6](./documentation_registry.md#236-implementation-ready-dor-ready-checklist)  
 **Связанные документы:** [список путей]
 
 ---
@@ -61,7 +61,7 @@
 - [ ] R{NN}-T2 · T0 · Files: `app/src/lib/messages/...` · Acceptance: {проверка} → {исход}
       Paths: n/a — copy · UI: n/a — copy
 
-**CU DoD:** `npm run typecheck` · `npm run lint` · тесты по профилю D4 / D5 · `npm run db:seed` идемпотентен · UI-check по [`ai_ui_verification.md`](../../../guidelines/testing/ai_ui_verification.md) (строка `UI-check:` в ответе) · smoke {route} (H + N)
+**CU DoD:** `npm run typecheck` · `npm run lint` · тесты по профилю D4 / D5 · `npm run db:seed` идемпотентен · UI-check по [`ai_ui_verification.md`](../guidelines/testing/ai_ui_verification.md) (строка `UI-check:` в ответе) · smoke {route} (H + N)
 
 ### R{NN}-CU2 — feat(auth): {subject} · Review: reviewer · Smoke: none · Commit: auto
 
@@ -90,5 +90,5 @@
 | Document | Relationship |
 |----------|--------------|
 | [`R{NN}_phase_description.md`](../phases_tasks_descriptions/R{NN}_phase_description.md) | DoD фазы |
-| [`ai_agent_model_routing.md`](../../../meta/ai_agent_model_routing.md) | DoR, task tiers, commit units |
-| [`documentation_registry.md`](../../../meta/documentation_registry.md) §2.3.2a / §2.3.6 | Критерии путей H / N / S, DoR-ready документы |
+| [`ai_agent_model_routing.md`](./ai_agent_model_routing.md) | DoR, task tiers, commit units |
+| [`documentation_registry.md`](./documentation_registry.md) §2.3.2a / §2.3.6 | Критерии путей H / N / S, DoR-ready документы |

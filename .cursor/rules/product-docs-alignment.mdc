@@ -37,7 +37,7 @@ alwaysApply: true
 | Схема БД | [`docs/architecture/database_schema.md`](docs/architecture/database_schema.md) |
 | ADR | [`docs/architecture/`](docs/architecture/) |
 | Auth | [`docs/guidelines/auth/ai_auth_implementation_guide.md`](docs/guidelines/auth/ai_auth_implementation_guide.md) (создаётся в R01-CU6) |
-| Игры | [`docs/games/`](docs/games/) (после R02) |
+| Игры | [`R02_phase_description.md`](docs/implementation/phases/R02_phase_description.md) (`docs/games/` после R02) |
 | Guidelines | [`docs/guidelines/README.md`](docs/guidelines/README.md) (создаётся в R01-CU6) |
 
 ## Precedence

@@ -3,7 +3,7 @@
 Norms for **semantic HTML** and **WCAG 2.1 AA** in `app`.  
 **Cursor rule:** **ui-semantics-a11y**  
 **Deep dive:** [`docs/general/03-accessibility.md`](../../general/03-accessibility.md)  
-**Design system checklist:** [`visual_identity_contract.md`](../../design/visual_identity_contract.md), [`accessibility_requirements.md`](../../design/accessibility_requirements.md)
+**Design system checklist:** [`visual_identity_contract.md`](../../implementation/contracts/design_tokens_contract.md), [`accessibility_requirements.md`](../../general/03-accessibility.md)
 
 ---
 
@@ -174,10 +174,10 @@ Before finishing a UI task:
 | [`typography_text_guidelines.md`](../typography_text_guidelines.md) | Heading hierarchy, atoms |
 | [`ai_component_guidelines.md`](./ai_component_guidelines.md) | Component structure |
 | [`ai_form_handling_pattern.md`](./ai_form_handling_pattern.md) | Form a11y |
-| [`accessibility_requirements.md`](../../design/accessibility_requirements.md) | Product WCAG canon |
+| [`accessibility_requirements.md`](../../general/03-accessibility.md) | Product WCAG canon |
 | [`docs/general/03-accessibility.md`](../../general/03-accessibility.md) | Deep dive — focus trap, keyboard patterns |
 | [`ai_browser_rendering_performance.md`](./ai_browser_rendering_performance.md) | Motion / prefers-reduced-motion |
-| [`visual_identity_contract.md`](../../design/visual_identity_contract.md) | Contrast tokens |
+| [`visual_identity_contract.md`](../../implementation/contracts/design_tokens_contract.md) | Contrast tokens |
 | [`ui-mobile-first.mdc`](../../../.cursor/rules/ui-mobile-first.mdc) | Touch targets |
 
-**Reference:** EdenGames [`docs/examples/ai_first_tmp/](../../examples/ai_first_tmp/docs/) — a11y patterns; **Guidelines override EdenGames reference code**.
+**Reference:** шаблон `docs/examples/ai_first_tmp` в репозиторий не входит; **Guidelines override EdenGames reference code**.

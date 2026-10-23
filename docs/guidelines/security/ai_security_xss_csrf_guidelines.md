@@ -4,7 +4,7 @@
 **Methodology:** [`docs/meta/ai_first_methodology.md`](../../meta/ai_first_methodology.md)  
 **Deep dive:** [`docs/general/01-security-xss-csrf.md`](../../general/01-security-xss-csrf.md)  
 **Cursor rule:** **security-xss-csrf** · **auth-security** (auth layers)  
-**Runtime:** [ADR-002](../../prds/07_governance/adr_002_nextjs_vercel_runtime_policy.md) — CSP in **`proxy.ts`**
+**Runtime:** [ADR-002](../../architecture/ADR-005-nextjs-vercel-runtime.md) — CSP in **`proxy.ts`**
 
 AI agents **MUST** apply defense in depth — несколько слоёв, не одна мера.
 
@@ -123,6 +123,6 @@ XSS может обойти CSRF-токены — поэтому XSS опасн�
 | [`ai_auth_implementation_guide.md`](../auth/ai_auth_implementation_guide.md) | Auth.js layers, proxy |
 | [`ai_nextjs_db_data_handle.md`](../nextjs/ai_nextjs_db_data_handle.md) | Actions vs Route Handlers |
 | [`docs/general/01-security-xss-csrf.md`](../../general/01-security-xss-csrf.md) | Full theory + examples |
-| EdenGames reference | `docs/examples/ai_first_tmp/ |
+| EdenGames reference | шаблон `docs/examples/ai_first_tmp` не в репозитории |
 
 **Reference:** EdenGames (docs/examples/ai_first_tmp/) — security patterns; **current project Guidelines override EdenGames code**.

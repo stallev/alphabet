@@ -7,7 +7,7 @@
 
 > **Scope:** lazy loading of **Client Components** and heavy **client-only** dependencies. Complements server-side streaming in [`ai_loading_patterns.md`](./ai_loading_patterns.md) and RSC boundaries in [`ai_component_guidelines.md`](../react/ai_component_guidelines.md).
 
-**Deep dive:** [`docs/general/04-code-splitting.md`](../../general/04-code-splitting.md) — bundle theory, tree shaking, preload/prefetch.
+**Deep dive:** [`docs/general/04-code-splitting.md`](../../general/README.md) — bundle theory, tree shaking, preload/prefetch.
 
 **Official API (verify via Context7 `/vercel/next.js`):** [Next.js: Lazy loading](https://nextjs.org/docs/app/building-your-application/optimizing/lazy-loading)
 
@@ -108,7 +108,7 @@ DatePickerCalendarPanel.client.tsx   → Calendar + react-day-picker (or lazy im
 - `loading` skeleton must match **panel** size (limit CLS) — not the whole page skeleton.
 - Keep `aria-expanded` on trigger; panel region gets focus management via the shadcn Popover (Base UI).
 
-**Current state:** [`DatePickerField.client.tsx`](../../../app/src/components/ui/DatePickerField.client.tsx) lazy-loads [`DatePickerCalendarPanel.client.tsx`](../../../app/src/components/ui/DatePickerCalendarPanel.client.tsx) when popover is open (§4.2).
+**Current state:** ``DatePickerField.client.tsx`` lazy-loads ``DatePickerCalendarPanel.client.tsx`` when popover is open (§4.2).
 
 ### 4.3. Inline `dynamic` in a single client file
 
@@ -127,7 +127,7 @@ EdenGames examples (candidates): admin complaint resolution panels, multi-step u
 
 ### 4.5. Charts and analytics widgets
 
-**When:** `recharts` via [`chart.tsx`](../../../app/src/components/ui/chart.tsx).
+**When:** `recharts` via ``chart.tsx``.
 
 - Do **not** statically import `ChartContainer` from shared layouts or catalog cards used on many routes.
 - Prefer route-local chart component + `dynamic(..., { ssr: false })` when charts ship.
@@ -203,7 +203,7 @@ Apply when adding or materially changing:
 4. **`ssr: false`:** document in code comment **why** (browser API, library SSR break, intentional client-only).
 5. **`loading`:** provide a sized placeholder for `dynamic`; use `aria-hidden` when decorative during chunk load; match  skeletons (`@/components/ui/skeleton`).
 6. **One primary component per file** ([`react-one-component-per-file.mdc`](../../../.cursor/rules/react-one-component-per-file.mdc)); lazy **wrapper** may be a thin second file named `*-lazy.client.tsx` or colocated `dynamic` in the parent client file.
-7. **Design Lab catalog:** new heavy primitive → implement lazy pattern in catalog section **before** product routes import it ([`design_system_lab_spec.md`](../../implementation/mvp/specs/design_system_lab_spec.md)).
+7. **Design Lab catalog:** new heavy primitive → implement lazy pattern in catalog section **before** product routes import it ([`design_system_lab_spec.md`](../../implementation/contracts/design_tokens_contract.md)).
 
 ### 6.2 Checklist
 
@@ -219,11 +219,11 @@ Apply when adding or materially changing:
 
 ## 7. Audit backlog (EdenGames — May 2026)
 
-Prioritized by impact. Re-run after major UI deps or new shared client primitives. Verify shared-chunk bleed with production `npm run build` output (EdenGames snapshot: [`ai_client_lazy_loading.md`](../../examples/ai_first_tmp/docs/docs/guidelines/nextjs/) — `ai_bundle_analyze_steps.md` is not in this snapshot; use this guideline + `npm run build` chunk report).
+Prioritized by impact. Re-run after major UI deps or new shared client primitives. Verify shared-chunk bleed with production `npm run build` output (EdenGames snapshot: ``ai_client_lazy_loading.md`` — `ai_bundle_analyze_steps.md` is not in this snapshot; use this guideline + `npm run build` chunk report).
 
 | Priority | Surface | Issue | Suggested approach |
 |----------|---------|-------|-------------------|
-| **High** | `DatePickerField.client.tsx` | static `Calendar` → `react-day-picker` in shared UI | **Done:** §4.2 lazy panel when `open`; [`DatePickerCalendarPanel.client.tsx`](../../../app/src/components/ui/DatePickerCalendarPanel.client.tsx) |
+| **High** | `DatePickerField.client.tsx` | static `Calendar` → `react-day-picker` in shared UI | **Done:** §4.2 lazy panel when `open`; ``DatePickerCalendarPanel.client.tsx`` |
 | **High** | `components/ui/calendar.tsx` | heavy primitive in Design Lab + product import graph | keep implementation; consumers use lazy panel wrapper |
 | **Medium** | `TrainerScheduleExceptionsTab.client.tsx` | static `Calendar` on trainer schedule route | route split limits blast radius; optional lazy if tab is not default active |
 | **Medium** | `components/ui/chart.tsx` | `recharts` in shared UI | lazy-wrap before any product dashboard chart ships |
@@ -254,10 +254,10 @@ Prioritized by impact. Re-run after major UI deps or new shared client primitive
 | [`ai_loading_patterns.md`](./ai_loading_patterns.md) | `loading.tsx`, Suspense, streaming shell |
 | [`ai_component_guidelines.md`](../react/ai_component_guidelines.md) | RSC/client boundaries |
 | [`ai_form_handling_pattern.md`](../react/ai_form_handling_pattern.md) | Mutation pending vs route loading |
-| [`design_system_lab_spec.md`](../../implementation/mvp/specs/design_system_lab_spec.md) | Catalog before product import |
-| [`docs/general/04-code-splitting.md`](../../general/04-code-splitting.md) | Full bundle theory |
+| [`design_system_lab_spec.md`](../../implementation/contracts/design_tokens_contract.md) | Catalog before product import |
+| [`docs/general/04-code-splitting.md`](../../general/README.md) | Full bundle theory |
 | [`ai_browser_rendering_performance.md`](../react/ai_browser_rendering_performance.md) | TBT, animations |
-| EdenGames reference | `docs/examples/ai_first_tmp/ — bundle patterns |
+| EdenGames reference | шаблон `docs/examples/ai_first_tmp` не в репозитории |
 | [Next.js: Lazy loading](https://nextjs.org/docs/app/building-your-application/optimizing/lazy-loading) | Official API |
 | [Next.js: Loading UI and Streaming](https://nextjs.org/docs/app/building-your-application/routing/loading-ui-and-streaming) | Suspense (server layer) |
 | Index: [`README.md`](./README.md) | Next.js guidelines |

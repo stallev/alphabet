@@ -32,4 +32,4 @@ alwaysApply: true
 
 - [domain-literals-and-codes.mdc](domain-literals-and-codes.mdc)
 - [auth-security.mdc](auth-security.mdc)
-- [data-layer-prisma.mdc](data-layer-prisma.mdc) (до слияния в R01-CU5)
+- [data-server-actions-and-api.mdc](data-server-actions-and-api.mdc) (Prisma-слой после R01-CU5)

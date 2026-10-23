@@ -2,9 +2,9 @@
 
 **Version:** 1.2 · **Stack:** Next.js **16.2.6** App Router, React 19, Prisma v7, Neon, Vercel  
 **Methodology:** [`docs/meta/ai_first_methodology.md`](../../meta/ai_first_methodology.md)  
-**Runtime:** [ADR-002 template](../../prds/07_governance/adr_002_nextjs_vercel_runtime_policy.template.md)  
-**Reference:** EdenGames snapshot [`ai_nextjs_db_data_handle.md`](../../examples/ai_first_tmp/docs/docs/guidelines/nextjs/ai_nextjs_db_data_handle.md)  
-**iOS Safari:** [`docs/incidents/ios-safari-mutation-transport-pattern.md`](../../incidents/ios-safari-mutation-transport-pattern.md) · cursor rule **ios-safari-mutation-transport**
+**Runtime:** [ADR-002 template](../../architecture/ADR-005-nextjs-vercel-runtime.md)  
+**Reference:** EdenGames snapshot ``ai_nextjs_db_data_handle.md``  
+**iOS Safari:** ``docs/incidents/ios-safari-mutation-transport-pattern.md`` · cursor rule **ios-safari-mutation-transport**
 
 AI agents **MUST** follow this when implementing data access or mutations.
 
@@ -53,7 +53,7 @@ export default async function Page(props: {
 
 ## 5. Request interception (not in DAL)
 
-Route protection lives in **`proxy.ts`**, not in Server Actions. See [ADR-002](../../prds/07_governance/adr_002_nextjs_vercel_runtime_policy.md).
+Route protection lives in **`proxy.ts`**, not in Server Actions. See [ADR-002](../../architecture/ADR-005-nextjs-vercel-runtime.md).
 
 ---
 
@@ -61,7 +61,7 @@ Route protection lives in **`proxy.ts`**, not in Server Actions. See [ADR-002](.
 
 On **iOS Safari**, Server Action submits can fail with **`TypeError: Load failed`** (WebKit transport) without a server 5xx. EdenGames is **mobile-first** — treat as platform risk on conversion-critical flows.
 
-**Incident + pattern:** [`nextjs-server-actions-safari-load-failed.md`](../../incidents/nextjs-server-actions-safari-load-failed.md), [`ios-safari-mutation-transport-pattern.md`](../../incidents/ios-safari-mutation-transport-pattern.md).  
+**Incident + pattern:** ``nextjs-server-actions-safari-load-failed.md``, ``ios-safari-mutation-transport-pattern.md``.  
 **Cursor rule:** **ios-safari-mutation-transport**
 
 ### Class A — frequent / toggle (Route Handler primary)
@@ -105,5 +105,5 @@ When Sentry is enabled: `Sentry.setTag('submit_transport', 'server-action' | 'ro
 ## 8. Related rules
 
 - [`data-server-actions-and-api.mdc`](../../../.cursor/rules/data-server-actions-and-api.mdc)
-- [`ios-safari-mutation-transport.mdc`](../../../.cursor/rules/ios-safari-mutation-transport.mdc)
+- ``ios-safari-mutation-transport.mdc``
 - [`nextjs-vercel-app-router.mdc`](../../../.cursor/rules/nextjs-vercel-app-router.mdc)

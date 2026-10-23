@@ -7,7 +7,7 @@ alwaysApply: false
 # Admin interface: forms and layout
 
 **Normative doc:** [`docs/guidelines/nextjs/ai_admin_interface_requirements.md`](docs/guidelines/nextjs/ai_admin_interface_requirements.md)  
-**User flow:** [`admin_flow.md`](docs/prds/01_product_scope/user_flows/users_mvp/admin_flow.md)
+**User flow:** admin-потоки описываются в фазах продукта; отдельного `admin_flow.md` в репозитории нет.
 
 ## Buttons
 

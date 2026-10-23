@@ -10,7 +10,7 @@ alwaysApply: false
 
 **Methodology:** [`docs/meta/ai_first_methodology.md`](docs/meta/ai_first_methodology.md)  
 **Guide:** [`docs/guidelines/react/ai_browser_rendering_performance.md`](docs/guidelines/react/ai_browser_rendering_performance.md)  
-**Deep dive:** [`docs/general/05-browser-rendering.md`](docs/general/05-browser-rendering.md)  
+**Deep dive:** [`docs/general/README.md`](docs/general/README.md) — глава `05-browser-rendering` из шаблона не переносилась.  
 **Lazy bundles:** **react-ui-components** + [`ai_client_lazy_loading.md`](docs/guidelines/nextjs/ai_client_lazy_loading.md)
 
 ## Pixel pipeline

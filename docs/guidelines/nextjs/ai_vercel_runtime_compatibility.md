@@ -2,7 +2,7 @@
 
 **Project:** EdenGames — `app`  
 **Technologies:** Next.js **16.2.6**, React 19, TypeScript, **Vercel**, Neon PostgreSQL  
-**Canonical policy:** [ADR-002 template](../../prds/07_governance/adr_002_nextjs_vercel_runtime_policy.template.md), [ADR-001](../../prds/07_governance/adr_001_stack_and_runtime.md) (после W4)
+**Canonical policy:** [ADR-002 template](../../architecture/ADR-005-nextjs-vercel-runtime.md), [ADR-001](../../architecture/ADR-001-migration-to-nextjs.md) (после W4)
 
 ---
 
@@ -62,4 +62,4 @@ The web app deploys on **Vercel**. Framework and hosting choices must align with
 | Async / heavy work | Cron + jobs, not `unstable_after` |
 | Email | Resend |
 
-**Reference:** EdenGames snapshot [`ai_vercel_runtime_compatibility.md`](../../examples/ai_first_tmp/docs/docs/guidelines/nextjs/ai_vercel_runtime_compatibility.md) — Netlify baseline replaced per ADR-001.
+**Reference:** EdenGames snapshot ``ai_vercel_runtime_compatibility.md`` — Netlify baseline replaced per ADR-001.

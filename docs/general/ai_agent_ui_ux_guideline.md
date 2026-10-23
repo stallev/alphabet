@@ -636,7 +636,7 @@ className="md:rounded-3xl md:p-6"
 | `docs/guidelines/nextjs/ai_loading_patterns.md` | Route vs mutation loading |
 | `docs/guidelines/nextjs/ai_data_fetching_patterns.md` | DAL, cache, race conditions |
 | `docs/guidelines/security/ai_security_xss_csrf_guidelines.md` | XSS, CSRF, CSP |
-| `docs/examples/ai_first_tmp/ | EdenGames reference priority |
+| `docs/examples/ai_first_tmp` | EdenGames reference priority |
 | `docs/general/README.md` | General → Guidelines mapping |
 | `docs/default_docs/` |  visual canon |
 

@@ -92,4 +92,4 @@
 |----------|------|
 | [`repo_restructure_plan.md`](../../meta/repo_restructure_plan.md) | Источник решений и белого списка переноса |
 | [`R01_tasks.md`](R01_tasks.md) | Задачи и commit units |
-| [`docs/examples/ai_first_tmp/`](../../examples/ai_first_tmp/) | Источник переносимых файлов (read-only) |
+| `docs/examples/ai_first_tmp/` | Источник переносимых файлов; каталог в репозиторий не входит |

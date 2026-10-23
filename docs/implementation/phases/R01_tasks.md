@@ -6,7 +6,7 @@
 **Дата:** 2026-10-22  
 **Фаза:** R01  
 **Зависит от:** [`R01_phase_description.md`](R01_phase_description.md), [`repo_restructure_plan.md`](../../meta/repo_restructure_plan.md) (§A.2–§A.8)  
-**Связанные документы:** [`phase_tasks.template.md`](../../examples/ai_first_tmp/docs/meta/phase_tasks.template.md) (до переноса — в шаблоне)
+**Связанные документы:** [`phase_tasks.template.md`](../../meta/phase_tasks.template.md)
 
 ---
 
@@ -70,7 +70,7 @@
       Acceptance: скрипты драйвера уже в репозитории (проверка: `git ls-files scripts` содержит `phase-driver.mjs`, `run-phase.mjs`, `cu-verify.mjs`, `cu-commit.mjs`, `precommit-build-check.mjs`, `check-build-isolation.mjs` и три `*.test.mjs`); в `package.json` добавлены `cu:verify` (`node scripts/cu-verify.mjs`), `cu:commit`, `phase:run` (`node scripts/run-phase.mjs`); `.cursorignore` содержит `docs/examples/`, `docs/archive/`, `node_modules/`, `.next/`, `generated/`; выполнены критерии соответствия §8 [phase_driver_contract](../contracts/phase_driver_contract.md) → `npm run test` зелёный; `node scripts/run-phase.mjs R01 --environment cursor` на дереве с одним завершённым CU печатает `STATUS: cu R01-CU2` (проверка на временной копии файла задач, не коммитится); `node scripts/cu-verify.mjs` сообщает `cu-verify: ok`
       Paths: H [phase_driver §8] · N [неверный id фазы (`X01`) → `run-phase: phase`; отсутствующий файл задач → ошибка; `cu-commit ... --amend` → `forbidden`]
 
-- [x] R01-T7a · T1 · Spec: [`prompts/phase-implementation.md`](../../examples/ai_first_tmp/prompts/phase-implementation.md), [`prompts/launch-prompts.md`](../../examples/ai_first_tmp/prompts/launch-prompts.md)
+- [x] R01-T7a · T1 · Spec: [`prompts/phase-implementation.md`](../../prompts/phase-implementation.md), [`prompts/launch-prompts.md`](../../prompts/launch-prompts.md)
       Files: `docs/prompts/phase-implementation.md`, `docs/prompts/launch-prompts.md`
       Acceptance: перенесены и адаптированы: идентификаторы `R{NN}`, путь `docs/implementation/phases/R{NN}_tasks.md`, среда по умолчанию — Cursor AI, раздел Claude Code и dev-учётки удалены; в `launch-prompts.md` оставлены только фразы запуска фазы, Phase DoR audit и возобновления прогона → пример стартовой фразы для R02 присутствует; фразы согласованы с [`phase_driver_contract.md` §4](../contracts/phase_driver_contract.md)
       Paths: n/a — docs-only
@@ -175,7 +175,7 @@
       Files: `docs/architecture/ADR-004-game-routing-and-registry.md`
       Acceptance: Decision — `/<slug>`, реестр игр, зарезервированные slug'и, `dynamicParams = false`, редирект `/game`; Rejected — `/games/<slug>`, `/play/<slug>`, автообнаружение игр по файловой системе
       Paths: n/a — docs-only
-- [x] R01-T27 · T2 · Spec: [`docs/examples/ai_first_tmp/docs/prds/07_governance/adr_002_nextjs_vercel_runtime_policy.template.md`](../../examples/ai_first_tmp/docs/prds/07_governance/adr_002_nextjs_vercel_runtime_policy.template.md)
+- [x] R01-T27 · T2 · Spec: [`ADR-005-nextjs-vercel-runtime.md`](../../architecture/ADR-005-nextjs-vercel-runtime.md)
       Files: `docs/architecture/ADR-005-nextjs-vercel-runtime.md`
       Acceptance: адаптирован под фактический стек (Next.js 16.2.6, Node по `engines`, Vercel, Neon, Prisma 7, `proxy.ts`); `cacheComponents`/Instant Navigations — «не включено, вернуться отдельным ADR»; расхождения с прежним `AGENTS.md` (Prisma 6.x → 7.x) зафиксированы
       Paths: n/a — docs-only
@@ -192,7 +192,7 @@
 
 ### R01-CU8 — docs(docs): rewrite agent instructions and readme, close phase · Review: diff-only · Smoke: none · Commit: auto
 
-- [x] R01-T30 · T2 · Spec: [`AGENTS.template.md`](../../examples/ai_first_tmp/AGENTS.template.md), [`repo_structure_contract.md`](../contracts/repo_structure_contract.md) §1, [plan §A.3](../../meta/repo_restructure_plan.md)
+- [x] R01-T30 · T2 · Spec: [`AGENTS.md`](../../../AGENTS.md), [`repo_structure_contract.md`](../contracts/repo_structure_contract.md) §1, [plan §A.3](../../meta/repo_restructure_plan.md)
       Files: `AGENTS.md`
       Acceptance: ≤ 120 строк; разделы — суть проекта, методология (ссылки), профиль качества, целевая структура (с пометкой «достигается в R02–R03»), инварианты ([`repo_structure_contract.md`](../contracts/repo_structure_contract.md) §5), роли пользователей, цикл агента, коммиты/ревью (ссылки на правила), точки входа в документацию, текущий статус (`R01` → список фаз и ссылки), проверки перед коммитом; стек и версии соответствуют `package.json`; нет Pulse/monorepo/`{{` → `wc -l AGENTS.md` ≤ 120; все ссылки открываются
       Paths: n/a — docs-only
@@ -214,8 +214,8 @@
 - [x] Чек-лист [plan §A.8](../../meta/repo_restructure_plan.md) выполнен (артефакты R01 по commit plan)
 - [x] Список понижённых lint-правил (legacy) записан здесь: `@typescript-eslint/no-explicit-any` (warn); `react/no-unescaped-entities` (warn); `react-hooks/set-state-in-effect` (warn) — см. `eslint.config.mjs` `// legacy: …`
 - [x] Dry-run драйвера (T32): `node scripts/run-phase.mjs R01 --environment cursor` → `STATUS: cu R01-CU8`, блок IMPLEMENTER для открытого CU
-- [ ] `npm run docs:links` (T32): сейчас 83 битых (в основном `docs/guidelines/**` и tier-2 `.cursor/rules` → несуществующие PRD/design); в `docs/implementation/**` — 2 legacy `mvp/` в `.mdc` (вне Files CU8)
-- [x] Вопросы, оставшиеся к владельцу: Phase DoR audit не подписан; `lean` / **EdenGames** — по умолчанию; **`docs:links` не зелёный (83)** — чинить guidelines/rules в отдельном CU или расширить allowlist?
+- [x] `npm run docs:links` (T32): относительные ссылки ведут на файлы репозитория; пути шаблона `docs/examples/ai_first_tmp` больше не являются ссылками
+- [x] Вопросы, оставшиеся к владельцу: Phase DoR audit не подписан; `lean` / **EdenGames** — по умолчанию
 
 ---
 

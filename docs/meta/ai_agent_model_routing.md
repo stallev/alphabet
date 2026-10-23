@@ -5,7 +5,7 @@
 **Версия:** 2.1  
 **Дата:** 2026-10-17  
 **Зависит от:** [`ai_first_methodology.md`](./ai_first_methodology.md) §2.2–§2.5, [`.cursor/rules/model-routing.mdc`](../../.cursor/rules/model-routing.mdc), [`documentation_registry.md`](./documentation_registry.md) §2.3.2a / §2.3.6  
-**Связанные документы:** [`AGENTS.md`](../../AGENTS.md) (после bootstrap; до него — [`AGENTS.template.md`](../../AGENTS.template.md)), [`phase_tasks.template.md`](./phase_tasks.template.md), [`docs/guidelines/ai_code_review_protocol.md`](../guidelines/ai_code_review_protocol.md)
+**Связанные документы:** [`AGENTS.md`](../../AGENTS.md), [`phase_tasks.template.md`](./phase_tasks.template.md), [`docs/guidelines/ai_code_review_protocol.md`](../guidelines/ai_code_review_protocol.md)
 
 ---
 
@@ -24,7 +24,7 @@
 
 - Bugbot и skill `review-bugbot` (платный контур; в репозитории запрещён);
 - Security Review (`review-security`) — только по явной просьбе пользователя; это не субагент `reviewer`;
-- выбор продуктовых фич и процесс ADR (процесс — [`decision_process.template.md`](../prds/07_governance/decision_process.template.md)).
+- выбор продуктовых фич и процесс ADR (процесс — [`decision_process.md`](../architecture/decision_process.md)).
 
 **Две оси с одним именем «tier».** T0–T2 в [`.cursor/rules/README.md`](../../.cursor/rules/README.md) — это **когда копировать Cursor Rules** (bootstrap / implementation / Design Lab). T0–T3 в этом файле — **как дёшево выполнить задачу**. Не смешивать.
 
@@ -103,7 +103,7 @@ Sensitive zones — `middleware.ts`, `lib/auth.ts`, `lib/auth.config.ts`, `prism
 
 ## Исполнение фазы
 
-Канон потока — [`agent-phase-orchestration.md`](../guidelines/agent-phase-orchestration.md). Запуск — [`prompts/phase-implementation.md`](../../prompts/phase-implementation.md). Здесь только граница с этим контрактом.
+Канон потока — [`agent-phase-orchestration.md`](../guidelines/agent-phase-orchestration.md). Запуск — [`prompts/phase-implementation.md`](../prompts/phase-implementation.md). Здесь только граница с этим контрактом.
 
 Пока фаза запущена драйвером:
 
