@@ -8,7 +8,7 @@ description: >
 
 # App conventions
 
-**Контракт структуры:** [`docs/implementation/contracts/repo_structure_contract.md`](../../docs/implementation/contracts/repo_structure_contract.md) §1  
+**Контракт структуры:** [`docs/implementation/contracts/repo_structure_contract.md`](../../../docs/implementation/contracts/repo_structure_contract.md) §1  
 **Правила:** [`.cursor/rules/README.md`](../../rules/README.md) — канонический манифест
 
 ## Приоритет
@@ -17,7 +17,7 @@ description: >
 2. Этот skill
 3. `docs/guidelines/**`
 
-## Целевое дерево (R02–R03)
+## Дерево (после R02)
 
 ```
 app/                 — маршруты, тонкие page/layout
@@ -27,27 +27,27 @@ server/auth|db       — Auth.js, Prisma singleton
 proxy.ts             — JWT gate (auth.config only)
 ```
 
-Текущий legacy: `lib/`, `src/data`, `src/actions`, `components/` — см. ADR-001 до R02.
+Первая игра: `games/alphabet/`. Описание: [`docs/games/alphabet.md`](../../../docs/games/alphabet.md).
 
 ## Область работы → правила
 
 | Область | Правила | Документы |
 |---------|---------|-----------|
-| Маршруты / Next | `nextjs-vercel-app-router`, `app-router-streaming-loading` | `docs/guidelines/nextjs/` (CU6) |
-| Auth / admin API | `auth-security`, `security-xss-csrf` | ADR-001, auth guide (CU6) |
-| Данные / Prisma | `data-server-actions-and-api`, `admin-json-import` | `prisma/schema.prisma` |
+| Маршруты / Next | `nextjs-vercel-app-router`, `app-router-streaming-loading` | `docs/guidelines/nextjs/` |
+| Auth / admin API | `auth-security`, `security-xss-csrf` | ADR-001, auth guide |
+| Данные / Prisma | `data-server-actions-and-api`, `admin-json-import` | `database_schema.md`, `prisma/schema.prisma` |
 | UI компоненты | `react-ui-components`, `react-one-component-per-file`, `ui-design-system` | design_tokens, game_kit contracts |
 | Копирайт / i18n | `ui-messages-and-copy`, `ui-messages-bundle-splitting` | `i18n_contract.md` |
 | Игровая логика | `testing`, `domain-literals-and-codes` | `games/<slug>/logic/*.test.ts` |
 | Зависимости | `dependency-pinning` | `npm run deps:check` |
-| Импорты между слоями | `import-boundaries` (**R02**) | `repo_structure_contract` §3 |
+| Импорты между слоями | `import-boundaries` | `repo_structure_contract` §3 |
 | Новая игра | `game-module-contract` (**R03**) | game_manifest, game_routing contracts |
 
 ## Чеклист фичи
 
 1. Типы/коды — `shared/domain` при кросс-модульном использовании
-2. Чтение — DAL `src/data/**` или `games/<slug>/server/**` (после R02)
+2. Чтение — `games/<slug>/server/**` или портальный DAL в `server/**`
 3. Мутация — тонкий Server Action + `revalidateTag` / `redirect`
-4. UI — примитивы из `shared/ui` / каркас `shared/game-kit` (целевое)
+4. UI — примитивы из `shared/ui` / каркас `shared/game-kit` (R03)
 5. Строки — `shared/i18n` или `games/<slug>/i18n`
 6. Поведение изменилось — **product-docs-alignment**

@@ -1,7 +1,7 @@
 import 'server-only';
 
 import { NextRequest, NextResponse } from 'next/server';
-import { auth } from '@/lib/auth';
+import { auth } from '@/server/auth/auth';
 
 const FALLBACK_CHAIN = [
   'qwen/qwen-2.5-72b-instruct:free',

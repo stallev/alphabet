@@ -2,10 +2,9 @@
 description: DAL, Server Actions vs Route Handlers, Prisma/Neon, Zod validation
 globs:
   - "prisma/**"
-  - "lib/db*"
-  - "lib/validators/**"
-  - "src/data/**"
-  - "src/actions/**"
+  - "server/**"
+  - "games/**/validators/**"
+  - "games/**/server/**"
   - "app/api/**"
 alwaysApply: false
 ---
@@ -13,7 +12,7 @@ alwaysApply: false
 # Data access — Server Actions, API, Prisma
 
 **Schema:** [`prisma/schema.prisma`](../../prisma/schema.prisma)  
-**Singleton:** [`lib/db.ts`](../../lib/db.ts) — единственное место `new PrismaClient()`  
+**Singleton:** [`server/db/client.ts`](../../server/db/client.ts) — единственное место `new PrismaClient()`  
 **Auth:** проверка `auth()` в каждом защищённом Action/Handler (**auth-security**)
 
 ## Server Action vs Route Handler
@@ -25,19 +24,19 @@ alwaysApply: false
 
 Server Action из клиента перерисовывает RSC на текущей странице; Route Handler + `fetch` — нет.
 
-## DAL (`src/data/**`)
+## DAL (`server/**`, `games/<slug>/server/**`)
 
 - `import 'server-only'` обязательно
-- Импорт `prisma` только из `@/lib/db`
+- Импорт `prisma` только из `@/server/db/client`
 - Plain-аргументы, типизированные возвраты, вся Prisma-логика здесь
 
-## Server Actions (`src/actions/**`)
+## Server Actions (`games/<slug>/server/actions/**`)
 
 Тонкие: `auth()` → Zod `safeParse` → DAL → `revalidateTag` / `redirect`. Без бизнес-логики в Action.
 
 ## Zod
 
-Схемы входящих JSON — `lib/validators/**`; импорт наборов — **admin-json-import**.
+Схемы входящих JSON — `games/<slug>/validators/**`; импорт наборов — **admin-json-import**.
 
 ## Neon / миграции
 
@@ -47,7 +46,7 @@ Server Action из клиента перерисовывает RSC на теку
 
 ## Checklist
 
-- [ ] Нет `new PrismaClient()` вне `lib/db.ts`
+- [ ] Нет `new PrismaClient()` вне `server/db/client.ts`
 - [ ] DAL — `server-only`
 - [ ] Admin мутации — `role === 'admin'`
 - [ ] JSON-импорт проходит Zod до записи в БД

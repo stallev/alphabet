@@ -31,6 +31,7 @@
 | `testing.mdc` | globs | Vitest (lean), размещение тестов |
 | `app-router-streaming-loading.mdc` | globs | Suspense, `loading.tsx` |
 | `admin-json-import.mdc` | globs | JSON импорт наборов (Alphabet / R02) |
+| `import-boundaries.mdc` | globs | Границы импортов `games/*` / `shared/*` / `server/*` (R02) |
 
 ## Tier 2 — globs (UI)
 
@@ -58,7 +59,6 @@
 
 | Rule | Фаза | Назначение |
 |------|------|------------|
-| `import-boundaries.mdc` | R02 | Границы импортов `games/*` / `shared/*` / `server/*` |
 | `game-module-contract.mdc` | R03 | Manifest игры, `GameShell` |
 
 Правила из плана «Не переносить» (`policy-packages`, `s3-file-asset-uploads`, `ios-safari-mutation-transport`, `psi-lab-testing`, `ui-prototype-fidelity`, `ui-runtime-verification`) в каталоге отсутствуют.

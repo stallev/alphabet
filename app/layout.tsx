@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { GoogleAnalytics } from '@next/third-parties/google';
-import { AuthSessionProvider } from '@/components/AuthSessionProvider';
+import { AuthSessionProvider } from '@/shared/providers/AuthSessionProvider';
 import './globals.css';
 
 const inter = Inter({

@@ -1,4 +1,4 @@
-import { SuiteImportForm } from '@/components/admin/SuiteImportForm';
+import { SuiteImportForm } from '@/app/admin/_components/SuiteImportForm';
 
 export const metadata = { title: 'Import Suite — Admin Alphabet' };
 

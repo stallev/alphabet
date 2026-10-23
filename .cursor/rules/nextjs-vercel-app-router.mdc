@@ -31,14 +31,14 @@ Pin matching `eslint-config-next` to the same patch. No Next.js 15 patterns.
 | `export function middleware()` | **`export async function proxy()`** |
 | Edge runtime | **Node.js** in proxy |
 
-- Auth in proxy: **only** `lib/auth.config.ts` — never `lib/auth.ts` (Prisma).
+- Auth in proxy: **only** `server/auth/auth.config.ts` — never `server/auth/auth.ts` (Prisma).
 - Do not add new auth gates in `middleware.ts`.
 
 ## Required practices
 
 - **Async Request APIs:** `await cookies()`, `await headers()`, `await params`, `await searchParams`
 - **Server Components by default** — `'use client'` only for hooks, browser APIs, Zustand, Framer Motion
-- **Thin BFF:** Route Handlers / Server Actions → DAL `src/data/**` (см. **data-server-actions-and-api**)
+- **Thin BFF:** Route Handlers / Server Actions → DAL `server/**` и `games/<slug>/server/**` (см. **data-server-actions-and-api**)
 - **Cache invalidation:** `revalidateTag`, `revalidatePath`, `redirect` after mutations
 - **Cross-request reads:** prefer React `cache()` in request scope; `'use cache'` / PPR / Instant Navigations — **не включено** (отдельный ADR при необходимости)
 
@@ -50,14 +50,14 @@ app/(game)/   — публичная игра
 app/admin/**  — admin (role gate в proxy)
 app/api/**    — Auth.js + Admin API
 components/   — клиентские UI (`'use client'`)
-src/data/**   — DAL (server-only)
-src/actions/** — тонкие Server Actions
+server/**     — auth и Prisma singleton (`server-only`)
+games/<slug>/server/** — DAL и Server Actions игры
 ```
 
 ## Запрещено
 
 - `import { useRouter } from 'next/router'` → `next/navigation`
 - `getServerSideProps` / Pages Router data APIs
-- `new PrismaClient()` вне `lib/db.ts` (до R02 — `server/db/`)
-- `import { auth } from '@/lib/auth'` в `proxy.ts`
+- `new PrismaClient()` вне `server/db/client.ts`
+- `import { auth } from '@/server/auth/auth'` в `proxy.ts`
 - Обязательное `cacheComponents: true` / Instant Navigations без ADR

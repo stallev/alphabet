@@ -2,17 +2,16 @@
 description: Admin панель — JSON импорт наборов вопросов, формат, валидация
 globs:
   - "app/admin/**"
-  - "src/actions/admin/**"
-  - "src/data/suites/**"
-  - "lib/validators/**"
+  - "games/alphabet/server/**"
+  - "games/alphabet/validators/**"
 alwaysApply: false
 ---
 
 # Admin JSON Import — наборы вопросов
 
-**Область:** `games/alphabet` после R02 (текущие пути — legacy до переноса).  
+**Область:** `games/alphabet`.  
 **ADR:** [`docs/architecture/ADR-001-migration-to-nextjs.md`](../../docs/architecture/ADR-001-migration-to-nextjs.md)  
-**Validator:** [`lib/validators/suite-import.ts`](../../lib/validators/suite-import.ts)
+**Validator:** [`games/alphabet/validators/suite-import.ts`](../../games/alphabet/validators/suite-import.ts)
 
 ## Канонический JSON формат набора
 
@@ -127,8 +126,8 @@ type ImportResult =
 ## Примеры существующих JSON файлов
 
 Эталонные файлы для тестирования импорта:
-- [`data/christmas.json`](../../data/christmas.json)
-- [`data/acts.json`](../../data/acts.json)
-- [`data/kings_ru.json`](../../data/kings_ru.json)
+- [`games/alphabet/data/christmas.json`](../../games/alphabet/data/christmas.json)
+- [`games/alphabet/data/acts.json`](../../games/alphabet/data/acts.json)
+- [`games/alphabet/data/kings_ru.json`](../../games/alphabet/data/kings_ru.json)
 
 Эти файлы уже соответствуют каноническому формату.

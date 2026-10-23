@@ -6,7 +6,7 @@ import { PrismaClient } from '../generated/client';
 import { PrismaNeon } from '@prisma/adapter-neon';
 import { readFileSync } from 'fs';
 import { join } from 'path';
-import { suiteImportSchema } from '../lib/validators/suite-import';
+import { suiteImportSchema } from '../games/alphabet/validators/suite-import';
 
 const adapter = new PrismaNeon({ connectionString: process.env.DATABASE_URL! });
 const prisma = new PrismaClient({ adapter });

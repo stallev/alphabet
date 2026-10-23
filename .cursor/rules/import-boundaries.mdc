@@ -1,0 +1,24 @@
+---
+description: Import boundaries between games, shared, and server layers
+globs:
+  - "games/**"
+  - "shared/**"
+  - "server/**"
+alwaysApply: false
+---
+
+# Import boundaries
+
+**Contract:** [`docs/implementation/contracts/repo_structure_contract.md`](../../docs/implementation/contracts/repo_structure_contract.md) §3–§3.1
+
+## Контракт
+
+- Импорты между слоями — только через алиас `@/…`; матрица «кто кого» — в контракте §3.
+- ESLint `no-restricted-imports` в [`eslint.config.mjs`](../../eslint.config.mjs) строится программно по каталогам `games/*` (кроме `_template`).
+- Нарушение границы — ошибка `npm run lint`; регрессии ловит `scripts/check-boundaries.test.mjs` на фикстуре `scripts/lint-fixtures/`.
+
+## Агенту
+
+- Перед новым импортом между `games/`, `shared/`, `server/`, `app/` — свериться с таблицей в контракте.
+- Клиентские файлы не импортируют `server/**` и `*.server.ts`.
+- `games/registry.ts` — единственная точка регистрации игр; `app/` публичные страницы — только через реестр.

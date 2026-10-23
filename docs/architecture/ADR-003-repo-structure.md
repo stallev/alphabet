@@ -56,6 +56,24 @@ N/A — структура каталогов; auth остаётся по ADR-00
 
 ---
 
+## Реализация (фаза R02)
+
+Структура §1 [`repo_structure_contract.md`](../implementation/contracts/repo_structure_contract.md) внедрена коммитами R02:
+
+| CU | Commit | Subject |
+|----|--------|---------|
+| R02-CU1 | `c5cee76` | feat(games): registry, manifest types, import boundaries |
+| R02-CU2 | `9190a43` | refactor(server): auth and db → `server/` |
+| R02-CU3 | `f123415` | refactor(games): alphabet client → `games/alphabet/` |
+| R02-CU4 | `11a85fa` | refactor(games): alphabet data and server code |
+| R02-CU5 | `c6eb93c` | feat(portal): `[game]` route, manifest, catalog |
+| R02-CU6 | `583cb37` | chore(config): remove Vite remnants |
+| R02-CU7 | `1eeb9b4` | docs: alphabet, `database_schema.md`, `AGENTS.md` |
+
+Документация игры: [`docs/games/alphabet.md`](../games/alphabet.md). Схема БД: [`database_schema.md`](./database_schema.md).
+
+---
+
 ## Критерии соответствия
 
 - [ ] Дерево соответствует §1 `repo_structure_contract.md`

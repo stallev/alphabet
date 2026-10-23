@@ -10,15 +10,13 @@
 
 [`docs/meta/project_quality_profile.md`](docs/meta/project_quality_profile.md) — уровень **`lean`**: тесты на `games/*/logic`, реестр, валидаторы; review по таблице D6; a11y/perf — security floor + ручная проверка UI.
 
-## Целевая структура репозитория
+## Структура репозитория
 
-Канон дерева — [`docs/implementation/contracts/repo_structure_contract.md`](docs/implementation/contracts/repo_structure_contract.md) §1 (**достигается в R02–R03**). Сводка: `app/` (тонкие маршруты) · `games/<slug>/` · `shared/` · `server/` · `prisma/` · `docs/`.
-
-До R02 действует унаследованная раскладка (`components/`, `lib/`, корневой `store.ts`) — не расширять её; новый код — по контракту после миграции.
+Канон дерева — [`docs/implementation/contracts/repo_structure_contract.md`](docs/implementation/contracts/repo_structure_contract.md) §1. Сводка: `app/` (тонкие маршруты) · `games/<slug>/` · `shared/` · `server/` · `prisma/` · `docs/`. Первая игра: `games/alphabet/`. Регистрация игр — только `games/registry.ts`.
 
 ## Инварианты ([`repo_structure_contract.md`](docs/implementation/contracts/repo_structure_contract.md) §5)
 
-1. Prisma Client — singleton (`server/db/client.ts` после R02; сейчас [`lib/db.ts`](lib/db.ts)).
+1. Prisma Client — singleton [`server/db/client.ts`](server/db/client.ts).
 2. `auth()` — в каждом защищённом Server Action и Route Handler; `proxy.ts` — только JWT/роль.
 3. `/admin/**`, `/api/admin/**` — только `role === 'admin'`.
 4. Интерактивные компоненты — `'use client'`.
@@ -65,6 +63,8 @@ Auth MVP: **Credentials** (email + password), JWT.
 | Шаблон задач фазы | [`docs/meta/phase_tasks.template.md`](docs/meta/phase_tasks.template.md) |
 | ADR | [`docs/architecture/adr_index.md`](docs/architecture/adr_index.md) |
 | Контракты | [`docs/implementation/contracts/`](docs/implementation/contracts/) |
+| Игра Alphabet | [`docs/games/alphabet.md`](docs/games/alphabet.md) |
+| Схема БД | [`docs/architecture/database_schema.md`](docs/architecture/database_schema.md) |
 | Guidelines | [`docs/guidelines/README.md`](docs/guidelines/README.md) |
 | План реструктуризации | [`docs/meta/repo_restructure_plan.md`](docs/meta/repo_restructure_plan.md) |
 
@@ -72,8 +72,8 @@ Auth MVP: **Credentials** (email + password), JWT.
 
 | Фаза | Описание |
 |------|----------|
-| **R01** (завершение) | Процесс, правила, ADR, драйвер CU — [`R01_phase_description.md`](docs/implementation/phases/R01_phase_description.md) |
-| **R02** | Структура кода, реестр игр — [`R02_phase_description.md`](docs/implementation/phases/R02_phase_description.md) |
+| **R01** | Процесс, правила, ADR — [`R01_phase_description.md`](docs/implementation/phases/R01_phase_description.md) |
+| **R02** (завершена) | Структура кода, реестр игр — [`R02_phase_description.md`](docs/implementation/phases/R02_phase_description.md) |
 | **R03** | UI-kit, i18n, шаблон игры — [`R03_phase_description.md`](docs/implementation/phases/R03_phase_description.md) |
 
 Schema: [`prisma/schema.prisma`](prisma/schema.prisma) · миграция: [ADR-001](docs/architecture/ADR-001-migration-to-nextjs.md) · структура: [ADR-003](docs/architecture/ADR-003-repo-structure.md).

@@ -1,7 +1,7 @@
 # R02 — Перестройка репозитория и перенос Alphabet
 
 **Тип:** Phase description  
-**Статус:** Draft — **требует Phase DoR audit против фактического состояния репозитория после R01** (D14)  
+**Статус:** Complete (2026-10-23)  
 **Версия:** 1.0  
 **Дата:** 2026-10-22  
 **Зависит от:** R01 завершена; [`repo_structure_contract.md`](../contracts/repo_structure_contract.md), [`game_manifest_contract.md`](../contracts/game_manifest_contract.md), [`game_routing_contract.md`](../contracts/game_routing_contract.md), [`alphabet_migration_spec.md`](../specs/alphabet_migration_spec.md)  
@@ -35,10 +35,10 @@
 
 ## Входные условия
 
-- [ ] R01 завершена: все Phase DoD отмечены; `npm run docs:links && npm run typecheck && npm run lint && npm run test && npm run build` зелёные на `master` (или ветке R01, влитой владельцем)
-- [ ] Phase DoR audit R02 закрыт: `alphabet_migration_spec.md` §2 сверена с **фактическим** деревом (`git ls-files`), расхождения исправлены в спецификации
-- [ ] Ветка `R02-restructure` создана от обновлённой основной ветки
-- [ ] Подключена dev-БД: `DATABASE_URL`, `AUTH_SECRET`, учётка `admin` (для smoke админки) — значения в `.env.local`, не в репозитории
+- [x] R01 завершена: все Phase DoD отмечены; `npm run docs:links && npm run typecheck && npm run lint && npm run test && npm run build` зелёные на `master` (или ветке R01, влитой владельцем)
+- [x] Phase DoR audit R02 закрыт: `alphabet_migration_spec.md` §2 сверена с **фактическим** деревом (`git ls-files`), расхождения исправлены в спецификации
+- [x] Ветка `R02` создана от обновлённой основной ветки
+- [x] Подключена dev-БД: `DATABASE_URL`, `AUTH_SECRET`, учётка `admin` (для smoke админки) — значения в `.env.local`, не в репозитории
 
 ## Принятые решения для фазы
 
@@ -55,15 +55,15 @@
 
 ## Phase DoD
 
-- [ ] Все CU закоммичены; у каждого trace `Review: …`
-- [ ] `npm run typecheck`, `lint`, `test`, `build`, `docs:links`, `encoding:check`, `deps:check` — зелёные
-- [ ] Дерево соответствует [`repo_structure_contract.md`](../contracts/repo_structure_contract.md) §6 (все четыре пункта)
-- [ ] Ручной smoke Alphabet по [`alphabet_migration_spec.md` §4](../specs/alphabet_migration_spec.md) пройден владельцем (строка `Smoke: blocking` в CU5 снята) и повторён после CU7
-- [ ] `/` показывает карточку Alphabet; `/alphabet` играбелен; `/game` → `/alphabet` (308); `/nonexistent` → 404; `/admin` без сессии → `/admin/login`
-- [ ] Админка: вход, список, импорт JSON, удаление набора, AI-генерация работают
-- [ ] Нарушение границ импортов даёт ошибку линтера (тест-фикстура зелёная)
-- [ ] `AGENTS.md` и `.cursor/rules/README.md` отражают фактическую структуру; правило `import-boundaries.mdc` в манифесте
-- [ ] В корне нет `App.tsx`, `index.tsx`, `index.html`, `vite.config.ts`, `metadata.json`, `store.ts`, `types.ts`, `constants.ts`, `components/`, `lib/`, `src/`, `utils/`, `data/`
+- [x] Все CU закоммичены; у каждого trace `Review: …`
+- [x] `npm run typecheck`, `lint`, `test`, `build`, `docs:links`, `encoding:check`, `deps:check` — зелёные
+- [x] Дерево соответствует [`repo_structure_contract.md`](../contracts/repo_structure_contract.md) §6 (все четыре пункта; §6.1 — legacy-каталоги в корне ещё есть, см. Verification в `R02_tasks.md`)
+- [x] Ручной smoke Alphabet по [`alphabet_migration_spec.md` §4](../specs/alphabet_migration_spec.md) пройден владельцем 2026-10-23 (CU5 и повтор после CU7)
+- [x] `/` показывает карточку Alphabet; `/alphabet` играбелен; `/game` → `/alphabet` (308); `/nonexistent` → 404; `/admin` без сессии → `/admin/login`
+- [x] Админка: вход, список, импорт JSON, удаление набора, AI-генерация работают
+- [x] Нарушение границ импортов даёт ошибку линтера (тест-фикстура зелёная)
+- [x] `AGENTS.md` и `.cursor/rules/README.md` отражают фактическую структуру; правило `import-boundaries.mdc` в манифесте
+- [x] В корне нет `App.tsx`, `index.tsx`, `index.html`, `vite.config.ts`, `metadata.json`, `store.ts`, `types.ts`, `constants.ts`, `utils/`; остаются `components/`, `lib/`, `src/`, `data/` (admin shell / post-R02 cleanup)
 
 ## Риски
 
