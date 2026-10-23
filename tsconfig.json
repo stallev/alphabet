@@ -40,7 +40,6 @@
   "exclude": [
     "node_modules",
     "docs/examples",
-    "scripts/lint-fixtures",
-    "vite.config.ts"
+    "scripts/lint-fixtures"
   ]
 }

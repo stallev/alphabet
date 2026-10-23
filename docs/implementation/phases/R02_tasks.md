@@ -110,11 +110,11 @@
 
 ### R02-CU6 — chore(config): remove vite remnants and legacy files · Review: diff-only · Smoke: none · Commit: auto
 
-- [ ] R02-T13 · T1 · Spec: [migration §2.5](../specs/alphabet_migration_spec.md)
+- [x] R02-T13 · T1 · Spec: [migration §2.5](../specs/alphabet_migration_spec.md)
       Files: `index.tsx`, `index.html`, `vite.config.ts`, `metadata.json`, `App.tsx`, `SPECIFICATION.md`, `docs/archive/SPECIFICATION.md`, `tsconfig.json`, `package.json`, `package-lock.json`
       Acceptance: каждый файл предварительно проверен `rg` на отсутствие ссылок (результат в отчёте); удалены; `SPECIFICATION.md` перенесён в архив; из `tsconfig.json` убран `vite.config.ts` в `exclude`; зависимости, нужные только Vite, удалены **только** при подтверждении `rg`; `package-lock.json` обновлён (`npm install`), версии остальных зависимостей не изменились → `npm run deps:check`, `typecheck`, `lint`, `test`, `build` зелёные; в корне нет файлов из Phase DoD (последний пункт)
       Paths: n/a — cleanup
-- [ ] R02-T14 · T1 · Spec: [structure §6](../contracts/repo_structure_contract.md)
+- [x] R02-T14 · T1 · Spec: [structure §6](../contracts/repo_structure_contract.md)
       Files: `docs/implementation/phases/R02_tasks.md`
       Acceptance: выполнены проверки структуры §6 контракта (4 пункта) — результаты записаны в Verification ниже; остатки старых путей (`rg` из migration §4) пусты
       Paths: n/a — docs-only
@@ -142,7 +142,7 @@
 
 - [ ] Все CU закоммичены; у каждого trace `Review: …`
 - [ ] Phase DoD из [`R02_phase_description.md`](R02_phase_description.md#phase-dod)
-- [ ] Структура §6 контракта: _(результат)_
+- [ ] Структура §6 контракта: §6.1 — vite-файлы Phase DoD в корне сняты; `components/`, `lib/`, `src/`, `data/` ещё есть (полный §1 — CU7/фаза). §6.2 — `npm run lint` зелёный (фикстуры). §6.3 — нет `@/games/*` кроме `alphabet` в `games/alphabet`. §6.4 — `@/server` в `shared`/`games` (вне `games/*/server`) пусто. migration §4 `rg` — пусто (R02-CU6).
 - [ ] Ручной smoke Alphabet (после CU5 и после CU7): _(владелец подтвердил, дата)_
 - [ ] S-кейсы «до/после» (CU2, CU4): _(результаты)_
 - [ ] У каждого CU с `UI:` в ответе есть строка `UI-check: … ok`
