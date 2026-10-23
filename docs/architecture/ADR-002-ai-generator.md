@@ -235,6 +235,6 @@ POST /api/ai/generate  (для subscriber/editor — с проверкой ба�
 ## Related
 
 - [`prisma/schema.prisma`](../../prisma/schema.prisma) — модели `User`, `QuestionSuite`, `Question`
-- [`lib/auth.ts`](../../lib/auth.ts) — Auth.js (server-only)
+- [`server/auth/auth.ts`](../../server/auth/auth.ts) — Auth.js (server-only)
 - [`ADR-001`](ADR-001-migration-to-nextjs.md) — миграция на Next.js (контекст)
 - [`docs/AI_SYSTEM.md`](../AI_SYSTEM.md) — документация AI-системы (устаревшая, данный ADR актуализирует)

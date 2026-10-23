@@ -1,30 +1,30 @@
 ---
 description: Auth.js v5 — split config, роли, защита маршрутов и мутаций
 globs:
-  - "lib/auth*"
+  - "server/auth/**"
   - "proxy.ts"
   - "middleware.ts"
   - "app/api/auth/**"
   - "app/admin/**"
-  - "src/actions/**"
+  - "games/**/server/actions/**"
 alwaysApply: false
 ---
 
 # Аутентификация и безопасность — Auth.js v5
 
 **Reference:** шаблон `docs/examples/ai_first_tmp` в репозиторий не входит.  
-**Auth files:** [`lib/auth.config.ts`](../../lib/auth.config.ts) + [`lib/auth.ts`](../../lib/auth.ts)
+**Auth files:** [`server/auth/auth.config.ts`](../../server/auth/auth.config.ts) + [`server/auth/auth.ts`](../../server/auth/auth.ts)
 
 ## Split Config (обязательно)
 
 | Файл | Назначение | Prisma? |
 |------|-----------|---------|
-| `lib/auth.config.ts` | JWT callbacks, pages, session strategy | ❌ НЕТ |
-| `lib/auth.ts` | Полный NextAuth с `authorize()` + Prisma | ✅ ДА |
-| `middleware.ts` | JWT role gate — импортирует **только** `auth.config.ts` | ❌ НЕТ |
+| `server/auth/auth.config.ts` | JWT callbacks, pages, session strategy | ❌ НЕТ |
+| `server/auth/auth.ts` | Полный NextAuth с `authorize()` + Prisma | ✅ ДА |
+| `proxy.ts` | JWT role gate — импортирует **только** `auth.config.ts` | ❌ НЕТ |
 
 ```typescript
-// lib/auth.config.ts — Edge-safe (без Prisma)
+// server/auth/auth.config.ts — без Prisma (его читает proxy.ts)
 import type { NextAuthConfig } from 'next-auth';
 import type { UserRole } from '@/types';
 
@@ -52,11 +52,11 @@ export default authConfig;
 ```
 
 ```typescript
-// lib/auth.ts — server-only
+// server/auth/auth.ts — server-only
 import 'server-only';
 import NextAuth from 'next-auth';
 import Credentials from 'next-auth/providers/credentials';
-import { verifyAdminCredentials } from '@/src/data/auth/verify-credentials.server';
+import { verifyAdminCredentials } from '@/server/auth/verify-credentials.server';
 import authConfig from './auth.config';
 
 export const { auth, handlers, signIn, signOut } = NextAuth({
@@ -86,7 +86,7 @@ Next.js 16 переименовал `middleware.ts` → **`proxy.ts`** и `middl
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 import NextAuth from 'next-auth';
-import authConfig from '@/lib/auth.config';
+import authConfig from '@/server/auth/auth.config';
 
 const { auth } = NextAuth(authConfig);
 
@@ -202,7 +202,7 @@ Post-MVP: `editor`, `subscriber` + Google OAuth.
 ## Checklist безопасности
 
 - [ ] `proxy.ts` использует только `auth.config.ts` (без Prisma)
-- [ ] `lib/auth.ts` имеет `import 'server-only'`
+- [ ] `server/auth/auth.ts` имеет `import 'server-only'`
 - [ ] Каждый admin Server Action проверяет `role === 'admin'`
 - [ ] Каждый admin Route Handler проверяет `role === 'admin'`
 - [ ] Пароли хэшируются через `bcryptjs`
