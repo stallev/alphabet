@@ -1,6 +1,7 @@
 import type { ActiveLocale, GameEntry, GameManifest, GameTag } from "@/shared/game-kit/manifest";
 import { GAME_TAGS } from "@/shared/game-kit/manifest";
 
+import alphabet from "./alphabet/manifest";
 import { RESERVED_SLUGS } from "./reserved-slugs";
 
 const SLUG_PATTERN = /^[a-z][a-z0-9-]{1,31}$/;
@@ -13,7 +14,7 @@ const TEXT_LIMITS: Record<"title" | "tagline" | "description", number> = {
 
 const ACTIVE_LOCALES: ActiveLocale[] = ["ru", "en"];
 
-export const GAME_ENTRIES: readonly GameEntry[] = [];
+export const GAME_ENTRIES: readonly GameEntry[] = [alphabet];
 
 export function sortGameManifests(manifests: readonly GameManifest[]): GameManifest[] {
   return [...manifests].sort((a, b) => {

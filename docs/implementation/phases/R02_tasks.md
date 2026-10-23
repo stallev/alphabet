@@ -89,17 +89,17 @@
 
 ### R02-CU5 — feat(portal): add game route, alphabet manifest and catalog stub · Review: reviewer · Smoke: blocking · Commit: auto
 
-- [ ] R02-T10 · T2 · Spec: [manifest §1–§3](../contracts/game_manifest_contract.md) · Spec: [migration §2.4](../specs/alphabet_migration_spec.md)
+- [x] R02-T10 · T2 · Spec: [manifest §1–§3](../contracts/game_manifest_contract.md) · Spec: [migration §2.4](../specs/alphabet_migration_spec.md)
       Files: `games/alphabet/manifest.ts`, `games/registry.ts`, `public/games/alphabet/cover.webp`
       Acceptance: манифест по таблице §2.4 (значения полей — как в спецификации; `description` — из `docs/GAME_DESCRIPTION.md`); запись добавлена в `GAME_ENTRIES`; временная обложка 16:9 ≤ 20 КБ → `games/registry.test.ts` проходит на реальном реестре (`assertValidRegistry(GAME_ENTRIES)` без ошибок)
       Paths: H [manifest §3.2] · N [manifest §3.1: реальный манифест проходит все проверки]
-- [ ] R02-T11 · T2 · Spec: [routing §1–§3](../contracts/game_routing_contract.md)
+- [x] R02-T11 · T2 · Spec: [routing §1–§3](../contracts/game_routing_contract.md)
       Files: `app/[game]/page.tsx`, `app/[game]/error.tsx`, `app/[game]/loading.tsx`, `app/[game]/page.test.ts`, `app/game/page.tsx`, `next.config.ts`
       Acceptance: `generateStaticParams` возвращает slug'и реестра и вызывает `assertValidRegistry`; `dynamicParams = false`; `GamePage` вызывает `loadPage()` активной игры, для `coming-soon` — `notFound()` (до R03); `generateMetadata` по контракту; временный `app/game/page.tsx` удалён; в `next.config.ts` постоянный редирект `/game` → `/alphabet`; тест проверяет `generateStaticParams` → `/alphabet` играбелен; `/game` → 308 на `/alphabet`; `/Alphabet`, `/nonexistent` → 404
       Paths: H [routing §1] · N [routing §1: неизвестный slug, регистр] · S [`next.config.*` в sensitive zone: редирект не создаёт открытого редиректа — цель фиксирована]
       UI: /alphabet · roles: public · widths: 360,768,1280
       Seed: n/a
-- [ ] R02-T12 · T1 · Spec: [routing §1](../contracts/game_routing_contract.md) строка `/`
+- [x] R02-T12 · T1 · Spec: [routing §1](../contracts/game_routing_contract.md) строка `/`
       Files: `app/page.tsx`
       Acceptance: серверная страница рендерит минимальный каталог: заголовок и список карточек (название, слоган на `ru`, ссылка `/slug`) из `listGames()`, без оформления сверх текущих стилей приложения; `redirect('/game')` удалён → `/` показывает карточку Alphabet с рабочей ссылкой
       Paths: H [routing §1] · N [пустой реестр → текст «Игр пока нет», без ошибки]

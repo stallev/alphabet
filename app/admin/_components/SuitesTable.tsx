@@ -3,6 +3,7 @@
 import React, { useState, useMemo } from 'react';
 import type { QuestionSuite } from '@/generated/client';
 import { deleteSuiteAction } from '@/games/alphabet/server/actions/delete-suite';
+import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 
 const SOURCE_LABELS: Record<string, string> = {
@@ -71,12 +72,12 @@ export function SuitesTable({ suites }: SuitesTableProps) {
     return (
       <div className="bg-slate-900 border border-white/5 rounded-2xl p-12 text-center">
         <div className="text-slate-600 text-sm">Наборы вопросов не найдены</div>
-        <a
+        <Link
           href="/admin/suites/import"
           className="inline-block mt-4 text-emerald-500 text-sm hover:underline"
         >
           Импортировать первый набор →
-        </a>
+        </Link>
       </div>
     );
   }

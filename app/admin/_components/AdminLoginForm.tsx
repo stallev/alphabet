@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { signIn } from 'next-auth/react';
+import Link from 'next/link';
 import { useRouter, useSearchParams } from 'next/navigation';
 
 export function AdminLoginForm() {
@@ -94,12 +95,12 @@ export function AdminLoginForm() {
           >
             {isPending ? 'Вход...' : 'Войти'}
           </button>
-          <a
-            href="/game"
+          <Link
+            href="/alphabet"
             className="px-5 py-3 bg-slate-800 text-slate-400 rounded-xl hover:text-white transition-all text-sm"
           >
             Назад
-          </a>
+          </Link>
         </div>
       </form>
     </div>

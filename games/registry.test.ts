@@ -150,7 +150,7 @@ describe("sortGameManifests", () => {
 describe("listGames on GAME_ENTRIES", () => {
   it("passes assertValidRegistry on the real registry", () => {
     expect(() => assertValidRegistry(GAME_ENTRIES)).not.toThrow();
-    expect(listGames()).toEqual([]);
+    expect(listGames().map((m) => m.slug)).toEqual(["alphabet"]);
   });
 });
 

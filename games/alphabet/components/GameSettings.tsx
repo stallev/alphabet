@@ -1,6 +1,7 @@
 ﻿'use client';
 
 import React, { useState, useRef } from 'react';
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { useGameStore } from '@/games/alphabet/store';
 import { GameMode, GameSettings as SettingsType } from '@/games/alphabet/types';
@@ -113,7 +114,7 @@ export const GameSettings: React.FC = () => {
           </div>
 
           <div className="flex flex-col gap-3 pt-4">
-            <a href="/admin/login" className="text-white/40 hover:text-white/70 transition-all text-[10px] uppercase font-black tracking-widest text-center">Admin</a>
+            <Link href="/admin/login" className="text-white/40 hover:text-white/70 transition-all text-[10px] uppercase font-black tracking-widest text-center">Admin</Link>
           </div>
         </div>
 
