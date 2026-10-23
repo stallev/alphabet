@@ -57,20 +57,20 @@
 
 ### R01-CU2 — chore(config): add commit hooks, ci and phase driver · Review: diff-only · Smoke: none · Commit: auto
 
-- [ ] R01-T5 · T1 · Spec: [plan §A.4.5](../../meta/repo_restructure_plan.md)
+- [x] R01-T5 · T1 · Spec: [plan §A.4.5](../../meta/repo_restructure_plan.md)
       Files: `commitlint.config.mjs`, `.husky/commit-msg`, `.husky/pre-commit`, `package.json`, `package-lock.json`
       Acceptance: установлены `@commitlint/cli`, `@commitlint/config-conventional`, `husky`, `lint-staged` (точные версии); конфиг commitlint из `docs/examples/ai_first_tmp/scaffold/` (опциональный префикс `<ветка>: `); `prepare` безопасен вне git/на Vercel (`HUSKY=0` или условный запуск); `lint-staged`: `*.{ts,tsx,js,jsx,mjs}` → `eslint --fix`; `.husky/pre-commit` = `npx --no -- lint-staged` + `node scripts/precommit-build-check.mjs` ([`precommit_build_gate_contract.md` §4](../contracts/precommit_build_gate_contract.md)); в `package.json` скрипт `build:check` → `echo "R01-process-foundation: chore(config): test" | npx commitlint` проходит, `echo "bad message" | npx commitlint` — падает; `npm run deps:check` = 0
       Paths: n/a — tooling
-- [ ] R01-T6 · T1 · Spec: [plan §A.4.5](../../meta/repo_restructure_plan.md)
+- [x] R01-T6 · T1 · Spec: [plan §A.4.5](../../meta/repo_restructure_plan.md)
       Files: `.github/workflows/ci.yml`
       Acceptance: из `scaffold/.github/workflows/ci.template.yml` оставлен один job `verify` (Node по `engines`, `npm ci`, `typecheck`, `lint`, `test`, `docs:links`, `encoding:check`, `deps:check`, `build` с фиктивными значениями `DATABASE_URL`, `DIRECT_URL`, `AUTH_SECRET`, `AUTH_URL`; [`precommit_build_gate_contract.md` §2.3](../contracts/precommit_build_gate_contract.md)); без jobs `test`/`e2e`; `rules:check` не используется → YAML валиден (проверка `node -e` парсером или `actionlint`, если доступен)
       Paths: n/a — ci
-- [ ] R01-T7 · T2 · Contract: [phase_driver §1–§6](../contracts/phase_driver_contract.md) · [cu_boundary_scripts §2–§3](../contracts/cu_boundary_scripts_contract.md)
+- [x] R01-T7 · T2 · Contract: [phase_driver §1–§6](../contracts/phase_driver_contract.md) · [cu_boundary_scripts §2–§3](../contracts/cu_boundary_scripts_contract.md)
       Files: `package.json`, `.cursorignore`
       Acceptance: скрипты драйвера уже в репозитории (проверка: `git ls-files scripts` содержит `phase-driver.mjs`, `run-phase.mjs`, `cu-verify.mjs`, `cu-commit.mjs`, `precommit-build-check.mjs`, `check-build-isolation.mjs` и три `*.test.mjs`); в `package.json` добавлены `cu:verify` (`node scripts/cu-verify.mjs`), `cu:commit`, `phase:run` (`node scripts/run-phase.mjs`); `.cursorignore` содержит `docs/examples/`, `docs/archive/`, `node_modules/`, `.next/`, `generated/`; выполнены критерии соответствия §8 [phase_driver_contract](../contracts/phase_driver_contract.md) → `npm run test` зелёный; `node scripts/run-phase.mjs R01 --environment cursor` на дереве с одним завершённым CU печатает `STATUS: cu R01-CU2` (проверка на временной копии файла задач, не коммитится); `node scripts/cu-verify.mjs` сообщает `cu-verify: ok`
       Paths: H [phase_driver §8] · N [неверный id фазы (`X01`) → `run-phase: phase`; отсутствующий файл задач → ошибка; `cu-commit ... --amend` → `forbidden`]
 
-- [ ] R01-T7a · T1 · Spec: [`prompts/phase-implementation.md`](../../examples/ai_first_tmp/prompts/phase-implementation.md), [`prompts/launch-prompts.md`](../../examples/ai_first_tmp/prompts/launch-prompts.md)
+- [x] R01-T7a · T1 · Spec: [`prompts/phase-implementation.md`](../../examples/ai_first_tmp/prompts/phase-implementation.md), [`prompts/launch-prompts.md`](../../examples/ai_first_tmp/prompts/launch-prompts.md)
       Files: `docs/prompts/phase-implementation.md`, `docs/prompts/launch-prompts.md`
       Acceptance: перенесены и адаптированы: идентификаторы `R{NN}`, путь `docs/implementation/phases/R{NN}_tasks.md`, среда по умолчанию — Cursor AI, раздел Claude Code и dev-учётки удалены; в `launch-prompts.md` оставлены только фразы запуска фазы, Phase DoR audit и возобновления прогона → пример стартовой фразы для R02 присутствует; фразы согласованы с [`phase_driver_contract.md` §4](../contracts/phase_driver_contract.md)
       Paths: n/a — docs-only
