@@ -134,27 +134,27 @@
 
 ### R01-CU6 — docs(docs): add react, typescript, nextjs, security and testing guides · Review: diff-only · Smoke: none · Commit: auto
 
-- [ ] R01-T18 · T1 · Spec: [plan §A.4.4](../../meta/repo_restructure_plan.md)
+- [x] R01-T18 · T1 · Spec: [plan §A.4.4](../../meta/repo_restructure_plan.md)
       Files: `docs/guidelines/README.md`, `docs/guidelines/agent-phase-orchestration.md`, `docs/guidelines/ai_code_review_protocol.md`, `docs/guidelines/typography_text_guidelines.md`
       Acceptance: перенесены и адаптированы (пути к драйверу — `scripts/`, фазы — `docs/implementation/phases/`); `README.md` — индекс guidelines с таблицей правил → ссылки открываются, `agent-phase-orchestration.md` согласован с изменениями `unit-driver.mjs` из T7
       Paths: n/a — docs-only
-- [ ] R01-T19 · T1 · Spec: [plan §A.4.4](../../meta/repo_restructure_plan.md)
+- [x] R01-T19 · T1 · Spec: [plan §A.4.4](../../meta/repo_restructure_plan.md)
       Files: `docs/guidelines/react/README.md`, `docs/guidelines/react/ai_component_guidelines.md`, `docs/guidelines/react/ai_react_hooks_guidelines.md`, `docs/guidelines/react/ai_react_state_management_guidelines.md`, `docs/guidelines/react/ai_semantics_a11y_guidelines.md`, `docs/guidelines/react/copy_and_messages.md`, `docs/guidelines/react/ai_browser_rendering_performance.md`
       Acceptance: перенесены из `docs/guidelines/react/`; `copy_and_messages.md` переписан под словари `shared/i18n` и `games/<slug>/i18n`; отложенные (`optimistic`, `form_handling`, `responsive_table`) не перенесены
       Paths: n/a — docs-only
-- [ ] R01-T20 · T1 · Spec: [plan §A.4.4](../../meta/repo_restructure_plan.md)
+- [x] R01-T20 · T1 · Spec: [plan §A.4.4](../../meta/repo_restructure_plan.md)
       Files: `docs/guidelines/typescript/README.md`, `docs/guidelines/typescript/ai_javascript_fundamentals_guidelines.md`, `docs/guidelines/typescript/ai_typescript_guidelines.md`
       Acceptance: `ai_typescript_guidelines.md` — переписанная версия `ai_typescript_monorepo_guidelines.md` под одно приложение (слои `shared/domain`, `server/*`, `games/*`, константы вместо inline-строк)
       Paths: n/a — docs-only
-- [ ] R01-T21 · T1 · Spec: [plan §A.4.4](../../meta/repo_restructure_plan.md)
+- [x] R01-T21 · T1 · Spec: [plan §A.4.4](../../meta/repo_restructure_plan.md)
       Files: `docs/guidelines/nextjs/README.md`, `docs/guidelines/nextjs/ai_data_fetching_patterns.md`, `docs/guidelines/nextjs/ai_loading_patterns.md`, `docs/guidelines/nextjs/ai_client_lazy_loading.md`, `docs/guidelines/nextjs/ai_vercel_runtime_compatibility.md`, `docs/guidelines/nextjs/ai_nextjs_db_data_handle.md`
       Acceptance: перенесены; ссылки на S3/Blob/PSI/admin-interface удалены; версии Next.js — 16.2.6
       Paths: n/a — docs-only
-- [ ] R01-T22 · T1 · Spec: [plan §A.4.4](../../meta/repo_restructure_plan.md)
+- [x] R01-T22 · T1 · Spec: [plan §A.4.4](../../meta/repo_restructure_plan.md)
       Files: `docs/guidelines/security/README.md`, `docs/guidelines/security/ai_security_xss_csrf_guidelines.md`, `docs/guidelines/auth/ai_auth_implementation_guide.md`, `docs/general/01-security-xss-csrf.md`, `docs/general/03-accessibility.md`, `docs/general/ai_agent_ui_ux_guideline.md`
       Acceptance: перенесены; auth-руководство описывает Credentials + JWT + роль `admin` (Telegram OIDC не переносится); `docs/general/README.md` создан как индекс этих трёх файлов
       Paths: n/a — docs-only
-- [ ] R01-T23 · T1 · Spec: [plan §A.4.4](../../meta/repo_restructure_plan.md)
+- [x] R01-T23 · T1 · Spec: [plan §A.4.4](../../meta/repo_restructure_plan.md)
       Files: `docs/guidelines/testing/ai_testing_guidelines.md`, `docs/guidelines/testing/ai_ui_verification.md`
       Acceptance: тестирование адаптировано под `lean` (Vitest на логику игр, реестр, валидаторы; UI вручную); `ai_ui_verification.md` — проверка экрана в браузере на 360/768/1280 без ролей и seed-учёток (публичные страницы), формат строки `UI-check: …`; `ai_dev_accounts_and_seed.md` не переносится
       Paths: n/a — docs-only

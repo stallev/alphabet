@@ -1,0 +1,78 @@
+﻿# Typography and text content — EdenGames
+
+Typography for **`app`** using shared atoms (on scaffold), semantic HTML,  font tokens, and accessibility.
+
+**Design source:** [`visual_identity_contract.md`](../design/visual_identity_contract.md), interim [``](../default_docs/) §typography  
+**UI rule:** **ui-design-system**
+
+---
+
+## Font stack (target)
+
+| Role | Font | CSS token |
+|------|------|-----------|
+| Headings / display | **Source Serif 4** | `font-heading` |
+| UI / body | **Manrope** | `font-sans` |
+| Code / times / IDs | **JetBrains Mono** | `font-mono` |
+
+Wire via `next/font/google` in root `layout.tsx`; map in `globals.css` `@theme inline`.
+
+---
+
+## Component policy (on scaffold)
+
+Shared typography in `components/atoms/`:
+
+| Component | Role |
+|-----------|------|
+| **Heading** | Semantic `h1`–`h6`, optional display scale |
+| **SectionTitle** | Large marketing/hero blocks |
+| **ContentText** | Body, lead, muted, caption variants |
+| **AlertText** | Destructive inline alerts (`role="alert"`) |
+
+Prefer atoms over duplicated Tailwind heading strings across routes. Until atoms exist, follow design system type scale directly.
+
+---
+
+## Heading usage
+
+- **One `h1` per page** — page title or hero, not both competing
+- App screens (client/trainer/admin): **`Heading as="h1"`** for page title
+- Marketing landing (if any): **`SectionTitle`** for hero blocks
+
+```tsx
+<Heading as="h1">My bookings</Heading>
+<Heading as="h2">Upcoming sessions</Heading>
+```
+
+---
+
+## Responsive type scale
+
+From design system — **mobile-first** (base = mobile, `md:`/`lg:` = desktop):
+
+| Context | Mobile | Desktop |
+|---------|--------|---------|
+| Page title | `text-[26–30px]` | `text-[36–44px]` |
+| Section title | `text-xl` | `text-2xl` |
+| Body | `text-base` | `text-base` |
+| Caption / meta | `text-sm text-muted-foreground` | same |
+
+**Prototype parity:** match font family, weight, and size from [``](../prototypes/) — Cursor rule **
+
+---
+
+## Accessibility
+
+- Real heading hierarchy — do not skip levels for styling alone (`visualLevel` prop when atoms added)
+- Semantic landmarks in layouts: `main`, `nav`, `header`, `footer` — **ui-semantics-a11y**
+- Sufficient contrast per  tokens (light + dark) — WCAG 2.1 AA
+- `sr-only` for icon-only buttons with lucide icons; decorative icons — `aria-hidden`
+
+---
+
+## User-visible copy
+
+All strings from **`@/lib/messages`** — not hardcoded in typography components except dev placeholders.
+
+**Reference:** EdenGames snapshot [`typography_text_guidelines.md`](../examples/ai_first_tmp/docs/docs/guidelines/typography_text_guidelines.md) — Calm Editorial → design tokens (R03)
