@@ -100,15 +100,15 @@
 
 ### R01-CU4 — docs(rules): add tier 0 rules and agents · Review: diff-only · Smoke: none · Commit: auto
 
-- [ ] R01-T12 · T2 · Spec: [plan §A.4.3, tier 0](../../meta/repo_restructure_plan.md)
+- [x] R01-T12 · T2 · Spec: [plan §A.4.3, tier 0](../../meta/repo_restructure_plan.md)
       Files: `.cursor/rules/agent-commit-pipeline.mdc`, `.cursor/rules/agent-code-review-subagent.mdc`, `.cursor/rules/model-routing.mdc`, `.cursor/rules/product-docs-alignment.mdc`, `.cursor/rules/ai-dry-deduplication.mdc`, `.cursor/rules/domain-literals-and-codes.mdc`, `.cursor/rules/typescript-types.mdc`
       Acceptance: правила перенесены из `.cursor/rules/tiers/t0-always/` и адаптированы по таблице tier 0 плана (scope коммитов, sensitive zones, `shared/domain`, одно приложение); `alwaysApply: true`; каждый ≤ 150 строк; ссылки на несуществующие в проекте документы отсутствуют (или помечены «создаётся в R0N») → `rg -i "pulse|monorepo|PACKAGE_SCOPE|rules:sync|\.claude" .cursor/rules` пуст
       Paths: n/a — docs-only
-- [ ] R01-T13 · T2 · Spec: [plan §A.4.3](../../meta/repo_restructure_plan.md), [plan §A.6](../../meta/repo_restructure_plan.md)
+- [x] R01-T13 · T2 · Spec: [plan §A.4.3](../../meta/repo_restructure_plan.md), [plan §A.6](../../meta/repo_restructure_plan.md)
       Files: `.cursor/rules/project-context.mdc`, `.cursor/rules/alphabet-project-context.mdc`
       Acceptance: `project-context.mdc` создан из `project-context.template.mdc` (`alwaysApply: true`): продукт EdenGames, стек (Next.js 16.2.6, Prisma 7, Auth.js v5, Tailwind v4, Zustand, Framer Motion), профиль качества, **единственная** иерархия источников истины (Cursor Rules → AGENTS.md → ADR → Contracts → PRD → Guidelines → Specs/примеры), ссылки на `docs/implementation/contracts/*`; `alphabet-project-context.mdc` удалён (его содержимое учтено в `project-context.mdc` и в ADR-003) → иерархия источников нигде, кроме `project-context.mdc`, не перечислена
       Paths: n/a — docs-only
-- [ ] R01-T14 · T1 · Spec: [plan §A.4.2](../../meta/repo_restructure_plan.md)
+- [x] R01-T14 · T1 · Spec: [plan §A.4.2](../../meta/repo_restructure_plan.md)
       Files: `.cursor/agents/architect.md`, `.cursor/agents/implementer.md`, `.cursor/agents/reviewer.md`
       Acceptance: скопированы из шаблона, убраны Pulse/monorepo; модели и режимы (`readonly` у `reviewer`) сохранены; пути к правилам и документам актуальны
       Paths: n/a — docs-only

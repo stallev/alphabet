@@ -1,0 +1,35 @@
+---
+description: AI agents — avoid duplicating identical logic; extract helpers; search before copy-paste
+alwaysApply: true
+---
+
+# DRY for AI agents (deduplication)
+
+**Methodology:** [`docs/meta/ai_first_methodology.md`](docs/meta/ai_first_methodology.md)
+
+## When this applies
+
+Перед вставкой **той же** нетривиальной логики дважды — остановиться и дедуплицировать.
+
+## Required habits
+
+1. **Search first** — `@/shared/lib/*`, `shared/domain/*`, существующие helpers.
+2. **Extract locally** — функция в том же модуле, если нужна только там.
+3. **Promote when shared** — два+ модуля → `shared/domain` или `@/shared/lib` по границам слоёв (см. `repo_structure_contract.md`).
+
+## SOLID (без over-engineering)
+
+- **SRP** — один модуль = одна ответственность.
+- **OCP** — варианты через props/`cva`, не копировать ветки.
+- **DIP** — UI от DTO/view-model, не от Prisma shapes.
+
+Подробнее: **react-logic-presentation** (tier 2), [`ai_component_guidelines.md`](docs/guidelines/react/ai_component_guidelines.md) (создаётся в R01-CU6).
+
+## Scope boundary
+
+DRY для **кода задачи**. Repo-wide cleanups — только по запросу.
+
+## Related
+
+- [`typescript-types.mdc`](typescript-types.mdc)
+- [`ai_component_guidelines.md`](docs/guidelines/react/ai_component_guidelines.md)

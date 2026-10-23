@@ -1,0 +1,49 @@
+---
+description: Keep product docs aligned when behavior changes
+alwaysApply: true
+---
+
+# Product documentation alignment
+
+При **добавлении** или **существенном изменении** поведения (маршруты, роли, потоки данных, admin, игры) обновляйте документацию **в той же задаче**, если пользователь не ограничил scope кодом.
+
+**Methodology:** [`docs/meta/ai_first_methodology.md`](docs/meta/ai_first_methodology.md) §3.4, §2.2.
+
+## What to do
+
+1. Сравнить реализацию с PRD, контрактами и specs.
+2. Обновить минимальный набор файлов.
+3. При намеренном расхождении — docs = новая правда.
+
+## Implementation vs documentation
+
+Нельзя оставлять silent drift.
+
+**MUST** в той же задаче:
+
+1. Найти docs со старым описанием (grep).
+2. Обновить ADR, contracts, guidelines, phase docs.
+3. При конфликте — порядок в [`project-context.mdc`](project-context.mdc); нижний уровень подчиняется.
+4. Решения — в ADR (Decision + Rejected alternatives).
+
+## Where to look
+
+| Topic | Files |
+|-------|--------|
+| Структура репо (целевая) | [`repo_structure_contract.md`](docs/implementation/contracts/repo_structure_contract.md) |
+| Маршруты игр | [`game_routing_contract.md`](docs/implementation/contracts/game_routing_contract.md) |
+| Контракты | [`docs/implementation/contracts/`](docs/implementation/contracts/) |
+| Фазы / задачи | [`docs/implementation/phases/`](docs/implementation/phases/) |
+| Схема БД | [`docs/architecture/database_schema.md`](docs/architecture/database_schema.md) |
+| ADR | [`docs/architecture/`](docs/architecture/) |
+| Auth | [`docs/guidelines/auth/ai_auth_implementation_guide.md`](docs/guidelines/auth/ai_auth_implementation_guide.md) (создаётся в R01-CU6) |
+| Игры | [`docs/games/`](docs/games/) (после R02) |
+| Guidelines | [`docs/guidelines/README.md`](docs/guidelines/README.md) (создаётся в R01-CU6) |
+
+## Precedence
+
+[`project-context.mdc`](project-context.mdc) — канонический порядок источников.
+
+## Scope boundary
+
+Чистый refactor без изменения поведения — docs опционально.

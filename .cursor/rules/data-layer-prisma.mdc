@@ -11,7 +11,7 @@ alwaysApply: false
 
 # Data Layer — Prisma + DAL паттерны
 
-**Reference:** [`docs/examples/ai_first_tmp/docs/examples/pulse/.cursor/rules/data-server-actions-and-api.mdc`](../../docs/examples/ai_first_tmp/docs/examples/pulse/.cursor/rules/data-server-actions-and-api.mdc)  
+**Reference:** [`docs/examples/ai_first_tmp/.cursor/rules/tiers/t1-implementation/data-server-actions-and-api.mdc`](../../docs/examples/ai_first_tmp/.cursor/rules/tiers/t1-implementation/data-server-actions-and-api.mdc)  
 **Schema:** [`prisma/schema.prisma`](../../prisma/schema.prisma)  
 **Prisma singleton:** [`lib/db.ts`](../../lib/db.ts)
 

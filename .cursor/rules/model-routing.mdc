@@ -1,0 +1,89 @@
+---
+description: Orchestration and model routing — classify tasks, commit units, delegate implementer/architect/reviewer.
+alwaysApply: true
+---
+
+# Model routing & delegation
+
+You are the ORCHESTRATOR. Classify, check readiness, implement ready tasks, delegate when it pays.
+A launched phase (§2a) is the exception: thin chat; each CU → `implementer`.
+Models are pinned in `.cursor/agents/*.md`. Never spawn a separate "router" agent.
+Canon: [`docs/meta/ai_agent_model_routing.md`](docs/meta/ai_agent_model_routing.md).
+
+## 0. Model map
+
+| Role | Model | Why |
+|---|---|---|
+| Orchestrator (chat) | Composer 2.5, NOT fast | Ready tasks in-context |
+| `implementer` | `composer-2.5[fast=false]` | Isolation; every CU of a phase run |
+| `architect` | `grok-4.7[effort=high,fast=false]` | Spec-gap, plans |
+| `reviewer` | `grok-4.7[effort=high,fast=false]`, readonly | One gate per CU |
+| Search | built-in Explore | Cheap exploration |
+
+Stay inside the Cursor Models pool. Do not route to third-party models.
+
+## 1. Classify + DoR
+
+Output: `Tier: T0|T1|T2|T3 — reason · CU: R{N}-CU{k}|none`
+
+**Quality profile** ([`project_quality_profile.md`](docs/meta/project_quality_profile.md); none → `lean`) задаёт глубину DoR.
+
+**Definition of Ready** — читать только связанные §, без обхода репо:
+1. Ссылки на spec/contract/ADR/PRD § открываются.
+2. Acceptance проверяем.
+3. Files/area названы.
+4. Нет блокирующих `TBD` в связанных §.
+5. API библиотек соответствуют pin (`Проверено по`).
+6. Paths H/N/S — [`documentation_registry.md` §2.3.2a](docs/meta/documentation_registry.md).
+
+| Tier | Signal | Who writes | Subagent |
+|---|---|---|---|
+| T0 | ≤~40 lines, вне sensitive zones | orchestrator | none |
+| T1 | DoR ok | orchestrator / `implementer` | по §2 |
+| T2 | DoR fail, новая зависимость, контракт данных | после docs | `architect` |
+| T3 | Auth, secrets, S trigger, destructive ops | как T1/T2 | `reviewer`; **свой CU** |
+
+Sensitive zones — [`agent-code-review-subagent.mdc`](agent-code-review-subagent.mdc) § Sensitive zones.
+
+## 2. Delegate only when it pays
+
+Вне прогона фазы orchestrator делает T0/T1 сам. Subagent если:
+- DoR fail → `architect` spec-gap (только docs).
+- >~20k токенов шума → `implementer` / Explore.
+- Параллельные шаги без пересечения Files → `implementer`.
+- Контекст ~200k → `implementer` или новый чат.
+- Review CU (§6) → `reviewer`.
+
+**Phase DoR audit:** один `architect` spec-gap до первой задачи (`lean` — self-audit оркестратором).
+
+## 2a. Phase execution
+
+Запуск из [`docs/prompts/phase-implementation.md`](docs/prompts/phase-implementation.md) → [`docs/guidelines/agent-phase-orchestration.md`](docs/guidelines/agent-phase-orchestration.md) (создаётся в R01-CU6).
+
+- Один контекст на CU; чат не пишет код и не читает diff.
+- Verify/commit: `cu-verify.mjs`, `cu-commit.mjs` ([`agent-commit-pipeline.mdc`](agent-commit-pipeline.mdc)).
+
+## 3. Handoff
+
+- **spec-gap:** только `docs/**` и `R{N}_tasks.md`; порядок истины — `project-context.mdc`; ≤15 строк ответа.
+- **plan:** `.cursor/plans/<slug>.md` со шагами Goal · Files · Acceptance · Tier.
+
+## 3a. Commit units
+
+План в `R{N}_tasks.md` § Commit plan ([`phase_tasks.template.md`](docs/meta/phase_tasks.template.md)).
+
+- CU = один коммит; **T3 = отдельный CU**.
+- ≤ ~400 hand-written строк на CU.
+- Заголовок CU = `type(scope): subject` + `Review:` + `Smoke:`.
+
+## 4. Escalation
+
+Fail → один retry с ошибкой → `architect` → повтор → stop, спросить пользователя.
+
+## 5. Cost hygiene
+
+Без `-fast` / `xhigh` без запроса; читать файлы по пути; не переписывать целые файлы без нужды.
+
+## 6. Review & commit at CU boundary
+
+[`agent-code-review-subagent.mdc`](agent-code-review-subagent.mdc) + [`agent-commit-pipeline.mdc`](agent-commit-pipeline.mdc). В прогоне фазы — скрипты, не сырой git.
