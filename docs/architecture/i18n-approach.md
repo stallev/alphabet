@@ -1,7 +1,9 @@
 # Подход к интернационализации (i18n) — проект «Алфавит»
 
+> **Обновляется в R03** под cookie `locale` и RU/EN. Принятое решение — [ADR-006](./ADR-006-i18n-and-game-data.md); контракт — [`i18n_contract.md`](../implementation/contracts/i18n_contract.md).
+
 **Дата:** 2026-05-31  
-**Статус:** Актуально
+**Статус:** Legacy (до R03)
 
 ---
 

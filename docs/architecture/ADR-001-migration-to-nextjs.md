@@ -1,6 +1,6 @@
 # ADR-001 — Миграция с Vite+React SPA на Next.js 15 App Router
 
-**Status:** Accepted  
+**Status:** Accepted — реализовано; структура репозитория пересмотрена в [ADR-003](./ADR-003-repo-structure.md)  
 **Date:** 2026-05-30  
 **Authors:** AI Agent (Cursor)
 

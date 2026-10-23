@@ -163,27 +163,27 @@
 
 ### R01-CU7 — docs(docs): add architecture decisions and archive legacy docs · Review: diff-only · Smoke: none · Commit: auto
 
-- [ ] R01-T24 · T1 · Spec: [plan §A.4.4](../../meta/repo_restructure_plan.md)
+- [x] R01-T24 · T1 · Spec: [plan §A.4.4](../../meta/repo_restructure_plan.md)
       Files: `docs/architecture/adr_index.md`, `docs/architecture/decision_process.md`
       Acceptance: перенесены из `docs/prds/07_governance/*.template.md`; индекс содержит ADR-001…006 со статусами
       Paths: n/a — docs-only
-- [ ] R01-T25 · T2 · Spec: [plan §0 D1–D3, D7](../../meta/repo_restructure_plan.md), [`repo_structure_contract.md`](../contracts/repo_structure_contract.md)
+- [x] R01-T25 · T2 · Spec: [plan §0 D1–D3, D7](../../meta/repo_restructure_plan.md), [`repo_structure_contract.md`](../contracts/repo_structure_contract.md)
       Files: `docs/architecture/ADR-003-repo-structure.md`
       Acceptance: Status `Accepted`; Context (Vite→Next, портал игр), Decision (одно приложение, `games/`, `shared/`, `server/`, границы импортов, данные у игр), Rejected alternatives (монорепо с `apps/*`/`packages/*`, общий банк вопросов), Consequences; ссылка на контракт структуры
       Paths: n/a — docs-only
-- [ ] R01-T26 · T2 · Spec: [plan §0 D4–D5](../../meta/repo_restructure_plan.md), [`game_routing_contract.md`](../contracts/game_routing_contract.md), [`game_manifest_contract.md`](../contracts/game_manifest_contract.md)
+- [x] R01-T26 · T2 · Spec: [plan §0 D4–D5](../../meta/repo_restructure_plan.md), [`game_routing_contract.md`](../contracts/game_routing_contract.md), [`game_manifest_contract.md`](../contracts/game_manifest_contract.md)
       Files: `docs/architecture/ADR-004-game-routing-and-registry.md`
       Acceptance: Decision — `/<slug>`, реестр игр, зарезервированные slug'и, `dynamicParams = false`, редирект `/game`; Rejected — `/games/<slug>`, `/play/<slug>`, автообнаружение игр по файловой системе
       Paths: n/a — docs-only
-- [ ] R01-T27 · T2 · Spec: [`docs/examples/ai_first_tmp/docs/prds/07_governance/adr_002_nextjs_vercel_runtime_policy.template.md`](../../examples/ai_first_tmp/docs/prds/07_governance/adr_002_nextjs_vercel_runtime_policy.template.md)
+- [x] R01-T27 · T2 · Spec: [`docs/examples/ai_first_tmp/docs/prds/07_governance/adr_002_nextjs_vercel_runtime_policy.template.md`](../../examples/ai_first_tmp/docs/prds/07_governance/adr_002_nextjs_vercel_runtime_policy.template.md)
       Files: `docs/architecture/ADR-005-nextjs-vercel-runtime.md`
       Acceptance: адаптирован под фактический стек (Next.js 16.2.6, Node по `engines`, Vercel, Neon, Prisma 7, `proxy.ts`); `cacheComponents`/Instant Navigations — «не включено, вернуться отдельным ADR»; расхождения с прежним `AGENTS.md` (Prisma 6.x → 7.x) зафиксированы
       Paths: n/a — docs-only
-- [ ] R01-T28 · T2 · Spec: [plan §0 D6–D7](../../meta/repo_restructure_plan.md), [`i18n_contract.md`](../contracts/i18n_contract.md)
+- [x] R01-T28 · T2 · Spec: [plan §0 D6–D7](../../meta/repo_restructure_plan.md), [`i18n_contract.md`](../contracts/i18n_contract.md)
       Files: `docs/architecture/ADR-006-i18n-and-game-data.md`
       Acceptance: Decision — RU/EN, cookie `locale` без префикса в URL, словари портала и игры, `uk/de/ro` выключены; данные каждой игры принадлежат игре (`games/<slug>/data`, `games/<slug>/server`, таблицы `QuestionSuite`/`Question` — Alphabet); Rejected — `[locale]`-сегмент, общий банк вопросов; Consequences — SEO на одном URL (см. контракт §1)
       Paths: n/a — docs-only
-- [ ] R01-T29 · T1 · Spec: [plan §A.6](../../meta/repo_restructure_plan.md)
+- [x] R01-T29 · T1 · Spec: [plan §A.6](../../meta/repo_restructure_plan.md)
       Files: `docs/archive/AGENTS.pre-restructure.md`, `docs/archive/documentation_creation_guide.md`, `docs/archive/PORTAL_PROMPT.md`, `docs/archive/ALPHABET_GAME_PROMPT.md`, `docs/meta/documentation_creation_guide.md`, `docs/PORTAL_PROMPT.md`, `docs/ALPHABET_GAME_PROMPT.md`, `docs/architecture/ADR-001-migration-to-nextjs.md`, `docs/architecture/ADR-002-ai-generator.md`, `docs/architecture/i18n-approach.md`
       Acceptance: `git mv` в `docs/archive/` (копия `AGENTS.md` — `cp`, сам файл заменяется в CU8); в ADR-001 добавлена строка статуса «Accepted, реализовано; структура пересмотрена в ADR-003», в ADR-002 — «генератор вопросов принадлежит games/alphabet (ADR-003)», в начало `i18n-approach.md` — «обновляется в R03; решение — ADR-006» → ссылки на перенесённые файлы исправлены (`docs:links` — только ссылки вперёд)
       Paths: n/a — docs-only
