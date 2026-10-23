@@ -2,9 +2,10 @@
 
 import React, { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
-import { useGameStore } from '../store';
-import { GameMode, GameSettings as SettingsType } from '../types';
-import { DEFAULT_SETTINGS, TRANSLATIONS } from '../constants';
+import { useGameStore } from '@/games/alphabet/store';
+import { GameMode, GameSettings as SettingsType } from '@/games/alphabet/types';
+import { DEFAULT_SETTINGS } from '@/games/alphabet/constants';
+import { TRANSLATIONS } from '@/games/alphabet/i18n/translations';
 import { LocaleSelector } from './LocaleSelector';
 import { StepperInput } from './StepperInput';
 

@@ -1,5 +1,5 @@
-import { ComplexityLevel } from '@/types';
-import type { QuestionsSuite } from '@/types';
+import { ComplexityLevel } from '@/games/alphabet/types';
+import type { QuestionsSuite } from '@/games/alphabet/types';
 
 /**
  * Static demo suites used in AIGenerator Demo Mode.

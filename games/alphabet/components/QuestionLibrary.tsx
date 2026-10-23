@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useGameStore } from '../store';
+import { useGameStore } from '@/games/alphabet/store';
 
 export const QuestionLibrary: React.FC = () => {
   const { library, deleteFromLibrary, loadCustomQuestions } = useGameStore();

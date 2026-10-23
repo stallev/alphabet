@@ -55,21 +55,21 @@
 
 ### R02-CU3 — refactor(games): move alphabet client code to games/alphabet · Review: diff-only · Smoke: deferred · Commit: auto
 
-- [ ] R02-T5 · T1 · Spec: [migration §2.2](../specs/alphabet_migration_spec.md)
+- [x] R02-T5 · T1 · Spec: [migration §2.2](../specs/alphabet_migration_spec.md)
       Files: `shared/providers/AuthSessionProvider.tsx`, `shared/lib/cn.ts`, `shared/i18n/locales.ts`, `components/AuthSessionProvider.tsx`, `lib/utils.ts`, `app/layout.tsx`
       Acceptance: `AuthSessionProvider` → `shared/providers/`; `cn` → `shared/lib/cn.ts` (все `import { cn }` обновлены); `LOCALE_META` перенесён в `shared/i18n/locales.ts` с полем `active`; `app/layout.tsx` использует новый провайдер → `rg "@/lib/utils|@/components/AuthSessionProvider"` пуст
       Paths: n/a — behavior-preserving refactor
-- [ ] R02-T6 · T2 · Spec: [migration §2.2](../specs/alphabet_migration_spec.md)
+- [x] R02-T6 · T2 · Spec: [migration §2.2](../specs/alphabet_migration_spec.md)
       Files: `games/alphabet/types.ts`, `games/alphabet/constants.ts`, `games/alphabet/i18n/translations.ts`, `games/alphabet/store.ts`, `games/alphabet/lib/audio.ts`, `types.ts`, `constants.ts`, `store.ts`, `utils/audio.ts`
       Acceptance: `types.ts`/`constants.ts` разделены по таблице §2.2 (мост `Locale` из R02-T1 удалён, `Locale` импортируется из `@/shared/domain/locale`); `TRANSLATIONS` перенесён **без изменения содержимого** (5 локалей); `store.ts` → `games/alphabet/store.ts` без изменения логики; корневые `types.ts`, `constants.ts`, `store.ts`, `utils/` удалены → `rg "from '(\.\./)+(store|types|constants)'" games shared` пуст
       Paths: n/a — behavior-preserving refactor
-- [ ] R02-T7 · T2 · Spec: [migration §2.2](../specs/alphabet_migration_spec.md)
+- [x] R02-T7 · T2 · Spec: [migration §2.2](../specs/alphabet_migration_spec.md)
       Files: `games/alphabet/components/**`, `games/alphabet/page.tsx`, `components/**`, `App.tsx`, `app/game/page.tsx`
       Acceptance: 18 компонентов игры перенесены в `games/alphabet/components/`; `App.tsx` и `components/GameApp.tsx` слиты в `games/alphabet/components/GameApp.tsx` (без изменения разметки и поведения); `app/game/page.tsx` → `games/alphabet/page.tsx` с default-экспортом по `GamePageComponent` (принимает `{ locale }`, пока игнорируется); временный `app/game/page.tsx` = тонкая обёртка `import Page from '@/games/alphabet/page'` (удаляется в R02-CU5) → `/game` по-прежнему открывает игру; в `components/` остаётся только `admin/`
       Paths: n/a — behavior-preserving refactor
       UI: /game · roles: public · widths: 360,768,1280
       Seed: n/a
-- [ ] R02-T8 · T1 · Spec: [migration §2.2](../specs/alphabet_migration_spec.md), [`game_kit_contract §3`](../contracts/game_kit_contract.md) (только для сверки: kit в R03)
+- [x] R02-T8 · T1 · Spec: [migration §2.2](../specs/alphabet_migration_spec.md), [`game_kit_contract §3`](../contracts/game_kit_contract.md) (только для сверки: kit в R03)
       Files: `games/alphabet/logic/scoring.ts`, `games/alphabet/logic/scoring.test.ts`
       Acceptance: если подсчёт очков (`SCORE_MATCH`, `SCORE_EASY/MEDIUM/HARD`) реализован внутри `store.ts` — вынесена **чистая функция** `pointsForAnswer(level, correct)` и `pointsForMatch()` с неизменной семантикой, `store.ts` использует её; тест покрывает уровни и неверный ответ; иных изменений store нет → `npm run test` зелёный; если такой логики в store нет — задача закрывается записью «n/a» в отчёте CU
       Paths: H [текущая семантика подсчёта] · N [неверный ответ → 0 очков]

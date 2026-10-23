@@ -2,9 +2,9 @@
 
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useGameStore } from '../store';
-import { Question, ComplexityLevel } from '../types';
-import { TRANSLATIONS } from '../constants';
+import { useGameStore } from '@/games/alphabet/store';
+import { Question, ComplexityLevel } from '@/games/alphabet/types';
+import { TRANSLATIONS } from '@/games/alphabet/i18n/translations';
 
 export const QuestionEditor: React.FC = () => {
   const { 

@@ -1,5 +1,5 @@
 
-import { QuestionsSuite, ComplexityLevel } from '../types';
+import { QuestionsSuite, ComplexityLevel } from '@/games/alphabet/types';
 
 export const questionsData: QuestionsSuite = {
   "title": "Библейские персонажи и события",

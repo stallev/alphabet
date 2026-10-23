@@ -8,17 +8,14 @@ import {
   Question,
   QuestionsSuite,
   LibrarySuite,
-  Locale
-} from './types';
+} from '@/games/alphabet/types';
+import type { Locale } from '@/shared/domain/locale';
 import { 
   ALPHABET_BY_LOCALE,
   DEFAULT_SETTINGS, 
-  SCORE_MATCH, 
-  SCORE_EASY, 
-  SCORE_MEDIUM, 
-  SCORE_HARD 
-} from './constants';
-import { playSound } from './utils/audio';
+} from '@/games/alphabet/constants';
+import { pointsForAnswer, pointsForMatch } from '@/games/alphabet/logic/scoring';
+import { playSound } from '@/games/alphabet/lib/audio';
 
 const TTL_MS = 3 * 24 * 60 * 60 * 1000;
 const LOCALE_STORAGE_KEY = 'alphabet_locale';
@@ -280,7 +277,7 @@ export const useGameStore = create<GameState & GameActions>()((set, get) => ({
           c.id === firstCard.id || c.id === selectedCard.id ? { ...c, isMatched: true } : c
         );
         const newScores = [...teamScores];
-        newScores[currentTeamIndex] += SCORE_MATCH;
+        newScores[currentTeamIndex] += pointsForMatch();
         
         const allMatched = matchedCards.every(c => c.isMatched);
         const showQuestions = !allMatched && settings.gameMode === GameMode.WITH_QUESTIONS;
@@ -390,10 +387,7 @@ export const useGameStore = create<GameState & GameActions>()((set, get) => ({
     if (isCorrect) playSound('correct', isMuted);
     else playSound('error', isMuted);
 
-    let bonus = 0;
-    if (isCorrect) {
-      bonus = complexity === ComplexityLevel.EASY ? SCORE_EASY : complexity === ComplexityLevel.MEDIUM ? SCORE_MEDIUM : SCORE_HARD;
-    }
+    const bonus = pointsForAnswer(complexity, isCorrect);
     
     const newScores = [...teamScores];
     newScores[currentTeamIndex] += bonus;

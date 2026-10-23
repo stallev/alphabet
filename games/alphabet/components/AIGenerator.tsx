@@ -3,9 +3,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useSession } from 'next-auth/react';
-import { useGameStore } from '../store';
-import { QuestionsSuite, Question } from '../types';
-import { TRANSLATIONS } from '../constants';
+import { useGameStore } from '@/games/alphabet/store';
+import { QuestionsSuite, Question } from '@/games/alphabet/types';
+import { TRANSLATIONS } from '@/games/alphabet/i18n/translations';
 import { getDemoSuite } from '@/lib/demo-questions';
 import { CreditsGateOverlay } from './CreditsGateOverlay';
 

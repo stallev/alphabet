@@ -2,9 +2,10 @@
 
 import React, { useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useGameStore } from '../store';
-import { LibrarySuite, QuestionsSuite, Locale } from '../types';
-import { TRANSLATIONS } from '../constants';
+import { useGameStore } from '@/games/alphabet/store';
+import { LibrarySuite, QuestionsSuite } from '@/games/alphabet/types';
+import type { Locale } from '@/shared/domain/locale';
+import { TRANSLATIONS } from '@/games/alphabet/i18n/translations';
 
 const LIBRARY_LABELS: Record<Locale, {
   title: string; subtitle: string; import: string; create: string;

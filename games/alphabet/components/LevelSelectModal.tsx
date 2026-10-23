@@ -2,10 +2,11 @@
 
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useGameStore } from '../store';
-import { ComplexityLevel } from '../types';
+import { useGameStore } from '@/games/alphabet/store';
+import { ComplexityLevel } from '@/games/alphabet/types';
 import { Timer } from './Timer';
-import { TRANSLATIONS, SCORE_EASY, SCORE_MEDIUM, SCORE_HARD } from '../constants';
+import { SCORE_EASY, SCORE_MEDIUM, SCORE_HARD } from '@/games/alphabet/constants';
+import { TRANSLATIONS } from '@/games/alphabet/i18n/translations';
 
 export const LevelSelectModal: React.FC = () => {
   const { temp, questions, settings, selectComplexity, locale, closeLevelSelect } = useGameStore();

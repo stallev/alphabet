@@ -2,8 +2,9 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { useGameStore } from '../store';
-import { SCORE_MATCH, SCORE_EASY, SCORE_MEDIUM, SCORE_HARD, TRANSLATIONS, ALPHABET_BY_LOCALE } from '../constants';
+import { useGameStore } from '@/games/alphabet/store';
+import { SCORE_MATCH, SCORE_EASY, SCORE_MEDIUM, SCORE_HARD, ALPHABET_BY_LOCALE } from '@/games/alphabet/constants';
+import { TRANSLATIONS } from '@/games/alphabet/i18n/translations';
 
 export const RulesPage: React.FC = () => {
   const { setGuideOpen, closeAllModals, locale } = useGameStore();

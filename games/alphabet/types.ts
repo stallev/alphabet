@@ -1,7 +1,5 @@
 import type { Locale } from "@/shared/domain/locale";
 
-export type { Locale };
-
 export enum ComplexityLevel {
   EASY = 'easy',
   MEDIUM = 'medium',

@@ -2,9 +2,9 @@
 
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useGameStore } from '../store';
+import { useGameStore } from '@/games/alphabet/store';
 import { Timer } from './Timer';
-import { TRANSLATIONS } from '../constants';
+import { TRANSLATIONS } from '@/games/alphabet/i18n/translations';
 import { Confetti } from './Confetti';
 
 export const QuestionModal: React.FC = () => {

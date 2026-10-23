@@ -2,9 +2,10 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { useGameStore } from '../store';
-import { GameMode, Locale } from '../types';
-import { TRANSLATIONS } from '../constants';
+import { useGameStore } from '@/games/alphabet/store';
+import { GameMode } from '@/games/alphabet/types';
+import type { Locale } from '@/shared/domain/locale';
+import { TRANSLATIONS } from '@/games/alphabet/i18n/translations';
 
 export const ScoreBoard: React.FC = () => {
   const { settings, teamScores, currentTeamIndex, finishGame, isGameOver, isPaused, togglePause, toggleMute, isMuted, locale } = useGameStore();

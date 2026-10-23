@@ -2,9 +2,9 @@
 
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { useGameStore } from '../store';
-import { TRANSLATIONS } from '../constants';
-import type { Locale } from '../types';
+import { useGameStore } from '@/games/alphabet/store';
+import { TRANSLATIONS } from '@/games/alphabet/i18n/translations';
+import type { Locale } from '@/shared/domain/locale';
 
 const PROMPT_TEXTS: Record<Locale, string> = {
   ru: `Действуй как эксперт-методист библейских викторин для продвинутых христиан. Составь набор вопросов для игры "Алфавит" в формате JSON.

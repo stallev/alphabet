@@ -2,8 +2,8 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { useGameStore } from '../store';
-import { TRANSLATIONS } from '../constants';
+import { useGameStore } from '@/games/alphabet/store';
+import { TRANSLATIONS } from '@/games/alphabet/i18n/translations';
 import { Confetti } from './Confetti';
 
 export const VictoryScreen: React.FC = () => {

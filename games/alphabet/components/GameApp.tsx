@@ -2,23 +2,24 @@
 
 import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useGameStore } from './store';
-import { GameSettings } from './components/GameSettings';
-import { ScoreBoard } from './components/ScoreBoard';
-import { Card } from './components/Card';
-import { LevelSelectModal } from './components/LevelSelectModal';
-import { QuestionModal } from './components/QuestionModal';
-import { RulesPage } from './components/RulesPage';
-import { QuestionEditor } from './components/QuestionEditor';
-import { VictoryScreen } from './components/VictoryScreen';
-import { PromptPage } from './components/PromptPage';
-import { AIGenerator } from './components/AIGenerator';
-import { QuestionLibraryPage } from './components/QuestionLibraryPage';
-import { OperatorGuide } from './components/OperatorGuide';
-import { Timer } from './components/Timer';
-import { TRANSLATIONS } from './constants';
+import { useGameStore } from '@/games/alphabet/store';
+import { GameSettings } from './GameSettings';
+import { ScoreBoard } from './ScoreBoard';
+import { Card } from './Card';
+import { LevelSelectModal } from './LevelSelectModal';
+import { QuestionModal } from './QuestionModal';
+import { RulesPage } from './RulesPage';
+import { QuestionEditor } from './QuestionEditor';
+import { VictoryScreen } from './VictoryScreen';
+import { PromptPage } from './PromptPage';
+import { AIGenerator } from './AIGenerator';
+import { QuestionLibraryPage } from './QuestionLibraryPage';
+import { OperatorGuide } from './OperatorGuide';
+import { Timer } from './Timer';
+import { TRANSLATIONS } from '@/games/alphabet/i18n/translations';
+import type { QuestionsSuite } from '@/games/alphabet/types';
 
-const HOME_CONFIRM: Record<import('./types').Locale, string> = {
+const HOME_CONFIRM: Record<import('@/shared/domain/locale').Locale, string> = {
   ru: "Вернуться на главную страницу? Текущий прогресс игры будет сброшен.",
   en: "Return to home? Current game progress will be lost.",
   uk: "Повернутись на головну сторінку? Поточний прогрес гри буде скинуто.",
@@ -78,11 +79,11 @@ const TurnTransition: React.FC<{ teamName: string; visible: boolean; label: stri
   );
 };
 
-interface AppProps {
-  initialSuites?: import('./types').QuestionsSuite[];
+interface GameAppProps {
+  initialSuites?: QuestionsSuite[];
 }
 
-const App: React.FC<AppProps> = ({ initialSuites }) => {
+export function GameApp({ initialSuites }: GameAppProps) {
   const { 
     isLoading, loadSystemSuites, setSystemSuites, isSettingsStage, cards, flipCard, temp, 
     isGameActive, showEditor, showPrompt, showAIGenerator, showLibrary, 
@@ -290,6 +291,4 @@ const App: React.FC<AppProps> = ({ initialSuites }) => {
       <HomeButton visible={showGlobalHome} />
     </>
   );
-};
-
-export default App;
+}

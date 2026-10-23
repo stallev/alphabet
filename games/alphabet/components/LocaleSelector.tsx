@@ -2,9 +2,10 @@
 
 import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Locale } from '../types';
-import { LOCALE_META, ALPHABET_BY_LOCALE } from '../constants';
-import { useGameStore } from '../store';
+import type { Locale } from '@/shared/domain/locale';
+import { ALPHABET_BY_LOCALE } from '@/games/alphabet/constants';
+import { LOCALE_META } from '@/shared/i18n/locales';
+import { useGameStore } from '@/games/alphabet/store';
 
 // Temporarily active locales — only languages with question suites in the DB.
 // Full list (uk, de, ro) is preserved in types.ts, constants.ts, and LOCALE_META.
