@@ -1,6 +1,6 @@
 import 'server-only';
 
-import { prisma } from '@/lib/db';
+import { prisma } from '@/server/db/client';
 import type { QuestionSuite } from '@/generated/client';
 
 export async function getAllSuites(): Promise<QuestionSuite[]> {

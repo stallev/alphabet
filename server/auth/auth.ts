@@ -3,7 +3,7 @@ import 'server-only';
 import NextAuth from 'next-auth';
 import Credentials from 'next-auth/providers/credentials';
 
-import { verifyAdminCredentials } from '@/src/data/auth/verify-credentials.server';
+import { verifyAdminCredentials } from '@/server/auth/verify-credentials.server';
 import authConfig from './auth.config';
 
 export const { auth, handlers, signIn, signOut } = NextAuth({

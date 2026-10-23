@@ -45,7 +45,7 @@
 
 ### R02-CU2 — refactor(server): move auth and db to server · Review: reviewer · Smoke: none · Commit: auto
 
-- [ ] R02-T4 · T3 · Spec: [migration §2.1](../specs/alphabet_migration_spec.md) · Contract: [structure §5](../contracts/repo_structure_contract.md) п. 1–3
+- [x] R02-T4 · T3 · Spec: [migration §2.1](../specs/alphabet_migration_spec.md) · Contract: [structure §5](../contracts/repo_structure_contract.md) п. 1–3
       Files: `server/db/client.ts`, `server/auth/auth.ts`, `server/auth/auth.config.ts`, `server/auth/verify-credentials.server.ts`, `lib/db.ts`, `lib/auth.ts`, `lib/auth.config.ts`, `src/data/auth/verify-credentials.server.ts`, `proxy.ts`, `app/api/auth/[...nextauth]/route.ts`, `app/admin/**`, `app/api/**`, `prisma/seed.ts`, `prisma/import-suites.ts`, `types/next-auth.d.ts`
       Acceptance: файлы перенесены `git mv`; все импорты `@/lib/db`, `@/lib/auth`, `@/lib/auth.config`, `@/src/data/auth/*` заменены; `auth.config.ts` по-прежнему не импортирует Prisma; `auth.ts` и `verify-credentials.server.ts` сохраняют `import "server-only"`; `proxy.ts` использует только `@/server/auth/auth.config`; логика `authorize()`, callbacks, matcher и проверки ролей **не изменены** (diff — только пути) → `rg "@/lib/(db|auth)" .` вне `docs/` пуст; `typecheck`/`lint`/`build` зелёные
       Paths: H [spec §2.1] · N [prisma-скрипты запускаются: `npm run db:generate`] · S [structure §5 п. 2–3; authz «anon × /admin → 307 /admin/login», «anon × POST /api/admin/suites → 307/401 как до переноса», «non-admin × /admin → редирект как до переноса»]

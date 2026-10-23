@@ -2,7 +2,7 @@
 import 'server-only';
 
 import { revalidateTag } from 'next/cache';
-import { auth } from '@/lib/auth';
+import { auth } from '@/server/auth/auth';
 import { suiteImportSchema } from '@/lib/validators/suite-import';
 import { importSuiteFromJson } from '@/src/data/suites/import-suite.server';
 

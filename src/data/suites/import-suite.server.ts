@@ -1,6 +1,6 @@
 import 'server-only';
 
-import { prisma } from '@/lib/db';
+import { prisma } from '@/server/db/client';
 import type { SuiteImportInput } from '@/lib/validators/suite-import';
 
 export async function importSuiteFromJson(

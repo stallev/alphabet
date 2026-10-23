@@ -1,7 +1,7 @@
 import 'server-only';
 
 import bcrypt from 'bcryptjs';
-import { prisma } from '@/lib/db';
+import { prisma } from '@/server/db/client';
 
 interface CredentialsInput {
   email?: unknown;

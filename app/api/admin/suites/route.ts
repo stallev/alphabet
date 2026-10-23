@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { auth } from '@/lib/auth';
+import { auth } from '@/server/auth/auth';
 import { getAllSuites } from '@/src/data/suites/get-suites.server';
 import { importSuiteFromJson } from '@/src/data/suites/import-suite.server';
 import { suiteImportSchema } from '@/lib/validators/suite-import';
