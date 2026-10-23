@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useGameStore } from '@/games/alphabet/store';
+import { readClientLocale, useGameStore } from '@/games/alphabet/store';
 import { GameSettings } from './GameSettings';
 import { ScoreBoard } from './ScoreBoard';
 import { Card } from './Card';
@@ -88,12 +88,12 @@ export function GameApp({ initialSuites }: GameAppProps) {
     isLoading, loadSystemSuites, setSystemSuites, isSettingsStage, cards, flipCard, temp, 
     isGameActive, showEditor, showPrompt, showAIGenerator, showLibrary, 
     showGuide, isGameOver, isPaused, togglePause, settings, 
-    currentTeamIndex, handleTurnTimeout, locale, turnIdentifier 
+    currentTeamIndex, handleTurnTimeout, locale, turnIdentifier, setLocale,
   } = useGameStore();
 
   const t = TRANSLATIONS[locale];
   const [showRules, setShowRules] = useState(false);
-  const [isDesktop, setIsDesktop] = useState(true);
+  const [isDesktop, setIsDesktop] = useState(false);
   const [showTurnTransition, setShowTurnTransition] = useState(false);
 
   // Track turn changes to show transition animation
@@ -106,6 +106,10 @@ export function GameApp({ initialSuites }: GameAppProps) {
   }, [currentTeamIndex, isGameActive, isSettingsStage, isGameOver]);
 
   useEffect(() => {
+    setLocale(readClientLocale());
+  }, [setLocale]);
+
+  useEffect(() => {
     if (initialSuites) {
       setSystemSuites(initialSuites);
     } else {
@@ -116,7 +120,6 @@ export function GameApp({ initialSuites }: GameAppProps) {
     window.addEventListener('hashchange', handleHash);
     handleHash();
 
-    // Check for desktop size to conditionally render only ONE timer
     const checkDesktop = () => setIsDesktop(window.innerWidth >= 1024);
     checkDesktop();
     window.addEventListener('resize', checkDesktop);

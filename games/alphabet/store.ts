@@ -9,7 +9,7 @@ import {
   QuestionsSuite,
   LibrarySuite,
 } from '@/games/alphabet/types';
-import type { Locale } from '@/shared/domain/locale';
+import { DEFAULT_LOCALE, type Locale } from '@/shared/domain/locale';
 import { 
   ALPHABET_BY_LOCALE,
   DEFAULT_SETTINGS, 
@@ -23,20 +23,22 @@ const LOCALE_STORAGE_KEY = 'alphabet_locale';
 // Extend this list when uk/de/ro suites are added.
 const VALID_LOCALES: Locale[] = ['ru', 'en'];
 
-const getInitialLocale = (): Locale => {
+/** Client-only: call after mount to apply localStorage / navigator (SSR-safe initial state uses DEFAULT_LOCALE). */
+export const readClientLocale = (): Locale => {
   if (typeof window !== 'undefined') {
     const saved = localStorage.getItem(LOCALE_STORAGE_KEY) as Locale | null;
     if (saved && VALID_LOCALES.includes(saved)) return saved;
   }
-  if (typeof navigator === 'undefined') return 'en';
-  const lang = (navigator.language || (navigator as any).userLanguage || '').toLowerCase();
-  if (lang.startsWith('ru')) return 'ru';
-  return 'en';
+  if (typeof navigator !== 'undefined') {
+    const lang = (navigator.language || '').toLowerCase();
+    if (lang.startsWith('ru')) return 'ru';
+  }
+  return DEFAULT_LOCALE;
 };
 
 const INITIAL_DATA = {
   isLoading: true,
-  locale: getInitialLocale(),
+  locale: DEFAULT_LOCALE,
   settings: { ...DEFAULT_SETTINGS },
   cards: [] as CardData[],
   currentTeamIndex: 0,

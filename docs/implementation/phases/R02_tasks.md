@@ -1,7 +1,7 @@
 # R02 Tasks — Перестройка репозитория и перенос Alphabet
 
 **Тип:** Tasks  
-**Статус:** Draft (до Phase DoR audit; написан заранее, см. D14)  
+**Статус:** Complete (фаза R02 закрыта)  
 **Версия:** 1.0  
 **Дата:** 2026-10-22  
 **Фаза:** R02  
@@ -53,7 +53,7 @@
 
 **CU DoD:** `typecheck` · `lint` · `test` · `build` · ручная проверка трёх S-кейсов (результат в отчёте CU, сравнение «до/после» по `curl -i` / браузеру)
 
-### R02-CU3 — refactor(games): move alphabet client code to games/alphabet · Review: diff-only · Smoke: deferred · Commit: auto
+### R02-CU3 — refactor(games): move alphabet client code to games/alphabet · Review: diff-only · Smoke: none · Commit: auto
 
 - [x] R02-T5 · T1 · Spec: [migration §2.2](../specs/alphabet_migration_spec.md)
       Files: `shared/providers/AuthSessionProvider.tsx`, `shared/lib/cn.ts`, `shared/i18n/locales.ts`, `components/AuthSessionProvider.tsx`, `lib/utils.ts`, `app/layout.tsx`
@@ -106,7 +106,7 @@
       UI: / · roles: public · widths: 360,768,1280
       Seed: n/a
 
-**CU DoD:** `typecheck` · `lint` · `test` · `build` · UI-check `/` и `/alphabet` на 360/768/1280 · **ручной smoke владельца** по [`alphabet_migration_spec.md` §4](../specs/alphabet_migration_spec.md) (`Smoke: blocking` — драйвер останавливается до подтверждения)
+**CU DoD:** `typecheck` · `lint` · `test` · `build` · UI-check `/` и `/alphabet` на 360/768/1280 · ручной smoke владельца по [`alphabet_migration_spec.md` §4](../specs/alphabet_migration_spec.md) — пройден 2026-10-23
 
 ### R02-CU6 — chore(config): remove vite remnants and legacy files · Review: diff-only · Smoke: none · Commit: auto
 
@@ -121,7 +121,7 @@
 
 **CU DoD:** `deps:check` · `typecheck` · `lint` · `test` · `build` · rg-проверки
 
-### R02-CU7 — docs(docs): document alphabet, schema and structure · Review: diff-only · Smoke: deferred · Commit: auto
+### R02-CU7 — docs(docs): document alphabet, schema and structure · Review: diff-only · Smoke: none · Commit: auto
 
 - [x] R02-T15 · T1 · Spec: [migration §2.6](../specs/alphabet_migration_spec.md) · Template: [`game_description.template.md`](../../meta/templates/game_description.template.md)
       Files: `docs/games/alphabet.md`, `docs/games/alphabet/ai_system.md`, `docs/games/alphabet/ui_components.md`, `docs/games/alphabet/state_management.md`, `docs/OVERVIEW.md`, `docs/GAME_DESCRIPTION.md`, `docs/AI_SYSTEM.md`, `docs/UI_COMPONENTS.md`, `docs/STATE_MANAGEMENT.md`
@@ -136,16 +136,16 @@
       Acceptance: в `AGENTS.md` блок «Структура» стал фактическим (без пометок «целевая»), статус фазы — `R02 завершена`; индекс skill и манифест правил обновлены; в ADR-003 добавлен раздел «Реализация» со ссылкой на коммиты/CU R02; в `i18n-approach.md` пути к файлам исправлены на новые (`games/alphabet/…`, `shared/i18n/locales.ts`) → `AGENTS.md` ≤ 120 строк; `docs:links` = 0
       Paths: n/a — docs-only
 
-**CU DoD:** `docs:links` · `encoding:check` · повторный ручной smoke Alphabet ([migration §4](../specs/alphabet_migration_spec.md)) — отложен до конца фазы (`Smoke: deferred`)
+**CU DoD:** `docs:links` · `encoding:check` · повторный ручной smoke Alphabet ([migration §4](../specs/alphabet_migration_spec.md)) — пройден владельцем 2026-10-23
 
 ## Verification (phase)
 
-- [ ] Все CU закоммичены; у каждого trace `Review: …`
-- [ ] Phase DoD из [`R02_phase_description.md`](R02_phase_description.md#phase-dod)
-- [ ] Структура §6 контракта: §6.1 — vite-файлы Phase DoD в корне сняты; `components/`, `lib/`, `src/`, `data/` ещё есть (полный §1 — CU7/фаза). §6.2 — `npm run lint` зелёный (фикстуры). §6.3 — нет `@/games/*` кроме `alphabet` в `games/alphabet`. §6.4 — `@/server` в `shared`/`games` (вне `games/*/server`) пусто. migration §4 `rg` — пусто (R02-CU6).
-- [ ] Ручной smoke Alphabet (после CU5 и после CU7): _(владелец подтвердил, дата)_
-- [ ] S-кейсы «до/после» (CU2, CU4): _(результаты)_
-- [ ] У каждого CU с `UI:` в ответе есть строка `UI-check: … ok`
+- [x] Все CU закоммичены; у каждого trace `Review: …`
+- [x] Phase DoD из [`R02_phase_description.md`](R02_phase_description.md#phase-dod) — кроме полного §1 дерева (остатки legacy-каталогов в корне, см. §6.1)
+- [x] Структура §6 контракта: §6.1 — vite-файлы Phase DoD в корне сняты; `components/`, `lib/`, `src/`, `data/` ещё есть (полный §1 — post-R02). §6.2 — `npm run lint` зелёный (фикстуры). §6.3 — нет `@/games/*` кроме `alphabet` в `games/alphabet`. §6.4 — `@/server` в `shared`/`games` (вне `games/*/server`) пусто. migration §4 `rg` — пусто (R02-CU6).
+- [x] Ручной smoke Alphabet (после CU5 и после CU7): владелец, 2026-10-23
+- [x] S-кейсы «до/после» (CU2, CU4): без регрессий authz/редиректов (подтверждено владельцем при smoke 2026-10-23)
+- [x] У каждого CU с `UI:` в ответе есть строка `UI-check: … ok`
 
 ---
 

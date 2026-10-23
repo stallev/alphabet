@@ -68,7 +68,7 @@ N/A — структура каталогов; auth остаётся по ADR-00
 | R02-CU4 | `11a85fa` | refactor(games): alphabet data and server code |
 | R02-CU5 | `c6eb93c` | feat(portal): `[game]` route, manifest, catalog |
 | R02-CU6 | `583cb37` | chore(config): remove Vite remnants |
-| R02-CU7 | _(этот CU)_ | docs: alphabet, `database_schema.md`, `AGENTS.md` |
+| R02-CU7 | `1eeb9b4` | docs: alphabet, `database_schema.md`, `AGENTS.md` |
 
 Документация игры: [`docs/games/alphabet.md`](../games/alphabet.md). Схема БД: [`database_schema.md`](./database_schema.md).
 
