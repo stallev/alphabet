@@ -43,7 +43,7 @@
 
 ### §2.3 Окружение сборки
 
-`npm run build` = `prisma generate && next build`. `prisma.config.ts` требует `DIRECT_URL` (через `env()`), приложение при сборке — переменные из `.env.local`. Следствия:
+`npm ci` и `npm install` запускают `postinstall` (`prisma generate`) и создают gitignore-клиент в `generated/` до `typecheck`. `npm run build` по-прежнему `prisma generate && next build`. `prisma.config.ts` требует `DIRECT_URL` (через `env()`), приложение при сборке — переменные из `.env.local`. Следствия:
 
 - локально гейт работает при заполненном `.env.local`; отсутствие переменных = сбой шага `production build` (не «обход» гейта);
 - в CI задаются фиктивные значения `DATABASE_URL`, `DIRECT_URL`, `AUTH_SECRET`, `AUTH_URL` (R01-T6); реальные секреты в CI-файле не хранятся.
