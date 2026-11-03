@@ -24,12 +24,13 @@ export const DEFAULT_SETTINGS = {
   flipTimer: 15,
 };
 
+/** Reference palette for docs/tests — use semantic Tailwind tokens in UI, not these hex values. */
 export const COLORS = {
-  primary: "#1e3a8a", 
-  secondary: "#fbbf24", 
-  accent: "#ef4444", 
-  success: "#10b981", 
-  background: "#f8fafc", 
+  primary: '#1e3a8a',
+  secondary: '#fbbf24',
+  accent: '#ef4444',
+  success: '#10b981',
+  background: '#f8fafc',
 };
 
 export const SCORE_MATCH = 5;

@@ -151,17 +151,17 @@
 
 ### R03-CU6 — refactor(games): replace alphabet components with kit adapters and tokens · Review: diff-only · Smoke: blocking · Commit: auto
 
-- [ ] R03-T16 · T2 · Spec: [kit §1, §2.1](../contracts/game_kit_contract.md)
+- [x] R03-T16 · T2 · Spec: [kit §1, §2.1](../contracts/game_kit_contract.md)
       Files: `games/alphabet/logic/map-question.ts`, `games/alphabet/logic/map-question.test.ts`, `games/alphabet/logic/map-level.ts`, `games/alphabet/logic/map-level.test.ts`
       Acceptance: `mapQuestion(Question) → QuizQuestion` (тип `ID` → `choice`, `String` → `text`), `mapLevels(settings, strings) → LevelOption[]` с очками `SCORE_EASY/MEDIUM/HARD`; тесты на оба типа ответа и отсутствующие `answersList`/`rightAnswer*`
       Paths: H · N [`answersList: null` при `ID`, нет правильного ответа]
-- [ ] R03-T17 · T3 · Spec: [kit §2–§3](../contracts/game_kit_contract.md)
+- [x] R03-T17 · T3 · Spec: [kit §2–§3](../contracts/game_kit_contract.md)
       Files: `games/alphabet/components/ScoreBoardContainer.tsx`, `games/alphabet/components/QuestionModalContainer.tsx`, `games/alphabet/components/LevelSelectContainer.tsx`, `games/alphabet/components/VictoryScreenContainer.tsx`, `games/alphabet/components/SettingsContainer.tsx`, `games/alphabet/components/GameApp.tsx`, `games/alphabet/components/ScoreBoard.tsx`, `games/alphabet/components/Timer.tsx`, `games/alphabet/components/QuestionModal.tsx`, `games/alphabet/components/LevelSelectModal.tsx`, `games/alphabet/components/VictoryScreen.tsx`, `games/alphabet/components/Confetti.tsx`, `games/alphabet/components/StepperInput.tsx`, `games/alphabet/components/GameSettings.tsx`, `games/alphabet/components/RulesPage.tsx`
       Acceptance: контейнеры читают `useGameStore()` и передают props в kit (`ScoreBoard`, `QuestionModal`, `LevelSelect`, `VictoryScreen`, `SettingsPanel` + `TeamsSetup` + `StepperInput`, `RulesDialog` с `RulesContent` из словаря Alphabet); поведение игры и счёт **не изменены** (в т. ч. задержка результата 2500/2000 мс, авто-выбор уровня по таймеру, подтверждение завершения игры теперь в `Dialog`, без `window.confirm`/`alert`); старые реализации `ScoreBoard`, `Timer`, `QuestionModal`, `LevelSelectModal`, `VictoryScreen`, `Confetti`, `StepperInput` удалены; специфичные настройки Alphabet (режим с вопросами/без, темы, таймеры) остаются в `SettingsContainer` внутри `SettingsPanel` → `rg "useGameStore" shared` пуст; `rg "components/(ScoreBoard|Timer|QuestionModal|LevelSelectModal|VictoryScreen|Confetti|StepperInput)\.tsx" games` — файлов нет
       Paths: H [полный цикл игры] · N [таймаут выбора уровня и ответа; игра без вопросов; ничья в финале]
       UI: /alphabet · roles: public · widths: 360,768,1280
       Seed: n/a
-- [ ] R03-T18 · T2 · Spec: [tokens §3.1](../contracts/design_tokens_contract.md)
+- [x] R03-T18 · T2 · Spec: [tokens §3.1](../contracts/design_tokens_contract.md)
       Files: `games/alphabet/components/Card.tsx`, `games/alphabet/components/GameApp.tsx`, `games/alphabet/components/*Container.tsx`, `games/alphabet/constants.ts`, `scripts/tokens-baseline.json`
       Acceptance: файлы игрового экрана (`Card`, `GameApp`, контейнеры) переведены на токены «Утреннего света»; карточка: рубашка `surface` с номером и `shadow-card`, открытая буква — на `accent` с `accent-fg`, контраст ≥ 7:1 (вместо белой на amber ≈1.6:1 и белой на emerald ≈2.5:1), текст не мельче 14 px, эмодзи заменены `lucide-react`; полный редизайн поля (spring-флип, пауза без blur) — R04; `COLORS` из `constants.ts` используется только как источник значений для токенов, а не в разметке; baseline обновлён (удалены переведённые файлы, числа остальных не выросли) → `npm run tokens:check` = 0; суммарное число нарушений «после» записано (меньше значения «до» из R03-T1)
       Paths: n/a — styling refactor

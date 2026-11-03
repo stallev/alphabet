@@ -125,6 +125,8 @@ export const en: AlphabetDictionary = {
     pause: "PAUSE",
     resume: "RESUME",
     finish: "FINISH",
+    finishConfirm:
+      "Are you sure you want to finish the game now? Results will be calculated based on current scores.",
     progress: "PROGRESS",
     correct: "CORRECT!",
     wrong: "WRONG!",
