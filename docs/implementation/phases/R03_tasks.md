@@ -149,7 +149,7 @@
 
 **CU DoD:** `typecheck` · `lint` · `test` · `build` · `tokens:check` (baseline не вырос) · UI-check `/alphabet` на 360/768/1280 (RU и EN)
 
-### R03-CU6 — refactor(games): replace alphabet components with kit adapters and tokens · Review: diff-only · Smoke: blocking · Commit: auto
+### R03-CU6 — refactor(games): replace alphabet components with kit adapters and tokens · Review: diff-only · Smoke: none · Commit: auto
 
 - [x] R03-T16 · T2 · Spec: [kit §1, §2.1](../contracts/game_kit_contract.md)
       Files: `games/alphabet/logic/map-question.ts`, `games/alphabet/logic/map-question.test.ts`, `games/alphabet/logic/map-level.ts`, `games/alphabet/logic/map-level.test.ts`
@@ -172,19 +172,19 @@
 
 ### R03-CU7 — feat(portal): add catalog home, site config and coming-soon page · Review: diff-only · Smoke: none · Commit: auto
 
-- [ ] R03-T19 · T1 · Spec: [home §1](../specs/portal_home_spec.md)
+- [x] R03-T19 · T1 · Spec: [home §1](../specs/portal_home_spec.md)
       Files: `shared/config/site.ts`, `games/alphabet/components/GameApp.tsx`, `app/_components/SiteHeader.tsx`, `app/_components/SiteFooter.tsx`, `app/layout.tsx`, `app/[game]/layout.tsx`
       Acceptance: `SITE = { name: 'Circle', indexable: false }` (было `EdenGames`) — единственное место имени и флага индексации; шапка (знак «C» в круге `accent`, `LocaleSwitcher`; единственное место `backdrop-filter`) и подвал портала на `/`; страницы игр (`/<slug>`) шапку портала **не** показывают (у них `GameShell`); метаданные `robots` из `SITE.indexable` → имя портала нигде больше не захардкожено, `rg "EdenGames" app shared games` пуст (в т. ч. футер `GameApp`), `<title>` и `og:site_name` — Circle
       Paths: H [home §1]
       UI: / · roles: public · widths: 360,768,1280
       Seed: n/a
-- [ ] R03-T20 · T2 · Spec: [home §2–§5](../specs/portal_home_spec.md)
+- [x] R03-T20 · T2 · Spec: [home §2–§5](../specs/portal_home_spec.md)
       Files: `app/page.tsx`, `app/_components/GameCard.tsx`, `app/_components/GameTile.tsx`, `app/_components/GameGrid.tsx`, `shared/game-kit/manifest.ts`, `shared/game-kit/manifest.test.ts`, `games/registry.ts`, `games/registry.test.ts`, `games/alphabet/manifest.ts`, `public/games/alphabet/cover.webp`
       Acceptance: каталог по спецификации (hero без пятен и лозунгов про дизайн, сетка 1/2/3 колонки, `GameCard` с плиткой `GameTile` — цвет `game-<tone>` и глиф, теги, мета, состояния; пустое состояние; метаданные `title`/`description`/`robots`); `GameManifest.cover` заменён на `tile: { glyph, tone }` ([manifest §1, §3.1](../contracts/game_manifest_contract.md)), валидация и тесты реестра обновлены, у Alphabet `tile: { glyph: 'А', tone: 1 }`, `cover.webp` удалён → `portal_home_spec §7` — все пункты выполнены (тестовая запись `coming-soon` — локально, не коммитится)
       Paths: H [home §2] · N [home §4: пустой реестр, длинные тексты; манифест без `tile`, `glyph` > 2 символов, `tone` вне 1–5]
       UI: / · roles: public · widths: 360,768,1280
       Seed: n/a
-- [ ] R03-T21 · T2 · Spec: [routing §1–§2](../contracts/game_routing_contract.md)
+- [x] R03-T21 · T2 · Spec: [routing §1–§2](../contracts/game_routing_contract.md)
       Files: `app/[game]/ComingSoon.tsx`, `app/[game]/page.tsx`, `app/[game]/error.tsx`, `app/[game]/loading.tsx`, `app/[game]/page.test.ts`
       Acceptance: для `coming-soon` страница возвращает 200 с блоком «Скоро» (плитка, название, описание из манифеста, ссылка в каталог) и `robots: noindex`; `generateMetadata` покрывает оба статуса; тексты `error.tsx`/`loading.tsx` — из словаря `errors` (кириллицы нет); тест: `coming-soon` не вызывает `loadPage`; `active` вызывает → тест зелёный; визуальная проверка — временной записью, не коммитится
       Paths: H [routing §1] · N [slug неизвестен → 404; coming-soon без `loadPage`]

@@ -24,7 +24,7 @@ const DEMO_MANIFEST: GameManifest = {
   status: 'active',
   tags: ['memory', 'quiz', 'team'],
   teams: { min: 2, max: 6 },
-  cover: '/games/alphabet/cover.webp',
+  tile: { glyph: 'А', tone: 1 },
   order: 10,
 };
 

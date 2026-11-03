@@ -10,7 +10,7 @@ import { fileURLToPath, pathToFileURL } from "node:url";
 
 export const SCAN_ROOTS = ["app", "games", "shared", "server"];
 export const SCAN_FILES = ["proxy.ts"];
-const SKIPPED_DIRS = new Set(["node_modules", ".next", "generated", "lint-fixtures"]);
+const SKIPPED_DIRS = new Set(["node_modules", ".next", ".next-dev", "generated", "lint-fixtures"]);
 const SOURCE_EXT = /\.(ts|tsx|mts|js|jsx|mjs)$/;
 const TEST_FILE = /\.(test|spec)\.[a-z]+$|(^|\/)__tests__\//;
 const TEST_ONLY_PACKAGES = /^(vitest|@vitest\/|@testing-library\/|jsdom|happy-dom|playwright|@playwright\/)/;

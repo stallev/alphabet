@@ -20,7 +20,7 @@ function baseManifest(overrides: Partial<GameManifest> = {}): GameManifest {
     status: "coming-soon",
     tags: ["memory"],
     teams: { min: 1, max: 4 },
-    cover: "",
+    tile: { glyph: "G", tone: 1 },
     order: 10,
     ...overrides,
   };
@@ -38,13 +38,10 @@ describe("assertValidRegistry", () => {
     expect(() => assertValidRegistry([entry()])).not.toThrow();
   });
 
-  it("accepts a valid active entry with loadPage and cover", () => {
+  it("accepts a valid active entry with loadPage and tile", () => {
     expect(() =>
       assertValidRegistry([
-        entry(
-          { status: "active", cover: "/games/sample-game/cover.webp" },
-          async () => ({ default: async () => null }),
-        ),
+        entry({ status: "active" }, async () => ({ default: async () => null })),
       ]),
     ).not.toThrow();
   });
@@ -67,11 +64,9 @@ describe("assertValidRegistry", () => {
   });
 
   it("rejects active game without loadPage", () => {
-    expect(() =>
-      assertValidRegistry([
-        entry({ status: "active", cover: "/games/sample-game/cover.webp" }),
-      ]),
-    ).toThrow('active game "sample-game" has no loadPage');
+    expect(() => assertValidRegistry([entry({ status: "active" })])).toThrow(
+      'active game "sample-game" has no loadPage',
+    );
   });
 
   it("rejects coming-soon with loadPage", () => {
@@ -125,14 +120,36 @@ describe("assertValidRegistry", () => {
     );
   });
 
-  it("rejects active game without cover", () => {
+  it("rejects missing tile", () => {
     expect(() =>
       assertValidRegistry([
-        entry({ status: "active", cover: "" }, async () => ({
-          default: async () => null,
-        })),
+        entry({ tile: undefined as unknown as GameManifest["tile"] }),
       ]),
-    ).toThrow('active game "sample-game" has no cover');
+    ).toThrow('manifest "sample-game": tile is required');
+  });
+
+  it("rejects empty tile glyph", () => {
+    expect(() => assertValidRegistry([entry({ tile: { glyph: "  ", tone: 1 } })])).toThrow(
+      'manifest "sample-game": tile.glyph must not be empty',
+    );
+  });
+
+  it("rejects tile glyph longer than two characters", () => {
+    expect(() =>
+      assertValidRegistry([entry({ tile: { glyph: "ABC", tone: 1 } })]),
+    ).toThrow('manifest "sample-game": tile.glyph must be at most 2 characters');
+  });
+
+  it("rejects tile glyph with emoji", () => {
+    expect(() =>
+      assertValidRegistry([entry({ tile: { glyph: "🎮", tone: 1 } })]),
+    ).toThrow('manifest "sample-game": tile.glyph must not contain emoji');
+  });
+
+  it("rejects tile tone outside 1–5", () => {
+    expect(() =>
+      assertValidRegistry([entry({ tile: { glyph: "A", tone: 6 as 1 } })]),
+    ).toThrow('manifest "sample-game": tile.tone must be between 1 and 5');
   });
 });
 

@@ -144,6 +144,7 @@ export default defineConfig([
   },
   globalIgnores([
     ".next/**",
+    ".next-dev/**",
     "out/**",
     "build/**",
     "next-env.d.ts",

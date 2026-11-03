@@ -12,16 +12,25 @@ import {
 } from "@/games/registry";
 import { getLocale } from "@/shared/i18n/server";
 
+import { ComingSoon } from "./ComingSoon";
+
 function toActiveLocale(locale: Locale): ActiveLocale {
   return locale === "en" ? "en" : "ru";
 }
 
-/** Unknown slugs → static 404 (`game_routing_contract.md` §2; incompatible with `cacheComponents`). */
+/** Unknown slugs → static 404 (`game_routing_contract.md` §2). */
 export const dynamicParams = false;
 
 export function generateStaticParams(): { game: string }[] {
   assertValidRegistry(GAME_ENTRIES);
   return GAME_ENTRIES.map((entry) => ({ game: entry.manifest.slug }));
+}
+
+function resolveRobots(status: "active" | "coming-soon"): Metadata["robots"] {
+  if (status === "coming-soon") {
+    return "noindex, nofollow";
+  }
+  return SITE.indexable ? "index, follow" : "noindex, nofollow";
 }
 
 export async function generateMetadata({
@@ -35,13 +44,13 @@ export async function generateMetadata({
     return {};
   }
 
-  const locale = toActiveLocale(DEFAULT_LOCALE);
+  const locale = toActiveLocale(await getLocale());
   const { manifest } = entry;
 
   return {
-    title: `${manifest.title[locale]} — ${SITE.name}`,
+    title: manifest.title[locale],
     description: manifest.description[locale],
-    robots: SITE.indexable ? "index, follow" : "noindex, nofollow",
+    robots: resolveRobots(manifest.status),
   };
 }
 
@@ -58,7 +67,7 @@ export default async function GamePage({
   }
 
   if (entry.manifest.status === "coming-soon") {
-    notFound();
+    return <ComingSoon manifest={entry.manifest} />;
   }
 
   if (!entry.loadPage) {

@@ -2,7 +2,7 @@ import type { Dictionary } from '@/shared/i18n/types';
 
 export const en: Dictionary = {
   site: {
-    name: 'EdenGames',
+    name: 'Circle',
     tagline: 'Team games for youth ministries',
     description:
       'Interactive Christian team games in the browser: quizzes, memory, and party modes.',
@@ -93,5 +93,12 @@ export const en: Dictionary = {
   errors: {
     generic: 'Something went wrong. Please try again.',
     notFound: 'Page not found',
+    gameRoute: {
+      title: 'Could not load the game',
+      body: 'Try again or return to the catalog.',
+      loading: 'Loading game…',
+      retry: 'Retry',
+      toCatalog: 'To catalog',
+    },
   },
 };

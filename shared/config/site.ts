@@ -1,4 +1,4 @@
 export const SITE = {
-  name: "EdenGames",
+  name: "Circle",
   indexable: false,
 } as const;
