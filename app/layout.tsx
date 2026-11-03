@@ -1,13 +1,13 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Manrope } from 'next/font/google';
 import { GoogleAnalytics } from '@next/third-parties/google';
 import { AuthSessionProvider } from '@/shared/providers/AuthSessionProvider';
 import './globals.css';
 
-const inter = Inter({
-  variable: '--font-inter',
+const manrope = Manrope({
+  variable: '--font-manrope',
   subsets: ['latin', 'cyrillic'],
-  weight: ['400', '700', '900'],
+  weight: ['500', '600', '700', '800'],
 });
 
 export const metadata: Metadata = {
@@ -29,7 +29,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} font-sans antialiased`}>
+      <body className={`${manrope.variable} font-sans antialiased`}>
         <AuthSessionProvider>{children}</AuthSessionProvider>
       </body>
       {process.env.NEXT_PUBLIC_GA4_MEASUREMENT_ID && (

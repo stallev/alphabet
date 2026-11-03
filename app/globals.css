@@ -1,6 +1,14 @@
-@import "tailwindcss";
+@import "../shared/styles/tokens.css";
 
-/* ─── Custom 3D card transforms ─────────────────────────────────────── */
+html {
+  font-size: 18px;
+}
+
+body {
+  @apply bg-bg text-fg font-sans antialiased;
+  line-height: 1.5;
+}
+
 .perspective-1000 {
   perspective: 1000px;
 }
@@ -18,21 +26,18 @@
   transform: rotateY(180deg);
 }
 
-/* ─── Custom scrollbar ────────────────────────────────────────────────── */
 .custom-scrollbar::-webkit-scrollbar {
   width: 8px;
 }
 
 .custom-scrollbar::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 10px;
+  @apply bg-surface-muted rounded-ctl;
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
-  border-radius: 10px;
+  @apply bg-border rounded-ctl;
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-  background: #94a3b8;
+  @apply bg-fg-muted;
 }

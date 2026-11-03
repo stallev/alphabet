@@ -158,4 +158,8 @@ describe("RESERVED_SLUGS", () => {
   it("includes admin from the contract", () => {
     expect(RESERVED_SLUGS).toContain("admin");
   });
+
+  it("includes dev for the game-kit gallery route", () => {
+    expect(RESERVED_SLUGS).toContain("dev");
+  });
 });

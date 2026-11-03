@@ -46,17 +46,17 @@
 
 ### R03-CU1 — feat(ui): add design tokens, shared ui primitives and kit gallery · Review: diff-only · Smoke: none · Commit: auto
 
-- [ ] R03-T1 · T2 · Spec: [tokens §1–§3.1](../contracts/design_tokens_contract.md)
+- [x] R03-T1 · T2 · Spec: [tokens §1–§3.1](../contracts/design_tokens_contract.md)
       Files: `shared/styles/tokens.css`, `app/globals.css`, `app/layout.tsx`, `scripts/check-design-tokens.mjs`, `scripts/check-design-tokens.test.mjs`, `scripts/tokens-baseline.json`, `package.json`
       Acceptance: токены §2 («Утренний свет») определены в `@theme`, стандартные `--radius-*`/`--shadow-*`/`--blur-*` обнулены; шрифт Manrope (`latin`, `cyrillic`, 500–800) через `next/font` вместо Inter, база 18 px; `prefers-reduced-motion` в `tokens.css`; `globals.css` подключает `tokens.css`; скрипт `tokens:check` реализует паттерны §3 и baseline §3.1 (область: `games/**`, `shared/**`, исключая `tokens.css`, `data/`, `i18n/`, `*.test.*`); паттерны §3 включают запреты `DESIGN.md` (`uppercase`, `font-black`, градиенты, `blur-*`, `rounded-*`/`shadow-*` вне токенов, эмодзи); `scripts/tokens-baseline.json` сгенерирован по текущему `games/alphabet` (число нарушений на файл; суммарное значение «до» записано в отчёт); тест скрипта на фикстурах (палитровая утилита, hex, произвольное значение, `tokens:allow`, рост выше baseline) → `npm run tokens:check` = 0; тест зелёный; контраст пар `*-fg` проверен и записан таблицей в отчёт (`accent-fg`/`accent` ≥ 7:1); значения `success`, `danger`, `team-1…6` предложены и одобрены владельцем по галерее (T3)
       Paths: H [tokens §3] · N [tokens §3.1: файл вне baseline с нарушением → падение; рост числа → падение]
-- [ ] R03-T2 · T2 · Spec: [tokens §1](../contracts/design_tokens_contract.md) · Spec: [kit §4](../contracts/game_kit_contract.md)
+- [x] R03-T2 · T2 · Spec: [tokens §1](../contracts/design_tokens_contract.md) · Spec: [kit §4](../contracts/game_kit_contract.md)
       Files: `shared/ui/Button.tsx`, `shared/ui/IconButton.tsx`, `shared/ui/Card.tsx`, `shared/ui/Badge.tsx`, `shared/ui/Input.tsx`, `shared/ui/Dialog.tsx`
       Acceptance: примитивы на токенах «Утреннего света» (радиусы `ctl`/`card`, `shadow-card`/`shadow-press`, непрозрачные поверхности); `Button` (primary на `accent`, secondary на `primary`, ghost, danger; sizes `md` 48 px / `lg` 64 px; loading; нажатие `:active` без `hover:scale`), `IconButton` (обязателен `aria-label`), `Card`, `Badge`, `Input` (label, error, `aria-describedby`), `Dialog` на нативном `<dialog>` (`showModal`, `Esc`, закрытие по подложке опционально, возврат фокуса, `aria-labelledby`, анимация Framer Motion с учётом `prefers-reduced-motion`); никаких новых зависимостей → `typecheck`, `lint`, `tokens:check` зелёные
       Paths: H [kit §4: a11y диалога] · N [Dialog: открытие/закрытие повторно, закрытие при размонтировании]
       UI: /dev/game-kit · roles: public · widths: 360,768,1280
       Seed: n/a
-- [ ] R03-T3 · T1 · Spec: [manifest §2](../contracts/game_manifest_contract.md)
+- [x] R03-T3 · T1 · Spec: [manifest §2](../contracts/game_manifest_contract.md)
       Files: `app/dev/game-kit/page.tsx`, `app/dev/game-kit/Gallery.tsx`, `games/reserved-slugs.ts`, `games/registry.test.ts`
       Acceptance: `/dev/game-kit` показывает секцию «Токены» (образцы цветов с парами `*-fg` и значением контраста, шкала Manrope, радиусы, тени, `team-1…6`, `game-1…5`) — по ней владелец одобряет значения T1 — и галерею примитивов T2 во всех состояниях (варианты, sizes, disabled, loading, диалог); в `NODE_ENV === 'production'` страница вызывает `notFound()`; `dev` присутствует в `RESERVED_SLUGS`, тест реестра проверяет его → в `next build && next start` маршрут отдаёт 404; в dev — открывается
       Paths: H [галерея] · N [production → 404]
