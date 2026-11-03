@@ -56,7 +56,7 @@
 | Плитка игры | `manifest.tile = { glyph, tone }` вместо `cover.webp`; файл `public/games/alphabet/cover.webp` удаляется в R03-T20 |
 | Токены в Alphabet | Игровой экран (`Card`, лобби, вопросы, победа, табло) — на токенах; остальное — baseline-ratchet |
 | Review | `diff-only` для всех CU (профиль `lean`; sensitive zones в R03 не затрагиваются: `auth`, `api`, `proxy`, `.env*`, `next.config.*` не меняются); `reviewer` — по явной просьбе владельца |
-| Smoke | `R03-CU5` — `Smoke: blocking` (владелец играет в Alphabet на новом UI) |
+| Smoke | `R03-CU6` — `Smoke: blocking` (владелец играет в Alphabet на новом UI); `R03-CU5` — `deferred` |
 | Временные сущности | `sandbox-demo` и тестовая запись `coming-soon` создаются и удаляются в CU9 и не коммитятся |
 
 ## Phase DoD
@@ -79,7 +79,7 @@
 
 | Риск | Смягчение |
 |------|-----------|
-| Alphabet завязан на store: обобщение ломает игру | Адаптеры над kit; kit пишется на props до переноса; smoke `blocking` после CU5; поведение `QuestionModal` зафиксировано выше |
+| Alphabet завязан на store: обобщение ломает игру | Адаптеры над kit; kit пишется на props до переноса; smoke `blocking` после CU6; поведение `QuestionModal` зафиксировано выше |
 | 630 палитровых утилит — перевод на токены разрастается | Baseline-ratchet: переводится только игровой экран; остальное не растёт |
 | `cookies()` в корневом layout делает все маршруты динамическими | Принято (Alphabet и так динамичен); фиксируется в ADR-006 «Последствия» (R01) |
 | Вёрстка kit расходится с ожиданиями владельца | Галерея `/dev/game-kit` + согласование палитры до CU1 |
