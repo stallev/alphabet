@@ -9,6 +9,8 @@ import { Card } from '@/shared/ui/Card';
 import { Dialog } from '@/shared/ui/Dialog';
 import { IconButton } from '@/shared/ui/IconButton';
 import { Input } from '@/shared/ui/Input';
+import { LocaleSwitcher } from '@/shared/i18n/LocaleSwitcher';
+import { useT } from '@/shared/i18n/I18nProvider';
 
 const COLOR_PAIRS: { bg: string; fg: string; label: string }[] = [
   { bg: 'bg-bg', fg: 'text-fg', label: 'fg on bg' },
@@ -113,12 +115,17 @@ function ContrastTable() {
 
 export function Gallery() {
   const [dialogOpen, setDialogOpen] = useState(false);
+  const t = useT();
 
   return (
     <main className="mx-auto flex max-w-6xl flex-col gap-10 px-5 py-10">
-      <header>
-        <h1 className="text-3xl font-extrabold text-fg">Game kit gallery</h1>
-        <p className="mt-2 text-fg-muted">Tokens and shared UI primitives (dev only).</p>
+      <header className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+        <div>
+          <h1 className="text-3xl font-extrabold text-fg">Game kit gallery</h1>
+          <p className="mt-2 text-fg-muted">{t.site.tagline}</p>
+          <p className="mt-1 text-sm text-fg-muted">{t.catalog.title}</p>
+        </div>
+        <LocaleSwitcher />
       </header>
 
       <section aria-labelledby="tokens-heading" className="flex flex-col gap-4">

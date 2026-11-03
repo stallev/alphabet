@@ -67,15 +67,15 @@
 
 ### R03-CU2 — feat(i18n): add cookie locale, providers, switcher and portal dictionaries · Review: diff-only · Smoke: none · Commit: auto
 
-- [ ] R03-T4 · T1 · Spec: [i18n §1–§2](../contracts/i18n_contract.md)
+- [x] R03-T4 · T1 · Spec: [i18n §1–§2](../contracts/i18n_contract.md)
       Files: `shared/i18n/resolve-locale.ts`, `shared/i18n/resolve-locale.test.ts`, `shared/i18n/format.ts`, `shared/i18n/format.test.ts`, `shared/i18n/plural.ts`, `shared/i18n/plural.test.ts`, `shared/i18n/types.ts`
       Acceptance: `resolveLocale(cookie, acceptLanguage)`: cookie `ru|en` → она; иная/пустая cookie → по `Accept-Language` (`ru*` → `ru`, иначе `en`); пусто → `ru`; `format('Привет, {name}', {name})`; `plural` для `ru` (1, 2, 5, 11, 21, 22, 25) и `en`; `DeepStringRecord` → тесты зелёные
       Paths: H [i18n §2] · N [cookie `de`, пустая строка, мусор, отсутствие `{name}` в values]
-- [ ] R03-T5 · T1 · Spec: [i18n §2](../contracts/i18n_contract.md) · Spec: [portal_home §6](../specs/portal_home_spec.md) · Spec: [shell §3–§4](../specs/game_shell_spec.md)
+- [x] R03-T5 · T1 · Spec: [i18n §2](../contracts/i18n_contract.md) · Spec: [portal_home §6](../specs/portal_home_spec.md) · Spec: [shell §3–§4](../specs/game_shell_spec.md)
       Files: `shared/i18n/dictionaries/ru.ts`, `shared/i18n/dictionaries/en.ts`
       Acceptance: пространства `site`, `nav`, `catalog`, `gameKit` (общие кнопки: старт, перезапуск, выйти, остаться, пауза, играть снова, закрыть, правила; `confirmExit`, `error`, `phase` для aria-live, `quiz`, `victory`), `errors`; `en.ts` типизирован как `Dictionary` из `ru` → пропуск ключа ломает `typecheck`
       Paths: n/a — copy
-- [ ] R03-T6 · T2 · Spec: [i18n §3](../contracts/i18n_contract.md)
+- [x] R03-T6 · T2 · Spec: [i18n §3](../contracts/i18n_contract.md)
       Files: `shared/i18n/server.ts`, `shared/i18n/actions/set-locale.ts`, `shared/i18n/I18nProvider.tsx`, `shared/i18n/GameI18nProvider.tsx`, `shared/i18n/LocaleSwitcher.tsx`, `shared/i18n/index.ts`, `app/layout.tsx`, `app/dev/game-kit/Gallery.tsx`
       Acceptance: `getLocale()` (cookie → `Accept-Language`), `getDictionary()`; Server Action `setLocale` валидирует значение по `ACTIVE_LOCALES`, ставит cookie (`Path=/`, `SameSite=Lax`, 1 год), вызывает `revalidatePath('/', 'layout')`, недопустимое значение — игнор без ошибки наружу; `app/layout.tsx` ставит `<html lang={locale}>` и оборачивает приложение в `I18nProvider`; `LocaleSwitcher` (RU | EN, `aria-pressed`, ≥ 48 px, без флагов-эмодзи) добавлен в галерею → переключение меняет язык галереи без перезагрузки URL; cookie `locale` выставляется; `de` игнорируется
       Paths: H [i18n §3] · N [setLocale('de') → игнор; повторный вызов с тем же значением]
