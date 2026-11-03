@@ -5,11 +5,13 @@ import { motion } from 'framer-motion';
 import { useGameStore } from '@/games/alphabet/store';
 import { GameMode } from '@/games/alphabet/types';
 import type { Locale } from '@/shared/domain/locale';
-import { TRANSLATIONS } from '@/games/alphabet/i18n/translations';
+import { useGameT } from '@/games/alphabet/i18n/use-game-t';
+import { useLocale } from '@/shared/i18n/I18nProvider';
 
 export const ScoreBoard: React.FC = () => {
-  const { settings, teamScores, currentTeamIndex, finishGame, isGameOver, isPaused, togglePause, toggleMute, isMuted, locale } = useGameStore();
-  const t = TRANSLATIONS[locale];
+  const { settings, teamScores, currentTeamIndex, finishGame, isGameOver, isPaused, togglePause, toggleMute, isMuted } = useGameStore();
+  const locale = useLocale();
+  const t = useGameT();
 
   const FINISH_CONFIRM: Record<Locale, string> = {
     ru: "Вы уверены, что хотите завершить игру сейчас? Будут подведены итоги по текущим баллам.",
@@ -20,7 +22,8 @@ export const ScoreBoard: React.FC = () => {
   };
 
   const handleFinish = () => {
-    if (window.confirm(FINISH_CONFIRM[locale])) {
+    const activeLocale = locale === 'en' ? 'en' : 'ru';
+    if (window.confirm(FINISH_CONFIRM[activeLocale])) {
       finishGame();
     }
   };

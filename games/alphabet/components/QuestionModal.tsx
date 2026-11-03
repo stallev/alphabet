@@ -4,12 +4,14 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useGameStore } from '@/games/alphabet/store';
 import { Timer } from './Timer';
-import { TRANSLATIONS } from '@/games/alphabet/i18n/translations';
+import { useGameT } from '@/games/alphabet/i18n/use-game-t';
+import { useLocale } from '@/shared/i18n/I18nProvider';
 import { Confetti } from './Confetti';
 
 export const QuestionModal: React.FC = () => {
-  const { temp, settings, answerQuestion, locale } = useGameStore();
-  const t = TRANSLATIONS[locale];
+  const { temp, settings, answerQuestion } = useGameStore();
+  const locale = useLocale();
+  const t = useGameT();
   const [inputValue, setInputValue] = useState('');
   const [showResult, setShowResult] = useState<'correct' | 'wrong' | null>(null);
 
@@ -65,7 +67,7 @@ export const QuestionModal: React.FC = () => {
           {/* Header */}
           <div className="bg-blue-900 p-6 flex justify-between items-center text-white">
             <h3 className="text-xl font-bold opacity-80 uppercase tracking-widest">
-              {locale === 'ru' ? 'Ð’Ð¾Ð¿Ñ€Ð¾Ñ' : 'Question'} ({getComplexityLabel(temp.currentQuestion.complexityLevel)})
+              {locale === 'ru' ? 'Вопрос' : 'Question'} ({getComplexityLabel(temp.currentQuestion.complexityLevel)})
             </h3>
             <div className="bg-amber-400 text-blue-900 px-4 py-1 rounded-full font-black">
               +{temp.currentQuestion.complexityLevel === 'easy' ? 3 : temp.currentQuestion.complexityLevel === 'medium' ? 6 : 10} {t.points}
@@ -117,7 +119,7 @@ export const QuestionModal: React.FC = () => {
                       type="text"
                       value={inputValue}
                       onChange={(e) => setInputValue(e.target.value)}
-                      placeholder={locale === 'ru' ? "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð²Ð°Ñˆ Ð¾Ñ‚Ð²ÐµÑ‚ Ð·Ð´ÐµÑÑŒ..." : "Type your answer here..."}
+                      placeholder={locale === 'ru' ? 'Введите ваш ответ здесь...' : 'Type your answer here...'}
                       className="w-full p-6 text-2xl border-4 border-slate-200 rounded-2xl focus:border-blue-500 outline-none transition-all shadow-inner font-bold"
                     />
                     <button 

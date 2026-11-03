@@ -6,11 +6,12 @@ import { useGameStore } from '@/games/alphabet/store';
 import { ComplexityLevel } from '@/games/alphabet/types';
 import { Timer } from './Timer';
 import { SCORE_EASY, SCORE_MEDIUM, SCORE_HARD } from '@/games/alphabet/constants';
-import { TRANSLATIONS } from '@/games/alphabet/i18n/translations';
+import { useGameT } from '@/games/alphabet/i18n/use-game-t';
+import { useLocale } from '@/shared/i18n/I18nProvider';
 
 export const LevelSelectModal: React.FC = () => {
-  const { temp, questions, settings, selectComplexity, locale, closeLevelSelect } = useGameStore();
-  const t = TRANSLATIONS[locale];
+  const { temp, questions, settings, selectComplexity, closeLevelSelect } = useGameStore();
+  const t = useGameT();
 
   if (!temp.showLevelSelect) return null;
 

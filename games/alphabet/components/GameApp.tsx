@@ -1,8 +1,17 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { readClientLocale, useGameStore } from '@/games/alphabet/store';
+
+import { ALPHABET_MANIFEST } from '@/games/alphabet/manifest-data';
+import { useGameStore } from '@/games/alphabet/store';
+import type { Locale } from '@/shared/domain/locale';
+import { useGameT } from '@/games/alphabet/i18n/use-game-t';
+import { getGamePhase } from '@/games/alphabet/logic/game-phase';
+import { mapAlphabetRulesContent } from '@/games/alphabet/logic/map-rules-content';
+import { GameShell } from '@/shared/game-kit';
+import { useLocale } from '@/shared/i18n/I18nProvider';
+
 import { GameSettings } from './GameSettings';
 import { ScoreBoard } from './ScoreBoard';
 import { Card } from './Card';
@@ -16,62 +25,30 @@ import { AIGenerator } from './AIGenerator';
 import { QuestionLibraryPage } from './QuestionLibraryPage';
 import { OperatorGuide } from './OperatorGuide';
 import { Timer } from './Timer';
-import { TRANSLATIONS } from '@/games/alphabet/i18n/translations';
 import type { QuestionsSuite } from '@/games/alphabet/types';
 
-const HOME_CONFIRM: Record<import('@/shared/domain/locale').Locale, string> = {
-  ru: "Вернуться на главную страницу? Текущий прогресс игры будет сброшен.",
-  en: "Return to home? Current game progress will be lost.",
-  uk: "Повернутись на головну сторінку? Поточний прогрес гри буде скинуто.",
-  de: "Zur Startseite zurückkehren? Der aktuelle Spielfortschritt geht verloren.",
-  ro: "Reveniți la pagina principală? Progresul curent al jocului va fi resetat.",
-};
-
-const HomeButton: React.FC<{ visible: boolean }> = ({ visible }) => {
-  const { resetGame, locale } = useGameStore();
-  if (!visible) return null;
-
-  return (
-    <motion.button
-      initial={{ scale: 0, opacity: 0 }}
-      animate={{ scale: 1, opacity: 1 }}
-      whileHover={{ scale: 1.1 }}
-      whileTap={{ scale: 0.9 }}
-      onClick={() => {
-        if (window.confirm(HOME_CONFIRM[locale])) {
-          resetGame();
-          window.location.hash = '';
-        }
-      }}
-      className="fixed bottom-8 right-8 z-[200] bg-white text-blue-600 w-14 h-14 rounded-2xl shadow-2xl flex items-center justify-center border-2 border-blue-100 hover:border-blue-600 transition-colors group"
-      title="Home"
-    >
-      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-        <polyline points="9 22 9 12 15 12 15 22"/>
-      </svg>
-    </motion.button>
-  );
-};
-
-const TurnTransition: React.FC<{ teamName: string; visible: boolean; label: string }> = ({ teamName, visible, label }) => {
+const TurnTransition: React.FC<{ teamName: string; visible: boolean; label: string }> = ({
+  teamName,
+  visible,
+  label,
+}) => {
   if (!visible) return null;
   return (
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="fixed inset-0 z-[60] flex items-center justify-center pointer-events-none bg-black/40 backdrop-blur-sm"
+      className="pointer-events-none fixed inset-0 z-[60] flex items-center justify-center bg-black/40 backdrop-blur-sm"
     >
       <motion.div
         initial={{ scale: 0.5, y: 50 }}
         animate={{ scale: 1, y: 0 }}
         exit={{ scale: 2, opacity: 0 }}
-        transition={{ type: "spring", stiffness: 300, damping: 20 }}
-        className="bg-white/90 border-4 border-blue-500 px-6 py-4 rounded-3xl shadow-[0_0_60px_rgba(37,99,235,0.6)] text-center transform"
+        transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+        className="rounded-3xl border-4 border-blue-500 bg-white/90 px-6 py-4 text-center shadow-[0_0_60px_rgba(37,99,235,0.6)]"
       >
-        <div className="text-sm font-black text-slate-400 uppercase tracking-widest mb-2">{label}</div>
-        <div className="text-2xl md:text-3xl font-black text-blue-900 uppercase italic tracking-tighter whitespace-nowrap">
+        <div className="mb-2 text-sm font-black uppercase tracking-widest text-slate-400">{label}</div>
+        <div className="whitespace-nowrap text-2xl font-black uppercase italic tracking-tighter text-blue-900 md:text-3xl">
           {teamName}
         </div>
       </motion.div>
@@ -80,23 +57,61 @@ const TurnTransition: React.FC<{ teamName: string; visible: boolean; label: stri
 };
 
 interface GameAppProps {
+  locale: Locale;
   initialSuites?: QuestionsSuite[];
 }
 
-export function GameApp({ initialSuites }: GameAppProps) {
-  const { 
-    isLoading, loadSystemSuites, setSystemSuites, isSettingsStage, cards, flipCard, temp, 
-    isGameActive, showEditor, showPrompt, showAIGenerator, showLibrary, 
-    showGuide, isGameOver, isPaused, togglePause, settings, 
-    currentTeamIndex, handleTurnTimeout, locale, turnIdentifier, setLocale,
+export function GameApp({ locale: _pageLocale, initialSuites }: GameAppProps) {
+  const locale = useLocale();
+  const t = useGameT();
+  const rulesPausedRef = useRef(false);
+  const {
+    isLoading,
+    loadSystemSuites,
+    setSystemSuites,
+    applyLocale,
+    isSettingsStage,
+    cards,
+    flipCard,
+    temp,
+    isGameActive,
+    showEditor,
+    showPrompt,
+    showAIGenerator,
+    showLibrary,
+    showGuide,
+    isGameOver,
+    isPaused,
+    togglePause,
+    settings,
+    currentTeamIndex,
+    handleTurnTimeout,
+    turnIdentifier,
+    resetGame,
   } = useGameStore();
 
-  const t = TRANSLATIONS[locale];
   const [showRules, setShowRules] = useState(false);
   const [isDesktop, setIsDesktop] = useState(false);
   const [showTurnTransition, setShowTurnTransition] = useState(false);
+  const [suiteFallbackMessage, setSuiteFallbackMessage] = useState<string | null>(null);
 
-  // Track turn changes to show transition animation
+  const phase = getGamePhase({
+    isLoading,
+    isSettingsStage,
+    isGameOver,
+    isPaused,
+    showEditor,
+    showPrompt,
+    showAIGenerator,
+    showLibrary,
+    showGuide,
+  });
+
+  const rulesContent = useMemo(
+    () => mapAlphabetRulesContent(t, locale),
+    [t, locale],
+  );
+
   useEffect(() => {
     if (isGameActive && !isSettingsStage && !isGameOver) {
       setShowTurnTransition(true);
@@ -106,16 +121,19 @@ export function GameApp({ initialSuites }: GameAppProps) {
   }, [currentTeamIndex, isGameActive, isSettingsStage, isGameOver]);
 
   useEffect(() => {
-    setLocale(readClientLocale());
-  }, [setLocale]);
+    if (initialSuites) {
+      setSystemSuites(initialSuites, locale);
+    } else {
+      void loadSystemSuites(locale);
+    }
+  }, [initialSuites, loadSystemSuites, locale, setSystemSuites]);
 
   useEffect(() => {
-    if (initialSuites) {
-      setSystemSuites(initialSuites);
-    } else {
-      loadSystemSuites();
-    }
+    const usedFallback = applyLocale(locale);
+    setSuiteFallbackMessage(usedFallback ? t.localeSuiteFallback : null);
+  }, [applyLocale, locale, t.localeSuiteFallback]);
 
+  useEffect(() => {
     const handleHash = () => setShowRules(window.location.hash === '#rules');
     window.addEventListener('hashchange', handleHash);
     handleHash();
@@ -128,25 +146,33 @@ export function GameApp({ initialSuites }: GameAppProps) {
       window.removeEventListener('hashchange', handleHash);
       window.removeEventListener('resize', checkDesktop);
     };
-  }, [initialSuites, loadSystemSuites, setSystemSuites]);
+  }, []);
+
+  const handleRulesOpenChange = (open: boolean) => {
+    if (open && isGameActive && !isSettingsStage && !isGameOver && !isPaused) {
+      rulesPausedRef.current = true;
+      togglePause();
+      return;
+    }
+    if (!open && rulesPausedRef.current) {
+      rulesPausedRef.current = false;
+      togglePause();
+    }
+  };
 
   if (isLoading) {
     return (
-      <div className="min-h-screen bg-slate-900 flex flex-col items-center justify-center text-white">
-        <motion.div 
-          animate={{ rotate: 360 }}
-          transition={{ repeat: Infinity, duration: 1.5, ease: "linear" }}
-          className="w-16 h-16 border-4 border-blue-500 border-t-transparent rounded-full mb-6"
-        />
-        <h2 suppressHydrationWarning className="text-2xl font-black uppercase italic tracking-tighter animate-pulse">
-          {locale === 'ru' ? 'Загрузка данных...' : 'Loading Data...'}
-        </h2>
-      </div>
+      <GameShell manifest={ALPHABET_MANIFEST} phase="lobby" pausedOverlay={false}>
+        <div className="flex min-h-[50vh] flex-col items-center justify-center">
+          <motion.div
+            animate={{ rotate: 360 }}
+            transition={{ repeat: Infinity, duration: 1.5, ease: 'linear' }}
+            className="mb-6 h-16 w-16 rounded-full border-4 border-primary border-t-transparent"
+          />
+        </div>
+      </GameShell>
     );
   }
-
-  const isAnyModalOpen = showRules || showPrompt || showEditor || showAIGenerator || showLibrary || showGuide;
-  const showGlobalHome = (!isSettingsStage || isAnyModalOpen) && !isGameOver;
 
   let mainContent;
   if (showRules) mainContent = <RulesPage />;
@@ -157,130 +183,136 @@ export function GameApp({ initialSuites }: GameAppProps) {
   else if (showGuide) mainContent = <OperatorGuide />;
   else if (isSettingsStage) mainContent = <GameSettings />;
   else {
-    const isFlipTimerActive = !isGameOver && !temp.showLevelSelect && !temp.showQuestionModal && !temp.isProcessing && !isPaused;
-    const matchedCount = cards.filter(c => c.isMatched).length;
+    const isFlipTimerActive =
+      !isGameOver &&
+      !temp.showLevelSelect &&
+      !temp.showQuestionModal &&
+      !temp.isProcessing &&
+      !isPaused;
+    const matchedCount = cards.filter((c) => c.isMatched).length;
     const totalCards = cards.length;
     const progressPercent = totalCards > 0 ? Math.round((matchedCount / totalCards) * 100) : 0;
-
     const isRussian = cards.length === 66;
     const gridClass = isRussian
-      ? 'grid-cols-6 sm:grid-cols-8 lg:grid-cols-11'  // 11 cols = 6 rows
-      : 'grid-cols-4 sm:grid-cols-7 lg:grid-cols-13'; // 13 cols = 4 rows
-    
+      ? 'grid-cols-6 sm:grid-cols-8 lg:grid-cols-11'
+      : 'grid-cols-4 sm:grid-cols-7 lg:grid-cols-13';
     const timerKey = `${currentTeamIndex}-${turnIdentifier}`;
 
     mainContent = (
-      <div className="min-h-screen max-h-screen bg-slate-100 flex flex-col relative overflow-hidden">
+      <div className="relative flex max-h-screen min-h-0 flex-col overflow-hidden bg-slate-100">
+        {suiteFallbackMessage ? (
+          <p className="bg-amber-100 px-4 py-2 text-center text-sm font-semibold text-amber-950">
+            {suiteFallbackMessage}
+          </p>
+        ) : null}
         <ScoreBoard />
-        
-        {/* Progress Bar */}
-        <div className="w-full bg-slate-200 h-2 sticky top-0 z-20 shadow-inner overflow-hidden shrink-0">
-          <motion.div 
+        <div className="sticky top-0 z-20 h-2 w-full shrink-0 overflow-hidden bg-slate-200 shadow-inner">
+          <motion.div
             initial={{ width: 0 }}
             animate={{ width: `${progressPercent}%` }}
             transition={{ type: 'spring', stiffness: 40, damping: 15 }}
-            className="h-full bg-emerald-500 shadow-[0_0_15px_rgba(16,185,129,0.7)] relative"
+            className="relative h-full bg-emerald-500 shadow-[0_0_15px_rgba(16,185,129,0.7)]"
           >
-             <div className="absolute inset-0 bg-white/20 animate-pulse"></div>
+            <div className="absolute inset-0 animate-pulse bg-white/20" />
           </motion.div>
         </div>
-        
-        {/* Main Game Area */}
-        <div className="flex-1 flex relative w-full h-full overflow-hidden">
-          
-          <main className={`flex-1 flex flex-col items-center justify-center p-2 lg:pl-[50px] lg:pr-4 transition-all duration-500 ${isPaused ? 'blur-xl scale-95 grayscale' : ''}`}>
-            <div 
-              className={`grid gap-1.5 w-full h-full ${gridClass}`}
+        <div className="relative flex h-full w-full flex-1 overflow-hidden">
+          <div
+            className={`flex flex-1 flex-col items-center justify-center p-2 transition-all duration-500 lg:pl-[50px] lg:pr-4 ${isPaused ? 'scale-95 grayscale blur-xl' : ''}`}
+          >
+            <div
+              className={`grid h-full w-full gap-1.5 ${gridClass}`}
               style={{
-                height: isDesktop ? 'calc(100vh - 160px)' : 'auto', 
+                height: isDesktop ? 'calc(100vh - 160px)' : 'auto',
                 alignContent: 'stretch',
-                justifyContent: 'center'
+                justifyContent: 'center',
               }}
             >
-              {cards.map(card => (
-                <Card 
-                  key={card.id} 
-                  data={card} 
-                  onClick={flipCard} 
-                  disabled={temp.isProcessing || !isGameActive || isGameOver || isPaused || showTurnTransition} 
+              {cards.map((card) => (
+                <Card
+                  key={card.id}
+                  data={card}
+                  onClick={flipCard}
+                  disabled={
+                    temp.isProcessing ||
+                    !isGameActive ||
+                    isGameOver ||
+                    isPaused ||
+                    showTurnTransition
+                  }
                 />
               ))}
             </div>
-          </main>
-
-          {/* Desktop Timer Sidebar */}
-          {isDesktop && (
-            <aside className="w-32 shrink-0 h-full flex flex-col items-center justify-center relative z-30 pointer-events-none">
-               <div className={`pointer-events-auto bg-white/90 backdrop-blur-md border border-slate-200 shadow-2xl rounded-3xl p-4 flex justify-center transition-all duration-500 ${isFlipTimerActive ? 'opacity-100 scale-100' : 'opacity-20 grayscale scale-95'}`}>
-                  <Timer 
-                    key={timerKey} 
-                    duration={settings.flipTimer}
-                    onTimeUp={handleTurnTimeout}
-                    isActive={isFlipTimerActive}
-                    color="bg-blue-600"
-                    variant="clock"
-                  />
-               </div>
+          </div>
+          {isDesktop ? (
+            <aside className="pointer-events-none relative z-30 flex h-full w-32 shrink-0 flex-col items-center justify-center">
+              <div
+                className={`pointer-events-auto flex justify-center rounded-3xl border border-slate-200 bg-white/90 p-4 shadow-2xl backdrop-blur-md transition-all duration-500 ${isFlipTimerActive ? 'scale-100 opacity-100' : 'scale-95 opacity-20 grayscale'}`}
+              >
+                <Timer
+                  key={timerKey}
+                  duration={settings.flipTimer}
+                  onTimeUp={handleTurnTimeout}
+                  isActive={isFlipTimerActive}
+                  color="bg-blue-600"
+                  variant="clock"
+                />
+              </div>
             </aside>
-          )}
-
-          {/* Mobile Floating Timer */}
-          {isFlipTimerActive && !isDesktop && (
-             <div className="lg:hidden fixed top-1/2 -translate-y-1/2 right-2 z-40 w-16 h-16 bg-white/90 backdrop-blur rounded-full shadow-xl flex items-center justify-center border-4 border-blue-100">
-               <div className="w-full h-full p-1">
-                 <Timer 
-                    key={`mobile-${timerKey}`} 
-                    duration={settings.flipTimer}
-                    onTimeUp={handleTurnTimeout}
-                    isActive={isFlipTimerActive}
-                    color="bg-blue-600"
-                    variant="clock"
-                  />
-               </div>
-             </div>
-          )}
-
+          ) : null}
+          {isFlipTimerActive && !isDesktop ? (
+            <div className="fixed right-2 top-1/2 z-40 flex h-16 w-16 -translate-y-1/2 items-center justify-center rounded-full border-4 border-blue-100 bg-white/90 shadow-xl backdrop-blur lg:hidden">
+              <div className="h-full w-full p-1">
+                <Timer
+                  key={`mobile-${timerKey}`}
+                  duration={settings.flipTimer}
+                  onTimeUp={handleTurnTimeout}
+                  isActive={isFlipTimerActive}
+                  color="bg-blue-600"
+                  variant="clock"
+                />
+              </div>
+            </div>
+          ) : null}
           <AnimatePresence>
-            {showTurnTransition && (
-              <TurnTransition 
-                teamName={settings.teamNames[currentTeamIndex]} 
+            {showTurnTransition ? (
+              <TurnTransition
+                teamName={settings.teamNames[currentTeamIndex]}
                 visible={showTurnTransition}
                 label={t.turnTransition}
               />
-            )}
+            ) : null}
           </AnimatePresence>
-
           <AnimatePresence>
-            {isPaused && (
-              <motion.div 
+            {isPaused ? (
+              <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
-                className="absolute inset-0 z-40 bg-slate-900/40 backdrop-blur-md flex flex-col items-center justify-center text-white"
+                className="absolute inset-0 z-40 flex flex-col items-center justify-center bg-slate-900/40 text-white backdrop-blur-md"
               >
-                <motion.div 
+                <motion.div
                   animate={{ scale: [1, 1.1, 1] }}
                   transition={{ repeat: Infinity, duration: 2 }}
-                  className="text-9xl mb-8"
+                  className="mb-8 text-9xl"
                 >
                   ⏸
                 </motion.div>
-                <h2 className="text-6xl font-black uppercase italic tracking-tighter mb-4">{t.pause}</h2>
-                <button 
+                <h2 className="mb-4 text-6xl font-black uppercase italic tracking-tighter">{t.pause}</h2>
+                <button
+                  type="button"
                   onClick={togglePause}
-                  className="bg-emerald-500 hover:bg-emerald-600 text-white px-12 py-5 rounded-3xl text-2xl font-black shadow-2xl transition-all active:scale-95 uppercase tracking-widest"
+                  className="rounded-3xl bg-emerald-500 px-12 py-5 text-2xl font-black uppercase tracking-widest text-white shadow-2xl transition-all hover:bg-emerald-600 active:scale-95"
                 >
                   {t.resume}
                 </button>
               </motion.div>
-            )}
+            ) : null}
           </AnimatePresence>
         </div>
-
-        <footer className="p-2 lg:p-4 bg-white/80 border-t border-slate-200 text-center text-slate-400 text-[10px] font-bold uppercase tracking-widest shrink-0">
-          EdenGames Alphabet • {locale.toUpperCase()} Edition • {matchedCount}/{totalCards} Pairs Found
+        <footer className="shrink-0 border-t border-slate-200 bg-white/80 p-2 text-center text-[10px] font-bold uppercase tracking-widest text-slate-400 lg:p-4">
+          {matchedCount}/{totalCards}
         </footer>
-
         <LevelSelectModal />
         <QuestionModal />
       </div>
@@ -288,10 +320,16 @@ export function GameApp({ initialSuites }: GameAppProps) {
   }
 
   return (
-    <>
+    <GameShell
+      manifest={ALPHABET_MANIFEST}
+      phase={phase}
+      onRestart={resetGame}
+      rules={rulesContent}
+      onRulesOpenChange={handleRulesOpenChange}
+      pausedOverlay={false}
+    >
       {mainContent}
-      {isGameOver && <VictoryScreen />}
-      <HomeButton visible={showGlobalHome} />
-    </>
+      {isGameOver ? <VictoryScreen /> : null}
+    </GameShell>
   );
 }

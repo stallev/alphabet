@@ -10,6 +10,7 @@ import {
   GAME_ENTRIES,
   getGameEntry,
 } from "@/games/registry";
+import { getLocale } from "@/shared/i18n/server";
 
 function toActiveLocale(locale: Locale): ActiveLocale {
   return locale === "en" ? "en" : "ru";
@@ -65,7 +66,7 @@ export default async function GamePage({
   }
 
   const { default: Page } = await entry.loadPage();
-  const locale = DEFAULT_LOCALE;
+  const locale: Locale = await getLocale();
 
   return <Page locale={locale} />;
 }

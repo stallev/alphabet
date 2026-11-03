@@ -4,11 +4,13 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useGameStore } from '@/games/alphabet/store';
 import { SCORE_MATCH, SCORE_EASY, SCORE_MEDIUM, SCORE_HARD, ALPHABET_BY_LOCALE } from '@/games/alphabet/constants';
-import { TRANSLATIONS } from '@/games/alphabet/i18n/translations';
+import { useGameT } from '@/games/alphabet/i18n/use-game-t';
+import { useLocale } from '@/shared/i18n/I18nProvider';
 
 export const RulesPage: React.FC = () => {
-  const { setGuideOpen, closeAllModals, locale } = useGameStore();
-  const t = TRANSLATIONS[locale];
+  const { setGuideOpen, closeAllModals } = useGameStore();
+  const locale = useLocale();
+  const t = useGameT();
   const r = t.rulesPage;
 
   const cardCount = ALPHABET_BY_LOCALE[locale].length * 2;

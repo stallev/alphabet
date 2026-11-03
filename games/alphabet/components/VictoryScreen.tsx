@@ -3,12 +3,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useGameStore } from '@/games/alphabet/store';
-import { TRANSLATIONS } from '@/games/alphabet/i18n/translations';
+import { useGameT } from '@/games/alphabet/i18n/use-game-t';
+import { useLocale } from '@/shared/i18n/I18nProvider';
 import { Confetti } from './Confetti';
 
 export const VictoryScreen: React.FC = () => {
-  const { teamScores, settings, resetGame, locale } = useGameStore();
-  const t = TRANSLATIONS[locale];
+  const { teamScores, settings, resetGame } = useGameStore();
+  const t = useGameT();
 
   const results = settings.teamNames
     .slice(0, settings.teamsCount)

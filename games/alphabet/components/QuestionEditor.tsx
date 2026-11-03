@@ -4,7 +4,8 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useGameStore } from '@/games/alphabet/store';
 import { Question, ComplexityLevel } from '@/games/alphabet/types';
-import { TRANSLATIONS } from '@/games/alphabet/i18n/translations';
+import { useGameT } from '@/games/alphabet/i18n/use-game-t';
+import { useLocale } from '@/shared/i18n/I18nProvider';
 
 export const QuestionEditor: React.FC = () => {
   const { 
@@ -16,9 +17,8 @@ export const QuestionEditor: React.FC = () => {
     deleteQuestion, 
     updateCurrentSuiteTitle,
     saveToLibrary,
-    locale
   } = useGameStore();
-  const t = TRANSLATIONS[locale];
+  const t = useGameT();
   
   const [editingId, setEditingId] = useState<number | 'new' | null>(null);
   const [questionToDelete, setQuestionToDelete] = useState<Question | null>(null);

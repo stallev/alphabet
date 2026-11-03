@@ -3,11 +3,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useGameStore } from '@/games/alphabet/store';
-import { TRANSLATIONS } from '@/games/alphabet/i18n/translations';
+import { useGameT } from '@/games/alphabet/i18n/use-game-t';
+import { useLocale } from '@/shared/i18n/I18nProvider';
 
 export const OperatorGuide: React.FC = () => {
-  const { setGuideOpen, setShowPrompt, closeAllModals, locale } = useGameStore();
-  const t = TRANSLATIONS[locale];
+  const { setGuideOpen, setShowPrompt, closeAllModals } = useGameStore();
+  const t = useGameT();
   const g = t.guidePage;
 
   return (

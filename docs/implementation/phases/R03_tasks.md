@@ -130,17 +130,17 @@
 
 ### R03-CU5 — refactor(games): move alphabet into game shell with cookie locale · Review: diff-only · Smoke: deferred · Commit: auto
 
-- [ ] R03-T13 · T2 · Spec: [i18n §2](../contracts/i18n_contract.md)
+- [x] R03-T13 · T2 · Spec: [i18n §2](../contracts/i18n_contract.md)
       Files: `games/alphabet/i18n/ru.ts`, `games/alphabet/i18n/en.ts`, `games/alphabet/i18n/inactive.ts`, `games/alphabet/i18n/use-game-t.ts`, `games/alphabet/i18n/translations.ts`
       Acceptance: `TRANSLATIONS` разделён: `ru.ts` (эталон), `en.ts` (тип по `ru`), строки `uk/de/ro` сохранены в `inactive.ts` без изменений; `use-game-t.ts` типизирует `useGameT`; `translations.ts` удалён → `typecheck` падает при расхождении ключей `ru`/`en`; содержимое строк не изменено
       Paths: n/a — behavior-preserving refactor
-- [ ] R03-T14 · T3 · Spec: [i18n §3–§4](../contracts/i18n_contract.md)
+- [x] R03-T14 · T3 · Spec: [i18n §3–§4](../contracts/i18n_contract.md)
       Files: `games/alphabet/store.ts`, `games/alphabet/page.tsx`, `games/alphabet/components/**`
       Acceptance: из store удалены `locale`, `setLocale`, чтение/запись `localStorage('alphabet_locale')` и инициализация по `navigator.language`; `initializeGame(settings, locale)` и `selectSuiteForLocale(locale)` заменяют чтение `get().locale` в сторе; `page.tsx` принимает `{ locale }`, оборачивает контент в `GameI18nProvider` и передаёт `locale` в `GameApp`; компоненты читают `useLocale()` / `useGameT()`; выбор системного набора вопросов по языку выполняется по `locale` при инициализации и при смене локали (поведение как до изменения); `LocaleSelector` и `HOME_CONFIRM` удалены (подтверждение выхода — в `GameShell`) → смена RU↔EN переключателем портала меняет тексты и набор вопросов Alphabet; `rg "navigator.language|alphabet_locale" games` пуст
       Paths: H [i18n §4] · N [нет набора для локали → набор `ru` + сообщение; смена локали во время игры не ломает состояние] · S [cookie `locale` не содержит пользовательских данных]
       UI: /alphabet · roles: public · widths: 360,768,1280
       Seed: n/a
-- [ ] R03-T15 · T2 · Spec: [shell §1–§2](../specs/game_shell_spec.md)
+- [x] R03-T15 · T2 · Spec: [shell §1–§2](../specs/game_shell_spec.md)
       Files: `games/alphabet/page.tsx`, `games/alphabet/components/GameApp.tsx`, `games/alphabet/logic/game-phase.ts`, `games/alphabet/logic/game-phase.test.ts`
       Acceptance: Alphabet рендерится внутри `GameShell`; `getGamePhase(state)` (чистая функция, тест) сопоставляет состояние store с `GamePhase`: `isLoading` или `isSettingsStage` → `lobby`; `isGameOver` → `finished`; `isPaused` → `paused`; иначе `playing` (подстраницы `showEditor/Prompt/AIGenerator/Library/Guide` относятся к `lobby`); собственные шапка/кнопка «домой» удалены; `onRestart` вызывает `resetGame`; правила открываются из шапки и по хэшу `#rules` (временно — существующий `RulesPage` в `RulesDialog`) → экран Alphabet показывает шапку `GameShell`; выход из `playing` запрашивает подтверждение, из `lobby` — нет
       Paths: H [shell §2] · N [состояние store «загрузка» → `lobby`]

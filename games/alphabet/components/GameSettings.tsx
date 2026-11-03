@@ -6,8 +6,8 @@ import { motion } from 'framer-motion';
 import { useGameStore } from '@/games/alphabet/store';
 import { GameMode, GameSettings as SettingsType } from '@/games/alphabet/types';
 import { DEFAULT_SETTINGS } from '@/games/alphabet/constants';
-import { TRANSLATIONS } from '@/games/alphabet/i18n/translations';
-import { LocaleSelector } from './LocaleSelector';
+import { useGameT } from '@/games/alphabet/i18n/use-game-t';
+import { useLocale } from '@/shared/i18n/I18nProvider';
 import { StepperInput } from './StepperInput';
 
 export const GameSettings: React.FC = () => {
@@ -22,10 +22,10 @@ export const GameSettings: React.FC = () => {
     questions, 
     library, 
     systemSuites, 
-    locale,
   } = useGameStore();
   
-  const t = TRANSLATIONS[locale];
+  const locale = useLocale();
+  const t = useGameT();
   const totalSuitesCount = library.filter(s => s.language === locale).length + (systemSuites?.filter(s => s.language === locale).length || 0);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [showTimers, setShowTimers] = useState(false);
@@ -79,9 +79,6 @@ export const GameSettings: React.FC = () => {
           </div>
           
           <div className="space-y-2 flex-1">
-            {/* Language Selector */}
-            <LocaleSelector />
-
             {/* Content group */}
             <div className="pt-2 space-y-2">
               <button onClick={() => setAIGeneratorOpen(true)} className="w-full bg-amber-400 hover:bg-amber-500 text-blue-900 px-4 py-2.5 rounded-xl text-xs font-black transition-all shadow-lg flex items-center gap-2">✨ {t.aiGenerator}</button>
@@ -231,7 +228,7 @@ export const GameSettings: React.FC = () => {
             </section>
             
             <button
-              onClick={() => initializeGame(settings)}
+              onClick={() => initializeGame(settings, locale)}
               className="w-full py-6 bg-emerald-500 hover:bg-emerald-600 text-white rounded-2xl text-2xl font-black shadow-xl transition-all hover:scale-[1.02] active:scale-[0.98] uppercase tracking-widest"
             >
               {t.start}

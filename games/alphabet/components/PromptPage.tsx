@@ -3,7 +3,8 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useGameStore } from '@/games/alphabet/store';
-import { TRANSLATIONS } from '@/games/alphabet/i18n/translations';
+import { useGameT } from '@/games/alphabet/i18n/use-game-t';
+import { useLocale } from '@/shared/i18n/I18nProvider';
 import type { Locale } from '@/shared/domain/locale';
 
 const PROMPT_TEXTS: Record<Locale, string> = {
@@ -204,8 +205,9 @@ Constrângeri teologice și dificultate:
 };
 
 export const PromptPage: React.FC = () => {
-  const { locale, setShowPrompt } = useGameStore();
-  const t = TRANSLATIONS[locale];
+  const { setShowPrompt } = useGameStore();
+  const locale = useLocale();
+  const t = useGameT();
   const [copied, setCopied] = useState(false);
 
   const promptText = PROMPT_TEXTS[locale];

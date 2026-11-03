@@ -5,7 +5,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useGameStore } from '@/games/alphabet/store';
 import { LibrarySuite, QuestionsSuite } from '@/games/alphabet/types';
 import type { Locale } from '@/shared/domain/locale';
-import { TRANSLATIONS } from '@/games/alphabet/i18n/translations';
+import { useGameT } from '@/games/alphabet/i18n/use-game-t';
+import { useLocale } from '@/shared/i18n/I18nProvider';
 
 const LIBRARY_LABELS: Record<Locale, {
   title: string; subtitle: string; import: string; create: string;
@@ -31,12 +32,12 @@ export const QuestionLibraryPage: React.FC = () => {
     setEditorOpen,
     closeAllModals,
     questions,
-    locale 
   } = useGameStore();
   
+  const locale = useLocale();
   const [suiteToDelete, setSuiteToDelete] = useState<LibrarySuite | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
-  const t = TRANSLATIONS[locale];
+  const t = useGameT();
 
   const handleEdit = (suite: QuestionsSuite | LibrarySuite) => {
     loadCustomQuestions(suite);

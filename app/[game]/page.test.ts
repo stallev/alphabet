@@ -1,4 +1,8 @@
-import { describe, expect, it } from "vitest";
+import { describe, expect, it, vi } from "vitest";
+
+vi.mock("@/shared/i18n/server", () => ({
+  getLocale: vi.fn(async () => "ru" as const),
+}));
 
 import { getGameEntry } from "@/games/registry";
 import nextConfig from "@/next.config";

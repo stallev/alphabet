@@ -5,7 +5,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useSession } from 'next-auth/react';
 import { useGameStore } from '@/games/alphabet/store';
 import { QuestionsSuite, Question } from '@/games/alphabet/types';
-import { TRANSLATIONS } from '@/games/alphabet/i18n/translations';
+import { useGameT } from '@/games/alphabet/i18n/use-game-t';
+import { useLocale } from '@/shared/i18n/I18nProvider';
 import { getDemoSuite } from '@/games/alphabet/data/demo-questions';
 import { CreditsGateOverlay } from './CreditsGateOverlay';
 
@@ -40,8 +41,9 @@ const DEMO_FAKE_STATUSES_EN = [
 ];
 
 export const AIGenerator: React.FC = () => {
-  const { setAIGeneratorOpen, closeAllModals, saveToLibrary, loadCustomQuestions, locale } = useGameStore();
-  const t = TRANSLATIONS[locale];
+  const { setAIGeneratorOpen, closeAllModals, saveToLibrary, loadCustomQuestions } = useGameStore();
+  const locale = useLocale();
+  const t = useGameT();
   const { data: session } = useSession();
 
   const isDemoMode = session?.user?.role !== 'admin';

@@ -1,19 +1,18 @@
 import { Suspense } from "react";
 import { connection } from "next/server";
 
-import { GameApp } from "@/games/alphabet/components/GameApp";
+import { AlphabetGameClient } from "@/games/alphabet/AlphabetGameClient";
+import { en } from "@/games/alphabet/i18n/en";
+import { ru } from "@/games/alphabet/i18n/ru";
 import { ComplexityLevel } from "@/games/alphabet/types";
 import type { QuestionsSuite } from "@/games/alphabet/types";
 import type { GamePageProps } from "@/shared/game-kit/manifest";
 import { getAllSuitesForGame } from "@/games/alphabet/server/suites/get-suites.server";
 
-export const metadata = {
-  title: "Alphabet: Play",
-};
-
-async function GameContent() {
+async function GameContent({ locale }: GamePageProps) {
   await connection();
   const suites = await getAllSuitesForGame();
+  const dictionary = locale === "en" ? en : ru;
 
   const initialSuites: QuestionsSuite[] = suites.map((suite) => ({
     title: suite.title,
@@ -30,24 +29,27 @@ async function GameContent() {
     })),
   }));
 
-  return <GameApp initialSuites={initialSuites} />;
+  return (
+    <AlphabetGameClient
+      locale={locale}
+      dictionary={dictionary}
+      initialSuites={initialSuites}
+    />
+  );
 }
 
 function GameFallback() {
   return (
-    <div className="min-h-screen bg-slate-900 flex flex-col items-center justify-center text-white">
-      <div className="w-16 h-16 border-4 border-blue-500 border-t-transparent rounded-full animate-spin mb-6" />
-      <h2 className="text-2xl font-black uppercase italic tracking-tighter animate-pulse">
-        Loading...
-      </h2>
+    <div className="flex min-h-dvh flex-col items-center justify-center bg-bg text-fg">
+      <div className="mb-6 h-16 w-16 animate-spin rounded-full border-4 border-primary border-t-transparent" />
     </div>
   );
 }
 
-export default function AlphabetGamePage(_props: GamePageProps) {
+export default function AlphabetGamePage({ locale }: GamePageProps) {
   return (
     <Suspense fallback={<GameFallback />}>
-      <GameContent />
+      <GameContent locale={locale} />
     </Suspense>
   );
 }
