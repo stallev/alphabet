@@ -1,0 +1,50 @@
+---
+description: Structure and kit usage for games/*
+globs: games/**
+alwaysApply: false
+---
+
+# Game module contract
+
+**Methodology:** [`docs/meta/ai_first_methodology.md`](../../docs/meta/ai_first_methodology.md)
+
+## Structure
+
+Follow [`repo_structure_contract.md`](../../docs/implementation/contracts/repo_structure_contract.md) §1: `manifest.ts`, `page.tsx`, `components/`, `logic/`, `i18n/`, optional `data/`, `server/`.
+
+Copy from [`games/_template/`](../../games/_template/); `_template` is not registered. Register only in [`games/registry.ts`](../../games/registry.ts).
+
+## Manifest and routing
+
+- Types and `defineGame` — [`game_manifest_contract.md`](../../docs/implementation/contracts/game_manifest_contract.md).
+- `status: 'active'` requires `loadPage`; `coming-soon` must not expose `loadPage`.
+- Public route [`app/[game]/page.tsx`](../../app/[game]/page.tsx) loads games only via the registry.
+
+## UI
+
+- Render inside [`GameShell`](../../shared/game-kit/GameShell.tsx); use kit [`ScoreBoard`](../../shared/game-kit/ScoreBoard.tsx), [`RulesDialog`](../../shared/game-kit/RulesDialog.tsx), [`VictoryScreen`](../../shared/game-kit/VictoryScreen.tsx), etc. — [`game_kit_contract.md`](../../docs/implementation/contracts/game_kit_contract.md).
+- **MUST NOT** duplicate shell chrome (header, score strip, rules modal, victory overlay) when kit provides it.
+- Styling: semantic tokens only — [`design_tokens_contract.md`](../../docs/implementation/contracts/design_tokens_contract.md).
+
+## Logic and state
+
+- Pure rules in `logic/` with Vitest; kit stays props-driven (no game stores inside `shared/game-kit`).
+- Client state: Zustand or local state in `components/`; SSR-safe patterns — **react-state-management**.
+
+## i18n
+
+- Game copy in `games/<slug>/i18n/ru.ts` and `en.ts`; wrap page in `GameI18nProvider` — [`i18n_contract.md`](../../docs/implementation/contracts/i18n_contract.md).
+- Portal strings stay in `shared/i18n`.
+
+## Imports
+
+- Only `@/shared/*`, `@/games/<this-slug>/*`, and `@/games/<slug>/server/*` from server modules — **import-boundaries**.
+
+## Docs
+
+- Add `docs/games/<slug>.md` from [`game_description.template.md`](../../docs/meta/templates/game_description.template.md).
+- Process checklist: [`docs/adding-a-game.md`](../../docs/adding-a-game.md).
+
+## Related
+
+- **import-boundaries** · **ui-design-system** · **product-docs-alignment**

@@ -169,6 +169,10 @@ describe("listGames on GAME_ENTRIES", () => {
     expect(() => assertValidRegistry(GAME_ENTRIES)).not.toThrow();
     expect(listGames().map((m) => m.slug)).toEqual(["alphabet"]);
   });
+
+  it("does not expose the _template slug", () => {
+    expect(listGames().map((m) => m.slug)).not.toContain("template");
+  });
 });
 
 describe("RESERVED_SLUGS", () => {
@@ -178,5 +182,9 @@ describe("RESERVED_SLUGS", () => {
 
   it("includes dev for the game-kit gallery route", () => {
     expect(RESERVED_SLUGS).toContain("dev");
+  });
+
+  it("includes template for the game scaffold folder", () => {
+    expect(RESERVED_SLUGS).toContain("template");
   });
 });

@@ -32,6 +32,7 @@
 | `app-router-streaming-loading.mdc` | globs | Suspense, `loading.tsx` |
 | `admin-json-import.mdc` | globs | JSON импорт наборов (Alphabet / R02) |
 | `import-boundaries.mdc` | globs | Границы импортов `games/*` / `shared/*` / `server/*` (R02) |
+| `game-module-contract.mdc` | globs | Структура игры, `GameShell`, kit, i18n (R03) |
 
 ## Tier 2 — globs (UI)
 
@@ -56,9 +57,5 @@
 | `patterns-tables-dnd.mdc` | requestable | Таблицы + DnD (отложено) |
 
 ## Создаётся в следующих фазах
-
-| Rule | Фаза | Назначение |
-|------|------|------------|
-| `game-module-contract.mdc` | R03 | Manifest игры, `GameShell` |
 
 Правила из плана «Не переносить» (`policy-packages`, `s3-file-asset-uploads`, `ios-safari-mutation-transport`, `psi-lab-testing`, `ui-prototype-fidelity`, `ui-runtime-verification`) в каталоге отсутствуют.

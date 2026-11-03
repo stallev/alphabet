@@ -5,7 +5,7 @@
 **Версия:** 1.0  
 **Дата:** YYYY-MM-DD  
 **Зависит от:** [`game_manifest_contract.md`](../../implementation/contracts/game_manifest_contract.md), [`i18n_contract.md`](../../implementation/contracts/i18n_contract.md)  
-**Связанные документы:** `games/{slug}/manifest.ts`, `games/{slug}/i18n/`
+**Связанные документы:** [`games/{slug}/manifest.ts`](../../games/{slug}/manifest.ts), [`games/{slug}/i18n/`](../../games/{slug}/i18n/)
 
 ---
 
@@ -32,18 +32,24 @@
 
 Браузер, проектор, печать — что нужно физически.
 
+## Режимы
+
+| Режим | Описание |
+|-------|----------|
+| … | … |
+
 ## Manifest и i18n
 
-- Slug: `{slug}` — см. [`game_manifest_contract.md`](../../implementation/contracts/game_manifest_contract.md) §2
-- Локали: `ru`, `en` — ключи в `games/{slug}/i18n/`
+- Slug: `{slug}` — [`game_manifest_contract.md`](../../implementation/contracts/game_manifest_contract.md) §2, [`games/{slug}/manifest.ts`](../../games/{slug}/manifest.ts)
+- Локали UI: `ru`, `en` — ключи в [`games/{slug}/i18n/`](../../games/{slug}/i18n/)
 - Теги каталога: `memory`, `quiz`, …
 
-## Acceptance criteria
+## Связанная документация
 
-- [ ] Текст согласован с `manifest.title` / `description`
-- [ ] Ссылки на manifest и i18n открываются
+- UI и kit: при необходимости `docs/games/{slug}/ui_components.md`
+- Состояние: при необходимости `docs/games/{slug}/state_management.md`
 
 ## Критерии соответствия
 
-- [ ] Шапка метаданных (Тип, Статус, Версия, Дата, Зависит от)
-- [ ] Правила, механика, игроки/команды, материалы, ссылки на manifest и i18n
+- [ ] Текст согласован с `manifest.title` / `description`
+- [ ] Ссылки на manifest, i18n и data открываются

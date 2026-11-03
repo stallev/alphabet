@@ -17,5 +17,6 @@ export const RESERVED_SLUGS: readonly string[] = [
   "public",
   "assets",
   "dev",
+  "template",
   "_next",
 ];

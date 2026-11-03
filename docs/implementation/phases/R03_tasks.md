@@ -195,13 +195,13 @@
 
 ### R03-CU8 — feat(games): add game template, module rule and adding-a-game guide · Review: diff-only · Smoke: none · Commit: auto
 
-- [ ] R03-T22 · T2 · Spec: [adding §1](../specs/adding_a_game_spec.md)
+- [x] R03-T22 · T2 · Spec: [adding §1](../specs/adding_a_game_spec.md)
       Files: `games/_template/**`, `games/registry.test.ts`
       Acceptance: шаблон по составу §1 (игра-заглушка «счётчик очков команд» на `GameShell`, `ScoreBoard`, `RulesDialog`, фазы lobby→playing→finished; логика в `logic/scoring.ts` с тестом; словари `ru`/`en`); тест: `listGames()` не содержит `template`; после `cp -r games/_template games/tmp-check` + замены slug выполняются `typecheck`, `lint`, `test`, `tokens:check` (проверяется скриптом-тестом `scripts/check-template.test.mjs` во временной папке, которая удаляется) → тесты зелёные
       Paths: H [adding §1] · N [slug из шаблона зарезервирован/не уникален → ошибка реестра]
       UI: n/a — шаблон не регистрируется
       Seed: n/a
-- [ ] R03-T23 · T1 · Spec: [adding §2–§3](../specs/adding_a_game_spec.md)
+- [x] R03-T23 · T1 · Spec: [adding §2–§3](../specs/adding_a_game_spec.md)
       Files: `.cursor/rules/game-module-contract.mdc`, `.cursor/rules/README.md`, `docs/adding-a-game.md`, `docs/meta/templates/game_description.template.md`
       Acceptance: правило `globs: games/**`, ≤ 80 строк, ссылки на контракты без копирования; `docs/adding-a-game.md` — чек-лист §2 с реальными командами и путями проекта; шаблон описания игры согласован с `docs/games/alphabet.md`; манифест правил обновлён → `docs:links` = 0
       Paths: n/a — docs-only
