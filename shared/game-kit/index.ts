@@ -1,3 +1,9 @@
+export { checkTextAnswer } from './check-text-answer';
+export { LevelSelect } from './LevelSelect';
+export { QuestionModal } from './QuestionModal';
+export { SettingsPanel } from './SettingsPanel';
+export { StepperInput } from './StepperInput';
+export { TeamsSetup } from './TeamsSetup';
 export * from './manifest';
 export * from './types';
 export { Confetti } from './Confetti';

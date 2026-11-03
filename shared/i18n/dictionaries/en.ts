@@ -69,6 +69,20 @@ export const en: Dictionary = {
       incorrect: 'Incorrect',
       timedOut: "Time's up",
       showAnswer: 'Correct answer',
+      questionTitle: 'Question',
+      answerLabel: 'Your answer',
+    },
+    levelSelect: {
+      title: 'Choose level',
+      remaining: 'Left: {count}',
+      finished: 'Level complete',
+      timeoutHint: 'If you wait, a level will be picked automatically',
+    },
+    setup: {
+      teamsCount: 'Number of teams',
+      teamNames: 'Team names',
+      defaultTeamName: 'Team {n}',
+      teamField: 'Team {n}',
     },
     victory: {
       title: 'Victory!',

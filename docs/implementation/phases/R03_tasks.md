@@ -109,17 +109,17 @@
 
 ### R03-CU4 — feat(game-kit): add quiz, level select and settings components · Review: diff-only · Smoke: none · Commit: auto
 
-- [ ] R03-T10 · T1 · Spec: [kit §2.1](../contracts/game_kit_contract.md); [решение фазы о `QuestionModal`](R03_phase_description.md#принятые-решения-для-фазы)
+- [x] R03-T10 · T1 · Spec: [kit §2.1](../contracts/game_kit_contract.md); [решение фазы о `QuestionModal`](R03_phase_description.md#принятые-решения-для-фазы)
       Files: `shared/game-kit/check-text-answer.ts`, `shared/game-kit/check-text-answer.test.ts`
       Acceptance: `checkTextAnswer(input, correct)` — сравнение по `trim().toLowerCase()` (как в текущем Alphabet); тесты: регистр, пробелы по краям, пустой ввод → `false`, пустой эталон → `false`
       Paths: H · N [пустые строки]
-- [ ] R03-T11 · T2 · Spec: [kit §2](../contracts/game_kit_contract.md)
+- [x] R03-T11 · T2 · Spec: [kit §2](../contracts/game_kit_contract.md)
       Files: `shared/game-kit/QuestionModal.tsx`, `shared/game-kit/LevelSelect.tsx`
       Acceptance: `QuestionModal` — варианты (`choice`) или текстовый ввод (`text`), `Timer` внутри, показ правильного ответа после ответа/таймаута, затем `onAnswer({ correct, timedOut })`; `LevelSelect` — кнопки уровней с очками (+3/+6/+10 крупно; уровни различаются очками, формой и подписью, не «светофором») и остатком вопросов, таймер выбора, `onTimeout`, `emptyNotice` при отсутствии доступных уровней (вместо `alert`); оба на `Dialog`; клавиатурная навигация (варианты — радио-группа/кнопки с фокусом, `Enter` отправляет текст) → галерея показывает оба компонента в режимах choice/text/таймаут
       Paths: H [kit §2] · N [таймаут без выбора; пустой ответ; повторное нажатие до закрытия — один вызов `onAnswer`]
       UI: /dev/game-kit · roles: public · widths: 360,768,1280
       Seed: n/a
-- [ ] R03-T12 · T2 · Spec: [kit §2](../contracts/game_kit_contract.md)
+- [x] R03-T12 · T2 · Spec: [kit §2](../contracts/game_kit_contract.md)
       Files: `shared/game-kit/SettingsPanel.tsx`, `shared/game-kit/TeamsSetup.tsx`, `shared/game-kit/StepperInput.tsx`
       Acceptance: `StepperInput` — поведение текущего `games/alphabet/components/StepperInput.tsx` (мин/макс/шаг, ввод с клавиатуры, `aria-valuenow`), `TeamsSetup` (количество `min…max`, имена, пустое имя → подстановка по умолчанию через `onChange`-значение, не вызывается из kit), `SettingsPanel` (макет + кнопка «Начать») → галерея показывает все три
       Paths: H [kit §2] · N [выход за min/max, нечисловой ввод]

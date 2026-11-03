@@ -13,6 +13,7 @@ import { LocaleSwitcher } from '@/shared/i18n/LocaleSwitcher';
 import { useT } from '@/shared/i18n/I18nProvider';
 
 import { KitShowcase } from './KitShowcase';
+import { KitCu4Showcase } from './KitCu4Showcase';
 
 const COLOR_PAIRS: { bg: string; fg: string; label: string }[] = [
   { bg: 'bg-bg', fg: 'text-fg', label: 'fg on bg' },
@@ -220,6 +221,7 @@ export function Gallery() {
       </section>
 
       <KitShowcase />
+      <KitCu4Showcase />
     </main>
   );
 }

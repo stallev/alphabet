@@ -67,6 +67,20 @@ export const ru = {
       incorrect: 'Неверно',
       timedOut: 'Время вышло',
       showAnswer: 'Правильный ответ',
+      questionTitle: 'Вопрос',
+      answerLabel: 'Ваш ответ',
+    },
+    levelSelect: {
+      title: 'Выберите уровень',
+      remaining: 'Осталось: {count}',
+      finished: 'Уровень пройден',
+      timeoutHint: 'Если не выбрать — уровень подберётся автоматически',
+    },
+    setup: {
+      teamsCount: 'Количество команд',
+      teamNames: 'Названия команд',
+      defaultTeamName: 'Команда {n}',
+      teamField: 'Команда {n}',
     },
     victory: {
       title: 'Победа!',
