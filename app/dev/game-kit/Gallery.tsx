@@ -12,6 +12,8 @@ import { Input } from '@/shared/ui/Input';
 import { LocaleSwitcher } from '@/shared/i18n/LocaleSwitcher';
 import { useT } from '@/shared/i18n/I18nProvider';
 
+import { KitShowcase } from './KitShowcase';
+
 const COLOR_PAIRS: { bg: string; fg: string; label: string }[] = [
   { bg: 'bg-bg', fg: 'text-fg', label: 'fg on bg' },
   { bg: 'bg-surface', fg: 'text-fg', label: 'fg on surface' },
@@ -216,6 +218,8 @@ export function Gallery() {
           </Dialog>
         </Card>
       </section>
+
+      <KitShowcase />
     </main>
   );
 }

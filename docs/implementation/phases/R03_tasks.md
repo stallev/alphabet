@@ -86,19 +86,19 @@
 
 ### R03-CU3 — feat(game-kit): add game shell and display components · Review: diff-only · Smoke: none · Commit: auto
 
-- [ ] R03-T7 · T2 · Spec: [shell §1–§5](../specs/game_shell_spec.md) · Contract: [kit §2](../contracts/game_kit_contract.md)
+- [x] R03-T7 · T2 · Spec: [shell §1–§5](../specs/game_shell_spec.md) · Contract: [kit §2](../contracts/game_kit_contract.md)
       Files: `shared/game-kit/types.ts`, `shared/game-kit/GameShell.tsx`, `shared/game-kit/GameHeader.tsx`, `shared/game-kit/ExitConfirmDialog.tsx`, `shared/game-kit/GameErrorBoundary.tsx`, `shared/game-kit/index.ts`
       Acceptance: типы §2.1 контракта; `GameShell` с шапкой, ссылкой «Пропустить к игре», подтверждением выхода по фазам (§2–§3 спецификации), `beforeunload` в `playing`/`paused`, aria-live для смены фазы, error boundary (§4); тексты из `gameKit.*` → галерея показывает `GameShell` в четырёх фазах; имитация `throw` не ломает шапку
       Paths: H [shell §2] · N [shell §4: падение дочернего компонента; нет `rules`/`onRestart`]
       UI: /dev/game-kit · roles: public · widths: 360,768,1280
       Seed: n/a
-- [ ] R03-T8 · T2 · Spec: [kit §2](../contracts/game_kit_contract.md)
+- [x] R03-T8 · T2 · Spec: [kit §2](../contracts/game_kit_contract.md)
       Files: `shared/game-kit/ScoreBoard.tsx`, `shared/game-kit/Timer.tsx`, `shared/game-kit/use-countdown.ts`, `shared/game-kit/use-countdown.test.ts`
       Acceptance: `ScoreBoard` (props-driven, активная команда, `aria-live`, цвет команды — токены `team-1…6` плюс номер/метка, не только цвет; активная команда — `accent`/`accent-fg`); `Timer` (`inline`/`ring`, `role="timer"`, не тикает на паузе; при < 5 с меняются цвет `danger` и форма — иконка/штриховка, без пульсации); хук `useCountdown` с тестами на fake timers (тик, пауза, возобновление, `onElapsed` ровно один раз, смена `seconds`) → тесты зелёные
       Paths: H [kit §2] · N [seconds = 0, отрицательные значения, `running` переключается во время тика]
       UI: /dev/game-kit · roles: public · widths: 360,768,1280
       Seed: n/a
-- [ ] R03-T9 · T2 · Spec: [kit §2](../contracts/game_kit_contract.md)
+- [x] R03-T9 · T2 · Spec: [kit §2](../contracts/game_kit_contract.md)
       Files: `shared/game-kit/VictoryScreen.tsx`, `shared/game-kit/Confetti.tsx`, `shared/game-kit/RulesDialog.tsx`, `shared/game-kit/rank-teams.ts`, `shared/game-kit/rank-teams.test.ts`
       Acceptance: `rankTeams(teams)` — убывание по очкам, ничья делит место (одинаковый `rank`), стабильная сортировка; `VictoryScreen` показывает победителя(ей) при ничьей; `Confetti` выключается при `prefers-reduced-motion`; `RulesDialog` отображает `RulesContent` в `Dialog` → тесты зелёные; галерея показывает победу с ничьёй и без
       Paths: H [kit §2] · N [пустой список команд, одна команда, все 0 очков]
