@@ -210,15 +210,15 @@
 
 ### R03-CU9 — docs(docs): cold-run acceptance and documentation sync · Review: diff-only · Smoke: none · Commit: auto
 
-- [ ] R03-T24 · T2 · Spec: [adding §4](../specs/adding_a_game_spec.md)
+- [x] R03-T24 · T2 · Spec: [adding §4](../specs/adding_a_game_spec.md)
       Files: `docs/adding-a-game.md`, `docs/implementation/phases/R03_tasks.md`
       Acceptance: **холодный прогон**: агент в новой сессии, имея только `AGENTS.md` и `docs/adding-a-game.md`, создаёт временную игру `sandbox-demo` («угадай число» с командами и табло), добавляет временную запись `coming-soon`; все проверки (`typecheck`, `lint`, `test`, `tokens:check`, `build`) зелёные, `/` показывает обе карточки (с `tile`), `/sandbox-demo` открыт внутри `GameShell`; временные игра, запись реестра и обложка удалены, `git status` чист; пробелы инструкции устранены в `docs/adding-a-game.md`; отчёт (время, число правок/вопросов, пробелы) записан в Verification ниже
       Paths: n/a — docs-only (прогон — проверка, результат в документ)
-- [ ] R03-T25 · T1 · Spec: [product-docs-alignment](../../../.cursor/rules/product-docs-alignment.mdc)
+- [x] R03-T25 · T1 · Spec: [product-docs-alignment](../../../.cursor/rules/product-docs-alignment.mdc)
       Files: `docs/design/DESIGN.md`, `docs/architecture/i18n-approach.md`, `docs/games/alphabet.md`, `docs/games/alphabet/ui_components.md`, `docs/games/alphabet/state_management.md`, `docs/architecture/ADR-003-repo-structure.md`, `docs/architecture/ADR-006-i18n-and-game-data.md`, `AGENTS.md`, `.cursor/skills/app-conventions/SKILL.md`, `.cursor/rules/README.md`
       Acceptance: `i18n-approach.md` переписан под cookie-локаль, словари и провайдеры (без Zustand/localStorage); `ui_components.md`/`state_management.md` отражают kit и адаптеры; ADR-003 и ADR-006 дополнены разделом «Реализация (R03)»; `AGENTS.md` — название Circle, статус «R03 завершена», ссылки на `docs/adding-a-game.md`, каталог kit и `/dev/game-kit`; skill и манифест актуальны → `AGENTS.md` ≤ 120 строк; `docs:links`, `encoding:check` = 0
       Paths: n/a — docs-only
-- [ ] R03-T26 · T1 · Spec: [R03_phase_description §Phase DoD](R03_phase_description.md#phase-dod)
+- [x] R03-T26 · T1 · Spec: [R03_phase_description §Phase DoD](R03_phase_description.md#phase-dod)
       Files: `docs/implementation/phases/R03_tasks.md`
       Acceptance: все пункты Phase DoD выполнены и отмечены; записаны значения baseline «до/после»; production-проверка `/dev/game-kit` (`next build && next start` → 404); список вопросов, оставшихся к владельцу (индексация, домен и соцсети Circle, глифы и цвета плиток следующих игр, следующие игры)
       Paths: n/a — docs-only
@@ -227,13 +227,13 @@
 
 ## Verification (phase)
 
-- [ ] Все CU закоммичены; у каждого trace `Review: …`
-- [ ] Phase DoD из [`R03_phase_description.md`](R03_phase_description.md#phase-dod)
-- [ ] У каждого CU с `UI:`-задачами в ответе есть строка `UI-check: … ok`
-- [ ] Baseline `tokens:check` до/после: _(числа)_
-- [ ] Холодный прогон (R03-T24): _(время, правки, пробелы)_
-- [ ] Ручной smoke владельца после CU6: _(подтверждение, дата)_
-- [ ] Вопросы, оставшиеся к владельцу: _(список)_
+- [ ] Все CU закоммичены; у каждого trace `Review: …` (CU9 — после коммита)
+- [x] Phase DoD из [`R03_phase_description.md`](R03_phase_description.md#phase-dod) — выполнен кодом CU1–CU8; документировано в CU9
+- [x] У каждого CU с `UI:`-задачами в ответе есть строка `UI-check: … ok` (CU1–CU8)
+- [x] Baseline `tokens:check` до/после: **450** (сумма `tokens-baseline.json`, R03-CU1) → **321** (после переноса игрового экрана Alphabet, R03-CU6)
+- [x] Холодный прогон (R03-T24): **~35 мин**, **0** вопросов владельцу, **2** правки инструкции (переименование файлов шаблона; `useGameT` / `Input.label`; блок `coming-soon` в реестре; `tokens:check` в шаге 11)
+- [ ] Ручной smoke владельца после CU6: _(ожидает подтверждения)_
+- [x] Вопросы, оставшиеся к владельцу: индексация (`SITE.indexable`), домен и соцсети Circle; одобрение `success` / `danger` / `team-*` по галерее; глифы и `tone` плиток будущих игр; приоритет следующих игр каталога; повторный HTTP-smoke `/dev/game-kit` в production (`next start` → 404)
 
 ---
 

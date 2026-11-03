@@ -1,21 +1,31 @@
+# Компоненты и UX — «Алфавит» (R03)
 
-# Компоненты и UX-решения
+Игровой экран собран из **`shared/game-kit`** (props-driven) и **адаптеров** в `games/alphabet/components/*Container.tsx`, которые читают `useGameStore()` и передают props.
 
-## Иерархия слоев (Z-Index)
-Для корректного отображения перекрывающих элементов в v2.6 установлена строгая иерархия:
-1. `z-[200]` — **HomeButton**: Всегда сверху, обеспечивает выход из любого состояния.
-2. `z-[150]` — **VictoryScreen**: Перекрывает игровое поле и все модалки при завершении.
-3. `z-[110]` — **AdminSettings / Confirmation Modals**: Системные уведомления.
-4. `z-[100]` — **Library / AI Generator**: Основные рабочие инструменты.
-5. `z-[50]` — **Game Modals**: Выбор сложности и окно вопроса.
-6. `z-[30]` — **ScoreBoard**: Прилипающая шапка.
+## Каркас
 
-## Глобальная навигация
-Компонент `HomeButton` в `games/alphabet/components/GameApp.tsx` реализует паттерн "Emergency Exit":
-- Появляется только если игра начата или открыт какой-либо инструмент.
-- Запрашивает подтверждение перед сбросом, чтобы предотвратить случайную потерю прогресса.
+| Компонент kit | Адаптер / использование |
+|---------------|-------------------------|
+| `GameShell` | `GameApp.tsx` — фазы `lobby` / `playing` / `paused` / `finished` через `getGamePhase()` |
+| `ScoreBoard` | `ScoreBoardContainer.tsx` |
+| `Timer` | внутри kit-модалок и табло |
+| `QuestionModal` | `QuestionModalContainer.tsx` |
+| `LevelSelect` | `LevelSelectContainer.tsx` |
+| `VictoryScreen` + `Confetti` | `VictoryScreenContainer.tsx` |
+| `RulesDialog` | правила из `RulesPage` / контент store |
+| `SettingsPanel`, `TeamsSetup` | `SettingsContainer.tsx` (лобби) |
 
-## Визуальные эффекты
-- **Glassmorphism**: Модальные окна используют `backdrop-blur-md` для акцентирования внимания.
-- **Adaptive Grid**: Сетка карт динамически меняется (`grid-cols-6` на мобильных, `grid-cols-11` на десктопах) для сохранения пропорций 66 карточек.
-- **Vertical Timer**: Для экономии места на экране игрового поля таймер перевернут вертикально и вынесен в боковую панель.
+Собственных реализаций табло, таймера, модалки вопроса и экрана победы в `games/alphabet` **нет** (контракт [`game_kit_contract.md`](../../implementation/contracts/game_kit_contract.md) §5).
+
+## Игровое поле
+
+- `Card.tsx`, сетка в `GameApp.tsx` — токены «Утренний свет» (`surface`, `accent` / `accent-fg`, `shadow-card`).
+- `HomeButton` / отдельная шапка удалены; выход и правила — через `GameShell`.
+
+## Редакторские экраны (baseline)
+
+Библиотека, редактор, AI-генератор, оператор-гид — legacy-вёрстка в baseline `tokens:check`; перенос на токены — [R04](../../implementation/phases/R04_phase_description.md).
+
+## z-index
+
+Kit и `GameShell` задают порядок слоёв (шапка, модалки, победа). Локальные `z-[…]` в редакторах сохранены до R04.

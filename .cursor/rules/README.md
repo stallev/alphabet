@@ -32,7 +32,7 @@
 | `app-router-streaming-loading.mdc` | globs | Suspense, `loading.tsx` |
 | `admin-json-import.mdc` | globs | JSON импорт наборов (Alphabet / R02) |
 | `import-boundaries.mdc` | globs | Границы импортов `games/*` / `shared/*` / `server/*` (R02) |
-| `game-module-contract.mdc` | globs | Структура игры, `GameShell`, kit, i18n (R03) |
+| `game-module-contract.mdc` | globs | Структура игры, `GameShell`, kit, i18n — см. [`docs/adding-a-game.md`](../../docs/adding-a-game.md) |
 
 ## Tier 2 — globs (UI)
 

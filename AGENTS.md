@@ -1,88 +1,63 @@
-# Circle (EdenGames) — инструкции для AI-агентов
+# Circle — инструкции для AI-агентов
 
-**Circle** (в коде до R03-T19 — `EdenGames`) — портал браузерных командных христианских игр; первая игра — **«Алфавит»** (Memory + викторина, наборы вопросов, AI-генерация).  
-Стек: **Next.js 16.2.6** App Router · **Neon PostgreSQL 17** · **Prisma 7.8** · **Auth.js v5** (`next-auth@5.0.0-beta.31`) · **React 19.2** · **Tailwind CSS 4.3** · **Zustand 5** · **Framer Motion 12** · **Zod** · **shadcn/ui** (admin).
+**Circle** — портал браузерных командных христианских игр; первая игра — **«Алфавит»** (Memory + викторина, наборы вопросов, AI-генерация).  
+Стек: **Next.js 16.2.6** App Router · **Neon PostgreSQL 17** · **Prisma 7.8** · **Auth.js v5** · **React 19.2** · **Tailwind CSS 4.3** · **Zustand 5** · **Framer Motion 12** · **Zod** · **shadcn/ui** (admin).
 
-**Методология:** [`docs/meta/ai_first_methodology.md`](docs/meta/ai_first_methodology.md) — цикл КОНТЕКСТ → ФАЗА → КОНТРАКТ → ЗАДАЧИ → ВЕРИФИКАЦИЯ.  
-**Маршрутизация моделей и DoR:** [`docs/meta/ai_agent_model_routing.md`](docs/meta/ai_agent_model_routing.md) · правило [`model-routing.mdc`](.cursor/rules/model-routing.mdc).
+**Методология:** [`docs/meta/ai_first_methodology.md`](docs/meta/ai_first_methodology.md) · **Маршрутизация:** [`model-routing.mdc`](.cursor/rules/model-routing.mdc).
 
 ## Профиль качества
 
-[`docs/meta/project_quality_profile.md`](docs/meta/project_quality_profile.md) — уровень **`lean`**: тесты на `games/*/logic`, реестр, валидаторы; review по таблице D6; a11y/perf — security floor + ручная проверка UI.
+[`project_quality_profile.md`](docs/meta/project_quality_profile.md) — **`lean`**: тесты на `games/*/logic`, реестр, валидаторы; UI — security floor + ручная проверка.
 
-## Структура репозитория
+## Структура
 
-Канон дерева — [`docs/implementation/contracts/repo_structure_contract.md`](docs/implementation/contracts/repo_structure_contract.md) §1. Сводка: `app/` (тонкие маршруты) · `games/<slug>/` · `shared/` · `server/` · `prisma/` · `docs/`. Первая игра: `games/alphabet/`. Регистрация игр — только `games/registry.ts`.
+Канон: [`repo_structure_contract.md`](docs/implementation/contracts/repo_structure_contract.md) §1 — `app/` · `games/<slug>/` · `shared/` · `server/` · `prisma/` · `docs/`. Регистрация игр — `games/registry.ts`. Новая игра: [`docs/adding-a-game.md`](docs/adding-a-game.md), шаблон `games/_template/`.
 
-## Инварианты ([`repo_structure_contract.md`](docs/implementation/contracts/repo_structure_contract.md) §5)
+## Инварианты
 
-1. Prisma Client — singleton [`server/db/client.ts`](server/db/client.ts).
-2. `auth()` — в каждом защищённом Server Action и Route Handler; `proxy.ts` — только JWT/роль.
-3. `/admin/**`, `/api/admin/**` — только `role === 'admin'`.
-4. Интерактивные компоненты — `'use client'`.
-5. Игра не дублирует shell/game-kit (с R03) — только `shared/game-kit`.
-6. `app/` — без логики игр; страницы игр через реестр.
+1. Prisma — singleton [`server/db/client.ts`](server/db/client.ts).
+2. `auth()` в защищённых actions/handlers; `proxy.ts` — JWT/роль.
+3. `/admin/**`, `/api/admin/**` — только `admin`.
+4. Интерактив — `'use client'`.
+5. Игры — `shared/game-kit`, не дублировать shell.
+6. `app/` — без логики игр; маршруты через реестр.
 
-## Роли пользователей
+## Роли (MVP)
 
 | Роль | MVP |
 |------|-----|
-| `admin` | Наборы вопросов, JSON-import, ручное создание |
+| `admin` | Наборы вопросов, JSON-import |
 | `editor`, `subscriber` | post-MVP |
 
-Auth MVP: **Credentials** (email + password), JWT.
+Auth: Credentials, JWT.
 
 ## Цикл агента
 
-```
-КОНТЕКСТ → TIER/DoR → ФАЗА → КОНТРАКТ → ЗАДАЧИ (CU) → РЕАЛИЗАЦИЯ → ВЕРИФИКАЦИЯ → REVIEW → COMMIT
-```
+КОНТЕКСТ → TIER/DoR → ФАЗА → КОНТРАКТ → CU → РЕАЛИЗАЦИЯ → ВЕРИФИКАЦИЯ → REVIEW → COMMIT ([`agent-commit-pipeline.mdc`](.cursor/rules/agent-commit-pipeline.mdc)).
 
-1. Этот файл + [`project-context.mdc`](.cursor/rules/project-context.mdc) + профиль качества.
-2. Фаза и задачи — [`docs/implementation/phases/`](docs/implementation/phases/).
-3. Читать только § из contracts/specs/ADR, на которые ссылается задача.
-4. Перед кодом — применимые [`.cursor/rules/`](.cursor/rules/) (индекс: [`.cursor/rules/README.md`](.cursor/rules/README.md), skill `app-conventions`).
-5. Прогон фазы — [`docs/guidelines/agent-phase-orchestration.md`](docs/guidelines/agent-phase-orchestration.md); старт: [`docs/prompts/phase-implementation.md`](docs/prompts/phase-implementation.md).
-
-Иерархия источников истины — только в [`project-context.mdc`](.cursor/rules/project-context.mdc) § Source-of-truth order.
-
-## Коммиты и review
-
-| Шаг | Документ |
-|-----|----------|
-| Verify → stage → commit (прогон фазы) | [`.cursor/rules/agent-commit-pipeline.mdc`](.cursor/rules/agent-commit-pipeline.mdc) |
-| Протокол review | [`.cursor/rules/agent-code-review-subagent.mdc`](.cursor/rules/agent-code-review-subagent.mdc) · [`docs/guidelines/ai_code_review_protocol.md`](docs/guidelines/ai_code_review_protocol.md) |
-
-Формат: `<ветка>: type(scope): subject` (commitlint). Задача вне commit unit не коммитится.
-
-## Точки входа в документацию
+## Точки входа
 
 | Область | Путь |
 |---------|------|
-| Реестр docs, DoR, H/N/S | [`docs/meta/documentation_registry.md`](docs/meta/documentation_registry.md) |
-| Шаблон задач фазы | [`docs/meta/phase_tasks.template.md`](docs/meta/phase_tasks.template.md) |
-| ADR | [`docs/architecture/adr_index.md`](docs/architecture/adr_index.md) |
+| Фазы / задачи | [`docs/implementation/phases/`](docs/implementation/phases/) |
 | Контракты | [`docs/implementation/contracts/`](docs/implementation/contracts/) |
-| Игра Alphabet | [`docs/games/alphabet.md`](docs/games/alphabet.md) |
-| Дизайн (направление «Утренний свет», запреты) | [`docs/design/DESIGN.md`](docs/design/DESIGN.md) |
-| Схема БД | [`docs/architecture/database_schema.md`](docs/architecture/database_schema.md) |
-| Guidelines | [`docs/guidelines/README.md`](docs/guidelines/README.md) |
-| План реструктуризации | [`docs/meta/repo_restructure_plan.md`](docs/meta/repo_restructure_plan.md) |
+| Game kit | [`game_kit_contract.md`](docs/implementation/contracts/game_kit_contract.md) · dev [`/dev/game-kit`](app/dev/game-kit/) |
+| Добавить игру | [`docs/adding-a-game.md`](docs/adding-a-game.md) |
+| i18n | [`i18n_contract.md`](docs/implementation/contracts/i18n_contract.md) |
+| Дизайн «Утренний свет» | [`docs/design/DESIGN.md`](docs/design/DESIGN.md) |
+| Alphabet | [`docs/games/alphabet.md`](docs/games/alphabet.md) |
+| Rules index | [`.cursor/rules/README.md`](.cursor/rules/README.md) · skill `app-conventions` |
 
-## Текущий статус
+## Статус фаз
 
 | Фаза | Описание |
 |------|----------|
-| **R01** | Процесс, правила, ADR — [`R01_phase_description.md`](docs/implementation/phases/R01_phase_description.md) |
-| **R02** (завершена) | Структура кода, реестр игр — [`R02_phase_description.md`](docs/implementation/phases/R02_phase_description.md) |
-| **R03** | UI-kit, i18n, шаблон игры, токены «Утренний свет», каталог Circle — [`R03_phase_description.md`](docs/implementation/phases/R03_phase_description.md) |
-| **R04** (черновик) | Редизайн Alphabet и админки — [`R04_phase_description.md`](docs/implementation/phases/R04_phase_description.md) |
+| R01–R02 | Завершены |
+| **R03** | **Завершена** — UI-kit, i18n cookie, каталог Circle, шаблон игры ([`R03_phase_description.md`](docs/implementation/phases/R03_phase_description.md)) |
+| R04 | Редизайн Alphabet и admin (черновик) |
 
-Schema: [`prisma/schema.prisma`](prisma/schema.prisma) · миграция: [ADR-001](docs/architecture/ADR-001-migration-to-nextjs.md) · структура: [ADR-003](docs/architecture/ADR-003-repo-structure.md).
+Schema: [`prisma/schema.prisma`](prisma/schema.prisma) · ADR: [001](docs/architecture/ADR-001-migration-to-nextjs.md), [003](docs/architecture/ADR-003-repo-structure.md).
 
-## Проверки перед коммитом
+## Проверки
 
-**Локально (изменён TS/скрипты):** `npm run typecheck` · `npm run lint` · при необходимости `npm run test`.  
-**Pre-commit:** `lint-staged` (`eslint --fix`) + [`scripts/precommit-build-check.mjs`](scripts/precommit-build-check.mjs) (production build при изменении зависимостей/конфига).  
-**CI / Phase DoD:** `docs:links` · `encoding:check` · `deps:check` · `test` · `build`.  
-**Прогон фазы:** `npm run cu:verify` · `npm run cu:commit` (см. [`phase_driver_contract.md`](docs/implementation/contracts/phase_driver_contract.md)).
+Локально: `npm run typecheck` · `lint` · `test` · `tokens:check`. CI / Phase DoD: `docs:links` · `encoding:check` · `deps:check` · `build`. Прогон фазы: `cu:verify` · `cu:commit`.
