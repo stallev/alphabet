@@ -1,7 +1,7 @@
 # R03 — Общий UI-кит, портал и каркас новых игр
 
 **Тип:** Phase description  
-**Статус:** Draft — **требует Phase DoR audit против фактического состояния репозитория после R02** (D14); редизайн «Утренний свет» внесён 2026-11-03  
+**Статус:** Draft — Phase DoR audit против кода после R02 выполнен 2026-11-03 (см. `R03_tasks.md`); редизайн «Утренний свет» внесён 2026-11-03  
 **Версия:** 1.1  
 **Дата:** 2026-11-03  
 **Зависит от:** R02 завершена; [`DESIGN.md`](../../design/DESIGN.md) (направление «Утренний свет», аудит: [`design_audit_and_concepts.md`](../../design/design_audit_and_concepts.md)); контракты [`game_kit`](../contracts/game_kit_contract.md) · [`i18n`](../contracts/i18n_contract.md) · [`design_tokens`](../contracts/design_tokens_contract.md); спецификации [`portal_home`](../specs/portal_home_spec.md) · [`game_shell`](../specs/game_shell_spec.md) · [`adding_a_game`](../specs/adding_a_game_spec.md)  
@@ -64,7 +64,7 @@
 - [ ] Все CU закоммичены; у каждого trace `Review: …`
 - [ ] `typecheck`, `lint`, `test`, `build`, `docs:links`, `encoding:check`, `deps:check`, `tokens:check` — зелёные
 - [ ] Alphabet использует `GameShell` и компоненты kit; в `games/alphabet` нет собственных реализаций `ScoreBoard`, `Timer`, `QuestionModal`, `LevelSelect`, `VictoryScreen`, `Confetti`, `StepperInput`, `RulesPage`-обёртки диалога ([`game_kit_contract.md §5`](../contracts/game_kit_contract.md))
-- [ ] `rg "useGameStore" shared/` пуст; `rg "[А-Яа-яЁё]"` вне словарей и данных пуст ([`i18n_contract.md §5`](../contracts/i18n_contract.md))
+- [ ] `rg "useGameStore" shared/` пуст; кириллицы вне словарей и данных нет в охваченных путях ([`i18n_contract.md §5`](../contracts/i18n_contract.md); унаследованные пути — в R04)
 - [ ] RU↔EN переключается на `/` и `/alphabet` без перезагрузки URL; `<html lang>` и cookie `locale` корректны; значение cookie `de` игнорируется
 - [ ] `/` — каталог по [`portal_home_spec.md §7`](../specs/portal_home_spec.md); `coming-soon` отображается как «Скоро» (проверено временной записью)
 - [ ] `rg "EdenGames" app shared games` пуст; `SITE.name === 'Circle'`

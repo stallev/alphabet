@@ -20,9 +20,27 @@
 
 Один вызов `architect` (`spec-gap`): сверить контракты/спецификации с кодом `games/alphabet` после R02 — имена компонентов, поля store (`temp`, `settings`, `teamScores`, `currentTeamIndex`, `isPaused`, `isMuted`, …), ключи `TRANSLATIONS`; уточнить props компонентов kit там, где фактическое поведение Alphabet шире; обновить этот файл.
 
-- [ ] Все задачи прошли DoR — дата · исполнитель · изменённые документы
+- [x] Все задачи прошли DoR — 2026-11-03 · оркестратор inline (профиль `lean`) · изменены: `game_kit_contract` v1.1, `i18n_contract` v1.1, `R03_tasks` (T11, T14, T15, T17, T21, T26)
 - [x] Направление и палитра «Утренний свет» утверждены владельцем 2026-11-03 (финал `success`, `danger`, `team-1…6` — по галерее в R03-T1)
-- [ ] Контракты/спецификации сверены с фактическим кодом
+- [x] Контракты/спецификации сверены с фактическим кодом (2026-11-03)
+
+### Результаты аудита (2026-11-03)
+
+Сверка с `games/alphabet` после R02. Расхождения, устранённые правками документов:
+
+| # | Находка | Решение |
+|---|---------|---------|
+| 1 | Текущий `Timer` имеет варианты `bar`/`clock`, `orientation`, `color`-класс; в kit были только `inline`/`ring` | `Timer` kit: `inline`/`ring`/`bar`, `orientation`, `tone`; соответствие в контракте §2 |
+| 2 | `ScoreBoard` содержит «Завершить игру» с `window.confirm` и локальной таблицей строк на 5 языков, режим игры в подписи | `onFinish`, `finishLabel`, `finishConfirm`, `modeLabel`; подтверждение в `Dialog` |
+| 3 | `QuestionModal`: задержка результата 2500 мс (2000 при таймауте), `Confetti` при верном ответе; сравнение — `trim` только у ввода | `resultDelayMs`, `timeoutDelayMs`, конфетти внутри kit; `checkTextAnswer` обрезает обе стороны (надмножество поведения) |
+| 4 | `LevelSelectModal` вызывает `window.alert` при отсутствии вопросов и авто-выбирает уровень по таймеру | `emptyNotice`/`onClose` в `LevelSelect`; авто-выбор — в адаптере по `onTimeout` |
+| 5 | `store.ts` использует `locale` в `initializeGame` (алфавит), выборе набора вопросов и `resetGame` | T14: `initializeGame(settings, locale)`, `selectSuiteForLocale(locale)`; `locale` из `useLocale()` |
+| 6 | `RulesPage` — полноэкранная страница по хэшу `#rules` с анимацией и константами очков | T15/T17: `#rules` открывает `RulesDialog`; страница → `RulesContent` |
+| 7 | `GameApp`: фазы выводятся из `isLoading`, `isSettingsStage`, `isGameOver`, `isPaused` (и подстраницы `show*`) | Маппинг зафиксирован в T15 |
+| 8 | Кракозябры в `Timer.tsx`, `QuestionModal.tsx` (строки, комментарии) | Файлы удаляются в T17; новые строки — из словарей |
+| 9 | Кириллица в строках вне словарей: `app/admin/**`, `app/api/**`, редакторы, AI-генератор, `PromptPage`, `audio.ts` и др.; `app/page.tsx`, `app/[game]/{error,loading}.tsx` | Проверка охватывает портал, kit и игровой экран; унаследованные пути — в R04 (список в `i18n_contract §5`); `error.tsx`/`loading.tsx` — T21 |
+| 10 | `Locale` в `shared/domain/locale.ts` (5 значений) и `ACTIVE_LOCALES` уже есть; `LOCALE_META` в `shared/i18n/locales.ts` содержит эмодзи-флаги | Использовать `ACTIVE_LOCALES`; `LocaleSwitcher` без флагов-эмодзи (запрет `DESIGN.md`), `LOCALE_META.flag` в UI не используется |
+| 11 | `shared/config/site.ts` уже существует (`EdenGames`) | T19 изменяет, а не создаёт |
 
 ## Commit plan
 
@@ -59,7 +77,7 @@
       Paths: n/a — copy
 - [ ] R03-T6 · T2 · Spec: [i18n §3](../contracts/i18n_contract.md)
       Files: `shared/i18n/server.ts`, `shared/i18n/actions/set-locale.ts`, `shared/i18n/I18nProvider.tsx`, `shared/i18n/GameI18nProvider.tsx`, `shared/i18n/LocaleSwitcher.tsx`, `shared/i18n/index.ts`, `app/layout.tsx`, `app/dev/game-kit/Gallery.tsx`
-      Acceptance: `getLocale()` (cookie → `Accept-Language`), `getDictionary()`; Server Action `setLocale` валидирует значение по `ACTIVE_LOCALES`, ставит cookie (`Path=/`, `SameSite=Lax`, 1 год), вызывает `revalidatePath('/', 'layout')`, недопустимое значение — игнор без ошибки наружу; `app/layout.tsx` ставит `<html lang={locale}>` и оборачивает приложение в `I18nProvider`; `LocaleSwitcher` (RU | EN, `aria-pressed`, ≥ 44 px) добавлен в галерею → переключение меняет язык галереи без перезагрузки URL; cookie `locale` выставляется; `de` игнорируется
+      Acceptance: `getLocale()` (cookie → `Accept-Language`), `getDictionary()`; Server Action `setLocale` валидирует значение по `ACTIVE_LOCALES`, ставит cookie (`Path=/`, `SameSite=Lax`, 1 год), вызывает `revalidatePath('/', 'layout')`, недопустимое значение — игнор без ошибки наружу; `app/layout.tsx` ставит `<html lang={locale}>` и оборачивает приложение в `I18nProvider`; `LocaleSwitcher` (RU | EN, `aria-pressed`, ≥ 48 px, без флагов-эмодзи) добавлен в галерею → переключение меняет язык галереи без перезагрузки URL; cookie `locale` выставляется; `de` игнорируется
       Paths: H [i18n §3] · N [setLocale('de') → игнор; повторный вызов с тем же значением]
       UI: /dev/game-kit · roles: public · widths: 360,768,1280
       Seed: n/a
@@ -97,7 +115,7 @@
       Paths: H · N [пустые строки]
 - [ ] R03-T11 · T2 · Spec: [kit §2](../contracts/game_kit_contract.md)
       Files: `shared/game-kit/QuestionModal.tsx`, `shared/game-kit/LevelSelect.tsx`
-      Acceptance: `QuestionModal` — варианты (`choice`) или текстовый ввод (`text`), `Timer` внутри, показ правильного ответа после ответа/таймаута, затем `onAnswer({ correct, timedOut })`; `LevelSelect` — кнопки уровней с очками (+3/+6/+10 крупно; уровни различаются очками, формой и подписью, не «светофором»), таймер выбора, `onTimeout`; оба на `Dialog`; клавиатурная навигация (варианты — радио-группа/кнопки с фокусом, `Enter` отправляет текст) → галерея показывает оба компонента в режимах choice/text/таймаут
+      Acceptance: `QuestionModal` — варианты (`choice`) или текстовый ввод (`text`), `Timer` внутри, показ правильного ответа после ответа/таймаута, затем `onAnswer({ correct, timedOut })`; `LevelSelect` — кнопки уровней с очками (+3/+6/+10 крупно; уровни различаются очками, формой и подписью, не «светофором») и остатком вопросов, таймер выбора, `onTimeout`, `emptyNotice` при отсутствии доступных уровней (вместо `alert`); оба на `Dialog`; клавиатурная навигация (варианты — радио-группа/кнопки с фокусом, `Enter` отправляет текст) → галерея показывает оба компонента в режимах choice/text/таймаут
       Paths: H [kit §2] · N [таймаут без выбора; пустой ответ; повторное нажатие до закрытия — один вызов `onAnswer`]
       UI: /dev/game-kit · roles: public · widths: 360,768,1280
       Seed: n/a
@@ -118,13 +136,13 @@
       Paths: n/a — behavior-preserving refactor
 - [ ] R03-T14 · T3 · Spec: [i18n §3–§4](../contracts/i18n_contract.md)
       Files: `games/alphabet/store.ts`, `games/alphabet/page.tsx`, `games/alphabet/components/**`
-      Acceptance: из store удалены `locale`, `setLocale`, чтение/запись `localStorage('alphabet_locale')` и инициализация по `navigator.language`; `page.tsx` принимает `{ locale }`, оборачивает контент в `GameI18nProvider` и передаёт `locale` в `GameApp`; компоненты читают `useLocale()` / `useGameT()`; выбор системного набора вопросов по языку выполняется по `locale` при инициализации и при смене локали (поведение как до изменения); `LocaleSelector` и `HOME_CONFIRM` удалены (подтверждение выхода — в `GameShell`) → смена RU↔EN переключателем портала меняет тексты и набор вопросов Alphabet; `rg "navigator.language|alphabet_locale" games` пуст
+      Acceptance: из store удалены `locale`, `setLocale`, чтение/запись `localStorage('alphabet_locale')` и инициализация по `navigator.language`; `initializeGame(settings, locale)` и `selectSuiteForLocale(locale)` заменяют чтение `get().locale` в сторе; `page.tsx` принимает `{ locale }`, оборачивает контент в `GameI18nProvider` и передаёт `locale` в `GameApp`; компоненты читают `useLocale()` / `useGameT()`; выбор системного набора вопросов по языку выполняется по `locale` при инициализации и при смене локали (поведение как до изменения); `LocaleSelector` и `HOME_CONFIRM` удалены (подтверждение выхода — в `GameShell`) → смена RU↔EN переключателем портала меняет тексты и набор вопросов Alphabet; `rg "navigator.language|alphabet_locale" games` пуст
       Paths: H [i18n §4] · N [нет набора для локали → набор `ru` + сообщение; смена локали во время игры не ломает состояние] · S [cookie `locale` не содержит пользовательских данных]
       UI: /alphabet · roles: public · widths: 360,768,1280
       Seed: n/a
 - [ ] R03-T15 · T2 · Spec: [shell §1–§2](../specs/game_shell_spec.md)
       Files: `games/alphabet/page.tsx`, `games/alphabet/components/GameApp.tsx`, `games/alphabet/logic/game-phase.ts`, `games/alphabet/logic/game-phase.test.ts`
-      Acceptance: Alphabet рендерится внутри `GameShell`; `getGamePhase(state)` (чистая функция, тест) сопоставляет состояние store с `GamePhase` (`lobby`, `playing`, `paused`, `finished`); собственные шапка/кнопка «домой» удалены; `onRestart` вызывает `resetGame`; правила открываются из шапки (временно — существующий `RulesPage` в `RulesDialog`) → экран Alphabet показывает шапку `GameShell`; выход из `playing` запрашивает подтверждение, из `lobby` — нет
+      Acceptance: Alphabet рендерится внутри `GameShell`; `getGamePhase(state)` (чистая функция, тест) сопоставляет состояние store с `GamePhase`: `isLoading` или `isSettingsStage` → `lobby`; `isGameOver` → `finished`; `isPaused` → `paused`; иначе `playing` (подстраницы `showEditor/Prompt/AIGenerator/Library/Guide` относятся к `lobby`); собственные шапка/кнопка «домой» удалены; `onRestart` вызывает `resetGame`; правила открываются из шапки и по хэшу `#rules` (временно — существующий `RulesPage` в `RulesDialog`) → экран Alphabet показывает шапку `GameShell`; выход из `playing` запрашивает подтверждение, из `lobby` — нет
       Paths: H [shell §2] · N [состояние store «загрузка» → `lobby`]
       UI: /alphabet · roles: public · widths: 360,768,1280
       Seed: n/a
@@ -139,7 +157,7 @@
       Paths: H · N [`answersList: null` при `ID`, нет правильного ответа]
 - [ ] R03-T17 · T3 · Spec: [kit §2–§3](../contracts/game_kit_contract.md)
       Files: `games/alphabet/components/ScoreBoardContainer.tsx`, `games/alphabet/components/QuestionModalContainer.tsx`, `games/alphabet/components/LevelSelectContainer.tsx`, `games/alphabet/components/VictoryScreenContainer.tsx`, `games/alphabet/components/SettingsContainer.tsx`, `games/alphabet/components/GameApp.tsx`, `games/alphabet/components/ScoreBoard.tsx`, `games/alphabet/components/Timer.tsx`, `games/alphabet/components/QuestionModal.tsx`, `games/alphabet/components/LevelSelectModal.tsx`, `games/alphabet/components/VictoryScreen.tsx`, `games/alphabet/components/Confetti.tsx`, `games/alphabet/components/StepperInput.tsx`, `games/alphabet/components/GameSettings.tsx`, `games/alphabet/components/RulesPage.tsx`
-      Acceptance: контейнеры читают `useGameStore()` и передают props в kit (`ScoreBoard`, `QuestionModal`, `LevelSelect`, `VictoryScreen`, `SettingsPanel` + `TeamsSetup` + `StepperInput`, `RulesDialog` с `RulesContent` из словаря Alphabet); поведение игры и счёт **не изменены**; старые реализации `ScoreBoard`, `Timer`, `QuestionModal`, `LevelSelectModal`, `VictoryScreen`, `Confetti`, `StepperInput` удалены; специфичные настройки Alphabet (режим с вопросами/без, темы, таймеры) остаются в `SettingsContainer` внутри `SettingsPanel` → `rg "useGameStore" shared` пуст; `rg "components/(ScoreBoard|Timer|QuestionModal|LevelSelectModal|VictoryScreen|Confetti|StepperInput)\.tsx" games` — файлов нет
+      Acceptance: контейнеры читают `useGameStore()` и передают props в kit (`ScoreBoard`, `QuestionModal`, `LevelSelect`, `VictoryScreen`, `SettingsPanel` + `TeamsSetup` + `StepperInput`, `RulesDialog` с `RulesContent` из словаря Alphabet); поведение игры и счёт **не изменены** (в т. ч. задержка результата 2500/2000 мс, авто-выбор уровня по таймеру, подтверждение завершения игры теперь в `Dialog`, без `window.confirm`/`alert`); старые реализации `ScoreBoard`, `Timer`, `QuestionModal`, `LevelSelectModal`, `VictoryScreen`, `Confetti`, `StepperInput` удалены; специфичные настройки Alphabet (режим с вопросами/без, темы, таймеры) остаются в `SettingsContainer` внутри `SettingsPanel` → `rg "useGameStore" shared` пуст; `rg "components/(ScoreBoard|Timer|QuestionModal|LevelSelectModal|VictoryScreen|Confetti|StepperInput)\.tsx" games` — файлов нет
       Paths: H [полный цикл игры] · N [таймаут выбора уровня и ответа; игра без вопросов; ничья в финале]
       UI: /alphabet · roles: public · widths: 360,768,1280
       Seed: n/a
@@ -167,8 +185,8 @@
       UI: / · roles: public · widths: 360,768,1280
       Seed: n/a
 - [ ] R03-T21 · T2 · Spec: [routing §1–§2](../contracts/game_routing_contract.md)
-      Files: `app/[game]/ComingSoon.tsx`, `app/[game]/page.tsx`, `app/[game]/page.test.ts`
-      Acceptance: для `coming-soon` страница возвращает 200 с блоком «Скоро» (плитка, название, описание из манифеста, ссылка в каталог) и `robots: noindex`; `generateMetadata` покрывает оба статуса; тест: `coming-soon` не вызывает `loadPage`; `active` вызывает → тест зелёный; визуальная проверка — временной записью, не коммитится
+      Files: `app/[game]/ComingSoon.tsx`, `app/[game]/page.tsx`, `app/[game]/error.tsx`, `app/[game]/loading.tsx`, `app/[game]/page.test.ts`
+      Acceptance: для `coming-soon` страница возвращает 200 с блоком «Скоро» (плитка, название, описание из манифеста, ссылка в каталог) и `robots: noindex`; `generateMetadata` покрывает оба статуса; тексты `error.tsx`/`loading.tsx` — из словаря `errors` (кириллицы нет); тест: `coming-soon` не вызывает `loadPage`; `active` вызывает → тест зелёный; визуальная проверка — временной записью, не коммитится
       Paths: H [routing §1] · N [slug неизвестен → 404; coming-soon без `loadPage`]
       UI: /<temp-coming-soon> · roles: public · widths: 360,768,1280
       Seed: n/a
@@ -202,7 +220,7 @@
       Paths: n/a — docs-only
 - [ ] R03-T26 · T1 · Spec: [R03_phase_description §Phase DoD](R03_phase_description.md#phase-dod)
       Files: `docs/implementation/phases/R03_tasks.md`
-      Acceptance: все пункты Phase DoD выполнены и отмечены; записаны значения baseline «до/после»; production-проверка `/dev/game-kit` (`next build && next start` → 404); список вопросов, оставшихся к владельцу (индексация, финальная обложка, имя портала, следующие игры)
+      Acceptance: все пункты Phase DoD выполнены и отмечены; записаны значения baseline «до/после»; production-проверка `/dev/game-kit` (`next build && next start` → 404); список вопросов, оставшихся к владельцу (индексация, домен и соцсети Circle, глифы и цвета плиток следующих игр, следующие игры)
       Paths: n/a — docs-only
 
 **CU DoD:** весь набор проверок: `docs:links` · `encoding:check` · `deps:check` · `typecheck` · `lint` · `test` · `tokens:check` · `build`
