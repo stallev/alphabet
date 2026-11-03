@@ -1,0 +1,20 @@
+{
+  "games/alphabet/components/AIGenerator.tsx": 45,
+  "games/alphabet/components/Card.tsx": 0,
+  "games/alphabet/components/CreditsGateOverlay.tsx": 17,
+  "games/alphabet/components/GameApp.tsx": 0,
+  "games/alphabet/components/LevelSelectContainer.tsx": 0,
+  "games/alphabet/components/LocaleSelector.tsx": 7,
+  "games/alphabet/components/OperatorGuide.tsx": 83,
+  "games/alphabet/components/PromptPage.tsx": 7,
+  "games/alphabet/components/QuestionEditor.tsx": 50,
+  "games/alphabet/components/QuestionLibrary.tsx": 9,
+  "games/alphabet/components/QuestionLibraryPage.tsx": 56,
+  "games/alphabet/components/QuestionModalContainer.tsx": 0,
+  "games/alphabet/components/RulesPage.tsx": 44,
+  "games/alphabet/components/ScoreBoardContainer.tsx": 0,
+  "games/alphabet/components/SettingsContainer.tsx": 0,
+  "games/alphabet/components/TurnTransition.tsx": 0,
+  "games/alphabet/components/VictoryScreenContainer.tsx": 0,
+  "games/alphabet/page.tsx": 3
+}

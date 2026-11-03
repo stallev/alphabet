@@ -9,36 +9,19 @@ import {
   QuestionsSuite,
   LibrarySuite,
 } from '@/games/alphabet/types';
-import { DEFAULT_LOCALE, type Locale } from '@/shared/domain/locale';
+import type { Locale } from '@/shared/domain/locale';
 import { 
   ALPHABET_BY_LOCALE,
   DEFAULT_SETTINGS, 
 } from '@/games/alphabet/constants';
 import { pointsForAnswer, pointsForMatch } from '@/games/alphabet/logic/scoring';
+import { selectSuiteForLocale } from '@/games/alphabet/logic/select-suite-for-locale';
 import { playSound } from '@/games/alphabet/lib/audio';
 
 const TTL_MS = 3 * 24 * 60 * 60 * 1000;
-const LOCALE_STORAGE_KEY = 'alphabet_locale';
-// Temporarily active locales — only languages with question suites in the DB.
-// Extend this list when uk/de/ro suites are added.
-const VALID_LOCALES: Locale[] = ['ru', 'en'];
-
-/** Client-only: call after mount to apply localStorage / navigator (SSR-safe initial state uses DEFAULT_LOCALE). */
-export const readClientLocale = (): Locale => {
-  if (typeof window !== 'undefined') {
-    const saved = localStorage.getItem(LOCALE_STORAGE_KEY) as Locale | null;
-    if (saved && VALID_LOCALES.includes(saved)) return saved;
-  }
-  if (typeof navigator !== 'undefined') {
-    const lang = (navigator.language || '').toLowerCase();
-    if (lang.startsWith('ru')) return 'ru';
-  }
-  return DEFAULT_LOCALE;
-};
 
 const INITIAL_DATA = {
   isLoading: true,
-  locale: DEFAULT_LOCALE,
   settings: { ...DEFAULT_SETTINGS },
   cards: [] as CardData[],
   currentTeamIndex: 0,
@@ -71,10 +54,10 @@ const INITIAL_DATA = {
 };
 
 interface GameActions {
-  setLocale: (locale: Locale) => void;
-  setSystemSuites: (suites: QuestionsSuite[]) => void;
-  loadSystemSuites: () => Promise<void>;
-  initializeGame: (settings: GameState['settings']) => void;
+  setSystemSuites: (suites: QuestionsSuite[], locale: Locale) => void;
+  loadSystemSuites: (locale: Locale) => Promise<void>;
+  applyLocale: (locale: Locale) => boolean;
+  initializeGame: (settings: GameState['settings'], locale: Locale) => void;
   resetGame: () => void;
   finishGame: () => void;
   togglePause: () => void;
@@ -127,59 +110,51 @@ const createInitialCards = (locale: Locale): CardData[] => {
 export const useGameStore = create<GameState & GameActions>()((set, get) => ({
   ...INITIAL_DATA,
 
-  setLocale: (locale) => {
-    if (typeof window !== 'undefined') {
-      localStorage.setItem(LOCALE_STORAGE_KEY, locale);
-    }
+  applyLocale: (locale) => {
     const { systemSuites, questions } = get();
-    const matchingSuite = systemSuites.find((s) => s.language === locale);
+    const { suite, usedFallback } = selectSuiteForLocale(systemSuites, locale);
     set({
-      locale,
       questions: {
         ...questions,
-        currentSuite: matchingSuite ?? questions.currentSuite,
+        currentSuite: suite ?? questions.currentSuite,
       },
     });
+    return usedFallback;
   },
 
-  setSystemSuites: (suites) => {
-    const currentLocale = get().locale;
+  setSystemSuites: (suites, locale) => {
     const validSuites = suites.filter((s) => Array.isArray(s.questionsList));
-    const initialSuite = validSuites.length > 0
-      ? (validSuites.find((s) => s.language === currentLocale) ?? validSuites[0])
-      : null;
+    const { suite } = selectSuiteForLocale(validSuites, locale);
 
     set({
       systemSuites: validSuites,
       isLoading: false,
       questions: {
         ...get().questions,
-        currentSuite: initialSuite,
+        currentSuite: suite,
       },
     });
   },
 
-  loadSystemSuites: async () => {
+  loadSystemSuites: async (locale) => {
     try {
-      // Load from DB via API (replaces static JSON files)
       const res = await fetch('/api/suites');
       if (!res.ok) throw new Error(`API error: ${res.status}`);
 
       const data: QuestionsSuite[] = await res.json();
-      const validResults = data.filter((r): r is QuestionsSuite => r !== null && Array.isArray(r.questionsList));
+      const validResults = data.filter(
+        (r): r is QuestionsSuite => r !== null && Array.isArray(r.questionsList),
+      );
 
-      const currentLocale = get().locale;
-      const initialSuite = validResults.length > 0
-        ? (validResults.find(s => s.language === currentLocale) || validResults[0])
-        : null;
+      const { suite } = selectSuiteForLocale(validResults, locale);
 
       set({
         systemSuites: validResults,
         isLoading: false,
         questions: {
           ...get().questions,
-          currentSuite: initialSuite
-        }
+          currentSuite: suite,
+        },
       });
     } catch (error) {
       console.error('Failed to load suites from API:', error);
@@ -187,8 +162,8 @@ export const useGameStore = create<GameState & GameActions>()((set, get) => ({
     }
   },
 
-  initializeGame: (settings) => {
-    const cards = createInitialCards(get().locale);
+  initializeGame: (settings, locale) => {
+    const cards = createInitialCards(locale);
     playSound('click', get().isMuted);
     set((state) => ({
       ...state,
@@ -215,7 +190,6 @@ export const useGameStore = create<GameState & GameActions>()((set, get) => ({
     playSound('click', get().isMuted);
     set((state) => ({
       ...INITIAL_DATA,
-      locale: state.locale,
       isLoading: false,
       isMuted: state.isMuted,
       library: state.library,

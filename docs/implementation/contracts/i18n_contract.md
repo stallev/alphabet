@@ -2,8 +2,8 @@
 
 **Тип:** Contract  
 **Статус:** Draft  
-**Версия:** 1.0  
-**Дата:** 2026-10-22  
+**Версия:** 1.1  
+**Дата:** 2026-11-03 (Phase DoR audit R03)  
 **Зависит от:** решение D6; текущий подход — [`i18n-approach.md`](../../architecture/i18n-approach.md) (обновляется в R03-CU8)  
 **Используется в:** R02-CU3 (типы и каркас), R03-CU2…CU8
 
@@ -66,6 +66,7 @@ export function LocaleSwitcher(): ReactNode;                       // RU | EN, �
 ## §5 Критерии соответствия
 
 - [ ] `en.ts` и `ru.ts` проходят проверку типов (пропущенный ключ — ошибка `typecheck`)
-- [ ] `rg "[А-Яа-яЁё]" shared games app --glob '!**/i18n/**' --glob '!**/*.test.*' --glob '!data/**'` пуст (нет кириллицы вне словарей и данных)
+- [ ] Нет кириллицы в строках интерфейса вне словарей и данных — для **охваченных путей**: `shared/**`, `app/page.tsx`, `app/_components/**`, `app/[game]/**`, `games/_template/**`, файлы игрового экрана Alphabet (`GameApp`, `Card`, `*Container`, `logic/`, `page.tsx`). Проверка: `rg "[А-Яа-яЁё]" <пути> --glob '!**/i18n/**' --glob '!**/*.test.*' --glob '!data/**'` (русские комментарии допустимы)
+- [ ] **Унаследованные пути (не охвачены R03, переходят в R04):** `app/admin/**`, `app/api/**`, `games/alphabet/components/{AIGenerator,QuestionEditor,QuestionLibrary,QuestionLibraryPage,PromptPage,OperatorGuide,CreditsGateOverlay}.tsx`, `games/alphabet/{validators,server,lib/audio.ts,constants.ts,manifest.ts}`; список зафиксирован в `R03_tasks.md` (аудит), новые файлы в него не добавляются
 - [ ] Переключение RU↔EN меняет `<html lang>`, тексты портала и Alphabet; cookie `locale` выставлена
 - [ ] Недопустимое значение cookie (`de`) игнорируется → `DEFAULT_LOCALE`

@@ -18,6 +18,7 @@
     "docs:links": "node scripts/check-doc-links.mjs",
     "encoding:check": "node scripts/check-text-encoding.mjs",
     "deps:check": "node scripts/check-exact-deps.mjs",
+    "tokens:check": "node scripts/check-design-tokens.mjs",
     "build:check": "echo R01-process-foundation: chore(config): test | npx commitlint",
     "cu:verify": "node scripts/cu-verify.mjs",
     "cu:commit": "node scripts/cu-commit.mjs",

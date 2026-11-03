@@ -18,6 +18,13 @@ export type GameTag = (typeof GAME_TAGS)[number];
 
 export type GameStatus = "active" | "coming-soon";
 
+export type GameTileTone = 1 | 2 | 3 | 4 | 5;
+
+export interface GameTile {
+  glyph: string;
+  tone: GameTileTone;
+}
+
 export interface GameManifest {
   slug: string;
   title: LocalizedText;
@@ -28,7 +35,7 @@ export interface GameManifest {
   teams: { min: number; max: number };
   minAge?: number;
   durationMinutes?: { min: number; max: number };
-  cover: string;
+  tile: GameTile;
   order: number;
 }
 

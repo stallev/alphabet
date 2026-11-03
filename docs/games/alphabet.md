@@ -19,7 +19,7 @@
 
 ## Механика
 
-1. **Подготовка** — выбор локали, числа команд (2–5), набора вопросов, таймеров и режима (с викториной / только Memory).
+1. **Подготовка** — число команд (2–5), набор вопросов, таймеры и режим (с викториной / только Memory); язык UI — cookie портала (`ru` / `en`).
 2. **Ход** — открытие двух карт; при паре — очки и (опционально) выбор сложности вопроса и ответ.
 3. **Завершение** — экран победы, сброс или новая партия; прогресс сохраняется в LocalStorage (TTL наборов 72 ч).
 
@@ -47,14 +47,14 @@
 ## Manifest и i18n
 
 - Slug: `alphabet` — [`game_manifest_contract.md`](../implementation/contracts/game_manifest_contract.md) §2, [`manifest.ts`](../../games/alphabet/manifest.ts)
-- Локали UI: `ru`, `en` активны; переводы и метаданные для `uk`, `de`, `ro` сохранены — [`games/alphabet/i18n/`](../../games/alphabet/i18n/), [`shared/i18n/locales.ts`](../../shared/i18n/locales.ts)
+- Локали UI: `ru`, `en` через cookie портала; переводы `uk`, `de`, `ro` в данных сохранены — [`i18n-approach.md`](../architecture/i18n-approach.md)
 - Теги каталога: `memory`, `quiz`, `team`, `youth`
 - Данные наборов: [`games/alphabet/data/`](../../games/alphabet/data/), БД — [`database_schema.md`](../architecture/database_schema.md)
 
 ## Связанная документация
 
-- UI и z-index: [`ui_components.md`](alphabet/ui_components.md)
-- Zustand и persistence: [`state_management.md`](alphabet/state_management.md)
+- UI и kit: [`ui_components.md`](alphabet/ui_components.md)
+- Zustand и адаптеры: [`state_management.md`](alphabet/state_management.md)
 - AI-генератор: [`ai_system.md`](alphabet/ai_system.md)
 
 ## Критерии соответствия

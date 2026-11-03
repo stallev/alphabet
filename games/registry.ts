@@ -1,4 +1,10 @@
-import type { ActiveLocale, GameEntry, GameManifest, GameTag } from "@/shared/game-kit/manifest";
+import type {
+  ActiveLocale,
+  GameEntry,
+  GameManifest,
+  GameTag,
+  GameTile,
+} from "@/shared/game-kit/manifest";
 import { GAME_TAGS } from "@/shared/game-kit/manifest";
 
 import alphabet from "./alphabet/manifest";
@@ -76,6 +82,27 @@ function validateTeams(slug: string, teams: GameManifest["teams"]): void {
   }
 }
 
+const EMOJI_PATTERN = /\p{Extended_Pictographic}/u;
+
+function validateTile(slug: string, tile: GameTile | undefined): void {
+  if (!tile) {
+    throw new Error(`manifest "${slug}": tile is required`);
+  }
+  const glyph = tile.glyph?.trim() ?? "";
+  if (glyph.length === 0) {
+    throw new Error(`manifest "${slug}": tile.glyph must not be empty`);
+  }
+  if (glyph.length > 2) {
+    throw new Error(`manifest "${slug}": tile.glyph must be at most 2 characters`);
+  }
+  if (EMOJI_PATTERN.test(glyph)) {
+    throw new Error(`manifest "${slug}": tile.glyph must not contain emoji`);
+  }
+  if (tile.tone < 1 || tile.tone > 5) {
+    throw new Error(`manifest "${slug}": tile.tone must be between 1 and 5`);
+  }
+}
+
 function validateManifest(manifest: GameManifest): void {
   const { slug } = manifest;
   validateLocalizedText(slug, "title", manifest.title);
@@ -83,9 +110,7 @@ function validateManifest(manifest: GameManifest): void {
   validateLocalizedText(slug, "description", manifest.description);
   validateTags(slug, manifest.tags);
   validateTeams(slug, manifest.teams);
-  if (manifest.status === "active" && !manifest.cover) {
-    throw new Error(`active game "${slug}" has no cover`);
-  }
+  validateTile(slug, manifest.tile);
 }
 
 export function assertValidRegistry(entries: readonly GameEntry[]): void {

@@ -54,7 +54,17 @@
 
 ---
 
+## Реализация (R03)
+
+- Cookie `locale` + `getLocale()` / `setLocale` в `shared/i18n/`; корневой `I18nProvider` в `app/layout.tsx`.
+- `LocaleSwitcher` в шапке портала; `<html lang>` синхронизирован.
+- Alphabet: удалены `locale` / `localStorage` из store; `GameI18nProvider` + `useGameT()` в игре.
+- Словари: `shared/i18n/dictionaries/*`, `games/alphabet/i18n/*`, kit-строки в portal dictionary.
+- Подробно: [`i18n-approach.md`](./i18n-approach.md), [`i18n_contract.md`](../implementation/contracts/i18n_contract.md).
+
+---
+
 ## Критерии соответствия
 
-- [ ] §1–§3 `i18n_contract.md` после R03
-- [ ] Нет пользовательских строк вне словарей в новом коде
+- [x] §1–§3 `i18n_contract.md` (R03)
+- [x] Нет пользовательских строк вне словарей в новом коде портала, kit и игрового экрана Alphabet (legacy admin — R04)

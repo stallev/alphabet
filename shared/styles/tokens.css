@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #eaf2f4;
+  --color-surface: #ffffff;
+  --color-surface-muted: #dfecef;
+  --color-border: #c5d6db;
+  --color-fg: #12303a;
+  --color-fg-muted: #4a6068;
+  --color-primary: #0f766e;
+  --color-primary-fg: #ffffff;
+  --color-accent: #f5a524;
+  --color-accent-fg: #12303a;
+  --color-success: #15803d;
+  --color-success-fg: #ffffff;
+  --color-danger: #b4452a;
+  --color-danger-fg: #ffffff;
+  --color-focus: #0f766e;
+  --color-team-1: #0f766e;
+  --color-team-1-fg: #ffffff;
+  --color-team-2: #1d5fbf;
+  --color-team-2-fg: #ffffff;
+  --color-team-3: #f5a524;
+  --color-team-3-fg: #12303a;
+  --color-team-4: #b4452a;
+  --color-team-4-fg: #ffffff;
+  --color-team-5: #5b4bb7;
+  --color-team-5-fg: #ffffff;
+  --color-team-6: #12303a;
+  --color-team-6-fg: #ffffff;
+  --color-game-1: #0f766e;
+  --color-game-1-fg: #ffffff;
+  --color-game-2: #1d5fbf;
+  --color-game-2-fg: #ffffff;
+  --color-game-3: #f5a524;
+  --color-game-3-fg: #12303a;
+  --color-game-4: #b4452a;
+  --color-game-4-fg: #ffffff;
+  --color-game-5: #5b4bb7;
+  --color-game-5-fg: #ffffff;
+
+  --font-sans: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+
+  --radius-sm: 0;
+  --radius-md: 0;
+  --radius-lg: 0;
+  --radius-xl: 0;
+  --radius-2xl: 0;
+  --radius-3xl: 0;
+  --radius-ctl: 14px;
+  --radius-card: 22px;
+  --radius-full: 9999px;
+
+  --shadow-sm: none;
+  --shadow-md: none;
+  --shadow-lg: none;
+  --shadow-xl: none;
+  --shadow-2xl: none;
+  --shadow-card: 0 1px 2px rgb(18 48 58 / 0.08), 0 12px 32px -12px rgb(18 48 58 / 0.22);
+  --shadow-press: 0 1px 2px rgb(18 48 58 / 0.12);
+
+  --blur-sm: 0;
+  --blur-md: 0;
+  --blur-lg: 0;
+  --blur-xl: 0;
+  --blur-2xl: 0;
+  --blur-3xl: 0;
+
+  --z-modal: 50;
+  --z-toast: 60;
+}
+
+:root {
+  color-scheme: light;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media (prefers-contrast: more) {
+  :root {
+    --color-border: #12303a;
+    --color-fg-muted: #12303a;
+  }
+}

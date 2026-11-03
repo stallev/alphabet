@@ -5,6 +5,7 @@
 | Что запускаем | Среда | Раздел |
 |---------------|-------|--------|
 | Phase DoR audit, фаза R{NN} | **Cursor AI** | [§1](#1-реализация-фаза-rnn) |
+| Полный прогон фазы R03 (оркестратор + implementer) | **Cursor AI** | [`r03-phase-run-cursor.md`](r03-phase-run-cursor.md) |
 
 ---
 

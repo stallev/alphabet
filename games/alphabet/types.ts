@@ -1,5 +1,3 @@
-import type { Locale } from "@/shared/domain/locale";
-
 export enum ComplexityLevel {
   EASY = 'easy',
   MEDIUM = 'medium',
@@ -53,7 +51,6 @@ export interface GameSettings {
 
 export interface GameState {
   isLoading: boolean;
-  locale: Locale;
   settings: GameSettings;
   cards: CardData[];
   currentTeamIndex: number;

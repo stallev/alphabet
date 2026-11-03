@@ -13,7 +13,7 @@ describe("defineGame", () => {
         status: "coming-soon",
         tags: [GAME_TAGS[0]],
         teams: { min: 1, max: 4 },
-        cover: "",
+        tile: { glyph: "S", tone: 2 },
         order: 0,
       },
     });

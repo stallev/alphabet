@@ -11,7 +11,7 @@
 
 ## Context
 
-Проект мигрировал с Vite SPA на Next.js (ADR-001). Владелец принял цель: **каталог христианских игр** EdenGames с единым порталом и модульными играми, без монорепозитория. Текущий код ещё в legacy-раскладке (`components/`, `lib/`, корневой `store.ts`); целевая структура достигается в фазах R02–R03.
+Проект мигрировал с Vite SPA на Next.js (ADR-001). **Circle** — каталог христианских браузерных игр с единым порталом и модульными играми, без монорепозитория.
 
 ---
 
@@ -74,8 +74,22 @@ N/A — структура каталогов; auth остаётся по ADR-00
 
 ---
 
+## Реализация (R03)
+
+| Область | Результат |
+|---------|-----------|
+| `shared/ui`, `shared/game-kit` | Примитивы и каркас игр; галерея `/dev/game-kit` (dev-only) |
+| `games/_template`, `game-module-contract.mdc` | Шаблон новой игры |
+| `games/alphabet` | Адаптеры над kit; игровой экран на токенах |
+| `app/page.tsx`, `SITE` | Каталог Circle, плитки `tile` |
+| Документация | [`docs/adding-a-game.md`](../adding-a-game.md), обновлённые ADR-006 / `i18n-approach.md` |
+
+Критерии § «Критерии соответствия» ниже актуализированы по Phase DoD R03.
+
+---
+
 ## Критерии соответствия
 
-- [ ] Дерево соответствует §1 `repo_structure_contract.md`
-- [ ] `QuestionSuite` / `Question` читаются только из `games/alphabet/server/` (после R02)
-- [ ] Нет `new PrismaClient()` вне `server/db/`
+- [x] Дерево соответствует §1 `repo_structure_contract.md`
+- [x] `QuestionSuite` / `Question` читаются только из `games/alphabet/server/`
+- [x] Нет `new PrismaClient()` вне `server/db/`

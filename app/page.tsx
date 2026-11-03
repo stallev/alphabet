@@ -1,33 +1,60 @@
-import Link from "next/link";
+import type { Metadata } from 'next';
 
-import { listGames } from "@/games/registry";
-import type { ActiveLocale } from "@/shared/game-kit/manifest";
+import { listGames } from '@/games/registry';
+import { SITE } from '@/shared/config/site';
+import { getDictionary, getLocale } from '@/shared/i18n/server';
 
-const CATALOG_LOCALE: ActiveLocale = "ru";
+import { GameGrid } from './_components/GameGrid';
+import { SiteFooter } from './_components/SiteFooter';
+import { SiteHeader } from './_components/SiteHeader';
 
-export default function HomePage() {
+export async function generateMetadata(): Promise<Metadata> {
+  const locale = await getLocale();
+  const dictionary = await getDictionary();
+
+  return {
+    title: SITE.name,
+    description: dictionary.site.description,
+    robots: SITE.indexable ? 'index, follow' : 'noindex, nofollow',
+    openGraph: {
+      siteName: SITE.name,
+      title: SITE.name,
+      description: dictionary.site.description,
+    },
+  };
+}
+
+export default async function HomePage() {
+  const dictionary = await getDictionary();
   const games = listGames();
 
   return (
-    <main className="mx-auto max-w-5xl p-4 md:p-8">
-      <h1 className="mb-6 text-2xl font-bold text-foreground">Игры</h1>
-      {games.length === 0 ? (
-        <p className="text-muted-foreground">Игр пока нет</p>
-      ) : (
-        <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {games.map((game) => (
-            <li key={game.slug}>
-              <Link
-                href={`/${game.slug}`}
-                className="block rounded-lg border border-border p-4 transition-colors hover:bg-muted/50"
-              >
-                <h2 className="font-semibold text-foreground">{game.title[CATALOG_LOCALE]}</h2>
-                <p className="mt-1 text-sm text-muted-foreground">{game.tagline[CATALOG_LOCALE]}</p>
-              </Link>
-            </li>
-          ))}
-        </ul>
-      )}
-    </main>
+    <>
+      <SiteHeader />
+      <main className="pb-12 pt-8 md:pt-12">
+        <section className="mx-auto max-w-[1120px] px-4 pb-10 md:px-6 xl:px-8">
+          <h1 className="text-3xl font-extrabold tracking-tight text-fg md:text-4xl">
+            {dictionary.site.tagline}
+          </h1>
+          <p className="mt-3 max-w-2xl text-base text-fg-muted md:text-lg">
+            {dictionary.site.description}
+          </p>
+        </section>
+        <section aria-labelledby="catalog-heading">
+          <h2 id="catalog-heading" className="sr-only">
+            {dictionary.catalog.title}
+          </h2>
+          {games.length === 0 ? (
+            <div className="mx-auto max-w-lg px-4 text-center md:px-6">
+              <p className="text-lg font-semibold text-fg">{dictionary.catalog.empty}</p>
+              <p className="mt-2 text-sm text-fg-muted">{dictionary.site.description}</p>
+            </div>
+          ) : (
+            <GameGrid games={games} />
+          )}
+        </section>
+      </main>
+      <SiteFooter />
+    </>
   );
 }

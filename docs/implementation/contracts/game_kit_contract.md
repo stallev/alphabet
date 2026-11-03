@@ -2,8 +2,8 @@
 
 **Тип:** Contract  
 **Статус:** Draft  
-**Версия:** 1.0  
-**Дата:** 2026-10-22  
+**Версия:** 1.1  
+**Дата:** 2026-11-03 (Phase DoR audit R03: сверка с кодом `games/alphabet`)  
 **Зависит от:** [`repo_structure_contract.md`](repo_structure_contract.md), [`design_tokens_contract.md`](design_tokens_contract.md), [`i18n_contract.md`](i18n_contract.md); решение D3  
 **Используется в:** R03-CU3…CU5, [`game_shell_spec.md`](../specs/game_shell_spec.md)
 
@@ -24,10 +24,10 @@
 | Компонент | Файл | Props (основные) | Поведение |
 |-----------|------|------------------|-----------|
 | `GameShell` | `GameShell.tsx` | `manifest: GameManifest`, `phase: GamePhase`, `onRestart?: () => void`, `rules?: RulesContent`, `headerActions?: ReactNode`, `children` | Рамка игры, см. [`game_shell_spec.md`](../specs/game_shell_spec.md) |
-| `ScoreBoard` | `ScoreBoard.tsx` | `teams: ScoreTeam[]`, `activeTeamId?: string`, `onTogglePause?`, `paused?`, `onToggleMute?`, `muted?` | Список команд с очками; активная команда выделена; `aria-live="polite"` для изменений |
-| `Timer` | `Timer.tsx` | `seconds: number`, `running: boolean`, `onElapsed: () => void`, `variant?: 'inline' \| 'ring'`, `label?: string` | Обратный отсчёт; не вызывает `onElapsed` на паузе; `role="timer"` |
-| `QuestionModal` | `QuestionModal.tsx` | `open`, `question: QuizQuestion`, `levelLabel`, `timerSeconds?`, `onAnswer: (result: AnswerResult) => void`, `onClose?` | Диалог вопроса: текст, варианты или поле ответа, таймер; результат — `AnswerResult` |
-| `LevelSelect` | `LevelSelect.tsx` | `open`, `levels: LevelOption[]`, `timerSeconds?`, `onSelect: (id: string) => void`, `onTimeout?` | Выбор сложности (кнопки с очками) |
+| `ScoreBoard` | `ScoreBoard.tsx` | `teams: ScoreTeam[]`, `activeTeamId?: string`, `onTogglePause?`, `paused?`, `onToggleMute?`, `muted?`, `onFinish?`, `finishLabel?`, `finishConfirm?: string`, `modeLabel?: string` | Список команд с очками; активная команда выделена; `aria-live="polite"` для изменений; «Завершить игру» запрашивает подтверждение в `Dialog` (текст `finishConfirm`), затем `onFinish` (в Alphabet сейчас `window.confirm` с зашитыми строками); `modeLabel` — подпись режима игры |
+| `Timer` | `Timer.tsx` | `seconds: number`, `running: boolean`, `onElapsed: () => void`, `variant?: 'inline' \| 'ring' \| 'bar'`, `orientation?: 'horizontal' \| 'vertical'` (для `bar`), `tone?: 'primary' \| 'accent'`, `label?: string` | Обратный отсчёт; не вызывает `onElapsed` на паузе; `role="timer"`; при < 5 с цвет `danger` и смена формы. Соответствие текущему Alphabet: `clock` → `ring`, `bar` → `bar`, `duration`/`isActive`/`onTimeUp` → `seconds`/`running`/`onElapsed`, `color` (класс) → `tone` |
+| `QuestionModal` | `QuestionModal.tsx` | `open`, `question: QuizQuestion`, `levelLabel`, `timerSeconds?`, `resultDelayMs?` (2500), `timeoutDelayMs?` (2000), `onAnswer: (result: AnswerResult) => void`, `onClose?` | Диалог вопроса: текст, варианты или поле ответа, таймер; после ответа показывает результат (и `Confetti` при верном ответе, как в Alphabet) `resultDelayMs`, затем вызывает `onAnswer`; результат — `AnswerResult` |
+| `LevelSelect` | `LevelSelect.tsx` | `open`, `levels: LevelOption[]`, `timerSeconds?`, `onSelect: (id: string) => void`, `onTimeout?`, `emptyNotice?: string`, `onClose?` | Выбор сложности (кнопки с очками и остатком вопросов); если все уровни `disabled` — показывает `emptyNotice` и кнопку закрытия (заменяет `alert` в Alphabet); `onTimeout` вызывает адаптер Alphabet (авто-выбор первого доступного уровня) |
 | `VictoryScreen` | `VictoryScreen.tsx` | `ranking: ScoreTeam[]`, `onPlayAgain`, `onExit` | Победитель(и), конфетти (`Confetti`), кнопки |
 | `Confetti` | `Confetti.tsx` | — | Отключается при `prefers-reduced-motion` |
 | `RulesDialog` | `RulesDialog.tsx` | `open`, `onClose`, `title`, `content: RulesContent` | Диалог правил |
@@ -43,7 +43,7 @@ export type GamePhase = 'lobby' | 'playing' | 'paused' | 'finished';
 export interface ScoreTeam { id: string; name: string; score: number; colorIndex: number } // colorIndex 0..5 → токены team-1..team-6
 
 export type QuizLevelId = 'easy' | 'medium' | 'hard';
-export interface LevelOption { id: string; label: string; points: number; disabled?: boolean }
+export interface LevelOption { id: string; label: string; points: number; remaining?: number; disabled?: boolean }
 
 export type QuizAnswer =
   | { kind: 'choice'; options: { id: number; label: string }[]; correctId: number }
