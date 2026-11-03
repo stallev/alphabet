@@ -31,7 +31,7 @@ games/_template/
 |---|-----|----------|
 | 1 | Выбрать slug (`/^[a-z][a-z0-9-]{1,31}$/`, не зарезервирован) | `npm run test` (реестр) |
 | 2 | `cp -r games/_template games/<slug>`; заменить `template` на slug | `rg template games/<slug>` пуст |
-| 3 | Заполнить `manifest.ts` (RU и EN), положить `public/games/<slug>/cover.webp` (16:9, ≤ 120 КБ) | валидация реестра |
+| 3 | Заполнить `manifest.ts` (RU и EN), задать `tile` (`glyph` 1–2 символа и `tone` 1–5; изображение не нужно) | валидация реестра |
 | 4 | Зарегистрировать манифест в `games/registry.ts` | карточка на `/` |
 | 5 | Написать логику в `logic/` с тестами | `npm run test` |
 | 6 | Собрать UI из `shared/game-kit` и `shared/ui`; только токены | `npm run tokens:check` |

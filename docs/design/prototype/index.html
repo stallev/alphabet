@@ -3,17 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Circle — прототип концепций</title>
+<title>Circle — прототип: 6 направлений</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Golos+Text:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Onest:wght@400;500;600;700;800&family=Unbounded:wght@600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Fira+Sans:wght@400;500;600&family=Golos+Text:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=Literata:opsz,wght@7..72,600;7..72,700&family=Manrope:wght@400;500;600;700;800&family=Onest:wght@400;500;600;700;800&family=Oswald:wght@500;700&family=Source+Sans+3:wght@400;500;600&family=Unbounded:wght@600;800&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.8"></script>
 
 <style type="text/tailwindcss">
-  /* Semantic tokens → Tailwind utilities (bg-surface, text-ink, border-line, bg-g1 …) */
+  /* Семантические токены → утилиты Tailwind. Каждое направление задаёт свой набор переменных. */
   @theme inline {
     --color-surface: var(--surface);
     --color-raised: var(--raised);
+    --color-sunken: var(--sunken);
     --color-ink: var(--ink);
     --color-muted: var(--muted);
     --color-line: var(--line);
@@ -21,6 +22,11 @@
     --color-on-accent: var(--on-accent);
     --color-accent-2: var(--accent-2);
     --color-on-accent-2: var(--on-accent-2);
+    --color-signal: var(--signal);
+    --color-on-signal: var(--on-signal);
+    --color-alt: var(--alt);
+    --color-on-alt: var(--on-alt);
+    --color-danger: var(--danger);
     --color-g1: var(--g1);  --color-on-g1: var(--on-g1);
     --color-g2: var(--g2);  --color-on-g2: var(--on-g2);
     --color-g3: var(--g3);  --color-on-g3: var(--on-g3);
@@ -29,6 +35,7 @@
     --font-heading: var(--f-heading);
     --font-body: var(--f-body);
     --font-hand: var(--f-hand);
+    --font-data: var(--f-data);
     --radius-card: var(--r-card);
     --radius-ctl: var(--r-ctl);
     --shadow-card: var(--sh-card);
@@ -37,47 +44,57 @@
 </style>
 
 <style>
-  /* ── Shell (neutral, not part of any concept) ── */
+  /* ── Оболочка прототипа (не часть продукта) и значения по умолчанию ── */
   :root {
-    --surface: #f3f4f6; --raised: #ffffff; --ink: #111827; --muted: #4b5563; --line: #d1d5db;
-    --accent: #111827; --on-accent: #ffffff; --accent-2: #374151; --on-accent-2: #ffffff;
-    --g1:#111827; --on-g1:#fff; --g2:#111827; --on-g2:#fff; --g3:#111827; --on-g3:#fff; --g4:#111827; --on-g4:#fff; --g5:#111827; --on-g5:#fff;
-    --f-heading: "Onest", system-ui, sans-serif; --f-body: "Onest", system-ui, sans-serif; --f-hand: "Onest", system-ui, sans-serif;
-    --r-card: 12px; --r-ctl: 8px; --sh-card: none; --sh-press: none;
+    --surface:#f6f7f7; --raised:#ffffff; --sunken:#e9ebec; --ink:#0d1013; --muted:#4f565c; --line:#c9cdd0;
+    --accent:#0d1013; --on-accent:#f6f7f7; --accent-2:#0d1013; --on-accent-2:#f6f7f7;
+    --signal:#0d1013; --on-signal:#f6f7f7; --alt:#0d1013; --on-alt:#f6f7f7; --danger:#c4162a;
+    --g1:#0d1013; --on-g1:#fff; --g2:#0d1013; --on-g2:#fff; --g3:#0d1013; --on-g3:#fff; --g4:#0d1013; --on-g4:#fff; --g5:#0d1013; --on-g5:#fff;
+    --f-heading:"IBM Plex Sans",system-ui,sans-serif; --f-body:"IBM Plex Sans",system-ui,sans-serif; --f-hand:"IBM Plex Sans",sans-serif; --f-data:"IBM Plex Mono",monospace;
+    --r-card:0px; --r-ctl:0px; --sh-card:none; --sh-press:none; --nav-h:96px;
   }
-  body { background: var(--surface); color: var(--ink); font-family: var(--f-body); }
+  body { background: var(--surface); color: var(--ink); font-family: var(--f-body); line-height: 1.5; -webkit-font-smoothing: antialiased; }
+  button, a { cursor: pointer; }
+  [hidden] { display: none !important; }
+  .num { font-variant-numeric: tabular-nums; }
+  /* Вторая версия рассчитана на базовый кегль 18 px (проектор); якорь rem общий, поэтому масштабируем контейнеры */
+  [data-concept="d"], [data-concept="e"], [data-concept="f"] { zoom: 1.125; }
+  :focus-visible { outline: 3px solid var(--ink); outline-offset: 2px; }
 
-  /* ── Concept A · «Афиша» ── */
+  /* ══ ПЕРВАЯ ВЕРСИЯ (оставлена для сравнения; содержит приёмы из слоп-аудита) ══ */
+  /* A · Афиша */
   [data-concept="a"] {
-    --surface: #f4efe6; --raised: #fffdf8; --ink: #16130f; --muted: #5b5348; --line: #16130f;
-    --accent: #2b4bff; --on-accent: #ffffff; --accent-2: #16130f; --on-accent-2: #f4efe6;
+    --surface:#f4efe6; --raised:#fffdf8; --ink:#16130f; --muted:#5b5348; --line:#16130f;
+    --accent:#2b4bff; --on-accent:#ffffff; --accent-2:#16130f; --on-accent-2:#f4efe6;
     --g1:#2b4bff; --on-g1:#fff;  --g2:#c8441a; --on-g2:#fff;  --g3:#f2b21b; --on-g3:#16130f;
     --g4:#1f7a52; --on-g4:#fff;  --g5:#6a2c8f; --on-g5:#fff;
-    --f-heading: "Unbounded", "Onest", sans-serif; --f-body: "Onest", system-ui, sans-serif; --f-hand: "Onest", sans-serif;
-    --r-card: 4px; --r-ctl: 2px;
-    --sh-card: 5px 5px 0 0 var(--ink); --sh-press: 1px 1px 0 0 var(--ink);
+    --f-heading:"Unbounded","Onest",sans-serif; --f-body:"Onest",system-ui,sans-serif; --f-hand:"Onest",sans-serif;
+    --r-card:4px; --r-ctl:2px;
+    --sh-card:5px 5px 0 0 var(--ink); --sh-press:1px 1px 0 0 var(--ink);
   }
-  /* ── Concept B · «Утренний свет» ── */
+  /* B · Утренний свет */
   [data-concept="b"] {
-    --surface: #eaf2f4; --raised: #ffffff; --ink: #12303a; --muted: #4a6068; --line: #c5d6db;
-    --accent: #f5a524; --on-accent: #12303a; --accent-2: #0f766e; --on-accent-2: #ffffff;
+    --surface:#eaf2f4; --raised:#ffffff; --ink:#12303a; --muted:#4a6068; --line:#c5d6db;
+    --accent:#f5a524; --on-accent:#12303a; --accent-2:#0f766e; --on-accent-2:#ffffff;
     --g1:#0f766e; --on-g1:#fff;  --g2:#1d5fbf; --on-g2:#fff;  --g3:#f5a524; --on-g3:#12303a;
     --g4:#b4452a; --on-g4:#fff;  --g5:#5b4bb7; --on-g5:#fff;
-    --f-heading: "Manrope", system-ui, sans-serif; --f-body: "Manrope", system-ui, sans-serif; --f-hand: "Manrope", sans-serif;
-    --r-card: 22px; --r-ctl: 14px;
-    --sh-card: 0 1px 2px rgb(18 48 58 / .08), 0 12px 32px -12px rgb(18 48 58 / .22);
-    --sh-press: 0 1px 2px rgb(18 48 58 / .12);
+    --f-heading:"Manrope",system-ui,sans-serif; --f-body:"Manrope",system-ui,sans-serif; --f-hand:"Manrope",sans-serif;
+    --r-card:22px; --r-ctl:14px;
+    --sh-card:0 1px 2px rgb(18 48 58 / .08), 0 12px 32px -12px rgb(18 48 58 / .22);
+    --sh-press:0 1px 2px rgb(18 48 58 / .12);
   }
-  /* ── Concept C · «Тетрадь и маркер» ── */
+  /* C · Тетрадь и маркер */
   [data-concept="c"] {
-    --surface: #fbf8f1; --raised: #ffffff; --ink: #1b1b2f; --muted: #5c5a66; --line: #d9d2c0;
-    --accent: #24389c; --on-accent: #ffffff; --accent-2: #ffe24d; --on-accent-2: #1b1b2f;
+    --surface:#fbf8f1; --raised:#ffffff; --ink:#1b1b2f; --muted:#5c5a66; --line:#d9d2c0;
+    --accent:#24389c; --on-accent:#ffffff; --accent-2:#ffe24d; --on-accent-2:#1b1b2f;
     --g1:#ffe24d; --on-g1:#1b1b2f;  --g2:#ff8fa3; --on-g2:#1b1b2f;  --g3:#8fe3c2; --on-g3:#1b1b2f;
     --g4:#b9d3ff; --on-g4:#1b1b2f;  --g5:#ffc999; --on-g5:#1b1b2f;
-    --f-heading: "Golos Text", system-ui, sans-serif; --f-body: "Golos Text", system-ui, sans-serif; --f-hand: "Caveat", cursive;
-    --r-card: 10px; --r-ctl: 8px;
-    --sh-card: 0 2px 0 0 var(--line), 0 8px 16px -10px rgb(27 27 47 / .35); --sh-press: 0 1px 0 0 var(--line);
+    --f-heading:"Golos Text",system-ui,sans-serif; --f-body:"Golos Text",system-ui,sans-serif; --f-hand:"Caveat",cursive;
+    --r-card:10px; --r-ctl:8px;
+    --sh-card:0 2px 0 0 var(--line), 0 8px 16px -10px rgb(27 27 47 / .35); --sh-press:0 1px 0 0 var(--line);
   }
+  [data-concept="a"] :focus-visible, [data-concept="b"] :focus-visible { outline-color: var(--accent-2); }
+  [data-concept="c"] :focus-visible { outline-color: var(--accent); }
   .grid-paper {
     background-color: var(--surface);
     background-image:
@@ -87,7 +104,30 @@
   }
   .marker { background: linear-gradient(transparent 58%, var(--accent-2) 58% 92%, transparent 92%); }
 
-  /* Card flip — transform only, instant press feedback */
+  /* ══ ВТОРАЯ ВЕРСИЯ: нет скруглений, теней, градиентов, размытий, эмодзи (DESIGN.md) ══ */
+  /* D · Табло */
+  [data-concept="d"] {
+    --surface:#f6f7f7; --sunken:#e9ebec; --ink:#0d1013; --muted:#4f565c; --line:#c9cdd0;
+    --signal:#ffd400; --on-signal:#0d1013; --alt:#0d1013; --on-alt:#f6f7f7; --danger:#c4162a;
+    --f-heading:"IBM Plex Sans Condensed","IBM Plex Sans",sans-serif; --f-body:"IBM Plex Sans",system-ui,sans-serif; --f-data:"IBM Plex Mono",monospace;
+  }
+  /* E · Сетка */
+  [data-concept="e"] {
+    --surface:#eef0f2; --sunken:#e0e3e6; --ink:#14171a; --muted:#565d65; --line:#14171a;
+    --signal:#c8f000; --on-signal:#14171a; --alt:#14171a; --on-alt:#eef0f2; --danger:#e5301f;
+    --f-heading:"Oswald","Fira Sans",sans-serif; --f-body:"Fira Sans",system-ui,sans-serif; --f-data:"Fira Sans",sans-serif;
+  }
+  /* F · Станок (две краски) */
+  [data-concept="f"] {
+    --surface:#f4f5f3; --sunken:#e8eae6; --ink:#0f1220; --muted:#4d5163; --line:#0f1220;
+    --signal:#0b3fd0; --on-signal:#f4f5f3; --alt:#ff5a1f; --on-alt:#0f1220; --danger:#ff5a1f;
+    --f-heading:"Literata",Georgia,serif; --f-body:"Source Sans 3",system-ui,sans-serif; --f-data:"Source Sans 3",sans-serif;
+  }
+  [data-concept="f"] :focus-visible { outline-color: var(--signal); }
+  .overprint { mix-blend-mode: multiply; }
+  .leader { flex: 1; border-bottom: 2px dotted currentColor; margin: 0 .5rem .35rem; opacity: .55; }
+
+  /* Флип карточки: только transform, отклик на нажатие мгновенный */
   .flip { perspective: 800px; position: relative; display: block; }
   .flip-inner { position: absolute; inset: 0; transform-style: preserve-3d; transition: transform 180ms cubic-bezier(.3,.7,.2,1); }
   .flip.is-flipped .flip-inner { transform: rotateY(180deg); }
@@ -97,32 +137,37 @@
   @media (prefers-reduced-motion: reduce) {
     .flip-inner { transition: none; }
     .flip.is-flipped .flip-inner { transform: none; }
-    .flip .face-front { transition: opacity 150ms; }
-    .flip.is-flipped .face-front { opacity: 0; }
     .flip .face-back { transform: none; opacity: 0; backface-visibility: visible; transition: opacity 150ms; }
     .flip.is-flipped .face-back { opacity: 1; }
+    .flip.is-flipped .face-front { opacity: 0; transition: opacity 150ms; }
   }
-  :focus-visible { outline: 3px solid var(--accent-2); outline-offset: 2px; }
-  [data-concept="b"] :focus-visible { outline-color: var(--accent-2); }
-  [data-concept="c"] :focus-visible { outline-color: var(--accent); }
 </style>
 </head>
 
 <body class="min-h-dvh">
 
-<!-- Выбор концепции (только для прототипа) -->
-<nav class="sticky top-0 z-50 border-b border-line bg-raised/95 backdrop-blur" aria-label="Концепции">
-  <div class="mx-auto flex max-w-6xl flex-wrap items-center gap-3 px-4 py-3">
-    <p class="mr-auto text-sm font-semibold">Circle · прототип концепций <span class="font-normal text-muted">(макет, тексты-заглушки)</span></p>
-    <div role="tablist" class="flex gap-1 rounded-lg bg-surface p-1 text-sm font-semibold">
-      <button role="tab" data-tab="a" class="rounded-md px-3 py-1.5">A · Афиша</button>
-      <button role="tab" data-tab="b" class="rounded-md px-3 py-1.5">B · Утренний свет</button>
-      <button role="tab" data-tab="c" class="rounded-md px-3 py-1.5">C · Тетрадь</button>
+<nav id="shell" class="sticky top-0 z-50 border-b-2 border-ink bg-surface" aria-label="Направления">
+  <div class="mx-auto max-w-[1280px] px-4 py-2">
+    <p class="text-sm font-semibold">Circle · прототип: 6 направлений <span class="font-normal text-muted">(макет; тексты игр кроме «Алфавита» — заглушки)</span></p>
+    <div class="mt-2 flex flex-wrap items-center gap-x-6 gap-y-2" role="tablist">
+      <div class="flex items-center gap-2"><span class="text-xs text-muted">Версия 1</span>
+        <div class="flex border-2 border-ink text-sm font-semibold">
+          <button role="tab" data-tab="a" class="h-9 px-3">A · Афиша</button>
+          <button role="tab" data-tab="b" class="h-9 border-x-2 border-ink px-3">B · Утренний свет</button>
+          <button role="tab" data-tab="c" class="h-9 px-3">C · Тетрадь</button>
+        </div></div>
+      <div class="flex items-center gap-2"><span class="text-xs text-muted">Версия 2</span>
+        <div class="flex border-2 border-ink text-sm font-semibold">
+          <button role="tab" data-tab="d" class="h-9 px-3">D · Табло</button>
+          <button role="tab" data-tab="e" class="h-9 border-x-2 border-ink px-3">E · Сетка</button>
+          <button role="tab" data-tab="f" class="h-9 px-3">F · Станок</button>
+        </div></div>
     </div>
+    <p data-caption class="mt-2 text-sm text-muted"></p>
   </div>
 </nav>
 
-<!-- ═══════════════ A · АФИША ═══════════════ -->
+<!-- ═════════ A · АФИША (v1) ═════════ -->
 <div data-concept="a" hidden class="bg-surface text-ink font-body">
   <header class="border-b-2 border-ink">
     <div class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
@@ -130,16 +175,13 @@
       <span class="text-sm font-medium text-muted">Командные игры · 13+</span>
     </div>
   </header>
-
   <section class="mx-auto max-w-6xl px-5 pt-12 pb-8">
     <h1 class="font-heading text-[clamp(2.25rem,6vw,4.5rem)] font-extrabold leading-[1.02] tracking-[-0.03em]">Играем<br>командой.</h1>
     <p class="mt-5 max-w-xl text-lg leading-relaxed text-muted">Каталог игр для молодёжных встреч: запускаются с одного экрана, играются за столом или у проектора.</p>
   </section>
-
   <section class="mx-auto max-w-6xl px-5 pb-14" aria-label="Каталог">
     <ul data-catalog class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"></ul>
   </section>
-
   <section class="border-y-2 border-ink bg-raised">
     <div class="mx-auto grid max-w-6xl gap-8 px-5 py-12 lg:grid-cols-[1fr_1.15fr]">
       <div>
@@ -165,7 +207,6 @@
       </div>
     </div>
   </section>
-
   <section class="mx-auto max-w-6xl px-5 py-12">
     <div class="flex flex-wrap items-end justify-between gap-4">
       <h2 class="font-heading text-3xl font-extrabold tracking-[-0.02em]">Игровое поле</h2>
@@ -179,19 +220,17 @@
       <div data-board class="grid flex-1 grid-cols-6 gap-2 sm:grid-cols-8"></div>
     </div>
   </section>
-
   <footer class="border-t-2 border-ink px-5 py-6 text-center text-sm text-muted">Circle · нейтральная духовная стилистика · 5–6 игр в каталоге</footer>
 </div>
 
-<!-- ═══════════════ B · УТРЕННИЙ СВЕТ ═══════════════ -->
+<!-- ═════════ B · УТРЕННИЙ СВЕТ (v1) ═════════ -->
 <div data-concept="b" hidden class="bg-surface text-ink font-body">
-  <header class="sticky top-[53px] z-40 border-b border-line bg-surface/80 backdrop-blur-xl">
+  <header class="sticky top-[var(--nav-h)] z-40 border-b border-line bg-surface/80 backdrop-blur-xl">
     <div class="mx-auto flex max-w-6xl items-center justify-between px-5 py-3">
       <span class="flex items-center gap-2 text-lg font-extrabold tracking-[-0.02em]"><span class="grid size-8 place-items-center rounded-full bg-accent text-on-accent">C</span>Circle</span>
       <span class="text-sm font-medium text-muted">Командные игры</span>
     </div>
   </header>
-
   <section class="relative isolate overflow-hidden">
     <div class="pointer-events-none absolute -right-24 -top-24 -z-10 size-[28rem] rounded-full bg-accent/30 blur-3xl" aria-hidden="true"></div>
     <div class="mx-auto max-w-6xl px-5 pt-14 pb-10">
@@ -199,11 +238,9 @@
       <p class="mt-5 max-w-xl text-lg leading-relaxed text-muted">Спокойный светлый интерфейс, который хорошо читается на проекторе даже в освещённой комнате.</p>
     </div>
   </section>
-
   <section class="mx-auto max-w-6xl px-5 pb-14" aria-label="Каталог">
     <ul data-catalog class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3"></ul>
   </section>
-
   <section class="mx-auto max-w-6xl px-5 pb-14">
     <div class="grid gap-6 rounded-[28px] bg-raised p-6 shadow-card md:grid-cols-[18rem_1fr] md:p-8">
       <div>
@@ -237,7 +274,6 @@
       </div>
     </div>
   </section>
-
   <section class="mx-auto max-w-6xl px-5 pb-14">
     <div class="flex flex-wrap items-end justify-between gap-3"><h2 class="text-3xl font-extrabold tracking-[-0.02em]">Игровое поле</h2><p class="text-sm text-muted">Нажмите на карточку.</p></div>
     <div class="mt-5 rounded-[28px] bg-raised/70 p-4 shadow-card md:p-6">
@@ -249,11 +285,10 @@
       <div data-board class="grid grid-cols-6 gap-2 sm:grid-cols-8"></div>
     </div>
   </section>
-
   <footer class="border-t border-line px-5 py-6 text-center text-sm text-muted">Circle · светлая палитра для проектора</footer>
 </div>
 
-<!-- ═══════════════ C · ТЕТРАДЬ ═══════════════ -->
+<!-- ═════════ C · ТЕТРАДЬ (v1) ═════════ -->
 <div data-concept="c" hidden class="grid-paper text-ink font-body">
   <header class="border-b border-line bg-surface/90">
     <div class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
@@ -261,16 +296,13 @@
       <span class="text-sm font-medium text-muted">тетрадь командных игр</span>
     </div>
   </header>
-
   <section class="mx-auto max-w-6xl px-5 pt-12 pb-8">
     <h1 class="text-[clamp(2.25rem,5.5vw,4rem)] font-bold leading-[1.05] tracking-[-0.025em]">Сегодня играем <span class="marker px-1 font-hand text-[1.15em] font-bold">вместе</span></h1>
     <p class="mt-5 max-w-xl text-lg leading-relaxed text-muted">Выбирайте игру из тетради. Каждая — на своей странице и со своим маркером.</p>
   </section>
-
   <section class="mx-auto max-w-6xl px-5 pb-14" aria-label="Каталог">
     <ul data-catalog class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"></ul>
   </section>
-
   <section class="mx-auto max-w-6xl px-5 pb-14">
     <div class="rounded-card border border-line bg-raised p-6 shadow-card md:p-8">
       <h2 class="font-hand text-5xl font-bold leading-none text-accent">Алфавит</h2>
@@ -299,7 +331,6 @@
       <button class="mt-8 w-full rounded-ctl bg-accent px-6 py-5 text-xl font-bold text-on-accent transition-transform active:scale-[.98]">Начать игру</button>
     </div>
   </section>
-
   <section class="mx-auto max-w-6xl px-5 pb-14">
     <div class="flex flex-wrap items-end justify-between gap-3"><h2 class="font-hand text-5xl font-bold leading-none">Игровое поле</h2><p class="text-sm text-muted">Нажмите на карточку.</p></div>
     <div class="mt-5 flex flex-wrap items-center gap-3">
@@ -309,12 +340,271 @@
     </div>
     <div data-board class="mt-4 grid grid-cols-6 gap-2 sm:grid-cols-8"></div>
   </section>
-
   <footer class="border-t border-line px-5 py-6 text-center text-sm text-muted">Circle · тетрадь и маркер</footer>
 </div>
 
+<!-- ═════════ D · ТАБЛО (v2) ═════════ -->
+<div data-concept="d" hidden class="bg-surface text-ink font-body">
+  <header class="border-b-2 border-ink">
+    <div class="mx-auto flex max-w-[1280px] items-baseline justify-between px-4 py-4">
+      <span class="font-heading text-3xl font-bold tracking-[-0.02em]">Circle</span>
+      <span class="font-data text-sm text-muted">5 игр скоро · 1 доступна</span>
+    </div>
+  </header>
+  <main class="mx-auto max-w-[1280px] px-4">
+    <section class="pt-10" aria-labelledby="d-cat">
+      <h1 id="d-cat" class="font-heading text-6xl font-bold leading-[1] tracking-[-0.02em]">Игры</h1>
+      <div class="mt-8 hidden grid-cols-[4.5rem_1fr_9rem_8rem_6rem_9rem] gap-x-4 border-y-2 border-ink bg-sunken px-4 py-2 font-data text-sm text-muted md:grid">
+        <span>№</span><span>Игра</span><span>Команды</span><span>Время</span><span>Возраст</span><span>Статус</span>
+      </div>
+      <div data-catalog></div>
+    </section>
+    <section class="pt-20" aria-labelledby="d-set">
+      <h2 id="d-set" class="font-heading text-4xl font-bold tracking-[-0.02em]">Алфавит · настройка</h2>
+      <div class="mt-6 border-t-2 border-ink">
+        <div class="grid gap-3 border-b border-line py-5 md:grid-cols-[14rem_1fr]">
+          <p class="font-semibold">Режим</p>
+          <div class="grid grid-cols-2 border-2 border-ink">
+            <button class="h-16 bg-ink px-4 text-lg font-semibold text-surface" aria-pressed="true">С вопросами</button>
+            <button class="h-16 border-l-2 border-ink px-4 text-lg font-semibold" aria-pressed="false">Только память</button>
+          </div>
+        </div>
+        <div class="grid gap-3 border-b border-line py-5 md:grid-cols-[14rem_1fr]">
+          <p class="font-semibold">Набор вопросов</p>
+          <div class="flex h-16 items-center justify-between border-2 border-ink px-4">
+            <span class="text-lg font-semibold">The Book of Proverbs</span>
+            <button class="h-12 border-2 border-ink px-4 font-semibold">Выбрать другой</button>
+          </div>
+        </div>
+        <div class="grid gap-3 border-b border-line py-5 md:grid-cols-[14rem_1fr]">
+          <p class="font-semibold">Количество команд</p>
+          <div class="grid grid-cols-4 border-2 border-ink">
+            <button class="h-16 bg-ink font-data text-2xl font-semibold text-surface">2</button>
+            <button class="h-16 border-l-2 border-ink font-data text-2xl font-semibold">3</button>
+            <button class="h-16 border-l-2 border-ink font-data text-2xl font-semibold">4</button>
+            <button class="h-16 border-l-2 border-ink font-data text-2xl font-semibold">5</button>
+          </div>
+        </div>
+        <div class="grid gap-3 border-b border-line py-5 md:grid-cols-[14rem_1fr]">
+          <p class="font-semibold">Названия</p>
+          <div class="grid gap-3 md:grid-cols-2">
+            <input class="h-16 border-2 border-ink bg-surface px-4 text-lg font-medium" value="Команда 1" aria-label="Команда 1">
+            <input class="h-16 border-2 border-ink bg-surface px-4 text-lg font-medium" value="Команда 2" aria-label="Команда 2">
+          </div>
+        </div>
+        <div class="grid gap-3 py-5 md:grid-cols-[14rem_1fr]">
+          <p class="font-semibold">Таймеры</p>
+          <p class="font-data text-lg">Ход 15 с · Выбор сложности 10 с · Ответ 30 с</p>
+        </div>
+      </div>
+      <button class="mt-2 h-16 w-full border-2 border-ink bg-signal font-heading text-3xl font-bold text-on-signal active:bg-ink active:text-signal">Начать игру</button>
+      <p class="mt-3 flex gap-6 text-base font-semibold"><a href="#" class="border-2 border-ink px-3 py-2">Правила</a><a href="#" class="border-2 border-ink px-3 py-2">Материалы ведущего</a></p>
+    </section>
+    <section class="pt-20" aria-labelledby="d-board">
+      <h2 id="d-board" class="font-heading text-4xl font-bold tracking-[-0.02em]">Игровое поле</h2>
+      <div class="mt-6 grid border-2 border-ink md:grid-cols-[1fr_1fr_auto_auto]">
+        <div class="flex items-center justify-between bg-ink p-4 text-surface"><div><p class="text-sm">Ходит</p><p class="font-heading text-2xl font-semibold">Команда 1</p></div><p class="num font-data text-5xl font-semibold">15</p></div>
+        <div class="flex items-center justify-between border-t-2 border-ink p-4 md:border-l-2 md:border-t-0"><div><p class="text-sm text-muted">Ждёт</p><p class="font-heading text-2xl font-semibold">Команда 2</p></div><p class="num font-data text-5xl font-semibold">5</p></div>
+        <div class="flex items-center gap-3 border-t-2 border-ink px-6 md:border-l-2 md:border-t-0"><p class="num font-data text-6xl font-semibold">13</p><p class="text-sm leading-tight text-muted">секунд<br>на ход</p></div>
+        <div class="flex border-t-2 border-ink md:border-l-2 md:border-t-0"><button class="h-full min-h-16 px-5 font-semibold">Пауза</button><button class="h-full min-h-16 border-l-2 border-ink bg-signal px-5 font-semibold text-on-signal">Завершить</button></div>
+      </div>
+      <div data-board class="mt-2 grid grid-cols-4 gap-1 sm:grid-cols-7 lg:grid-cols-13"></div>
+      <p class="mt-2 font-data text-sm text-muted">3 из 26 пар найдено · нажмите на карточку</p>
+    </section>
+    <section class="pt-20" aria-labelledby="d-q">
+      <h2 id="d-q" class="font-heading text-4xl font-bold tracking-[-0.02em]">Пара найдена — бонусный вопрос</h2>
+      <div class="mt-6 grid gap-6 lg:grid-cols-[22rem_1fr]">
+        <div class="border-2 border-ink" role="group" aria-label="Выбор сложности">
+          <p class="bg-ink px-4 py-3 font-semibold text-surface">Сложность</p>
+          <button class="flex h-20 w-full items-center justify-between border-b border-line px-4 text-left"><span><span class="block text-lg font-semibold">Лёгкий</span><span class="font-data text-sm text-muted">осталось 150</span></span><span class="num font-data text-4xl font-semibold">+3</span></button>
+          <button class="flex h-20 w-full items-center justify-between border-b border-line px-4 text-left"><span><span class="block text-lg font-semibold">Средний</span><span class="font-data text-sm text-muted">осталось 150</span></span><span class="num font-data text-4xl font-semibold">+6</span></button>
+          <button class="flex h-20 w-full items-center justify-between px-4 text-left"><span><span class="block text-lg font-semibold">Сложный</span><span class="font-data text-sm text-muted">осталось 150</span></span><span class="num font-data text-4xl font-semibold">+10</span></button>
+          <p class="border-t-2 border-ink bg-sunken px-4 py-3 text-sm text-muted">Через 10 с выберется лёгкий.</p>
+        </div>
+        <div class="border-2 border-ink">
+          <div class="flex items-center justify-between bg-ink px-4 py-3 text-surface"><p class="font-semibold">Вопрос · лёгкий</p><p class="num font-data text-xl font-semibold text-signal">+3</p></div>
+          <div class="p-6">
+            <h3 class="font-heading text-4xl font-semibold leading-[1.1] tracking-[-0.02em]">Proverbs 28:6 says: “Better the poor whose walk is blameless than the rich whose ways are ___.”</h3>
+            <div class="mt-8 grid border-2 border-ink md:grid-cols-2">
+              <button class="flex h-20 items-center gap-4 border-b-2 border-ink px-4 text-left text-xl font-medium md:border-r-2"><span class="font-data text-2xl font-semibold text-muted">1</span>haughty</button>
+              <button class="flex h-20 items-center gap-4 border-b-2 border-ink px-4 text-left text-xl font-medium"><span class="font-data text-2xl font-semibold text-muted">2</span>dishonest</button>
+              <button class="flex h-20 items-center gap-4 border-ink px-4 text-left text-xl font-medium max-md:border-b-2 md:border-r-2"><span class="font-data text-2xl font-semibold text-muted">3</span>perverse</button>
+              <button class="flex h-20 items-center gap-4 px-4 text-left text-xl font-medium"><span class="font-data text-2xl font-semibold text-muted">4</span>proud</button>
+            </div>
+            <div class="mt-6 flex items-center gap-4"><div class="h-4 flex-1 border-2 border-ink"><div class="h-full w-[62%] bg-ink"></div></div><p class="num font-data text-xl font-semibold">19 с</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-20" aria-labelledby="d-lib">
+      <h2 id="d-lib" class="font-heading text-4xl font-bold tracking-[-0.02em]">Библиотека наборов</h2>
+      <div data-library class="mt-6"></div>
+    </section>
+  </main>
+</div>
+
+<!-- ═════════ E · СЕТКА (v2) ═════════ -->
+<div data-concept="e" hidden class="bg-surface text-ink font-body">
+  <header class="border-b border-ink">
+    <div class="mx-auto flex max-w-[1280px] items-center justify-between px-4 py-3">
+      <span class="font-heading text-4xl font-bold leading-none tracking-[-0.02em]">Circle</span>
+      <span class="text-base text-muted">Командные игры · 13+</span>
+    </div>
+  </header>
+  <main class="mx-auto max-w-[1280px]">
+    <section class="px-4 pt-10 pb-6"><h1 class="font-heading text-[clamp(3rem,8vw,6.5rem)] font-bold leading-[.95] tracking-[-0.02em]">Игры</h1></section>
+    <div data-catalog class="border-t border-ink"></div>
+    <section class="mt-20 border-y border-ink" aria-labelledby="e-set">
+      <h2 id="e-set" class="border-b border-ink px-4 py-3 font-heading text-3xl font-bold">Алфавит · три шага</h2>
+      <div class="grid border-b border-ink md:grid-cols-[8rem_1fr]">
+        <p class="border-b border-ink p-4 font-heading text-7xl font-bold leading-none md:border-b-0 md:border-r">1</p>
+        <div class="p-4"><p class="text-xl font-semibold">Режим</p>
+          <div class="mt-4 grid border border-ink sm:grid-cols-2">
+            <button class="h-20 bg-ink text-2xl font-semibold text-surface" aria-pressed="true">С вопросами</button>
+            <button class="h-20 border-t border-ink text-2xl font-semibold sm:border-l sm:border-t-0" aria-pressed="false">Только память</button>
+          </div>
+          <p class="mt-4 text-lg">Набор: <b class="font-semibold">The Book of Proverbs</b> · <a href="#" class="border border-ink px-2 py-1 font-semibold">Сменить</a></p></div>
+      </div>
+      <div class="grid border-b border-ink md:grid-cols-[8rem_1fr]">
+        <p class="border-b border-ink p-4 font-heading text-7xl font-bold leading-none md:border-b-0 md:border-r">2</p>
+        <div class="p-4"><p class="text-xl font-semibold">Сколько команд</p>
+          <div class="mt-4 grid grid-cols-4 border border-ink">
+            <button class="h-24 bg-ink font-heading text-6xl font-bold text-surface">2</button>
+            <button class="h-24 border-l border-ink font-heading text-6xl font-bold">3</button>
+            <button class="h-24 border-l border-ink font-heading text-6xl font-bold">4</button>
+            <button class="h-24 border-l border-ink font-heading text-6xl font-bold">5</button>
+          </div></div>
+      </div>
+      <div class="grid border-b border-ink md:grid-cols-[8rem_1fr]">
+        <p class="border-b border-ink p-4 font-heading text-7xl font-bold leading-none md:border-b-0 md:border-r">3</p>
+        <div class="p-4"><p class="text-xl font-semibold">Как назвать</p>
+          <div class="mt-4 grid gap-0 border border-ink md:grid-cols-2">
+            <input class="h-16 bg-surface px-4 text-xl font-medium" value="Команда 1" aria-label="Команда 1">
+            <input class="h-16 border-t border-ink bg-surface px-4 text-xl font-medium md:border-l md:border-t-0" value="Команда 2" aria-label="Команда 2">
+          </div></div>
+      </div>
+      <button class="h-24 w-full bg-signal font-heading text-5xl font-bold text-on-signal active:bg-ink active:text-signal">Начать</button>
+    </section>
+    <section class="mt-20 grid border-y border-ink lg:grid-cols-[17rem_1fr]" aria-labelledby="e-board">
+      <aside class="border-b border-ink lg:border-b-0 lg:border-r">
+        <h2 id="e-board" class="sr-only">Игровое поле</h2>
+        <div class="border-b border-ink p-4"><p class="text-sm text-muted">Осталось на ход</p><p class="num font-heading text-[7rem] font-bold leading-[.9]">13</p></div>
+        <div class="flex items-end justify-between bg-signal p-4 text-on-signal"><div><p class="text-sm">Ходит</p><p class="font-heading text-2xl font-bold">Команда 1</p></div><p class="num font-heading text-6xl font-bold leading-none">15</p></div>
+        <div class="flex items-end justify-between border-b border-ink p-4"><div><p class="text-sm text-muted">Ждёт</p><p class="font-heading text-2xl font-bold">Команда 2</p></div><p class="num font-heading text-6xl font-bold leading-none">5</p></div>
+        <div class="grid grid-cols-2"><button class="h-14 font-semibold">Пауза</button><button class="h-14 border-l border-ink font-semibold">Завершить</button></div>
+      </aside>
+      <div data-board class="grid grid-cols-4 content-start self-start gap-px bg-ink sm:grid-cols-7 lg:grid-cols-13"></div>
+    </section>
+    <section class="mt-20 border-y border-ink" aria-labelledby="e-q">
+      <h2 id="e-q" class="border-b border-ink px-4 py-3 font-heading text-3xl font-bold">Бонусный вопрос</h2>
+      <div class="grid border-b border-ink sm:grid-cols-3" role="group" aria-label="Выбор сложности">
+        <button class="border-b border-ink p-4 text-left sm:border-b-0 sm:border-r"><span class="block text-lg font-semibold">Лёгкий</span><span class="num font-heading text-[6rem] font-bold leading-none">+3</span><span class="block text-sm text-muted">осталось 150</span></button>
+        <button class="border-b border-ink p-4 text-left sm:border-b-0 sm:border-r"><span class="block text-lg font-semibold">Средний</span><span class="num font-heading text-[6rem] font-bold leading-none">+6</span><span class="block text-sm text-muted">осталось 150</span></button>
+        <button class="p-4 text-left"><span class="block text-lg font-semibold">Сложный</span><span class="num font-heading text-[6rem] font-bold leading-none">+10</span><span class="block text-sm text-muted">осталось 150</span></button>
+      </div>
+      <div class="h-3 w-full border-b border-ink"><div class="h-full w-[62%] bg-ink"></div></div>
+      <div class="p-4 md:p-8">
+        <p class="num text-lg text-muted">Лёгкий · +3 · осталось 19 с</p>
+        <h3 class="mt-2 max-w-4xl font-heading text-[clamp(2rem,4.5vw,3.5rem)] font-bold leading-[1.05] tracking-[-0.01em]">Proverbs 28:6 says: “Better the poor whose walk is blameless than the rich whose ways are ___.”</h3>
+      </div>
+      <div class="border-t border-ink">
+        <button class="flex h-24 w-full items-center gap-6 border-b border-ink px-4 text-left text-3xl font-medium"><span class="font-heading text-5xl font-bold">1</span>haughty</button>
+        <button class="flex h-24 w-full items-center gap-6 border-b border-ink px-4 text-left text-3xl font-medium"><span class="font-heading text-5xl font-bold">2</span>dishonest</button>
+        <button class="flex h-24 w-full items-center gap-6 border-b border-ink px-4 text-left text-3xl font-medium"><span class="font-heading text-5xl font-bold">3</span>perverse</button>
+        <button class="flex h-24 w-full items-center gap-6 px-4 text-left text-3xl font-medium"><span class="font-heading text-5xl font-bold">4</span>proud</button>
+      </div>
+    </section>
+    <section class="my-20 border-y border-ink" aria-labelledby="e-lib">
+      <h2 id="e-lib" class="border-b border-ink px-4 py-3 font-heading text-3xl font-bold">Библиотека наборов</h2>
+      <div data-library></div>
+    </section>
+  </main>
+</div>
+
+<!-- ═════════ F · СТАНОК (v2) ═════════ -->
+<div data-concept="f" hidden class="bg-surface text-ink font-body">
+  <header class="mx-auto max-w-[1280px] px-4 pt-4">
+    <div class="border-y-4 border-double border-ink py-3 text-center">
+      <span class="font-heading text-6xl font-bold leading-none tracking-[-0.02em]">Circle</span>
+    </div>
+    <div class="flex justify-between border-b border-ink py-1 text-sm text-muted"><span>Каталог командных игр</span><span>5 игр скоро</span></div>
+  </header>
+  <main class="mx-auto max-w-[1280px] px-4">
+    <section class="pt-10" aria-label="Каталог"><div data-catalog></div></section>
+    <section class="pt-20" aria-labelledby="f-set">
+      <h2 id="f-set" class="border-b-4 border-double border-ink pb-2 font-heading text-4xl font-bold">Алфавит · бланк игры</h2>
+      <div class="mt-6 grid gap-x-12 gap-y-8 md:grid-cols-2">
+        <div>
+          <p class="font-semibold">Режим</p>
+          <div class="mt-2 grid border-2 border-ink sm:grid-cols-2">
+            <button class="h-16 bg-signal text-xl font-semibold text-on-signal" aria-pressed="true">С вопросами</button>
+            <button class="h-16 border-t-2 border-ink text-xl font-semibold sm:border-l-2 sm:border-t-0" aria-pressed="false">Только память</button>
+          </div>
+          <p class="mt-6 font-semibold">Набор вопросов</p>
+          <p class="mt-1 flex items-end text-xl"><span class="font-heading font-bold">The Book of Proverbs</span><span class="leader"></span><a href="#" class="h-12 border-2 border-ink px-3 py-2 text-base font-semibold">Сменить</a></p>
+          <p class="mt-6 font-semibold">Количество команд</p>
+          <div class="mt-2 grid grid-cols-4 border-2 border-ink">
+            <button class="h-16 bg-signal font-heading text-3xl font-bold text-on-signal">2</button>
+            <button class="h-16 border-l-2 border-ink font-heading text-3xl font-bold">3</button>
+            <button class="h-16 border-l-2 border-ink font-heading text-3xl font-bold">4</button>
+            <button class="h-16 border-l-2 border-ink font-heading text-3xl font-bold">5</button>
+          </div>
+        </div>
+        <div>
+          <p class="font-semibold">Названия команд</p>
+          <label class="mt-2 block text-sm text-muted">Первая</label>
+          <input class="h-16 w-full border-b-4 border-ink bg-sunken px-3 font-heading text-2xl font-bold" value="Команда 1">
+          <label class="mt-4 block text-sm text-muted">Вторая</label>
+          <input class="h-16 w-full border-b-4 border-ink bg-sunken px-3 font-heading text-2xl font-bold" value="Команда 2">
+          <p class="mt-6 text-lg">Ход 15 с · сложность 10 с · ответ 30 с</p>
+        </div>
+      </div>
+      <button class="mt-8 flex h-16 w-full items-center justify-center border-2 border-ink bg-signal font-heading text-3xl font-bold text-on-signal active:bg-alt active:text-on-alt">Начать игру</button>
+    </section>
+    <section class="pt-20" aria-labelledby="f-board">
+      <h2 id="f-board" class="border-b-4 border-double border-ink pb-2 font-heading text-4xl font-bold">Игровое поле</h2>
+      <div class="mt-4 grid gap-x-12 md:grid-cols-[1fr_1fr_auto]">
+        <p class="flex items-end text-2xl"><span class="font-heading font-bold">Команда 1</span><span class="leader"></span><span class="num font-heading text-4xl font-bold text-signal">15</span></p>
+        <p class="flex items-end text-2xl"><span class="font-heading">Команда 2</span><span class="leader"></span><span class="num font-heading text-4xl font-bold">5</span></p>
+        <p class="flex items-end gap-3"><span class="num font-heading text-6xl font-bold leading-none">13</span><span class="pb-1 text-sm leading-tight text-muted">секунд<br>на ход</span></p>
+      </div>
+      <p class="mt-1 text-base text-muted">Ходит команда 1</p>
+      <div data-board class="mt-4 grid grid-cols-4 gap-1 sm:grid-cols-7 lg:grid-cols-13"></div>
+    </section>
+    <section class="pt-20" aria-labelledby="f-q">
+      <h2 id="f-q" class="border-b-4 border-double border-ink pb-2 font-heading text-4xl font-bold">Бонусный вопрос</h2>
+      <div class="mt-6 grid gap-x-12 gap-y-8 lg:grid-cols-[22rem_1fr]">
+        <div role="group" aria-label="Выбор сложности">
+          <p class="font-semibold">Сложность</p>
+          <button class="mt-2 flex h-16 w-full items-end border-b-2 border-ink pb-2 text-left text-xl"><span>Лёгкий</span><span class="leader"></span><span class="num font-heading text-3xl font-bold">+3</span></button>
+          <button class="flex h-16 w-full items-end border-b-2 border-ink pb-2 text-left text-xl"><span>Средний</span><span class="leader"></span><span class="num font-heading text-3xl font-bold">+6</span></button>
+          <button class="flex h-16 w-full items-end border-b-2 border-ink pb-2 text-left text-xl"><span>Сложный</span><span class="leader"></span><span class="num font-heading text-3xl font-bold">+10</span></button>
+          <p class="mt-2 text-sm text-muted">Через 10 с выберется лёгкий.</p>
+        </div>
+        <div>
+          <p class="text-lg text-muted">Лёгкий · +3 очка</p>
+          <h3 class="mt-1 font-heading text-4xl font-bold leading-[1.1] tracking-[-0.01em]">Proverbs 28:6 says: “Better the poor whose walk is blameless than the rich whose ways are ___.”</h3>
+          <ol class="mt-6 border-t-2 border-ink">
+            <li><button class="flex h-16 w-full items-center gap-4 border-b border-ink px-2 text-left text-xl hover:bg-ink hover:text-surface"><b class="font-heading text-2xl">1</b>haughty</button></li>
+            <li><button class="flex h-16 w-full items-center gap-4 border-b border-ink px-2 text-left text-xl hover:bg-ink hover:text-surface"><b class="font-heading text-2xl">2</b>dishonest</button></li>
+            <li><button class="flex h-16 w-full items-center gap-4 border-b border-ink px-2 text-left text-xl hover:bg-ink hover:text-surface"><b class="font-heading text-2xl">3</b>perverse</button></li>
+            <li><button class="flex h-16 w-full items-center gap-4 border-b border-ink px-2 text-left text-xl hover:bg-ink hover:text-surface"><b class="font-heading text-2xl">4</b>proud</button></li>
+          </ol>
+          <div class="mt-6 flex items-center gap-4"><div class="h-4 flex-1 border-2 border-ink"><div class="h-full w-[62%] bg-signal"></div></div><p class="num font-heading text-2xl font-bold">19 с</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="py-20" aria-labelledby="f-lib">
+      <h2 id="f-lib" class="border-b-4 border-double border-ink pb-2 font-heading text-4xl font-bold">Библиотека наборов</h2>
+      <div data-library class="mt-4"></div>
+    </section>
+  </main>
+</div>
+
 <script>
-  const GAMES = [
+  /* ───────── Данные ───────── */
+  // v1: игры-заглушки (кроме «Алфавита»)
+  const G1 = [
     { t: 'Алфавит',   d: 'Найди пары букв и ответь на вопрос',      meta: '2–5 команд · 30–45 мин · 13+', glyph: 'А', live: true },
     { t: 'Маршрут',   d: 'Проведи отряд по карте заданий',           meta: '2–6 команд · 40 мин · 13+',    glyph: 'М' },
     { t: 'Кто я?',    d: 'Угадай персонажа по подсказкам',           meta: '4–12 игроков · 20 мин · 12+',  glyph: '?' },
@@ -322,17 +612,33 @@
     { t: 'Хронолента',d: 'Расставь события в правильном порядке',    meta: '2–4 команды · 25 мин · 13+',   glyph: '1' },
     { t: 'Тихий час', d: 'Короткая игра-размышление для вечера',     meta: '2–8 игроков · 15 мин · 14+',   glyph: 'Т' },
   ];
-  const LETTERS = 'АБВГДЕЖЗИКЛМНОПРСТУФХЦЧШЭЮЯ'.split('');
-  const BOARD_STATE = { flipped: [2, 9], matched: [0, 1, 5, 6] };
+  // v2: те же игры с реальными метаданными «Алфавита»
+  const G2 = [
+    { n: '01', g: 'А', t: 'Алфавит',    d: '26 пар букв и бонусные вопросы по Библии', teams: '2–5', min: '40 мин', age: '13+', live: true },
+    { n: '02', g: 'М', t: 'Маршрут',    d: 'Команды проходят карту заданий',           teams: '2–6', min: '40 мин', age: '13+' },
+    { n: '03', g: 'К', t: 'Кто я?',     d: 'Угадать персонажа по подсказкам',          teams: '2–4', min: '20 мин', age: '12+' },
+    { n: '04', g: 'П', t: 'Притчи',     d: 'Разобрать ситуацию и найти смысл',         teams: '3–5', min: '30 мин', age: '14+' },
+    { n: '05', g: 'Х', t: 'Хронолента', d: 'Расставить события по порядку',            teams: '2–4', min: '25 мин', age: '13+' },
+    { n: '06', g: 'Т', t: 'Тихий час',  d: 'Короткая игра-размышление на вечер',       teams: '2–8', min: '15 мин', age: '14+' },
+  ];
+  const LIB = [
+    { t: 'The Book of Proverbs', lang: 'EN', q: 150, active: true },
+    { t: 'Book of Genesis',      lang: 'EN', q: 150 },
+    { t: 'Life of Jesus Christ', lang: 'EN', q: 100 },
+    { t: 'The Four Gospels',     lang: 'EN', q: 200 },
+    { t: 'Books of Kings',       lang: 'EN', q: 100 },
+    { t: 'Book of Acts',         lang: 'EN', q: 100 },
+    { t: 'Притчи Соломона',      lang: 'RU', q: 150 },
+  ];
 
-  // Классы разметки зависят от концепции; цвета — только семантические токены.
-  const CFG = {
+  /* ───────── Версия 1 (a, b, c) ───────── */
+  const V1 = {
     a: {
       card: (i, g, live) => `<li class="h-full"><a href="#" class="h-full group block rounded-card border-2 border-ink bg-g${g} text-on-g${g} shadow-card transition-[box-shadow,translate] active:translate-x-1 active:translate-y-1 active:shadow-press">
-        <div class="flex aspect-[4/3] items-center justify-center border-b-2 border-ink font-heading text-[7rem] font-extrabold leading-none tracking-[-0.04em]">${GAMES[i].glyph}</div>
-        <div class="p-5"><h3 class="font-heading text-2xl font-extrabold tracking-[-0.02em]">${GAMES[i].t}</h3>
-        <p class="mt-1 text-base leading-snug">${GAMES[i].d}</p>
-        <p class="mt-4 text-sm font-semibold">${GAMES[i].meta}</p>
+        <div class="flex aspect-[4/3] items-center justify-center border-b-2 border-ink font-heading text-[7rem] font-extrabold leading-none tracking-[-0.04em]">${G1[i].glyph}</div>
+        <div class="p-5"><h3 class="font-heading text-2xl font-extrabold tracking-[-0.02em]">${G1[i].t}</h3>
+        <p class="mt-1 text-base leading-snug">${G1[i].d}</p>
+        <p class="mt-4 text-sm font-semibold">${G1[i].meta}</p>
         ${live ? '' : '<p class="mt-2 inline-block border-2 border-current px-2 py-0.5 text-xs font-bold uppercase tracking-[0.04em]">Скоро</p>'}</div></a></li>`,
       front: 'rounded-card border-2 border-ink bg-raised font-heading text-xl font-extrabold shadow-[2px_2px_0_0_var(--ink)]',
       back: 'rounded-card border-2 border-ink bg-accent font-heading text-4xl font-extrabold text-on-accent',
@@ -340,10 +646,10 @@
     },
     b: {
       card: (i, g, live) => `<li class="h-full"><a href="#" class="h-full block rounded-card bg-raised p-5 shadow-card transition-transform active:scale-[.98]">
-        <div class="grid size-16 place-items-center rounded-[18px] bg-g${g} text-3xl font-extrabold text-on-g${g}">${GAMES[i].glyph}</div>
-        <h3 class="mt-5 text-2xl font-extrabold tracking-[-0.02em]">${GAMES[i].t}</h3>
-        <p class="mt-1 leading-snug text-muted">${GAMES[i].d}</p>
-        <p class="mt-4 text-sm font-semibold text-accent-2">${GAMES[i].meta}</p>
+        <div class="grid size-16 place-items-center rounded-[18px] bg-g${g} text-3xl font-extrabold text-on-g${g}">${G1[i].glyph}</div>
+        <h3 class="mt-5 text-2xl font-extrabold tracking-[-0.02em]">${G1[i].t}</h3>
+        <p class="mt-1 leading-snug text-muted">${G1[i].d}</p>
+        <p class="mt-4 text-sm font-semibold text-accent-2">${G1[i].meta}</p>
         ${live ? '' : '<p class="mt-3 inline-block rounded-full bg-surface px-3 py-1 text-xs font-bold text-muted">Скоро</p>'}</a></li>`,
       front: 'rounded-[16px] bg-raised text-lg font-bold shadow-card',
       back: 'rounded-[16px] bg-accent text-4xl font-extrabold text-on-accent shadow-card',
@@ -352,51 +658,115 @@
     c: {
       card: (i, g, live) => `<li class="${['-rotate-1','rotate-1','-rotate-[.5deg]'][i % 3]} h-full"><a href="#" class="relative block h-full rounded-card border border-line bg-raised p-5 pt-8 shadow-card transition-transform active:scale-[.98]">
         <span class="absolute -top-3 left-6 h-6 w-20 rotate-[-3deg] bg-g${g} opacity-90 ring-1 ring-ink/10" aria-hidden="true"></span>
-        <div class="flex items-center gap-4"><div class="grid size-16 shrink-0 place-items-center rounded-lg bg-g${g} font-hand text-5xl font-bold text-on-g${g} ring-1 ring-ink/10">${GAMES[i].glyph}</div>
-        <h3 class="font-hand text-4xl font-bold leading-none text-accent">${GAMES[i].t}</h3></div>
-        <p class="mt-4 leading-snug">${GAMES[i].d}</p>
-        <p class="mt-3 text-sm font-medium text-muted">${GAMES[i].meta}</p>
+        <div class="flex items-center gap-4"><div class="grid size-16 shrink-0 place-items-center rounded-lg bg-g${g} font-hand text-5xl font-bold text-on-g${g} ring-1 ring-ink/10">${G1[i].glyph}</div>
+        <h3 class="font-hand text-4xl font-bold leading-none text-accent">${G1[i].t}</h3></div>
+        <p class="mt-4 leading-snug">${G1[i].d}</p>
+        <p class="mt-3 text-sm font-medium text-muted">${G1[i].meta}</p>
         ${live ? '' : '<p class="mt-3 inline-block rounded bg-g2 px-2 py-0.5 text-xs font-bold text-on-g2">скоро</p>'}</a></li>`,
       front: 'rounded-lg border border-line bg-raised text-lg font-semibold shadow-press',
       back: 'rounded-lg bg-g1 font-hand text-5xl font-bold text-on-g1 ring-2 ring-ink',
       done: 'rounded-lg bg-g3 font-hand text-5xl font-bold text-on-g3 ring-2 ring-ink',
     },
   };
+  const LETTERS_RU = 'АБВГДЕЖЗИКЛМНОПРСТУФХЦЧШЭЮЯ'.split('');
+  const STATE_V1 = { flipped: [2, 9], matched: [0, 1, 5, 6] };
 
+  /* ───────── Версия 2 (d, e, f) ───────── */
+  const V2 = {
+    d: {
+      catalog: () => G2.map(g => `<a href="#" class="grid grid-cols-[3rem_1fr_auto] items-center gap-x-4 border-b border-ink px-4 py-5 hover:bg-ink hover:text-surface md:grid-cols-[4.5rem_1fr_9rem_8rem_6rem_9rem]">
+        <span class="font-data text-2xl font-semibold">${g.n}</span>
+        <span><span class="block font-heading text-3xl font-semibold leading-none tracking-[-0.01em]">${g.t}</span><span class="mt-1 block text-base opacity-80">${g.d}</span></span>
+        <span class="num hidden font-data text-lg md:block">${g.teams}</span><span class="num hidden font-data text-lg md:block">${g.min}</span><span class="hidden font-data text-lg md:block">${g.age}</span>
+        <span class="${g.live ? 'bg-signal text-on-signal' : 'border-2 border-current'} px-3 py-1 text-center font-data text-sm font-semibold">${g.live ? 'Доступна' : 'Скоро'}</span></a>`).join(''),
+      library: () => `<div class="border-t-2 border-ink">${LIB.map(l => `<div class="grid grid-cols-[1fr_auto] items-center gap-x-4 border-b border-line px-2 py-4 md:grid-cols-[1fr_5rem_8rem_7rem_8rem]">
+        <p class="text-lg font-semibold">${l.t}</p><p class="hidden font-data md:block">${l.lang}</p><p class="num hidden font-data md:block">${l.q} вопросов</p>
+        <p class="${l.active ? 'bg-ink text-surface' : 'border-2 border-ink'} px-2 py-1 text-center font-data text-sm font-semibold">${l.active ? 'Выбран' : 'Выбрать'}</p>
+        <button class="hidden h-12 border-2 border-ink font-semibold md:block">Изменить</button></div>`).join('')}</div>`,
+      cfg: { front: 'border-2 border-ink bg-surface font-data text-lg font-medium text-muted', back: 'bg-ink font-heading text-4xl font-bold text-signal', done: 'bg-signal font-heading text-4xl font-bold text-on-signal border-2 border-ink', ratio: 'aspect-[4/5]' },
+    },
+    e: {
+      catalog: () => `<div class="grid grid-cols-2 border-l border-ink lg:grid-cols-3">${G2.map(g => `<a href="#" class="flex min-h-[19rem] flex-col justify-between border-b border-r border-ink p-4 ${g.live ? 'bg-signal text-on-signal' : 'hover:bg-signal hover:text-on-signal'}">
+        <span class="flex justify-between"><span class="num text-lg font-semibold">${g.n}</span><span class="text-base font-semibold">${g.live ? 'Доступна' : 'Скоро'}</span></span>
+        <span class="font-heading text-[9rem] font-bold leading-[.8] tracking-[-0.02em]">${g.g}</span>
+        <span><span class="block font-heading text-3xl font-bold leading-none">${g.t}</span><span class="mt-1 block text-base">${g.d}</span><span class="num mt-2 block text-base font-semibold">${g.teams} команды · ${g.min} · ${g.age}</span></span></a>`).join('')}</div>`,
+      library: () => LIB.map(l => `<div class="grid grid-cols-[1fr_auto] items-center border-b border-ink last:border-b-0 sm:grid-cols-[1fr_5rem_12rem_9rem]">
+        <p class="px-4 py-5 font-heading text-3xl font-bold leading-none">${l.t}</p><p class="hidden px-4 text-lg font-semibold sm:block">${l.lang}</p><p class="num hidden whitespace-nowrap px-4 text-lg sm:block">${l.q} вопросов</p>
+        <p class="${l.active ? 'bg-signal text-on-signal' : ''} h-full border-l border-ink px-4 py-5 text-center text-lg font-semibold">${l.active ? 'Выбран' : 'Выбрать'}</p></div>`).join(''),
+      cfg: { front: 'bg-surface font-heading text-2xl font-bold text-muted', back: 'bg-ink font-heading text-6xl font-bold text-signal', done: 'bg-signal font-heading text-6xl font-bold text-on-signal', ratio: 'aspect-[4/5]' },
+    },
+    f: {
+      catalog: () => { const [lead, ...rest] = G2; return `<div class="grid gap-x-12 gap-y-10 lg:grid-cols-[1.5fr_1fr]">
+        <a href="#" class="group relative block border-b-4 border-double border-ink pb-8">
+          <span class="relative block h-[22rem] overflow-hidden" aria-hidden="true">
+            <span class="overprint absolute -left-2 -top-10 font-heading text-[28rem] font-bold leading-none text-signal">${lead.g}</span>
+            <span class="overprint absolute left-6 top-0 font-heading text-[28rem] font-bold leading-none text-alt">${lead.g}</span>
+          </span>
+          <span class="mt-2 block text-base font-semibold text-muted">Доступна · ${lead.n}</span>
+          <span class="block font-heading text-6xl font-bold leading-[1] tracking-[-0.02em]">${lead.t}</span>
+          <span class="mt-3 block max-w-lg text-xl">${lead.d}.</span>
+          <span class="mt-3 block text-base text-muted">${lead.teams} команды · ${lead.min} · ${lead.age}</span>
+          <span class="mt-6 inline-flex h-14 items-center border-2 border-ink bg-signal px-6 text-lg font-semibold text-on-signal group-active:bg-alt group-active:text-on-alt">Играть</span></a>
+        <div class="border-t-4 border-double border-ink lg:border-t-0">${rest.map(g => `<a href="#" class="block border-b border-ink py-5 hover:bg-ink hover:text-surface hover:px-3"><span class="flex items-end"><span class="font-heading text-3xl font-bold leading-none">${g.t}</span><span class="leader"></span><span class="text-base">скоро</span></span><span class="mt-1 block text-base opacity-80">${g.d}</span><span class="mt-1 block text-sm opacity-70">${g.teams} команды · ${g.min} · ${g.age}</span></a>`).join('')}</div></div>`; },
+      library: () => `<div class="border-t-2 border-ink">${LIB.map(l => `<div class="flex items-end border-b border-ink py-3 text-xl"><span class="font-heading font-bold">${l.t}</span><span class="leader"></span><span class="num text-base text-muted">${l.lang} · ${l.q}</span><span class="ml-4 w-24 text-right text-base font-semibold ${l.active ? 'text-signal' : 'text-muted'}">${l.active ? 'Выбран' : 'Выбрать'}</span></div>`).join('')}</div>`,
+      cfg: { front: 'border border-ink bg-surface font-heading text-xl font-bold text-muted', back: 'bg-signal font-heading text-5xl font-bold text-on-signal', done: 'bg-alt font-heading text-5xl font-bold text-on-alt border border-ink', ratio: 'aspect-[4/5]' },
+    },
+  };
+  // Поле 13×4 = 52 карточки, 26 пар (как в реальном приложении)
+  const LETTERS_EN = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+  let seed = 7; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+  const DECK = [...LETTERS_EN, ...LETTERS_EN].map(l => [rnd(), l]).sort((a, b) => a[0] - b[0]).map(x => x[1]);
+  const MATCHED = new Set(['B', 'K', 'R']), OPEN = [DECK.indexOf('F')];
+
+  const cardBtn = (n, letter, on, front, back, ratio) =>
+    `<button type="button" class="flip ${ratio} ${on ? 'is-flipped' : ''}" aria-label="Карточка ${n}" aria-pressed="${on}">
+      <span class="flip-inner"><span class="face face-front ${front}">${n}</span><span class="face face-back ${back}">${letter}</span></span></button>`;
+
+  /* ───────── Рендер ───────── */
   document.querySelectorAll('[data-concept]').forEach(root => {
-    const c = root.dataset.concept, cfg = CFG[c];
-    root.querySelectorAll('[data-catalog]').forEach(ul => {
-      ul.innerHTML = GAMES.map((_, i) => cfg.card(i, (i % 5) + 1, !!GAMES[i].live)).join('');
-    });
-    root.querySelectorAll('[data-board]').forEach(board => {
-      board.innerHTML = LETTERS.slice(0, 24).map((l, i) => {
-        const done = BOARD_STATE.matched.includes(i), on = done || BOARD_STATE.flipped.includes(i);
-        return `<button type="button" class="flip aspect-[4/5] ${on ? 'is-flipped' : ''}" aria-label="Карточка ${i + 1}" aria-pressed="${on}">
-          <span class="flip-inner"><span class="face face-front ${cfg.front}">${i + 1}</span>
-          <span class="face face-back ${done ? cfg.done : cfg.back}">${l}</span></span></button>`;
-      }).join('');
-      board.addEventListener('click', e => {
-        const b = e.target.closest('.flip'); if (!b) return;
-        b.classList.toggle('is-flipped');
-        b.setAttribute('aria-pressed', b.classList.contains('is-flipped'));
-      });
-    });
+    const c = root.dataset.concept;
+    if (V1[c]) {
+      const cfg = V1[c];
+      root.querySelectorAll('[data-catalog]').forEach(ul => ul.innerHTML = G1.map((_, i) => cfg.card(i, (i % 5) + 1, !!G1[i].live)).join(''));
+      root.querySelectorAll('[data-board]').forEach(b => b.innerHTML = LETTERS_RU.slice(0, 24).map((l, i) => {
+        const done = STATE_V1.matched.includes(i), on = done || STATE_V1.flipped.includes(i);
+        return cardBtn(i + 1, l, on, cfg.front, done ? cfg.done : cfg.back, 'aspect-[4/5]');
+      }).join(''));
+    } else {
+      const r = V2[c];
+      root.querySelectorAll('[data-catalog]').forEach(el => el.innerHTML = r.catalog());
+      root.querySelectorAll('[data-library]').forEach(el => el.innerHTML = r.library());
+      root.querySelectorAll('[data-board]').forEach(b => b.innerHTML = DECK.map((l, i) => {
+        const done = MATCHED.has(l), on = done || OPEN.includes(i);
+        return cardBtn(i + 1, l, on, r.cfg.front, done ? r.cfg.done : r.cfg.back, r.cfg.ratio);
+      }).join(''));
+    }
+    root.querySelectorAll('[data-board]').forEach(board => board.addEventListener('click', e => {
+      const b = e.target.closest('.flip'); if (!b) return;
+      b.classList.toggle('is-flipped'); b.setAttribute('aria-pressed', b.classList.contains('is-flipped'));
+    }));
   });
 
-  // Переключение концепций (хэш: #a / #b / #c)
-  const tabs = [...document.querySelectorAll('[data-tab]')];
+  /* ───────── Переключение направлений (хэш #a … #f) ───────── */
+  const CAPTION = {
+    a: 'Версия 1 · Афиша: плакатная сетка, жёсткая тень-подпись, цвет на каждую игру. Оставлена для сравнения: бежевый фон, терракота, скругления.',
+    b: 'Версия 1 · Утренний свет: светлая SaaS-эстетика, крупные скруглённые карточки, мягкие тени. Оставлена для сравнения: типовой «кит».',
+    c: 'Версия 1 · Тетрадь: клетка, маркер, стикеры, рукописный шрифт. Оставлена для сравнения: пастель, случайные повороты.',
+    d: 'Версия 2 · Табло: каталог — расписание строками, моноширинные цифры, один жёлтый сигнал. Без скруглений и теней.',
+    e: 'Версия 2 · Сетка: игры — ячейки таблицы букв без отступов, цвет только у текущей и под курсором. Буква — единственное изображение.',
+    f: 'Версия 2 · Станок: газетная полоса, две краски с наложением, засечки, выносные точки вместо карточек.',
+  };
+  const tabs = [...document.querySelectorAll('[data-tab]')], shell = document.getElementById('shell');
+  const syncNav = () => document.documentElement.style.setProperty('--nav-h', shell.offsetHeight + 'px');
   function show(c) {
-    if (!['a', 'b', 'c'].includes(c)) c = 'a';
+    if (!CAPTION[c]) c = 'd';
     document.querySelectorAll('[data-concept]').forEach(el => el.hidden = el.dataset.concept !== c);
-    tabs.forEach(t => {
-      const on = t.dataset.tab === c;
-      t.setAttribute('aria-selected', on);
-      t.classList.toggle('bg-ink', on); t.classList.toggle('text-raised', on);
-    });
-    history.replaceState(null, '', '#' + c);
-    window.scrollTo(0, 0);
+    tabs.forEach(t => { const on = t.dataset.tab === c; t.setAttribute('aria-selected', on); t.classList.toggle('bg-ink', on); t.classList.toggle('text-surface', on); });
+    document.querySelector('[data-caption]').textContent = CAPTION[c];
+    syncNav(); history.replaceState(null, '', '#' + c); window.scrollTo(0, 0);
   }
   tabs.forEach(t => t.addEventListener('click', () => show(t.dataset.tab)));
+  window.addEventListener('resize', syncNav);
   show(location.hash.slice(1));
 </script>
 </body>

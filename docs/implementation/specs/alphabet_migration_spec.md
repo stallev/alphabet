@@ -82,7 +82,7 @@
 | `status` | `active` |
 | `tags` | `memory`, `quiz`, `team`, `youth` |
 | `teams` | `{ min: 2, max: 6 }` (уточнить по `GameSettings`/`DEFAULT_SETTINGS`) |
-| `cover` | `/games/alphabet/cover.webp` (в R02 — временный файл; настоящая обложка — R03, по согласованию с владельцем) |
+| `tile` | R02: `cover` `/games/alphabet/cover.webp` (временный файл); с R03-T20 `cover` заменяется на `tile: { glyph: 'А', tone: 1 }` и файл удаляется |
 | `order` | `10` |
 
 ### §2.5 Очистка (R02-CU6)

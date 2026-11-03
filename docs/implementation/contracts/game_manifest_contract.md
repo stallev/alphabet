@@ -2,8 +2,8 @@
 
 **Тип:** Contract  
 **Статус:** Draft  
-**Версия:** 1.0  
-**Дата:** 2026-10-22  
+**Версия:** 1.1  
+**Дата:** 2026-11-03  
 **Зависит от:** [`repo_structure_contract.md`](repo_structure_contract.md) §1, §3; решения D2, D4, D5  
 **Используется в:** R02-CU1, R02-CU5, R03-CU6, R03-CU7
 
@@ -35,8 +35,13 @@ export interface GameManifest {
   teams: { min: number; max: number };
   minAge?: number;
   durationMinutes?: { min: number; max: number };
-  cover: string;                     // '/games/<slug>/cover.webp'; обязательна для status 'active'
+  tile: GameTile;                    // плитка игры в каталоге (вместо cover.webp, решение 2026-11-03)
   order: number;                     // сортировка на главной, по возрастанию
+}
+
+export interface GameTile {
+  glyph: string;                     // 1–2 символа (буква/знак игры), не эмодзи
+  tone: 1 | 2 | 3 | 4 | 5;           // токен `game-<tone>` / `game-<tone>-fg` (design_tokens §2.1)
 }
 
 export interface GamePageProps {
@@ -97,7 +102,7 @@ export function assertValidRegistry(entries: readonly GameEntry[]): void; // б�
 | пустой или превышающий лимит текст в любой локали | `manifest "<slug>": <field>.<locale> …` |
 | `tags` пуст или > 4, неизвестный тег | `manifest "<slug>": tags …` |
 | `teams.min < 1` или `min > max` | `manifest "<slug>": teams …` |
-| `active` без `cover` | `active game "<slug>" has no cover` |
+| нет `tile`, `glyph` пуст/длиннее 2 символов или содержит эмодзи, `tone` вне 1–5 | `manifest "<slug>": tile …` |
 
 ### §3.2 Регистрация игры
 

@@ -1,6 +1,6 @@
-# EdenGames — инструкции для AI-агентов
+# Circle (EdenGames) — инструкции для AI-агентов
 
-**EdenGames** — портал браузерных командных христианских игр; первая игра — **«Алфавит»** (Memory + викторина, наборы вопросов, AI-генерация).  
+**Circle** (в коде до R03-T19 — `EdenGames`) — портал браузерных командных христианских игр; первая игра — **«Алфавит»** (Memory + викторина, наборы вопросов, AI-генерация).  
 Стек: **Next.js 16.2.6** App Router · **Neon PostgreSQL 17** · **Prisma 7.8** · **Auth.js v5** (`next-auth@5.0.0-beta.31`) · **React 19.2** · **Tailwind CSS 4.3** · **Zustand 5** · **Framer Motion 12** · **Zod** · **shadcn/ui** (admin).
 
 **Методология:** [`docs/meta/ai_first_methodology.md`](docs/meta/ai_first_methodology.md) — цикл КОНТЕКСТ → ФАЗА → КОНТРАКТ → ЗАДАЧИ → ВЕРИФИКАЦИЯ.  
@@ -64,6 +64,7 @@ Auth MVP: **Credentials** (email + password), JWT.
 | ADR | [`docs/architecture/adr_index.md`](docs/architecture/adr_index.md) |
 | Контракты | [`docs/implementation/contracts/`](docs/implementation/contracts/) |
 | Игра Alphabet | [`docs/games/alphabet.md`](docs/games/alphabet.md) |
+| Дизайн (направление «Утренний свет», запреты) | [`docs/design/DESIGN.md`](docs/design/DESIGN.md) |
 | Схема БД | [`docs/architecture/database_schema.md`](docs/architecture/database_schema.md) |
 | Guidelines | [`docs/guidelines/README.md`](docs/guidelines/README.md) |
 | План реструктуризации | [`docs/meta/repo_restructure_plan.md`](docs/meta/repo_restructure_plan.md) |
@@ -74,7 +75,8 @@ Auth MVP: **Credentials** (email + password), JWT.
 |------|----------|
 | **R01** | Процесс, правила, ADR — [`R01_phase_description.md`](docs/implementation/phases/R01_phase_description.md) |
 | **R02** (завершена) | Структура кода, реестр игр — [`R02_phase_description.md`](docs/implementation/phases/R02_phase_description.md) |
-| **R03** | UI-kit, i18n, шаблон игры — [`R03_phase_description.md`](docs/implementation/phases/R03_phase_description.md) |
+| **R03** | UI-kit, i18n, шаблон игры, токены «Утренний свет», каталог Circle — [`R03_phase_description.md`](docs/implementation/phases/R03_phase_description.md) |
+| **R04** (черновик) | Редизайн Alphabet и админки — [`R04_phase_description.md`](docs/implementation/phases/R04_phase_description.md) |
 
 Schema: [`prisma/schema.prisma`](prisma/schema.prisma) · миграция: [ADR-001](docs/architecture/ADR-001-migration-to-nextjs.md) · структура: [ADR-003](docs/architecture/ADR-003-repo-structure.md).
 

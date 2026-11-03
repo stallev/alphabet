@@ -1,11 +1,11 @@
 # R03 Tasks — Общий UI-кит, портал и каркас новых игр
 
 **Тип:** Tasks  
-**Статус:** Draft (до Phase DoR audit; написан заранее, см. D14)  
-**Версия:** 1.0  
-**Дата:** 2026-10-22  
+**Статус:** Draft (до Phase DoR audit; написан заранее, см. D14); редизайн «Утренний свет» внесён 2026-11-03  
+**Версия:** 1.1  
+**Дата:** 2026-11-03  
 **Фаза:** R03  
-**Зависит от:** [`R03_phase_description.md`](R03_phase_description.md); контракты [`game_kit`](../contracts/game_kit_contract.md) · [`i18n`](../contracts/i18n_contract.md) · [`design_tokens`](../contracts/design_tokens_contract.md) · [`game_manifest`](../contracts/game_manifest_contract.md) · [`game_routing`](../contracts/game_routing_contract.md); спецификации [`portal_home`](../specs/portal_home_spec.md) · [`game_shell`](../specs/game_shell_spec.md) · [`adding_a_game`](../specs/adding_a_game_spec.md)  
+**Зависит от:** [`R03_phase_description.md`](R03_phase_description.md); [`DESIGN.md`](../../design/DESIGN.md); контракты [`game_kit`](../contracts/game_kit_contract.md) · [`i18n`](../contracts/i18n_contract.md) · [`design_tokens`](../contracts/design_tokens_contract.md) · [`game_manifest`](../contracts/game_manifest_contract.md) · [`game_routing`](../contracts/game_routing_contract.md); спецификации [`portal_home`](../specs/portal_home_spec.md) · [`game_shell`](../specs/game_shell_spec.md) · [`adding_a_game`](../specs/adding_a_game_spec.md)  
 **Связанные документы:** [`ai_ui_verification.md`](../../guidelines/testing/ai_ui_verification.md), [`ai_agent_model_routing.md`](../../meta/ai_agent_model_routing.md)
 
 ---
@@ -21,7 +21,7 @@
 Один вызов `architect` (`spec-gap`): сверить контракты/спецификации с кодом `games/alphabet` после R02 — имена компонентов, поля store (`temp`, `settings`, `teamScores`, `currentTeamIndex`, `isPaused`, `isMuted`, …), ключи `TRANSLATIONS`; уточнить props компонентов kit там, где фактическое поведение Alphabet шире; обновить этот файл.
 
 - [ ] Все задачи прошли DoR — дата · исполнитель · изменённые документы
-- [ ] Палитра токенов согласована владельцем (или принята по умолчанию)
+- [x] Направление и палитра «Утренний свет» утверждены владельцем 2026-11-03 (финал `success`, `danger`, `team-1…6` — по галерее в R03-T1)
 - [ ] Контракты/спецификации сверены с фактическим кодом
 
 ## Commit plan
@@ -29,18 +29,18 @@
 ### R03-CU1 — feat(ui): add design tokens, shared ui primitives and kit gallery · Review: diff-only · Smoke: none · Commit: auto
 
 - [ ] R03-T1 · T2 · Spec: [tokens §1–§3.1](../contracts/design_tokens_contract.md)
-      Files: `shared/styles/tokens.css`, `app/globals.css`, `scripts/check-design-tokens.mjs`, `scripts/check-design-tokens.test.mjs`, `scripts/tokens-baseline.json`, `package.json`
-      Acceptance: токены §2 определены в `@theme`; `globals.css` подключает `tokens.css`; скрипт `tokens:check` реализует паттерны §3 и baseline §3.1 (область: `games/**`, `shared/**`, исключая `tokens.css`, `data/`, `i18n/`, `*.test.*`); `scripts/tokens-baseline.json` сгенерирован по текущему `games/alphabet` (число нарушений на файл; суммарное значение «до» записано в отчёт); тест скрипта на фикстурах (палитровая утилита, hex, произвольное значение, `tokens:allow`, рост выше baseline) → `npm run tokens:check` = 0; тест зелёный; контраст пар `*-fg` проверен и записан таблицей в отчёт
+      Files: `shared/styles/tokens.css`, `app/globals.css`, `app/layout.tsx`, `scripts/check-design-tokens.mjs`, `scripts/check-design-tokens.test.mjs`, `scripts/tokens-baseline.json`, `package.json`
+      Acceptance: токены §2 («Утренний свет») определены в `@theme`, стандартные `--radius-*`/`--shadow-*`/`--blur-*` обнулены; шрифт Manrope (`latin`, `cyrillic`, 500–800) через `next/font` вместо Inter, база 18 px; `prefers-reduced-motion` в `tokens.css`; `globals.css` подключает `tokens.css`; скрипт `tokens:check` реализует паттерны §3 и baseline §3.1 (область: `games/**`, `shared/**`, исключая `tokens.css`, `data/`, `i18n/`, `*.test.*`); паттерны §3 включают запреты `DESIGN.md` (`uppercase`, `font-black`, градиенты, `blur-*`, `rounded-*`/`shadow-*` вне токенов, эмодзи); `scripts/tokens-baseline.json` сгенерирован по текущему `games/alphabet` (число нарушений на файл; суммарное значение «до» записано в отчёт); тест скрипта на фикстурах (палитровая утилита, hex, произвольное значение, `tokens:allow`, рост выше baseline) → `npm run tokens:check` = 0; тест зелёный; контраст пар `*-fg` проверен и записан таблицей в отчёт (`accent-fg`/`accent` ≥ 7:1); значения `success`, `danger`, `team-1…6` предложены и одобрены владельцем по галерее (T3)
       Paths: H [tokens §3] · N [tokens §3.1: файл вне baseline с нарушением → падение; рост числа → падение]
 - [ ] R03-T2 · T2 · Spec: [tokens §1](../contracts/design_tokens_contract.md) · Spec: [kit §4](../contracts/game_kit_contract.md)
       Files: `shared/ui/Button.tsx`, `shared/ui/IconButton.tsx`, `shared/ui/Card.tsx`, `shared/ui/Badge.tsx`, `shared/ui/Input.tsx`, `shared/ui/Dialog.tsx`
-      Acceptance: примитивы на токенах; `Button` (primary/secondary/ghost/danger, sizes, loading, ≥ 44 px), `IconButton` (обязателен `aria-label`), `Card`, `Badge`, `Input` (label, error, `aria-describedby`), `Dialog` на нативном `<dialog>` (`showModal`, `Esc`, закрытие по подложке опционально, возврат фокуса, `aria-labelledby`, анимация Framer Motion с учётом `prefers-reduced-motion`); никаких новых зависимостей → `typecheck`, `lint`, `tokens:check` зелёные
+      Acceptance: примитивы на токенах «Утреннего света» (радиусы `ctl`/`card`, `shadow-card`/`shadow-press`, непрозрачные поверхности); `Button` (primary на `accent`, secondary на `primary`, ghost, danger; sizes `md` 48 px / `lg` 64 px; loading; нажатие `:active` без `hover:scale`), `IconButton` (обязателен `aria-label`), `Card`, `Badge`, `Input` (label, error, `aria-describedby`), `Dialog` на нативном `<dialog>` (`showModal`, `Esc`, закрытие по подложке опционально, возврат фокуса, `aria-labelledby`, анимация Framer Motion с учётом `prefers-reduced-motion`); никаких новых зависимостей → `typecheck`, `lint`, `tokens:check` зелёные
       Paths: H [kit §4: a11y диалога] · N [Dialog: открытие/закрытие повторно, закрытие при размонтировании]
       UI: /dev/game-kit · roles: public · widths: 360,768,1280
       Seed: n/a
 - [ ] R03-T3 · T1 · Spec: [manifest §2](../contracts/game_manifest_contract.md)
       Files: `app/dev/game-kit/page.tsx`, `app/dev/game-kit/Gallery.tsx`, `games/reserved-slugs.ts`, `games/registry.test.ts`
-      Acceptance: `/dev/game-kit` показывает галерею примитивов T2 во всех состояниях (varianty, sizes, disabled, loading, диалог); в `NODE_ENV === 'production'` страница вызывает `notFound()`; `dev` присутствует в `RESERVED_SLUGS`, тест реестра проверяет его → в `next build && next start` маршрут отдаёт 404; в dev — открывается
+      Acceptance: `/dev/game-kit` показывает секцию «Токены» (образцы цветов с парами `*-fg` и значением контраста, шкала Manrope, радиусы, тени, `team-1…6`, `game-1…5`) — по ней владелец одобряет значения T1 — и галерею примитивов T2 во всех состояниях (варианты, sizes, disabled, loading, диалог); в `NODE_ENV === 'production'` страница вызывает `notFound()`; `dev` присутствует в `RESERVED_SLUGS`, тест реестра проверяет его → в `next build && next start` маршрут отдаёт 404; в dev — открывается
       Paths: H [галерея] · N [production → 404]
       UI: /dev/game-kit · roles: public · widths: 360,768,1280
       Seed: n/a
@@ -76,7 +76,7 @@
       Seed: n/a
 - [ ] R03-T8 · T2 · Spec: [kit §2](../contracts/game_kit_contract.md)
       Files: `shared/game-kit/ScoreBoard.tsx`, `shared/game-kit/Timer.tsx`, `shared/game-kit/use-countdown.ts`, `shared/game-kit/use-countdown.test.ts`
-      Acceptance: `ScoreBoard` (props-driven, активная команда, `aria-live`, цвет команды — токены `team-1…6` плюс текстовая метка/номер, не только цвет); `Timer` (`inline`/`ring`, `role="timer"`, не тикает на паузе); хук `useCountdown` с тестами на fake timers (тик, пауза, возобновление, `onElapsed` ровно один раз, смена `seconds`) → тесты зелёные
+      Acceptance: `ScoreBoard` (props-driven, активная команда, `aria-live`, цвет команды — токены `team-1…6` плюс номер/метка, не только цвет; активная команда — `accent`/`accent-fg`); `Timer` (`inline`/`ring`, `role="timer"`, не тикает на паузе; при < 5 с меняются цвет `danger` и форма — иконка/штриховка, без пульсации); хук `useCountdown` с тестами на fake timers (тик, пауза, возобновление, `onElapsed` ровно один раз, смена `seconds`) → тесты зелёные
       Paths: H [kit §2] · N [seconds = 0, отрицательные значения, `running` переключается во время тика]
       UI: /dev/game-kit · roles: public · widths: 360,768,1280
       Seed: n/a
@@ -97,7 +97,7 @@
       Paths: H · N [пустые строки]
 - [ ] R03-T11 · T2 · Spec: [kit §2](../contracts/game_kit_contract.md)
       Files: `shared/game-kit/QuestionModal.tsx`, `shared/game-kit/LevelSelect.tsx`
-      Acceptance: `QuestionModal` — варианты (`choice`) или текстовый ввод (`text`), `Timer` внутри, показ правильного ответа после ответа/таймаута, затем `onAnswer({ correct, timedOut })`; `LevelSelect` — кнопки уровней с очками, таймер выбора, `onTimeout`; оба на `Dialog`; клавиатурная навигация (варианты — радио-группа/кнопки с фокусом, `Enter` отправляет текст) → галерея показывает оба компонента в режимах choice/text/таймаут
+      Acceptance: `QuestionModal` — варианты (`choice`) или текстовый ввод (`text`), `Timer` внутри, показ правильного ответа после ответа/таймаута, затем `onAnswer({ correct, timedOut })`; `LevelSelect` — кнопки уровней с очками (+3/+6/+10 крупно; уровни различаются очками, формой и подписью, не «светофором»), таймер выбора, `onTimeout`; оба на `Dialog`; клавиатурная навигация (варианты — радио-группа/кнопки с фокусом, `Enter` отправляет текст) → галерея показывает оба компонента в режимах choice/text/таймаут
       Paths: H [kit §2] · N [таймаут без выбора; пустой ответ; повторное нажатие до закрытия — один вызов `onAnswer`]
       UI: /dev/game-kit · roles: public · widths: 360,768,1280
       Seed: n/a
@@ -144,8 +144,8 @@
       UI: /alphabet · roles: public · widths: 360,768,1280
       Seed: n/a
 - [ ] R03-T18 · T2 · Spec: [tokens §3.1](../contracts/design_tokens_contract.md)
-      Files: `games/alphabet/components/Card.tsx`, `games/alphabet/components/GameApp.tsx`, `games/alphabet/components/*Container.tsx`, `scripts/tokens-baseline.json`
-      Acceptance: файлы игрового экрана (`Card`, `GameApp`, контейнеры) переведены на токены; `COLORS` из `constants.ts` используется только как источник значений для токенов, а не в разметке; baseline обновлён (удалены переведённые файлы, числа остальных не выросли) → `npm run tokens:check` = 0; суммарное число нарушений «после» записано (меньше значения «до» из R03-T1)
+      Files: `games/alphabet/components/Card.tsx`, `games/alphabet/components/GameApp.tsx`, `games/alphabet/components/*Container.tsx`, `games/alphabet/constants.ts`, `scripts/tokens-baseline.json`
+      Acceptance: файлы игрового экрана (`Card`, `GameApp`, контейнеры) переведены на токены «Утреннего света»; карточка: рубашка `surface` с номером и `shadow-card`, открытая буква — на `accent` с `accent-fg`, контраст ≥ 7:1 (вместо белой на amber ≈1.6:1 и белой на emerald ≈2.5:1), текст не мельче 14 px, эмодзи заменены `lucide-react`; полный редизайн поля (spring-флип, пауза без blur) — R04; `COLORS` из `constants.ts` используется только как источник значений для токенов, а не в разметке; baseline обновлён (удалены переведённые файлы, числа остальных не выросли) → `npm run tokens:check` = 0; суммарное число нарушений «после» записано (меньше значения «до» из R03-T1)
       Paths: n/a — styling refactor
       UI: /alphabet · roles: public · widths: 360,768,1280
       Seed: n/a
@@ -155,25 +155,25 @@
 ### R03-CU7 — feat(portal): add catalog home, site config and coming-soon page · Review: diff-only · Smoke: none · Commit: auto
 
 - [ ] R03-T19 · T1 · Spec: [home §1](../specs/portal_home_spec.md)
-      Files: `shared/config/site.ts`, `app/_components/SiteHeader.tsx`, `app/_components/SiteFooter.tsx`, `app/layout.tsx`, `app/[game]/layout.tsx`
-      Acceptance: `SITE = { name: 'EdenGames', indexable: false }` — единственное место имени и флага индексации; шапка и подвал портала на `/`; страницы игр (`/<slug>`) шапку портала **не** показывают (у них `GameShell`); метаданные `robots` из `SITE.indexable` → имя портала нигде больше не захардкожено (`rg "EdenGames" app shared games` — только `site.ts`)
+      Files: `shared/config/site.ts`, `games/alphabet/components/GameApp.tsx`, `app/_components/SiteHeader.tsx`, `app/_components/SiteFooter.tsx`, `app/layout.tsx`, `app/[game]/layout.tsx`
+      Acceptance: `SITE = { name: 'Circle', indexable: false }` (было `EdenGames`) — единственное место имени и флага индексации; шапка (знак «C» в круге `accent`, `LocaleSwitcher`; единственное место `backdrop-filter`) и подвал портала на `/`; страницы игр (`/<slug>`) шапку портала **не** показывают (у них `GameShell`); метаданные `robots` из `SITE.indexable` → имя портала нигде больше не захардкожено, `rg "EdenGames" app shared games` пуст (в т. ч. футер `GameApp`), `<title>` и `og:site_name` — Circle
       Paths: H [home §1]
       UI: / · roles: public · widths: 360,768,1280
       Seed: n/a
 - [ ] R03-T20 · T2 · Spec: [home §2–§5](../specs/portal_home_spec.md)
-      Files: `app/page.tsx`, `app/_components/GameCard.tsx`, `app/_components/GameGrid.tsx`, `public/games/alphabet/cover.webp`
-      Acceptance: каталог по спецификации (hero, сетка 1/2/3 колонки, `GameCard` с обложкой `next/image`, тегами, мета, состояниями; пустое состояние; метаданные `title`/`description`/`robots`); `cover.webp` Alphabet заменена согласованной (≤ 120 КБ, 16:9) → `portal_home_spec §7` — все пункты выполнены (тестовая запись `coming-soon` — локально, не коммитится)
-      Paths: H [home §2] · N [home §4: пустой реестр, длинные тексты, нет обложки]
+      Files: `app/page.tsx`, `app/_components/GameCard.tsx`, `app/_components/GameTile.tsx`, `app/_components/GameGrid.tsx`, `shared/game-kit/manifest.ts`, `shared/game-kit/manifest.test.ts`, `games/registry.ts`, `games/registry.test.ts`, `games/alphabet/manifest.ts`, `public/games/alphabet/cover.webp`
+      Acceptance: каталог по спецификации (hero без пятен и лозунгов про дизайн, сетка 1/2/3 колонки, `GameCard` с плиткой `GameTile` — цвет `game-<tone>` и глиф, теги, мета, состояния; пустое состояние; метаданные `title`/`description`/`robots`); `GameManifest.cover` заменён на `tile: { glyph, tone }` ([manifest §1, §3.1](../contracts/game_manifest_contract.md)), валидация и тесты реестра обновлены, у Alphabet `tile: { glyph: 'А', tone: 1 }`, `cover.webp` удалён → `portal_home_spec §7` — все пункты выполнены (тестовая запись `coming-soon` — локально, не коммитится)
+      Paths: H [home §2] · N [home §4: пустой реестр, длинные тексты; манифест без `tile`, `glyph` > 2 символов, `tone` вне 1–5]
       UI: / · roles: public · widths: 360,768,1280
       Seed: n/a
 - [ ] R03-T21 · T2 · Spec: [routing §1–§2](../contracts/game_routing_contract.md)
       Files: `app/[game]/ComingSoon.tsx`, `app/[game]/page.tsx`, `app/[game]/page.test.ts`
-      Acceptance: для `coming-soon` страница возвращает 200 с блоком «Скоро» (название, описание из манифеста, ссылка в каталог) и `robots: noindex`; `generateMetadata` покрывает оба статуса; тест: `coming-soon` не вызывает `loadPage`; `active` вызывает → тест зелёный; визуальная проверка — временной записью, не коммитится
+      Acceptance: для `coming-soon` страница возвращает 200 с блоком «Скоро» (плитка, название, описание из манифеста, ссылка в каталог) и `robots: noindex`; `generateMetadata` покрывает оба статуса; тест: `coming-soon` не вызывает `loadPage`; `active` вызывает → тест зелёный; визуальная проверка — временной записью, не коммитится
       Paths: H [routing §1] · N [slug неизвестен → 404; coming-soon без `loadPage`]
       UI: /<temp-coming-soon> · roles: public · widths: 360,768,1280
       Seed: n/a
 
-**CU DoD:** `typecheck` · `lint` · `test` · `build` · `tokens:check` · UI-check `/` и страницы «Скоро» (временная запись) на 360/768/1280, RU и EN
+**CU DoD:** `typecheck` · `lint` · `test` · `build` · `tokens:check` · ревью по чеклисту `DESIGN.md` · UI-check `/` и страницы «Скоро» (временная запись) на 360/768/1280, RU и EN
 
 ### R03-CU8 — feat(games): add game template, module rule and adding-a-game guide · Review: diff-only · Smoke: none · Commit: auto
 
@@ -194,11 +194,11 @@
 
 - [ ] R03-T24 · T2 · Spec: [adding §4](../specs/adding_a_game_spec.md)
       Files: `docs/adding-a-game.md`, `docs/implementation/phases/R03_tasks.md`
-      Acceptance: **холодный прогон**: агент в новой сессии, имея только `AGENTS.md` и `docs/adding-a-game.md`, создаёт временную игру `sandbox-demo` («угадай число» с командами и табло), добавляет временную запись `coming-soon`; все проверки (`typecheck`, `lint`, `test`, `tokens:check`, `build`) зелёные, `/` показывает обе карточки, `/sandbox-demo` открыт внутри `GameShell`; временные игра, запись реестра и обложка удалены, `git status` чист; пробелы инструкции устранены в `docs/adding-a-game.md`; отчёт (время, число правок/вопросов, пробелы) записан в Verification ниже
+      Acceptance: **холодный прогон**: агент в новой сессии, имея только `AGENTS.md` и `docs/adding-a-game.md`, создаёт временную игру `sandbox-demo` («угадай число» с командами и табло), добавляет временную запись `coming-soon`; все проверки (`typecheck`, `lint`, `test`, `tokens:check`, `build`) зелёные, `/` показывает обе карточки (с `tile`), `/sandbox-demo` открыт внутри `GameShell`; временные игра, запись реестра и обложка удалены, `git status` чист; пробелы инструкции устранены в `docs/adding-a-game.md`; отчёт (время, число правок/вопросов, пробелы) записан в Verification ниже
       Paths: n/a — docs-only (прогон — проверка, результат в документ)
 - [ ] R03-T25 · T1 · Spec: [product-docs-alignment](../../../.cursor/rules/product-docs-alignment.mdc)
-      Files: `docs/architecture/i18n-approach.md`, `docs/games/alphabet.md`, `docs/games/alphabet/ui_components.md`, `docs/games/alphabet/state_management.md`, `docs/architecture/ADR-003-repo-structure.md`, `docs/architecture/ADR-006-i18n-and-game-data.md`, `AGENTS.md`, `.cursor/skills/app-conventions/SKILL.md`, `.cursor/rules/README.md`
-      Acceptance: `i18n-approach.md` переписан под cookie-локаль, словари и провайдеры (без Zustand/localStorage); `ui_components.md`/`state_management.md` отражают kit и адаптеры; ADR-003 и ADR-006 дополнены разделом «Реализация (R03)»; `AGENTS.md` — статус «R03 завершена», ссылки на `docs/adding-a-game.md`, каталог kit и `/dev/game-kit`; skill и манифест актуальны → `AGENTS.md` ≤ 120 строк; `docs:links`, `encoding:check` = 0
+      Files: `docs/design/DESIGN.md`, `docs/architecture/i18n-approach.md`, `docs/games/alphabet.md`, `docs/games/alphabet/ui_components.md`, `docs/games/alphabet/state_management.md`, `docs/architecture/ADR-003-repo-structure.md`, `docs/architecture/ADR-006-i18n-and-game-data.md`, `AGENTS.md`, `.cursor/skills/app-conventions/SKILL.md`, `.cursor/rules/README.md`
+      Acceptance: `i18n-approach.md` переписан под cookie-локаль, словари и провайдеры (без Zustand/localStorage); `ui_components.md`/`state_management.md` отражают kit и адаптеры; ADR-003 и ADR-006 дополнены разделом «Реализация (R03)»; `AGENTS.md` — название Circle, статус «R03 завершена», ссылки на `docs/adding-a-game.md`, каталог kit и `/dev/game-kit`; skill и манифест актуальны → `AGENTS.md` ≤ 120 строк; `docs:links`, `encoding:check` = 0
       Paths: n/a — docs-only
 - [ ] R03-T26 · T1 · Spec: [R03_phase_description §Phase DoD](R03_phase_description.md#phase-dod)
       Files: `docs/implementation/phases/R03_tasks.md`
