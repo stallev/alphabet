@@ -26,9 +26,9 @@ export default async function HomePage() {
   return (
     <>
       <SiteHeader />
-      <main className="pb-12 pt-8 md:pt-12">
-        <section className="mx-auto max-w-[1120px] px-4 pb-10 md:px-6 xl:px-8">
-          <h1 className="text-3xl font-extrabold tracking-tight text-fg md:text-4xl">
+      <main className="pb-12 pt-6 md:pt-8">
+        <section className="mx-auto max-w-[1120px] px-4 pb-8 md:px-6 xl:px-8">
+          <h1 className="text-2xl font-extrabold tracking-tight text-fg md:text-3xl">
             {dictionary.site.tagline}
           </h1>
           <p className="mt-3 max-w-2xl text-base text-fg-muted md:text-lg">

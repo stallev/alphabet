@@ -34,24 +34,24 @@ export function GameCard({ manifest }: GameCardProps) {
     <article
       className={cn(
         'flex h-full flex-col overflow-hidden rounded-card border border-border bg-surface shadow-card transition-shadow',
-        !isComingSoon && 'hover:shadow-press focus-within:ring-2 focus-within:ring-ring',
+        !isComingSoon && 'hover:shadow-card focus-within:ring-2 focus-within:ring-ring',
         isComingSoon && 'opacity-80',
       )}
       aria-disabled={isComingSoon || undefined}
     >
       <GameTile tile={manifest.tile} muted={isComingSoon} />
-      <div className="flex flex-1 flex-col gap-3 p-5">
+      <div className="flex flex-1 flex-col gap-2 p-3">
         <div className="flex items-start justify-between gap-2">
-          <h2 className="line-clamp-2 text-lg font-bold text-fg">{manifest.title[locale]}</h2>
+          <h2 className="line-clamp-2 text-base font-bold text-fg">{manifest.title[locale]}</h2>
           {isComingSoon ? <Badge variant="accent">{t.catalog.comingSoon}</Badge> : null}
         </div>
-        <p className="line-clamp-2 text-sm text-fg-muted">{manifest.tagline[locale]}</p>
+        <p className="line-clamp-2 text-xs leading-snug text-fg-muted">{manifest.tagline[locale]}</p>
         <div className="flex flex-wrap gap-2">
           {tags.map((tag) => (
             <Badge key={tag}>{t.catalog.tags[tag as GameTag]}</Badge>
           ))}
         </div>
-        <p className="mt-auto flex flex-wrap items-center gap-3 text-xs font-semibold text-fg-muted">
+        <p className="mt-auto flex flex-wrap items-center gap-2.5 text-xs font-semibold text-fg-muted">
           <span className="inline-flex items-center gap-1">
             <Users className="size-4" aria-hidden />
             {teamsLabel}
