@@ -11,6 +11,7 @@ import {
 } from '@/games/alphabet/constants';
 import type { AlphabetDictionary } from '@/games/alphabet/i18n/en';
 import type { Locale } from '@/shared/domain/locale';
+import { format } from '@/shared/i18n/format';
 import type { RulesContent } from '@/shared/game-kit/types';
 
 export function mapAlphabetRulesContent(
@@ -24,7 +25,7 @@ export function mapAlphabetRulesContent(
   return [
     {
       heading: r.section01Title,
-      body: r.section01Text(cardCount, pairCount),
+      body: format(r.section01Text, { cardCount, pairCount }),
     },
     {
       heading: r.section02Title,
@@ -33,7 +34,7 @@ export function mapAlphabetRulesContent(
           <p>{r.section02Intro}</p>
           <p className="mt-2 font-semibold">{r.matchTitle}</p>
           <ul className="mt-1 list-disc pl-5">
-            <li>{r.matchItem1(SCORE_MATCH)}</li>
+            <li>{format(r.matchItem1, { n: SCORE_MATCH })}</li>
             <li>{r.matchItem2}</li>
             <li>{r.matchItem3}</li>
             <li>{r.matchItem4}</li>
@@ -52,16 +53,16 @@ export function mapAlphabetRulesContent(
       body: (
         <ul className="space-y-1">
           <li>
-            {r.rowMatch}: {r.rowMatchPoints(SCORE_MATCH)}
+            {r.rowMatch}: {format(r.rowMatchPoints, { n: SCORE_MATCH })}
           </li>
           <li>
-            {r.rowEasy}: {r.rowEasyPoints(SCORE_EASY)}
+            {r.rowEasy}: {format(r.rowEasyPoints, { n: SCORE_EASY })}
           </li>
           <li>
-            {r.rowMedium}: {r.rowMediumPoints(SCORE_MEDIUM)}
+            {r.rowMedium}: {format(r.rowMediumPoints, { n: SCORE_MEDIUM })}
           </li>
           <li>
-            {r.rowHard}: {r.rowHardPoints(SCORE_HARD)}
+            {r.rowHard}: {format(r.rowHardPoints, { n: SCORE_HARD })}
           </li>
         </ul>
       ),

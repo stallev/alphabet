@@ -1,8 +1,8 @@
-import type { Metadata } from "next";
+import type { Metadata, ResolvingMetadata } from "next";
 import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
 
-import { DEFAULT_LOCALE, type Locale } from "@/shared/domain/locale";
+import { type Locale } from "@/shared/domain/locale";
 import type { ActiveLocale } from "@/shared/game-kit/manifest";
 import { SITE } from "@/shared/config/site";
 import {
@@ -11,6 +11,7 @@ import {
   getGameEntry,
 } from "@/games/registry";
 import { getLocale } from "@/shared/i18n/server";
+import { buildMetadata } from "@/shared/seo/build-metadata";
 
 import { ComingSoon } from "./ComingSoon";
 
@@ -26,18 +27,10 @@ export function generateStaticParams(): { game: string }[] {
   return GAME_ENTRIES.map((entry) => ({ game: entry.manifest.slug }));
 }
 
-function resolveRobots(status: "active" | "coming-soon"): Metadata["robots"] {
-  if (status === "coming-soon") {
-    return "noindex, nofollow";
-  }
-  return SITE.indexable ? "index, follow" : "noindex, nofollow";
-}
-
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ game: string }>;
-}): Promise<Metadata> {
+export async function generateMetadata(
+  { params }: { params: Promise<{ game: string }> },
+  parent: ResolvingMetadata,
+): Promise<Metadata> {
   const { game: slug } = await params;
   const entry = getGameEntry(slug);
   if (!entry) {
@@ -46,12 +39,22 @@ export async function generateMetadata({
 
   const locale = toActiveLocale(await getLocale());
   const { manifest } = entry;
+  const parentMeta = await parent;
+  const images = parentMeta.openGraph?.images;
 
-  return {
+  return buildMetadata({
+    locale,
+    path: `/${slug}`,
     title: manifest.title[locale],
     description: manifest.description[locale],
-    robots: resolveRobots(manifest.status),
-  };
+    robots:
+      manifest.status === "coming-soon"
+        ? { index: false, follow: false }
+        : SITE.indexable
+          ? { index: true, follow: true }
+          : { index: false, follow: false },
+    images,
+  });
 }
 
 export default async function GamePage({

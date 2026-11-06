@@ -1,27 +1,22 @@
-import type { Metadata } from 'next';
-
 import { listGames } from '@/games/registry';
 import { SITE } from '@/shared/config/site';
 import { getDictionary, getLocale } from '@/shared/i18n/server';
+import { buildMetadata } from '@/shared/seo/build-metadata';
 
 import { GameGrid } from './_components/GameGrid';
 import { SiteFooter } from './_components/SiteFooter';
 import { SiteHeader } from './_components/SiteHeader';
 
-export async function generateMetadata(): Promise<Metadata> {
+export async function generateMetadata() {
   const locale = await getLocale();
   const dictionary = await getDictionary();
 
-  return {
+  return buildMetadata({
+    locale,
+    path: '/',
     title: SITE.name,
     description: dictionary.site.description,
-    robots: SITE.indexable ? 'index, follow' : 'noindex, nofollow',
-    openGraph: {
-      siteName: SITE.name,
-      title: SITE.name,
-      description: dictionary.site.description,
-    },
-  };
+  });
 }
 
 export default async function HomePage() {

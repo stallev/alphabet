@@ -3,7 +3,7 @@ import { connection } from 'next/server';
 import { getAllSuites } from '@/games/alphabet/server/suites/get-suites.server';
 import Link from 'next/link';
 
-export const metadata = { title: 'Admin Dashboard — Alphabet' };
+export const metadata = { title: 'Dashboard' };
 
 async function DashboardStats() {
   await connection();

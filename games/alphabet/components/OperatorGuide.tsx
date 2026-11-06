@@ -4,7 +4,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useGameStore } from '@/games/alphabet/store';
 import { useGameT } from '@/games/alphabet/i18n/use-game-t';
-import { useLocale } from '@/shared/i18n/I18nProvider';
+import { format } from '@/shared/i18n/format';
 
 export const OperatorGuide: React.FC = () => {
   const { setGuideOpen, setShowPrompt, closeAllModals } = useGameStore();
@@ -71,7 +71,7 @@ export const OperatorGuide: React.FC = () => {
                 </div>
                 <p className="font-medium text-indigo-100 mb-6 leading-relaxed text-sm md:text-base max-w-2xl">
                   {g.grokText}<br/><br/>
-                  <span className="text-indigo-200">{g.grokSaveHint}</span> {g.grokSaveText('.json')}
+                  <span className="text-indigo-200">{g.grokSaveHint}</span> {format(g.grokSaveText, { ext: '.json' })}
                 </p>
                 
                 <div className="flex flex-wrap gap-4">
