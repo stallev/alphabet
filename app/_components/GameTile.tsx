@@ -20,7 +20,7 @@ export function GameTile({ tile, muted = false, className }: GameTileProps) {
     <div
       aria-hidden
       className={cn(
-        'flex aspect-video w-full items-center justify-center rounded-card text-5xl font-bold tabular-nums md:text-6xl',
+        'flex aspect-[16/10] w-full items-center justify-center rounded-card text-4xl font-bold tabular-nums md:text-5xl',
         toneClasses[tile.tone],
         muted && 'opacity-70',
         className,

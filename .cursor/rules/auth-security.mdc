@@ -116,7 +116,7 @@ export const config = {
 ```
 
 **Ключевые отличия от Next.js 15:**
-| Next.js 15 | Next.js 16.2.6 |
+| Next.js 15 | Next.js 16.4.5 |
 |-----------|---------------|
 | `middleware.ts` | `proxy.ts` |
 | `export function middleware()` | `export function proxy()` |

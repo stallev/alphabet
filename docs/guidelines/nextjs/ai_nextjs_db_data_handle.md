@@ -1,8 +1,8 @@
 # Next.js Data Access: Server Actions vs Route Handlers (EdenGames)
 
-**Version:** 1.2 · **Stack:** Next.js **16.2.6** App Router, React 19, Prisma v7, Neon, Vercel  
+**Version:** 1.2 · **Stack:** Next.js **16.4.5** App Router, React 19, Prisma v7, Neon, Vercel  
 **Methodology:** [`docs/meta/ai_first_methodology.md`](../../meta/ai_first_methodology.md)  
-**Runtime:** [ADR-002 template](../../architecture/ADR-005-nextjs-vercel-runtime.md)  
+**Runtime:** [ADR-005](../../architecture/ADR-005-nextjs-vercel-runtime.md)  
 **Reference:** EdenGames snapshot ``ai_nextjs_db_data_handle.md``  
 **iOS Safari:** ``docs/incidents/ios-safari-mutation-transport-pattern.md`` · cursor rule **ios-safari-mutation-transport**
 
@@ -36,7 +36,7 @@ AI agents **MUST** follow this when implementing data access or mutations.
 
 ---
 
-## 4. Async Request APIs (Next.js 16.2.6)
+## 4. Async Request APIs (Next.js 16.4.5)
 
 ```ts
 const cookieStore = await cookies();
@@ -53,7 +53,7 @@ export default async function Page(props: {
 
 ## 5. Request interception (not in DAL)
 
-Route protection lives in **`proxy.ts`**, not in Server Actions. See [ADR-002](../../architecture/ADR-005-nextjs-vercel-runtime.md).
+Route protection lives in **`proxy.ts`**, not in Server Actions. See [ADR-005](../../architecture/ADR-005-nextjs-vercel-runtime.md).
 
 ---
 

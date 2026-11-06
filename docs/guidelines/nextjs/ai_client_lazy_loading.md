@@ -3,7 +3,7 @@
 ## Document Version: 1.0 (EdenGames)
 **Created:** 28 May 2026  
 **Project:** EdenGames — `app`  
-**Stack:** Next.js **16.2.6** App Router, React 19, **Vercel**
+**Stack:** Next.js **16.4.5** App Router, React 19, **Vercel**
 
 > **Scope:** lazy loading of **Client Components** and heavy **client-only** dependencies. Complements server-side streaming in [`ai_loading_patterns.md`](./ai_loading_patterns.md) and RSC boundaries in [`ai_component_guidelines.md`](../react/ai_component_guidelines.md).
 
@@ -266,4 +266,4 @@ Prioritized by impact. Re-run after major UI deps or new shared client primitive
 
 ---
 
-**Next.js Version:** 16.2.6 · **Hosting:** Vercel · **Reference adapted from:** EdenGames reference BSFY `ai_client_lazy_loading.md`
+**Next.js Version:** 16.4.5 · **Hosting:** Vercel · **Reference adapted from:** EdenGames reference BSFY `ai_client_lazy_loading.md`

@@ -11,7 +11,7 @@
 
 ## Введение
 
-Документ описывает AI-first подход к разработке **EdenGames** — каталога христианских командных игр на **Next.js 16.2.6** (single-app репозиторий). Документация — runtime-инструкция для агентов: контракты и спецификации важнее импровизации.
+Документ описывает AI-first подход к разработке **EdenGames** — каталога христианских командных игр на **Next.js 16.4.5** (single-app репозиторий). Документация — runtime-инструкция для агентов: контракты и спецификации важнее импровизации.
 
 Порядок создания и критерии документов — [`documentation_registry.md`](./documentation_registry.md).
 
@@ -19,7 +19,7 @@
 
 | Слой | Технология |
 |------|------------|
-| Framework | Next.js 16.2.6 App Router, Vercel |
+| Framework | Next.js 16.4.5 App Router, Vercel |
 | DB | Neon PostgreSQL 17 + Prisma 6.x |
 | Auth | Auth.js v5, Credentials, JWT, роль `admin` |
 | UI | shadcn/ui + Tailwind CSS v4, Zustand, Framer Motion |

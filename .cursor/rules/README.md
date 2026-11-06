@@ -22,7 +22,7 @@
 
 | Rule | Режим | Назначение |
 |------|-------|------------|
-| `nextjs-vercel-app-router.mdc` | globs | Next 16.2.6, `proxy.ts`, async APIs |
+| `nextjs-vercel-app-router.mdc` | globs | Next 16.4.5, `proxy.ts`, async APIs |
 | `auth-security.mdc` | globs | Auth.js v5 split config, роли, защита мутаций |
 | `data-server-actions-and-api.mdc` | globs | DAL, Prisma/Neon, Server Actions vs API |
 | `security-xss-csrf.mdc` | globs | XSS, CSRF, CSP |

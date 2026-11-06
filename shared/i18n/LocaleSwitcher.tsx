@@ -33,7 +33,7 @@ export function LocaleSwitcher({ className }: { className?: string }) {
   return (
     <div
       className={cn(
-        'inline-flex rounded-ctl border border-border bg-surface p-1',
+        'inline-flex rounded-ctl border border-border bg-surface p-0.5',
         className,
       )}
       role="group"
@@ -46,7 +46,7 @@ export function LocaleSwitcher({ className }: { className?: string }) {
             key={locale}
             type="button"
             className={cn(
-              'min-h-12 min-w-12 rounded-ctl px-3 text-sm font-semibold tabular-nums transition-colors',
+              'h-9 min-h-9 rounded-ctl px-2.5 text-xs font-semibold tabular-nums transition-colors',
               'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring',
               isActive
                 ? 'bg-primary text-primary-fg'

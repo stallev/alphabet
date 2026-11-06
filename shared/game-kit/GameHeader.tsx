@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { ArrowLeft, BookOpen, MoreHorizontal } from 'lucide-react';
+import { BookOpen, MoreHorizontal } from 'lucide-react';
 import { useEffect, useRef, useState, type MouseEvent, type ReactNode } from 'react';
 
 import { LocaleSwitcher } from '@/shared/i18n/LocaleSwitcher';
@@ -64,16 +64,14 @@ export function GameHeader({
   };
 
   return (
-    <header className="sticky top-0 z-40 border-b border-border bg-surface/95 shadow-card">
+    <header className="sticky top-0 z-40 border-b border-border bg-surface/95">
       <div className="mx-auto flex h-14 max-w-7xl items-center gap-2 px-4 md:gap-3">
         <Link
           href="/"
           onClick={handleCatalogClick}
-          className="inline-flex min-h-11 min-w-11 shrink-0 items-center gap-1 rounded-ctl px-2 text-sm font-semibold text-primary hover:bg-bg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+          className="inline-flex min-h-10 min-w-10 shrink-0 items-center gap-1 rounded-ctl px-2 text-sm font-semibold text-primary hover:bg-bg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
         >
-          <ArrowLeft className="size-5 shrink-0 md:hidden" aria-hidden />
-          <span className="hidden md:inline">{t.gameKit.catalogLink}</span>
-          <span className="sr-only md:hidden">{t.gameKit.catalogLink}</span>
+          <span>{t.gameKit.catalogLink}</span>
         </Link>
 
         <h1 className="min-w-0 flex-1 truncate text-base font-bold text-fg md:text-lg">

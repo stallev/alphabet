@@ -106,7 +106,7 @@
       Paths: n/a — docs-only
 - [x] R01-T13 · T2 · Spec: [plan §A.4.3](../../meta/repo_restructure_plan.md), [plan §A.6](../../meta/repo_restructure_plan.md)
       Files: `.cursor/rules/project-context.mdc`, `.cursor/rules/alphabet-project-context.mdc`
-      Acceptance: `project-context.mdc` создан из `project-context.template.mdc` (`alwaysApply: true`): продукт EdenGames, стек (Next.js 16.2.6, Prisma 7, Auth.js v5, Tailwind v4, Zustand, Framer Motion), профиль качества, **единственная** иерархия источников истины (Cursor Rules → AGENTS.md → ADR → Contracts → PRD → Guidelines → Specs/примеры), ссылки на `docs/implementation/contracts/*`; `alphabet-project-context.mdc` удалён (его содержимое учтено в `project-context.mdc` и в ADR-003) → иерархия источников нигде, кроме `project-context.mdc`, не перечислена
+      Acceptance: `project-context.mdc` создан из `project-context.template.mdc` (`alwaysApply: true`): продукт EdenGames, стек (Next.js 16.4.5, Prisma 7, Auth.js v5, Tailwind v4, Zustand, Framer Motion), профиль качества, **единственная** иерархия источников истины (Cursor Rules → AGENTS.md → ADR → Contracts → PRD → Guidelines → Specs/примеры), ссылки на `docs/implementation/contracts/*`; `alphabet-project-context.mdc` удалён (его содержимое учтено в `project-context.mdc` и в ADR-003) → иерархия источников нигде, кроме `project-context.mdc`, не перечислена
       Paths: n/a — docs-only
 - [x] R01-T14 · T1 · Spec: [plan §A.4.2](../../meta/repo_restructure_plan.md)
       Files: `.cursor/agents/architect.md`, `.cursor/agents/implementer.md`, `.cursor/agents/reviewer.md`
@@ -148,7 +148,7 @@
       Paths: n/a — docs-only
 - [x] R01-T21 · T1 · Spec: [plan §A.4.4](../../meta/repo_restructure_plan.md)
       Files: `docs/guidelines/nextjs/README.md`, `docs/guidelines/nextjs/ai_data_fetching_patterns.md`, `docs/guidelines/nextjs/ai_loading_patterns.md`, `docs/guidelines/nextjs/ai_client_lazy_loading.md`, `docs/guidelines/nextjs/ai_vercel_runtime_compatibility.md`, `docs/guidelines/nextjs/ai_nextjs_db_data_handle.md`
-      Acceptance: перенесены; ссылки на S3/Blob/PSI/admin-interface удалены; версии Next.js — 16.2.6
+      Acceptance: перенесены; ссылки на S3/Blob/PSI/admin-interface удалены; версии Next.js — 16.4.5
       Paths: n/a — docs-only
 - [x] R01-T22 · T1 · Spec: [plan §A.4.4](../../meta/repo_restructure_plan.md)
       Files: `docs/guidelines/security/README.md`, `docs/guidelines/security/ai_security_xss_csrf_guidelines.md`, `docs/guidelines/auth/ai_auth_implementation_guide.md`, `docs/general/01-security-xss-csrf.md`, `docs/general/03-accessibility.md`, `docs/general/ai_agent_ui_ux_guideline.md`
@@ -177,7 +177,7 @@
       Paths: n/a — docs-only
 - [x] R01-T27 · T2 · Spec: [`ADR-005-nextjs-vercel-runtime.md`](../../architecture/ADR-005-nextjs-vercel-runtime.md)
       Files: `docs/architecture/ADR-005-nextjs-vercel-runtime.md`
-      Acceptance: адаптирован под фактический стек (Next.js 16.2.6, Node по `engines`, Vercel, Neon, Prisma 7, `proxy.ts`); `cacheComponents`/Instant Navigations — «не включено, вернуться отдельным ADR»; расхождения с прежним `AGENTS.md` (Prisma 6.x → 7.x) зафиксированы
+      Acceptance: адаптирован под фактический стек (Next.js 16.4.5, Node по `engines`, Vercel, Neon, Prisma 7, `proxy.ts`); `cacheComponents`/Instant Navigations — «не включено, вернуться отдельным ADR»; расхождения с прежним `AGENTS.md` (Prisma 6.x → 7.x) зафиксированы
       Paths: n/a — docs-only
 - [x] R01-T28 · T2 · Spec: [plan §0 D6–D7](../../meta/repo_restructure_plan.md), [`i18n_contract.md`](../contracts/i18n_contract.md)
       Files: `docs/architecture/ADR-006-i18n-and-game-data.md`

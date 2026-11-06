@@ -16,7 +16,7 @@ alwaysApply: true
 
 ## Stack (не менять без ADR)
 
-- **Next.js 16.2.6** App Router · **TypeScript** · **Node.js** LTS (`engines` в `package.json`)
+- **Next.js 16.4.5** App Router · **TypeScript** · **Node.js** LTS (`engines` в `package.json`)
 - **Neon PostgreSQL 17** + **Prisma 7** (`DATABASE_URL`, `DIRECT_URL`)
 - **Auth.js v5** — Credentials, JWT, split `auth.config.ts` (Edge) + `auth.ts` (server-only)
 - **Tailwind CSS v4** · **Zustand 5** (клиентский игровой стейт) · **Framer Motion 12** · **shadcn/ui** (admin) · **Zod**

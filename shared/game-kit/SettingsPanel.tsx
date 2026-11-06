@@ -21,8 +21,8 @@ export function SettingsPanel({
   startDisabled,
 }: SettingsPanelProps) {
   return (
-    <Card className="flex flex-col gap-8 p-6 md:p-8">
-      <h2 className="text-2xl font-extrabold text-fg">{title}</h2>
+    <Card className="flex flex-col gap-6 p-5 md:p-6">
+      <h2 className="text-xl font-bold text-fg">{title}</h2>
       <div className="flex flex-col gap-6">{children}</div>
       <Button size="lg" className="w-full" disabled={startDisabled} onClick={onStart}>
         {startLabel}

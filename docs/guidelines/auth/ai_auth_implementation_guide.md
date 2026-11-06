@@ -1,6 +1,6 @@
 # Authentication — EdenGames
 
-**Стек:** Next.js **16.2.6** · Auth.js v5 · Prisma · Neon · Credentials + JWT  
+**Стек:** Next.js **16.4.5** · Auth.js v5 · Prisma · Neon · Credentials + JWT  
 **Методология:** [`ai_first_methodology.md`](../../meta/ai_first_methodology.md)  
 **Правила:** `auth-security.mdc`, `security-xss-csrf.mdc`  
 **Схема:** [`prisma/schema.prisma`](../../../prisma/schema.prisma)

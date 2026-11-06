@@ -4,22 +4,19 @@ export const metadata = { title: 'Import Suite' };
 
 export default function AdminSuiteImportPage() {
   return (
-    <div className="p-8 max-w-4xl">
+    <div className="max-w-4xl p-8">
       <div className="mb-8">
-        <h1 className="text-2xl font-black text-white uppercase tracking-tighter">
-          Импорт набора вопросов
-        </h1>
-        <p className="text-slate-500 text-xs mt-1">
+        <h1 className="text-xl font-bold text-fg">Импорт набора вопросов</h1>
+        <p className="mt-1 text-sm text-fg-muted">
           Загрузить набор из JSON или вставить текст напрямую
         </p>
       </div>
 
-      {/* Format hint */}
-      <div className="bg-slate-900 border border-emerald-500/10 rounded-2xl p-5 mb-6 text-xs font-mono">
-        <div className="text-emerald-500/60 uppercase tracking-widest mb-3 text-[10px]">
+      <div className="mb-6 rounded-card border border-border bg-surface p-5">
+        <div className="mb-3 text-sm font-semibold text-fg-muted">
           Ожидаемый формат JSON
         </div>
-        <pre className="text-slate-400 overflow-x-auto leading-relaxed">{`{
+        <pre className="overflow-x-auto text-xs leading-relaxed text-fg-muted">{`{
   "title": "Название набора",
   "language": "ru",
   "questionsList": [

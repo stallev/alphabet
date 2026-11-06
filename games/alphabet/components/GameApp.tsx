@@ -2,6 +2,7 @@
 
 import { AnimatePresence, motion } from 'framer-motion';
 import { Pause } from 'lucide-react';
+import Link from 'next/link';
 import { useEffect, useMemo, useRef, useState } from 'react';
 
 import { ALPHABET_MANIFEST } from '@/games/alphabet/manifest-data';
@@ -179,12 +180,12 @@ export function GameApp({ locale: _pageLocale, initialSuites }: GameAppProps) {
           </p>
         ) : null}
         <ScoreBoardContainer />
-        <div className="sticky top-0 z-20 h-2 w-full shrink-0 overflow-hidden bg-surface-muted">
+        <div className="sticky top-0 z-20 h-1.5 w-full shrink-0 overflow-hidden">
           <motion.div
             initial={{ width: 0 }}
             animate={{ width: `${progressPercent}%` }}
             transition={{ type: 'spring', stiffness: 40, damping: 15 }}
-            className="relative h-full bg-success"
+            className="relative h-full bg-primary"
           />
         </div>
         <div className="relative flex h-full w-full flex-1 overflow-hidden">
@@ -216,9 +217,9 @@ export function GameApp({ locale: _pageLocale, initialSuites }: GameAppProps) {
             </div>
           </div>
           {isDesktop ? (
-            <aside className="pointer-events-none relative z-30 flex h-full w-32 shrink-0 flex-col items-center justify-center">
+            <aside className="pointer-events-none relative z-30 flex h-full w-28 shrink-0 flex-col items-center justify-center">
               <div
-                className={`pointer-events-auto flex justify-center rounded-card border border-border bg-surface p-4 shadow-card transition-all ${isFlipTimerActive ? 'opacity-100' : 'opacity-40'}`}
+                className={`pointer-events-auto flex justify-center rounded-card border border-border bg-surface p-3 shadow-card transition-all ${isFlipTimerActive ? 'opacity-100' : 'opacity-40'}`}
               >
                 <Timer
                   key={timerKey}
@@ -233,7 +234,7 @@ export function GameApp({ locale: _pageLocale, initialSuites }: GameAppProps) {
             </aside>
           ) : null}
           {isFlipTimerActive && !isDesktop ? (
-            <div className="fixed right-2 top-1/2 z-40 flex h-16 w-16 -translate-y-1/2 items-center justify-center rounded-full border-2 border-border bg-surface shadow-card lg:hidden">
+            <div className="fixed right-2 top-1/2 z-40 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-border bg-surface shadow-card lg:hidden">
               <Timer
                 key={`mobile-${timerKey}`}
                 seconds={settings.flipTimer}
@@ -288,6 +289,15 @@ export function GameApp({ locale: _pageLocale, initialSuites }: GameAppProps) {
       rules={rulesContent}
       onRulesOpenChange={handleRulesOpenChange}
       pausedOverlay={false}
+      headerActions={
+        <Link
+          href="/admin/login"
+          role="menuitem"
+          className="flex w-full min-h-11 items-center rounded-ctl px-3 text-left text-sm font-semibold text-fg hover:bg-bg"
+        >
+          Admin
+        </Link>
+      }
     >
       {mainContent}
       {isGameOver ? <VictoryScreenContainer /> : null}

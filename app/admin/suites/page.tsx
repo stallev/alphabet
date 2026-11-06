@@ -1,8 +1,10 @@
 import { Suspense } from 'react';
 import { connection } from 'next/server';
+import Link from 'next/link';
+
+import { Button } from '@/shared/ui/Button';
 import { getAllSuites } from '@/games/alphabet/server/suites/get-suites.server';
 import { SuitesTable } from '@/app/admin/_components/SuitesTable';
-import Link from 'next/link';
 
 export const metadata = { title: 'Question Suites' };
 
@@ -11,7 +13,7 @@ async function SuitesContent() {
   const suites = await getAllSuites();
   return (
     <>
-      <p className="text-slate-500 text-xs mt-1">{suites.length} наборов в базе</p>
+      <p className="mt-1 text-sm text-fg-muted">{suites.length} наборов в базе</p>
       <div className="mt-8">
         <SuitesTable suites={suites} />
       </div>
@@ -22,10 +24,10 @@ async function SuitesContent() {
 function SuitesSkeleton() {
   return (
     <>
-      <p className="text-slate-500 text-xs mt-1">Загрузка...</p>
+      <p className="mt-1 text-sm text-fg-muted">Загрузка...</p>
       <div className="mt-8 space-y-2">
         {[0, 1, 2].map((i) => (
-          <div key={i} className="h-12 bg-slate-900 rounded-xl animate-pulse" />
+          <div key={i} className="h-12 animate-pulse rounded-ctl bg-surface-muted" />
         ))}
       </div>
     </>
@@ -35,15 +37,12 @@ function SuitesSkeleton() {
 export default function AdminSuitesPage() {
   return (
     <div className="p-8">
-      <div className="flex items-center justify-between mb-4">
-        <h1 className="text-2xl font-black text-white uppercase tracking-tighter">
-          Наборы вопросов
-        </h1>
-        <Link
-          href="/admin/suites/import"
-          className="bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-2.5 rounded-xl font-bold text-sm uppercase tracking-wide transition-all"
-        >
-          + Импорт JSON
+      <div className="mb-4 flex items-center justify-between gap-4">
+        <h1 className="text-xl font-bold text-fg">Наборы вопросов</h1>
+        <Link href="/admin/suites/import">
+          <Button variant="secondary" size="sm">
+            Импорт JSON
+          </Button>
         </Link>
       </div>
       <Suspense fallback={<SuitesSkeleton />}>

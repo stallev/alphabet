@@ -2,13 +2,17 @@
 
 import { signOut } from 'next-auth/react';
 
+import { Button } from '@/shared/ui/Button';
+
 export function AdminSignOutButton() {
   return (
-    <button
+    <Button
+      variant="ghost"
+      size="sm"
+      className="w-full justify-start"
       onClick={() => signOut({ callbackUrl: '/admin/login' })}
-      className="w-full text-xs text-slate-600 hover:text-red-400 transition-colors uppercase tracking-widest py-2"
     >
       Выйти
-    </button>
+    </Button>
   );
 }

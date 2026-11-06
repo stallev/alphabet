@@ -33,7 +33,7 @@ modules:
 | D7 | CI | `typecheck`, `lint`, `test`, `deps:check`, `encoding:check`, `build` в CI; локально перед коммитом — hook + CU verify |
 | D8 | a11y | Семантический HTML, labels; правило `ui-semantics-a11y` после R01-CU5; без axe в CI |
 | D9 | Perf / observability | Без Sentry и PSI-lab на MVP; ручная проверка критичных экранов при UI-задачах |
-| D10 | Модули стека | Next.js 16.2.6, Prisma/Neon, Auth.js (admin), Tailwind v4, shadcn/ui, Zustand, Framer Motion, Gemini/OpenRouter |
+| D10 | Модули стека | Next.js 16.4.5, Prisma/Neon, Auth.js (admin), Tailwind v4, shadcn/ui, Zustand, Framer Motion, Gemini/OpenRouter |
 | D11 | UI-check агента | Ширины 375 и 1280; роли из строки `UI:`; HOW — `docs/guidelines/testing/ai_ui_verification.md` (после R03) |
 
 ## Обоснование выбора

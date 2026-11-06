@@ -54,7 +54,7 @@ export function TeamsSetup({ value, min, max, onChange }: TeamsSetupProps) {
   };
 
   return (
-    <div className="flex flex-col gap-6">
+    <div className="flex flex-col gap-4">
       <StepperInput
         label={t.gameKit.setup.teamsCount}
         value={value.count}

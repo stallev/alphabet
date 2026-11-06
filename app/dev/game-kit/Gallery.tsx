@@ -18,6 +18,7 @@ import { KitCu4Showcase } from './KitCu4Showcase';
 const COLOR_PAIRS: { bg: string; fg: string; label: string }[] = [
   { bg: 'bg-bg', fg: 'text-fg', label: 'fg on bg' },
   { bg: 'bg-surface', fg: 'text-fg', label: 'fg on surface' },
+  { bg: 'bg-surface-muted', fg: 'text-fg', label: 'fg on surface-muted' },
   { bg: 'bg-primary', fg: 'text-primary-fg', label: 'primary-fg on primary' },
   { bg: 'bg-accent', fg: 'text-accent-fg', label: 'accent-fg on accent' },
   { bg: 'bg-success', fg: 'text-success-fg', label: 'success-fg on success' },
@@ -45,6 +46,8 @@ const HEX: Record<string, string> = {
   bg: '#eaf2f4',
   fg: '#12303a',
   surface: '#ffffff',
+  'surface-muted': '#eef4f5',
+  border: '#c9d8dc',
   primary: '#0f766e',
   'primary-fg': '#ffffff',
   accent: '#f5a524',
@@ -189,6 +192,7 @@ export function Gallery() {
             <Button variant="danger">Danger</Button>
           </div>
           <div className="flex flex-wrap gap-3">
+            <Button size="sm">Small action</Button>
             <Button size="lg">Large action</Button>
             <Button loading>Loading</Button>
             <Button disabled>Disabled</Button>

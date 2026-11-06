@@ -1,6 +1,6 @@
 # Browser rendering performance — React / Tailwind v4
 
-**Stack:** Next.js **16.2.6**, React 19, Tailwind CSS v4  
+**Stack:** Next.js **16.4.5**, React 19, Tailwind CSS v4  
 **Methodology:** [`docs/meta/ai_first_methodology.md`](../../meta/ai_first_methodology.md)  
 **Deep dive:** [`docs/general/05-browser-rendering.md`](../../general/README.md)  
 **Cursor rule:** **ui-animation-performance**  

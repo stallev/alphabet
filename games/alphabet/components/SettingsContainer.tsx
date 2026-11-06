@@ -1,7 +1,7 @@
 'use client';
 
-import Link from 'next/link';
 import { useRef, useState } from 'react';
+import { ChevronDown } from 'lucide-react';
 
 import { DEFAULT_SETTINGS } from '@/games/alphabet/constants';
 import { useGameStore } from '@/games/alphabet/store';
@@ -63,10 +63,10 @@ export function SettingsContainer() {
   return (
     <div className="flex min-h-[50vh] items-center justify-center bg-bg px-4 py-8">
       <div className="grid w-full max-w-5xl gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,2fr)]">
-        <aside className="flex flex-col gap-3 rounded-card border border-border bg-primary p-6 text-primary-fg shadow-card">
+        <aside className="flex flex-col gap-3 rounded-card border border-border bg-surface p-6 text-fg shadow-card">
           <div>
-            <h1 className="text-xl font-extrabold">{t.title}</h1>
-            <p className="text-sm text-primary-fg/80">{t.subtitle}</p>
+            <h1 className="text-lg font-bold">{t.title}</h1>
+            <p className="text-sm text-fg-muted">{t.subtitle}</p>
           </div>
           <Button variant="secondary" onClick={() => setAIGeneratorOpen(true)}>
             {t.aiGenerator}
@@ -81,21 +81,18 @@ export function SettingsContainer() {
             accept=".json"
             onChange={handleFileUpload}
           />
-          <Button variant="secondary" onClick={() => fileInputRef.current?.click()}>
+          <Button variant="ghost" onClick={() => fileInputRef.current?.click()}>
             {t.importJson}
           </Button>
-          <a href="#rules" className="text-sm font-semibold underline">
+          <a href="#rules" className="text-sm font-semibold text-primary hover:underline">
             {t.rules}
           </a>
-          <Button variant="secondary" onClick={() => setGuideOpen(true)}>
+          <Button variant="ghost" onClick={() => setGuideOpen(true)}>
             {t.guide}
           </Button>
-          <Button variant="secondary" onClick={() => setShowPrompt(true)}>
+          <Button variant="ghost" onClick={() => setShowPrompt(true)}>
             {t.prompt}
           </Button>
-          <Link href="/admin/login" className="mt-auto text-xs font-semibold opacity-70">
-            Admin
-          </Link>
         </aside>
 
         <SettingsPanel
@@ -112,7 +109,7 @@ export function SettingsContainer() {
                   type="button"
                   onClick={() => setSettings({ ...settings, gameMode: mode })}
                   className={cn(
-                    'min-h-11 flex-1 rounded-ctl px-3 text-sm font-bold',
+                    'h-10 flex-1 rounded-ctl px-3 text-sm font-semibold',
                     settings.gameMode === mode
                       ? 'bg-primary text-primary-fg'
                       : 'border border-border bg-surface text-fg-muted',
@@ -125,13 +122,13 @@ export function SettingsContainer() {
           </div>
 
           {settings.gameMode === GameMode.WITH_QUESTIONS ? (
-            <div className="rounded-ctl border border-border bg-surface-muted p-4">
+            <div className="rounded-ctl border border-border bg-bg p-3">
               <p className="text-sm font-semibold text-fg-muted">{t.activeSuite}</p>
               <div className="mt-2 flex items-center justify-between gap-2">
                 <span className="font-bold text-fg">
                   {questions.currentSuite?.title ?? t.notSelected}
                 </span>
-                <Button variant="secondary" size="md" onClick={() => setLibraryOpen(true)}>
+                <Button variant="secondary" size="sm" onClick={() => setLibraryOpen(true)}>
                   {t.change}
                 </Button>
               </div>
@@ -150,11 +147,15 @@ export function SettingsContainer() {
           <div>
             <button
               type="button"
-              className="mb-2 text-sm font-semibold text-fg-muted"
+              className="mb-2 inline-flex items-center gap-1 text-sm font-semibold text-primary"
               aria-expanded={showTimers}
               onClick={() => setShowTimers((value) => !value)}
             >
-              {t.timers} {showTimers ? '▲' : '▼'}
+              {t.timers}
+              <ChevronDown
+                className={cn('size-4 transition-transform', showTimers && 'rotate-180')}
+                aria-hidden
+              />
             </button>
             {showTimers ? (
               <div className="grid gap-4 md:grid-cols-3">

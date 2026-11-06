@@ -1,22 +1,25 @@
 'use client';
 
-import React, { useState, useRef } from 'react';
-import { importSuiteAction } from '@/games/alphabet/server/actions/import-suite';
+import { useState } from 'react';
 import { useRouter } from 'next/navigation';
+import { toast } from 'sonner';
 
-type Tab = 'paste' | 'file';
+import { Button } from '@/shared/ui/Button';
+import { Card } from '@/shared/ui/Card';
+import { importSuiteAction } from '@/games/alphabet/server/actions/import-suite';
+
+import { FileDropzone } from './FileDropzone';
+import { ImportResultBanner, type ImportResult } from './ImportResultBanner';
+import { ImportTabButton, type ImportTab } from './ImportTabButton';
+
+const PLACEHOLDER = '{\n  "title": "Название набора",\n  "questionsList": [...]\n}';
 
 export function SuiteImportForm() {
   const router = useRouter();
-  const [tab, setTab] = useState<Tab>('paste');
+  const [tab, setTab] = useState<ImportTab>('paste');
   const [jsonText, setJsonText] = useState('');
   const [isPending, setIsPending] = useState(false);
-  const [result, setResult] = useState<
-    | { type: 'success'; title: string; language: string; count: number }
-    | { type: 'error'; message: string }
-    | null
-  >(null);
-  const fileRef = useRef<HTMLInputElement>(null);
+  const [result, setResult] = useState<ImportResult | null>(null);
 
   async function handleImport() {
     if (!jsonText.trim()) {
@@ -38,132 +41,80 @@ export function SuiteImportForm() {
           language: res.data.language,
           count: res.data.questionsCount,
         });
+        toast.success(
+          `Импортировано: «${res.data.title}» — ${res.data.questionsCount} вопросов`,
+        );
         setJsonText('');
         router.refresh();
       } else {
         setResult({ type: 'error', message: res.error });
+        toast.error('Импорт не удался');
       }
     } catch {
       setResult({ type: 'error', message: 'Неверный формат JSON. Проверьте синтаксис.' });
+      toast.error('Неверный формат JSON');
     } finally {
       setIsPending(false);
     }
   }
 
-  function handleFileLoad(e: React.ChangeEvent<HTMLInputElement>) {
-    const file = e.target.files?.[0];
-    if (!file) return;
-
-    if (file.size > 5 * 1024 * 1024) {
-      setResult({ type: 'error', message: 'Файл превышает 5 MB' });
-      return;
-    }
-
-    const reader = new FileReader();
-    reader.onload = (ev) => {
-      setJsonText(ev.target?.result as string);
-      setResult(null);
-    };
-    reader.readAsText(file);
-  }
-
   return (
-    <div className="bg-slate-900 border border-white/5 rounded-2xl p-6">
-      {/* Tabs */}
-      <div className="flex gap-2 mb-5">
-        {(['paste', 'file'] as Tab[]).map((t) => (
-          <button
-            key={t}
-            onClick={() => setTab(t)}
-            className={`px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-widest transition-all ${
-              tab === t
-                ? 'bg-emerald-600 text-white'
-                : 'bg-slate-800 text-slate-400 hover:text-white'
-            }`}
-          >
-            {t === 'paste' ? 'Вставить JSON' : 'Загрузить файл'}
-          </button>
+    <Card padding="lg">
+      <div className="mb-5 flex gap-2">
+        {(['paste', 'file'] as ImportTab[]).map((tabValue) => (
+          <ImportTabButton
+            key={tabValue}
+            value={tabValue}
+            active={tab}
+            onSelect={setTab}
+            label={tabValue === 'paste' ? 'Вставить JSON' : 'Загрузить файл'}
+          />
         ))}
       </div>
 
-      {/* File input */}
-      {tab === 'file' && (
-        <div className="mb-4">
-          <label className="block w-full border-2 border-dashed border-slate-700 hover:border-emerald-500/50 rounded-xl p-8 text-center cursor-pointer transition-all">
-            <div className="text-slate-400 text-sm mb-2">
-              Перетащите .json файл или нажмите для выбора
-            </div>
-            <div className="text-slate-600 text-xs">Максимум 5 MB</div>
-            <input
-              ref={fileRef}
-              type="file"
-              accept=".json,application/json"
-              onChange={handleFileLoad}
-              className="hidden"
-            />
-          </label>
-          {jsonText && (
-            <p className="text-emerald-500 text-xs mt-2">
-              ✓ Файл загружен ({(jsonText.length / 1024).toFixed(1)} KB)
-            </p>
-          )}
-        </div>
-      )}
+      {tab === 'file' ? (
+        <FileDropzone
+          onFile={(text) => {
+            setJsonText(text);
+            setResult(null);
+          }}
+          onError={(message) => setResult({ type: 'error', message })}
+          loadedSizeKb={jsonText ? jsonText.length / 1024 : null}
+        />
+      ) : null}
 
-      {/* JSON textarea */}
-      {tab === 'paste' && (
+      {tab === 'paste' ? (
         <textarea
           value={jsonText}
-          onChange={(e) => setJsonText(e.target.value)}
-          placeholder={'{\n  "title": "Название набора",\n  "questionsList": [...]\n}'}
+          onChange={(event) => setJsonText(event.target.value)}
+          placeholder={PLACEHOLDER}
           rows={16}
           spellCheck={false}
-          className="w-full bg-black/40 border border-slate-800 focus:border-emerald-500 p-4 rounded-xl text-slate-300 font-mono text-xs outline-none resize-none transition-colors"
+          className="w-full resize-none rounded-ctl border border-border bg-surface p-4 text-xs text-fg outline-none transition-colors focus-visible:ring-[3px] focus-visible:ring-focus focus-visible:ring-offset-2 focus-visible:ring-offset-bg"
         />
-      )}
+      ) : null}
 
-      {/* Result */}
-      {result && (
-        <div
-          className={`mt-4 p-4 rounded-xl border text-sm ${
-            result.type === 'success'
-              ? 'bg-emerald-500/10 border-emerald-500/30 text-emerald-400'
-              : 'bg-red-500/10 border-red-500/30 text-red-400'
-          }`}
-        >
-          {result.type === 'success' ? (
-            <>
-              <span className="font-bold">✓ Импортировано успешно!</span>{' '}
-              Набор <span className="font-bold">«{result.title}»</span> —{' '}
-              {result.count} вопросов{' '}
-              <span className="bg-emerald-500/20 border border-emerald-500/40 px-1.5 py-0.5 rounded text-[11px] font-black uppercase">
-                {result.language}
-              </span>
-            </>
-          ) : (
-            <>
-              <span className="font-bold">✕ Ошибка:</span> {result.message}
-            </>
-          )}
-        </div>
-      )}
+      {result ? <ImportResultBanner result={result} /> : null}
 
-      {/* Actions */}
-      <div className="flex gap-3 mt-5">
-        <button
+      <div className="mt-5 flex gap-3">
+        <Button
+          variant="primary"
           onClick={handleImport}
           disabled={isPending || !jsonText.trim()}
-          className="flex-1 bg-emerald-600 hover:bg-emerald-700 disabled:opacity-40 disabled:cursor-not-allowed text-white py-3 rounded-xl font-black uppercase tracking-widest text-sm transition-all"
+          loading={isPending}
         >
           {isPending ? 'Импорт...' : 'Импортировать набор'}
-        </button>
-        <button
-          onClick={() => { setJsonText(''); setResult(null); }}
-          className="px-5 bg-slate-800 text-slate-400 rounded-xl hover:text-white transition-all text-sm"
+        </Button>
+        <Button
+          variant="ghost"
+          onClick={() => {
+            setJsonText('');
+            setResult(null);
+          }}
         >
           Очистить
-        </button>
+        </Button>
       </div>
-    </div>
+    </Card>
   );
 }
