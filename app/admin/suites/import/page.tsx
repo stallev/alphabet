@@ -1,6 +1,6 @@
 import { SuiteImportForm } from '@/app/admin/_components/SuiteImportForm';
 
-export const metadata = { title: 'Import Suite — Admin Alphabet' };
+export const metadata = { title: 'Import Suite' };
 
 export default function AdminSuiteImportPage() {
   return (

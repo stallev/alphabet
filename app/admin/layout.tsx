@@ -1,7 +1,10 @@
 import Link from 'next/link';
 import { AdminSignOutButton } from '@/app/admin/_components/AdminSignOutButton';
 
-export const metadata = { title: 'Admin — Alphabet' };
+export const metadata = {
+  title: { default: 'Admin', template: '%s — Admin' },
+  robots: { index: false, follow: false },
+};
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
   return (

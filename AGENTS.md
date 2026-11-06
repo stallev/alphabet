@@ -44,6 +44,8 @@ Auth: Credentials, JWT.
 | Game kit | [`game_kit_contract.md`](docs/implementation/contracts/game_kit_contract.md) · dev [`/dev/game-kit`](app/dev/game-kit/) |
 | Добавить игру | [`docs/adding-a-game.md`](docs/adding-a-game.md) |
 | i18n | [`i18n_contract.md`](docs/implementation/contracts/i18n_contract.md) |
+| SEO metadata | [`shared/seo/build-metadata.ts`](shared/seo/build-metadata.ts) · [`shared/config/site.ts`](shared/config/site.ts) · OG-картинка `app/opengraph-image.png` (генератор `scripts/gen-og-image.mjs`) |
+| Sentry | `instrumentation.ts` (сервер/edge, `onRequestError`) · `instrumentation-client.ts` (браузер) · `withSentryConfig` в [`next.config.ts`](next.config.ts) · env `NEXT_PUBLIC_SENTRY_DSN` |
 | Дизайн «Утренний свет» | [`docs/design/DESIGN.md`](docs/design/DESIGN.md) |
 | Alphabet | [`docs/games/alphabet.md`](docs/games/alphabet.md) |
 | Rules index | [`.cursor/rules/README.md`](.cursor/rules/README.md) · skill `app-conventions` |
@@ -56,7 +58,7 @@ Auth: Credentials, JWT.
 | **R03** | **Завершена** — UI-kit, i18n cookie, каталог Circle, шаблон игры ([`R03_phase_description.md`](docs/implementation/phases/R03_phase_description.md)) |
 | R04 | Редизайн Alphabet и admin (черновик) |
 
-Schema: [`prisma/schema.prisma`](prisma/schema.prisma) · ADR: [001](docs/architecture/ADR-001-migration-to-nextjs.md), [003](docs/architecture/ADR-003-repo-structure.md).
+Schema: [`prisma/schema.prisma`](prisma/schema.prisma) · ADR: [001](docs/architecture/ADR-001-migration-to-nextjs.md), [003](docs/architecture/ADR-003-repo-structure.md), [007](docs/architecture/ADR-007-seo-and-sentry.md).
 
 ## Проверки
 

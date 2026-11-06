@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { useGameStore } from '@/games/alphabet/store';
 import { SCORE_MATCH, SCORE_EASY, SCORE_MEDIUM, SCORE_HARD, ALPHABET_BY_LOCALE } from '@/games/alphabet/constants';
 import { useGameT } from '@/games/alphabet/i18n/use-game-t';
+import { format } from '@/shared/i18n/format';
 import { useLocale } from '@/shared/i18n/I18nProvider';
 
 export const RulesPage: React.FC = () => {
@@ -84,7 +85,7 @@ export const RulesPage: React.FC = () => {
                 {r.section01Title}
               </h2>
               <p className="pl-16 text-lg">
-                {r.section01Text(cardCount, pairCount)}
+                {format(r.section01Text, { cardCount, pairCount })}
               </p>
             </motion.section>
 
@@ -100,7 +101,7 @@ export const RulesPage: React.FC = () => {
                     <div className="absolute -right-4 -bottom-4 text-6xl opacity-10 group-hover:rotate-12 transition-transform">✅</div>
                     <h3 className="font-black text-emerald-700 mb-4 uppercase text-xs tracking-widest">{r.matchTitle}</h3>
                     <ul className="space-y-3 text-slate-700 text-sm font-bold">
-                      <li>• {r.matchItem1(SCORE_MATCH)}</li>
+                      <li>• {format(r.matchItem1, { n: SCORE_MATCH })}</li>
                       <li>• {r.matchItem2}</li>
                       <li>• {r.matchItem3}</li>
                       <li>• <span className="text-emerald-600">{r.matchItem4}</span></li>
@@ -135,19 +136,19 @@ export const RulesPage: React.FC = () => {
                   <tbody className="divide-y divide-slate-100 text-sm font-bold">
                     <tr>
                       <td className="px-6 py-4 text-slate-600">{r.rowMatch}</td>
-                      <td className="px-6 py-4 text-right text-blue-600">{r.rowMatchPoints(SCORE_MATCH)}</td>
+                      <td className="px-6 py-4 text-right text-blue-600">{format(r.rowMatchPoints, { n: SCORE_MATCH })}</td>
                     </tr>
                     <tr>
                       <td className="px-6 py-4 text-emerald-600 italic">{r.rowEasy}</td>
-                      <td className="px-6 py-4 text-right text-emerald-600">{r.rowEasyPoints(SCORE_EASY)}</td>
+                      <td className="px-6 py-4 text-right text-emerald-600">{format(r.rowEasyPoints, { n: SCORE_EASY })}</td>
                     </tr>
                     <tr>
                       <td className="px-6 py-4 text-amber-600 italic">{r.rowMedium}</td>
-                      <td className="px-6 py-4 text-right text-amber-600">{r.rowMediumPoints(SCORE_MEDIUM)}</td>
+                      <td className="px-6 py-4 text-right text-amber-600">{format(r.rowMediumPoints, { n: SCORE_MEDIUM })}</td>
                     </tr>
                     <tr>
                       <td className="px-6 py-4 text-red-600 italic">{r.rowHard}</td>
-                      <td className="px-6 py-4 text-right text-red-600">{r.rowHardPoints(SCORE_HARD)}</td>
+                      <td className="px-6 py-4 text-right text-red-600">{format(r.rowHardPoints, { n: SCORE_HARD })}</td>
                     </tr>
                   </tbody>
                 </table>
