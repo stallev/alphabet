@@ -6,7 +6,7 @@ import type { ButtonHTMLAttributes } from 'react';
 import { cn } from '@/shared/lib/cn';
 
 type ButtonVariant = 'primary' | 'secondary' | 'ghost' | 'danger';
-type ButtonSize = 'md' | 'lg';
+type ButtonSize = 'sm' | 'md' | 'lg';
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: ButtonVariant;
@@ -26,8 +26,9 @@ const variantClasses: Record<ButtonVariant, string> = {
 };
 
 const sizeClasses: Record<ButtonSize, string> = {
-  md: 'h-12 min-h-12 px-5 text-base font-semibold rounded-ctl',
-  lg: 'h-16 min-h-16 px-6 text-lg font-bold rounded-ctl',
+  sm: 'h-10 min-h-10 px-3.5 text-sm font-semibold rounded-ctl',
+  md: 'h-11 min-h-11 px-4 text-sm font-semibold rounded-ctl',
+  lg: 'h-14 min-h-14 px-5 text-base font-bold rounded-ctl',
 };
 
 export function Button({
