@@ -1,5 +1,5 @@
 ---
-description: Next.js 16.2.6 App Router, Vercel, proxy.ts, async APIs
+description: Next.js 16.4.5 App Router, Vercel, proxy.ts, async APIs
 globs:
   - "app/**"
   - "src/**"
@@ -9,23 +9,23 @@ globs:
 alwaysApply: false
 ---
 
-# Next.js 16.2.6 + Vercel
+# Next.js 16.4.5 + Vercel
 
-**Stack:** Next.js **16.2.6** (exact pin — без ADR не менять), React 19, TypeScript 5  
+**Stack:** Next.js **16.4.5** (exact pin — без ADR не менять), React 19, TypeScript 5  
 **Guidelines:** `docs/guidelines/nextjs/` (создаётся в R01-CU6)  
 **Reference:** `docs/examples/ai_first_tmp/.cursor/rules/tiers/t1-implementation/nextjs-vercel-app-router.mdc`
 
 ## Version pin
 
 ```json
-"next": "16.2.6"
+"next": "16.4.5"
 ```
 
 Pin matching `eslint-config-next` to the same patch. No Next.js 15 patterns.
 
 ## Request interception — `proxy.ts`
 
-| Next.js 15 | Next.js 16.2.6 |
+| Next.js 15 | Next.js 16.4.5 |
 |------------|----------------|
 | `middleware.ts` | **`proxy.ts`** |
 | `export function middleware()` | **`export async function proxy()`** |

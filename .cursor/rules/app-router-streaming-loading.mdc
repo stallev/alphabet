@@ -8,7 +8,7 @@ alwaysApply: false
 # App Router — streaming & loading
 
 **Guide:** `docs/guidelines/nextjs/ai_loading_patterns.md` (R01-CU6)  
-**Runtime:** Next.js 16.2.6; PPR / Instant Navigations — **не включено**
+**Runtime:** Next.js 16.4.5; PPR / Instant Navigations — **не включено**
 
 При добавлении или правке `page.tsx`, `layout.tsx`, `loading.tsx`, `error.tsx`:
 

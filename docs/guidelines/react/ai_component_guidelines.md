@@ -1,6 +1,6 @@
 # React component guidelines — EdenGames
 
-**Stack:** Next.js **16.2.6** App Router, React 19, shadcn/ui,  tokens  
+**Stack:** Next.js **16.4.5** App Router, React 19, shadcn/ui,  tokens  
 **Methodology:** [`docs/meta/ai_first_methodology.md`](../../meta/ai_first_methodology.md)  
 **Cursor rules:** **react-ui-components**, **react-one-component-per-file**, **ui-design-system**
 

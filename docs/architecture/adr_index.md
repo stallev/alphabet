@@ -24,7 +24,7 @@
 | ADR-002 | [`ADR-002-ai-generator.md`](./ADR-002-ai-generator.md) | **Accepted** | AI generator | Серверный API, demo mode; владелец — `games/alphabet` (ADR-003) |
 | ADR-003 | [`ADR-003-repo-structure.md`](./ADR-003-repo-structure.md) | **Accepted** | Repo structure | Одно приложение, `games/`, `shared/`, `server/`, границы импортов |
 | ADR-004 | [`ADR-004-game-routing-and-registry.md`](./ADR-004-game-routing-and-registry.md) | **Accepted** | Game routing | `/<slug>`, реестр, зарезервированные slug'и, редирект `/game` |
-| ADR-005 | [`ADR-005-nextjs-vercel-runtime.md`](./ADR-005-nextjs-vercel-runtime.md) | **Accepted** | Next.js runtime | Pin Next.js 16.2.6, Vercel, `proxy.ts`, Prisma 7; без Instant Navigations |
+| ADR-005 | [`ADR-005-nextjs-vercel-runtime.md`](./ADR-005-nextjs-vercel-runtime.md) | **Accepted** | Next.js runtime | Pin Next.js 16.4.5, Vercel, `proxy.ts`, Prisma 7; без Instant Navigations |
 | ADR-006 | [`ADR-006-i18n-and-game-data.md`](./ADR-006-i18n-and-game-data.md) | **Accepted** | i18n & data | RU/EN, cookie `locale`, данные у каждой игры |
 
 ---

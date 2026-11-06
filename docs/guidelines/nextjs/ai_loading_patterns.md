@@ -1,9 +1,9 @@
 # Next.js Loading & Page Performance — EdenGames
 
 **Version:** 2.0 · **Project:** EdenGames `app`  
-**Stack:** Next.js **16.2.6** App Router, React 19, Vercel, Neon PostgreSQL 17 + Prisma v7  
+**Stack:** Next.js **16.4.5** App Router, React 19, Vercel, Neon PostgreSQL 17 + Prisma v7  
 **Methodology:** [`docs/meta/ai_first_methodology.md`](../../meta/ai_first_methodology.md)  
-**Runtime:** [ADR-002 template](../../architecture/ADR-005-nextjs-vercel-runtime.md)  
+**Runtime:** [ADR-005](../../architecture/ADR-005-nextjs-vercel-runtime.md)  
 **Cursor rule:** **app-router-streaming-loading**
 
 > **Scope:** `app/src/app/**` — loading UX, streaming shell, and page-level performance. Cross-request data cache: **`'use cache'`** (Next.js 16) — see §8; tag invalidation — [`cache_revalidation_policy.md`](../../architecture/ADR-005-nextjs-vercel-runtime.md) (после W5).
@@ -23,7 +23,7 @@ Verify against Context7 `/vercel/next.js` and [Loading UI and Streaming](https:/
 5. [Independent regions behind Suspense](#5-independent-regions-behind-suspense)
 6. [`auth()` cost and request dedup](#6-auth-cost-and-request-dedup)
 7. [Eliminating DB waterfalls](#7-eliminating-db-waterfalls)
-8. [Query caching — React `cache()` vs `'use cache'`](#8-query-caching--react-cache-vs-use-cache) — incl. [§8.1 Instant Navigations](#81-instant-navigations-nextjs-163--best-practice) · [§8.1.1 Instant Insights](#811-instant-insights-dev)
+8. [Query caching — React `cache()` vs `'use cache'`](#8-query-caching--react-cache-vs-use-cache) — incl. [§8.1 Instant Navigations (опционально)](#81-instant-navigations-nextjs-1645--optional) · [§8.1.1 Instant Insights](#811-instant-insights-dev)
 9. [Neon: cold start and connection](#9-neon-cold-start-and-connection)
 10. [`loading.tsx` as navigation insurance](#10-loadingtsx-as-navigation-insurance)
 11. [Skeletons without CLS](#11-skeletons-without-cls)
@@ -76,7 +76,7 @@ Server streaming (`loading.tsx`, Suspense) does **not** reduce client bundle siz
 User request
         │
         ▼
-   proxy.ts (JWT gate, Node)   ← no Prisma — see ADR-002
+   proxy.ts (JWT gate, Node)   ← no Prisma — see ADR-005
         │
         ▼
   Root Layout (await auth())   ← acceptable if JWT-only, no heavy DB in layout
@@ -214,7 +214,7 @@ Data fetching lives in `booking-detail-content.server.tsx` via DAL `app/src/data
 
 ### 4.1 Opt-in: synchronous page + `params.then()` (Cache Components)
 
-**Default (ADR-002):** `await params` / `await searchParams` in async `page.tsx` — see examples above.
+**Default (ADR-005):** `await params` / `await searchParams` in async `page.tsx` — see examples above.
 
 **Opt-in** when `cacheComponents: true` and stable page chrome must paint **before** dynamic params resolve (static shell / Partial Prerendering). Provenance: evaluated against [nextjs-app-architecture-skill](https://github.com/aurorascharff/nextjs-app-architecture-skill) — **not installed**; governance: [`adr_010_nextjs_app_architecture_skill.md`](../../architecture/ADR-005-nextjs-vercel-runtime.md).
 
@@ -454,78 +454,32 @@ Verify against Context7 `/vercel/next.js` (prefer version-matched docs under `no
 | **Cross-request cache** | `'use cache'` + `cacheTag()` + `cacheLife()` | Between requests / deploy-aware | Public catalog, trainer profile static slice |
 | **Fresh per request** | No cross-request cache | Always live | Bookings, slot availability, auth-gated mutable data |
 
-### 8.1 Instant Navigations (Next.js 16.2.6) — required
+### 8.1 Instant Navigations (Next.js 16.4.5) — optional
 
-[Instant Navigations](https://nextjs.org/blog/next-16-3-instant-navigations) are **required** on pin **16.2.6** ([ADR-002 template](../../architecture/ADR-005-nextjs-vercel-runtime.md) §5.1). **Adoption order:** enable **Cache Components** first, then **Partial Prefetching**. Shape each route as Stream, Cache, or deliberate Block:
+**Канон проекта ([ADR-005](../../architecture/ADR-005-nextjs-vercel-runtime.md)):** для lean-профиля **Instant Navigations** и обязательные **`cacheComponents` / `partialPrefetching`** **не приняты**. Базовая нагрузка UX — **Suspense**, **`loading.tsx`**, React **`cache()`** для дедупа в одном запросе; кросс-запросное кэширование — **`'use cache'`** там, где это оправдано отдельной задачей.
 
-```ts
-// app/next.config.ts — required
-const nextConfig: NextConfig = {
-  cacheComponents: true,
-  partialPrefetching: true, // Instant Navigations companion — never alone, never first
-}
-```
-
-| Choice | Mechanism | When |
-|--------|-----------|------|
-| **Stream** | `<Suspense fallback={…}>` / `loading.tsx` | Dynamic / private data; show shell immediately |
-| **Cache** | `'use cache'` + tags | Shared/public UI safe to reuse across requests |
-| **Private cache** | `'use cache: private'` | **Browser** only — not the static shell, not CDN |
-| **Block** | `export const instant = false` | Rare — intentional wait for server; document why |
-
-Today’s `loading.tsx` + sibling Suspense (§3–§5, §10) align with **Stream**. Do **not** enable `partialPrefetching` without `cacheComponents`. `<Link prefetch={true}>` only **per-link** after a live App Shell — not the default.
-
-Playwright `instant()` from `@next/playwright` — **SHOULD** on critical product navigations once flags are on. The Playwright package is **not** part of this boilerplate scaffold.
-
-**Out of scope for MVP canon:** `experimental.useOffline`, Rust React Compiler, `import.meta.glob`, mandatory `next/root-params` (cookie-first i18n), blind Block on every route.
-
-#### 8.1.1 Instant Insights (dev)
-
-**Instant Insights** is the Next.js **dev overlay / validation** for Instant Navigations (`cacheComponents` + `partialPrefetching`). In **dev** the overlay is **warning**. Production **build** reports `blocking-prerender-*` — do **not** mix that with `blocking-route`. It flags routes that **block** prerender or instant navigation — **not** a general bug-finder (logic, a11y, visual QA). Do **not** confuse with **`next-dev-loop`** (opt-in dual-view runtime verification — [README](./README.md) § Agent runtime verification). A shell without the overlay is **not** confirmation that Instant Navigations are healthy.
-
-**What it catches**
-
-| Class | Typical trigger | Effect |
-|-------|-----------------|--------|
-| Runtime data outside Suspense | `cookies()`, `headers()`, `params`, `searchParams` | Blocks prerender / instant navigation |
-| Uncached IO outside boundaries | `fetch()`, `connection()` without Suspense / `'use cache'` | Page waits on data before paint |
-| Auth/session on static shell | Session read without Stream/Block | Route flagged as blocking |
-| Dynamic viewport + runtime | `generateViewport` reading cookies/headers | Layout blocks navigation |
-
-**What it does not catch:** business logic bugs, accessibility, visual regressions, empty shells (`fallback={null}`) that still look “instant” but show nothing — treat empty shells as a separate anti-pattern (§17).
-
-**Fixes (same Stream / Cache / Block as §8.1)**
-
-| Overlay advice | Action |
-|----------------|--------|
-| **[stream]** | Wrap dynamic / runtime access in `<Suspense fallback={…}>` with a **meaningful** skeleton (not `null`) |
-| **[cache]** | Cache shared reads with `'use cache'` + tags — **not** for `cookies()` / `headers()` |
-| **[block]** | `export const instant = false` only with an explicit product reason |
-
-**Config (optional migration knobs)**
+[Instant Navigations](https://nextjs.org/blog/next-16-3-instant-navigations) и сопутствующие флаги — **опциональное** улучшение после отдельного ADR или явной продуктовой задачи. Если проект их включает, типичный порядок: **Cache Components** (`cacheComponents: true`), затем **Partial Prefetching** (`partialPrefetching: true` — не включать без `cacheComponents`). Модель маршрута — **Stream** / **Cache** / **Block**, как в документации Next.js:
 
 ```ts
-// app/next.config.ts
+// Пример только после принятия политики — см. ADR-005
 const nextConfig: NextConfig = {
   cacheComponents: true,
   partialPrefetching: true,
-  experimental: {
-    instantInsights: {
-      // 'warning' — validate all segments; 'manual-warning' — only segments that export `instant`
-      validationLevel: 'warning',
-    },
-  },
 }
 ```
 
-Per-segment opt-out / severity: `export const instant = false` or `export const instant = { level: 'warning' }` — see [route segment `instant`](https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config/instant).
+| Choice | Mechanism | Когда |
+|--------|-----------|--------|
+| **Stream** | `<Suspense fallback={…}>` / `loading.tsx` | Динамика / приватные данные; оболочка сразу (текущий базовый паттерн) |
+| **Cache** | `'use cache'` + tags | Публичные срезы, безопасные для переиспользования между запросами |
+| **Private cache** | `'use cache: private'` | Только браузер |
+| **Block** | `export const instant = false` | Редко — осознанное ожидание сервера |
 
-**Agent checklist (route work with Instant Navigations on)**
+**Out of scope until adopted:** обязательный Playwright `instant()`, слепой Block на каждый маршрут, любые флаги без согласования с ADR-005.
 
-- [ ] Read Instant Insights overlay for the touched route; close each finding with Stream, Cache, or deliberate Block
-- [ ] Fallbacks are layout-shaped skeletons — never `fallback={null}` / empty Suspense around the whole page body
-- [ ] Do not treat Instant Insights as full QA; keep `typecheck` / `lint` (and Playwright `instant()` on critical paths when flags are on)
-- [ ] Incremental migration: `validationLevel: 'manual-warning'` or scoped `instant = false` — document why
+#### 8.1.1 Instant Insights (dev)
+
+**Instant Insights** — оверлей в dev при включённых **Cache Components** + **Partial Prefetching**. Пока политика ADR-005 это не требует, раздел **справочный**; при будущем включении флагов используйте [route segment `instant`](https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config/instant) и [документацию Next.js](https://nextjs.org/docs/app/getting-started/cache-components). Не путать с **`next-dev-loop`** ([README](./README.md) § Agent runtime verification).
 
 ### React `cache()` — per-request dedup
 
@@ -999,9 +953,9 @@ State briefly in PR/task which exception applies:
 | [Next.js: Error Handling](https://nextjs.org/docs/app/getting-started/error-handling) | `error.tsx`, `reset` |
 | [Next.js: `use cache`](https://nextjs.org/docs/app/api-reference/directives/use-cache) | Cross-request cache directive (replaces `unstable_cache`) |
 | [Next.js: Cache Components](https://nextjs.org/docs/app/getting-started/cache-components) | `cacheComponents`, PPR, static + cached + dynamic mix |
-| [Next.js 16.2.6: Instant Navigations](https://nextjs.org/blog/next-16-3-instant-navigations) | Required §8.1 — Cache Components then `partialPrefetching` |
-| [Next.js: `instant` route segment config](https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config/instant) | Instant Insights validationLevel / per-segment `instant` — §8.1.1 |
-| [ADR-002 template](../../architecture/ADR-005-nextjs-vercel-runtime.md) | Pin 16.2.6 + §5.1 Instant Navigations required |
+| [Next.js: Instant Navigations](https://nextjs.org/blog/next-16-3-instant-navigations) | Опционально §8.1 — после отдельного ADR; не MVP по ADR-005 |
+| [Next.js: `instant` route segment config](https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config/instant) | Per-segment `instant` — при включённых Cache Components / Partial Prefetching |
+| [ADR-005](../../architecture/ADR-005-nextjs-vercel-runtime.md) | Pin 16.4.5; lean — без обязательных Instant Navigations |
 | EdenGames ``ai_loading_patterns.md`` | Snapshot; former `ai_page_performance_streaming.md` merged into §4–§18 |
 | [`adr_010_nextjs_app_architecture_skill.md`](../../architecture/ADR-005-nextjs-vercel-runtime.md) | External RSC skill — adopt/reject mapping |
 
@@ -1009,4 +963,4 @@ State briefly in PR/task which exception applies:
 
 **Version:** 2.6  
 **Last updated:** August 2026  
-**Next.js:** 16.2.6 (pinned) · Instant Navigations + Instant Insights (§8.1.1) · **Hosting:** Vercel · **Cross-request cache:** `'use cache'` (not `unstable_cache`)
+**Next.js:** 16.4.5 (pinned) · Instant Navigations — опционально (§8.1, ADR-005) · **Hosting:** Vercel · **Cross-request cache:** `'use cache'` (not `unstable_cache`)

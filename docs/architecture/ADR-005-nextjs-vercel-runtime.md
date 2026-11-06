@@ -4,7 +4,7 @@
 **Статус:** Accepted  
 **Версия:** 1.0  
 **Дата:** 2026-10-23  
-**Проверено по:** `next@16.2.6`, `prisma@7.8.0`, `engines.node` — `package.json`, 2026-10-23  
+**Проверено по:** `next@16.4.5`, `prisma@7.8.0`, `engines.node` — `package.json`, 2026-10-23  
 **Зависит от:** ADR-001  
 **Затрагивает:** `proxy.ts`, `lib/auth.config.ts`, `lib/auth.ts`, `next.config.ts`, `package.json`
 
@@ -20,14 +20,14 @@ EdenGames размещается на **Vercel**. Next.js 16 заменил пе
 
 | Policy | Value |
 |--------|-------|
-| Next.js | **16.2.6** exact pin (`next`, `eslint-config-next`, `@next/third-parties`) |
+| Next.js | **16.4.5** exact pin (`next`, `eslint-config-next`, `@next/third-parties`) |
 | React | 19.x (peer Next 16) |
 | Node | `engines`: `>=22 <26` (Vercel LTS) |
 | Hosting | Vercel |
 | ORM | Prisma **7.x** + Neon PostgreSQL v17 |
 | Bundler | Turbopack (`next dev --turbopack`, `next build`) |
 
-Bump minor/patch Next 16.2.x — в задаче с проверкой `deps:check`. Next 16.3+ / 17 — новый ADR или amend.
+Bump patch **в рамках текущего minor** Next 16 — в задаче с проверкой `deps:check`. Смена minor (например 16.x → 17) — новый ADR или amend.
 
 ---
 
@@ -92,6 +92,6 @@ Bump minor/patch Next 16.2.x — в задаче с проверкой `deps:che
 
 ## Критерии соответствия
 
-- [ ] `"next": "16.2.6"` в `package.json`
+- [ ] `"next": "16.4.5"` в `package.json`
 - [ ] `proxy.ts` существует; `middleware.ts` отсутствует
 - [ ] Prisma Client — singleton из `lib/db.ts` (до R02: путь мигрирует в `server/db/`)

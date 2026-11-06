@@ -1,6 +1,6 @@
 # Guidelines — EdenGames
 
-Нормы реализации для Next.js **16.2.6**, single-app и профиля качества **lean**.
+Нормы реализации для Next.js **16.4.5**, single-app и профиля качества **lean**.
 
 **Методология:** [`docs/meta/ai_first_methodology.md`](../meta/ai_first_methodology.md)  
 **Иерархия источников:** только в [`.cursor/rules/project-context.mdc`](../../.cursor/rules/project-context.mdc).

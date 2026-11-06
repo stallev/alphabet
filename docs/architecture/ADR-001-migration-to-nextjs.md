@@ -1,6 +1,6 @@
-# ADR-001 — Миграция с Vite+React SPA на Next.js 15 App Router
+# ADR-001 — Миграция с Vite+React SPA на Next.js App Router
 
-**Status:** Accepted — реализовано; структура репозитория пересмотрена в [ADR-003](./ADR-003-repo-structure.md)  
+**Status:** Accepted — реализовано; структура репозитория пересмотрена в [ADR-003](./ADR-003-repo-structure.md); текущий пин Next.js и рантайм Vercel — [ADR-005](./ADR-005-nextjs-vercel-runtime.md)  
 **Date:** 2026-05-30  
 **Authors:** AI Agent (Cursor)
 
@@ -28,36 +28,31 @@
 
 ## Decision
 
-**Мигрировать проект с Vite + React SPA на Next.js 15 App Router.**
+**Мигрировать проект с Vite + React SPA на Next.js App Router.** Текущее целевое состояние стека зафиксировано в [ADR-005](./ADR-005-nextjs-vercel-runtime.md): **Next.js 16.x** (точный пин в корневом `package.json`), **`proxy.ts`** вместо `middleware.ts`, Prisma **7.x** + Neon.
 
-### Технические решения
+### Технические решения (итог)
 
-| Аспект | До (Vite SPA) | После (Next.js 15) |
+| Аспект | До (Vite SPA) | После (текущий репозиторий) |
 |--------|-------------|-------------------|
-| Build tool | Vite 6.x | Next.js 15 (Turbopack) |
+| Build tool | Vite 6.x | Next.js 16 (Turbopack) |
 | Routing | Hash-based (`#rules`) | Next.js App Router |
 | Styling | TailwindCSS via CDN | TailwindCSS v4 via npm |
-| Database | ❌ Нет | Prisma 6 + Neon PostgreSQL v17 |
+| Database | ❌ Нет | Prisma 7 + Neon PostgreSQL v17 |
 | Auth | ❌ Нет | Auth.js v5 (Credentials, JWT) |
 | State | Zustand (client) | Zustand (client) + RSC data fetching |
 | Client components | Все компоненты | `'use client'` директива |
-| Server Actions | ❌ Нет | `src/actions/` |
-| Data Layer | ❌ Нет | `src/data/` (server-only) |
+| Server Actions | ❌ Нет | Server Actions + Route Handlers |
+| Route protection | ❌ Нет | JWT role gate в **`proxy.ts`** (см. ADR-005) |
 
-### Версия Next.js
+### Версия Next.js (актуальная)
 
-Используется **Next.js 15.x** (стабильная ветка):
-- Полная поддержка App Router
-- React 19 совместимость
-- Async Request APIs (`await cookies()`, `await headers()`)
-- Middleware для route protection
-- Server Actions stable
-
-> **Примечание:** Референсный проект fitapp использует Next.js 16.2.6 с `proxy.ts` вместо `middleware.ts`. Для «Алфавит» используется Next.js 15.x с `middleware.ts` как стандартное и стабильное решение. Миграция на Next.js 16 — в будущем ADR.
+Текущий пин: см. **ADR-005** и корневой `package.json`. Исторически планировалась миграция через Next.js 15; фактическая кодовая база — **Next.js 16** с каноническим **`proxy.ts`**.
 
 ---
 
 ## Migration Plan
+
+План ниже отражает **исходные фазы миграции**; отдельные пункты устарели по сравнению с текущей структурой (`server/`, `games/`, `proxy.ts` — см. ADR-003, ADR-005). Оставлен как архивный чеклист.
 
 ### Phase 1 — Foundation (P02)
 
@@ -79,9 +74,9 @@
 
 ### Phase 3 — Auth (P02)
 
-- [ ] Создать `lib/auth.config.ts` (Edge-safe, без Prisma)
+- [ ] Создать `lib/auth.config.ts` (без Prisma в конфиге, пригодном для `proxy.ts`)
 - [ ] Создать `lib/auth.ts` (server-only, Credentials provider)
-- [ ] Создать `middleware.ts` (route protection)
+- [ ] Настроить защиту маршрутов через **`proxy.ts`** (не `middleware.ts` — см. ADR-005)
 - [ ] Создать `app/admin/login/page.tsx` (login form)
 - [ ] Создать `types/next-auth.d.ts` (type augmentation)
 
@@ -138,8 +133,9 @@
 
 ## References
 
-- [Next.js 15 App Router docs](https://nextjs.org/docs)
+- [Next.js App Router docs](https://nextjs.org/docs)
 - [Auth.js v5 для Next.js](https://authjs.dev/getting-started/installation?framework=Next.js)
 - [Prisma + Next.js](https://www.prisma.io/nextjs)
 - [Neon + Prisma](https://neon.tech/docs/guides/prisma)
+- [ADR-005 — политика рантайма Next.js 16 и Vercel](./ADR-005-nextjs-vercel-runtime.md)
 - Референсный каталог `docs/examples/ai_first_tmp` в репозиторий не входит.

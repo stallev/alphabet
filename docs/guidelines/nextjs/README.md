@@ -1,6 +1,6 @@
 # Next.js guidelines — EdenGames
 
-**Baseline:** Next.js **16.2.6** App Router · Vercel · Neon + Prisma  
+**Baseline:** Next.js **16.4.5** App Router · Vercel · Neon + Prisma  
 **Методология:** [`ai_first_methodology.md`](../../meta/ai_first_methodology.md)  
 **Контракт рантайма:** ADR-005 (создаётся в R01-CU7)
 

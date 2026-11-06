@@ -117,7 +117,7 @@ scripts/                       # check-doc-links, check-text-encoding, check-exa
 |----------|----------|
 | `.cursor/agents/architect.md`, `implementer.md`, `reviewer.md` | **Копировать**, адаптировать (убрать упоминания monorepo, Pulse; модели оставить как в шаблоне — менять только по решению владельца) |
 | `.cursor/agents/doc-writer.md`, `doc-reviewer.md` | **Пропустить.** Нужны только для драйвера `run-wave` (Claude Code); документацию в этом проекте пишет обычный агент, сессия = 1–3 файла |
-| `.cursor/skills/app-conventions/` | **Переписать** под структуру из §A.3 (индекс «какое правило читать для какой области»). Шаблонный `references/nextjs-rsc-streaming.md` — перенести только после проверки актуальности для Next.js 16.2.6 |
+| `.cursor/skills/app-conventions/` | **Переписать** под структуру из §A.3 (индекс «какое правило читать для какой области»). Шаблонный `references/nextjs-rsc-streaming.md` — перенести только после проверки актуальности для Next.js 16.4.5 |
 
 ### A.4.3 `.cursor/rules` — таблица решений
 
@@ -134,7 +134,7 @@ scripts/                       # check-doc-links, check-text-encoding, check-exa
 | `ai-dry-deduplication` | **Взять**; `packages/domain` → `shared/domain`, `@/lib` → `@/shared/lib` |
 | `domain-literals-and-codes` | **Адаптировать:** константы кодов/ролей — `shared/domain/*`; убрать `@{{PACKAGE_SCOPE}}` |
 | `typescript-monorepo-types` | **Переименовать → `typescript-types`**, переписать под одно приложение (слои: `shared/domain`, `server/*`, `games/*`) |
-| `project-context.template` | **Адаптировать → `project-context.mdc`.** Иерархия источников истины (см. §A.6); стек — реальный (Next 16.2.6, Prisma, Auth.js v5) |
+| `project-context.template` | **Адаптировать → `project-context.mdc`.** Иерархия источников истины (см. §A.6); стек — реальный (Next 16.4.5, Prisma, Auth.js v5) |
 | (текущий) `alphabet-project-context` | **Удалить** после появления `project-context.mdc` (его содержимое переносится туда и в ADR) |
 
 **Tier 1 — реализация:**
@@ -193,7 +193,7 @@ scripts/                       # check-doc-links, check-text-encoding, check-exa
 | `docs/guidelines/typography_text_guidelines.md` | **Взять** | `docs/guidelines/` |
 | `docs/general/*` | **Взять** `03-accessibility`, `01-security-xss-csrf`, `ai_agent_ui_ux_guideline.md`; остальное — позже | `docs/general/` |
 | `docs/prds/07_governance/adr_index.template.md`, `decision_process.template.md` | **Взять** | `docs/architecture/adr_index.md`, `docs/architecture/decision_process.md` |
-| `docs/prds/07_governance/adr_002_nextjs_vercel_runtime_policy.template.md` | **Адаптировать** в ADR о рантайме Next 16.2.6/Vercel | `docs/architecture/ADR-005-nextjs-vercel-runtime.md` |
+| `docs/prds/07_governance/adr_002_nextjs_vercel_runtime_policy.template.md` | **Адаптировать** в ADR о рантайме Next 16.4.5/Vercel | `docs/architecture/ADR-005-nextjs-vercel-runtime.md` |
 | `specs/design_system_lab_spec.template.md` | **Отложить** (R3: опциональный `/design-system` как каталог UI-кита) | — |
 | `docs/reference/*`, `docs/examples/*`, `docs/ops/*`, `docs/prototypes/`, `docs/project-react-skill-requirements.md`, `docs/claude-code-cursor-rules-sync.md` | **Игнорировать** (последний — только если выбран Claude Code, §A.4.1) |
 
@@ -231,7 +231,7 @@ scripts/                       # check-doc-links, check-text-encoding, check-exa
 | `docs/implementation/mvp/*` | `docs/implementation/*` (contracts, specs) и `docs/implementation/phases/*` (фазы) |
 | `docs/prds/07_governance` | `docs/architecture` |
 
-3. **Версии:** Next.js — как в `package.json` проекта (**16.2.6**, точный pin); Node — LTS, указывается в `engines` (ADR-005, пишется в R1). Версии библиотек не копировать из шаблона.
+3. **Версии:** Next.js — как в `package.json` проекта (**16.4.5**, точный pin); Node — LTS, указывается в `engines` (ADR-005, пишется в R1). Версии библиотек не копировать из шаблона.
 4. **Каждый файл** получает метаданные в шапке; «Pulse reference» заменяется на блок «Источник: ai_first_tmp, адаптировано 2026-10-22».
 5. **Ссылки** — относительные в `.md`, от корня репозитория в `.mdc`. Битых ссылок быть не должно; ссылки на документы, которые создаются в той же фазе, допустимы только со статусом «TBD в R{N}» в таблице документа.
 6. **Кодировка** — UTF-8, без BOM, переводы строк LF для `.mdc` и скриптов.

@@ -1,6 +1,6 @@
 # React state management guidelines — EdenGames
 
-**Stack:** React 19, Next.js **16.2.6** App Router  
+**Stack:** React 19, Next.js **16.4.5** App Router  
 **Related:** [ai_react_hooks_guidelines.md](./ai_react_hooks_guidelines.md) §11 Memoization, §14 `useSyncExternalStore`
 
 ---

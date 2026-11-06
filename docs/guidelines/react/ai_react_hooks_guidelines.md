@@ -1,6 +1,6 @@
 # React hooks guidelines — EdenGames
 
-**Stack:** React 19, Next.js **16.2.6** App Router  
+**Stack:** React 19, Next.js **16.4.5** App Router  
 **Related:** [ai_form_handling_pattern.md](./ai_form_handling_pattern.md), [ai_optimistic_ui_pattern.md](./ai_optimistic_ui_pattern.md), [ai_react_state_management_guidelines.md](./ai_react_state_management_guidelines.md)
 
 ---

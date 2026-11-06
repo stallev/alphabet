@@ -14,7 +14,7 @@ alwaysApply: false
 
 ## Контракт
 
-1. **Exact versions** в `dependencies` / `devDependencies`: `"next": "16.2.6"` — без `^`, `~`, `*`, dist-tags без ADR.
+1. **Exact versions** в `dependencies` / `devDependencies`: `"next": "16.4.5"` — без `^`, `~`, `*`, dist-tags без ADR.
 2. **`.npmrc`:** `save-exact=true` в корне.
 3. **Lockfile** в git; CI и deploy — `npm ci`.
 4. Обновление зависимости — явный коммит с review, не побочный эффект `npm install`.

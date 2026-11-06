@@ -1,7 +1,7 @@
 # Алфавит — Инструкции для AI-агентов
 
 **Алфавит** — интерактивная библейская командная игра: механика Memory (поиск пар букв) + бонусная викторина с ИИ-генерацией вопросов.  
-Стек: **Next.js 16.2.6 App Router** + **Neon PostgreSQL v17** + **Auth.js v5** + **Prisma** + **TailwindCSS v4** + **Zustand** + **Framer Motion**.
+Стек: **Next.js 16.4.5 App Router** + **Neon PostgreSQL v17** + **Auth.js v5** + **Prisma** + **TailwindCSS v4** + **Zustand** + **Framer Motion**.
 
 **Методология:** [`docs/meta/documentation_creation_guide.md`](docs/meta/documentation_creation_guide.md) — цикл КОНТЕКСТ → ФАЗА → КОНТРАКТ → ЗАДАЧИ → ВЕРИФИКАЦИЯ.
 
@@ -31,7 +31,7 @@
 
 | Слой | Технология | Версия |
 |------|-----------|--------|
-| Framework | Next.js App Router | **16.2.6** |
+| Framework | Next.js App Router | **16.4.5** |
 | Runtime | Node.js (Vercel) | LTS |
 | Language | TypeScript | 5.x |
 | Database | Neon PostgreSQL | v17 |

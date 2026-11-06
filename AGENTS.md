@@ -1,7 +1,7 @@
 # Circle — инструкции для AI-агентов
 
 **Circle** — портал браузерных командных христианских игр; первая игра — **«Алфавит»** (Memory + викторина, наборы вопросов, AI-генерация).  
-Стек: **Next.js 16.2.6** App Router · **Neon PostgreSQL 17** · **Prisma 7.8** · **Auth.js v5** · **React 19.2** · **Tailwind CSS 4.3** · **Zustand 5** · **Framer Motion 12** · **Zod** · **shadcn/ui** (admin).
+Стек: **Next.js 16.4.5** App Router · **Neon PostgreSQL 17** · **Prisma 7.8** · **Auth.js v5** · **React 19.2** · **Tailwind CSS 4.3** · **Zustand 5** · **Framer Motion 12** · **Zod** · **shadcn/ui** (admin).
 
 **Методология:** [`docs/meta/ai_first_methodology.md`](docs/meta/ai_first_methodology.md) · **Маршрутизация:** [`model-routing.mdc`](.cursor/rules/model-routing.mdc).
 

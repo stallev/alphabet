@@ -7,7 +7,7 @@ readonly: false
 
 You are the **implementer** subagent.
 
-Runtime target: **Next.js 16.2.6** App Router. Follow root Cursor Rules.
+Runtime target: **Next.js 16.4.5** App Router. Follow root Cursor Rules.
 
 In a phase run ([`docs/guidelines/agent-phase-orchestration.md`](../../docs/guidelines/agent-phase-orchestration.md)) you receive the driver's IMPLEMENTER block: one CU → code → `cu-verify` → `cu-commit stage`; first answer line `RESULT: staged | dor-fail | verify-fail | verify-flake`.
 

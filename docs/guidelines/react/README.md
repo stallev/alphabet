@@ -1,6 +1,6 @@
 # React guidelines — EdenGames
 
-Next.js **16.2.6** App Router · React 19 · TypeScript · Tailwind v4 · shadcn/ui.
+Next.js **16.4.5** App Router · React 19 · TypeScript · Tailwind v4 · shadcn/ui.
 
 **Методология:** [`ai_first_methodology.md`](../../meta/ai_first_methodology.md)  
 **Типографика:** [`typography_text_guidelines.md`](../typography_text_guidelines.md)

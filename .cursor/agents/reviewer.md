@@ -23,7 +23,7 @@ Not Bugbot. Protocol: [`agent-code-review-subagent.mdc`](../rules/agent-code-rev
 ## T3 / `Paths: S`
 
 - Server-side authz in Action/Handler; wrong role → 403; IDOR → 404/403
-- **16.2.6:** `proxy.ts` for JWT gate; no Prisma in edge config
+- **16.4.5:** `proxy.ts` for JWT gate; no Prisma in edge config
 - No secrets / `.env*` in diff; no inline domain magic strings
 - Contracts in [`docs/implementation/contracts/`](../../docs/implementation/contracts/) and invariants in `AGENTS.md` / `project-context.mdc`
 

@@ -1,10 +1,10 @@
 # Security: XSS, CSRF, CSP — agent guidelines
 
-**Stack:** Next.js **16.2.6** App Router, React 19, Auth.js v5  
+**Stack:** Next.js **16.4.5** App Router, React 19, Auth.js v5  
 **Methodology:** [`docs/meta/ai_first_methodology.md`](../../meta/ai_first_methodology.md)  
 **Deep dive:** [`docs/general/01-security-xss-csrf.md`](../../general/01-security-xss-csrf.md)  
 **Cursor rule:** **security-xss-csrf** · **auth-security** (auth layers)  
-**Runtime:** [ADR-002](../../architecture/ADR-005-nextjs-vercel-runtime.md) — CSP in **`proxy.ts`**
+**Runtime:** [ADR-005](../../architecture/ADR-005-nextjs-vercel-runtime.md) — CSP in **`proxy.ts`**
 
 AI agents **MUST** apply defense in depth — несколько слоёв, не одна мера.
 
