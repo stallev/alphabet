@@ -3,8 +3,8 @@
 @theme {
   --color-bg: #eaf2f4;
   --color-surface: #ffffff;
-  --color-surface-muted: #dfecef;
-  --color-border: #c5d6db;
+  --color-surface-muted: #eef4f5;
+  --color-border: #c9d8dc;
   --color-fg: #12303a;
   --color-fg-muted: #4a6068;
   --color-primary: #0f766e;
@@ -47,8 +47,9 @@
   --radius-xl: 0;
   --radius-2xl: 0;
   --radius-3xl: 0;
-  --radius-ctl: 14px;
-  --radius-card: 22px;
+  --radius-ctl: 10px;
+  --radius-ctl-sm: 8px;
+  --radius-card: 18px;
   --radius-full: 9999px;
 
   --shadow-sm: none;
@@ -56,8 +57,8 @@
   --shadow-lg: none;
   --shadow-xl: none;
   --shadow-2xl: none;
-  --shadow-card: 0 1px 2px rgb(18 48 58 / 0.08), 0 12px 32px -12px rgb(18 48 58 / 0.22);
-  --shadow-press: 0 1px 2px rgb(18 48 58 / 0.12);
+  --shadow-card: 0 1px 2px rgb(18 48 58 / 0.06), 0 6px 16px -8px rgb(18 48 58 / 0.12);
+  --shadow-press: inset 0 1px 2px rgb(18 48 58 / 0.08);
 
   --blur-sm: 0;
   --blur-md: 0;
