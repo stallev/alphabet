@@ -1,16 +1,19 @@
 import { Suspense } from 'react';
 import { AdminLoginForm } from '@/app/admin/_components/AdminLoginForm';
+import { Card } from '@/shared/ui/Card';
 
 export const metadata = { title: 'Login' };
 
 export default function AdminLoginPage() {
   return (
-    <div className="min-h-screen bg-slate-950 flex items-center justify-center p-4">
-      <Suspense fallback={
-        <div className="max-w-md w-full bg-slate-900 border-2 border-slate-800 p-10 rounded-3xl text-center">
-          <div className="text-slate-600 text-sm animate-pulse">Loading...</div>
-        </div>
-      }>
+    <div className="flex min-h-dvh items-center justify-center bg-bg p-4">
+      <Suspense
+        fallback={
+          <Card padding="lg" className="w-full max-w-md text-center">
+            <p className="text-sm text-fg-muted">Loading...</p>
+          </Card>
+        }
+      >
         <AdminLoginForm />
       </Suspense>
     </div>
