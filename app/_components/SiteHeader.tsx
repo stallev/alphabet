@@ -13,11 +13,11 @@ export function SiteHeader() {
         >
           <span
             aria-hidden
-            className="flex size-10 shrink-0 items-center justify-center rounded-full bg-accent text-lg font-bold text-accent-fg"
+            className="flex size-8 shrink-0 items-center justify-center rounded-full bg-accent text-base font-bold text-accent-fg"
           >
             C
           </span>
-          <span className="text-base font-bold">{SITE.name}</span>
+          <span className="text-sm font-bold">{SITE.name}</span>
         </Link>
         <LocaleSwitcher />
       </div>
