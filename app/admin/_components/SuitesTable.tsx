@@ -3,23 +3,18 @@
 import { useMemo, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { ChevronDown, ChevronUp, ChevronsUpDown } from 'lucide-react';
+import { toast } from 'sonner';
 import type { QuestionSuite } from '@/generated/client';
 
-import { Badge } from '@/shared/ui/Badge';
 import { Card } from '@/shared/ui/Card';
-import { cn } from '@/shared/lib/cn';
 import { ExitConfirmDialog } from '@/shared/game-kit';
 import { deleteSuiteAction } from '@/games/alphabet/server/actions/delete-suite';
 
-const SOURCE_LABELS: Record<string, string> = {
-  json: 'JSON',
-  manual: 'Вручную',
-  ai: 'AI',
-  system: 'Система',
-};
+import { SuiteLangFilter } from './SuiteLangFilter';
+import { SuiteRow } from './SuiteRow';
+import { SuiteTableHead } from './SuiteTableHead';
 
-type SortDir = 'asc' | 'desc' | null;
+export type SortDir = 'asc' | 'desc' | null;
 
 interface SuitesTableProps {
   suites: QuestionSuite[];
@@ -62,9 +57,11 @@ export function SuitesTable({ suites }: SuitesTableProps) {
     setDeletingId(null);
 
     if (result.success) {
+      toast.success(`Набор «${suite.title}» удалён`);
       router.refresh();
     } else {
       setError(`Ошибка: ${result.error}`);
+      toast.error('Не удалось удалить набор');
     }
   }
 
@@ -82,27 +79,10 @@ export function SuitesTable({ suites }: SuitesTableProps) {
     );
   }
 
-  const SortIcon =
-    sortDir === 'asc' ? ChevronUp : sortDir === 'desc' ? ChevronDown : ChevronsUpDown;
-
   return (
     <div className="space-y-3">
       <div className="flex flex-wrap items-center gap-2">
-        {languages.map((lang) => (
-          <button
-            key={lang}
-            type="button"
-            onClick={() => setLangFilter(lang)}
-            className={cn(
-              'inline-flex items-center rounded-ctl-sm border px-2.5 py-1 text-xs font-semibold transition-colors',
-              langFilter === lang
-                ? 'border-primary bg-primary text-primary-fg'
-                : 'border-border bg-surface text-fg-muted hover:bg-surface-muted hover:text-fg',
-            )}
-          >
-            {lang === 'all' ? 'Все языки' : lang}
-          </button>
-        ))}
+        <SuiteLangFilter languages={languages} value={langFilter} onChange={setLangFilter} />
         <span className="ml-auto text-xs text-fg-muted">
           {displayed.length} из {suites.length}
         </span>
@@ -119,29 +99,7 @@ export function SuitesTable({ suites }: SuitesTableProps) {
 
       <Card padding="md" className="overflow-hidden p-0">
         <table className="w-full text-sm">
-          <thead>
-            <tr className="border-b border-border">
-              <th className="px-5 py-3 text-left text-xs font-semibold text-fg-muted">
-                <button
-                  type="button"
-                  onClick={toggleSort}
-                  className="inline-flex items-center gap-1 transition-colors hover:text-fg"
-                  title="Сортировать по названию"
-                >
-                  Название
-                  <SortIcon className="size-4" aria-hidden />
-                </button>
-              </th>
-              {['Язык', 'Источник', 'Создан', ''].map((h) => (
-                <th
-                  key={h}
-                  className="px-5 py-3 text-left text-xs font-semibold text-fg-muted"
-                >
-                  {h}
-                </th>
-              ))}
-            </tr>
-          </thead>
+          <SuiteTableHead sortDir={sortDir} onToggleSort={toggleSort} />
           <tbody>
             {displayed.length === 0 ? (
               <tr>
@@ -151,38 +109,12 @@ export function SuitesTable({ suites }: SuitesTableProps) {
               </tr>
             ) : (
               displayed.map((suite) => (
-                <tr
+                <SuiteRow
                   key={suite.id}
-                  className="border-b border-border transition-colors last:border-0 hover:bg-surface-muted"
-                >
-                  <td className="px-5 py-4">
-                    <div className="font-semibold text-fg">{suite.title}</div>
-                    {suite.isSystem ? (
-                      <Badge variant="accent" className="mt-1">
-                        системный
-                      </Badge>
-                    ) : null}
-                  </td>
-                  <td className="px-5 py-4 text-fg-muted">
-                    <span className="text-xs font-semibold">{suite.language}</span>
-                  </td>
-                  <td className="px-5 py-4">
-                    <Badge>{SOURCE_LABELS[suite.sourceType] ?? suite.sourceType}</Badge>
-                  </td>
-                  <td className="px-5 py-4 text-xs text-fg-muted">
-                    {new Date(suite.createdAt).toLocaleDateString('ru-RU')}
-                  </td>
-                  <td className="px-5 py-4 text-right">
-                    <button
-                      type="button"
-                      onClick={() => setConfirmSuite(suite)}
-                      disabled={deletingId === suite.id}
-                      className="text-xs font-semibold text-danger transition-colors hover:brightness-110 disabled:opacity-40"
-                    >
-                      {deletingId === suite.id ? '...' : 'Удалить'}
-                    </button>
-                  </td>
-                </tr>
+                  suite={suite}
+                  deleting={deletingId === suite.id}
+                  onDelete={setConfirmSuite}
+                />
               ))
             )}
           </tbody>

@@ -3,6 +3,7 @@ import { GoogleAnalytics } from '@next/third-parties/google';
 import { manrope } from '@/app/fonts/manrope';
 import { AuthSessionProvider } from '@/shared/providers/AuthSessionProvider';
 import { I18nProvider } from '@/shared/i18n/I18nProvider';
+import { Toaster } from '@/shared/ui/Toaster';
 import { getDictionary, getLocale } from '@/shared/i18n/server';
 import { SITE } from '@/shared/config/site';
 import './globals.css';
@@ -45,6 +46,7 @@ export default async function RootLayout({
         <I18nProvider locale={locale} dictionary={dictionary}>
           <AuthSessionProvider>{children}</AuthSessionProvider>
         </I18nProvider>
+        <Toaster />
       </body>
       {process.env.NEXT_PUBLIC_GA4_MEASUREMENT_ID && (
         <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA4_MEASUREMENT_ID} />
