@@ -52,7 +52,7 @@ export function StepperInput({
       </span>
       <div
         className={cn(
-          'flex items-center overflow-hidden rounded-ctl border border-border bg-surface shadow-press',
+          'flex items-center overflow-hidden rounded-ctl border border-border bg-surface',
           'focus-within:ring-[3px] focus-within:ring-focus focus-within:ring-offset-2 focus-within:ring-offset-bg',
         )}
       >
@@ -61,7 +61,7 @@ export function StepperInput({
           onClick={decrement}
           disabled={value <= min}
           aria-label={`Decrease ${label}`}
-          className="flex h-12 w-11 shrink-0 items-center justify-center text-lg font-bold text-fg-muted hover:bg-surface-muted disabled:cursor-not-allowed disabled:opacity-40"
+          className="flex h-10 w-10 shrink-0 items-center justify-center text-base font-bold text-fg-muted hover:bg-surface-muted disabled:cursor-not-allowed disabled:opacity-40"
         >
           −
         </button>
@@ -82,14 +82,14 @@ export function StepperInput({
               commitDraft(draft);
             }
           }}
-          className="h-12 min-w-0 flex-1 border-x border-border bg-transparent text-center text-lg font-bold tabular-nums text-fg outline-none"
+          className="h-10 min-w-0 flex-1 border-x border-border bg-transparent text-center text-base font-bold tabular-nums text-fg outline-none"
         />
         <button
           type="button"
           onClick={increment}
           disabled={value >= max}
           aria-label={`Increase ${label}`}
-          className="flex h-12 w-11 shrink-0 items-center justify-center text-lg font-bold text-fg-muted hover:bg-surface-muted disabled:cursor-not-allowed disabled:opacity-40"
+          className="flex h-10 w-10 shrink-0 items-center justify-center text-base font-bold text-fg-muted hover:bg-surface-muted disabled:cursor-not-allowed disabled:opacity-40"
         >
           +
         </button>
